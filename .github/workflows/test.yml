@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  run-autoUpload: # 任务名
+  run-test: # 任务名
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main #采用main分支下的
@@ -19,8 +19,7 @@ jobs:
         run: |
           npm install
       - name: npm run test
-        env:
-          TENCENTCLOUD_SECRET_ID: ${{ secrets.TENCENTCLOUD_SECRET_ID }}
-          TENCENTCLOUD_SECRET_KEY: ${{ secrets.TENCENTCLOUD_SECRET_KEY }}
         run: |
+          TENCENTCLOUD_SECRET_ID=${{ secrets.TENCENTCLOUD_SECRET_ID }}
+          TENCENTCLOUD_SECRET_KEY=${{ secrets.TENCENTCLOUD_SECRET_KEY }}
           npm run test  # 要运行的js脚本，放在根目录下
