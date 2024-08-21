@@ -18,9 +18,9 @@ jobs:
       - name: Install Dependency
         run: |
           npm install
-      - name: npm run autoUpload
+      - name: npm run test
         run: |
-          npm run autoUpload  # 要运行的js脚本，放在根目录下
+          npm run test  # 要运行的js脚本，放在根目录下
         env:
           TENCENTCLOUD_SECRET_ID: ${{ secrets.TENCENTCLOUD_SECRET_ID }}
           TENCENTCLOUD_SECRET_KEY: ${{ secrets.TENCENTCLOUD_SECRET_KEY }}
