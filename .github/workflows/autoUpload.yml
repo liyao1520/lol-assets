@@ -1,0 +1,22 @@
+name: autoUpload # yml文件名
+ 
+on:
+  push:
+    branches:
+      - main
+  schedule:   
+    - cron: '*/10 * * * *'
+ 
+jobs:
+  run-autoUpload: # 任务名
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main  #采用main分支下的
+      - name: Setup Node.js
+        uses: actions/setup-node@v2  #安装node.js
+        with:
+          node-version: '18'
+          
+      - name: Install Dependency       
+        run: |   
+          npm autoUpload  # 要运行的js脚本，放在根目录下
