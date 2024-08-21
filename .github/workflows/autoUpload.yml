@@ -22,3 +22,15 @@ jobs:
           echo TENCENTCLOUD_SECRET_ID=${{ secrets.TENCENTCLOUD_SECRET_ID }} >> .env
           echo TENCENTCLOUD_SECRET_KEY=${{ secrets.TENCENTCLOUD_SECRET_KEY }} >> .env
           npm run autoUpload  # 要运行的js脚本，放在根目录下
+      - uses: GuillaumeFalourd/git-commit-push@v1.3
+        with:
+          email: ${{ github.actor }}@users.noreply.github.com
+          name: ${{ github.actor }}
+          commit_message: auto upload
+          target_branch: main
+          files: __data__
+          remote_repository: https://github.com/liyao1520/github-action-test
+          access_token: ${{ github.token }}
+          force: true
+          empty: true
+          tags: true
