@@ -22,16 +22,18 @@ jobs:
       - name: npm run test
         run: |
           touch .env
-          echo TENCENTCLOUD_SECRET_ID=${{ secrets.TENCENTCLOUD_SECRET_ID }} >> .env
-          echo TENCENTCLOUD_SECRET_KEY=${{ secrets.TENCENTCLOUD_SECRET_KEY }} >> .env
+          echo TENCENTCLOUD_SECRET_ID=123 >> .env
+          echo TENCENTCLOUD_SECRET_KEY=123 >> .env
           npm run test  # 要运行的js脚本，放在根目录下
+          echo `ls -a`
+          echo `pwd`
       - uses: GuillaumeFalourd/git-commit-push@v1.3
         with:
           email: ${{ github.actor }}@users.noreply.github.com
           name: ${{ github.actor }}
           commit_message: auto commit
           target_branch: main
-          files: file1 file2 directory1 directory2/file3
+          files: .env
           remote_repository: https://github.com/liyao1520/github-action-test
           access_token: ${{ github.token }}
           force: true
