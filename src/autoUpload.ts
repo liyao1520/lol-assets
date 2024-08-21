@@ -56,7 +56,7 @@ async function main() {
   for (const file of files) {
     const key = file.replace('.json', '')
     const obj = await getObject(`champion/${key}.json`)
-    await pRetry(() => putFile(`champion/${key}.json`, obj.Body.toString()), { retries: 2 })
+    await pRetry(() => putFile(`champion/${key}.json`, JSON.parse(obj.Body.toString())), { retries: 2 })
     console.log(`putFile ${key}.json done`)
   }
   console.log('finish')
