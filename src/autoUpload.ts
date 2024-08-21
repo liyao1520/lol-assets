@@ -59,7 +59,6 @@ async function main() {
     await pRetry(() => putFile(`champion/${key}.json`, obj.Body.toString()), { retries: 2 })
     console.log(`putFile ${key}.json done`)
   }
-  await remove(__data__)
   console.log('finish')
   console.log(`all done, cost ${(Date.now() - startTime) / 1000}s`)
 }
