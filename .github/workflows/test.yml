@@ -20,6 +20,7 @@ jobs:
           npm install
       - name: npm run test
         run: |
-          TENCENTCLOUD_SECRET_ID=${{ secrets.TENCENTCLOUD_SECRET_ID }}
-          TENCENTCLOUD_SECRET_KEY=${{ secrets.TENCENTCLOUD_SECRET_KEY }}
+          touch .env
+          echo TENCENTCLOUD_SECRET_ID=${{ secrets.TENCENTCLOUD_SECRET_ID }} >> .env
+          echo TENCENTCLOUD_SECRET_KEY=${{ secrets.TENCENTCLOUD_SECRET_KEY }} >> .env
           npm run test  # 要运行的js脚本，放在根目录下
