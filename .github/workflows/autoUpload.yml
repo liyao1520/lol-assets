@@ -2,7 +2,7 @@ name: autoUpload # yml文件名
 
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: "*/10 * * * *"
   workflow_dispatch:
 jobs:
   run-autoUpload: # 任务名
@@ -21,8 +21,8 @@ jobs:
       - name: npm run autoUpload
         run: |
           touch .env
-          echo TENCENTCLOUD_SECRET_ID=${{ secrets.TENCENTCLOUD_SECRET_ID }} >> .env
-          echo TENCENTCLOUD_SECRET_KEY=${{ secrets.TENCENTCLOUD_SECRET_KEY }} >> .env
+          echo TENCENTCLOUD_SECRET_ID=${{ secrets.TENCENTCLOUD_SECRET_ID }} >> .env.local
+          echo TENCENTCLOUD_SECRET_KEY=${{ secrets.TENCENTCLOUD_SECRET_KEY }} >> .env.local
           npm run autoUpload  # 要运行的js脚本，放在根目录下
       - uses: GuillaumeFalourd/git-commit-push@v1.3
         with:
@@ -39,4 +39,3 @@ jobs:
       - name: remove __data__
         run: |
           rm -rf __data__
-            
