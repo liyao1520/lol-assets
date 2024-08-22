@@ -6,13 +6,13 @@ on:
       - main
   workflow_dispatch:
 jobs:
-  run-autoUpload: # 任务名
+  gitee: # 任务名
     runs-on: ubuntu-latest
     environment: production
     steps:
      - uses: wearerequired/git-mirror-action@master #开源actions包
-        env:
+       env:
           SSH_PRIVATE_KEY: ${{ secrets.GITEE_PRIVATE_KEY }}
-        with:
+       with:
           source-repo: "git@github.com:liyao1520/lol-assets.git" # github仓库地址
           destination-repo: "git@gitee.com:liyao1520/lol-assets.git" # gitee仓库地址
