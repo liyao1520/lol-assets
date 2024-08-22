@@ -5,14 +5,13 @@ import { fileURLToPath } from 'node:url'
 import { dirname, resolve } from 'node:path'
 import pRetry from 'p-retry'
 
-import { getObject, putObject } from './cos'
-import { ensureFile, writeFile, remove, readdir } from 'fs-extra'
+
+import { ensureFile, writeFile, remove, } from 'fs-extra'
 import { readFile } from 'node:fs/promises'
 
-const __dirname = dirname(fileURLToPath(new URL(import.meta.url)))
-const __data__ = resolve(__dirname, '../__data__')
+const __data__ = resolve(process.cwd(), '__data__')
 const promiseTimeout = (ms: number = 1000) => new Promise((resolve) => setTimeout(resolve, ms))
-
+console.log(__data__)
 const putFile = async (key: string, data: unknown) => {
   const filePath = resolve(__data__, key)
   await ensureFile(filePath)
@@ -23,6 +22,7 @@ async function main() {
   await remove(__data__)
   let listFile: string = ''
   try {
+
     listFile = await readFile(resolve(__data__, 'champion/list.json'), 'utf-8')
     console.log('listFile has')
   } catch (e) {
