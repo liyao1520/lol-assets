@@ -27,13 +27,17 @@ async function main() {
   try {
     // 检测 资源是否 更新
     const obj = await getObject('champion/list.json')
+
     const res = JSON.parse(obj.Body.toString())
+
     if (res.metaData.cached_at === metaData.cached_at) {
       console.log('list.json is up to date')
       return
     }
   } catch (e) {
+    console.log(e)
     if (e.statusCode === 404) return
+
   }
 
   await putFile('champion/list.json', response)
