@@ -10,12 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     steps:
-     - uses: shanghaobo/github-branch-gitee@v1.0.0
-       with:
-            github_repo: liyao/lol-assets
-            github_branch: main
-            gitee_repo: lol-assets/lol-assets
-            gitee_branch: main
-            username: lol-assets
-            password: ${{ secrets.GITEE_PASSWORD }}
-
+      - uses: abersheeran/sync-gitee-mirror@v1-beta
+        with:
+          repository: lol-assets/lol-assets
+          username: lol-assets
+          password: ${{ secrets.GITEE_PASSWORD }}
