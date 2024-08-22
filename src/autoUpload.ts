@@ -3,8 +3,7 @@ import { getChampionDetail, getChampions } from './api'
 import { resolve } from 'node:path'
 import pRetry from 'p-retry'
 
-
-import { ensureFile, writeFile, remove, } from 'fs-extra'
+import { ensureFile, writeFile, remove } from 'fs-extra'
 import { readFile } from 'node:fs/promises'
 
 const __data__ = resolve(process.cwd(), '__data__')
@@ -17,7 +16,6 @@ const putFile = async (key: string, data: unknown) => {
 }
 
 async function main() {
-
   let listFile: string = ''
   try {
     listFile = await readFile(resolve(__data__, 'champion/list.json'), 'utf-8')
@@ -28,7 +26,7 @@ async function main() {
 
   const startTime = Date.now()
   const response = await pRetry(getChampions, { retries: 4 })
-  const { championRankingList, metaData } = response
+  const { championRankingList, metaData } = response as any
   if (listFile) {
     const res = JSON.parse(listFile)
     if (res.metaData.cached_at === metaData.cached_at) {
@@ -39,16 +37,18 @@ async function main() {
   await remove(__data__)
   await putFile('champion/list.json', response)
   for (const item of championRankingList) {
+    const positionName = item.positionName.toLowerCase()
     const { href, key } = item.champion
+    const detailHref = href.replace('?', `${positionName}?`)
     console.log(`download ${key}.json`)
-    const res = await pRetry(() => getChampionDetail(href), {
+    const res = await pRetry(() => getChampionDetail(detailHref), {
       retries: 4
     })
 
     console.log(`download ${key}.json done`)
     await promiseTimeout(1500)
     console.log(`putFile ${key}.json`)
-    await pRetry(() => putFile(`champion/${key}.json`, res), { retries: 2 })
+    await pRetry(() => putFile(`champion/${key}-${positionName}.json`, res), { retries: 2 })
     console.log(`putFile ${key}.json done`)
   }
 
