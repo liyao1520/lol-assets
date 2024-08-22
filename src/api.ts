@@ -30,5 +30,5 @@ export async function getChampionDetail(path: string) {
     return Promise.reject(new Error('not found __NEXT_DATA__'))
   }
   const data = JSON.parse(__NEXT_DATA__)
-  return data.props.pageProps
+  return data.props.pageProps.data
 }
