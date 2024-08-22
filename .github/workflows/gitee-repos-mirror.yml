@@ -1,4 +1,4 @@
-name: gitee-sync # yml文件名
+name: autoUpload # yml文件名
 
 on:
   push:
@@ -6,13 +6,16 @@ on:
       - main
   workflow_dispatch:
 jobs:
-  gitee: # 任务名
+  run-autoUpload: # 任务名
     runs-on: ubuntu-latest
     environment: production
     steps:
-     - uses: wearerequired/git-mirror-action@master #开源actions包
-       env:
-          SSH_PRIVATE_KEY: ${{ secrets.GITEE_PRIVATE_KEY }}
-       with:
-          source-repo: "git@github.com:liyao1520/lol-assets.git" # github仓库地址
-          destination-repo: "git@gitee.com:lol-assets/lol-assets.git" # gitee仓库地址
+     - uses: shanghaobo/github-branch-gitee@v1.0.0
+        with:
+          github_repo: liyao/lol-assets
+          github_branch: main
+          gitee_repo: lol-assets/lol-assets
+          gitee_branch: main
+          username: lol-assets
+          password: ${{ secrets.GITEE_PASSWORD }}
+
