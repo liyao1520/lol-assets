@@ -25,7 +25,7 @@ async function main() {
   } catch (e) {
     console.log(e)
   }
-  await remove(__data__)
+
   const startTime = Date.now()
   const response = await pRetry(getChampions, { retries: 4 })
   const { championRankingList, metaData } = response
@@ -36,7 +36,7 @@ async function main() {
       return
     }
   }
-
+  await remove(__data__)
   await putFile('champion/list.json', response)
   for (const item of championRankingList) {
     const { href, key } = item.champion
