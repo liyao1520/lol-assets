@@ -1,8 +1,6 @@
 import 'dotenv/config'
-
 import { getChampionDetail, getChampions } from './api'
-import { fileURLToPath } from 'node:url'
-import { dirname, resolve } from 'node:path'
+import { resolve } from 'node:path'
 import pRetry from 'p-retry'
 
 
