@@ -19,15 +19,15 @@ const putFile = async (key: string, data: unknown) => {
 }
 
 async function main() {
-  await remove(__data__)
+
   let listFile: string = ''
   try {
-
     listFile = await readFile(resolve(__data__, 'champion/list.json'), 'utf-8')
     console.log('listFile has')
   } catch (e) {
     console.log(e)
   }
+  await remove(__data__)
   const startTime = Date.now()
   const response = await pRetry(getChampions, { retries: 4 })
   const { championRankingList, metaData } = response
