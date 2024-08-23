@@ -402,10 +402,10 @@
             {
               "name": "MAGE",
               "stats": {
-                "win_rate": 0.520718,
+                "win_rate": 0.520496,
                 "role_rate": 1,
-                "play": 21937,
-                "win": 11423
+                "play": 22029,
+                "win": 11466
               }
             }
           ],
@@ -1268,7 +1268,7 @@
         },
         {
           "champion_id": 34,
-          "play": 186,
+          "play": 188,
           "win": 84,
           "meta": {
             "id": 34,
@@ -1572,39 +1572,47 @@
               }
             ]
           },
-          "win_rate": 45.16
+          "win_rate": 44.68
         },
         {
-          "champion_id": 69,
-          "play": 146,
-          "win": 66,
+          "champion_id": 115,
+          "play": 151,
+          "win": 68,
           "meta": {
-            "id": 69,
-            "key": "Cassiopeia",
-            "name": "魔蛇之拥",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Cassiopeia.png",
+            "id": 115,
+            "key": "Ziggs",
+            "name": "爆破鬼才",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Ziggs.png",
             "evolve": [],
             "partype": "法力",
             "passive": {
-              "name": "优雅蛇行",
-              "description": "卡西奥佩娅随等级获得移动速度，但她无法购买鞋子类装备。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Cassiopeia_Passive.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0069/ability_0069_P1.webm"
+              "name": "一触即发",
+              "description": "每过一段时间，吉格斯的下次普通攻击就会造成额外的魔法伤害。这个冷却时间会在吉格斯每用一次技能时得到减少。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/ZiggsPassiveReady.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0115/ability_0115_P1.webm"
             },
             "spells": [
               {
                 "key": "Q",
-                "name": "瘟毒爆炸",
-                "description": "在短暂的延迟后，卡西奥佩娅用毒素引爆一片区域，并且如果命中了一名敌方英雄，就会获得移动速度加成。",
+                "name": "弹跳炸弹",
+                "description": "吉格斯扔出一个会弹跳的炸弹，对敌人造成魔法伤害。",
                 "max_rank": 5,
                 "range_burn": [
                   850
                 ],
                 "cooldown_burn": [
-                  3
+                  6,
+                  5,
+                  5,
+                  4,
+                  4
                 ],
                 "cooldown_burn_float": [
-                  3.5
+                  6,
+                  5.5,
+                  5,
+                  4.5,
+                  4
                 ],
                 "cost_burn": [
                   50,
@@ -1613,96 +1621,96 @@
                   65,
                   70
                 ],
-                "tooltip": "卡西奥佩娅引爆毒性气体，使敌人<keywordMajor>中毒</keywordMajor>并且在3秒内造成<magicDamage>?魔法伤害</magicDamage>。命中一名英雄会为卡西奥佩娅提供在3秒里持续衰减的<speed>30/35/40/45/50%移动速度</speed>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/CassiopeiaQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0069/ability_0069_Q1.webm"
+                "tooltip": "吉格斯扔出一个会弹跳的炸弹，对敌人造成<magicDamage>?魔法伤害</magicDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZiggsQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0115/ability_0115_Q1.webm"
               },
               {
                 "key": "W",
-                "name": "剧毒迷雾",
-                "description": "卡西奥佩娅释放出若干团毒云，对经过毒云的敌人造成减速效果、缚地效果和轻量伤害。被缚地的敌人无法使用位移技能。",
+                "name": "定点爆破",
+                "description": "吉格斯扔出一个炸药包，会在一段延迟后爆炸，或者在再次施放该技能后爆炸。爆炸会对敌人造成魔法伤害，并将他们击退。吉格斯也会被击退，但不会受到伤害。<br><br>吉格斯可以用这个技能来爆破敌方摇摇欲坠的防御塔。",
                 "max_rank": 5,
                 "range_burn": [
-                  700
+                  1000
                 ],
                 "cooldown_burn": [
-                  24,
-                  22,
                   20,
                   18,
+                  16,
+                  14,
+                  12
+                ],
+                "cooldown_burn_float": [
+                  20,
+                  18,
+                  16,
+                  14,
+                  12
+                ],
+                "cost_burn": [
+                  80
+                ],
+                "tooltip": "吉格斯扔出一个炸药包，会在?秒后或者在<recast>再次施放</recast>该技能后爆炸。爆炸会对敌人造成<magicDamage>?魔法伤害</magicDamage>，并将他们<status>击</status><status>退</status>。吉格斯也会被震开，但不会受到伤害。<br /><br />【定点爆破】会自动摧毁生命值低于?%的防御塔。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZiggsW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0115/ability_0115_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "海克斯爆破雷区",
+                "description": "吉格斯布下敌人一踩就炸的感应雷区，对踩中地雷的敌人造成魔法伤害和减速效果。对相同目标的后续爆炸将造成较少伤害。",
+                "max_rank": 5,
+                "range_burn": [
+                  900
+                ],
+                "cooldown_burn": [
                   16
                 ],
                 "cooldown_burn_float": [
-                  24,
-                  22,
-                  20,
-                  18,
                   16
                 ],
                 "cost_burn": [
                   70,
-                  75,
                   80,
-                  85,
-                  90
+                  90,
+                  100,
+                  110
                 ],
-                "tooltip": "卡西奥佩娅吐出毒液，留下一团持续5秒的毒云。毒云内的敌人们每秒受到<magicDamage>?魔法伤害</magicDamage>，<keywordMajor>中毒</keywordMajor>，<status>缚地</status>，以及<status>减速</status>40/50/60/70/80%。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/CassiopeiaW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0069/ability_0069_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "双生毒牙",
-                "description": "卡西奥佩娅释放一次攻击，可对中毒的目标造成额外伤害并且基于实际伤害值为她提供治疗效果。如果目标死于这次攻击，卡西奥佩娅会回复法力值。",
-                "max_rank": 5,
-                "range_burn": [
-                  700
-                ],
-                "cooldown_burn": [
-                  0
-                ],
-                "cooldown_burn_float": [
-                  0.75
-                ],
-                "cost_burn": [
-                  40
-                ],
-                "tooltip": "卡西奥佩娅发射致命的毒牙，造成<magicDamage>?魔法伤害</magicDamage>。如果敌人已经<keywordMajor>中毒</keywordMajor>，那么还会受到额外的<magicDamage>?魔法伤害</magicDamage>并且卡西奥佩娅回复<healing>?生命值</healing>，对抗小兵和小型野怪降低至<healing>?生命值</healing>。<br /><br />如果这个技能击杀了目标，那么卡西奥佩娅回复<scaleMana>40法力值</scaleMana>。<br /><br />?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/CassiopeiaE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0069/ability_0069_E1.webm"
+                "tooltip": "吉格斯布下敌人一踩就炸的感应雷区，对踩中地雷的敌人造成<magicDamage>?魔法伤害</magicDamage>和持续1.5秒的?%<status>减速</status>。地雷持续10秒。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZiggsE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0115/ability_0115_E1.webm"
               },
               {
                 "key": "R",
-                "name": "石化凝视",
-                "description": "卡西奥佩娅从眼中放出一团魔法能量，对她前方的任何面对她的敌人造成晕眩效果并对其它背对她的敌人造成减速效果。",
+                "name": "科学的地狱火炮",
+                "description": "吉格斯部署他的尖端发明，科学的地狱火炮，将它推送一段极远的距离。在主要爆炸区域里的敌人会比在其它爆炸区域里的敌人受到更多的伤害。",
                 "max_rank": 3,
                 "range_burn": [
-                  825
+                  5000
                 ],
                 "cooldown_burn": [
                   120,
-                  100,
-                  80
+                  95,
+                  70
                 ],
                 "cooldown_burn_float": [
                   120,
-                  100,
-                  80
+                  95,
+                  70
                 ],
                 "cost_burn": [
                   100
                 ],
-                "tooltip": "卡西奥佩娅释放一道震慑敌人的凝视，造成<magicDamage>?魔法伤害</magicDamage>并将面朝她的敌人们<status>晕眩</status>?秒。作为替代，未面朝她的敌人们会被<status>减速</status>?%，在相同时长内持续衰减。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/CassiopeiaR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0069/ability_0069_R1.webm"
+                "tooltip": "吉格斯扔出他的终极造物，在爆炸范围的中心区域造成<magicDamage>?魔法伤害</magicDamage>，或在边缘区域造成<magicDamage>?魔法伤害</magicDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZiggsR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0115/ability_0115_R1.webm"
               }
             ],
             "skins": [
               {
-                "id": 69000,
-                "champion_id": 69,
+                "id": 115000,
+                "champion_id": 115,
                 "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_0.jpg",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Ziggs_0.jpg",
                 "skin_video_url": null,
                 "prices": [
                   {
@@ -1718,11 +1726,21 @@
                 "release_date": null
               },
               {
-                "id": 69008,
-                "champion_id": 69,
-                "name": "上古魔蛇 卡西奥佩娅",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_8.jpg",
-                "skin_video_url": "https://youtu.be/Hy_8-uTFyI0",
+                "id": 115007,
+                "champion_id": 115,
+                "name": "奥德赛 吉格斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Ziggs_7.jpg",
+                "skin_video_url": "https://youtu.be/nCuB3pzv23g",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 115005,
+                "champion_id": 115,
+                "name": "奥术大师 吉格斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Ziggs_5.jpg",
+                "skin_video_url": "https://youtu.be/HseYoY0_jwg",
                 "prices": [
                   {
                     "currency": "RP",
@@ -1730,29 +1748,14 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2017-09-21T02:00:00+09:00"
+                "release_date": "2015-05-07T10:00:00+09:00"
               },
               {
-                "id": 69002,
-                "champion_id": 69,
-                "name": "深海妖姬 卡西奥佩娅",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_2.jpg",
-                "skin_video_url": "https://youtu.be/a2OAleQQ0_0",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 520
-                  }
-                ],
-                "sales": null,
-                "release_date": "2010-12-13T21:00:00+09:00"
-              },
-              {
-                "id": 69009,
-                "champion_id": 69,
-                "name": "灵魂莲华 卡西奥佩娅",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_9.jpg",
-                "skin_video_url": "https://youtu.be/GD51mdlNLf4",
+                "id": 115024,
+                "champion_id": 115,
+                "name": "小蜜蜂 吉格斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Ziggs_24.jpg",
+                "skin_video_url": "https://youtu.be/ph4wuLrhAsY",
                 "prices": [
                   {
                     "currency": "RP",
@@ -1760,14 +1763,64 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2020-08-06T04:00:00+09:00"
+                "release_date": "2022-03-03T04:00:00+09:00"
               },
               {
-                "id": 69004,
-                "champion_id": 69,
-                "name": "碧玉之牙 卡西奥佩娅",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_4.jpg",
-                "skin_video_url": "https://youtu.be/IvO4U8xhsF4",
+                "id": 115002,
+                "champion_id": 115,
+                "name": "少校 吉格斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Ziggs_2.jpg",
+                "skin_video_url": "https://youtu.be/x9iUebTl4H8",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 115006,
+                "champion_id": 115,
+                "name": "战场BOSS 吉格斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Ziggs_6.jpg",
+                "skin_video_url": "https://youtu.be/gW128eDiKBE",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2017-08-09T11:30:00+09:00"
+              },
+              {
+                "id": 115003,
+                "champion_id": 115,
+                "name": "泳池派对 吉格斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Ziggs_3.jpg",
+                "skin_video_url": "https://youtu.be/6LWBg-QO-R4",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2012-09-06T08:00:00+09:00"
+              },
+              {
+                "id": 115023,
+                "champion_id": 115,
+                "name": "海克斯科技 吉格斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Ziggs_23.jpg",
+                "skin_video_url": "https://youtu.be/eVTPTb7SS9I",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 115001,
+                "champion_id": 115,
+                "name": "科学狂人 吉格斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Ziggs_1.jpg",
+                "skin_video_url": "https://youtu.be/K4hNOuX7Wg0",
                 "prices": [
                   {
                     "currency": "RP",
@@ -1775,59 +1828,44 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2013-02-06T09:00:00+09:00"
+                "release_date": "2012-01-29T07:00:00+09:00"
               },
               {
-                "id": 69001,
-                "champion_id": 69,
-                "name": "荒漠之咬 卡西奥佩娅",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_1.jpg",
-                "skin_video_url": "https://youtu.be/tnQogpHIoAE",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 520
-                  }
-                ],
-                "sales": null,
-                "release_date": "2010-12-13T22:00:00+09:00"
-              },
-              {
-                "id": 69003,
-                "champion_id": 69,
-                "name": "蛇发女妖 卡西奥佩娅",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_3.jpg",
-                "skin_video_url": "https://youtu.be/-zyvBAdZ-48",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2012-07-24T04:00:00+09:00"
-              },
-              {
-                "id": 69028,
-                "champion_id": 69,
-                "name": "魅惑女巫 卡西奥佩娅",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_28.jpg",
-                "skin_video_url": "https://youtu.be/Y21gH7GAA7w",
+                "id": 115014,
+                "champion_id": 115,
+                "name": "糖果大战 吉格斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Ziggs_14.jpg",
+                "skin_video_url": "https://youtu.be/wAsmvsg_9l0",
                 "prices": [
                   {
                     "currency": "RP",
                     "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2019-12-17T04:00:00+09:00"
+              },
+              {
+                "id": 115004,
+                "champion_id": 115,
+                "name": "雪球也能爆炸！ 吉格斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Ziggs_4.jpg",
+                "skin_video_url": "https://youtu.be/ZuBFSejPAe8",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
                   }
                 ],
                 "sales": null,
                 "release_date": null
               },
               {
-                "id": 69018,
-                "champion_id": 69,
-                "name": "魔女 卡西奥佩娅",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_18.jpg",
-                "skin_video_url": "https://youtu.be/yY7tDgIPCyQ",
+                "id": 115033,
+                "champion_id": 115,
+                "name": "魂蔷薇 吉格斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Ziggs_33.jpg",
+                "skin_video_url": null,
                 "prices": [
                   {
                     "currency": "RP",
@@ -1835,18 +1873,18 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2021-08-12T04:00:00+09:00"
+                "release_date": "2023-09-27T11:00:00+09:00"
               }
             ]
           },
-          "win_rate": 45.21
+          "win_rate": 45.03
         }
       ],
       [
         {
           "champion_id": 79,
-          "play": 61,
-          "win": 40,
+          "play": 62,
+          "win": 41,
           "meta": {
             "id": 79,
             "key": "Gragas",
@@ -2168,7 +2206,7 @@
               }
             ]
           },
-          "win_rate": 65.57
+          "win_rate": 66.13
         },
         {
           "champion_id": 221,
@@ -3028,8 +3066,8 @@
         },
         {
           "champion_id": 236,
-          "play": 204,
-          "win": 123,
+          "play": 205,
+          "win": 124,
           "meta": {
             "id": 236,
             "key": "Lucian",
@@ -3352,15 +3390,15 @@
               }
             ]
           },
-          "win_rate": 60.29
+          "win_rate": 60.49
         }
       ]
     ],
     "counters": [
       {
         "champion_id": 157,
-        "play": 1136,
-        "win": 630,
+        "play": 1142,
+        "win": 632,
         "meta": {
           "id": 157,
           "key": "Yasuo",
@@ -3743,8 +3781,8 @@
       },
       {
         "champion_id": 7,
-        "play": 1025,
-        "win": 525,
+        "play": 1034,
+        "win": 533,
         "meta": {
           "id": 7,
           "key": "Leblanc",
@@ -4086,8 +4124,8 @@
       },
       {
         "champion_id": 55,
-        "play": 887,
-        "win": 421,
+        "play": 892,
+        "win": 424,
         "meta": {
           "id": 55,
           "key": "Katarina",
@@ -4794,8 +4832,8 @@
       },
       {
         "champion_id": 777,
-        "play": 771,
-        "win": 401,
+        "play": 773,
+        "win": 402,
         "meta": {
           "id": 777,
           "key": "Yone",
@@ -5464,8 +5502,8 @@
       },
       {
         "champion_id": 517,
-        "play": 659,
-        "win": 319,
+        "play": 664,
+        "win": 321,
         "meta": {
           "id": 517,
           "key": "Sylas",
@@ -5717,8 +5755,8 @@
       },
       {
         "champion_id": 134,
-        "play": 657,
-        "win": 342,
+        "play": 659,
+        "win": 343,
         "meta": {
           "id": 134,
           "key": "Syndra",
@@ -6038,8 +6076,8 @@
       },
       {
         "champion_id": 910,
-        "play": 635,
-        "win": 317,
+        "play": 640,
+        "win": 320,
         "meta": {
           "id": 910,
           "key": "Hwei",
@@ -6219,8 +6257,8 @@
       },
       {
         "champion_id": 893,
-        "play": 541,
-        "win": 279,
+        "play": 543,
+        "win": 280,
         "meta": {
           "id": 893,
           "key": "Aurora",
@@ -6388,8 +6426,8 @@
       },
       {
         "champion_id": 99,
-        "play": 511,
-        "win": 254,
+        "play": 514,
+        "win": 255,
         "meta": {
           "id": 99,
           "key": "Lux",
@@ -6838,8 +6876,8 @@
       },
       {
         "champion_id": 61,
-        "play": 480,
-        "win": 247,
+        "play": 484,
+        "win": 248,
         "meta": {
           "id": 61,
           "key": "Orianna",
@@ -7159,8 +7197,8 @@
       },
       {
         "champion_id": 84,
-        "play": 382,
-        "win": 197,
+        "play": 383,
+        "win": 198,
         "meta": {
           "id": 84,
           "key": "Akali",
@@ -7584,7 +7622,7 @@
       },
       {
         "champion_id": 901,
-        "play": 374,
+        "play": 375,
         "win": 210,
         "meta": {
           "id": 901,
@@ -7753,8 +7791,8 @@
       },
       {
         "champion_id": 45,
-        "play": 365,
-        "win": 194,
+        "play": 367,
+        "win": 196,
         "meta": {
           "id": 45,
           "key": "Veigar",
@@ -8116,8 +8154,8 @@
       },
       {
         "champion_id": 711,
-        "play": 340,
-        "win": 181,
+        "play": 343,
+        "win": 183,
         "meta": {
           "id": 711,
           "key": "Vex",
@@ -8302,8 +8340,8 @@
       },
       {
         "champion_id": 8,
-        "play": 338,
-        "win": 175,
+        "play": 340,
+        "win": 176,
         "meta": {
           "id": 8,
           "key": "Vladimir",
@@ -8625,9 +8663,290 @@
         }
       },
       {
+        "champion_id": 101,
+        "play": 317,
+        "win": 146,
+        "meta": {
+          "id": 101,
+          "key": "Xerath",
+          "name": "远古巫灵",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Xerath.png",
+          "evolve": [],
+          "partype": "法力",
+          "passive": {
+            "name": "法力澎湃",
+            "description": "泽拉斯的普通攻击会周期性地恢复法力值。每当泽拉斯击杀了一个单位时，这个冷却时间就会缩短。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Xerath_Passive1.png",
+            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0101/ability_0101_P1.webm"
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "奥能脉冲",
+              "description": "泽拉斯聚集能量，随后发射出一道射程很远的能量光束，对所有命中的目标造成魔法伤害。",
+              "max_rank": 5,
+              "range_burn": [
+                750
+              ],
+              "cooldown_burn": [
+                9,
+                8,
+                7,
+                6,
+                5
+              ],
+              "cooldown_burn_float": [
+                9,
+                8,
+                7,
+                6,
+                5
+              ],
+              "cost_burn": [
+                80,
+                90,
+                100,
+                110,
+                120
+              ],
+              "tooltip": "<charge>开始蓄力：</charge>泽拉斯开始积蓄一次奥术光束，自身逐步<status>减速</status>，至多可达50%。<br /><br /><release>释放：</release>泽拉斯发射光束，造成<magicDamage>?魔法伤害</magicDamage>。距离随蓄力时间提升。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/XerathArcanopulseChargeUp.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0101/ability_0101_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "毁灭之眼",
+              "description": "在目标区域降下奥术能量的弹幕，对一个区域内的所有敌人造成减速效果和魔法伤害。区域中心的目标会受到额外伤害和一个更强大的减速效果。",
+              "max_rank": 5,
+              "range_burn": [
+                1000
+              ],
+              "cooldown_burn": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "cooldown_burn_float": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "cost_burn": [
+                80,
+                90,
+                100,
+                110,
+                120
+              ],
+              "tooltip": "泽拉斯引爆目标区域的奥术能量，造成<magicDamage>?魔法伤害</magicDamage>并使敌人<status>减速</status>?%，持续?秒。区域中心的敌人会受到<magicDamage>?魔法伤害</magicDamage>，并被<status>减速</status>?%，减速效果会在?秒里持续衰减。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/XerathArcaneBarrage2.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0101/ability_0101_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "冲击法球",
+              "description": "对单个敌人造成魔法伤害和晕眩效果。",
+              "max_rank": 5,
+              "range_burn": [
+                1050
+              ],
+              "cooldown_burn": [
+                13,
+                12,
+                12,
+                11,
+                11
+              ],
+              "cooldown_burn_float": [
+                13,
+                12.5,
+                12,
+                11.5,
+                11
+              ],
+              "cost_burn": [
+                60,
+                65,
+                70,
+                75,
+                80
+              ],
+              "tooltip": "泽拉斯发射一颗原生魔法之球，基于飞行距离使命中第一个的敌人<status>晕眩</status>至多?秒，并造成<magicDamage>?魔法伤害</magicDamage>。 ?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/XerathMageSpear.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0101/ability_0101_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "奥术仪式",
+              "description": "泽拉斯将自己固定在一处魔力之源上，并获得数次远程施法的机会。",
+              "max_rank": 3,
+              "range_burn": [
+                5000
+              ],
+              "cooldown_burn": [
+                130,
+                115,
+                100
+              ],
+              "cooldown_burn_float": [
+                130,
+                115,
+                100
+              ],
+              "cost_burn": [
+                100
+              ],
+              "tooltip": "泽拉斯飞升至他的真正形态并引导10秒。在此期间，他可以<recast>再次施放</recast>此技能至多4/5/6次。<br /><br /><recast>再次施放：</recast>泽拉斯发射一道魔法炮击，造成<magicDamage>?魔法伤害</magicDamage>。每次命中英雄时，炮击都会造成额外的<magicDamage>?魔法伤害</magicDamage>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/XerathLocusOfPower2.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0101/ability_0101_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 101000,
+              "champion_id": 101,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 1350
+                },
+                {
+                  "currency": "RP",
+                  "cost": 585
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 101021,
+              "champion_id": 101,
+              "name": "宇航员 泽拉斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_21.jpg",
+              "skin_video_url": "https://youtu.be/OjctXSqUTss",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2023-02-24T04:00:00+09:00"
+            },
+            {
+              "id": 101002,
+              "champion_id": 101,
+              "name": "战地法师 泽拉斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_2.jpg",
+              "skin_video_url": "https://youtu.be/2tHHmNjN-To",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 520
+                }
+              ],
+              "sales": null,
+              "release_date": "2011-10-06T14:00:00+09:00"
+            },
+            {
+              "id": 101005,
+              "champion_id": 101,
+              "name": "暗星 泽拉斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_5.jpg",
+              "skin_video_url": "https://youtu.be/LptoG7mqWSM",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2020-03-26T04:00:00+09:00"
+            },
+            {
+              "id": 101003,
+              "champion_id": 101,
+              "name": "枯萎之壤 泽拉斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_3.jpg",
+              "skin_video_url": "https://youtu.be/wRWnvPWzyXk",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2012-07-20T08:00:00+09:00"
+            },
+            {
+              "id": 101012,
+              "champion_id": 101,
+              "name": "欲望之主 泽拉斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_12.jpg",
+              "skin_video_url": "https://youtu.be/fFSwwdDk_7k",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2021-05-13T04:00:00+09:00"
+            },
+            {
+              "id": 101030,
+              "champion_id": 101,
+              "name": "水晶巫灵 泽拉斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_30.jpg",
+              "skin_video_url": null,
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 101004,
+              "champion_id": 101,
+              "name": "沙之守护 泽拉斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_4.jpg",
+              "skin_video_url": "https://youtu.be/AQvqbwQtK4M",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2015-04-27T10:00:00+09:00"
+            },
+            {
+              "id": 101001,
+              "champion_id": 101,
+              "name": "符文生物 泽拉斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_1.jpg",
+              "skin_video_url": "https://youtu.be/Zy9nSATyXbk",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 750
+                }
+              ],
+              "sales": null,
+              "release_date": "2011-10-06T15:00:00+09:00"
+            }
+          ]
+        }
+      },
+      {
         "champion_id": 90,
-        "play": 313,
-        "win": 168,
+        "play": 314,
+        "win": 169,
         "meta": {
           "id": 90,
           "key": "Malzahar",
@@ -8940,289 +9259,8 @@
         }
       },
       {
-        "champion_id": 101,
-        "play": 313,
-        "win": 144,
-        "meta": {
-          "id": 101,
-          "key": "Xerath",
-          "name": "远古巫灵",
-          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Xerath.png",
-          "evolve": [],
-          "partype": "法力",
-          "passive": {
-            "name": "法力澎湃",
-            "description": "泽拉斯的普通攻击会周期性地恢复法力值。每当泽拉斯击杀了一个单位时，这个冷却时间就会缩短。",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Xerath_Passive1.png",
-            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0101/ability_0101_P1.webm"
-          },
-          "spells": [
-            {
-              "key": "Q",
-              "name": "奥能脉冲",
-              "description": "泽拉斯聚集能量，随后发射出一道射程很远的能量光束，对所有命中的目标造成魔法伤害。",
-              "max_rank": 5,
-              "range_burn": [
-                750
-              ],
-              "cooldown_burn": [
-                9,
-                8,
-                7,
-                6,
-                5
-              ],
-              "cooldown_burn_float": [
-                9,
-                8,
-                7,
-                6,
-                5
-              ],
-              "cost_burn": [
-                80,
-                90,
-                100,
-                110,
-                120
-              ],
-              "tooltip": "<charge>开始蓄力：</charge>泽拉斯开始积蓄一次奥术光束，自身逐步<status>减速</status>，至多可达50%。<br /><br /><release>释放：</release>泽拉斯发射光束，造成<magicDamage>?魔法伤害</magicDamage>。距离随蓄力时间提升。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/XerathArcanopulseChargeUp.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0101/ability_0101_Q1.webm"
-            },
-            {
-              "key": "W",
-              "name": "毁灭之眼",
-              "description": "在目标区域降下奥术能量的弹幕，对一个区域内的所有敌人造成减速效果和魔法伤害。区域中心的目标会受到额外伤害和一个更强大的减速效果。",
-              "max_rank": 5,
-              "range_burn": [
-                1000
-              ],
-              "cooldown_burn": [
-                14,
-                13,
-                12,
-                11,
-                10
-              ],
-              "cooldown_burn_float": [
-                14,
-                13,
-                12,
-                11,
-                10
-              ],
-              "cost_burn": [
-                80,
-                90,
-                100,
-                110,
-                120
-              ],
-              "tooltip": "泽拉斯引爆目标区域的奥术能量，造成<magicDamage>?魔法伤害</magicDamage>并使敌人<status>减速</status>?%，持续?秒。区域中心的敌人会受到<magicDamage>?魔法伤害</magicDamage>，并被<status>减速</status>?%，减速效果会在?秒里持续衰减。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/XerathArcaneBarrage2.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0101/ability_0101_W1.webm"
-            },
-            {
-              "key": "E",
-              "name": "冲击法球",
-              "description": "对单个敌人造成魔法伤害和晕眩效果。",
-              "max_rank": 5,
-              "range_burn": [
-                1050
-              ],
-              "cooldown_burn": [
-                13,
-                12,
-                12,
-                11,
-                11
-              ],
-              "cooldown_burn_float": [
-                13,
-                12.5,
-                12,
-                11.5,
-                11
-              ],
-              "cost_burn": [
-                60,
-                65,
-                70,
-                75,
-                80
-              ],
-              "tooltip": "泽拉斯发射一颗原生魔法之球，基于飞行距离使命中第一个的敌人<status>晕眩</status>至多?秒，并造成<magicDamage>?魔法伤害</magicDamage>。 ?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/XerathMageSpear.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0101/ability_0101_E1.webm"
-            },
-            {
-              "key": "R",
-              "name": "奥术仪式",
-              "description": "泽拉斯将自己固定在一处魔力之源上，并获得数次远程施法的机会。",
-              "max_rank": 3,
-              "range_burn": [
-                5000
-              ],
-              "cooldown_burn": [
-                130,
-                115,
-                100
-              ],
-              "cooldown_burn_float": [
-                130,
-                115,
-                100
-              ],
-              "cost_burn": [
-                100
-              ],
-              "tooltip": "泽拉斯飞升至他的真正形态并引导10秒。在此期间，他可以<recast>再次施放</recast>此技能至多4/5/6次。<br /><br /><recast>再次施放：</recast>泽拉斯发射一道魔法炮击，造成<magicDamage>?魔法伤害</magicDamage>。每次命中英雄时，炮击都会造成额外的<magicDamage>?魔法伤害</magicDamage>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/XerathLocusOfPower2.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0101/ability_0101_R1.webm"
-            }
-          ],
-          "skins": [
-            {
-              "id": 101000,
-              "champion_id": 101,
-              "name": "default",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_0.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "IP",
-                  "cost": 1350
-                },
-                {
-                  "currency": "RP",
-                  "cost": 585
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 101021,
-              "champion_id": 101,
-              "name": "宇航员 泽拉斯",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_21.jpg",
-              "skin_video_url": "https://youtu.be/OjctXSqUTss",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2023-02-24T04:00:00+09:00"
-            },
-            {
-              "id": 101002,
-              "champion_id": 101,
-              "name": "战地法师 泽拉斯",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_2.jpg",
-              "skin_video_url": "https://youtu.be/2tHHmNjN-To",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 520
-                }
-              ],
-              "sales": null,
-              "release_date": "2011-10-06T14:00:00+09:00"
-            },
-            {
-              "id": 101005,
-              "champion_id": 101,
-              "name": "暗星 泽拉斯",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_5.jpg",
-              "skin_video_url": "https://youtu.be/LptoG7mqWSM",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2020-03-26T04:00:00+09:00"
-            },
-            {
-              "id": 101003,
-              "champion_id": 101,
-              "name": "枯萎之壤 泽拉斯",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_3.jpg",
-              "skin_video_url": "https://youtu.be/wRWnvPWzyXk",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2012-07-20T08:00:00+09:00"
-            },
-            {
-              "id": 101012,
-              "champion_id": 101,
-              "name": "欲望之主 泽拉斯",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_12.jpg",
-              "skin_video_url": "https://youtu.be/fFSwwdDk_7k",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2021-05-13T04:00:00+09:00"
-            },
-            {
-              "id": 101030,
-              "champion_id": 101,
-              "name": "水晶巫灵 泽拉斯",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_30.jpg",
-              "skin_video_url": null,
-              "prices": null,
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 101004,
-              "champion_id": 101,
-              "name": "沙之守护 泽拉斯",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_4.jpg",
-              "skin_video_url": "https://youtu.be/AQvqbwQtK4M",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2015-04-27T10:00:00+09:00"
-            },
-            {
-              "id": 101001,
-              "champion_id": 101,
-              "name": "符文生物 泽拉斯",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_1.jpg",
-              "skin_video_url": "https://youtu.be/Zy9nSATyXbk",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 750
-                }
-              ],
-              "sales": null,
-              "release_date": "2011-10-06T15:00:00+09:00"
-            }
-          ]
-        }
-      },
-      {
         "champion_id": 3,
-        "play": 302,
+        "play": 303,
         "win": 158,
         "meta": {
           "id": 3,
@@ -9759,8 +9797,8 @@
       },
       {
         "champion_id": 268,
-        "play": 288,
-        "win": 157,
+        "play": 290,
+        "win": 158,
         "meta": {
           "id": 268,
           "key": "Azir",
@@ -10359,8 +10397,8 @@
       },
       {
         "champion_id": 91,
-        "play": 262,
-        "win": 121,
+        "play": 264,
+        "win": 122,
         "meta": {
           "id": 91,
           "key": "Talon",
@@ -10669,8 +10707,8 @@
       },
       {
         "champion_id": 105,
-        "play": 257,
-        "win": 120,
+        "play": 262,
+        "win": 121,
         "meta": {
           "id": 105,
           "key": "Fizz",
@@ -11016,8 +11054,8 @@
       },
       {
         "champion_id": 42,
-        "play": 251,
-        "win": 150,
+        "play": 253,
+        "win": 151,
         "meta": {
           "id": 42,
           "key": "Corki",
@@ -11586,8 +11624,8 @@
       },
       {
         "champion_id": 136,
-        "play": 238,
-        "win": 114,
+        "play": 239,
+        "win": 115,
         "meta": {
           "id": 136,
           "key": "AurelionSol",
@@ -11799,8 +11837,8 @@
       },
       {
         "champion_id": 39,
-        "play": 233,
-        "win": 133,
+        "play": 234,
+        "win": 134,
         "meta": {
           "id": 39,
           "key": "Irelia",
@@ -12354,8 +12392,8 @@
       },
       {
         "champion_id": 246,
-        "play": 229,
-        "win": 113,
+        "play": 231,
+        "win": 114,
         "meta": {
           "id": 246,
           "key": "Qiyana",
@@ -13484,8 +13522,8 @@
       },
       {
         "champion_id": 236,
-        "play": 204,
-        "win": 123,
+        "play": 205,
+        "win": 124,
         "meta": {
           "id": 236,
           "key": "Lucian",
@@ -14332,7 +14370,7 @@
       },
       {
         "champion_id": 34,
-        "play": 186,
+        "play": 188,
         "win": 84,
         "meta": {
           "id": 34,
@@ -14971,7 +15009,7 @@
       },
       {
         "champion_id": 115,
-        "play": 149,
+        "play": 151,
         "win": 68,
         "meta": {
           "id": 115,
@@ -16766,7 +16804,7 @@
       },
       {
         "champion_id": 161,
-        "play": 120,
+        "play": 121,
         "win": 55,
         "meta": {
           "id": 161,
@@ -18438,265 +18476,8 @@
         }
       },
       {
-        "champion_id": 518,
-        "play": 69,
-        "win": 33,
-        "meta": {
-          "id": 518,
-          "key": "Neeko",
-          "name": "万花通灵",
-          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Neeko.png",
-          "evolve": [],
-          "partype": "法力",
-          "passive": {
-            "name": "天生幻魅",
-            "description": "妮蔻可以假扮成一名友方英雄。承受来自敌方英雄的伤害或是施放伤害型的技能都会打破这个假扮状态。",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Neeko_P.png",
-            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0518/ability_0518_P1.webm"
-          },
-          "spells": [
-            {
-              "key": "Q",
-              "name": "盛开花种",
-              "description": "妮蔻扔出一颗种子以造成伤害。种子在再次命中英雄或击杀单位时会盛开。",
-              "max_rank": 5,
-              "range_burn": [
-                800
-              ],
-              "cooldown_burn": [
-                9,
-                8,
-                8,
-                7,
-                7
-              ],
-              "cooldown_burn_float": [
-                9,
-                8.5,
-                8,
-                7.5,
-                7
-              ],
-              "cost_burn": [
-                50,
-                60,
-                70,
-                80,
-                90
-              ],
-              "tooltip": "妮蔻扔出一颗种子以造成<magicDamage>?魔法伤害</magicDamage>。如果种子击杀了一个单位或命中了一个英雄或大型野怪，那么它会再次盛开，造成<magicDamage>?魔法伤害</magicDamage>。最多可额外盛开2次。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NeekoQ.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0518/ability_0518_Q1.webm"
-            },
-            {
-              "key": "W",
-              "name": "两生花影",
-              "description": "被动效果：妮蔻每第三次攻击造成额外魔法伤害。主动效果：妮蔻能够朝一个方向投射出一个幻像。",
-              "max_rank": 5,
-              "range_burn": [
-                900
-              ],
-              "cooldown_burn": [
-                16,
-                15,
-                14,
-                13,
-                12
-              ],
-              "cooldown_burn_float": [
-                16,
-                15,
-                14,
-                13,
-                12
-              ],
-              "cost_burn": [
-                0
-              ],
-              "tooltip": "<passive>被动：</passive>每第三次攻击造成<magicDamage>?额外魔法伤害</magicDamage>并使妮蔻获得持续?秒的<speed>?%移动速度</speed>提升。<br /><br /><active>主动：</active>妮蔻<keywordStealth>隐形</keywordStealth>?秒并投射出一个持续?秒的复制体。妮蔻和复制体会获得持续?秒的<speed>?%移动速度</speed> 。<br /><br /><rules>可通过使用“移动宠物点击”热键或通过<recast>再次施放</recast>这个技能来控制复制体。<br />复制体会镜像模仿她的技能施放、表情和回城。</rules>?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NeekoW.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0518/ability_0518_W1.webm"
-            },
-            {
-              "key": "E",
-              "name": "缠结倒刺",
-              "description": "妮蔻投出一团倒刺，对它沿途的所有东西造成伤害和禁锢效果。如果倒刺击杀了一个敌人或穿过了一名英雄，就会变得更大、更快并且禁锢时间更长。",
-              "max_rank": 5,
-              "range_burn": [
-                1000
-              ],
-              "cooldown_burn": [
-                12,
-                11,
-                11,
-                10,
-                10
-              ],
-              "cooldown_burn_float": [
-                12,
-                11.5,
-                11,
-                10.5,
-                10
-              ],
-              "cost_burn": [
-                60,
-                65,
-                70,
-                75,
-                80
-              ],
-              "tooltip": "妮蔻掷出一团倒刺，造成<magicDamage>?魔法伤害</magicDamage>和?秒的<status>禁锢</status>效果。<br /><br />倒刺会在命中一名敌方英雄后强化，长得更大、动得更快、并且<status>禁锢</status>时长变为?秒。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NeekoE.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0518/ability_0518_E1.webm"
-            },
-            {
-              "key": "R",
-              "name": "怒放",
-              "description": "在短暂的准备阶段后，妮蔻会跃入空中。在着陆时，附近的敌人会受到伤害并被击飞。如果妮蔻处于假扮状态时，那么准备阶段不会被敌人看见。",
-              "max_rank": 3,
-              "range_burn": [
-                600
-              ],
-              "cooldown_burn": [
-                120,
-                105,
-                90
-              ],
-              "cooldown_burn_float": [
-                120,
-                105,
-                90
-              ],
-              "cost_burn": [
-                100
-              ],
-              "tooltip": "在短暂延迟后，妮蔻会跃入空中，对所有附近的敌人造成?秒<status>击飞</status>。然后她会猛然着陆，对附近的所有敌人造成<magicDamage>?魔法伤害</magicDamage>和?秒<status>晕眩</status>效果。<br /><br /><rules>如果妮蔻处于假扮状态时，那么这个技能的准备阶段不会被敌人看见。妮蔻会在施放这个技能的?秒后打破她的假扮状态。</rules>?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NeekoR.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0518/ability_0518_R1.webm"
-            }
-          ],
-          "skins": [
-            {
-              "id": 518000,
-              "champion_id": 518,
-              "name": "default",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Neeko_0.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "IP",
-                  "cost": 4800
-                },
-                {
-                  "currency": "RP",
-                  "cost": 880
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 518001,
-              "champion_id": 518,
-              "name": "冬境仙灵 妮蔻",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Neeko_1.jpg",
-              "skin_video_url": "https://youtu.be/EPNXwn1pmTQ",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 518031,
-              "champion_id": 518,
-              "name": "妖怪艺术家 妮蔻",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Neeko_31.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2023-09-13T11:00:00+09:00"
-            },
-            {
-              "id": 518012,
-              "champion_id": 518,
-              "name": "山海绘卷 妮蔻",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Neeko_12.jpg",
-              "skin_video_url": "https://youtu.be/4FGjj7FJggw",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2021-01-28T04:00:00+09:00"
-            },
-            {
-              "id": 518010,
-              "champion_id": 518,
-              "name": "星之守护者 妮蔻",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Neeko_10.jpg",
-              "skin_video_url": "https://youtu.be/0lktJmr5NZk",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2019-09-12T04:00:00+09:00"
-            },
-            {
-              "id": 518011,
-              "champion_id": 518,
-              "name": "至臻 星之守护者 妮蔻",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Neeko_11.jpg",
-              "skin_video_url": "https://youtu.be/8d-nqgbkwDw",
-              "prices": null,
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 518021,
-              "champion_id": 518,
-              "name": "至臻 星之守护者 妮蔻 (2022)",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Neeko_21.jpg",
-              "skin_video_url": "https://youtu.be/r8rJhsFkyaA",
-              "prices": null,
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 518022,
-              "champion_id": 518,
-              "name": "魅惑女巫 妮蔻",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Neeko_22.jpg",
-              "skin_video_url": "https://youtu.be/ncuhC2xwops",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            }
-          ]
-        }
-      },
-      {
         "champion_id": 75,
-        "play": 68,
+        "play": 69,
         "win": 38,
         "meta": {
           "id": 75,
@@ -19028,8 +18809,265 @@
         }
       },
       {
+        "champion_id": 518,
+        "play": 69,
+        "win": 33,
+        "meta": {
+          "id": 518,
+          "key": "Neeko",
+          "name": "万花通灵",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Neeko.png",
+          "evolve": [],
+          "partype": "法力",
+          "passive": {
+            "name": "天生幻魅",
+            "description": "妮蔻可以假扮成一名友方英雄。承受来自敌方英雄的伤害或是施放伤害型的技能都会打破这个假扮状态。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Neeko_P.png",
+            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0518/ability_0518_P1.webm"
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "盛开花种",
+              "description": "妮蔻扔出一颗种子以造成伤害。种子在再次命中英雄或击杀单位时会盛开。",
+              "max_rank": 5,
+              "range_burn": [
+                800
+              ],
+              "cooldown_burn": [
+                9,
+                8,
+                8,
+                7,
+                7
+              ],
+              "cooldown_burn_float": [
+                9,
+                8.5,
+                8,
+                7.5,
+                7
+              ],
+              "cost_burn": [
+                50,
+                60,
+                70,
+                80,
+                90
+              ],
+              "tooltip": "妮蔻扔出一颗种子以造成<magicDamage>?魔法伤害</magicDamage>。如果种子击杀了一个单位或命中了一个英雄或大型野怪，那么它会再次盛开，造成<magicDamage>?魔法伤害</magicDamage>。最多可额外盛开2次。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NeekoQ.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0518/ability_0518_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "两生花影",
+              "description": "被动效果：妮蔻每第三次攻击造成额外魔法伤害。主动效果：妮蔻能够朝一个方向投射出一个幻像。",
+              "max_rank": 5,
+              "range_burn": [
+                900
+              ],
+              "cooldown_burn": [
+                16,
+                15,
+                14,
+                13,
+                12
+              ],
+              "cooldown_burn_float": [
+                16,
+                15,
+                14,
+                13,
+                12
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "<passive>被动：</passive>每第三次攻击造成<magicDamage>?额外魔法伤害</magicDamage>并使妮蔻获得持续?秒的<speed>?%移动速度</speed>提升。<br /><br /><active>主动：</active>妮蔻<keywordStealth>隐形</keywordStealth>?秒并投射出一个持续?秒的复制体。妮蔻和复制体会获得持续?秒的<speed>?%移动速度</speed> 。<br /><br /><rules>可通过使用“移动宠物点击”热键或通过<recast>再次施放</recast>这个技能来控制复制体。<br />复制体会镜像模仿她的技能施放、表情和回城。</rules>?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NeekoW.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0518/ability_0518_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "缠结倒刺",
+              "description": "妮蔻投出一团倒刺，对它沿途的所有东西造成伤害和禁锢效果。如果倒刺击杀了一个敌人或穿过了一名英雄，就会变得更大、更快并且禁锢时间更长。",
+              "max_rank": 5,
+              "range_burn": [
+                1000
+              ],
+              "cooldown_burn": [
+                12,
+                11,
+                11,
+                10,
+                10
+              ],
+              "cooldown_burn_float": [
+                12,
+                11.5,
+                11,
+                10.5,
+                10
+              ],
+              "cost_burn": [
+                60,
+                65,
+                70,
+                75,
+                80
+              ],
+              "tooltip": "妮蔻掷出一团倒刺，造成<magicDamage>?魔法伤害</magicDamage>和?秒的<status>禁锢</status>效果。<br /><br />倒刺会在命中一名敌方英雄后强化，长得更大、动得更快、并且<status>禁锢</status>时长变为?秒。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NeekoE.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0518/ability_0518_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "怒放",
+              "description": "在短暂的准备阶段后，妮蔻会跃入空中。在着陆时，附近的敌人会受到伤害并被击飞。如果妮蔻处于假扮状态时，那么准备阶段不会被敌人看见。",
+              "max_rank": 3,
+              "range_burn": [
+                600
+              ],
+              "cooldown_burn": [
+                120,
+                105,
+                90
+              ],
+              "cooldown_burn_float": [
+                120,
+                105,
+                90
+              ],
+              "cost_burn": [
+                100
+              ],
+              "tooltip": "在短暂延迟后，妮蔻会跃入空中，对所有附近的敌人造成?秒<status>击飞</status>。然后她会猛然着陆，对附近的所有敌人造成<magicDamage>?魔法伤害</magicDamage>和?秒<status>晕眩</status>效果。<br /><br /><rules>如果妮蔻处于假扮状态时，那么这个技能的准备阶段不会被敌人看见。妮蔻会在施放这个技能的?秒后打破她的假扮状态。</rules>?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NeekoR.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0518/ability_0518_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 518000,
+              "champion_id": 518,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Neeko_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 4800
+                },
+                {
+                  "currency": "RP",
+                  "cost": 880
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 518001,
+              "champion_id": 518,
+              "name": "冬境仙灵 妮蔻",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Neeko_1.jpg",
+              "skin_video_url": "https://youtu.be/EPNXwn1pmTQ",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 518031,
+              "champion_id": 518,
+              "name": "妖怪艺术家 妮蔻",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Neeko_31.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2023-09-13T11:00:00+09:00"
+            },
+            {
+              "id": 518012,
+              "champion_id": 518,
+              "name": "山海绘卷 妮蔻",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Neeko_12.jpg",
+              "skin_video_url": "https://youtu.be/4FGjj7FJggw",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2021-01-28T04:00:00+09:00"
+            },
+            {
+              "id": 518010,
+              "champion_id": 518,
+              "name": "星之守护者 妮蔻",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Neeko_10.jpg",
+              "skin_video_url": "https://youtu.be/0lktJmr5NZk",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2019-09-12T04:00:00+09:00"
+            },
+            {
+              "id": 518011,
+              "champion_id": 518,
+              "name": "至臻 星之守护者 妮蔻",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Neeko_11.jpg",
+              "skin_video_url": "https://youtu.be/8d-nqgbkwDw",
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 518021,
+              "champion_id": 518,
+              "name": "至臻 星之守护者 妮蔻 (2022)",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Neeko_21.jpg",
+              "skin_video_url": "https://youtu.be/r8rJhsFkyaA",
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 518022,
+              "champion_id": 518,
+              "name": "魅惑女巫 妮蔻",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Neeko_22.jpg",
+              "skin_video_url": "https://youtu.be/ncuhC2xwops",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            }
+          ]
+        }
+      },
+      {
         "champion_id": 133,
-        "play": 66,
+        "play": 67,
         "win": 34,
         "meta": {
           "id": 133,
@@ -19646,8 +19684,8 @@
       },
       {
         "champion_id": 79,
-        "play": 61,
-        "win": 40,
+        "play": 62,
+        "win": 41,
         "meta": {
           "id": 79,
           "key": "Gragas",
@@ -35688,26 +35726,26 @@
         4,
         12
       ],
-      "win": 6521,
-      "play": 12473,
-      "pick_rate": 0.5769
+      "win": 6548,
+      "play": 12529,
+      "pick_rate": 0.577
     },
     {
       "ids": [
         4,
         14
       ],
-      "win": 4339,
-      "play": 8417,
-      "pick_rate": 0.3893
+      "win": 4355,
+      "play": 8451,
+      "pick_rate": 0.3892
     },
     {
       "ids": [
         4,
         6
       ],
-      "win": 197,
-      "play": 383,
+      "win": 198,
+      "play": 385,
       "pick_rate": 0.0177
     },
     {
@@ -35715,9 +35753,9 @@
         4,
         21
       ],
-      "win": 109,
-      "play": 229,
-      "pick_rate": 0.0106
+      "win": 111,
+      "play": 232,
+      "pick_rate": 0.0107
     },
     {
       "ids": [
@@ -35916,9 +35954,9 @@
         "E",
         "E"
       ],
-      "play": 5215,
-      "win": 3304,
-      "pick_rate": 0.4132
+      "play": 5238,
+      "win": 3316,
+      "pick_rate": 0.4131
     },
     {
       "order": [
@@ -35938,9 +35976,9 @@
         "E",
         "E"
       ],
-      "play": 2226,
-      "win": 1434,
-      "pick_rate": 0.1764
+      "play": 2239,
+      "win": 1440,
+      "pick_rate": 0.1766
     },
     {
       "order": [
@@ -35960,9 +35998,9 @@
         "E",
         "E"
       ],
-      "play": 521,
+      "play": 522,
       "win": 347,
-      "pick_rate": 0.0413
+      "pick_rate": 0.0412
     },
     {
       "order": [
@@ -35982,7 +36020,7 @@
         "E",
         "E"
       ],
-      "play": 346,
+      "play": 348,
       "win": 215,
       "pick_rate": 0.0274
     },
@@ -36004,9 +36042,9 @@
         "E",
         "E"
       ],
-      "play": 258,
-      "win": 180,
-      "pick_rate": 0.0204
+      "play": 260,
+      "win": 181,
+      "pick_rate": 0.0205
     }
   ],
   "skill_masteries": [
@@ -36016,9 +36054,9 @@
         "W",
         "E"
       ],
-      "play": 10390,
-      "win": 6559,
-      "pick_rate": 0.8233,
+      "play": 10437,
+      "win": 6583,
+      "pick_rate": 0.8232,
       "builds": [
         {
           "order": [
@@ -36038,8 +36076,8 @@
             "E",
             "E"
           ],
-          "play": 5215,
-          "win": 3304,
+          "play": 5238,
+          "win": 3316,
           "pick_rate": 0.5019
         },
         {
@@ -36060,9 +36098,9 @@
             "E",
             "E"
           ],
-          "play": 2226,
-          "win": 1434,
-          "pick_rate": 0.2142
+          "play": 2239,
+          "win": 1440,
+          "pick_rate": 0.2145
         },
         {
           "order": [
@@ -36082,9 +36120,9 @@
             "E",
             "E"
           ],
-          "play": 521,
+          "play": 522,
           "win": 347,
-          "pick_rate": 0.0501
+          "pick_rate": 0.05
         },
         {
           "order": [
@@ -36104,7 +36142,7 @@
             "E",
             "E"
           ],
-          "play": 346,
+          "play": 348,
           "win": 215,
           "pick_rate": 0.0333
         },
@@ -36126,8 +36164,8 @@
             "E",
             "E"
           ],
-          "play": 168,
-          "win": 103,
+          "play": 169,
+          "win": 104,
           "pick_rate": 0.0162
         }
       ]
@@ -36138,9 +36176,9 @@
         "Q",
         "E"
       ],
-      "play": 1826,
-      "win": 1200,
-      "pick_rate": 0.1447,
+      "play": 1837,
+      "win": 1208,
+      "pick_rate": 0.1449,
       "builds": [
         {
           "order": [
@@ -36160,9 +36198,9 @@
             "E",
             "E"
           ],
-          "play": 258,
-          "win": 180,
-          "pick_rate": 0.1413
+          "play": 260,
+          "win": 181,
+          "pick_rate": 0.1415
         },
         {
           "order": [
@@ -36182,9 +36220,9 @@
             "E",
             "E"
           ],
-          "play": 189,
-          "win": 138,
-          "pick_rate": 0.1035
+          "play": 191,
+          "win": 140,
+          "pick_rate": 0.104
         },
         {
           "order": [
@@ -36204,9 +36242,9 @@
             "E",
             "E"
           ],
-          "play": 174,
-          "win": 116,
-          "pick_rate": 0.0953
+          "play": 176,
+          "win": 118,
+          "pick_rate": 0.0958
         },
         {
           "order": [
@@ -36228,7 +36266,7 @@
           ],
           "play": 141,
           "win": 86,
-          "pick_rate": 0.0772
+          "pick_rate": 0.0768
         },
         {
           "order": [
@@ -36250,7 +36288,7 @@
           ],
           "play": 127,
           "win": 77,
-          "pick_rate": 0.0696
+          "pick_rate": 0.0691
         }
       ]
     },
@@ -36262,7 +36300,7 @@
       ],
       "play": 339,
       "win": 225,
-      "pick_rate": 0.0269,
+      "pick_rate": 0.0267,
       "builds": [
         {
           "order": [
@@ -36382,9 +36420,9 @@
         "E",
         "Q"
       ],
-      "play": 48,
-      "win": 31,
-      "pick_rate": 0.0038,
+      "play": 49,
+      "win": 32,
+      "pick_rate": 0.0039,
       "builds": [
         {
           "order": [
@@ -36406,7 +36444,7 @@
           ],
           "play": 8,
           "win": 5,
-          "pick_rate": 0.1667
+          "pick_rate": 0.1633
         },
         {
           "order": [
@@ -36428,7 +36466,7 @@
           ],
           "play": 6,
           "win": 4,
-          "pick_rate": 0.125
+          "pick_rate": 0.1224
         },
         {
           "order": [
@@ -36448,9 +36486,9 @@
             "E",
             "Q"
           ],
-          "play": 4,
-          "win": 3,
-          "pick_rate": 0.0833
+          "play": 5,
+          "win": 4,
+          "pick_rate": 0.102
         },
         {
           "order": [
@@ -36472,7 +36510,7 @@
           ],
           "play": 3,
           "win": 1,
-          "pick_rate": 0.0625
+          "pick_rate": 0.0612
         },
         {
           "order": [
@@ -36494,7 +36532,7 @@
           ],
           "play": 2,
           "win": 2,
-          "pick_rate": 0.0417
+          "pick_rate": 0.0408
         }
       ]
     },
@@ -36642,9 +36680,9 @@
         5008,
         5001
       ],
-      "play": 7457,
-      "win": 3740,
-      "pick_rate": 0.3416
+      "play": 7493,
+      "win": 3756,
+      "pick_rate": 0.3418
     },
     {
       "id": 8112,
@@ -36665,8 +36703,8 @@
         5008,
         5001
       ],
-      "play": 1443,
-      "win": 706,
+      "play": 1448,
+      "win": 707,
       "pick_rate": 0.0661
     },
     {
@@ -36688,9 +36726,9 @@
         5008,
         5001
       ],
-      "play": 1163,
-      "win": 582,
-      "pick_rate": 0.0533
+      "play": 1166,
+      "win": 583,
+      "pick_rate": 0.0532
     },
     {
       "id": 8112,
@@ -36711,7 +36749,7 @@
         5008,
         5001
       ],
-      "play": 467,
+      "play": 469,
       "win": 241,
       "pick_rate": 0.0214
     },
@@ -36744,9 +36782,9 @@
       "id": 8112,
       "primary_page_id": 8100,
       "secondary_page_id": 8200,
-      "play": 12999,
-      "win": 6697,
-      "pick_rate": 0.5955,
+      "play": 13059,
+      "win": 6727,
+      "pick_rate": 0.5957,
       "builds": [
         {
           "id": 8112,
@@ -36767,9 +36805,9 @@
             5008,
             5001
           ],
-          "play": 7457,
-          "win": 3740,
-          "pick_rate": 0.5737
+          "play": 7493,
+          "win": 3756,
+          "pick_rate": 0.5738
         },
         {
           "id": 8112,
@@ -36790,7 +36828,7 @@
             5008,
             5001
           ],
-          "play": 467,
+          "play": 469,
           "win": 241,
           "pick_rate": 0.0359
         },
@@ -36815,7 +36853,7 @@
           ],
           "play": 280,
           "win": 153,
-          "pick_rate": 0.0215
+          "pick_rate": 0.0214
         },
         {
           "id": 8112,
@@ -36838,7 +36876,7 @@
           ],
           "play": 259,
           "win": 143,
-          "pick_rate": 0.0199
+          "pick_rate": 0.0198
         },
         {
           "id": 8112,
@@ -36859,8 +36897,8 @@
             5008,
             5001
           ],
-          "play": 229,
-          "win": 126,
+          "play": 230,
+          "win": 127,
           "pick_rate": 0.0176
         }
       ]
@@ -36869,9 +36907,9 @@
       "id": 8112,
       "primary_page_id": 8100,
       "secondary_page_id": 8300,
-      "play": 2369,
-      "win": 1206,
-      "pick_rate": 0.1085,
+      "play": 2382,
+      "win": 1210,
+      "pick_rate": 0.1087,
       "builds": [
         {
           "id": 8112,
@@ -36892,9 +36930,9 @@
             5008,
             5001
           ],
-          "play": 1443,
-          "win": 706,
-          "pick_rate": 0.6091
+          "play": 1448,
+          "win": 707,
+          "pick_rate": 0.6079
         },
         {
           "id": 8112,
@@ -36917,7 +36955,7 @@
           ],
           "play": 140,
           "win": 79,
-          "pick_rate": 0.0591
+          "pick_rate": 0.0588
         },
         {
           "id": 8112,
@@ -36940,7 +36978,7 @@
           ],
           "play": 48,
           "win": 20,
-          "pick_rate": 0.0203
+          "pick_rate": 0.0202
         },
         {
           "id": 8112,
@@ -36963,7 +37001,7 @@
           ],
           "play": 44,
           "win": 28,
-          "pick_rate": 0.0186
+          "pick_rate": 0.0185
         },
         {
           "id": 8112,
@@ -36994,9 +37032,9 @@
       "id": 8369,
       "primary_page_id": 8300,
       "secondary_page_id": 8200,
-      "play": 2317,
-      "win": 1216,
-      "pick_rate": 0.1062,
+      "play": 2326,
+      "win": 1221,
+      "pick_rate": 0.1061,
       "builds": [
         {
           "id": 8369,
@@ -37017,9 +37055,9 @@
             5008,
             5001
           ],
-          "play": 1163,
-          "win": 582,
-          "pick_rate": 0.5019
+          "play": 1166,
+          "win": 583,
+          "pick_rate": 0.5013
         },
         {
           "id": 8369,
@@ -37042,7 +37080,7 @@
           ],
           "play": 80,
           "win": 54,
-          "pick_rate": 0.0345
+          "pick_rate": 0.0344
         },
         {
           "id": 8369,
@@ -37065,7 +37103,7 @@
           ],
           "play": 78,
           "win": 40,
-          "pick_rate": 0.0337
+          "pick_rate": 0.0335
         },
         {
           "id": 8369,
@@ -37088,7 +37126,7 @@
           ],
           "play": 74,
           "win": 38,
-          "pick_rate": 0.0319
+          "pick_rate": 0.0318
         },
         {
           "id": 8369,
@@ -37111,7 +37149,7 @@
           ],
           "play": 60,
           "win": 31,
-          "pick_rate": 0.0259
+          "pick_rate": 0.0258
         }
       ]
     },
@@ -37119,8 +37157,8 @@
       "id": 8229,
       "primary_page_id": 8200,
       "secondary_page_id": 8100,
-      "play": 693,
-      "win": 367,
+      "play": 696,
+      "win": 370,
       "pick_rate": 0.0317,
       "builds": [
         {
@@ -37144,7 +37182,7 @@
           ],
           "play": 60,
           "win": 37,
-          "pick_rate": 0.0866
+          "pick_rate": 0.0862
         },
         {
           "id": 8229,
@@ -37165,9 +37203,9 @@
             5008,
             5011
           ],
-          "play": 52,
-          "win": 30,
-          "pick_rate": 0.075
+          "play": 53,
+          "win": 31,
+          "pick_rate": 0.0761
         },
         {
           "id": 8229,
@@ -37190,7 +37228,7 @@
           ],
           "play": 48,
           "win": 27,
-          "pick_rate": 0.0693
+          "pick_rate": 0.069
         },
         {
           "id": 8229,
@@ -37213,7 +37251,7 @@
           ],
           "play": 27,
           "win": 15,
-          "pick_rate": 0.039
+          "pick_rate": 0.0388
         },
         {
           "id": 8229,
@@ -37236,7 +37274,7 @@
           ],
           "play": 22,
           "win": 9,
-          "pick_rate": 0.0317
+          "pick_rate": 0.0316
         }
       ]
     },
@@ -37246,7 +37284,7 @@
       "secondary_page_id": 8300,
       "play": 646,
       "win": 345,
-      "pick_rate": 0.0296,
+      "pick_rate": 0.0295,
       "builds": [
         {
           "id": 8229,
@@ -37373,9 +37411,9 @@
         6653,
         3116
       ],
-      "play": 2133,
-      "win": 1307,
-      "pick_rate": 0.1929
+      "play": 2145,
+      "win": 1314,
+      "pick_rate": 0.1931
     },
     {
       "ids": [
@@ -37383,8 +37421,8 @@
         6653,
         3157
       ],
-      "play": 736,
-      "win": 458,
+      "play": 740,
+      "win": 460,
       "pick_rate": 0.0666
     },
     {
@@ -37393,9 +37431,9 @@
         6653,
         4645
       ],
-      "play": 555,
+      "play": 557,
       "win": 327,
-      "pick_rate": 0.0502
+      "pick_rate": 0.0501
     },
     {
       "ids": [
@@ -37403,9 +37441,9 @@
         4645,
         3089
       ],
-      "play": 357,
-      "win": 230,
-      "pick_rate": 0.0323
+      "play": 358,
+      "win": 231,
+      "pick_rate": 0.0322
     },
     {
       "ids": [
@@ -37413,19 +37451,9 @@
         4646,
         4645
       ],
-      "play": 326,
-      "win": 194,
-      "pick_rate": 0.0295
-    },
-    {
-      "ids": [
-        3118,
-        6653,
-        3089
-      ],
-      "play": 312,
+      "play": 327,
       "win": 195,
-      "pick_rate": 0.0282
+      "pick_rate": 0.0294
     },
     {
       "ids": [
@@ -37433,9 +37461,19 @@
         3116,
         6653
       ],
-      "play": 311,
-      "win": 194,
-      "pick_rate": 0.0281
+      "play": 313,
+      "win": 196,
+      "pick_rate": 0.0282
+    },
+    {
+      "ids": [
+        3118,
+        6653,
+        3089
+      ],
+      "play": 313,
+      "win": 196,
+      "pick_rate": 0.0282
     },
     {
       "ids": [
@@ -37443,7 +37481,7 @@
         4646,
         3089
       ],
-      "play": 263,
+      "play": 264,
       "win": 177,
       "pick_rate": 0.0238
     },
@@ -37453,9 +37491,9 @@
         4646,
         3157
       ],
-      "play": 256,
-      "win": 159,
-      "pick_rate": 0.0232
+      "play": 257,
+      "win": 160,
+      "pick_rate": 0.0231
     },
     {
       "ids": [
@@ -37465,7 +37503,7 @@
       ],
       "play": 235,
       "win": 144,
-      "pick_rate": 0.0213
+      "pick_rate": 0.0212
     },
     {
       "ids": [
@@ -37474,8 +37512,8 @@
         6653,
         3116
       ],
-      "play": 167,
-      "win": 114,
+      "play": 168,
+      "win": 115,
       "pick_rate": 0.0151
     },
     {
@@ -37494,9 +37532,9 @@
         6653,
         3137
       ],
-      "play": 125,
-      "win": 71,
-      "pick_rate": 0.0113
+      "play": 127,
+      "win": 72,
+      "pick_rate": 0.0114
     },
     {
       "ids": [
@@ -37504,9 +37542,9 @@
         6653,
         3135
       ],
-      "play": 114,
+      "play": 116,
       "win": 65,
-      "pick_rate": 0.0103
+      "pick_rate": 0.0104
     },
     {
       "ids": [
@@ -37524,24 +37562,24 @@
       "ids": [
         3020
       ],
-      "play": 18208,
-      "win": 9755,
+      "play": 18288,
+      "win": 9793,
       "pick_rate": 0.8702
     },
     {
       "ids": [
         3158
       ],
-      "play": 1792,
-      "win": 925,
-      "pick_rate": 0.0856
+      "play": 1803,
+      "win": 932,
+      "pick_rate": 0.0858
     },
     {
       "ids": [
         3111
       ],
-      "play": 574,
-      "win": 305,
+      "play": 575,
+      "win": 306,
       "pick_rate": 0.0274
     },
     {
@@ -37558,7 +37596,7 @@
       ],
       "play": 127,
       "win": 68,
-      "pick_rate": 0.0061
+      "pick_rate": 0.006
     }
   ],
   "starter_items": [
@@ -37568,18 +37606,18 @@
         2003,
         2003
       ],
-      "play": 20085,
-      "win": 10366,
-      "pick_rate": 0.9118
+      "play": 20174,
+      "win": 10408,
+      "pick_rate": 0.9119
     },
     {
       "ids": [
         1082,
         2031
       ],
-      "play": 543,
-      "win": 300,
-      "pick_rate": 0.0247
+      "play": 545,
+      "win": 302,
+      "pick_rate": 0.0246
     },
     {
       "ids": [
@@ -37587,8 +37625,8 @@
         2003,
         3070
       ],
-      "play": 450,
-      "win": 237,
+      "play": 451,
+      "win": 238,
       "pick_rate": 0.0204
     },
     {
@@ -37598,8 +37636,8 @@
         2003,
         2003
       ],
-      "play": 203,
-      "win": 131,
+      "play": 204,
+      "win": 132,
       "pick_rate": 0.0092
     },
     {
@@ -37608,9 +37646,9 @@
         2003,
         2003
       ],
-      "play": 89,
+      "play": 91,
       "win": 47,
-      "pick_rate": 0.004
+      "pick_rate": 0.0041
     },
     {
       "ids": [
@@ -37719,136 +37757,136 @@
       "ids": [
         3118
       ],
-      "play": 19091,
-      "win": 10098,
+      "play": 19163,
+      "win": 10136,
       "pick_rate": 0.3179
     },
     {
       "ids": [
         6653
       ],
-      "play": 9553,
-      "win": 5423,
+      "play": 9592,
+      "win": 5443,
       "pick_rate": 0.1591
     },
     {
       "ids": [
         3116
       ],
-      "play": 4358,
-      "win": 2627,
+      "play": 4374,
+      "win": 2637,
       "pick_rate": 0.0726
     },
     {
       "ids": [
         4645
       ],
-      "play": 4189,
-      "win": 2420,
-      "pick_rate": 0.0698
+      "play": 4201,
+      "win": 2426,
+      "pick_rate": 0.0697
     },
     {
       "ids": [
         3157
       ],
-      "play": 3560,
-      "win": 2153,
-      "pick_rate": 0.0593
+      "play": 3579,
+      "win": 2163,
+      "pick_rate": 0.0594
     },
     {
       "ids": [
         3089
       ],
-      "play": 3066,
-      "win": 1984,
+      "play": 3079,
+      "win": 1990,
       "pick_rate": 0.0511
     },
     {
       "ids": [
         4646
       ],
-      "play": 2995,
-      "win": 1747,
+      "play": 3010,
+      "win": 1758,
       "pick_rate": 0.0499
     },
     {
       "ids": [
         1082
       ],
-      "play": 2958,
-      "win": 1613,
-      "pick_rate": 0.0493
+      "play": 2968,
+      "win": 1618,
+      "pick_rate": 0.0492
     },
     {
       "ids": [
         6655
       ],
-      "play": 2249,
-      "win": 1156,
-      "pick_rate": 0.0375
+      "play": 2257,
+      "win": 1157,
+      "pick_rate": 0.0374
     },
     {
       "ids": [
         3135
       ],
-      "play": 1184,
-      "win": 700,
-      "pick_rate": 0.0197
+      "play": 1193,
+      "win": 704,
+      "pick_rate": 0.0198
     },
     {
       "ids": [
         3916
       ],
-      "play": 910,
-      "win": 387,
-      "pick_rate": 0.0152
+      "play": 911,
+      "win": 388,
+      "pick_rate": 0.0151
     },
     {
       "ids": [
         3137
       ],
-      "play": 895,
-      "win": 567,
+      "play": 900,
+      "win": 569,
       "pick_rate": 0.0149
-    },
-    {
-      "ids": [
-        2420
-      ],
-      "play": 678,
-      "win": 376,
-      "pick_rate": 0.0113
     },
     {
       "ids": [
         3165
       ],
-      "play": 680,
-      "win": 396,
+      "play": 687,
+      "win": 401,
+      "pick_rate": 0.0114
+    },
+    {
+      "ids": [
+        2420
+      ],
+      "play": 682,
+      "win": 378,
       "pick_rate": 0.0113
     },
     {
       "ids": [
         3041
       ],
-      "play": 677,
-      "win": 563,
+      "play": 679,
+      "win": 565,
       "pick_rate": 0.0113
     },
     {
       "ids": [
         2503
       ],
-      "play": 647,
-      "win": 368,
-      "pick_rate": 0.0108
+      "play": 648,
+      "win": 369,
+      "pick_rate": 0.0107
     },
     {
       "ids": [
         3040
       ],
-      "play": 585,
-      "win": 327,
+      "play": 586,
+      "win": 328,
       "pick_rate": 0.0097
     },
     {
@@ -37857,23 +37895,15 @@
       ],
       "play": 484,
       "win": 283,
-      "pick_rate": 0.0081
+      "pick_rate": 0.008
     },
     {
       "ids": [
         3152
       ],
-      "play": 352,
-      "win": 198,
+      "play": 354,
+      "win": 200,
       "pick_rate": 0.0059
-    },
-    {
-      "ids": [
-        3070
-      ],
-      "play": 220,
-      "win": 86,
-      "pick_rate": 0.0037
     },
     {
       "ids": [
@@ -37882,6 +37912,14 @@
       "play": 222,
       "win": 100,
       "pick_rate": 0.0037
+    },
+    {
+      "ids": [
+        3070
+      ],
+      "play": 220,
+      "win": 86,
+      "pick_rate": 0.0036
     },
     {
       "ids": [
