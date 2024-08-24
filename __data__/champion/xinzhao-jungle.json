@@ -327,37 +327,37 @@
             {
               "name": "FIGHTER",
               "stats": {
-                "win_rate": 0.512092,
-                "role_rate": 0.973376,
-                "play": 53012,
-                "win": 27147
+                "win_rate": 0.511941,
+                "role_rate": 0.969981,
+                "play": 53219,
+                "win": 27245
               }
             },
             {
               "name": "TANK",
               "stats": {
-                "win_rate": 0.439199,
-                "role_rate": 0.0128346,
-                "play": 699,
-                "win": 307
+                "win_rate": 0.439372,
+                "role_rate": 0.0127766,
+                "play": 701,
+                "win": 308
               }
             }
           ],
           "counters": [
             {
               "champion_id": 887,
-              "play": 314,
-              "win": 142
+              "play": 315,
+              "win": 143
+            },
+            {
+              "champion_id": 106,
+              "play": 635,
+              "win": 297
             },
             {
               "champion_id": 25,
               "play": 218,
               "win": 102
-            },
-            {
-              "champion_id": 106,
-              "play": 628,
-              "win": 294
             }
           ]
         }
@@ -368,8 +368,8 @@
       [
         {
           "champion_id": 887,
-          "play": 314,
-          "win": 142,
+          "play": 315,
+          "win": 143,
           "meta": {
             "id": 887,
             "key": "Gwen",
@@ -564,7 +564,275 @@
               }
             ]
           },
-          "win_rate": 45.22
+          "win_rate": 45.4
+        },
+        {
+          "champion_id": 106,
+          "play": 635,
+          "win": 297,
+          "meta": {
+            "id": 106,
+            "key": "Volibear",
+            "name": "不灭狂雷",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Volibear.png",
+            "evolve": [],
+            "partype": "法力",
+            "passive": {
+              "name": "狂雷渐起",
+              "description": "沃利贝尔的攻击和技能会提供攻击速度，并且最终使他的攻击对附近的敌人们造成额外魔法伤害。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Volibear_Icon_P.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0106/ability_0106_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "擂首一击",
+                "description": "沃利贝尔在朝着敌人时会获得移动速度，并且会对他攻击的第一个敌人造成<status>晕眩</status>和伤害。",
+                "max_rank": 5,
+                "range_burn": [
+                  300
+                ],
+                "cooldown_burn": [
+                  14,
+                  13,
+                  12,
+                  11,
+                  10
+                ],
+                "cooldown_burn_float": [
+                  14,
+                  13,
+                  12,
+                  11,
+                  10
+                ],
+                "cost_burn": [
+                  50
+                ],
+                "tooltip": "沃利贝尔获得<speed>?移动速度</speed>，在朝着敌方英雄时翻倍至<speed>?</speed>，持续?秒。在激活时，沃利贝尔的下次攻击会造成<physicalDamage>?物理伤害</physicalDamage>并使目标<status>晕眩</status>?秒。<br /><br />如果在沃利贝尔对一个目标造成<status>晕眩</status>效果前被敌人<status>定身</status>的话，那么他会因发怒而提前结束这个技能但刷新它的冷却时间。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VolibearQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0106/ability_0106_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "暴怒撕咬",
+                "description": "沃利贝尔伤害一名敌人，施加攻击特效并将其标记。对相同目标再次施放这个技能，会造成额外伤害并治疗沃利贝尔。",
+                "max_rank": 5,
+                "range_burn": [
+                  325
+                ],
+                "cooldown_burn": [
+                  5
+                ],
+                "cooldown_burn_float": [
+                  5
+                ],
+                "cost_burn": [
+                  30,
+                  35,
+                  40,
+                  45,
+                  50
+                ],
+                "tooltip": "沃利贝尔猛拍一名敌人，造成<physicalDamage>?物理伤害</physicalDamage>，并标记目标?秒。<br /><br />如果这个技能施放在一个被标记的目标身上，那么这个技能的伤害会提升至<physicalDamage>?</physicalDamage>，并且沃利贝尔会回复<healing>?生命值+他?的已损失生命值</healing>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VolibearW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0106/ability_0106_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "霹天雳地",
+                "description": "沃利贝尔在目标区域召唤一道闪电箭，对其中的敌人造成魔法伤害和减速效果，并且如果沃利贝尔在闪电落点区域内，他还会获得一层护盾。",
+                "max_rank": 5,
+                "range_burn": [
+                  1200
+                ],
+                "cooldown_burn": [
+                  12
+                ],
+                "cooldown_burn_float": [
+                  12
+                ],
+                "cost_burn": [
+                  60
+                ],
+                "tooltip": "沃利贝尔在目标区域召唤一道闪电箭，造成<magicDamage>?加上?%最大生命值的魔法伤害</magicDamage>并使敌人<status>减速</status>?%，持续?秒。<br /><br />如果沃利贝尔在闪电落点区域内，他还会获得一层<shield>?加上?%最大生命值的护盾</shield>，持续?秒。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VolibearE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0106/ability_0106_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "天声震落",
+                "description": "沃利贝尔跃向一个目标区域，对他身下的敌人们造成伤害和减速效果，同时获得额外生命值。在他着陆时，附近的敌方防御塔也会暂时失效。",
+                "max_rank": 3,
+                "range_burn": [
+                  550
+                ],
+                "cooldown_burn": [
+                  160,
+                  135,
+                  110
+                ],
+                "cooldown_burn_float": [
+                  160,
+                  135,
+                  110
+                ],
+                "cost_burn": [
+                  100
+                ],
+                "tooltip": "沃利贝尔变换形态并跃向一个目标区域，获得<healing>?生命值</healing>和?攻击距离，持续?秒。<br /><br />在着陆时，附近的敌方防御塔会<status>失效</status>?秒，并受到<physicalDamage>?物理伤害</physicalDamage>。附近的敌人会被<status>减速</status>?%，减速效果会在1秒里持续衰减。被沃利贝尔直接压住的敌人们会受到<physicalDamage>?物理伤害</physicalDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VolibearR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0106/ability_0106_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 106000,
+                "champion_id": 106,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 1350
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 585
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 106002,
+                "champion_id": 106,
+                "name": "北地风暴 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_2.jpg",
+                "skin_video_url": "https://youtu.be/96V2l_Pmg98",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 106006,
+                "champion_id": 106,
+                "name": "坚韧不屈 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_6.jpg",
+                "skin_video_url": "https://youtu.be/VANcAGsDm6U",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-06-10T04:00:00+09:00"
+              },
+              {
+                "id": 106019,
+                "champion_id": 106,
+                "name": "墨影之灵 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_19.jpg",
+                "skin_video_url": "https://youtu.be/DpwO5iA1mZM",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2023-05-03T04:00:00+09:00"
+              },
+              {
+                "id": 106005,
+                "champion_id": 106,
+                "name": "怒熊 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_5.jpg",
+                "skin_video_url": "https://youtu.be/03Jf0P6Vbas",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2016-06-02T13:00:00+09:00"
+              },
+              {
+                "id": 106007,
+                "champion_id": 106,
+                "name": "神龙尊者 均衡之龙 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_7.jpg",
+                "skin_video_url": "https://youtu.be/HrfBfFy_-9c",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-10-21T04:00:00+09:00"
+              },
+              {
+                "id": 106003,
+                "champion_id": 106,
+                "name": "符文战熊 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_3.jpg",
+                "skin_video_url": "https://youtu.be/8yHQhrdcQsk",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2013-04-30T05:00:00+09:00"
+              },
+              {
+                "id": 106009,
+                "champion_id": 106,
+                "name": "至臻 神龙尊者 均衡之龙 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_9.jpg",
+                "skin_video_url": "https://youtu.be/XR-8qvuhtOs",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 106004,
+                "champion_id": 106,
+                "name": "警长 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_4.jpg",
+                "skin_video_url": "https://youtu.be/QI7KzWdflI8",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2014-11-28T08:00:00+09:00"
+              },
+              {
+                "id": 106001,
+                "champion_id": 106,
+                "name": "雷霆领主 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_1.jpg",
+                "skin_video_url": "https://youtu.be/WS-Zkrh1s-c",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 520
+                  }
+                ],
+                "sales": null,
+                "release_date": "2011-11-27T07:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 46.77
         },
         {
           "champion_id": 25,
@@ -919,277 +1187,9 @@
           "win_rate": 46.79
         },
         {
-          "champion_id": 106,
-          "play": 628,
-          "win": 294,
-          "meta": {
-            "id": 106,
-            "key": "Volibear",
-            "name": "不灭狂雷",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Volibear.png",
-            "evolve": [],
-            "partype": "法力",
-            "passive": {
-              "name": "狂雷渐起",
-              "description": "沃利贝尔的攻击和技能会提供攻击速度，并且最终使他的攻击对附近的敌人们造成额外魔法伤害。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Volibear_Icon_P.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0106/ability_0106_P1.webm"
-            },
-            "spells": [
-              {
-                "key": "Q",
-                "name": "擂首一击",
-                "description": "沃利贝尔在朝着敌人时会获得移动速度，并且会对他攻击的第一个敌人造成<status>晕眩</status>和伤害。",
-                "max_rank": 5,
-                "range_burn": [
-                  300
-                ],
-                "cooldown_burn": [
-                  14,
-                  13,
-                  12,
-                  11,
-                  10
-                ],
-                "cooldown_burn_float": [
-                  14,
-                  13,
-                  12,
-                  11,
-                  10
-                ],
-                "cost_burn": [
-                  50
-                ],
-                "tooltip": "沃利贝尔获得<speed>?移动速度</speed>，在朝着敌方英雄时翻倍至<speed>?</speed>，持续?秒。在激活时，沃利贝尔的下次攻击会造成<physicalDamage>?物理伤害</physicalDamage>并使目标<status>晕眩</status>?秒。<br /><br />如果在沃利贝尔对一个目标造成<status>晕眩</status>效果前被敌人<status>定身</status>的话，那么他会因发怒而提前结束这个技能但刷新它的冷却时间。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VolibearQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0106/ability_0106_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "暴怒撕咬",
-                "description": "沃利贝尔伤害一名敌人，施加攻击特效并将其标记。对相同目标再次施放这个技能，会造成额外伤害并治疗沃利贝尔。",
-                "max_rank": 5,
-                "range_burn": [
-                  325
-                ],
-                "cooldown_burn": [
-                  5
-                ],
-                "cooldown_burn_float": [
-                  5
-                ],
-                "cost_burn": [
-                  30,
-                  35,
-                  40,
-                  45,
-                  50
-                ],
-                "tooltip": "沃利贝尔猛拍一名敌人，造成<physicalDamage>?物理伤害</physicalDamage>，并标记目标?秒。<br /><br />如果这个技能施放在一个被标记的目标身上，那么这个技能的伤害会提升至<physicalDamage>?</physicalDamage>，并且沃利贝尔会回复<healing>?生命值+他?的已损失生命值</healing>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VolibearW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0106/ability_0106_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "霹天雳地",
-                "description": "沃利贝尔在目标区域召唤一道闪电箭，对其中的敌人造成魔法伤害和减速效果，并且如果沃利贝尔在闪电落点区域内，他还会获得一层护盾。",
-                "max_rank": 5,
-                "range_burn": [
-                  1200
-                ],
-                "cooldown_burn": [
-                  12
-                ],
-                "cooldown_burn_float": [
-                  12
-                ],
-                "cost_burn": [
-                  60
-                ],
-                "tooltip": "沃利贝尔在目标区域召唤一道闪电箭，造成<magicDamage>?加上?%最大生命值的魔法伤害</magicDamage>并使敌人<status>减速</status>?%，持续?秒。<br /><br />如果沃利贝尔在闪电落点区域内，他还会获得一层<shield>?加上?%最大生命值的护盾</shield>，持续?秒。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VolibearE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0106/ability_0106_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "天声震落",
-                "description": "沃利贝尔跃向一个目标区域，对他身下的敌人们造成伤害和减速效果，同时获得额外生命值。在他着陆时，附近的敌方防御塔也会暂时失效。",
-                "max_rank": 3,
-                "range_burn": [
-                  550
-                ],
-                "cooldown_burn": [
-                  160,
-                  135,
-                  110
-                ],
-                "cooldown_burn_float": [
-                  160,
-                  135,
-                  110
-                ],
-                "cost_burn": [
-                  100
-                ],
-                "tooltip": "沃利贝尔变换形态并跃向一个目标区域，获得<healing>?生命值</healing>和?攻击距离，持续?秒。<br /><br />在着陆时，附近的敌方防御塔会<status>失效</status>?秒，并受到<physicalDamage>?物理伤害</physicalDamage>。附近的敌人会被<status>减速</status>?%，减速效果会在1秒里持续衰减。被沃利贝尔直接压住的敌人们会受到<physicalDamage>?物理伤害</physicalDamage>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VolibearR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0106/ability_0106_R1.webm"
-              }
-            ],
-            "skins": [
-              {
-                "id": 106000,
-                "champion_id": 106,
-                "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_0.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "IP",
-                    "cost": 1350
-                  },
-                  {
-                    "currency": "RP",
-                    "cost": 585
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 106002,
-                "champion_id": 106,
-                "name": "北地风暴 沃利贝尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_2.jpg",
-                "skin_video_url": "https://youtu.be/96V2l_Pmg98",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 106006,
-                "champion_id": 106,
-                "name": "坚韧不屈 沃利贝尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_6.jpg",
-                "skin_video_url": "https://youtu.be/VANcAGsDm6U",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2020-06-10T04:00:00+09:00"
-              },
-              {
-                "id": 106019,
-                "champion_id": 106,
-                "name": "墨影之灵 沃利贝尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_19.jpg",
-                "skin_video_url": "https://youtu.be/DpwO5iA1mZM",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2023-05-03T04:00:00+09:00"
-              },
-              {
-                "id": 106005,
-                "champion_id": 106,
-                "name": "怒熊 沃利贝尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_5.jpg",
-                "skin_video_url": "https://youtu.be/03Jf0P6Vbas",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 750
-                  }
-                ],
-                "sales": null,
-                "release_date": "2016-06-02T13:00:00+09:00"
-              },
-              {
-                "id": 106007,
-                "champion_id": 106,
-                "name": "神龙尊者 均衡之龙 沃利贝尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_7.jpg",
-                "skin_video_url": "https://youtu.be/HrfBfFy_-9c",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2021-10-21T04:00:00+09:00"
-              },
-              {
-                "id": 106003,
-                "champion_id": 106,
-                "name": "符文战熊 沃利贝尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_3.jpg",
-                "skin_video_url": "https://youtu.be/8yHQhrdcQsk",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2013-04-30T05:00:00+09:00"
-              },
-              {
-                "id": 106009,
-                "champion_id": 106,
-                "name": "至臻 神龙尊者 均衡之龙 沃利贝尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_9.jpg",
-                "skin_video_url": "https://youtu.be/XR-8qvuhtOs",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 106004,
-                "champion_id": 106,
-                "name": "警长 沃利贝尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_4.jpg",
-                "skin_video_url": "https://youtu.be/QI7KzWdflI8",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 750
-                  }
-                ],
-                "sales": null,
-                "release_date": "2014-11-28T08:00:00+09:00"
-              },
-              {
-                "id": 106001,
-                "champion_id": 106,
-                "name": "雷霆领主 沃利贝尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_1.jpg",
-                "skin_video_url": "https://youtu.be/WS-Zkrh1s-c",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 520
-                  }
-                ],
-                "sales": null,
-                "release_date": "2011-11-27T07:00:00+09:00"
-              }
-            ]
-          },
-          "win_rate": 46.82
-        },
-        {
           "champion_id": 421,
-          "play": 389,
-          "win": 183,
+          "play": 393,
+          "win": 184,
           "meta": {
             "id": 421,
             "key": "RekSai",
@@ -1398,12 +1398,12 @@
               }
             ]
           },
-          "win_rate": 47.04
+          "win_rate": 46.82
         },
         {
           "champion_id": 233,
-          "play": 854,
-          "win": 405,
+          "play": 858,
+          "win": 408,
           "meta": {
             "id": 233,
             "key": "Briar",
@@ -1575,13 +1575,13 @@
               }
             ]
           },
-          "win_rate": 47.42
+          "win_rate": 47.55
         }
       ],
       [
         {
           "champion_id": 57,
-          "play": 178,
+          "play": 179,
           "win": 114,
           "meta": {
             "id": 57,
@@ -1876,7 +1876,7 @@
               }
             ]
           },
-          "win_rate": 64.04
+          "win_rate": 63.69
         },
         {
           "champion_id": 427,
@@ -2094,312 +2094,9 @@
           "win_rate": 56.52
         },
         {
-          "champion_id": 143,
-          "play": 204,
-          "win": 111,
-          "meta": {
-            "id": 143,
-            "key": "Zyra",
-            "name": "荆棘之兴",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Zyra.png",
-            "evolve": [],
-            "partype": "法力",
-            "passive": {
-              "name": "荆棘花园",
-              "description": "种子会周期性地在婕拉身边生成，生成速度随等级提升。婕拉可通过在种子附近施放致命棘刺或缠绕之根来让种子长成为婕拉而战的植物。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/ZyraP.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0143/ability_0143_P1.webm"
-            },
-            "spells": [
-              {
-                "key": "Q",
-                "name": "致命棘刺",
-                "description": "浓密的藤蔓在地面蔓延，并爆炸成棘刺，对范围内的敌人造成魔法伤害。如果在一颗种子附近施放，那么【Q致命棘刺】就会让种子长成一株荆棘喷射者，可对远处的敌人进行攻击。",
-                "max_rank": 5,
-                "range_burn": [
-                  800
-                ],
-                "cooldown_burn": [
-                  7,
-                  6,
-                  6,
-                  5,
-                  5
-                ],
-                "cooldown_burn_float": [
-                  7,
-                  6.5,
-                  6,
-                  5.5,
-                  5
-                ],
-                "cost_burn": [
-                  55
-                ],
-                "tooltip": "婕拉使稠密的藤蔓们扩散并爆炸成尖刺，造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />如果这个技能在一颗<keywordMajor>种子</keywordMajor>附近施放，那么这颗<keywordMajor>种子</keywordMajor>就会长成荆棘喷射者，造成<magicDamage>?魔法伤害</magicDamage>并持续?秒。荆棘喷射者拥有575攻击距离。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZyraQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0143/ability_0143_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "狂野生长",
-                "description": "婕拉播下一颗种子，最多持续60秒。在种子附近施放【Q致命棘刺】或【E缠绕之根】会让种子长成植物，与婕拉并肩作战。婕拉可以同时存有多个种子，并且击杀敌人会减少【W狂野生长】的充能时间。",
-                "max_rank": 5,
-                "range_burn": [
-                  850
-                ],
-                "cooldown_burn": [
-                  0
-                ],
-                "cooldown_burn_float": [
-                  0
-                ],
-                "cost_burn": [
-                  0
-                ],
-                "tooltip": "婕拉种下一颗持续60秒的<keywordMajor>种子</keywordMajor>。这些<keywordMajor>种子</keywordMajor>在被敌方英雄踩到后会提供该英雄的<keywordStealth>真实视野</keywordStealth>，持续2秒，但仍然会被摧毁。<br /><br />这个技能有2层充能，充能时间为?秒。击杀一个敌方小兵或野怪会使充能时间缩短35%。参与击杀英雄会转而使充能时间缩短100%。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZyraW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0143/ability_0143_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "缠绕之根",
-                "description": "婕拉朝前方放出贯穿地面的藤蔓来诱捕她的目标，藤蔓经过的敌人会受到伤害和束缚效果。如果在一颗种子附近施放，那么【E缠绕之根】就会让种子长成一株藤蔓鞭击者，可进行短程攻击并降低敌人的移动速度。",
-                "max_rank": 5,
-                "range_burn": [
-                  1100
-                ],
-                "cooldown_burn": [
-                  12
-                ],
-                "cooldown_burn_float": [
-                  12
-                ],
-                "cost_burn": [
-                  70,
-                  75,
-                  80,
-                  85,
-                  90
-                ],
-                "tooltip": "婕拉向前方放出藤蔓，<status>禁锢</status>1/1.25/1.5/1.75/2秒并造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />如果这个技能在一颗<keywordMajor>种子</keywordMajor>附近经过，那么这颗<keywordMajor>种子</keywordMajor>就会长成藤蔓鞭击者，造成<magicDamage>?魔法伤害</magicDamage>并持续?秒。藤蔓鞭击者拥有400攻击距离，并且它们的攻击会施加持续2秒的30%<status>减速</status>。来自多个藤蔓鞭击者的<status>减速</status>可以至多叠加?次。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZyraE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0143/ability_0143_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "绞杀之藤",
-                "description": "婕拉在目标区域召唤一个扭曲的密林，在蔓延时对区域内的所有敌人造成伤害，并在收缩时击飞区域内的所有敌人。密林内的植物会被进入激怒状态。",
-                "max_rank": 3,
-                "range_burn": [
-                  700
-                ],
-                "cooldown_burn": [
-                  110,
-                  100,
-                  90
-                ],
-                "cooldown_burn_float": [
-                  110,
-                  100,
-                  90
-                ],
-                "cost_burn": [
-                  100
-                ],
-                "tooltip": "婕拉召唤自然之怒，长出一个扭曲的密林，造成<magicDamage>?魔法伤害</magicDamage>。在2秒后，藤蔓会向上方抽击，使敌人<status>击飞</status>1秒。<br /><br />婕拉在密林中的植物们会被激怒，重置持续时间，获得<healing>50%生命值</healing>并且攻击会造成?%额外伤害。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZyraR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0143/ability_0143_R1.webm"
-              }
-            ],
-            "skins": [
-              {
-                "id": 143000,
-                "champion_id": 143,
-                "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_0.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "IP",
-                    "cost": 3150
-                  },
-                  {
-                    "currency": "RP",
-                    "cost": 790
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 143003,
-                "champion_id": 143,
-                "name": "SKT T1 婕拉",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_3.jpg",
-                "skin_video_url": "https://youtu.be/c_81WSlUmqk",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 750
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 143036,
-                "champion_id": 143,
-                "name": "剪纸仙灵 婕拉",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_36.jpg",
-                "skin_video_url": "https://youtu.be/SmYO-eGQKx8",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 143016,
-                "champion_id": 143,
-                "name": "地下都市 梦魇 婕拉",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_16.jpg",
-                "skin_video_url": "https://youtu.be/SY0PeCns7MY",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2021-08-26T04:00:00+09:00"
-              },
-              {
-                "id": 143046,
-                "champion_id": 143,
-                "name": "妖怪艺术家 婕拉",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_46.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2023-09-13T11:00:00+09:00"
-              },
-              {
-                "id": 143007,
-                "champion_id": 143,
-                "name": "水晶玫瑰 婕拉",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_7.jpg",
-                "skin_video_url": "https://youtu.be/2Vm0Caz4oIU",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2021-02-11T04:00:00+09:00"
-              },
-              {
-                "id": 143055,
-                "champion_id": 143,
-                "name": "腥红之月 婕拉",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_55.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2024-04-17T09:00:00+09:00"
-              },
-              {
-                "id": 143006,
-                "champion_id": 143,
-                "name": "至臻 魔女 婕拉",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_6.jpg",
-                "skin_video_url": "https://youtu.be/OTIe4nuX7B4",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 143001,
-                "champion_id": 143,
-                "name": "野火之藤 婕拉",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_1.jpg",
-                "skin_video_url": "https://youtu.be/HUcp0w-60bg",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2012-07-25T02:00:00+09:00"
-              },
-              {
-                "id": 143004,
-                "champion_id": 143,
-                "name": "驯龙女巫 婕拉",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_4.jpg",
-                "skin_video_url": "https://youtu.be/iU7PpRWYGaI",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2017-03-09T02:00:00+09:00"
-              },
-              {
-                "id": 143002,
-                "champion_id": 143,
-                "name": "鬼影森森 婕拉",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_2.jpg",
-                "skin_video_url": "https://youtu.be/VKSqFHAKYqs",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2013-10-30T07:00:00+09:00"
-              },
-              {
-                "id": 143005,
-                "champion_id": 143,
-                "name": "魔女 婕拉",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_5.jpg",
-                "skin_video_url": "https://youtu.be/2_80nQVJSXw",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2020-04-16T04:00:00+09:00"
-              }
-            ]
-          },
-          "win_rate": 54.41
-        },
-        {
           "champion_id": 104,
-          "play": 1164,
-          "win": 633,
+          "play": 1171,
+          "win": 638,
           "meta": {
             "id": 104,
             "key": "Graves",
@@ -2733,12 +2430,315 @@
               }
             ]
           },
-          "win_rate": 54.38
+          "win_rate": 54.48
+        },
+        {
+          "champion_id": 143,
+          "play": 204,
+          "win": 111,
+          "meta": {
+            "id": 143,
+            "key": "Zyra",
+            "name": "荆棘之兴",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Zyra.png",
+            "evolve": [],
+            "partype": "法力",
+            "passive": {
+              "name": "荆棘花园",
+              "description": "种子会周期性地在婕拉身边生成，生成速度随等级提升。婕拉可通过在种子附近施放致命棘刺或缠绕之根来让种子长成为婕拉而战的植物。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/ZyraP.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0143/ability_0143_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "致命棘刺",
+                "description": "浓密的藤蔓在地面蔓延，并爆炸成棘刺，对范围内的敌人造成魔法伤害。如果在一颗种子附近施放，那么【Q致命棘刺】就会让种子长成一株荆棘喷射者，可对远处的敌人进行攻击。",
+                "max_rank": 5,
+                "range_burn": [
+                  800
+                ],
+                "cooldown_burn": [
+                  7,
+                  6,
+                  6,
+                  5,
+                  5
+                ],
+                "cooldown_burn_float": [
+                  7,
+                  6.5,
+                  6,
+                  5.5,
+                  5
+                ],
+                "cost_burn": [
+                  55
+                ],
+                "tooltip": "婕拉使稠密的藤蔓们扩散并爆炸成尖刺，造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />如果这个技能在一颗<keywordMajor>种子</keywordMajor>附近施放，那么这颗<keywordMajor>种子</keywordMajor>就会长成荆棘喷射者，造成<magicDamage>?魔法伤害</magicDamage>并持续?秒。荆棘喷射者拥有575攻击距离。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZyraQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0143/ability_0143_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "狂野生长",
+                "description": "婕拉播下一颗种子，最多持续60秒。在种子附近施放【Q致命棘刺】或【E缠绕之根】会让种子长成植物，与婕拉并肩作战。婕拉可以同时存有多个种子，并且击杀敌人会减少【W狂野生长】的充能时间。",
+                "max_rank": 5,
+                "range_burn": [
+                  850
+                ],
+                "cooldown_burn": [
+                  0
+                ],
+                "cooldown_burn_float": [
+                  0
+                ],
+                "cost_burn": [
+                  0
+                ],
+                "tooltip": "婕拉种下一颗持续60秒的<keywordMajor>种子</keywordMajor>。这些<keywordMajor>种子</keywordMajor>在被敌方英雄踩到后会提供该英雄的<keywordStealth>真实视野</keywordStealth>，持续2秒，但仍然会被摧毁。<br /><br />这个技能有2层充能，充能时间为?秒。击杀一个敌方小兵或野怪会使充能时间缩短35%。参与击杀英雄会转而使充能时间缩短100%。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZyraW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0143/ability_0143_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "缠绕之根",
+                "description": "婕拉朝前方放出贯穿地面的藤蔓来诱捕她的目标，藤蔓经过的敌人会受到伤害和束缚效果。如果在一颗种子附近施放，那么【E缠绕之根】就会让种子长成一株藤蔓鞭击者，可进行短程攻击并降低敌人的移动速度。",
+                "max_rank": 5,
+                "range_burn": [
+                  1100
+                ],
+                "cooldown_burn": [
+                  12
+                ],
+                "cooldown_burn_float": [
+                  12
+                ],
+                "cost_burn": [
+                  70,
+                  75,
+                  80,
+                  85,
+                  90
+                ],
+                "tooltip": "婕拉向前方放出藤蔓，<status>禁锢</status>1/1.25/1.5/1.75/2秒并造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />如果这个技能在一颗<keywordMajor>种子</keywordMajor>附近经过，那么这颗<keywordMajor>种子</keywordMajor>就会长成藤蔓鞭击者，造成<magicDamage>?魔法伤害</magicDamage>并持续?秒。藤蔓鞭击者拥有400攻击距离，并且它们的攻击会施加持续2秒的30%<status>减速</status>。来自多个藤蔓鞭击者的<status>减速</status>可以至多叠加?次。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZyraE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0143/ability_0143_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "绞杀之藤",
+                "description": "婕拉在目标区域召唤一个扭曲的密林，在蔓延时对区域内的所有敌人造成伤害，并在收缩时击飞区域内的所有敌人。密林内的植物会被进入激怒状态。",
+                "max_rank": 3,
+                "range_burn": [
+                  700
+                ],
+                "cooldown_burn": [
+                  110,
+                  100,
+                  90
+                ],
+                "cooldown_burn_float": [
+                  110,
+                  100,
+                  90
+                ],
+                "cost_burn": [
+                  100
+                ],
+                "tooltip": "婕拉召唤自然之怒，长出一个扭曲的密林，造成<magicDamage>?魔法伤害</magicDamage>。在2秒后，藤蔓会向上方抽击，使敌人<status>击飞</status>1秒。<br /><br />婕拉在密林中的植物们会被激怒，重置持续时间，获得<healing>50%生命值</healing>并且攻击会造成?%额外伤害。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZyraR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0143/ability_0143_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 143000,
+                "champion_id": 143,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 3150
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 790
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 143003,
+                "champion_id": 143,
+                "name": "SKT T1 婕拉",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_3.jpg",
+                "skin_video_url": "https://youtu.be/c_81WSlUmqk",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 143036,
+                "champion_id": 143,
+                "name": "剪纸仙灵 婕拉",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_36.jpg",
+                "skin_video_url": "https://youtu.be/SmYO-eGQKx8",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 143016,
+                "champion_id": 143,
+                "name": "地下都市 梦魇 婕拉",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_16.jpg",
+                "skin_video_url": "https://youtu.be/SY0PeCns7MY",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-08-26T04:00:00+09:00"
+              },
+              {
+                "id": 143046,
+                "champion_id": 143,
+                "name": "妖怪艺术家 婕拉",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_46.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2023-09-13T11:00:00+09:00"
+              },
+              {
+                "id": 143007,
+                "champion_id": 143,
+                "name": "水晶玫瑰 婕拉",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_7.jpg",
+                "skin_video_url": "https://youtu.be/2Vm0Caz4oIU",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-02-11T04:00:00+09:00"
+              },
+              {
+                "id": 143055,
+                "champion_id": 143,
+                "name": "腥红之月 婕拉",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_55.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-04-17T09:00:00+09:00"
+              },
+              {
+                "id": 143006,
+                "champion_id": 143,
+                "name": "至臻 魔女 婕拉",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_6.jpg",
+                "skin_video_url": "https://youtu.be/OTIe4nuX7B4",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 143001,
+                "champion_id": 143,
+                "name": "野火之藤 婕拉",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_1.jpg",
+                "skin_video_url": "https://youtu.be/HUcp0w-60bg",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2012-07-25T02:00:00+09:00"
+              },
+              {
+                "id": 143004,
+                "champion_id": 143,
+                "name": "驯龙女巫 婕拉",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_4.jpg",
+                "skin_video_url": "https://youtu.be/iU7PpRWYGaI",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2017-03-09T02:00:00+09:00"
+              },
+              {
+                "id": 143002,
+                "champion_id": 143,
+                "name": "鬼影森森 婕拉",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_2.jpg",
+                "skin_video_url": "https://youtu.be/VKSqFHAKYqs",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2013-10-30T07:00:00+09:00"
+              },
+              {
+                "id": 143005,
+                "champion_id": 143,
+                "name": "魔女 婕拉",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_5.jpg",
+                "skin_video_url": "https://youtu.be/2_80nQVJSXw",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-04-16T04:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 54.41
         },
         {
           "champion_id": 131,
-          "play": 1258,
-          "win": 682,
+          "play": 1263,
+          "win": 684,
           "meta": {
             "id": 131,
             "key": "Diana",
@@ -3071,15 +3071,15 @@
               }
             ]
           },
-          "win_rate": 54.21
+          "win_rate": 54.16
         }
       ]
     ],
     "counters": [
       {
         "champion_id": 64,
-        "play": 6831,
-        "win": 3562,
+        "play": 6863,
+        "win": 3577,
         "meta": {
           "id": 64,
           "key": "LeeSin",
@@ -3471,8 +3471,8 @@
       },
       {
         "champion_id": 234,
-        "play": 2984,
-        "win": 1524,
+        "play": 2991,
+        "win": 1528,
         "meta": {
           "id": 234,
           "key": "Viego",
@@ -3692,8 +3692,8 @@
       },
       {
         "champion_id": 876,
-        "play": 2939,
-        "win": 1461,
+        "play": 2953,
+        "win": 1464,
         "meta": {
           "id": 876,
           "key": "Lillia",
@@ -3898,8 +3898,8 @@
       },
       {
         "champion_id": 121,
-        "play": 2450,
-        "win": 1247,
+        "play": 2464,
+        "win": 1253,
         "meta": {
           "id": 121,
           "key": "Khazix",
@@ -4155,8 +4155,8 @@
       },
       {
         "champion_id": 76,
-        "play": 1580,
-        "win": 843,
+        "play": 1586,
+        "win": 846,
         "meta": {
           "id": 76,
           "key": "Nidalee",
@@ -4521,8 +4521,8 @@
       },
       {
         "champion_id": 254,
-        "play": 1503,
-        "win": 787,
+        "play": 1506,
+        "win": 789,
         "meta": {
           "id": 254,
           "key": "Vi",
@@ -4834,8 +4834,8 @@
       },
       {
         "champion_id": 56,
-        "play": 1476,
-        "win": 733,
+        "play": 1485,
+        "win": 737,
         "meta": {
           "id": 56,
           "key": "Nocturne",
@@ -5134,7 +5134,7 @@
       },
       {
         "champion_id": 32,
-        "play": 1440,
+        "play": 1443,
         "win": 720,
         "meta": {
           "id": 32,
@@ -5458,8 +5458,8 @@
       },
       {
         "champion_id": 120,
-        "play": 1333,
-        "win": 676,
+        "play": 1338,
+        "win": 680,
         "meta": {
           "id": 120,
           "key": "Hecarim",
@@ -5759,8 +5759,8 @@
       },
       {
         "champion_id": 102,
-        "play": 1325,
-        "win": 638,
+        "play": 1331,
+        "win": 641,
         "meta": {
           "id": 102,
           "key": "Shyvana",
@@ -6021,8 +6021,8 @@
       },
       {
         "champion_id": 131,
-        "play": 1258,
-        "win": 682,
+        "play": 1263,
+        "win": 684,
         "meta": {
           "id": 131,
           "key": "Diana",
@@ -6358,8 +6358,8 @@
       },
       {
         "champion_id": 59,
-        "play": 1242,
-        "win": 609,
+        "play": 1244,
+        "win": 611,
         "meta": {
           "id": 59,
           "key": "JarvanIV",
@@ -6701,8 +6701,8 @@
       },
       {
         "champion_id": 141,
-        "play": 1237,
-        "win": 603,
+        "play": 1242,
+        "win": 604,
         "meta": {
           "id": 141,
           "key": "Kayn",
@@ -6955,8 +6955,8 @@
       },
       {
         "champion_id": 104,
-        "play": 1164,
-        "win": 633,
+        "play": 1171,
+        "win": 638,
         "meta": {
           "id": 104,
           "key": "Graves",
@@ -7293,8 +7293,8 @@
       },
       {
         "champion_id": 35,
-        "play": 972,
-        "win": 494,
+        "play": 974,
+        "win": 495,
         "meta": {
           "id": 35,
           "key": "Shaco",
@@ -7620,7 +7620,7 @@
       },
       {
         "champion_id": 245,
-        "play": 960,
+        "play": 961,
         "win": 475,
         "meta": {
           "id": 245,
@@ -7941,7 +7941,7 @@
       },
       {
         "champion_id": 11,
-        "play": 886,
+        "play": 889,
         "win": 434,
         "meta": {
           "id": 11,
@@ -8314,8 +8314,8 @@
       },
       {
         "champion_id": 233,
-        "play": 854,
-        "win": 405,
+        "play": 858,
+        "win": 408,
         "meta": {
           "id": 233,
           "key": "Briar",
@@ -8490,8 +8490,8 @@
       },
       {
         "champion_id": 63,
-        "play": 851,
-        "win": 446,
+        "play": 855,
+        "win": 449,
         "meta": {
           "id": 63,
           "key": "Brand",
@@ -8822,8 +8822,8 @@
       },
       {
         "champion_id": 77,
-        "play": 831,
-        "win": 398,
+        "play": 833,
+        "win": 399,
         "meta": {
           "id": 77,
           "key": "Udyr",
@@ -9046,7 +9046,7 @@
       },
       {
         "champion_id": 154,
-        "play": 779,
+        "play": 782,
         "win": 422,
         "meta": {
           "id": 154,
@@ -9282,8 +9282,8 @@
       },
       {
         "champion_id": 113,
-        "play": 711,
-        "win": 364,
+        "play": 712,
+        "win": 365,
         "meta": {
           "id": 113,
           "key": "Sejuani",
@@ -9849,8 +9849,8 @@
       },
       {
         "champion_id": 107,
-        "play": 651,
-        "win": 327,
+        "play": 654,
+        "win": 330,
         "meta": {
           "id": 107,
           "key": "Rengar",
@@ -10101,8 +10101,8 @@
       },
       {
         "champion_id": 106,
-        "play": 628,
-        "win": 294,
+        "play": 635,
+        "win": 297,
         "meta": {
           "id": 106,
           "key": "Volibear",
@@ -10368,7 +10368,7 @@
       },
       {
         "champion_id": 62,
-        "play": 622,
+        "play": 623,
         "win": 304,
         "meta": {
           "id": 62,
@@ -10654,8 +10654,8 @@
       },
       {
         "champion_id": 9,
-        "play": 597,
-        "win": 297,
+        "play": 599,
+        "win": 299,
         "meta": {
           "id": 9,
           "key": "Fiddlesticks",
@@ -11163,7 +11163,7 @@
       },
       {
         "champion_id": 20,
-        "play": 550,
+        "play": 551,
         "win": 272,
         "meta": {
           "id": 20,
@@ -11477,8 +11477,8 @@
       },
       {
         "champion_id": 30,
-        "play": 541,
-        "win": 274,
+        "play": 545,
+        "win": 276,
         "meta": {
           "id": 30,
           "key": "Karthus",
@@ -11744,352 +11744,9 @@
         }
       },
       {
-        "champion_id": 19,
-        "play": 536,
-        "win": 262,
-        "meta": {
-          "id": 19,
-          "key": "Warwick",
-          "name": "祖安怒兽",
-          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Warwick.png",
-          "evolve": [],
-          "partype": "法力",
-          "passive": {
-            "name": "血之饥渴",
-            "description": "沃里克的普攻造成额外魔法伤害。如果沃里克的生命值低于50%，那么他会获得等额的治疗效果。如果他的生命值低于25%，则治疗效果提升至三倍。",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/WarwickP.png",
-            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0019/ability_0019_P1.webm"
-          },
-          "spells": [
-            {
-              "key": "Q",
-              "name": "野兽之口",
-              "description": "沃里克向前猛扑并撕咬他的目标，造成基于目标最大生命值的伤害，并造成基于实际伤害值的治疗效果。",
-              "max_rank": 5,
-              "range_burn": [
-                350
-              ],
-              "cooldown_burn": [
-                6
-              ],
-              "cooldown_burn_float": [
-                6
-              ],
-              "cost_burn": [
-                50,
-                60,
-                70,
-                80,
-                90
-              ],
-              "tooltip": "<tap>秒放：</tap>沃里克向前猛扑并撕咬，造成<magicDamage>?外加?%最大生命值的魔法伤害</magicDamage>和<healing>25/37.5/50/62.5/75%实际伤害值的治疗效果</healing>。<br /><br /><hold>蓄力：</hold>沃里克猛扑并用它的狼嘴紧咬目标，并跃到目标身后。在紧咬目标时，沃里克会跟随目标的所有移动。在释放他的蓄力后，他会造成等额伤害和治疗效果。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/WarwickQ.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0019/ability_0019_Q1.webm"
-            },
-            {
-              "key": "W",
-              "name": "鲜血追猎",
-              "description": "沃里克感知生命值在50%以下的敌人，在朝着这些敌人移动时会获得移动速度加成，并在攻击这些敌人时会获得攻速加成。当这些敌人的生命值在20%以下时，他会狂暴并让这些加成提升至三倍。",
-              "max_rank": 5,
-              "range_burn": [
-                4000
-              ],
-              "cooldown_burn": [
-                100,
-                85,
-                70,
-                55,
-                40
-              ],
-              "cooldown_burn_float": [
-                100,
-                85,
-                70,
-                55,
-                40
-              ],
-              "cost_burn": [
-                70
-              ],
-              "tooltip": "<spellPassive>被动：</spellPassive>沃里克可以感知到低于50%生命值的英雄们，朝他们移动时获得<speed>35/42.5/50/57.5/65%移动速度</speed>并在对抗他们时获得<attackSpeed>70/80/90/100/110%攻击速度</attackSpeed>。这些加成在对抗低于20%生命值的敌人们时会提升250%。<br /><br /><spellActive>主动：</spellActive>沃里克可以暂时感知到所有敌人，并在对抗相距最近的敌人时获得这个技能的被动效果，持续8秒，无论该目标有多少生命值。沃里克无法在与英雄战斗时使用这个技能。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/WarwickW.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0019/ability_0019_W1.webm"
-            },
-            {
-              "key": "E",
-              "name": "远祖嗥叫",
-              "description": "沃里克获得持续2.5秒的伤害减免效果。在效果结束时，或者重新激活技能时，沃里克会嗥叫，使附近的敌人因恐惧而逃跑1秒。",
-              "max_rank": 5,
-              "range_burn": [
-                375
-              ],
-              "cooldown_burn": [
-                15,
-                14,
-                13,
-                12,
-                11
-              ],
-              "cooldown_burn_float": [
-                15,
-                14,
-                13,
-                12,
-                11
-              ],
-              "cost_burn": [
-                40
-              ],
-              "tooltip": "沃里克获得持续2.5秒的35/40/45/50/55%伤害减免。在它结束后，沃里克会发出嗥叫，<status>恐惧</status>附近的敌人1秒。沃里克可以<recast>再次施放</recast>来提前结束这个技能。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/WarwickE.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0019/ability_0019_E1.webm"
-            },
-            {
-              "key": "R",
-              "name": "无尽束缚",
-              "description": "沃里克朝一个方向跳跃（跳跃距离可从他的移动速度加成中获益），将他所碰撞到的第一个敌方英雄压制1.5秒。",
-              "max_rank": 3,
-              "range_burn": [
-                25000
-              ],
-              "cooldown_burn": [
-                110,
-                90,
-                70
-              ],
-              "cooldown_burn_float": [
-                110,
-                90,
-                70
-              ],
-              "cost_burn": [
-                100
-              ],
-              "tooltip": "沃里克跳跃一大段距离(随他的<speed>移动速度</speed>增长)，并<status>压制</status>碰撞到的第一个敌方英雄?秒并且自身处在引导状态。在此期间他持续攻击该英雄3次，造成<magicDamage>?魔法伤害</magicDamage>。沃里克在引导期间会获得<healing>100%实际伤害值的治疗效果</healing>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/WarwickR.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0019/ability_0019_R1.webm"
-            }
-          ],
-          "skins": [
-            {
-              "id": 19000,
-              "champion_id": 19,
-              "name": "default",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_0.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "IP",
-                  "cost": 450
-                },
-                {
-                  "currency": "RP",
-                  "cost": 260
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 19004,
-              "champion_id": 19,
-              "name": "冻原猎手 沃里克",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_4.jpg",
-              "skin_video_url": "https://youtu.be/IcAbsp_5kdc",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 520
-                }
-              ],
-              "sales": null,
-              "release_date": "2010-07-12T15:00:00+09:00"
-            },
-            {
-              "id": 19045,
-              "champion_id": 19,
-              "name": "北极星使者 沃里克",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_45.jpg",
-              "skin_video_url": "https://youtu.be/2VZ09cjMfT4",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2022-12-08T04:00:00+09:00"
-            },
-            {
-              "id": 19010,
-              "champion_id": 19,
-              "name": "南天之怒 沃里克",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_10.jpg",
-              "skin_video_url": "https://youtu.be/pAoX2TuTuF0",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 19035,
-              "champion_id": 19,
-              "name": "古神 沃里克",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_35.jpg",
-              "skin_video_url": "https://youtu.be/NKcmE_iwyog",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2021-08-12T04:00:00+09:00"
-            },
-            {
-              "id": 19005,
-              "champion_id": 19,
-              "name": "嗜血狂暴 沃里克",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_5.jpg",
-              "skin_video_url": "https://youtu.be/4KTdmuN0HVg",
-              "prices": null,
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 19002,
-              "champion_id": 19,
-              "name": "披着海牛的狼 沃里克",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_2.jpg",
-              "skin_video_url": null,
-              "prices": null,
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 19001,
-              "champion_id": 19,
-              "name": "暗影 沃里克",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_1.jpg",
-              "skin_video_url": "https://youtu.be/VROihO7zWwk",
-              "prices": null,
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 19009,
-              "champion_id": 19,
-              "name": "海牛狼人 沃里克",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_9.jpg",
-              "skin_video_url": "https://youtu.be/BggWSAYLPLc",
-              "prices": [
-                {
-                  "currency": "IP",
-                  "cost": 150000
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 19016,
-              "champion_id": 19,
-              "name": "源计划：末日 沃里克",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_16.jpg",
-              "skin_video_url": "https://youtu.be/zMy-8imxVkQ",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": [
-                {
-                  "currency": "RP",
-                  "cost": 540,
-                  "discount_rate": 0.6,
-                  "started_at": "2024-08-19T08:00:00+09:00",
-                  "ended_at": "2024-08-26T08:00:00+09:00"
-                }
-              ],
-              "release_date": "2019-08-01T04:00:00+09:00"
-            },
-            {
-              "id": 19006,
-              "champion_id": 19,
-              "name": "火牙狼人 沃里克",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_6.jpg",
-              "skin_video_url": "https://youtu.be/xdu8t8-Btco",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 975
-                }
-              ],
-              "sales": null,
-              "release_date": "2011-03-28T20:00:00+09:00"
-            },
-            {
-              "id": 19003,
-              "champion_id": 19,
-              "name": "狼外婆 沃里克",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_3.jpg",
-              "skin_video_url": "https://youtu.be/Kwvhn9-G9Sw",
-              "prices": null,
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 19046,
-              "champion_id": 19,
-              "name": "至臻 北极星使者 沃里克",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_46.jpg",
-              "skin_video_url": "https://youtu.be/2VZ09cjMfT4",
-              "prices": null,
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 19007,
-              "champion_id": 19,
-              "name": "荒野豺狼 沃里克",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_7.jpg",
-              "skin_video_url": "https://youtu.be/pVQcMxUn4DU",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 975
-                }
-              ],
-              "sales": null,
-              "release_date": "2011-11-29T15:00:00+09:00"
-            },
-            {
-              "id": 19008,
-              "champion_id": 19,
-              "name": "黑暗骑士 沃里克",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_8.jpg",
-              "skin_video_url": "https://youtu.be/mPCMc5xR90g",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 750
-                }
-              ],
-              "sales": null,
-              "release_date": "2015-02-17T09:00:00+09:00"
-            }
-          ]
-        }
-      },
-      {
         "champion_id": 28,
-        "play": 536,
-        "win": 274,
+        "play": 538,
+        "win": 276,
         "meta": {
           "id": 28,
           "key": "Evelynn",
@@ -12446,9 +12103,352 @@
         }
       },
       {
+        "champion_id": 19,
+        "play": 537,
+        "win": 263,
+        "meta": {
+          "id": 19,
+          "key": "Warwick",
+          "name": "祖安怒兽",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Warwick.png",
+          "evolve": [],
+          "partype": "法力",
+          "passive": {
+            "name": "血之饥渴",
+            "description": "沃里克的普攻造成额外魔法伤害。如果沃里克的生命值低于50%，那么他会获得等额的治疗效果。如果他的生命值低于25%，则治疗效果提升至三倍。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/WarwickP.png",
+            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0019/ability_0019_P1.webm"
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "野兽之口",
+              "description": "沃里克向前猛扑并撕咬他的目标，造成基于目标最大生命值的伤害，并造成基于实际伤害值的治疗效果。",
+              "max_rank": 5,
+              "range_burn": [
+                350
+              ],
+              "cooldown_burn": [
+                6
+              ],
+              "cooldown_burn_float": [
+                6
+              ],
+              "cost_burn": [
+                50,
+                60,
+                70,
+                80,
+                90
+              ],
+              "tooltip": "<tap>秒放：</tap>沃里克向前猛扑并撕咬，造成<magicDamage>?外加?%最大生命值的魔法伤害</magicDamage>和<healing>25/37.5/50/62.5/75%实际伤害值的治疗效果</healing>。<br /><br /><hold>蓄力：</hold>沃里克猛扑并用它的狼嘴紧咬目标，并跃到目标身后。在紧咬目标时，沃里克会跟随目标的所有移动。在释放他的蓄力后，他会造成等额伤害和治疗效果。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/WarwickQ.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0019/ability_0019_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "鲜血追猎",
+              "description": "沃里克感知生命值在50%以下的敌人，在朝着这些敌人移动时会获得移动速度加成，并在攻击这些敌人时会获得攻速加成。当这些敌人的生命值在20%以下时，他会狂暴并让这些加成提升至三倍。",
+              "max_rank": 5,
+              "range_burn": [
+                4000
+              ],
+              "cooldown_burn": [
+                100,
+                85,
+                70,
+                55,
+                40
+              ],
+              "cooldown_burn_float": [
+                100,
+                85,
+                70,
+                55,
+                40
+              ],
+              "cost_burn": [
+                70
+              ],
+              "tooltip": "<spellPassive>被动：</spellPassive>沃里克可以感知到低于50%生命值的英雄们，朝他们移动时获得<speed>35/42.5/50/57.5/65%移动速度</speed>并在对抗他们时获得<attackSpeed>70/80/90/100/110%攻击速度</attackSpeed>。这些加成在对抗低于20%生命值的敌人们时会提升250%。<br /><br /><spellActive>主动：</spellActive>沃里克可以暂时感知到所有敌人，并在对抗相距最近的敌人时获得这个技能的被动效果，持续8秒，无论该目标有多少生命值。沃里克无法在与英雄战斗时使用这个技能。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/WarwickW.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0019/ability_0019_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "远祖嗥叫",
+              "description": "沃里克获得持续2.5秒的伤害减免效果。在效果结束时，或者重新激活技能时，沃里克会嗥叫，使附近的敌人因恐惧而逃跑1秒。",
+              "max_rank": 5,
+              "range_burn": [
+                375
+              ],
+              "cooldown_burn": [
+                15,
+                14,
+                13,
+                12,
+                11
+              ],
+              "cooldown_burn_float": [
+                15,
+                14,
+                13,
+                12,
+                11
+              ],
+              "cost_burn": [
+                40
+              ],
+              "tooltip": "沃里克获得持续2.5秒的35/40/45/50/55%伤害减免。在它结束后，沃里克会发出嗥叫，<status>恐惧</status>附近的敌人1秒。沃里克可以<recast>再次施放</recast>来提前结束这个技能。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/WarwickE.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0019/ability_0019_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "无尽束缚",
+              "description": "沃里克朝一个方向跳跃（跳跃距离可从他的移动速度加成中获益），将他所碰撞到的第一个敌方英雄压制1.5秒。",
+              "max_rank": 3,
+              "range_burn": [
+                25000
+              ],
+              "cooldown_burn": [
+                110,
+                90,
+                70
+              ],
+              "cooldown_burn_float": [
+                110,
+                90,
+                70
+              ],
+              "cost_burn": [
+                100
+              ],
+              "tooltip": "沃里克跳跃一大段距离(随他的<speed>移动速度</speed>增长)，并<status>压制</status>碰撞到的第一个敌方英雄?秒并且自身处在引导状态。在此期间他持续攻击该英雄3次，造成<magicDamage>?魔法伤害</magicDamage>。沃里克在引导期间会获得<healing>100%实际伤害值的治疗效果</healing>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/WarwickR.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0019/ability_0019_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 19000,
+              "champion_id": 19,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 450
+                },
+                {
+                  "currency": "RP",
+                  "cost": 260
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 19004,
+              "champion_id": 19,
+              "name": "冻原猎手 沃里克",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_4.jpg",
+              "skin_video_url": "https://youtu.be/IcAbsp_5kdc",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 520
+                }
+              ],
+              "sales": null,
+              "release_date": "2010-07-12T15:00:00+09:00"
+            },
+            {
+              "id": 19045,
+              "champion_id": 19,
+              "name": "北极星使者 沃里克",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_45.jpg",
+              "skin_video_url": "https://youtu.be/2VZ09cjMfT4",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2022-12-08T04:00:00+09:00"
+            },
+            {
+              "id": 19010,
+              "champion_id": 19,
+              "name": "南天之怒 沃里克",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_10.jpg",
+              "skin_video_url": "https://youtu.be/pAoX2TuTuF0",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 19035,
+              "champion_id": 19,
+              "name": "古神 沃里克",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_35.jpg",
+              "skin_video_url": "https://youtu.be/NKcmE_iwyog",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2021-08-12T04:00:00+09:00"
+            },
+            {
+              "id": 19005,
+              "champion_id": 19,
+              "name": "嗜血狂暴 沃里克",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_5.jpg",
+              "skin_video_url": "https://youtu.be/4KTdmuN0HVg",
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 19002,
+              "champion_id": 19,
+              "name": "披着海牛的狼 沃里克",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_2.jpg",
+              "skin_video_url": null,
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 19001,
+              "champion_id": 19,
+              "name": "暗影 沃里克",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_1.jpg",
+              "skin_video_url": "https://youtu.be/VROihO7zWwk",
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 19009,
+              "champion_id": 19,
+              "name": "海牛狼人 沃里克",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_9.jpg",
+              "skin_video_url": "https://youtu.be/BggWSAYLPLc",
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 150000
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 19016,
+              "champion_id": 19,
+              "name": "源计划：末日 沃里克",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_16.jpg",
+              "skin_video_url": "https://youtu.be/zMy-8imxVkQ",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": [
+                {
+                  "currency": "RP",
+                  "cost": 540,
+                  "discount_rate": 0.6,
+                  "started_at": "2024-08-19T08:00:00+09:00",
+                  "ended_at": "2024-08-26T08:00:00+09:00"
+                }
+              ],
+              "release_date": "2019-08-01T04:00:00+09:00"
+            },
+            {
+              "id": 19006,
+              "champion_id": 19,
+              "name": "火牙狼人 沃里克",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_6.jpg",
+              "skin_video_url": "https://youtu.be/xdu8t8-Btco",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": "2011-03-28T20:00:00+09:00"
+            },
+            {
+              "id": 19003,
+              "champion_id": 19,
+              "name": "狼外婆 沃里克",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_3.jpg",
+              "skin_video_url": "https://youtu.be/Kwvhn9-G9Sw",
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 19046,
+              "champion_id": 19,
+              "name": "至臻 北极星使者 沃里克",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_46.jpg",
+              "skin_video_url": "https://youtu.be/2VZ09cjMfT4",
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 19007,
+              "champion_id": 19,
+              "name": "荒野豺狼 沃里克",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_7.jpg",
+              "skin_video_url": "https://youtu.be/pVQcMxUn4DU",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": "2011-11-29T15:00:00+09:00"
+            },
+            {
+              "id": 19008,
+              "champion_id": 19,
+              "name": "黑暗骑士 沃里克",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Warwick_8.jpg",
+              "skin_video_url": "https://youtu.be/mPCMc5xR90g",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 750
+                }
+              ],
+              "sales": null,
+              "release_date": "2015-02-17T09:00:00+09:00"
+            }
+          ]
+        }
+      },
+      {
         "champion_id": 79,
-        "play": 472,
-        "win": 245,
+        "play": 475,
+        "win": 248,
         "meta": {
           "id": 79,
           "key": "Gragas",
@@ -12773,8 +12773,8 @@
       },
       {
         "champion_id": 203,
-        "play": 447,
-        "win": 213,
+        "play": 450,
+        "win": 215,
         "meta": {
           "id": 203,
           "key": "Kindred",
@@ -13019,8 +13019,8 @@
       },
       {
         "champion_id": 163,
-        "play": 424,
-        "win": 203,
+        "play": 427,
+        "win": 204,
         "meta": {
           "id": 163,
           "key": "Taliyah",
@@ -13257,8 +13257,8 @@
       },
       {
         "champion_id": 517,
-        "play": 410,
-        "win": 218,
+        "play": 414,
+        "win": 219,
         "meta": {
           "id": 517,
           "key": "Sylas",
@@ -13510,8 +13510,8 @@
       },
       {
         "champion_id": 421,
-        "play": 389,
-        "win": 183,
+        "play": 393,
+        "win": 184,
         "meta": {
           "id": 421,
           "key": "RekSai",
@@ -13723,7 +13723,7 @@
       },
       {
         "champion_id": 91,
-        "play": 375,
+        "play": 377,
         "win": 189,
         "meta": {
           "id": 91,
@@ -14247,7 +14247,7 @@
       },
       {
         "champion_id": 33,
-        "play": 328,
+        "play": 329,
         "win": 173,
         "meta": {
           "id": 33,
@@ -14526,8 +14526,8 @@
       },
       {
         "champion_id": 238,
-        "play": 317,
-        "win": 159,
+        "play": 319,
+        "win": 160,
         "meta": {
           "id": 238,
           "key": "Zed",
@@ -14855,8 +14855,8 @@
       },
       {
         "champion_id": 887,
-        "play": 314,
-        "win": 142,
+        "play": 315,
+        "win": 143,
         "meta": {
           "id": 887,
           "key": "Gwen",
@@ -15054,8 +15054,8 @@
       },
       {
         "champion_id": 72,
-        "play": 287,
-        "win": 141,
+        "play": 291,
+        "win": 143,
         "meta": {
           "id": 72,
           "key": "Skarner",
@@ -15291,7 +15291,7 @@
       },
       {
         "champion_id": 246,
-        "play": 250,
+        "play": 251,
         "win": 126,
         "meta": {
           "id": 246,
@@ -16587,7 +16587,7 @@
       },
       {
         "champion_id": 57,
-        "play": 178,
+        "play": 179,
         "win": 114,
         "meta": {
           "id": 57,
@@ -31727,8 +31727,8 @@
         4,
         11
       ],
-      "win": 27042,
-      "play": 52957,
+      "win": 27137,
+      "play": 53160,
       "pick_rate": 0.9893
     },
     {
@@ -31737,7 +31737,7 @@
         11
       ],
       "win": 243,
-      "play": 473,
+      "play": 474,
       "pick_rate": 0.0088
     },
     {
@@ -31746,8 +31746,8 @@
         14
       ],
       "win": 29,
-      "play": 72,
-      "pick_rate": 0.0013
+      "play": 74,
+      "pick_rate": 0.0014
     },
     {
       "ids": [
@@ -31955,9 +31955,9 @@
         "Q",
         "Q"
       ],
-      "play": 14870,
-      "win": 9804,
-      "pick_rate": 0.5863
+      "play": 14928,
+      "win": 9834,
+      "pick_rate": 0.5864
     },
     {
       "order": [
@@ -31977,9 +31977,9 @@
         "Q",
         "Q"
       ],
-      "play": 2770,
-      "win": 1824,
-      "pick_rate": 0.1092
+      "play": 2784,
+      "win": 1835,
+      "pick_rate": 0.1094
     },
     {
       "order": [
@@ -31999,8 +31999,8 @@
         "Q",
         "Q"
       ],
-      "play": 1550,
-      "win": 1054,
+      "play": 1555,
+      "win": 1058,
       "pick_rate": 0.0611
     },
     {
@@ -32021,8 +32021,8 @@
         "E",
         "E"
       ],
-      "play": 785,
-      "win": 515,
+      "play": 788,
+      "win": 517,
       "pick_rate": 0.031
     },
     {
@@ -32045,7 +32045,7 @@
       ],
       "play": 395,
       "win": 252,
-      "pick_rate": 0.0156
+      "pick_rate": 0.0155
     }
   ],
   "skill_masteries": [
@@ -32055,9 +32055,9 @@
         "E",
         "Q"
       ],
-      "play": 22316,
-      "win": 14682,
-      "pick_rate": 0.8799,
+      "play": 22407,
+      "win": 14735,
+      "pick_rate": 0.8801,
       "builds": [
         {
           "order": [
@@ -32077,9 +32077,9 @@
             "Q",
             "Q"
           ],
-          "play": 14870,
-          "win": 9804,
-          "pick_rate": 0.6663
+          "play": 14928,
+          "win": 9834,
+          "pick_rate": 0.6662
         },
         {
           "order": [
@@ -32099,9 +32099,9 @@
             "Q",
             "Q"
           ],
-          "play": 2770,
-          "win": 1824,
-          "pick_rate": 0.1241
+          "play": 2784,
+          "win": 1835,
+          "pick_rate": 0.1242
         },
         {
           "order": [
@@ -32121,9 +32121,9 @@
             "Q",
             "Q"
           ],
-          "play": 1550,
-          "win": 1054,
-          "pick_rate": 0.0695
+          "play": 1555,
+          "win": 1058,
+          "pick_rate": 0.0694
         },
         {
           "order": [
@@ -32143,9 +32143,9 @@
             "E",
             "Q"
           ],
-          "play": 286,
-          "win": 174,
-          "pick_rate": 0.0128
+          "play": 288,
+          "win": 176,
+          "pick_rate": 0.0129
         },
         {
           "order": [
@@ -32165,8 +32165,8 @@
             "E",
             "Q"
           ],
-          "play": 283,
-          "win": 188,
+          "play": 284,
+          "win": 189,
           "pick_rate": 0.0127
         }
       ]
@@ -32177,9 +32177,9 @@
         "Q",
         "E"
       ],
-      "play": 2320,
-      "win": 1471,
-      "pick_rate": 0.0915,
+      "play": 2326,
+      "win": 1475,
+      "pick_rate": 0.0914,
       "builds": [
         {
           "order": [
@@ -32199,9 +32199,9 @@
             "E",
             "E"
           ],
-          "play": 785,
-          "win": 515,
-          "pick_rate": 0.3384
+          "play": 788,
+          "win": 517,
+          "pick_rate": 0.3388
         },
         {
           "order": [
@@ -32223,7 +32223,7 @@
           ],
           "play": 395,
           "win": 252,
-          "pick_rate": 0.1703
+          "pick_rate": 0.1698
         },
         {
           "order": [
@@ -32245,7 +32245,7 @@
           ],
           "play": 210,
           "win": 125,
-          "pick_rate": 0.0905
+          "pick_rate": 0.0903
         },
         {
           "order": [
@@ -32267,7 +32267,7 @@
           ],
           "play": 55,
           "win": 35,
-          "pick_rate": 0.0237
+          "pick_rate": 0.0236
         },
         {
           "order": [
@@ -32289,7 +32289,7 @@
           ],
           "play": 50,
           "win": 30,
-          "pick_rate": 0.0216
+          "pick_rate": 0.0215
         }
       ]
     },
@@ -32681,9 +32681,9 @@
         5008,
         5001
       ],
-      "play": 30971,
-      "win": 15815,
-      "pick_rate": 0.5724
+      "play": 31096,
+      "win": 15876,
+      "pick_rate": 0.5725
     },
     {
       "id": 9923,
@@ -32704,8 +32704,8 @@
         5008,
         5001
       ],
-      "play": 5510,
-      "win": 2783,
+      "play": 5531,
+      "win": 2790,
       "pick_rate": 0.1018
     },
     {
@@ -32727,9 +32727,9 @@
         5008,
         5001
       ],
-      "play": 2324,
-      "win": 1220,
-      "pick_rate": 0.0429
+      "play": 2333,
+      "win": 1224,
+      "pick_rate": 0.043
     },
     {
       "id": 8005,
@@ -32750,8 +32750,8 @@
         5008,
         5001
       ],
-      "play": 1912,
-      "win": 957,
+      "play": 1916,
+      "win": 958,
       "pick_rate": 0.0353
     },
     {
@@ -32773,8 +32773,8 @@
         5008,
         5001
       ],
-      "play": 1814,
-      "win": 968,
+      "play": 1818,
+      "win": 969,
       "pick_rate": 0.0335
     }
   ],
@@ -32783,8 +32783,8 @@
       "id": 8010,
       "primary_page_id": 8000,
       "secondary_page_id": 8300,
-      "play": 40801,
-      "win": 20971,
+      "play": 40958,
+      "win": 21045,
       "pick_rate": 0.754,
       "builds": [
         {
@@ -32806,9 +32806,9 @@
             5008,
             5001
           ],
-          "play": 30971,
-          "win": 15815,
-          "pick_rate": 0.7591
+          "play": 31096,
+          "win": 15876,
+          "pick_rate": 0.7592
         },
         {
           "id": 8010,
@@ -32829,8 +32829,8 @@
             5008,
             5001
           ],
-          "play": 2324,
-          "win": 1220,
+          "play": 2333,
+          "win": 1224,
           "pick_rate": 0.057
         },
         {
@@ -32852,9 +32852,9 @@
             5008,
             5001
           ],
-          "play": 1814,
-          "win": 968,
-          "pick_rate": 0.0445
+          "play": 1818,
+          "win": 969,
+          "pick_rate": 0.0444
         },
         {
           "id": 8010,
@@ -32875,8 +32875,8 @@
             5008,
             5011
           ],
-          "play": 1394,
-          "win": 719,
+          "play": 1400,
+          "win": 723,
           "pick_rate": 0.0342
         },
         {
@@ -32898,9 +32898,9 @@
             5008,
             5011
           ],
-          "play": 979,
+          "play": 980,
           "win": 503,
-          "pick_rate": 0.024
+          "pick_rate": 0.0239
         }
       ]
     },
@@ -32908,8 +32908,8 @@
       "id": 9923,
       "primary_page_id": 8100,
       "secondary_page_id": 8000,
-      "play": 7114,
-      "win": 3598,
+      "play": 7145,
+      "win": 3609,
       "pick_rate": 0.1315,
       "builds": [
         {
@@ -32931,9 +32931,9 @@
             5008,
             5001
           ],
-          "play": 5510,
-          "win": 2783,
-          "pick_rate": 0.7745
+          "play": 5531,
+          "win": 2790,
+          "pick_rate": 0.7741
         },
         {
           "id": 9923,
@@ -32956,7 +32956,7 @@
           ],
           "play": 283,
           "win": 155,
-          "pick_rate": 0.0398
+          "pick_rate": 0.0396
         },
         {
           "id": 9923,
@@ -32977,7 +32977,7 @@
             5008,
             5001
           ],
-          "play": 179,
+          "play": 180,
           "win": 101,
           "pick_rate": 0.0252
         },
@@ -33000,9 +33000,9 @@
             5008,
             5011
           ],
-          "play": 89,
+          "play": 90,
           "win": 40,
-          "pick_rate": 0.0125
+          "pick_rate": 0.0126
         },
         {
           "id": 9923,
@@ -33023,9 +33023,9 @@
             5008,
             5001
           ],
-          "play": 87,
-          "win": 47,
-          "pick_rate": 0.0122
+          "play": 88,
+          "win": 48,
+          "pick_rate": 0.0123
         }
       ]
     },
@@ -33033,9 +33033,9 @@
       "id": 8005,
       "primary_page_id": 8000,
       "secondary_page_id": 8300,
-      "play": 2315,
-      "win": 1173,
-      "pick_rate": 0.0428,
+      "play": 2321,
+      "win": 1175,
+      "pick_rate": 0.0427,
       "builds": [
         {
           "id": 8005,
@@ -33056,9 +33056,9 @@
             5008,
             5001
           ],
-          "play": 1912,
-          "win": 957,
-          "pick_rate": 0.8259
+          "play": 1916,
+          "win": 958,
+          "pick_rate": 0.8255
         },
         {
           "id": 8005,
@@ -33079,9 +33079,9 @@
             5008,
             5001
           ],
-          "play": 82,
-          "win": 47,
-          "pick_rate": 0.0354
+          "play": 84,
+          "win": 48,
+          "pick_rate": 0.0362
         },
         {
           "id": 8005,
@@ -33104,7 +33104,7 @@
           ],
           "play": 63,
           "win": 27,
-          "pick_rate": 0.0272
+          "pick_rate": 0.0271
         },
         {
           "id": 8005,
@@ -33127,7 +33127,7 @@
           ],
           "play": 56,
           "win": 36,
-          "pick_rate": 0.0242
+          "pick_rate": 0.0241
         },
         {
           "id": 8005,
@@ -33150,7 +33150,7 @@
           ],
           "play": 37,
           "win": 24,
-          "pick_rate": 0.016
+          "pick_rate": 0.0159
         }
       ]
     },
@@ -33158,8 +33158,8 @@
       "id": 8010,
       "primary_page_id": 8000,
       "secondary_page_id": 8100,
-      "play": 1795,
-      "win": 870,
+      "play": 1802,
+      "win": 874,
       "pick_rate": 0.0332,
       "builds": [
         {
@@ -33181,7 +33181,7 @@
             5008,
             5001
           ],
-          "play": 257,
+          "play": 258,
           "win": 127,
           "pick_rate": 0.1432
         },
@@ -33204,9 +33204,9 @@
             5008,
             5001
           ],
-          "play": 179,
-          "win": 86,
-          "pick_rate": 0.0997
+          "play": 180,
+          "win": 87,
+          "pick_rate": 0.0999
         },
         {
           "id": 8010,
@@ -33227,9 +33227,9 @@
             5008,
             5011
           ],
-          "play": 141,
+          "play": 142,
           "win": 76,
-          "pick_rate": 0.0786
+          "pick_rate": 0.0788
         },
         {
           "id": 8010,
@@ -33252,7 +33252,7 @@
           ],
           "play": 111,
           "win": 60,
-          "pick_rate": 0.0618
+          "pick_rate": 0.0616
         },
         {
           "id": 8010,
@@ -33275,7 +33275,7 @@
           ],
           "play": 108,
           "win": 48,
-          "pick_rate": 0.0602
+          "pick_rate": 0.0599
         }
       ]
     },
@@ -33412,9 +33412,9 @@
         6610,
         3053
       ],
-      "play": 6078,
-      "win": 3746,
-      "pick_rate": 0.2319
+      "play": 6110,
+      "win": 3763,
+      "pick_rate": 0.2321
     },
     {
       "ids": [
@@ -33422,9 +33422,9 @@
         6610,
         3071
       ],
-      "play": 2782,
-      "win": 1701,
-      "pick_rate": 0.1061
+      "play": 2789,
+      "win": 1705,
+      "pick_rate": 0.106
     },
     {
       "ids": [
@@ -33432,9 +33432,9 @@
         6610,
         6333
       ],
-      "play": 1477,
-      "win": 894,
-      "pick_rate": 0.0563
+      "play": 1480,
+      "win": 896,
+      "pick_rate": 0.0562
     },
     {
       "ids": [
@@ -33442,9 +33442,9 @@
         3071,
         3053
       ],
-      "play": 1217,
-      "win": 778,
-      "pick_rate": 0.0464
+      "play": 1218,
+      "win": 779,
+      "pick_rate": 0.0463
     },
     {
       "ids": [
@@ -33452,8 +33452,8 @@
         6610,
         3156
       ],
-      "play": 1021,
-      "win": 599,
+      "play": 1026,
+      "win": 602,
       "pick_rate": 0.039
     },
     {
@@ -33462,8 +33462,8 @@
         6610,
         3053
       ],
-      "play": 448,
-      "win": 292,
+      "play": 450,
+      "win": 293,
       "pick_rate": 0.0171
     },
     {
@@ -33472,9 +33472,9 @@
         3071,
         6610
       ],
-      "play": 414,
-      "win": 245,
-      "pick_rate": 0.0158
+      "play": 421,
+      "win": 250,
+      "pick_rate": 0.016
     },
     {
       "ids": [
@@ -33482,7 +33482,7 @@
         3071,
         3053
       ],
-      "play": 393,
+      "play": 394,
       "win": 229,
       "pick_rate": 0.015
     },
@@ -33492,8 +33492,8 @@
         3071,
         3110
       ],
-      "play": 371,
-      "win": 212,
+      "play": 373,
+      "win": 213,
       "pick_rate": 0.0142
     },
     {
@@ -33502,9 +33502,9 @@
         6692,
         3053
       ],
-      "play": 338,
-      "win": 216,
-      "pick_rate": 0.0129
+      "play": 341,
+      "win": 218,
+      "pick_rate": 0.013
     },
     {
       "ids": [
@@ -33514,7 +33514,7 @@
       ],
       "play": 330,
       "win": 192,
-      "pick_rate": 0.0126
+      "pick_rate": 0.0125
     },
     {
       "ids": [
@@ -33522,7 +33522,7 @@
         6610,
         3748
       ],
-      "play": 315,
+      "play": 316,
       "win": 210,
       "pick_rate": 0.012
     },
@@ -33532,7 +33532,7 @@
         3071,
         6333
       ],
-      "play": 291,
+      "play": 292,
       "win": 180,
       "pick_rate": 0.0111
     },
@@ -33552,9 +33552,9 @@
         3071,
         3091
       ],
-      "play": 242,
-      "win": 135,
-      "pick_rate": 0.0092
+      "play": 246,
+      "win": 136,
+      "pick_rate": 0.0093
     }
   ],
   "boots": [
@@ -33562,17 +33562,17 @@
       "ids": [
         3047
       ],
-      "play": 25772,
-      "win": 13426,
-      "pick_rate": 0.5223
+      "play": 25855,
+      "win": 13464,
+      "pick_rate": 0.522
     },
     {
       "ids": [
         3111
       ],
-      "play": 22155,
-      "win": 11678,
-      "pick_rate": 0.449
+      "play": 22256,
+      "win": 11727,
+      "pick_rate": 0.4493
     },
     {
       "ids": [
@@ -33580,21 +33580,21 @@
       ],
       "play": 572,
       "win": 301,
-      "pick_rate": 0.0116
+      "pick_rate": 0.0115
     },
     {
       "ids": [
         3158
       ],
-      "play": 397,
-      "win": 234,
+      "play": 398,
+      "win": 235,
       "pick_rate": 0.008
     },
     {
       "ids": [
         3009
       ],
-      "play": 339,
+      "play": 341,
       "win": 195,
       "pick_rate": 0.0069
     }
@@ -33605,8 +33605,8 @@
         1102,
         2003
       ],
-      "play": 27985,
-      "win": 14362,
+      "play": 28093,
+      "win": 14405,
       "pick_rate": 0.5116
     },
     {
@@ -33614,42 +33614,42 @@
         1101,
         2003
       ],
-      "play": 11917,
-      "win": 5958,
-      "pick_rate": 0.2179
+      "play": 11972,
+      "win": 5990,
+      "pick_rate": 0.218
     },
     {
       "ids": [
         1103,
         2003
       ],
-      "play": 6068,
-      "win": 3065,
+      "play": 6087,
+      "win": 3074,
       "pick_rate": 0.1109
     },
     {
       "ids": [
         1102
       ],
-      "play": 4580,
-      "win": 2349,
+      "play": 4594,
+      "win": 2355,
       "pick_rate": 0.0837
     },
     {
       "ids": [
         1101
       ],
-      "play": 1852,
-      "win": 938,
-      "pick_rate": 0.0339
+      "play": 1854,
+      "win": 939,
+      "pick_rate": 0.0338
     },
     {
       "ids": [
         1103
       ],
-      "play": 1452,
-      "win": 730,
-      "pick_rate": 0.0265
+      "play": 1459,
+      "win": 733,
+      "pick_rate": 0.0266
     },
     {
       "ids": [
@@ -33657,8 +33657,8 @@
         1102,
         2003
       ],
-      "play": 321,
-      "win": 208,
+      "play": 323,
+      "win": 209,
       "pick_rate": 0.0059
     },
     {
@@ -33667,8 +33667,8 @@
         1101,
         2003
       ],
-      "play": 118,
-      "win": 76,
+      "play": 119,
+      "win": 77,
       "pick_rate": 0.0022
     },
     {
@@ -33747,119 +33747,119 @@
       "ids": [
         6610
       ],
-      "play": 38974,
-      "win": 20999,
-      "pick_rate": 0.2811
+      "play": 39120,
+      "win": 21077,
+      "pick_rate": 0.281
     },
     {
       "ids": [
         6692
       ],
-      "play": 36674,
-      "win": 18967,
-      "pick_rate": 0.2645
+      "play": 36808,
+      "win": 19033,
+      "pick_rate": 0.2644
     },
     {
       "ids": [
         3071
       ],
-      "play": 14096,
-      "win": 7990,
-      "pick_rate": 0.1017
+      "play": 14150,
+      "win": 8017,
+      "pick_rate": 0.1016
     },
     {
       "ids": [
         3053
       ],
-      "play": 12555,
-      "win": 7635,
-      "pick_rate": 0.0905
+      "play": 12611,
+      "win": 7667,
+      "pick_rate": 0.0906
     },
     {
       "ids": [
         3748
       ],
-      "play": 6867,
-      "win": 3760,
+      "play": 6895,
+      "win": 3771,
       "pick_rate": 0.0495
     },
     {
       "ids": [
         6333
       ],
-      "play": 4825,
-      "win": 2962,
+      "play": 4845,
+      "win": 2971,
       "pick_rate": 0.0348
     },
     {
       "ids": [
         3156
       ],
-      "play": 2850,
-      "win": 1617,
+      "play": 2865,
+      "win": 1624,
       "pick_rate": 0.0206
     },
     {
       "ids": [
         3110
       ],
-      "play": 2305,
-      "win": 1347,
+      "play": 2313,
+      "win": 1351,
       "pick_rate": 0.0166
     },
     {
       "ids": [
         3091
       ],
-      "play": 2296,
-      "win": 1371,
+      "play": 2308,
+      "win": 1375,
       "pick_rate": 0.0166
     },
     {
       "ids": [
         3153
       ],
-      "play": 1608,
-      "win": 830,
+      "play": 1614,
+      "win": 833,
       "pick_rate": 0.0116
     },
     {
       "ids": [
         3123
       ],
-      "play": 1255,
-      "win": 541,
+      "play": 1263,
+      "win": 543,
       "pick_rate": 0.0091
     },
     {
       "ids": [
         3161
       ],
-      "play": 1232,
-      "win": 748,
+      "play": 1236,
+      "win": 752,
       "pick_rate": 0.0089
     },
     {
       "ids": [
         3077
       ],
-      "play": 921,
-      "win": 439,
+      "play": 925,
+      "win": 440,
       "pick_rate": 0.0066
     },
     {
       "ids": [
         3143
       ],
-      "play": 800,
-      "win": 418,
+      "play": 804,
+      "win": 420,
       "pick_rate": 0.0058
     },
     {
       "ids": [
         3078
       ],
-      "play": 786,
+      "play": 789,
       "win": 404,
       "pick_rate": 0.0057
     },
@@ -33867,31 +33867,31 @@
       "ids": [
         3026
       ],
-      "play": 765,
-      "win": 501,
+      "play": 767,
+      "win": 502,
       "pick_rate": 0.0055
     },
     {
       "ids": [
         3076
       ],
-      "play": 740,
-      "win": 302,
+      "play": 741,
+      "win": 303,
       "pick_rate": 0.0053
     },
     {
       "ids": [
         6631
       ],
-      "play": 731,
-      "win": 398,
+      "play": 735,
+      "win": 401,
       "pick_rate": 0.0053
     },
     {
       "ids": [
         6698
       ],
-      "play": 685,
+      "play": 688,
       "win": 354,
       "pick_rate": 0.0049
     },
@@ -33899,17 +33899,25 @@
       "ids": [
         1038
       ],
-      "play": 581,
-      "win": 393,
+      "play": 586,
+      "win": 397,
       "pick_rate": 0.0042
     },
     {
       "ids": [
         6676
       ],
-      "play": 564,
-      "win": 296,
+      "play": 567,
+      "win": 298,
       "pick_rate": 0.0041
+    },
+    {
+      "ids": [
+        3075
+      ],
+      "play": 527,
+      "win": 260,
+      "pick_rate": 0.0038
     },
     {
       "ids": [
@@ -33917,29 +33925,21 @@
       ],
       "play": 534,
       "win": 273,
-      "pick_rate": 0.0039
-    },
-    {
-      "ids": [
-        3075
-      ],
-      "play": 525,
-      "win": 259,
       "pick_rate": 0.0038
     },
     {
       "ids": [
         3065
       ],
-      "play": 484,
-      "win": 287,
+      "play": 489,
+      "win": 292,
       "pick_rate": 0.0035
     },
     {
       "ids": [
         2504
       ],
-      "play": 439,
+      "play": 440,
       "win": 246,
       "pick_rate": 0.0032
     },
@@ -33947,8 +33947,8 @@
       "ids": [
         3142
       ],
-      "play": 375,
-      "win": 206,
+      "play": 379,
+      "win": 208,
       "pick_rate": 0.0027
     },
     {
@@ -33963,7 +33963,7 @@
       "ids": [
         6665
       ],
-      "play": 284,
+      "play": 285,
       "win": 163,
       "pick_rate": 0.002
     },
@@ -33971,7 +33971,7 @@
       "ids": [
         3134
       ],
-      "play": 241,
+      "play": 243,
       "win": 106,
       "pick_rate": 0.0017
     },
@@ -33979,7 +33979,7 @@
       "ids": [
         6695
       ],
-      "play": 229,
+      "play": 230,
       "win": 116,
       "pick_rate": 0.0017
     }
