@@ -434,16 +434,16 @@
       "is_rotation": false,
       "is_rip": false,
       "average_stats": {
-        "win_rate": 0.486819,
-        "pick_rate": 0.243281,
-        "ban_rate": 0.155395,
-        "kda": 2.466064,
+        "win_rate": 0.486846,
+        "pick_rate": 0.243055,
+        "ban_rate": 0.155143,
+        "kda": 2.465914,
         "tier": 2,
         "rank": 34,
         "tier_data": {
           "tier": 2,
           "rank": 34,
-          "rank_prev": 33,
+          "rank_prev": 34,
           "rank_prev_patch": 26
         }
       },
@@ -451,11 +451,11 @@
         {
           "name": "ADC",
           "stats": {
-            "win_rate": 0.489949,
-            "pick_rate": 0.223756,
-            "role_rate": 0.927975,
-            "ban_rate": 0.144203,
-            "kda": 2.515323,
+            "win_rate": 0.489984,
+            "pick_rate": 0.223509,
+            "role_rate": 0.927836,
+            "ban_rate": 0.143947,
+            "kda": 2.515217,
             "tier_data": {
               "tier": 2,
               "rank": 9,
@@ -467,28 +467,28 @@
             {
               "name": "FIGHTER",
               "stats": {
-                "win_rate": 0.490838,
-                "role_rate": 0.986437,
-                "play": 444750,
-                "win": 218300
+                "win_rate": 0.490782,
+                "role_rate": 0.986599,
+                "play": 448219,
+                "win": 219978
               }
             }
           ],
           "counters": [
             {
+              "champion_id": 157,
+              "play": 1590,
+              "win": 705
+            },
+            {
               "champion_id": 147,
-              "play": 2861,
-              "win": 1271
+              "play": 2887,
+              "win": 1285
             },
             {
               "champion_id": 895,
-              "play": 2591,
-              "win": 1169
-            },
-            {
-              "champion_id": 30,
-              "play": 884,
-              "win": 404
+              "play": 2618,
+              "win": 1184
             }
           ]
         }
@@ -498,9 +498,394 @@
     "opponents": [
       [
         {
+          "champion_id": 157,
+          "play": 1590,
+          "win": 705,
+          "meta": {
+            "id": 157,
+            "key": "Yasuo",
+            "name": "疾风剑豪",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Yasuo.png",
+            "evolve": [],
+            "partype": "剑意",
+            "passive": {
+              "name": "浪客之道",
+              "description": "亚索的暴击几率提升。此外，亚索在移动时会为一层护盾攒能。护盾会在他受到来自英雄或野怪的伤害时触发。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Yasuo_Passive.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0157/ability_0157_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "斩钢闪",
+                "description": "向前出剑，呈直线造成伤害。<br><br>在命中时，斩钢闪会获得一层旋风烈斩效果，持续数秒。在积攒2层旋风烈斩效果后，斩钢闪会形成一阵能够<font color='#6655CC'>击飞</font>敌人的旋风。<br><br>斩钢闪被视为普通攻击，并且可以从所有作用于普攻的东西上获得收益。",
+                "max_rank": 5,
+                "range_burn": [
+                  475
+                ],
+                "cooldown_burn": [
+                  4
+                ],
+                "cooldown_burn_float": [
+                  4
+                ],
+                "cost_burn": [
+                  0
+                ],
+                "tooltip": "亚索进行戳刺，造成<physicalDamage>?物理伤害</physicalDamage>。如果他命中了，那么他会获得一层持续?秒的层数。当他拥有2层时，这个技能的下次施放将会发射出一道远程龙卷风，造成等值伤害和?秒<status>击飞</status>。<br /><br />如果在冲刺期间施放，那么这个技能会呈环状进行打击而非直接戳刺。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/YasuoQ1Wrapper.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0157/ability_0157_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "风之障壁",
+                "description": "形成一个持续4秒的气流之墙，来阻挡敌方的飞行道具。",
+                "max_rank": 5,
+                "range_burn": [
+                  400
+                ],
+                "cooldown_burn": [
+                  25,
+                  23,
+                  21,
+                  19,
+                  17
+                ],
+                "cooldown_burn_float": [
+                  25,
+                  23,
+                  21,
+                  19,
+                  17
+                ],
+                "cost_burn": [
+                  0
+                ],
+                "tooltip": "亚索形成一个持续4秒的气流浮墙，来阻挡敌方的飞行道具。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/YasuoW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0157/ability_0157_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "踏前斩",
+                "description": "向目标敌人突进，造成魔法伤害。每次施法都会提升你的后续突进的伤害，直到抵达上限。<br><br>在若干秒内无法对相同敌人重复施放。<br><br><font color='#99FF99'>如果在突进的过程中施放斩钢闪，那么斩钢闪就会呈环状出剑。</font>",
+                "max_rank": 5,
+                "range_burn": [
+                  475
+                ],
+                "cooldown_burn": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "cooldown_burn_float": [
+                  0.5,
+                  0.4,
+                  0.3,
+                  0.2,
+                  0.1
+                ],
+                "cost_burn": [
+                  0
+                ],
+                "tooltip": "亚索冲刺并穿过一个目标，造成<magicDamage>?魔法伤害</magicDamage>。这个技能每次施放后都会为?秒内的后续施放提供<magicDamage>?</magicDamage>额外伤害，至多可叠加?次。<br /><br />这个技能对每个目标有10/9/8/7/6秒冷却时间。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/YasuoE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0157/ability_0157_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "狂风绝息斩",
+                "description": "闪烁到一个<factionIonia1>浮空</factionIonia1>的敌方英雄身边，造成物理伤害，并使范围内的所有<factionIonia1>浮空</factionIonia1>的敌人滞留在空中。获得满额的剑意值，但会重置旋风烈斩的层数。<br><br>在接下来的若干秒里，亚索的暴击会获得显著的额外护甲穿透加成值。",
+                "max_rank": 3,
+                "range_burn": [
+                  1400
+                ],
+                "cooldown_burn": [
+                  70,
+                  50,
+                  30
+                ],
+                "cooldown_burn_float": [
+                  70,
+                  50,
+                  30
+                ],
+                "cost_burn": [
+                  0
+                ],
+                "tooltip": "亚索传送到一名<status>浮空</status>的敌方英雄身边，造成<physicalDamage>?物理伤害</physicalDamage>并使所有附近<status>浮空</status>的敌人们维持此状态至多?秒。亚索还会获得满额<keywordMajor>剑意</keywordMajor>，但会失去所有所有<spellName>斩钢闪</spellName>层数。<br /><br />之后，亚索的暴击会无视<scaleArmor>?%额外护甲</scaleArmor>，持续?秒。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/YasuoR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0157/ability_0157_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 157000,
+                "champion_id": 157,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 1350
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 585
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 157056,
+                "champion_id": 157,
+                "name": "墨之影武者 亚索",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_56.jpg",
+                "skin_video_url": "https://youtu.be/Z3R_O93Zfik",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2023-05-03T04:00:00+09:00"
+              },
+              {
+                "id": 157010,
+                "champion_id": 157,
+                "name": "奥德赛 亚索",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_10.jpg",
+                "skin_video_url": "https://youtu.be/O5wHs-yn6a0",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2018-09-10T22:00:00+09:00"
+              },
+              {
+                "id": 157077,
+                "champion_id": 157,
+                "name": "幻灵孤狼 亚索",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_77.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-07-31T09:00:00+09:00"
+              },
+              {
+                "id": 157017,
+                "champion_id": 157,
+                "name": "战场BOSS 亚索",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_17.jpg",
+                "skin_video_url": "https://youtu.be/sbvFSfcyAPY",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2019-06-28T04:00:00+09:00"
+              },
+              {
+                "id": 157045,
+                "champion_id": 157,
+                "name": "断浪之刃 亚索",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_45.jpg",
+                "skin_video_url": "https://youtu.be/L2vb9JYw0vQ",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2022-05-05T04:00:00+09:00"
+              },
+              {
+                "id": 157002,
+                "champion_id": 157,
+                "name": "源计划：风 亚索",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_2.jpg",
+                "skin_video_url": "https://youtu.be/GPL2oNmnXBE",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": [
+                  {
+                    "currency": "RP",
+                    "cost": 607,
+                    "discount_rate": 0.55,
+                    "started_at": "2024-08-19T08:00:00+09:00",
+                    "ended_at": "2024-08-26T08:00:00+09:00"
+                  }
+                ],
+                "release_date": "2014-09-01T09:00:00+09:00"
+              },
+              {
+                "id": 157036,
+                "champion_id": 157,
+                "name": "灵魂莲华 亚索",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_36.jpg",
+                "skin_video_url": "https://youtu.be/WPMnIQ9Xpxk",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-07-22T04:00:00+09:00"
+              },
+              {
+                "id": 157018,
+                "champion_id": 157,
+                "name": "真实伤害 亚索",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_18.jpg",
+                "skin_video_url": "https://youtu.be/185zBQpfZTQ",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2019-11-09T19:00:00+09:00"
+              },
+              {
+                "id": 157055,
+                "champion_id": 157,
+                "name": "神龙尊者 夜月幻龙 亚索",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_55.jpg",
+                "skin_video_url": "https://youtu.be/vuodQev0Ffg",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1820
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-10-21T04:00:00+09:00"
+              },
+              {
+                "id": 157054,
+                "champion_id": 157,
+                "name": "神龙尊者 昼日真龙 亚索",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_54.jpg",
+                "skin_video_url": "https://youtu.be/85HiPQDIPuU",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1820
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-10-21T04:00:00+09:00"
+              },
+              {
+                "id": 157003,
+                "champion_id": 157,
+                "name": "腥红之月 亚索",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_3.jpg",
+                "skin_video_url": "https://youtu.be/dZDWQrPDqYs",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2016-02-25T08:00:00+09:00"
+              },
+              {
+                "id": 157057,
+                "champion_id": 157,
+                "name": "至臻 墨之影武者 亚索",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_57.jpg",
+                "skin_video_url": "https://youtu.be/Z3R_O93Zfik",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 157035,
+                "champion_id": 157,
+                "name": "至臻 真实伤害 亚索",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_35.jpg",
+                "skin_video_url": "https://youtu.be/U7SZ_0zCjYA",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 157001,
+                "champion_id": 157,
+                "name": "西部牛仔 亚索",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_1.jpg",
+                "skin_video_url": "https://youtu.be/X90HV2g-EWI",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2013-12-16T08:00:00+09:00"
+              },
+              {
+                "id": 157068,
+                "champion_id": 157,
+                "name": "预知之眼 亚索",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_68.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-01-24T10:00:00+09:00"
+              },
+              {
+                "id": 157009,
+                "champion_id": 157,
+                "name": "黑夜使者 亚索",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_9.jpg",
+                "skin_video_url": "https://youtu.be/-4dye5TlO54",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1820
+                  }
+                ],
+                "sales": null,
+                "release_date": "2017-06-15T02:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 44.34
+        },
+        {
           "champion_id": 147,
-          "play": 2861,
-          "win": 1271,
+          "play": 2887,
+          "win": 1285,
           "meta": {
             "id": 147,
             "key": "Seraphine",
@@ -778,12 +1163,12 @@
               }
             ]
           },
-          "win_rate": 44.43
+          "win_rate": 44.51
         },
         {
           "champion_id": 895,
-          "play": 2591,
-          "win": 1169,
+          "play": 2618,
+          "win": 1184,
           "meta": {
             "id": 895,
             "key": "Nilah",
@@ -951,12 +1336,12 @@
               }
             ]
           },
-          "win_rate": 45.12
+          "win_rate": 45.23
         },
         {
           "champion_id": 30,
-          "play": 884,
-          "win": 404,
+          "play": 890,
+          "win": 408,
           "meta": {
             "id": 30,
             "key": "Karthus",
@@ -1220,12 +1605,12 @@
               }
             ]
           },
-          "win_rate": 45.7
+          "win_rate": 45.84
         },
         {
           "champion_id": 63,
-          "play": 1238,
-          "win": 570,
+          "play": 1252,
+          "win": 578,
           "meta": {
             "id": 63,
             "key": "Brand",
@@ -1553,356 +1938,14 @@
               }
             ]
           },
-          "win_rate": 46.04
-        },
-        {
-          "champion_id": 96,
-          "play": 3737,
-          "win": 1751,
-          "meta": {
-            "id": 96,
-            "key": "KogMaw",
-            "name": "深渊巨口",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/KogMaw.png",
-            "evolve": [],
-            "partype": "法力",
-            "passive": {
-              "name": "来自艾卡西亚的惊喜",
-              "description": "在死后4秒，克格莫会爆炸，对周围的敌人造成真实伤害。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/KogMaw_IcathianSurprise.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0096/ability_0096_P1.webm"
-            },
-            "spells": [
-              {
-                "key": "Q",
-                "name": "腐蚀唾液",
-                "description": "克格莫发射一团腐蚀性物质，对目标造成魔法伤害，并暂时腐蚀目标的护甲和魔法抗性。克格莫还会获得额外攻速。",
-                "max_rank": 5,
-                "range_burn": [
-                  1175
-                ],
-                "cooldown_burn": [
-                  7
-                ],
-                "cooldown_burn_float": [
-                  7
-                ],
-                "cost_burn": [
-                  40
-                ],
-                "tooltip": "<spellPassive>被动：</spellPassive>克格莫获得<attackSpeed>10/15/20/25/30%攻击速度</attackSpeed>。<br /><br /><spellActive>主动：</spellActive>克格莫抛射出一团腐蚀性的唾沫，对命中的第一个敌人造成<magicDamage>?魔法伤害</magicDamage>，以及持续4秒的<scaleArmor>?%护甲</scaleArmor>和<scaleMR>魔法抗性</scaleMR>击碎。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/KogMawQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0096/ability_0096_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "生化弹幕",
-                "description": "克格莫的攻击距离得到了提升，并且能够对目标造成额外的魔法伤害，伤害值基于目标的最大生命值。",
-                "max_rank": 5,
-                "range_burn": [
-                  530
-                ],
-                "cooldown_burn": [
-                  17
-                ],
-                "cooldown_burn_float": [
-                  17
-                ],
-                "cost_burn": [
-                  40
-                ],
-                "tooltip": "克格莫获得130/150/170/190/210攻击距离并且他的攻击造成额外的<magicDamage>?最大生命值的魔法伤害</magicDamage>，持续8秒。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/KogMawBioArcaneBarrage.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0096/ability_0096_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "虚空淤泥",
-                "description": "克格莫抛射出一团特殊的分泌物，对经过或停留在分泌物上的敌人造成伤害和减速效果。",
-                "max_rank": 5,
-                "range_burn": [
-                  1200
-                ],
-                "cooldown_burn": [
-                  12
-                ],
-                "cooldown_burn_float": [
-                  12
-                ],
-                "cost_burn": [
-                  40,
-                  55,
-                  70,
-                  85,
-                  100
-                ],
-                "tooltip": "克格莫呕出胆汁，造成<magicDamage>?魔法伤害</magicDamage>并留下一条持续4秒的软泥路径。软泥中的敌人们会被<status>减速</status>?%。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/KogMawVoidOoze.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0096/ability_0096_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "活体大炮",
-                "description": "克格莫发射一枚射程极远的活体炮弹，让被命中的敌人暴露在己方视野中，并对目标造成魔法伤害（对低血量目标的伤害会显著提升）。 在短时间内连续使用活体大炮，将消耗额外的法力值。",
-                "max_rank": 3,
-                "range_burn": [
-                  1300,
-                  1550,
-                  1800
-                ],
-                "cooldown_burn": [
-                  2,
-                  1,
-                  1
-                ],
-                "cooldown_burn_float": [
-                  2,
-                  1.5,
-                  1
-                ],
-                "cost_burn": [
-                  40
-                ],
-                "tooltip": "克格莫朝一个区域发射一团酸液，造成<magicDamage>?外加?%每1%已损失生命值的魔法伤害</magicDamage>并使命中的敌人显形2秒。低于<healing>40%生命值</healing>的敌人们会转而受到<magicDamage>?魔法伤害</magicDamage>。<br /><br />?秒内的后续发射会消耗额外的<scaleMana>?法力</scaleMana>(最大值：<scaleMana>?法力</scaleMana>)。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/KogMawLivingArtillery.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0096/ability_0096_R1.webm"
-              }
-            ],
-            "skins": [
-              {
-                "id": 96000,
-                "champion_id": 96,
-                "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/KogMaw_0.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "IP",
-                    "cost": 4800
-                  },
-                  {
-                    "currency": "RP",
-                    "cost": 880
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 96007,
-                "champion_id": 96,
-                "name": "侏罗纪化石 克格莫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/KogMaw_7.jpg",
-                "skin_video_url": "https://youtu.be/JOYrkiZ5ToQ",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2012-03-24T04:00:00+09:00"
-              },
-              {
-                "id": 96009,
-                "champion_id": 96,
-                "name": "克格汪",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/KogMaw_9.jpg",
-                "skin_video_url": "https://youtu.be/vCRRvrnoT9c",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2017-03-30T10:00:00+09:00"
-              },
-              {
-                "id": 96004,
-                "champion_id": 96,
-                "name": "圣诞驯鹿 克格莫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/KogMaw_4.jpg",
-                "skin_video_url": "https://youtu.be/1q0wD_KPRVQ",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 96019,
-                "champion_id": 96,
-                "name": "奥术师 克格莫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/KogMaw_19.jpg",
-                "skin_video_url": "https://youtu.be/tk-njAVj80I",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2020-07-09T04:00:00+09:00"
-              },
-              {
-                "id": 96028,
-                "champion_id": 96,
-                "name": "小蜜蜂 克格莫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/KogMaw_28.jpg",
-                "skin_video_url": "https://youtu.be/tE-vp6QCEuA",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2021-03-04T04:00:00+09:00"
-              },
-              {
-                "id": 96046,
-                "champion_id": 96,
-                "name": "山海绘卷 克格莫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/KogMaw_46.jpg",
-                "skin_video_url": "https://youtu.be/AAlfcrbl6wM",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2023-06-14T04:00:00+09:00"
-              },
-              {
-                "id": 96003,
-                "champion_id": 96,
-                "name": "帝王斑蝶 克格莫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/KogMaw_3.jpg",
-                "skin_video_url": "https://youtu.be/gHTIwCsTFwM",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 520
-                  }
-                ],
-                "sales": null,
-                "release_date": "2010-11-15T20:00:00+09:00"
-              },
-              {
-                "id": 96008,
-                "champion_id": 96,
-                "name": "战地机甲 克格莫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/KogMaw_8.jpg",
-                "skin_video_url": "https://youtu.be/hN4io4gAIfI",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2014-11-24T09:00:00+09:00"
-              },
-              {
-                "id": 96001,
-                "champion_id": 96,
-                "name": "毛毛虫 克格莫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/KogMaw_1.jpg",
-                "skin_video_url": "https://youtu.be/b05xsz7ekTE",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 96010,
-                "champion_id": 96,
-                "name": "海克斯科技 克格莫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/KogMaw_10.jpg",
-                "skin_video_url": "https://youtu.be/z898z1dtorg",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 96006,
-                "champion_id": 96,
-                "name": "深海怪鱼 克格莫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/KogMaw_6.jpg",
-                "skin_video_url": "https://youtu.be/98RRwIyMgU4",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 96037,
-                "champion_id": 96,
-                "name": "电格莫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/KogMaw_37.jpg",
-                "skin_video_url": "https://youtu.be/LqvFbFjnRU8",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2022-08-11T04:00:00+09:00"
-              },
-              {
-                "id": 96002,
-                "champion_id": 96,
-                "name": "索诺拉沙虫 克格莫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/KogMaw_2.jpg",
-                "skin_video_url": "https://youtu.be/bFNnlxZ4bik",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 520
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 96055,
-                "champion_id": 96,
-                "name": "胜利巨口 克格莫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/KogMaw_55.jpg",
-                "skin_video_url": null,
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 96005,
-                "champion_id": 96,
-                "name": "醒狮 克格莫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/KogMaw_5.jpg",
-                "skin_video_url": "https://youtu.be/Jl0iedBIlSw",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2011-01-31T21:00:00+09:00"
-              }
-            ]
-          },
-          "win_rate": 46.86
+          "win_rate": 46.17
         }
       ],
       [
         {
           "champion_id": 18,
-          "play": 2046,
-          "win": 1108,
+          "play": 2064,
+          "win": 1118,
           "meta": {
             "id": 18,
             "key": "Tristana",
@@ -2261,12 +2304,12 @@
               }
             ]
           },
-          "win_rate": 54.15
+          "win_rate": 54.17
         },
         {
           "champion_id": 110,
-          "play": 5646,
-          "win": 2937,
+          "play": 5684,
+          "win": 2957,
           "meta": {
             "id": 110,
             "key": "Varus",
@@ -2611,8 +2654,8 @@
         },
         {
           "champion_id": 523,
-          "play": 7303,
-          "win": 3746,
+          "play": 7370,
+          "win": 3772,
           "meta": {
             "id": 523,
             "key": "Aphelios",
@@ -2821,12 +2864,12 @@
               }
             ]
           },
-          "win_rate": 51.29
+          "win_rate": 51.18
         },
         {
           "champion_id": 51,
-          "play": 27481,
-          "win": 14019,
+          "play": 27733,
+          "win": 14148,
           "meta": {
             "id": 51,
             "key": "Caitlyn",
@@ -3208,12 +3251,12 @@
               }
             ]
           },
-          "win_rate": 51.01
+          "win_rate": 51.02
         },
         {
           "champion_id": 498,
-          "play": 6547,
-          "win": 3320,
+          "play": 6592,
+          "win": 3339,
           "meta": {
             "id": 498,
             "key": "Xayah",
@@ -3531,15 +3574,15 @@
               }
             ]
           },
-          "win_rate": 50.71
+          "win_rate": 50.65
         }
       ]
     ],
     "counters": [
       {
         "champion_id": 202,
-        "play": 73363,
-        "win": 34465,
+        "play": 73912,
+        "win": 34726,
         "meta": {
           "id": 202,
           "key": "Jhin",
@@ -3829,8 +3872,8 @@
       },
       {
         "champion_id": 145,
-        "play": 62631,
-        "win": 30276,
+        "play": 63060,
+        "win": 30467,
         "meta": {
           "id": 145,
           "key": "Kaisa",
@@ -4154,8 +4197,8 @@
       },
       {
         "champion_id": 901,
-        "play": 34829,
-        "win": 17017,
+        "play": 35073,
+        "win": 17131,
         "meta": {
           "id": 901,
           "key": "Smolder",
@@ -4323,8 +4366,8 @@
       },
       {
         "champion_id": 21,
-        "play": 29444,
-        "win": 14292,
+        "play": 29723,
+        "win": 14425,
         "meta": {
           "id": 21,
           "key": "MissFortune",
@@ -4770,8 +4813,8 @@
       },
       {
         "champion_id": 51,
-        "play": 27481,
-        "win": 14019,
+        "play": 27733,
+        "win": 14148,
         "meta": {
           "id": 51,
           "key": "Caitlyn",
@@ -5156,8 +5199,8 @@
       },
       {
         "champion_id": 22,
-        "play": 25895,
-        "win": 12565,
+        "play": 26075,
+        "win": 12651,
         "meta": {
           "id": 22,
           "key": "Ashe",
@@ -5553,8 +5596,8 @@
       },
       {
         "champion_id": 236,
-        "play": 20237,
-        "win": 10028,
+        "play": 20405,
+        "win": 10105,
         "meta": {
           "id": 236,
           "key": "Lucian",
@@ -5880,8 +5923,8 @@
       },
       {
         "champion_id": 222,
-        "play": 19147,
-        "win": 9494,
+        "play": 19314,
+        "win": 9579,
         "meta": {
           "id": 222,
           "key": "Jinx",
@@ -6220,8 +6263,8 @@
       },
       {
         "champion_id": 221,
-        "play": 16132,
-        "win": 7959,
+        "play": 16239,
+        "win": 8012,
         "meta": {
           "id": 221,
           "key": "Zeri",
@@ -6419,8 +6462,8 @@
       },
       {
         "champion_id": 119,
-        "play": 10459,
-        "win": 5121,
+        "play": 10568,
+        "win": 5181,
         "meta": {
           "id": 119,
           "key": "Draven",
@@ -6749,8 +6792,8 @@
       },
       {
         "champion_id": 360,
-        "play": 7613,
-        "win": 3843,
+        "play": 7674,
+        "win": 3866,
         "meta": {
           "id": 360,
           "key": "Samira",
@@ -6959,8 +7002,8 @@
       },
       {
         "champion_id": 523,
-        "play": 7303,
-        "win": 3746,
+        "play": 7370,
+        "win": 3772,
         "meta": {
           "id": 523,
           "key": "Aphelios",
@@ -7172,8 +7215,8 @@
       },
       {
         "champion_id": 498,
-        "play": 6547,
-        "win": 3320,
+        "play": 6592,
+        "win": 3339,
         "meta": {
           "id": 498,
           "key": "Xayah",
@@ -7494,8 +7537,8 @@
       },
       {
         "champion_id": 67,
-        "play": 6218,
-        "win": 3038,
+        "play": 6271,
+        "win": 3071,
         "meta": {
           "id": 67,
           "key": "Vayne",
@@ -7880,8 +7923,8 @@
       },
       {
         "champion_id": 110,
-        "play": 5646,
-        "win": 2937,
+        "play": 5684,
+        "win": 2957,
         "meta": {
           "id": 110,
           "key": "Varus",
@@ -8225,8 +8268,8 @@
       },
       {
         "champion_id": 29,
-        "play": 5578,
-        "win": 2688,
+        "play": 5634,
+        "win": 2720,
         "meta": {
           "id": 29,
           "key": "Twitch",
@@ -8551,8 +8594,8 @@
       },
       {
         "champion_id": 15,
-        "play": 5006,
-        "win": 2422,
+        "play": 5038,
+        "win": 2438,
         "meta": {
           "id": 15,
           "key": "Sivir",
@@ -8926,8 +8969,8 @@
       },
       {
         "champion_id": 96,
-        "play": 3737,
-        "win": 1751,
+        "play": 3776,
+        "win": 1769,
         "meta": {
           "id": 96,
           "key": "KogMaw",
@@ -9267,8 +9310,8 @@
       },
       {
         "champion_id": 115,
-        "play": 3296,
-        "win": 1594,
+        "play": 3326,
+        "win": 1603,
         "meta": {
           "id": 115,
           "key": "Ziggs",
@@ -9571,8 +9614,8 @@
       },
       {
         "champion_id": 429,
-        "play": 3176,
-        "win": 1598,
+        "play": 3203,
+        "win": 1612,
         "meta": {
           "id": 429,
           "key": "Kalista",
@@ -9780,8 +9823,8 @@
       },
       {
         "champion_id": 147,
-        "play": 2861,
-        "win": 1271,
+        "play": 2887,
+        "win": 1285,
         "meta": {
           "id": 147,
           "key": "Seraphine",
@@ -10062,8 +10105,8 @@
       },
       {
         "champion_id": 895,
-        "play": 2591,
-        "win": 1169,
+        "play": 2618,
+        "win": 1184,
         "meta": {
           "id": 895,
           "key": "Nilah",
@@ -10234,8 +10277,8 @@
       },
       {
         "champion_id": 18,
-        "play": 2046,
-        "win": 1108,
+        "play": 2064,
+        "win": 1118,
         "meta": {
           "id": 18,
           "key": "Tristana",
@@ -10596,9 +10639,393 @@
         }
       },
       {
+        "champion_id": 157,
+        "play": 1590,
+        "win": 705,
+        "meta": {
+          "id": 157,
+          "key": "Yasuo",
+          "name": "疾风剑豪",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Yasuo.png",
+          "evolve": [],
+          "partype": "剑意",
+          "passive": {
+            "name": "浪客之道",
+            "description": "亚索的暴击几率提升。此外，亚索在移动时会为一层护盾攒能。护盾会在他受到来自英雄或野怪的伤害时触发。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Yasuo_Passive.png",
+            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0157/ability_0157_P1.webm"
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "斩钢闪",
+              "description": "向前出剑，呈直线造成伤害。<br><br>在命中时，斩钢闪会获得一层旋风烈斩效果，持续数秒。在积攒2层旋风烈斩效果后，斩钢闪会形成一阵能够<font color='#6655CC'>击飞</font>敌人的旋风。<br><br>斩钢闪被视为普通攻击，并且可以从所有作用于普攻的东西上获得收益。",
+              "max_rank": 5,
+              "range_burn": [
+                475
+              ],
+              "cooldown_burn": [
+                4
+              ],
+              "cooldown_burn_float": [
+                4
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "亚索进行戳刺，造成<physicalDamage>?物理伤害</physicalDamage>。如果他命中了，那么他会获得一层持续?秒的层数。当他拥有2层时，这个技能的下次施放将会发射出一道远程龙卷风，造成等值伤害和?秒<status>击飞</status>。<br /><br />如果在冲刺期间施放，那么这个技能会呈环状进行打击而非直接戳刺。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/YasuoQ1Wrapper.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0157/ability_0157_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "风之障壁",
+              "description": "形成一个持续4秒的气流之墙，来阻挡敌方的飞行道具。",
+              "max_rank": 5,
+              "range_burn": [
+                400
+              ],
+              "cooldown_burn": [
+                25,
+                23,
+                21,
+                19,
+                17
+              ],
+              "cooldown_burn_float": [
+                25,
+                23,
+                21,
+                19,
+                17
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "亚索形成一个持续4秒的气流浮墙，来阻挡敌方的飞行道具。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/YasuoW.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0157/ability_0157_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "踏前斩",
+              "description": "向目标敌人突进，造成魔法伤害。每次施法都会提升你的后续突进的伤害，直到抵达上限。<br><br>在若干秒内无法对相同敌人重复施放。<br><br><font color='#99FF99'>如果在突进的过程中施放斩钢闪，那么斩钢闪就会呈环状出剑。</font>",
+              "max_rank": 5,
+              "range_burn": [
+                475
+              ],
+              "cooldown_burn": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "cooldown_burn_float": [
+                0.5,
+                0.4,
+                0.3,
+                0.2,
+                0.1
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "亚索冲刺并穿过一个目标，造成<magicDamage>?魔法伤害</magicDamage>。这个技能每次施放后都会为?秒内的后续施放提供<magicDamage>?</magicDamage>额外伤害，至多可叠加?次。<br /><br />这个技能对每个目标有10/9/8/7/6秒冷却时间。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/YasuoE.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0157/ability_0157_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "狂风绝息斩",
+              "description": "闪烁到一个<factionIonia1>浮空</factionIonia1>的敌方英雄身边，造成物理伤害，并使范围内的所有<factionIonia1>浮空</factionIonia1>的敌人滞留在空中。获得满额的剑意值，但会重置旋风烈斩的层数。<br><br>在接下来的若干秒里，亚索的暴击会获得显著的额外护甲穿透加成值。",
+              "max_rank": 3,
+              "range_burn": [
+                1400
+              ],
+              "cooldown_burn": [
+                70,
+                50,
+                30
+              ],
+              "cooldown_burn_float": [
+                70,
+                50,
+                30
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "亚索传送到一名<status>浮空</status>的敌方英雄身边，造成<physicalDamage>?物理伤害</physicalDamage>并使所有附近<status>浮空</status>的敌人们维持此状态至多?秒。亚索还会获得满额<keywordMajor>剑意</keywordMajor>，但会失去所有所有<spellName>斩钢闪</spellName>层数。<br /><br />之后，亚索的暴击会无视<scaleArmor>?%额外护甲</scaleArmor>，持续?秒。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/YasuoR.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0157/ability_0157_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 157000,
+              "champion_id": 157,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 1350
+                },
+                {
+                  "currency": "RP",
+                  "cost": 585
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 157056,
+              "champion_id": 157,
+              "name": "墨之影武者 亚索",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_56.jpg",
+              "skin_video_url": "https://youtu.be/Z3R_O93Zfik",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2023-05-03T04:00:00+09:00"
+            },
+            {
+              "id": 157010,
+              "champion_id": 157,
+              "name": "奥德赛 亚索",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_10.jpg",
+              "skin_video_url": "https://youtu.be/O5wHs-yn6a0",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2018-09-10T22:00:00+09:00"
+            },
+            {
+              "id": 157077,
+              "champion_id": 157,
+              "name": "幻灵孤狼 亚索",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_77.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2024-07-31T09:00:00+09:00"
+            },
+            {
+              "id": 157017,
+              "champion_id": 157,
+              "name": "战场BOSS 亚索",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_17.jpg",
+              "skin_video_url": "https://youtu.be/sbvFSfcyAPY",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2019-06-28T04:00:00+09:00"
+            },
+            {
+              "id": 157045,
+              "champion_id": 157,
+              "name": "断浪之刃 亚索",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_45.jpg",
+              "skin_video_url": "https://youtu.be/L2vb9JYw0vQ",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2022-05-05T04:00:00+09:00"
+            },
+            {
+              "id": 157002,
+              "champion_id": 157,
+              "name": "源计划：风 亚索",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_2.jpg",
+              "skin_video_url": "https://youtu.be/GPL2oNmnXBE",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": [
+                {
+                  "currency": "RP",
+                  "cost": 607,
+                  "discount_rate": 0.55,
+                  "started_at": "2024-08-19T08:00:00+09:00",
+                  "ended_at": "2024-08-26T08:00:00+09:00"
+                }
+              ],
+              "release_date": "2014-09-01T09:00:00+09:00"
+            },
+            {
+              "id": 157036,
+              "champion_id": 157,
+              "name": "灵魂莲华 亚索",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_36.jpg",
+              "skin_video_url": "https://youtu.be/WPMnIQ9Xpxk",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2020-07-22T04:00:00+09:00"
+            },
+            {
+              "id": 157018,
+              "champion_id": 157,
+              "name": "真实伤害 亚索",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_18.jpg",
+              "skin_video_url": "https://youtu.be/185zBQpfZTQ",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2019-11-09T19:00:00+09:00"
+            },
+            {
+              "id": 157055,
+              "champion_id": 157,
+              "name": "神龙尊者 夜月幻龙 亚索",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_55.jpg",
+              "skin_video_url": "https://youtu.be/vuodQev0Ffg",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1820
+                }
+              ],
+              "sales": null,
+              "release_date": "2021-10-21T04:00:00+09:00"
+            },
+            {
+              "id": 157054,
+              "champion_id": 157,
+              "name": "神龙尊者 昼日真龙 亚索",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_54.jpg",
+              "skin_video_url": "https://youtu.be/85HiPQDIPuU",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1820
+                }
+              ],
+              "sales": null,
+              "release_date": "2021-10-21T04:00:00+09:00"
+            },
+            {
+              "id": 157003,
+              "champion_id": 157,
+              "name": "腥红之月 亚索",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_3.jpg",
+              "skin_video_url": "https://youtu.be/dZDWQrPDqYs",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": "2016-02-25T08:00:00+09:00"
+            },
+            {
+              "id": 157057,
+              "champion_id": 157,
+              "name": "至臻 墨之影武者 亚索",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_57.jpg",
+              "skin_video_url": "https://youtu.be/Z3R_O93Zfik",
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 157035,
+              "champion_id": 157,
+              "name": "至臻 真实伤害 亚索",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_35.jpg",
+              "skin_video_url": "https://youtu.be/U7SZ_0zCjYA",
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 157001,
+              "champion_id": 157,
+              "name": "西部牛仔 亚索",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_1.jpg",
+              "skin_video_url": "https://youtu.be/X90HV2g-EWI",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": "2013-12-16T08:00:00+09:00"
+            },
+            {
+              "id": 157068,
+              "champion_id": 157,
+              "name": "预知之眼 亚索",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_68.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2024-01-24T10:00:00+09:00"
+            },
+            {
+              "id": 157009,
+              "champion_id": 157,
+              "name": "黑夜使者 亚索",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Yasuo_9.jpg",
+              "skin_video_url": "https://youtu.be/-4dye5TlO54",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1820
+                }
+              ],
+              "sales": null,
+              "release_date": "2017-06-15T02:00:00+09:00"
+            }
+          ]
+        }
+      },
+      {
         "champion_id": 63,
-        "play": 1238,
-        "win": 570,
+        "play": 1252,
+        "win": 578,
         "meta": {
           "id": 63,
           "key": "Brand",
@@ -10929,8 +11356,8 @@
       },
       {
         "champion_id": 50,
-        "play": 913,
-        "win": 451,
+        "play": 920,
+        "win": 454,
         "meta": {
           "id": 50,
           "key": "Swain",
@@ -11187,8 +11614,8 @@
       },
       {
         "champion_id": 30,
-        "play": 884,
-        "win": 404,
+        "play": 890,
+        "win": 408,
         "meta": {
           "id": 30,
           "key": "Karthus",
@@ -25974,35 +26401,35 @@
         4,
         21
       ],
-      "win": 183500,
-      "play": 373106,
-      "pick_rate": 0.8429
+      "win": 184968,
+      "play": 376117,
+      "pick_rate": 0.843
     },
     {
       "ids": [
         1,
         4
       ],
-      "win": 18989,
-      "play": 39338,
-      "pick_rate": 0.0889
+      "win": 19098,
+      "play": 39583,
+      "pick_rate": 0.0887
     },
     {
       "ids": [
         4,
         7
       ],
-      "win": 5774,
-      "play": 12345,
-      "pick_rate": 0.0279
+      "win": 5804,
+      "play": 12418,
+      "pick_rate": 0.0278
     },
     {
       "ids": [
         3,
         4
       ],
-      "win": 5747,
-      "play": 11446,
+      "win": 5795,
+      "play": 11542,
       "pick_rate": 0.0259
     },
     {
@@ -26010,20 +26437,20 @@
         4,
         12
       ],
-      "win": 2466,
-      "play": 5323,
+      "win": 2485,
+      "play": 5373,
       "pick_rate": 0.012
     }
   ],
   "trends": {
     "total_rank": 168,
-    "total_position_rank": 27,
+    "total_position_rank": 28,
     "win": [
       {
         "version": "14.16",
-        "rate": 0.4899,
-        "rank": 23,
-        "created_at": "2024-08-24T22:36:15+09:00"
+        "rate": 0.49,
+        "rank": 24,
+        "created_at": "2024-08-25T22:35:18+09:00"
       },
       {
         "version": "14.15",
@@ -26065,9 +26492,9 @@
     "pick": [
       {
         "version": "14.16",
-        "rate": 0.2238,
+        "rate": 0.2235,
         "rank": 3,
-        "created_at": "2024-08-24T22:36:15+09:00"
+        "created_at": "2024-08-25T22:35:18+09:00"
       },
       {
         "version": "14.15",
@@ -26109,9 +26536,9 @@
     "ban": [
       {
         "version": "14.16",
-        "rate": 0.1442,
+        "rate": 0.1439,
         "rank": 2,
-        "created_at": "2024-08-24T22:36:15+09:00"
+        "created_at": "2024-08-25T22:35:18+09:00"
       },
       {
         "version": "14.15",
@@ -26154,33 +26581,33 @@
   "game_lengths": [
     {
       "game_length": 0,
-      "rate": 0.506605,
+      "rate": 0.506521,
       "average": 0.5,
-      "rank": 12
+      "rank": 13
     },
     {
       "game_length": 25,
-      "rate": 0.496893,
+      "rate": 0.49719,
       "average": 0.5,
-      "rank": 15
+      "rank": 16
     },
     {
       "game_length": 30,
-      "rate": 0.474647,
+      "rate": 0.474541,
       "average": 0.5,
-      "rank": 24
+      "rank": 25
     },
     {
       "game_length": 35,
-      "rate": 0.457473,
+      "rate": 0.457672,
       "average": 0.5,
-      "rank": 26
+      "rank": 27
     },
     {
       "game_length": 40,
-      "rate": 0.457429,
+      "rate": 0.456942,
       "average": 0.5,
-      "rank": 25
+      "rank": 26
     }
   ],
   "skills": [
@@ -26202,8 +26629,8 @@
         "W",
         "W"
       ],
-      "play": 160379,
-      "win": 94703,
+      "play": 161655,
+      "win": 95436,
       "pick_rate": 0.8419
     },
     {
@@ -26224,8 +26651,8 @@
         "W",
         "W"
       ],
-      "play": 4570,
-      "win": 2681,
+      "play": 4607,
+      "win": 2703,
       "pick_rate": 0.024
     },
     {
@@ -26246,8 +26673,8 @@
         "W",
         "W"
       ],
-      "play": 3211,
-      "win": 1852,
+      "play": 3239,
+      "win": 1868,
       "pick_rate": 0.0169
     },
     {
@@ -26268,8 +26695,8 @@
         "E",
         "E"
       ],
-      "play": 2996,
-      "win": 1691,
+      "play": 3021,
+      "win": 1699,
       "pick_rate": 0.0157
     },
     {
@@ -26290,8 +26717,8 @@
         "E",
         "W"
       ],
-      "play": 1879,
-      "win": 1087,
+      "play": 1894,
+      "win": 1093,
       "pick_rate": 0.0099
     }
   ],
@@ -26302,8 +26729,8 @@
         "E",
         "W"
       ],
-      "play": 183784,
-      "win": 108291,
+      "play": 185251,
+      "win": 109131,
       "pick_rate": 0.9648,
       "builds": [
         {
@@ -26324,8 +26751,8 @@
             "W",
             "W"
           ],
-          "play": 160379,
-          "win": 94703,
+          "play": 161655,
+          "win": 95436,
           "pick_rate": 0.8726
         },
         {
@@ -26346,8 +26773,8 @@
             "W",
             "W"
           ],
-          "play": 4570,
-          "win": 2681,
+          "play": 4607,
+          "win": 2703,
           "pick_rate": 0.0249
         },
         {
@@ -26368,8 +26795,8 @@
             "W",
             "W"
           ],
-          "play": 3211,
-          "win": 1852,
+          "play": 3239,
+          "win": 1868,
           "pick_rate": 0.0175
         },
         {
@@ -26390,8 +26817,8 @@
             "E",
             "W"
           ],
-          "play": 1879,
-          "win": 1087,
+          "play": 1894,
+          "win": 1093,
           "pick_rate": 0.0102
         },
         {
@@ -26412,8 +26839,8 @@
             "E",
             "W"
           ],
-          "play": 1585,
-          "win": 931,
+          "play": 1598,
+          "win": 940,
           "pick_rate": 0.0086
         }
       ]
@@ -26424,8 +26851,8 @@
         "W",
         "E"
       ],
-      "play": 6620,
-      "win": 3747,
+      "play": 6682,
+      "win": 3772,
       "pick_rate": 0.0348,
       "builds": [
         {
@@ -26446,9 +26873,9 @@
             "E",
             "E"
           ],
-          "play": 2996,
-          "win": 1691,
-          "pick_rate": 0.4526
+          "play": 3021,
+          "win": 1699,
+          "pick_rate": 0.4521
         },
         {
           "order": [
@@ -26468,9 +26895,9 @@
             "E",
             "E"
           ],
-          "play": 1009,
-          "win": 553,
-          "pick_rate": 0.1524
+          "play": 1018,
+          "win": 559,
+          "pick_rate": 0.1523
         },
         {
           "order": [
@@ -26490,9 +26917,9 @@
             "W",
             "E"
           ],
-          "play": 257,
-          "win": 142,
-          "pick_rate": 0.0388
+          "play": 260,
+          "win": 143,
+          "pick_rate": 0.0389
         },
         {
           "order": [
@@ -26512,9 +26939,9 @@
             "W",
             "E"
           ],
-          "play": 195,
-          "win": 111,
-          "pick_rate": 0.0295
+          "play": 199,
+          "win": 112,
+          "pick_rate": 0.0298
         },
         {
           "order": [
@@ -26534,9 +26961,9 @@
             "W",
             "E"
           ],
-          "play": 177,
-          "win": 103,
-          "pick_rate": 0.0267
+          "play": 178,
+          "win": 104,
+          "pick_rate": 0.0266
         }
       ]
     },
@@ -26928,9 +27355,9 @@
         5008,
         5001
       ],
-      "play": 186207,
-      "win": 90322,
-      "pick_rate": 0.4167
+      "play": 187683,
+      "win": 91049,
+      "pick_rate": 0.4168
     },
     {
       "id": 8005,
@@ -26951,9 +27378,9 @@
         5008,
         5011
       ],
-      "play": 55282,
-      "win": 27522,
-      "pick_rate": 0.1237
+      "play": 55655,
+      "win": 27695,
+      "pick_rate": 0.1236
     },
     {
       "id": 8010,
@@ -26974,8 +27401,8 @@
         5008,
         5001
       ],
-      "play": 38341,
-      "win": 18637,
+      "play": 38656,
+      "win": 18788,
       "pick_rate": 0.0858
     },
     {
@@ -26997,9 +27424,9 @@
         5008,
         5011
       ],
-      "play": 20019,
-      "win": 10090,
-      "pick_rate": 0.0448
+      "play": 20146,
+      "win": 10149,
+      "pick_rate": 0.0447
     },
     {
       "id": 8005,
@@ -27020,8 +27447,8 @@
         5008,
         5001
       ],
-      "play": 13495,
-      "win": 6694,
+      "play": 13599,
+      "win": 6742,
       "pick_rate": 0.0302
     }
   ],
@@ -27030,9 +27457,9 @@
       "id": 8005,
       "primary_page_id": 8000,
       "secondary_page_id": 8300,
-      "play": 330187,
-      "win": 161837,
-      "pick_rate": 0.739,
+      "play": 332726,
+      "win": 163074,
+      "pick_rate": 0.7388,
       "builds": [
         {
           "id": 8005,
@@ -27053,9 +27480,9 @@
             5008,
             5001
           ],
-          "play": 186207,
-          "win": 90322,
-          "pick_rate": 0.5639
+          "play": 187683,
+          "win": 91049,
+          "pick_rate": 0.5641
         },
         {
           "id": 8005,
@@ -27076,9 +27503,9 @@
             5008,
             5011
           ],
-          "play": 55282,
-          "win": 27522,
-          "pick_rate": 0.1674
+          "play": 55655,
+          "win": 27695,
+          "pick_rate": 0.1673
         },
         {
           "id": 8005,
@@ -27099,8 +27526,8 @@
             5008,
             5001
           ],
-          "play": 13495,
-          "win": 6694,
+          "play": 13599,
+          "win": 6742,
           "pick_rate": 0.0409
         },
         {
@@ -27122,8 +27549,8 @@
             5008,
             5001
           ],
-          "play": 9039,
-          "win": 4406,
+          "play": 9113,
+          "win": 4439,
           "pick_rate": 0.0274
         },
         {
@@ -27145,9 +27572,9 @@
             5008,
             5011
           ],
-          "play": 5032,
-          "win": 2523,
-          "pick_rate": 0.0152
+          "play": 5077,
+          "win": 2546,
+          "pick_rate": 0.0153
         }
       ]
     },
@@ -27155,8 +27582,8 @@
       "id": 8010,
       "primary_page_id": 8000,
       "secondary_page_id": 8300,
-      "play": 86659,
-      "win": 42967,
+      "play": 87315,
+      "win": 43279,
       "pick_rate": 0.1939,
       "builds": [
         {
@@ -27178,9 +27605,9 @@
             5008,
             5001
           ],
-          "play": 38341,
-          "win": 18637,
-          "pick_rate": 0.4424
+          "play": 38656,
+          "win": 18788,
+          "pick_rate": 0.4427
         },
         {
           "id": 8010,
@@ -27201,9 +27628,9 @@
             5008,
             5011
           ],
-          "play": 20019,
-          "win": 10090,
-          "pick_rate": 0.231
+          "play": 20146,
+          "win": 10149,
+          "pick_rate": 0.2307
         },
         {
           "id": 8010,
@@ -27224,9 +27651,9 @@
             5008,
             5001
           ],
-          "play": 4979,
-          "win": 2518,
-          "pick_rate": 0.0575
+          "play": 5012,
+          "win": 2531,
+          "pick_rate": 0.0574
         },
         {
           "id": 8010,
@@ -27247,8 +27674,8 @@
             5008,
             5001
           ],
-          "play": 3190,
-          "win": 1634,
+          "play": 3216,
+          "win": 1654,
           "pick_rate": 0.0368
         },
         {
@@ -27270,9 +27697,9 @@
             5008,
             5011
           ],
-          "play": 1520,
-          "win": 769,
-          "pick_rate": 0.0175
+          "play": 1538,
+          "win": 778,
+          "pick_rate": 0.0176
         }
       ]
     },
@@ -27280,8 +27707,8 @@
       "id": 8005,
       "primary_page_id": 8000,
       "secondary_page_id": 8200,
-      "play": 9457,
-      "win": 4515,
+      "play": 9558,
+      "win": 4561,
       "pick_rate": 0.0212,
       "builds": [
         {
@@ -27303,9 +27730,9 @@
             5008,
             5001
           ],
-          "play": 1250,
-          "win": 598,
-          "pick_rate": 0.1322
+          "play": 1266,
+          "win": 605,
+          "pick_rate": 0.1325
         },
         {
           "id": 8005,
@@ -27326,9 +27753,9 @@
             5008,
             5001
           ],
-          "play": 448,
-          "win": 212,
-          "pick_rate": 0.0474
+          "play": 450,
+          "win": 213,
+          "pick_rate": 0.0471
         },
         {
           "id": 8005,
@@ -27349,9 +27776,9 @@
             5008,
             5001
           ],
-          "play": 387,
-          "win": 185,
-          "pick_rate": 0.0409
+          "play": 392,
+          "win": 186,
+          "pick_rate": 0.041
         },
         {
           "id": 8005,
@@ -27372,9 +27799,9 @@
             5008,
             5001
           ],
-          "play": 383,
+          "play": 386,
           "win": 180,
-          "pick_rate": 0.0405
+          "pick_rate": 0.0404
         },
         {
           "id": 8005,
@@ -27395,9 +27822,9 @@
             5008,
             5001
           ],
-          "play": 310,
-          "win": 153,
-          "pick_rate": 0.0328
+          "play": 315,
+          "win": 154,
+          "pick_rate": 0.033
         }
       ]
     },
@@ -27405,8 +27832,8 @@
       "id": 8369,
       "primary_page_id": 8300,
       "secondary_page_id": 8200,
-      "play": 8843,
-      "win": 4062,
+      "play": 8936,
+      "win": 4101,
       "pick_rate": 0.0198,
       "builds": [
         {
@@ -27428,8 +27855,8 @@
             5008,
             5001
           ],
-          "play": 8001,
-          "win": 3686,
+          "play": 8085,
+          "win": 3721,
           "pick_rate": 0.9048
         },
         {
@@ -27453,7 +27880,7 @@
           ],
           "play": 90,
           "win": 41,
-          "pick_rate": 0.0102
+          "pick_rate": 0.0101
         },
         {
           "id": 8369,
@@ -27499,7 +27926,7 @@
           ],
           "play": 46,
           "win": 24,
-          "pick_rate": 0.0052
+          "pick_rate": 0.0051
         },
         {
           "id": 8369,
@@ -27530,8 +27957,8 @@
       "id": 8010,
       "primary_page_id": 8000,
       "secondary_page_id": 8200,
-      "play": 4504,
-      "win": 2139,
+      "play": 4565,
+      "win": 2171,
       "pick_rate": 0.0101,
       "builds": [
         {
@@ -27553,9 +27980,9 @@
             5008,
             5001
           ],
-          "play": 573,
-          "win": 267,
-          "pick_rate": 0.1272
+          "play": 584,
+          "win": 270,
+          "pick_rate": 0.1279
         },
         {
           "id": 8010,
@@ -27576,9 +28003,9 @@
             5008,
             5001
           ],
-          "play": 317,
+          "play": 318,
           "win": 150,
-          "pick_rate": 0.0704
+          "pick_rate": 0.0697
         },
         {
           "id": 8010,
@@ -27599,9 +28026,9 @@
             5008,
             5001
           ],
-          "play": 216,
-          "win": 105,
-          "pick_rate": 0.048
+          "play": 218,
+          "win": 107,
+          "pick_rate": 0.0478
         },
         {
           "id": 8010,
@@ -27624,7 +28051,7 @@
           ],
           "play": 186,
           "win": 84,
-          "pick_rate": 0.0413
+          "pick_rate": 0.0407
         },
         {
           "id": 8010,
@@ -27645,9 +28072,9 @@
             5008,
             5011
           ],
-          "play": 167,
-          "win": 93,
-          "pick_rate": 0.0371
+          "play": 176,
+          "win": 98,
+          "pick_rate": 0.0386
         }
       ]
     }
@@ -27660,9 +28087,9 @@
         3042,
         3161
       ],
-      "play": 132493,
-      "win": 73986,
-      "pick_rate": 0.5239
+      "play": 133628,
+      "win": 74609,
+      "pick_rate": 0.5242
     },
     {
       "ids": [
@@ -27671,9 +28098,9 @@
         3042,
         3072
       ],
-      "play": 58770,
-      "win": 34000,
-      "pick_rate": 0.2324
+      "play": 59153,
+      "win": 34231,
+      "pick_rate": 0.232
     },
     {
       "ids": [
@@ -27682,9 +28109,9 @@
         3042,
         6694
       ],
-      "play": 30502,
-      "win": 15738,
-      "pick_rate": 0.1206
+      "play": 30730,
+      "win": 15852,
+      "pick_rate": 0.1205
     },
     {
       "ids": [
@@ -27693,9 +28120,9 @@
         3042,
         3110
       ],
-      "play": 6011,
-      "win": 3208,
-      "pick_rate": 0.0238
+      "play": 6050,
+      "win": 3228,
+      "pick_rate": 0.0237
     },
     {
       "ids": [
@@ -27704,8 +28131,8 @@
         3042,
         3156
       ],
-      "play": 4801,
-      "win": 2573,
+      "play": 4836,
+      "win": 2593,
       "pick_rate": 0.019
     },
     {
@@ -27715,9 +28142,9 @@
         3042,
         3033
       ],
-      "play": 2817,
-      "win": 1247,
-      "pick_rate": 0.0111
+      "play": 2870,
+      "win": 1271,
+      "pick_rate": 0.0113
     },
     {
       "ids": [
@@ -27725,8 +28152,8 @@
         3078,
         3161
       ],
-      "play": 2357,
-      "win": 1314,
+      "play": 2375,
+      "win": 1324,
       "pick_rate": 0.0093
     },
     {
@@ -27735,8 +28162,8 @@
         3042,
         3161
       ],
-      "play": 1407,
-      "win": 762,
+      "play": 1422,
+      "win": 769,
       "pick_rate": 0.0056
     },
     {
@@ -27746,8 +28173,8 @@
         3042,
         3036
       ],
-      "play": 1088,
-      "win": 494,
+      "play": 1096,
+      "win": 498,
       "pick_rate": 0.0043
     },
     {
@@ -27757,9 +28184,9 @@
         3042,
         3074
       ],
-      "play": 973,
-      "win": 541,
-      "pick_rate": 0.0038
+      "play": 986,
+      "win": 543,
+      "pick_rate": 0.0039
     },
     {
       "ids": [
@@ -27767,8 +28194,8 @@
         3078,
         6694
       ],
-      "play": 886,
-      "win": 478,
+      "play": 893,
+      "win": 482,
       "pick_rate": 0.0035
     },
     {
@@ -27778,8 +28205,8 @@
         3161,
         3042
       ],
-      "play": 740,
-      "win": 454,
+      "play": 747,
+      "win": 459,
       "pick_rate": 0.0029
     },
     {
@@ -27789,8 +28216,8 @@
         3042,
         3153
       ],
-      "play": 732,
-      "win": 330,
+      "play": 743,
+      "win": 337,
       "pick_rate": 0.0029
     },
     {
@@ -27799,8 +28226,8 @@
         3078,
         3072
       ],
-      "play": 667,
-      "win": 381,
+      "play": 671,
+      "win": 383,
       "pick_rate": 0.0026
     },
     {
@@ -27810,8 +28237,8 @@
         3042,
         3508
       ],
-      "play": 625,
-      "win": 373,
+      "play": 631,
+      "win": 374,
       "pick_rate": 0.0025
     }
   ],
@@ -27820,40 +28247,40 @@
       "ids": [
         3158
       ],
-      "play": 382749,
-      "win": 193131,
+      "play": 385780,
+      "win": 194615,
       "pick_rate": 0.931
     },
     {
       "ids": [
         3047
       ],
-      "play": 16263,
-      "win": 8290,
+      "play": 16395,
+      "win": 8362,
       "pick_rate": 0.0396
     },
     {
       "ids": [
         3111
       ],
-      "play": 10038,
-      "win": 5207,
+      "play": 10121,
+      "win": 5248,
       "pick_rate": 0.0244
     },
     {
       "ids": [
         3006
       ],
-      "play": 970,
-      "win": 480,
+      "play": 976,
+      "win": 484,
       "pick_rate": 0.0024
     },
     {
       "ids": [
         3009
       ],
-      "play": 744,
-      "win": 353,
+      "play": 752,
+      "win": 358,
       "pick_rate": 0.0018
     }
   ],
@@ -27863,9 +28290,9 @@
         1055,
         2003
       ],
-      "play": 412458,
-      "win": 202453,
-      "pick_rate": 0.9148
+      "play": 415618,
+      "win": 203979,
+      "pick_rate": 0.9147
     },
     {
       "ids": [
@@ -27873,9 +28300,9 @@
         2003,
         3070
       ],
-      "play": 21820,
-      "win": 9650,
-      "pick_rate": 0.0484
+      "play": 22057,
+      "win": 9757,
+      "pick_rate": 0.0485
     },
     {
       "ids": [
@@ -27883,8 +28310,8 @@
         2003,
         3070
       ],
-      "play": 6364,
-      "win": 3667,
+      "play": 6404,
+      "win": 3690,
       "pick_rate": 0.0141
     },
     {
@@ -27892,8 +28319,8 @@
         1083,
         2003
       ],
-      "play": 1275,
-      "win": 563,
+      "play": 1283,
+      "win": 567,
       "pick_rate": 0.0028
     },
     {
@@ -27902,8 +28329,8 @@
         2003,
         2003
       ],
-      "play": 1097,
-      "win": 597,
+      "play": 1106,
+      "win": 603,
       "pick_rate": 0.0024
     },
     {
@@ -27913,8 +28340,8 @@
         2003,
         2003
       ],
-      "play": 990,
-      "win": 497,
+      "play": 998,
+      "win": 500,
       "pick_rate": 0.0022
     },
     {
@@ -27922,8 +28349,8 @@
         1036,
         2031
       ],
-      "play": 796,
-      "win": 379,
+      "play": 807,
+      "win": 383,
       "pick_rate": 0.0018
     },
     {
@@ -27932,8 +28359,8 @@
         1055,
         2003
       ],
-      "play": 669,
-      "win": 403,
+      "play": 677,
+      "win": 408,
       "pick_rate": 0.0015
     },
     {
@@ -27942,8 +28369,8 @@
         1055,
         2003
       ],
-      "play": 626,
-      "win": 290,
+      "play": 632,
+      "win": 292,
       "pick_rate": 0.0014
     },
     {
@@ -27953,9 +28380,9 @@
         2003,
         2003
       ],
-      "play": 473,
+      "play": 478,
       "win": 275,
-      "pick_rate": 0.001
+      "pick_rate": 0.0011
     },
     {
       "ids": [
@@ -27963,8 +28390,8 @@
         1055,
         2003
       ],
-      "play": 433,
-      "win": 204,
+      "play": 434,
+      "win": 205,
       "pick_rate": 0.001
     },
     {
@@ -27972,7 +28399,7 @@
         1054,
         2003
       ],
-      "play": 359,
+      "play": 361,
       "win": 153,
       "pick_rate": 0.0008
     },
@@ -28003,7 +28430,7 @@
         2003,
         2022
       ],
-      "play": 196,
+      "play": 197,
       "win": 96,
       "pick_rate": 0.0004
     }
@@ -28013,183 +28440,183 @@
       "ids": [
         3078
       ],
-      "play": 435537,
-      "win": 216324,
+      "play": 438916,
+      "win": 217974,
       "pick_rate": 0.3331
     },
     {
       "ids": [
         3042
       ],
-      "play": 371913,
-      "win": 189138,
-      "pick_rate": 0.2844
+      "play": 374862,
+      "win": 190618,
+      "pick_rate": 0.2845
     },
     {
       "ids": [
         3161
       ],
-      "play": 160240,
-      "win": 89658,
-      "pick_rate": 0.1225
+      "play": 161580,
+      "win": 90397,
+      "pick_rate": 0.1226
     },
     {
       "ids": [
         3072
       ],
-      "play": 83036,
-      "win": 47942,
-      "pick_rate": 0.0635
+      "play": 83572,
+      "win": 48257,
+      "pick_rate": 0.0634
     },
     {
       "ids": [
         6694
       ],
-      "play": 76208,
-      "win": 40550,
+      "play": 76799,
+      "win": 40852,
       "pick_rate": 0.0583
     },
     {
       "ids": [
         3070
       ],
-      "play": 58994,
-      "win": 18773,
+      "play": 59383,
+      "win": 18889,
       "pick_rate": 0.0451
     },
     {
       "ids": [
         1038
       ],
-      "play": 31687,
-      "win": 19364,
+      "play": 31934,
+      "win": 19513,
       "pick_rate": 0.0242
     },
     {
       "ids": [
         3110
       ],
-      "play": 18972,
-      "win": 10313,
+      "play": 19104,
+      "win": 10394,
       "pick_rate": 0.0145
     },
     {
       "ids": [
         3004
       ],
-      "play": 14620,
-      "win": 10848,
+      "play": 14721,
+      "win": 10913,
       "pick_rate": 0.0112
     },
     {
       "ids": [
         3156
       ],
-      "play": 13941,
-      "win": 7649,
+      "play": 14053,
+      "win": 7707,
       "pick_rate": 0.0107
     },
     {
       "ids": [
         3123
       ],
-      "play": 7401,
-      "win": 2626,
+      "play": 7479,
+      "win": 2651,
       "pick_rate": 0.0057
     },
     {
       "ids": [
         3033
       ],
-      "play": 6056,
-      "win": 2794,
-      "pick_rate": 0.0046
+      "play": 6139,
+      "win": 2835,
+      "pick_rate": 0.0047
     },
     {
       "ids": [
         3074
       ],
-      "play": 3739,
-      "win": 2008,
+      "play": 3777,
+      "win": 2025,
       "pick_rate": 0.0029
     },
     {
       "ids": [
         3077
       ],
-      "play": 3358,
-      "win": 1667,
+      "play": 3395,
+      "win": 1680,
       "pick_rate": 0.0026
     },
     {
       "ids": [
         3508
       ],
-      "play": 2977,
-      "win": 1522,
+      "play": 3008,
+      "win": 1533,
       "pick_rate": 0.0023
     },
     {
       "ids": [
         3036
       ],
-      "play": 2527,
-      "win": 1180,
+      "play": 2552,
+      "win": 1194,
       "pick_rate": 0.0019
     },
     {
       "ids": [
         3026
       ],
-      "play": 2269,
-      "win": 1331,
+      "play": 2284,
+      "win": 1341,
       "pick_rate": 0.0017
     },
     {
       "ids": [
         3139
       ],
-      "play": 1941,
-      "win": 1107,
+      "play": 1950,
+      "win": 1113,
       "pick_rate": 0.0015
     },
     {
       "ids": [
         3153
       ],
-      "play": 1835,
-      "win": 866,
+      "play": 1862,
+      "win": 883,
       "pick_rate": 0.0014
     },
     {
       "ids": [
         6609
       ],
-      "play": 1590,
-      "win": 717,
+      "play": 1602,
+      "win": 723,
       "pick_rate": 0.0012
     },
     {
       "ids": [
         6695
       ],
-      "play": 1129,
-      "win": 490,
+      "play": 1139,
+      "win": 495,
       "pick_rate": 0.0009
     },
     {
       "ids": [
         3071
       ],
-      "play": 817,
-      "win": 411,
+      "play": 823,
+      "win": 414,
       "pick_rate": 0.0006
     },
     {
       "ids": [
         3134
       ],
-      "play": 640,
+      "play": 645,
       "win": 287,
       "pick_rate": 0.0005
     },
@@ -28197,23 +28624,23 @@
       "ids": [
         6662
       ],
-      "play": 531,
-      "win": 243,
+      "play": 536,
+      "win": 244,
       "pick_rate": 0.0004
     },
     {
       "ids": [
         3157
       ],
-      "play": 495,
-      "win": 263,
+      "play": 499,
+      "win": 265,
       "pick_rate": 0.0004
     },
     {
       "ids": [
         3172
       ],
-      "play": 384,
+      "play": 385,
       "win": 193,
       "pick_rate": 0.0003
     },
@@ -28229,7 +28656,7 @@
       "ids": [
         2420
       ],
-      "play": 241,
+      "play": 243,
       "win": 149,
       "pick_rate": 0.0002
     },
@@ -28237,15 +28664,15 @@
       "ids": [
         3814
       ],
-      "play": 204,
-      "win": 124,
+      "play": 206,
+      "win": 125,
       "pick_rate": 0.0002
     },
     {
       "ids": [
         6665
       ],
-      "play": 243,
+      "play": 244,
       "win": 135,
       "pick_rate": 0.0002
     }
