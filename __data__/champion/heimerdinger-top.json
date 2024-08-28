@@ -266,16 +266,16 @@
       "is_rotation": false,
       "is_rip": false,
       "average_stats": {
-        "win_rate": 0.510436,
-        "pick_rate": 0.0158726,
-        "ban_rate": 0.0083986,
-        "kda": 1.77798,
+        "win_rate": 0.508127,
+        "pick_rate": 0.0158609,
+        "ban_rate": 0.00823164,
+        "kda": 1.777014,
         "tier": 4,
-        "rank": 135,
+        "rank": 138,
         "tier_data": {
           "tier": 4,
-          "rank": 135,
-          "rank_prev": 139,
+          "rank": 138,
+          "rank_prev": 135,
           "rank_prev_patch": 126
         }
       },
@@ -283,15 +283,15 @@
         {
           "name": "TOP",
           "stats": {
-            "win_rate": 0.533333,
-            "pick_rate": 0.00793345,
-            "role_rate": 0.498102,
-            "ban_rate": 0.00418337,
-            "kda": 1.635505,
+            "win_rate": 0.523891,
+            "pick_rate": 0.00797773,
+            "role_rate": 0.501283,
+            "ban_rate": 0.00412638,
+            "kda": 1.617705,
             "tier_data": {
               "tier": 3,
-              "rank": 35,
-              "rank_prev": 41,
+              "rank": 42,
+              "rank_prev": 35,
               "rank_prev_patch": 50
             }
           },
@@ -299,18 +299,23 @@
             {
               "name": "MAGE",
               "stats": {
-                "win_rate": 0.532228,
+                "win_rate": 0.521739,
                 "role_rate": 1,
-                "play": 543,
-                "win": 289
+                "play": 598,
+                "win": 312
               }
             }
           ],
           "counters": [
             {
               "champion_id": 266,
-              "play": 42,
-              "win": 21
+              "play": 45,
+              "win": 23
+            },
+            {
+              "champion_id": 75,
+              "play": 33,
+              "win": 17
             }
           ]
         }
@@ -321,8 +326,8 @@
       [
         {
           "champion_id": 266,
-          "play": 42,
-          "win": 21,
+          "play": 45,
+          "win": 23,
           "meta": {
             "id": 266,
             "key": "Aatrox",
@@ -632,14 +637,666 @@
               }
             ]
           },
-          "win_rate": 50
+          "win_rate": 51.11
+        },
+        {
+          "champion_id": 75,
+          "play": 33,
+          "win": 17,
+          "meta": {
+            "id": 75,
+            "key": "Nasus",
+            "name": "沙漠死神",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Nasus.png",
+            "evolve": [],
+            "partype": "法力",
+            "passive": {
+              "name": "吞噬灵魂",
+              "description": "内瑟斯吸取敌人的生命能量，从而获得生命偷取加成。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Nasus_Passive.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0075/ability_0075_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "汲魂痛击",
+                "description": "内瑟斯对敌人施放汲魂痛击造成伤害，如果敌人死于汲魂痛击，则永久增加下次汲魂痛击的伤害。",
+                "max_rank": 5,
+                "range_burn": [
+                  300
+                ],
+                "cooldown_burn": [
+                  7,
+                  6,
+                  5,
+                  4,
+                  3
+                ],
+                "cooldown_burn_float": [
+                  7.5,
+                  6.5,
+                  5.5,
+                  4.5,
+                  3.5
+                ],
+                "cost_burn": [
+                  20
+                ],
+                "tooltip": "内瑟斯的下次攻击造成额外的<physicalDamage>?物理伤害</physicalDamage>。用这个攻击击杀一名敌人后，会使其伤害永久提升3，击杀英雄、大型小兵和大型野怪的伤害提升为12。<br /><br /><rules>这个技能会在造成伤害时触发技能特效。</rules>?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NasusQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0075/ability_0075_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "枯萎",
+                "description": "内瑟斯使一名敌方英雄衰老，持续减少其移动速度和攻击速度。",
+                "max_rank": 5,
+                "range_burn": [
+                  700
+                ],
+                "cooldown_burn": [
+                  15,
+                  14,
+                  13,
+                  12,
+                  11
+                ],
+                "cooldown_burn_float": [
+                  15,
+                  14,
+                  13,
+                  12,
+                  11
+                ],
+                "cost_burn": [
+                  80
+                ],
+                "tooltip": "内瑟斯使一名英雄衰老，使其<status>减速</status>?%，并在?秒内持续提升至?%。目标的<attackSpeed>攻击速度</attackSpeed>也会降低，相当于该<status>减速</status>幅度的?%。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NasusW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0075/ability_0075_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "灵魂烈焰",
+                "description": "内瑟斯在目标区域施放灵魂烈焰，伤害并削弱敌人。",
+                "max_rank": 5,
+                "range_burn": [
+                  650
+                ],
+                "cooldown_burn": [
+                  12
+                ],
+                "cooldown_burn_float": [
+                  12
+                ],
+                "cost_burn": [
+                  60,
+                  70,
+                  80,
+                  90,
+                  100
+                ],
+                "tooltip": "内瑟斯引发一团灵魂烈焰，造成<magicDamage>?魔法伤害</magicDamage>。区域内的敌人们会失去<scaleArmor>30/35/40/45/50%护甲</scaleArmor>并在5秒里持续受到共<magicDamage>?魔法伤害</magicDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NasusE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0075/ability_0075_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "死神降临",
+                "description": "内瑟斯释放一个具有强大魔力的沙漠风暴来侵袭身边的敌人。当风暴肆虐期间，他会获得额外生命值、额外攻击距离，伤害附近的敌人，汲魂痛击会拥有较短冷却时间，并获得额外的护甲和魔法抗性。",
+                "max_rank": 3,
+                "range_burn": [
+                  20
+                ],
+                "cooldown_burn": [
+                  120,
+                  100,
+                  80
+                ],
+                "cooldown_burn_float": [
+                  120,
+                  100,
+                  80
+                ],
+                "cost_burn": [
+                  100
+                ],
+                "tooltip": "沙漠风暴赐予内瑟斯力量，使他在15秒的持续时间内获得<healing>?最大生命值</healing>，以及?<scaleArmor>护甲</scaleArmor>与<scaleMR>魔法抗性</scaleMR>。<br /><br />在风暴肆虐时，他每秒对周围目标造成<magicDamage>?最大生命值的魔法伤害</magicDamage>，并且<spellName>汲魂痛击</spellName>的冷却时间缩短?%。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NasusR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0075/ability_0075_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 75000,
+                "champion_id": 75,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 1350
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 585
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 75010,
+                "champion_id": 75,
+                "name": "创世之神 内瑟斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_10.jpg",
+                "skin_video_url": "https://youtu.be/JZUFn9l2qSk",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2016-11-10T09:00:00+09:00"
+              },
+              {
+                "id": 75011,
+                "champion_id": 75,
+                "name": "北辰之威 内瑟斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_11.jpg",
+                "skin_video_url": "https://youtu.be/A43GystgSaU",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 75006,
+                "champion_id": 75,
+                "name": "单身贵族 内瑟斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_6.jpg",
+                "skin_video_url": "https://youtu.be/GZJXdul7FZw",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2015-03-30T23:01:00+09:00"
+              },
+              {
+                "id": 75025,
+                "champion_id": 75,
+                "name": "太空律动 “狗头” 内瑟斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_25.jpg",
+                "skin_video_url": "https://youtu.be/PFKm34wPAZ0",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-04-01T04:00:00+09:00"
+              },
+              {
+                "id": 75016,
+                "champion_id": 75,
+                "name": "战地机甲 内瑟斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_16.jpg",
+                "skin_video_url": "https://youtu.be/i-pfR-zq0J4",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-11-12T04:00:00+09:00"
+              },
+              {
+                "id": 75001,
+                "champion_id": 75,
+                "name": "星空之门 内瑟斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_1.jpg",
+                "skin_video_url": "https://youtu.be/9jgGGmxptrQ",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 520
+                  }
+                ],
+                "sales": null,
+                "release_date": "2010-07-12T15:00:00+09:00"
+              },
+              {
+                "id": 75003,
+                "champion_id": 75,
+                "name": "死亡骑士 内瑟斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_3.jpg",
+                "skin_video_url": "https://youtu.be/YvtWHaniAps",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2011-04-25T19:00:00+09:00"
+              },
+              {
+                "id": 75002,
+                "champion_id": 75,
+                "name": "法老王朝 内瑟斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_2.jpg",
+                "skin_video_url": "https://youtu.be/gXUcM7hInQ8",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 520
+                  }
+                ],
+                "sales": null,
+                "release_date": "2010-11-02T13:00:00+09:00"
+              },
+              {
+                "id": 75035,
+                "champion_id": 75,
+                "name": "海珀利安小队 S02-阿努比斯 内瑟斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_35.jpg",
+                "skin_video_url": "https://youtu.be/lAOUc4er4ug",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2022-08-25T04:00:00+09:00"
+              },
+              {
+                "id": 75005,
+                "champion_id": 75,
+                "name": "炼狱魔犬 内瑟斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_5.jpg",
+                "skin_video_url": "https://youtu.be/gV2Vi8iGr4Q",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1820
+                  }
+                ],
+                "sales": null,
+                "release_date": "2013-11-17T07:00:00+09:00"
+              },
+              {
+                "id": 75004,
+                "champion_id": 75,
+                "name": "警用试作体K-9 内瑟斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_4.jpg",
+                "skin_video_url": "https://youtu.be/mFhmoZmwL3I",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 75045,
+                "champion_id": 75,
+                "name": "黑夜使者 内瑟斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_45.jpg",
+                "skin_video_url": "https://youtu.be/wF4JVP-ZTNY",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2023-04-20T04:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 51.52
         }
       ],
       [
         {
+          "champion_id": 75,
+          "play": 33,
+          "win": 17,
+          "meta": {
+            "id": 75,
+            "key": "Nasus",
+            "name": "沙漠死神",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Nasus.png",
+            "evolve": [],
+            "partype": "法力",
+            "passive": {
+              "name": "吞噬灵魂",
+              "description": "内瑟斯吸取敌人的生命能量，从而获得生命偷取加成。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Nasus_Passive.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0075/ability_0075_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "汲魂痛击",
+                "description": "内瑟斯对敌人施放汲魂痛击造成伤害，如果敌人死于汲魂痛击，则永久增加下次汲魂痛击的伤害。",
+                "max_rank": 5,
+                "range_burn": [
+                  300
+                ],
+                "cooldown_burn": [
+                  7,
+                  6,
+                  5,
+                  4,
+                  3
+                ],
+                "cooldown_burn_float": [
+                  7.5,
+                  6.5,
+                  5.5,
+                  4.5,
+                  3.5
+                ],
+                "cost_burn": [
+                  20
+                ],
+                "tooltip": "内瑟斯的下次攻击造成额外的<physicalDamage>?物理伤害</physicalDamage>。用这个攻击击杀一名敌人后，会使其伤害永久提升3，击杀英雄、大型小兵和大型野怪的伤害提升为12。<br /><br /><rules>这个技能会在造成伤害时触发技能特效。</rules>?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NasusQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0075/ability_0075_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "枯萎",
+                "description": "内瑟斯使一名敌方英雄衰老，持续减少其移动速度和攻击速度。",
+                "max_rank": 5,
+                "range_burn": [
+                  700
+                ],
+                "cooldown_burn": [
+                  15,
+                  14,
+                  13,
+                  12,
+                  11
+                ],
+                "cooldown_burn_float": [
+                  15,
+                  14,
+                  13,
+                  12,
+                  11
+                ],
+                "cost_burn": [
+                  80
+                ],
+                "tooltip": "内瑟斯使一名英雄衰老，使其<status>减速</status>?%，并在?秒内持续提升至?%。目标的<attackSpeed>攻击速度</attackSpeed>也会降低，相当于该<status>减速</status>幅度的?%。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NasusW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0075/ability_0075_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "灵魂烈焰",
+                "description": "内瑟斯在目标区域施放灵魂烈焰，伤害并削弱敌人。",
+                "max_rank": 5,
+                "range_burn": [
+                  650
+                ],
+                "cooldown_burn": [
+                  12
+                ],
+                "cooldown_burn_float": [
+                  12
+                ],
+                "cost_burn": [
+                  60,
+                  70,
+                  80,
+                  90,
+                  100
+                ],
+                "tooltip": "内瑟斯引发一团灵魂烈焰，造成<magicDamage>?魔法伤害</magicDamage>。区域内的敌人们会失去<scaleArmor>30/35/40/45/50%护甲</scaleArmor>并在5秒里持续受到共<magicDamage>?魔法伤害</magicDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NasusE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0075/ability_0075_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "死神降临",
+                "description": "内瑟斯释放一个具有强大魔力的沙漠风暴来侵袭身边的敌人。当风暴肆虐期间，他会获得额外生命值、额外攻击距离，伤害附近的敌人，汲魂痛击会拥有较短冷却时间，并获得额外的护甲和魔法抗性。",
+                "max_rank": 3,
+                "range_burn": [
+                  20
+                ],
+                "cooldown_burn": [
+                  120,
+                  100,
+                  80
+                ],
+                "cooldown_burn_float": [
+                  120,
+                  100,
+                  80
+                ],
+                "cost_burn": [
+                  100
+                ],
+                "tooltip": "沙漠风暴赐予内瑟斯力量，使他在15秒的持续时间内获得<healing>?最大生命值</healing>，以及?<scaleArmor>护甲</scaleArmor>与<scaleMR>魔法抗性</scaleMR>。<br /><br />在风暴肆虐时，他每秒对周围目标造成<magicDamage>?最大生命值的魔法伤害</magicDamage>，并且<spellName>汲魂痛击</spellName>的冷却时间缩短?%。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NasusR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0075/ability_0075_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 75000,
+                "champion_id": 75,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 1350
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 585
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 75010,
+                "champion_id": 75,
+                "name": "创世之神 内瑟斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_10.jpg",
+                "skin_video_url": "https://youtu.be/JZUFn9l2qSk",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2016-11-10T09:00:00+09:00"
+              },
+              {
+                "id": 75011,
+                "champion_id": 75,
+                "name": "北辰之威 内瑟斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_11.jpg",
+                "skin_video_url": "https://youtu.be/A43GystgSaU",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 75006,
+                "champion_id": 75,
+                "name": "单身贵族 内瑟斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_6.jpg",
+                "skin_video_url": "https://youtu.be/GZJXdul7FZw",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2015-03-30T23:01:00+09:00"
+              },
+              {
+                "id": 75025,
+                "champion_id": 75,
+                "name": "太空律动 “狗头” 内瑟斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_25.jpg",
+                "skin_video_url": "https://youtu.be/PFKm34wPAZ0",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-04-01T04:00:00+09:00"
+              },
+              {
+                "id": 75016,
+                "champion_id": 75,
+                "name": "战地机甲 内瑟斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_16.jpg",
+                "skin_video_url": "https://youtu.be/i-pfR-zq0J4",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-11-12T04:00:00+09:00"
+              },
+              {
+                "id": 75001,
+                "champion_id": 75,
+                "name": "星空之门 内瑟斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_1.jpg",
+                "skin_video_url": "https://youtu.be/9jgGGmxptrQ",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 520
+                  }
+                ],
+                "sales": null,
+                "release_date": "2010-07-12T15:00:00+09:00"
+              },
+              {
+                "id": 75003,
+                "champion_id": 75,
+                "name": "死亡骑士 内瑟斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_3.jpg",
+                "skin_video_url": "https://youtu.be/YvtWHaniAps",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2011-04-25T19:00:00+09:00"
+              },
+              {
+                "id": 75002,
+                "champion_id": 75,
+                "name": "法老王朝 内瑟斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_2.jpg",
+                "skin_video_url": "https://youtu.be/gXUcM7hInQ8",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 520
+                  }
+                ],
+                "sales": null,
+                "release_date": "2010-11-02T13:00:00+09:00"
+              },
+              {
+                "id": 75035,
+                "champion_id": 75,
+                "name": "海珀利安小队 S02-阿努比斯 内瑟斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_35.jpg",
+                "skin_video_url": "https://youtu.be/lAOUc4er4ug",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2022-08-25T04:00:00+09:00"
+              },
+              {
+                "id": 75005,
+                "champion_id": 75,
+                "name": "炼狱魔犬 内瑟斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_5.jpg",
+                "skin_video_url": "https://youtu.be/gV2Vi8iGr4Q",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1820
+                  }
+                ],
+                "sales": null,
+                "release_date": "2013-11-17T07:00:00+09:00"
+              },
+              {
+                "id": 75004,
+                "champion_id": 75,
+                "name": "警用试作体K-9 内瑟斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_4.jpg",
+                "skin_video_url": "https://youtu.be/mFhmoZmwL3I",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 75045,
+                "champion_id": 75,
+                "name": "黑夜使者 内瑟斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_45.jpg",
+                "skin_video_url": "https://youtu.be/wF4JVP-ZTNY",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2023-04-20T04:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 51.52
+        },
+        {
           "champion_id": 266,
-          "play": 42,
-          "win": 21,
+          "play": 45,
+          "win": 23,
           "meta": {
             "id": 266,
             "key": "Aatrox",
@@ -949,15 +1606,15 @@
               }
             ]
           },
-          "win_rate": 50
+          "win_rate": 51.11
         }
       ]
     ],
     "counters": [
       {
         "champion_id": 266,
-        "play": 42,
-        "win": 21,
+        "play": 45,
+        "win": 23,
         "meta": {
           "id": 266,
           "key": "Aatrox",
@@ -1264,6 +1921,331 @@
               ],
               "sales": null,
               "release_date": "2014-07-24T07:00:00+09:00"
+            }
+          ]
+        }
+      },
+      {
+        "champion_id": 75,
+        "play": 33,
+        "win": 17,
+        "meta": {
+          "id": 75,
+          "key": "Nasus",
+          "name": "沙漠死神",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Nasus.png",
+          "evolve": [],
+          "partype": "法力",
+          "passive": {
+            "name": "吞噬灵魂",
+            "description": "内瑟斯吸取敌人的生命能量，从而获得生命偷取加成。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Nasus_Passive.png",
+            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0075/ability_0075_P1.webm"
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "汲魂痛击",
+              "description": "内瑟斯对敌人施放汲魂痛击造成伤害，如果敌人死于汲魂痛击，则永久增加下次汲魂痛击的伤害。",
+              "max_rank": 5,
+              "range_burn": [
+                300
+              ],
+              "cooldown_burn": [
+                7,
+                6,
+                5,
+                4,
+                3
+              ],
+              "cooldown_burn_float": [
+                7.5,
+                6.5,
+                5.5,
+                4.5,
+                3.5
+              ],
+              "cost_burn": [
+                20
+              ],
+              "tooltip": "内瑟斯的下次攻击造成额外的<physicalDamage>?物理伤害</physicalDamage>。用这个攻击击杀一名敌人后，会使其伤害永久提升3，击杀英雄、大型小兵和大型野怪的伤害提升为12。<br /><br /><rules>这个技能会在造成伤害时触发技能特效。</rules>?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NasusQ.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0075/ability_0075_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "枯萎",
+              "description": "内瑟斯使一名敌方英雄衰老，持续减少其移动速度和攻击速度。",
+              "max_rank": 5,
+              "range_burn": [
+                700
+              ],
+              "cooldown_burn": [
+                15,
+                14,
+                13,
+                12,
+                11
+              ],
+              "cooldown_burn_float": [
+                15,
+                14,
+                13,
+                12,
+                11
+              ],
+              "cost_burn": [
+                80
+              ],
+              "tooltip": "内瑟斯使一名英雄衰老，使其<status>减速</status>?%，并在?秒内持续提升至?%。目标的<attackSpeed>攻击速度</attackSpeed>也会降低，相当于该<status>减速</status>幅度的?%。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NasusW.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0075/ability_0075_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "灵魂烈焰",
+              "description": "内瑟斯在目标区域施放灵魂烈焰，伤害并削弱敌人。",
+              "max_rank": 5,
+              "range_burn": [
+                650
+              ],
+              "cooldown_burn": [
+                12
+              ],
+              "cooldown_burn_float": [
+                12
+              ],
+              "cost_burn": [
+                60,
+                70,
+                80,
+                90,
+                100
+              ],
+              "tooltip": "内瑟斯引发一团灵魂烈焰，造成<magicDamage>?魔法伤害</magicDamage>。区域内的敌人们会失去<scaleArmor>30/35/40/45/50%护甲</scaleArmor>并在5秒里持续受到共<magicDamage>?魔法伤害</magicDamage>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NasusE.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0075/ability_0075_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "死神降临",
+              "description": "内瑟斯释放一个具有强大魔力的沙漠风暴来侵袭身边的敌人。当风暴肆虐期间，他会获得额外生命值、额外攻击距离，伤害附近的敌人，汲魂痛击会拥有较短冷却时间，并获得额外的护甲和魔法抗性。",
+              "max_rank": 3,
+              "range_burn": [
+                20
+              ],
+              "cooldown_burn": [
+                120,
+                100,
+                80
+              ],
+              "cooldown_burn_float": [
+                120,
+                100,
+                80
+              ],
+              "cost_burn": [
+                100
+              ],
+              "tooltip": "沙漠风暴赐予内瑟斯力量，使他在15秒的持续时间内获得<healing>?最大生命值</healing>，以及?<scaleArmor>护甲</scaleArmor>与<scaleMR>魔法抗性</scaleMR>。<br /><br />在风暴肆虐时，他每秒对周围目标造成<magicDamage>?最大生命值的魔法伤害</magicDamage>，并且<spellName>汲魂痛击</spellName>的冷却时间缩短?%。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NasusR.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0075/ability_0075_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 75000,
+              "champion_id": 75,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 1350
+                },
+                {
+                  "currency": "RP",
+                  "cost": 585
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 75010,
+              "champion_id": 75,
+              "name": "创世之神 内瑟斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_10.jpg",
+              "skin_video_url": "https://youtu.be/JZUFn9l2qSk",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 750
+                }
+              ],
+              "sales": null,
+              "release_date": "2016-11-10T09:00:00+09:00"
+            },
+            {
+              "id": 75011,
+              "champion_id": 75,
+              "name": "北辰之威 内瑟斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_11.jpg",
+              "skin_video_url": "https://youtu.be/A43GystgSaU",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 75006,
+              "champion_id": 75,
+              "name": "单身贵族 内瑟斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_6.jpg",
+              "skin_video_url": "https://youtu.be/GZJXdul7FZw",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 750
+                }
+              ],
+              "sales": null,
+              "release_date": "2015-03-30T23:01:00+09:00"
+            },
+            {
+              "id": 75025,
+              "champion_id": 75,
+              "name": "太空律动 “狗头” 内瑟斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_25.jpg",
+              "skin_video_url": "https://youtu.be/PFKm34wPAZ0",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2021-04-01T04:00:00+09:00"
+            },
+            {
+              "id": 75016,
+              "champion_id": 75,
+              "name": "战地机甲 内瑟斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_16.jpg",
+              "skin_video_url": "https://youtu.be/i-pfR-zq0J4",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2020-11-12T04:00:00+09:00"
+            },
+            {
+              "id": 75001,
+              "champion_id": 75,
+              "name": "星空之门 内瑟斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_1.jpg",
+              "skin_video_url": "https://youtu.be/9jgGGmxptrQ",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 520
+                }
+              ],
+              "sales": null,
+              "release_date": "2010-07-12T15:00:00+09:00"
+            },
+            {
+              "id": 75003,
+              "champion_id": 75,
+              "name": "死亡骑士 内瑟斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_3.jpg",
+              "skin_video_url": "https://youtu.be/YvtWHaniAps",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": "2011-04-25T19:00:00+09:00"
+            },
+            {
+              "id": 75002,
+              "champion_id": 75,
+              "name": "法老王朝 内瑟斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_2.jpg",
+              "skin_video_url": "https://youtu.be/gXUcM7hInQ8",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 520
+                }
+              ],
+              "sales": null,
+              "release_date": "2010-11-02T13:00:00+09:00"
+            },
+            {
+              "id": 75035,
+              "champion_id": 75,
+              "name": "海珀利安小队 S02-阿努比斯 内瑟斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_35.jpg",
+              "skin_video_url": "https://youtu.be/lAOUc4er4ug",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2022-08-25T04:00:00+09:00"
+            },
+            {
+              "id": 75005,
+              "champion_id": 75,
+              "name": "炼狱魔犬 内瑟斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_5.jpg",
+              "skin_video_url": "https://youtu.be/gV2Vi8iGr4Q",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1820
+                }
+              ],
+              "sales": null,
+              "release_date": "2013-11-17T07:00:00+09:00"
+            },
+            {
+              "id": 75004,
+              "champion_id": 75,
+              "name": "警用试作体K-9 内瑟斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_4.jpg",
+              "skin_video_url": "https://youtu.be/mFhmoZmwL3I",
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 75045,
+              "champion_id": 75,
+              "name": "黑夜使者 内瑟斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Nasus_45.jpg",
+              "skin_video_url": "https://youtu.be/wF4JVP-ZTNY",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2023-04-20T04:00:00+09:00"
             }
           ]
         }
@@ -15789,27 +16771,27 @@
         4,
         12
       ],
-      "win": 215,
-      "play": 401,
-      "pick_rate": 0.7786
+      "win": 232,
+      "play": 444,
+      "pick_rate": 0.7831
     },
     {
       "ids": [
         4,
         14
       ],
-      "win": 30,
-      "play": 65,
-      "pick_rate": 0.1262
+      "win": 32,
+      "play": 69,
+      "pick_rate": 0.1217
     },
     {
       "ids": [
         4,
         21
       ],
-      "win": 15,
-      "play": 21,
-      "pick_rate": 0.0408
+      "win": 18,
+      "play": 26,
+      "pick_rate": 0.0459
     },
     {
       "ids": [
@@ -15818,7 +16800,7 @@
       ],
       "win": 7,
       "play": 12,
-      "pick_rate": 0.0233
+      "pick_rate": 0.0212
     },
     {
       "ids": [
@@ -15827,7 +16809,7 @@
       ],
       "win": 2,
       "play": 7,
-      "pick_rate": 0.0136
+      "pick_rate": 0.0123
     }
   ],
   "trends": {
@@ -15836,8 +16818,8 @@
     "win": [
       {
         "version": "14.17",
-        "rate": 0.5333,
-        "rank": 5,
+        "rate": 0.5239,
+        "rank": 10,
         "created_at": "2024-08-27T22:39:12+09:00"
       },
       {
@@ -15886,7 +16868,7 @@
     "pick": [
       {
         "version": "14.17",
-        "rate": 0.0079,
+        "rate": 0.008,
         "rank": 56,
         "created_at": "2024-08-27T22:39:12+09:00"
       },
@@ -15936,8 +16918,8 @@
     "ban": [
       {
         "version": "14.17",
-        "rate": 0.0042,
-        "rank": 49,
+        "rate": 0.0041,
+        "rank": 50,
         "created_at": "2024-08-27T22:39:12+09:00"
       },
       {
@@ -15987,33 +16969,33 @@
   "game_lengths": [
     {
       "game_length": 0,
-      "rate": 0.634615,
+      "rate": 0.62069,
       "average": 0.5,
       "rank": 1
     },
     {
       "game_length": 25,
-      "rate": 0.467836,
+      "rate": 0.455026,
       "average": 0.5,
-      "rank": 54
+      "rank": 58
     },
     {
       "game_length": 30,
-      "rate": 0.465517,
+      "rate": 0.470588,
       "average": 0.5,
-      "rank": 54
+      "rank": 52
     },
     {
       "game_length": 35,
-      "rate": 0.548387,
+      "rate": 0.537313,
       "average": 0.5,
-      "rank": 8
+      "rank": 12
     },
     {
       "game_length": 40,
       "rate": 0.65,
       "average": 0.5,
-      "rank": 5
+      "rank": 3
     }
   ],
   "skills": [
@@ -16035,9 +17017,9 @@
         "E",
         "E"
       ],
-      "play": 191,
-      "win": 112,
-      "pick_rate": 0.5395
+      "play": 213,
+      "win": 124,
+      "pick_rate": 0.5392
     },
     {
       "order": [
@@ -16057,9 +17039,9 @@
         "E",
         "E"
       ],
-      "play": 37,
-      "win": 19,
-      "pick_rate": 0.1045
+      "play": 39,
+      "win": 20,
+      "pick_rate": 0.0987
     },
     {
       "order": [
@@ -16079,31 +17061,9 @@
         "E",
         "E"
       ],
-      "play": 32,
-      "win": 25,
-      "pick_rate": 0.0904
-    },
-    {
-      "order": [
-        "Q",
-        "E",
-        "W",
-        "Q",
-        "Q",
-        "R",
-        "Q",
-        "W",
-        "Q",
-        "W",
-        "W",
-        "R",
-        "W",
-        "E",
-        "E"
-      ],
-      "play": 6,
-      "win": 4,
-      "pick_rate": 0.0169
+      "play": 36,
+      "win": 29,
+      "pick_rate": 0.0911
     },
     {
       "order": [
@@ -16123,9 +17083,31 @@
         "E",
         "E"
       ],
-      "play": 6,
+      "play": 8,
       "win": 2,
-      "pick_rate": 0.0169
+      "pick_rate": 0.0203
+    },
+    {
+      "order": [
+        "Q",
+        "E",
+        "W",
+        "Q",
+        "Q",
+        "R",
+        "Q",
+        "W",
+        "Q",
+        "W",
+        "W",
+        "R",
+        "W",
+        "E",
+        "E"
+      ],
+      "play": 7,
+      "win": 4,
+      "pick_rate": 0.0177
     }
   ],
   "skill_masteries": [
@@ -16135,9 +17117,9 @@
         "W",
         "E"
       ],
-      "play": 276,
-      "win": 165,
-      "pick_rate": 0.7797,
+      "play": 311,
+      "win": 184,
+      "pick_rate": 0.7873,
       "builds": [
         {
           "order": [
@@ -16157,9 +17139,9 @@
             "E",
             "E"
           ],
-          "play": 191,
-          "win": 112,
-          "pick_rate": 0.692
+          "play": 213,
+          "win": 124,
+          "pick_rate": 0.6849
         },
         {
           "order": [
@@ -16179,31 +17161,9 @@
             "E",
             "E"
           ],
-          "play": 32,
-          "win": 25,
-          "pick_rate": 0.1159
-        },
-        {
-          "order": [
-            "Q",
-            "E",
-            "W",
-            "Q",
-            "Q",
-            "R",
-            "Q",
-            "W",
-            "Q",
-            "W",
-            "W",
-            "R",
-            "W",
-            "E",
-            "E"
-          ],
-          "play": 6,
-          "win": 4,
-          "pick_rate": 0.0217
+          "play": 36,
+          "win": 29,
+          "pick_rate": 0.1158
         },
         {
           "order": [
@@ -16223,9 +17183,31 @@
             "E",
             "E"
           ],
-          "play": 6,
+          "play": 8,
           "win": 2,
-          "pick_rate": 0.0217
+          "pick_rate": 0.0257
+        },
+        {
+          "order": [
+            "Q",
+            "E",
+            "W",
+            "Q",
+            "Q",
+            "R",
+            "Q",
+            "W",
+            "Q",
+            "W",
+            "W",
+            "R",
+            "W",
+            "E",
+            "E"
+          ],
+          "play": 7,
+          "win": 4,
+          "pick_rate": 0.0225
         },
         {
           "order": [
@@ -16247,7 +17229,7 @@
           ],
           "play": 4,
           "win": 3,
-          "pick_rate": 0.0145
+          "pick_rate": 0.0129
         }
       ]
     },
@@ -16257,9 +17239,9 @@
         "Q",
         "E"
       ],
-      "play": 67,
-      "win": 37,
-      "pick_rate": 0.1893,
+      "play": 71,
+      "win": 38,
+      "pick_rate": 0.1797,
       "builds": [
         {
           "order": [
@@ -16279,9 +17261,9 @@
             "E",
             "E"
           ],
-          "play": 37,
-          "win": 19,
-          "pick_rate": 0.5522
+          "play": 39,
+          "win": 20,
+          "pick_rate": 0.5493
         },
         {
           "order": [
@@ -16303,7 +17285,29 @@
           ],
           "play": 5,
           "win": 4,
-          "pick_rate": 0.0746
+          "pick_rate": 0.0704
+        },
+        {
+          "order": [
+            "Q",
+            "E",
+            "W",
+            "W",
+            "Q",
+            "R",
+            "W",
+            "W",
+            "W",
+            "Q",
+            "R",
+            "Q",
+            "Q",
+            "E",
+            "E"
+          ],
+          "play": 5,
+          "win": 2,
+          "pick_rate": 0.0704
         },
         {
           "order": [
@@ -16325,29 +17329,7 @@
           ],
           "play": 4,
           "win": 0,
-          "pick_rate": 0.0597
-        },
-        {
-          "order": [
-            "Q",
-            "E",
-            "W",
-            "W",
-            "Q",
-            "R",
-            "W",
-            "W",
-            "W",
-            "Q",
-            "R",
-            "Q",
-            "Q",
-            "E",
-            "E"
-          ],
-          "play": 4,
-          "win": 2,
-          "pick_rate": 0.0597
+          "pick_rate": 0.0563
         },
         {
           "order": [
@@ -16369,7 +17351,7 @@
           ],
           "play": 4,
           "win": 2,
-          "pick_rate": 0.0597
+          "pick_rate": 0.0563
         }
       ]
     },
@@ -16379,9 +17361,9 @@
         "E",
         "W"
       ],
-      "play": 9,
-      "win": 3,
-      "pick_rate": 0.0254,
+      "play": 11,
+      "win": 4,
+      "pick_rate": 0.0278,
       "builds": [
         {
           "order": [
@@ -16401,9 +17383,9 @@
             "W",
             "W"
           ],
-          "play": 5,
-          "win": 1,
-          "pick_rate": 0.5556
+          "play": 7,
+          "win": 2,
+          "pick_rate": 0.6364
         },
         {
           "order": [
@@ -16425,7 +17407,7 @@
           ],
           "play": 1,
           "win": 1,
-          "pick_rate": 0.1111
+          "pick_rate": 0.0909
         },
         {
           "order": [
@@ -16447,7 +17429,7 @@
           ],
           "play": 1,
           "win": 0,
-          "pick_rate": 0.1111
+          "pick_rate": 0.0909
         },
         {
           "order": [
@@ -16469,7 +17451,7 @@
           ],
           "play": 1,
           "win": 1,
-          "pick_rate": 0.1111
+          "pick_rate": 0.0909
         },
         {
           "order": [
@@ -16491,7 +17473,7 @@
           ],
           "play": 1,
           "win": 0,
-          "pick_rate": 0.1111
+          "pick_rate": 0.0909
         }
       ]
     },
@@ -16503,7 +17485,7 @@
       ],
       "play": 2,
       "win": 2,
-      "pick_rate": 0.0056,
+      "pick_rate": 0.0051,
       "builds": [
         {
           "order": [
@@ -16573,9 +17555,9 @@
         5008,
         5001
       ],
-      "play": 143,
-      "win": 78,
-      "pick_rate": 0.2771
+      "play": 160,
+      "win": 87,
+      "pick_rate": 0.2792
     },
     {
       "id": 8229,
@@ -16596,9 +17578,9 @@
         5008,
         5001
       ],
-      "play": 62,
-      "win": 33,
-      "pick_rate": 0.1202
+      "play": 68,
+      "win": 37,
+      "pick_rate": 0.1187
     },
     {
       "id": 8229,
@@ -16619,9 +17601,9 @@
         5008,
         5001
       ],
-      "play": 31,
-      "win": 17,
-      "pick_rate": 0.0601
+      "play": 34,
+      "win": 18,
+      "pick_rate": 0.0593
     },
     {
       "id": 8229,
@@ -16642,32 +17624,32 @@
         5008,
         5011
       ],
-      "play": 12,
+      "play": 13,
       "win": 4,
-      "pick_rate": 0.0233
+      "pick_rate": 0.0227
     },
     {
-      "id": 8229,
-      "primary_page_id": 8200,
+      "id": 8010,
+      "primary_page_id": 8000,
       "primary_rune_ids": [
-        8229,
-        8226,
-        8233,
-        8237
+        8010,
+        8009,
+        9105,
+        8299
       ],
-      "secondary_page_id": 8100,
+      "secondary_page_id": 8200,
       "secondary_rune_ids": [
-        8138,
-        8139
+        8233,
+        8236
       ],
       "stat_mod_ids": [
         5008,
         5008,
-        5011
+        5001
       ],
-      "play": 12,
-      "win": 3,
-      "pick_rate": 0.0233
+      "play": 13,
+      "win": 7,
+      "pick_rate": 0.0227
     }
   ],
   "rune_pages": [
@@ -16675,9 +17657,9 @@
       "id": 8010,
       "primary_page_id": 8000,
       "secondary_page_id": 8200,
-      "play": 235,
-      "win": 132,
-      "pick_rate": 0.4554,
+      "play": 266,
+      "win": 146,
+      "pick_rate": 0.4642,
       "builds": [
         {
           "id": 8010,
@@ -16698,9 +17680,9 @@
             5008,
             5001
           ],
-          "play": 143,
-          "win": 78,
-          "pick_rate": 0.6085
+          "play": 160,
+          "win": 87,
+          "pick_rate": 0.6015
         },
         {
           "id": 8010,
@@ -16721,9 +17703,9 @@
             5008,
             5001
           ],
-          "play": 11,
-          "win": 6,
-          "pick_rate": 0.0468
+          "play": 13,
+          "win": 7,
+          "pick_rate": 0.0489
         },
         {
           "id": 8010,
@@ -16744,9 +17726,9 @@
             5008,
             5001
           ],
-          "play": 7,
-          "win": 2,
-          "pick_rate": 0.0298
+          "play": 8,
+          "win": 3,
+          "pick_rate": 0.0301
         },
         {
           "id": 8010,
@@ -16767,9 +17749,9 @@
             5008,
             5001
           ],
-          "play": 5,
+          "play": 6,
           "win": 4,
-          "pick_rate": 0.0213
+          "pick_rate": 0.0226
         },
         {
           "id": 8010,
@@ -16792,7 +17774,7 @@
           ],
           "play": 5,
           "win": 4,
-          "pick_rate": 0.0213
+          "pick_rate": 0.0188
         }
       ]
     },
@@ -16800,9 +17782,9 @@
       "id": 8229,
       "primary_page_id": 8200,
       "secondary_page_id": 8300,
-      "play": 103,
-      "win": 55,
-      "pick_rate": 0.1996,
+      "play": 113,
+      "win": 61,
+      "pick_rate": 0.1972,
       "builds": [
         {
           "id": 8229,
@@ -16823,9 +17805,32 @@
             5008,
             5001
           ],
-          "play": 62,
-          "win": 33,
-          "pick_rate": 0.6019
+          "play": 68,
+          "win": 37,
+          "pick_rate": 0.6018
+        },
+        {
+          "id": 8229,
+          "primary_page_id": 8200,
+          "primary_rune_ids": [
+            8229,
+            8226,
+            8233,
+            8236
+          ],
+          "secondary_page_id": 8300,
+          "secondary_rune_ids": [
+            8304,
+            8345
+          ],
+          "stat_mod_ids": [
+            5008,
+            5008,
+            5001
+          ],
+          "play": 8,
+          "win": 3,
+          "pick_rate": 0.0708
         },
         {
           "id": 8229,
@@ -16848,30 +17853,7 @@
           ],
           "play": 6,
           "win": 3,
-          "pick_rate": 0.0583
-        },
-        {
-          "id": 8229,
-          "primary_page_id": 8200,
-          "primary_rune_ids": [
-            8229,
-            8226,
-            8233,
-            8236
-          ],
-          "secondary_page_id": 8300,
-          "secondary_rune_ids": [
-            8304,
-            8345
-          ],
-          "stat_mod_ids": [
-            5008,
-            5008,
-            5001
-          ],
-          "play": 6,
-          "win": 2,
-          "pick_rate": 0.0583
+          "pick_rate": 0.0531
         },
         {
           "id": 8229,
@@ -16894,7 +17876,7 @@
           ],
           "play": 6,
           "win": 4,
-          "pick_rate": 0.0583
+          "pick_rate": 0.0531
         },
         {
           "id": 8229,
@@ -16915,9 +17897,9 @@
             5008,
             5001
           ],
-          "play": 4,
-          "win": 2,
-          "pick_rate": 0.0388
+          "play": 6,
+          "win": 3,
+          "pick_rate": 0.0531
         }
       ]
     },
@@ -16925,9 +17907,9 @@
       "id": 8229,
       "primary_page_id": 8200,
       "secondary_page_id": 8100,
-      "play": 73,
-      "win": 33,
-      "pick_rate": 0.1415,
+      "play": 77,
+      "win": 34,
+      "pick_rate": 0.1344,
       "builds": [
         {
           "id": 8229,
@@ -16948,9 +17930,9 @@
             5008,
             5001
           ],
-          "play": 31,
-          "win": 17,
-          "pick_rate": 0.4247
+          "play": 34,
+          "win": 18,
+          "pick_rate": 0.4416
         },
         {
           "id": 8229,
@@ -16971,9 +17953,9 @@
             5008,
             5011
           ],
-          "play": 12,
+          "play": 13,
           "win": 4,
-          "pick_rate": 0.1644
+          "pick_rate": 0.1688
         },
         {
           "id": 8229,
@@ -16996,7 +17978,7 @@
           ],
           "play": 12,
           "win": 3,
-          "pick_rate": 0.1644
+          "pick_rate": 0.1558
         },
         {
           "id": 8229,
@@ -17019,7 +18001,7 @@
           ],
           "play": 4,
           "win": 1,
-          "pick_rate": 0.0548
+          "pick_rate": 0.0519
         },
         {
           "id": 8229,
@@ -17042,7 +18024,7 @@
           ],
           "play": 3,
           "win": 1,
-          "pick_rate": 0.0411
+          "pick_rate": 0.039
         }
       ]
     },
@@ -17050,9 +18032,9 @@
       "id": 8229,
       "primary_page_id": 8200,
       "secondary_page_id": 8000,
-      "play": 41,
-      "win": 24,
-      "pick_rate": 0.0795,
+      "play": 48,
+      "win": 27,
+      "pick_rate": 0.0838,
       "builds": [
         {
           "id": 8229,
@@ -17075,7 +18057,7 @@
           ],
           "play": 4,
           "win": 2,
-          "pick_rate": 0.0976
+          "pick_rate": 0.0833
         },
         {
           "id": 8229,
@@ -17098,7 +18080,30 @@
           ],
           "play": 4,
           "win": 3,
-          "pick_rate": 0.0976
+          "pick_rate": 0.0833
+        },
+        {
+          "id": 8229,
+          "primary_page_id": 8200,
+          "primary_rune_ids": [
+            8229,
+            8226,
+            8233,
+            8237
+          ],
+          "secondary_page_id": 8000,
+          "secondary_rune_ids": [
+            8017,
+            9105
+          ],
+          "stat_mod_ids": [
+            5008,
+            5008,
+            5001
+          ],
+          "play": 4,
+          "win": 3,
+          "pick_rate": 0.0833
         },
         {
           "id": 8229,
@@ -17121,7 +18126,7 @@
           ],
           "play": 4,
           "win": 3,
-          "pick_rate": 0.0976
+          "pick_rate": 0.0833
         },
         {
           "id": 8229,
@@ -17129,7 +18134,7 @@
           "primary_rune_ids": [
             8229,
             8226,
-            8233,
+            8210,
             8237
           ],
           "secondary_page_id": 8000,
@@ -17140,34 +18145,11 @@
           "stat_mod_ids": [
             5008,
             5008,
-            5001
+            5011
           ],
           "play": 3,
           "win": 2,
-          "pick_rate": 0.0732
-        },
-        {
-          "id": 8229,
-          "primary_page_id": 8200,
-          "primary_rune_ids": [
-            8229,
-            8226,
-            8233,
-            8237
-          ],
-          "secondary_page_id": 8000,
-          "secondary_rune_ids": [
-            9104,
-            9111
-          ],
-          "stat_mod_ids": [
-            5008,
-            5008,
-            5001
-          ],
-          "play": 3,
-          "win": 1,
-          "pick_rate": 0.0732
+          "pick_rate": 0.0625
         }
       ]
     },
@@ -17175,9 +18157,9 @@
       "id": 8010,
       "primary_page_id": 8000,
       "secondary_page_id": 8400,
-      "play": 16,
-      "win": 9,
-      "pick_rate": 0.031,
+      "play": 17,
+      "win": 10,
+      "pick_rate": 0.0297,
       "builds": [
         {
           "id": 8010,
@@ -17200,7 +18182,7 @@
           ],
           "play": 3,
           "win": 1,
-          "pick_rate": 0.1875
+          "pick_rate": 0.1765
         },
         {
           "id": 8010,
@@ -17223,7 +18205,7 @@
           ],
           "play": 2,
           "win": 1,
-          "pick_rate": 0.125
+          "pick_rate": 0.1176
         },
         {
           "id": 8010,
@@ -17246,30 +18228,30 @@
           ],
           "play": 1,
           "win": 1,
-          "pick_rate": 0.0625
+          "pick_rate": 0.0588
         },
         {
           "id": 8010,
           "primary_page_id": 8000,
           "primary_rune_ids": [
             8010,
-            8009,
-            9105,
-            8017
+            9101,
+            9104,
+            8299
           ],
           "secondary_page_id": 8400,
           "secondary_rune_ids": [
-            8451,
+            8446,
             8473
           ],
           "stat_mod_ids": [
-            5008,
+            5005,
             5008,
             5011
           ],
           "play": 1,
-          "win": 0,
-          "pick_rate": 0.0625
+          "win": 1,
+          "pick_rate": 0.0588
         },
         {
           "id": 8010,
@@ -17292,7 +18274,7 @@
           ],
           "play": 1,
           "win": 1,
-          "pick_rate": 0.0625
+          "pick_rate": 0.0588
         }
       ]
     }
@@ -17304,9 +18286,9 @@
         6653,
         3157
       ],
-      "play": 40,
-      "win": 27,
-      "pick_rate": 0.1394
+      "play": 45,
+      "win": 28,
+      "pick_rate": 0.142
     },
     {
       "ids": [
@@ -17314,9 +18296,19 @@
         6653,
         3116
       ],
-      "play": 28,
-      "win": 14,
-      "pick_rate": 0.0976
+      "play": 33,
+      "win": 17,
+      "pick_rate": 0.1041
+    },
+    {
+      "ids": [
+        2503,
+        6653,
+        3089
+      ],
+      "play": 11,
+      "win": 10,
+      "pick_rate": 0.0347
     },
     {
       "ids": [
@@ -17326,17 +18318,7 @@
       ],
       "play": 10,
       "win": 5,
-      "pick_rate": 0.0348
-    },
-    {
-      "ids": [
-        2503,
-        3116,
-        3157
-      ],
-      "play": 9,
-      "win": 6,
-      "pick_rate": 0.0314
+      "pick_rate": 0.0315
     },
     {
       "ids": [
@@ -17346,7 +18328,17 @@
       ],
       "play": 9,
       "win": 6,
-      "pick_rate": 0.0314
+      "pick_rate": 0.0284
+    },
+    {
+      "ids": [
+        2503,
+        3116,
+        3157
+      ],
+      "play": 9,
+      "win": 6,
+      "pick_rate": 0.0284
     },
     {
       "ids": [
@@ -17356,17 +18348,7 @@
       ],
       "play": 8,
       "win": 4,
-      "pick_rate": 0.0279
-    },
-    {
-      "ids": [
-        2503,
-        6653,
-        3089
-      ],
-      "play": 8,
-      "win": 7,
-      "pick_rate": 0.0279
+      "pick_rate": 0.0252
     },
     {
       "ids": [
@@ -17376,7 +18358,7 @@
       ],
       "play": 7,
       "win": 4,
-      "pick_rate": 0.0244
+      "pick_rate": 0.0221
     },
     {
       "ids": [
@@ -17386,17 +18368,7 @@
       ],
       "play": 7,
       "win": 3,
-      "pick_rate": 0.0244
-    },
-    {
-      "ids": [
-        2503,
-        3157,
-        6653
-      ],
-      "play": 5,
-      "win": 2,
-      "pick_rate": 0.0174
+      "pick_rate": 0.0221
     },
     {
       "ids": [
@@ -17404,49 +18376,59 @@
         2503,
         3116
       ],
-      "play": 5,
+      "play": 6,
       "win": 2,
-      "pick_rate": 0.0174
+      "pick_rate": 0.0189
     },
     {
       "ids": [
-        3157,
-        6653,
-        3116
-      ],
-      "play": 4,
-      "win": 3,
-      "pick_rate": 0.0139
-    },
-    {
-      "ids": [
-        6653,
         2503,
-        3089
-      ],
-      "play": 4,
-      "win": 2,
-      "pick_rate": 0.0139
-    },
-    {
-      "ids": [
-        4645,
         3089,
-        6653
+        4645
       ],
-      "play": 3,
+      "play": 5,
       "win": 3,
-      "pick_rate": 0.0105
+      "pick_rate": 0.0158
     },
     {
       "ids": [
         2503,
-        3116,
-        3135
+        3157,
+        6653
       ],
-      "play": 3,
+      "play": 5,
       "win": 2,
-      "pick_rate": 0.0105
+      "pick_rate": 0.0158
+    },
+    {
+      "ids": [
+        6653,
+        3116,
+        2503
+      ],
+      "play": 4,
+      "win": 2,
+      "pick_rate": 0.0126
+    },
+    {
+      "ids": [
+        6653,
+        2503,
+        3089
+      ],
+      "play": 4,
+      "win": 2,
+      "pick_rate": 0.0126
+    },
+    {
+      "ids": [
+        3157,
+        6653,
+        3116
+      ],
+      "play": 4,
+      "win": 3,
+      "pick_rate": 0.0126
     }
   ],
   "boots": [
@@ -17454,9 +18436,9 @@
       "ids": [
         3020
       ],
-      "play": 457,
-      "win": 247,
-      "pick_rate": 0.9365
+      "play": 509,
+      "win": 271,
+      "pick_rate": 0.9374
     },
     {
       "ids": [
@@ -17464,7 +18446,7 @@
       ],
       "play": 20,
       "win": 10,
-      "pick_rate": 0.041
+      "pick_rate": 0.0368
     },
     {
       "ids": [
@@ -17472,23 +18454,23 @@
       ],
       "play": 6,
       "win": 3,
-      "pick_rate": 0.0123
+      "pick_rate": 0.011
     },
     {
       "ids": [
         3009
       ],
-      "play": 3,
+      "play": 4,
       "win": 1,
-      "pick_rate": 0.0061
+      "pick_rate": 0.0074
     },
     {
       "ids": [
-        3013
+        3047
       ],
-      "play": 1,
+      "play": 3,
       "win": 1,
-      "pick_rate": 0.002
+      "pick_rate": 0.0055
     }
   ],
   "starter_items": [
@@ -17498,18 +18480,18 @@
         2003,
         2003
       ],
-      "play": 504,
-      "win": 268,
-      "pick_rate": 0.9351
+      "play": 555,
+      "win": 289,
+      "pick_rate": 0.9359
     },
     {
       "ids": [
         1082,
         2031
       ],
-      "play": 10,
-      "win": 3,
-      "pick_rate": 0.0186
+      "play": 11,
+      "win": 4,
+      "pick_rate": 0.0185
     },
     {
       "ids": [
@@ -17519,7 +18501,7 @@
       ],
       "play": 8,
       "win": 5,
-      "pick_rate": 0.0148
+      "pick_rate": 0.0135
     },
     {
       "ids": [
@@ -17527,9 +18509,9 @@
         2003,
         2003
       ],
-      "play": 7,
-      "win": 4,
-      "pick_rate": 0.013
+      "play": 8,
+      "win": 5,
+      "pick_rate": 0.0135
     },
     {
       "ids": [
@@ -17540,7 +18522,7 @@
       ],
       "play": 6,
       "win": 3,
-      "pick_rate": 0.0111
+      "pick_rate": 0.0101
     },
     {
       "ids": [
@@ -17551,16 +18533,16 @@
       ],
       "play": 2,
       "win": 1,
-      "pick_rate": 0.0037
+      "pick_rate": 0.0034
     },
     {
       "ids": [
         1056,
         2003
       ],
-      "play": 1,
+      "play": 2,
       "win": 1,
-      "pick_rate": 0.0019
+      "pick_rate": 0.0034
     },
     {
       "ids": [
@@ -17571,7 +18553,7 @@
       ],
       "play": 1,
       "win": 1,
-      "pick_rate": 0.0019
+      "pick_rate": 0.0017
     }
   ],
   "last_items": [
@@ -17579,97 +18561,105 @@
       "ids": [
         2503
       ],
-      "play": 335,
-      "win": 165,
-      "pick_rate": 0.2205
+      "play": 378,
+      "win": 186,
+      "pick_rate": 0.2225
     },
     {
       "ids": [
         6653
       ],
-      "play": 319,
-      "win": 172,
-      "pick_rate": 0.21
+      "play": 356,
+      "win": 191,
+      "pick_rate": 0.2095
     },
     {
       "ids": [
         3157
       ],
-      "play": 206,
-      "win": 120,
-      "pick_rate": 0.1356
+      "play": 220,
+      "win": 125,
+      "pick_rate": 0.1295
     },
     {
       "ids": [
         3116
       ],
-      "play": 165,
-      "win": 85,
-      "pick_rate": 0.1086
+      "play": 182,
+      "win": 94,
+      "pick_rate": 0.1071
     },
     {
       "ids": [
         3089
       ],
-      "play": 129,
-      "win": 89,
-      "pick_rate": 0.0849
+      "play": 148,
+      "win": 98,
+      "pick_rate": 0.0871
     },
     {
       "ids": [
         3916
       ],
-      "play": 65,
-      "win": 28,
-      "pick_rate": 0.0428
-    },
-    {
-      "ids": [
-        3165
-      ],
-      "play": 62,
-      "win": 29,
-      "pick_rate": 0.0408
+      "play": 71,
+      "win": 31,
+      "pick_rate": 0.0418
     },
     {
       "ids": [
         4645
       ],
-      "play": 59,
-      "win": 38,
+      "play": 66,
+      "win": 40,
       "pick_rate": 0.0388
+    },
+    {
+      "ids": [
+        3165
+      ],
+      "play": 65,
+      "win": 30,
+      "pick_rate": 0.0383
     },
     {
       "ids": [
         3135
       ],
-      "play": 48,
-      "win": 26,
-      "pick_rate": 0.0316
+      "play": 60,
+      "win": 33,
+      "pick_rate": 0.0353
     },
     {
       "ids": [
         1082
       ],
-      "play": 28,
+      "play": 34,
       "win": 18,
-      "pick_rate": 0.0184
+      "pick_rate": 0.02
     },
     {
       "ids": [
         2420
       ],
-      "play": 22,
-      "win": 14,
-      "pick_rate": 0.0145
+      "play": 27,
+      "win": 17,
+      "pick_rate": 0.0159
     },
     {
       "ids": [
         6655
       ],
-      "play": 18,
+      "play": 21,
       "win": 13,
-      "pick_rate": 0.0118
+      "pick_rate": 0.0124
+    },
+    {
+      "ids": [
+        3137
+      ],
+      "play": 13,
+      "win": 8,
+      "pick_rate": 0.0077
     },
     {
       "ids": [
@@ -17677,47 +18667,39 @@
       ],
       "play": 13,
       "win": 9,
-      "pick_rate": 0.0086
-    },
-    {
-      "ids": [
-        3137
-      ],
-      "play": 12,
-      "win": 8,
-      "pick_rate": 0.0079
+      "pick_rate": 0.0077
     },
     {
       "ids": [
         3102
       ],
-      "play": 6,
+      "play": 8,
       "win": 3,
-      "pick_rate": 0.0039
-    },
-    {
-      "ids": [
-        3118
-      ],
-      "play": 5,
-      "win": 2,
-      "pick_rate": 0.0033
+      "pick_rate": 0.0047
     },
     {
       "ids": [
         3041
       ],
-      "play": 5,
-      "win": 5,
-      "pick_rate": 0.0033
+      "play": 6,
+      "win": 6,
+      "pick_rate": 0.0035
     },
     {
       "ids": [
         3070
       ],
-      "play": 5,
+      "play": 6,
       "win": 3,
-      "pick_rate": 0.0033
+      "pick_rate": 0.0035
+    },
+    {
+      "ids": [
+        3118
+      ],
+      "play": 6,
+      "win": 2,
+      "pick_rate": 0.0035
     },
     {
       "ids": [
@@ -17725,15 +18707,23 @@
       ],
       "play": 4,
       "win": 2,
-      "pick_rate": 0.0026
+      "pick_rate": 0.0024
     },
     {
       "ids": [
         4646
       ],
+      "play": 4,
+      "win": 2,
+      "pick_rate": 0.0024
+    },
+    {
+      "ids": [
+        8020
+      ],
       "play": 3,
-      "win": 1,
-      "pick_rate": 0.002
+      "win": 3,
+      "pick_rate": 0.0018
     },
     {
       "ids": [
@@ -17741,7 +18731,7 @@
       ],
       "play": 2,
       "win": 1,
-      "pick_rate": 0.0013
+      "pick_rate": 0.0012
     },
     {
       "ids": [
@@ -17749,7 +18739,7 @@
       ],
       "play": 2,
       "win": 1,
-      "pick_rate": 0.0013
+      "pick_rate": 0.0012
     },
     {
       "ids": [
@@ -17757,15 +18747,7 @@
       ],
       "play": 2,
       "win": 1,
-      "pick_rate": 0.0013
-    },
-    {
-      "ids": [
-        8020
-      ],
-      "play": 2,
-      "win": 2,
-      "pick_rate": 0.0013
+      "pick_rate": 0.0012
     },
     {
       "ids": [
@@ -17773,7 +18755,7 @@
       ],
       "play": 1,
       "win": 1,
-      "pick_rate": 0.0007
+      "pick_rate": 0.0006
     },
     {
       "ids": [
@@ -17781,7 +18763,7 @@
       ],
       "play": 1,
       "win": 0,
-      "pick_rate": 0.0007
+      "pick_rate": 0.0006
     }
   ]
 }
