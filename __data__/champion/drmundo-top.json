@@ -301,16 +301,16 @@
       "is_rotation": false,
       "is_rip": false,
       "average_stats": {
-        "win_rate": 0.463878,
-        "pick_rate": 0.0395569,
-        "ban_rate": 0.0237341,
-        "kda": 1.785685,
+        "win_rate": 0.463018,
+        "pick_rate": 0.0400863,
+        "ban_rate": 0.02353,
+        "kda": 1.826756,
         "tier": 5,
-        "rank": 147,
+        "rank": 151,
         "tier_data": {
           "tier": 5,
-          "rank": 147,
-          "rank_prev": 136,
+          "rank": 151,
+          "rank_prev": 147,
           "rank_prev_patch": 91
         }
       },
@@ -318,15 +318,15 @@
         {
           "name": "TOP",
           "stats": {
-            "win_rate": 0.458947,
-            "pick_rate": 0.0357708,
-            "role_rate": 0.903042,
-            "ban_rate": 0.0214329,
-            "kda": 1.753676,
+            "win_rate": 0.455738,
+            "pick_rate": 0.0362556,
+            "role_rate": 0.902367,
+            "ban_rate": 0.0212327,
+            "kda": 1.787792,
             "tier_data": {
               "tier": 4,
-              "rank": 51,
-              "rank_prev": 44,
+              "rank": 56,
+              "rank_prev": 51,
               "rank_prev_patch": 19
             }
           },
@@ -334,10 +334,10 @@
             {
               "name": "TANK",
               "stats": {
-                "win_rate": 0.461538,
-                "role_rate": 0.980658,
-                "play": 507,
-                "win": 234
+                "win_rate": 0.452229,
+                "role_rate": 0.992101,
+                "play": 628,
+                "win": 284
               }
             },
             {
@@ -353,8 +353,13 @@
           "counters": [
             {
               "champion_id": 75,
-              "play": 35,
-              "win": 18
+              "play": 42,
+              "win": 22
+            },
+            {
+              "champion_id": 122,
+              "play": 31,
+              "win": 21
             }
           ]
         }
@@ -365,8 +370,8 @@
       [
         {
           "champion_id": 75,
-          "play": 35,
-          "win": 18,
+          "play": 42,
+          "win": 22,
           "meta": {
             "id": 75,
             "key": "Nasus",
@@ -687,14 +692,698 @@
               }
             ]
           },
-          "win_rate": 51.43
+          "win_rate": 52.38
+        },
+        {
+          "champion_id": 122,
+          "play": 31,
+          "win": 21,
+          "meta": {
+            "id": 122,
+            "key": "Darius",
+            "name": "诺克萨斯之手",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Darius.png",
+            "evolve": [],
+            "partype": "法力",
+            "passive": {
+              "name": "出血",
+              "description": "德莱厄斯的攻击和伤害技能会导致敌人流血，在5秒里持续造成物理伤害，最多叠加5次。在他的目标达到最大层数后，德莱厄斯会进入激怒状态并获得巨额攻击力。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Darius_Icon_Hemorrhage.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0122/ability_0122_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "大杀四方",
+                "description": "德莱厄斯蓄力然后将他的斧头挥舞成一个大圈。被斧刃击中的敌人会比被斧柄击中的敌人受到更多伤害。德莱厄斯会基于被斧刃击中的敌方英雄或大型野怪的数量来获得治疗效果。",
+                "max_rank": 5,
+                "range_burn": [
+                  1
+                ],
+                "cooldown_burn": [
+                  9,
+                  8,
+                  7,
+                  6,
+                  5
+                ],
+                "cooldown_burn_float": [
+                  9,
+                  8,
+                  7,
+                  6,
+                  5
+                ],
+                "cost_burn": [
+                  25,
+                  30,
+                  35,
+                  40,
+                  45
+                ],
+                "tooltip": "德莱厄斯举起他的斧头然后挥舞一圈，斧刃造成<physicalDamage>?物理伤害</physicalDamage>并且斧柄造成<physicalDamage>?伤害</physicalDamage>。被斧柄命中的敌人不会被施加<keywordMajor>出血</keywordMajor>。<br /><br />德莱厄斯每用斧刃命中一个敌方英雄或大型野怪就会回复<healing>15%已损失生命值</healing>，至多回复<healing>45%</healing>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/DariusCleave.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0122/ability_0122_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "致残打击",
+                "description": "德莱厄斯的下一次攻击会打向敌人的大动脉。在目标流血不止的同时，目标的移动速度也会被减缓。",
+                "max_rank": 5,
+                "range_burn": [
+                  300
+                ],
+                "cooldown_burn": [
+                  5
+                ],
+                "cooldown_burn_float": [
+                  5
+                ],
+                "cost_burn": [
+                  40
+                ],
+                "tooltip": "德莱厄斯的下次攻击造成<physicalDamage>?物理伤害</physicalDamage>和持续1秒的90%<status>减速</status>。<br /><br />如果这个技能击杀了目标，那么会返还其法力消耗并缩短其50%的冷却时间。<br /><br /><rules>这个技能会在造成伤害时触发技能特效。</rules>?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/DariusNoxianTacticsONH.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0122/ability_0122_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "无情铁手",
+                "description": "德莱厄斯磨利他的巨斧，被动地让他的物理伤害无视目标一部分护甲。在主动施放时，德莱厄斯会用斧头上的钩子横扫他的敌人，并将他们拉到德莱厄斯身边。",
+                "max_rank": 5,
+                "range_burn": [
+                  535
+                ],
+                "cooldown_burn": [
+                  24,
+                  21,
+                  19,
+                  16,
+                  14
+                ],
+                "cooldown_burn_float": [
+                  24,
+                  21.5,
+                  19,
+                  16.5,
+                  14
+                ],
+                "cost_burn": [
+                  70,
+                  60,
+                  50,
+                  40,
+                  30
+                ],
+                "tooltip": "<spellPassive>被动：</spellPassive>德莱厄斯获得20/25/30/35/40%护甲穿透。<br /><br /><spellActive>主动：</spellActive>德莱厄斯用他的斧头进行钩拽，造成<status>拖拽</status>、<status>击飞</status>和持续1秒的40%<status>减速</status>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/DariusAxeGrabCone.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0122/ability_0122_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "诺克萨斯断头台",
+                "description": "德莱厄斯跃向目标英雄并进行致命打击，造成真实伤害。目标身上的每层出血效果都会提升这个技能的伤害。如果诺克萨斯断头台完成了一次击杀，那么它的冷却时间会暂时被重置。",
+                "max_rank": 3,
+                "range_burn": [
+                  460
+                ],
+                "cooldown_burn": [
+                  120,
+                  100,
+                  80
+                ],
+                "cooldown_burn_float": [
+                  120,
+                  100,
+                  80
+                ],
+                "cost_burn": [
+                  100,
+                  100,
+                  0
+                ],
+                "tooltip": "德莱厄斯跳向一名敌人并进行一次致命猛击，造成<trueDamage>?真实伤害</trueDamage>。目标身上每有一层<keywordMajor>出血</keywordMajor>，这个技能就会造成额外的?%伤害，至多达到<trueDamage>?伤害</trueDamage>。<br /><br />如果这个技能击杀了目标，那么德莱厄斯就可以在?秒内<recast>再次施放</recast>这个技能。这个技能在技能等级达到3时，即可无需消耗法力并在击杀时完全刷新技能的冷却时间。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/DariusExecute.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0122/ability_0122_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 122000,
+                "champion_id": 122,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 450
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 260
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 122003,
+                "champion_id": 122,
+                "name": "勇敢的心 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_3.jpg",
+                "skin_video_url": "https://youtu.be/xd4LJHFcuLM",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2013-06-16T19:00:00+09:00"
+              },
+              {
+                "id": 122064,
+                "champion_id": 122,
+                "name": "圣洁神王 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_64.jpg",
+                "skin_video_url": null,
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 122033,
+                "champion_id": 122,
+                "name": "地下都市 梦魇 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_33.jpg",
+                "skin_video_url": "https://youtu.be/SIz54KWMZ9Q",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-08-26T04:00:00+09:00"
+              },
+              {
+                "id": 122014,
+                "champion_id": 122,
+                "name": "恐惧新星 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_14.jpg",
+                "skin_video_url": "https://youtu.be/j6hO0e1Qb6k",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 122004,
+                "champion_id": 122,
+                "name": "灌篮高手 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_4.jpg",
+                "skin_video_url": "https://youtu.be/IdE3qg1o0js",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1820
+                  }
+                ],
+                "sales": null,
+                "release_date": "2014-10-10T08:00:00+09:00"
+              },
+              {
+                "id": 122043,
+                "champion_id": 122,
+                "name": "灵魂莲华 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_43.jpg",
+                "skin_video_url": "https://youtu.be/EIq16JAMsag",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2022-10-06T04:00:00+09:00"
+              },
+              {
+                "id": 122008,
+                "champion_id": 122,
+                "name": "热血班长 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_8.jpg",
+                "skin_video_url": "https://youtu.be/8obM-aY_t3w",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2015-08-27T10:00:00+09:00"
+              },
+              {
+                "id": 122002,
+                "champion_id": 122,
+                "name": "生化骑士 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_2.jpg",
+                "skin_video_url": "https://youtu.be/r34I418m21c",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2012-11-12T15:00:00+09:00"
+              },
+              {
+                "id": 122015,
+                "champion_id": 122,
+                "name": "神王 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_15.jpg",
+                "skin_video_url": "https://youtu.be/FZJja0dm1Hw",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1820
+                  }
+                ],
+                "sales": null,
+                "release_date": "2018-06-26T23:00:00+09:00"
+              },
+              {
+                "id": 122024,
+                "champion_id": 122,
+                "name": "福牛守护者 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_24.jpg",
+                "skin_video_url": "https://youtu.be/yivy3Vcu5Fo",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 122016,
+                "champion_id": 122,
+                "name": "西部魔影 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_16.jpg",
+                "skin_video_url": "https://youtu.be/bTBzl_ugWUo",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2019-10-10T04:00:00+09:00"
+              },
+              {
+                "id": 122001,
+                "champion_id": 122,
+                "name": "铁血帝皇 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_1.jpg",
+                "skin_video_url": "https://youtu.be/YPZ8R8fB4rY",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2012-05-24T23:30:00+09:00"
+              },
+              {
+                "id": 122054,
+                "champion_id": 122,
+                "name": "青花瓷 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_54.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-02-22T10:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 67.74
         }
       ],
       [
         {
+          "champion_id": 122,
+          "play": 31,
+          "win": 21,
+          "meta": {
+            "id": 122,
+            "key": "Darius",
+            "name": "诺克萨斯之手",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Darius.png",
+            "evolve": [],
+            "partype": "法力",
+            "passive": {
+              "name": "出血",
+              "description": "德莱厄斯的攻击和伤害技能会导致敌人流血，在5秒里持续造成物理伤害，最多叠加5次。在他的目标达到最大层数后，德莱厄斯会进入激怒状态并获得巨额攻击力。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Darius_Icon_Hemorrhage.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0122/ability_0122_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "大杀四方",
+                "description": "德莱厄斯蓄力然后将他的斧头挥舞成一个大圈。被斧刃击中的敌人会比被斧柄击中的敌人受到更多伤害。德莱厄斯会基于被斧刃击中的敌方英雄或大型野怪的数量来获得治疗效果。",
+                "max_rank": 5,
+                "range_burn": [
+                  1
+                ],
+                "cooldown_burn": [
+                  9,
+                  8,
+                  7,
+                  6,
+                  5
+                ],
+                "cooldown_burn_float": [
+                  9,
+                  8,
+                  7,
+                  6,
+                  5
+                ],
+                "cost_burn": [
+                  25,
+                  30,
+                  35,
+                  40,
+                  45
+                ],
+                "tooltip": "德莱厄斯举起他的斧头然后挥舞一圈，斧刃造成<physicalDamage>?物理伤害</physicalDamage>并且斧柄造成<physicalDamage>?伤害</physicalDamage>。被斧柄命中的敌人不会被施加<keywordMajor>出血</keywordMajor>。<br /><br />德莱厄斯每用斧刃命中一个敌方英雄或大型野怪就会回复<healing>15%已损失生命值</healing>，至多回复<healing>45%</healing>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/DariusCleave.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0122/ability_0122_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "致残打击",
+                "description": "德莱厄斯的下一次攻击会打向敌人的大动脉。在目标流血不止的同时，目标的移动速度也会被减缓。",
+                "max_rank": 5,
+                "range_burn": [
+                  300
+                ],
+                "cooldown_burn": [
+                  5
+                ],
+                "cooldown_burn_float": [
+                  5
+                ],
+                "cost_burn": [
+                  40
+                ],
+                "tooltip": "德莱厄斯的下次攻击造成<physicalDamage>?物理伤害</physicalDamage>和持续1秒的90%<status>减速</status>。<br /><br />如果这个技能击杀了目标，那么会返还其法力消耗并缩短其50%的冷却时间。<br /><br /><rules>这个技能会在造成伤害时触发技能特效。</rules>?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/DariusNoxianTacticsONH.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0122/ability_0122_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "无情铁手",
+                "description": "德莱厄斯磨利他的巨斧，被动地让他的物理伤害无视目标一部分护甲。在主动施放时，德莱厄斯会用斧头上的钩子横扫他的敌人，并将他们拉到德莱厄斯身边。",
+                "max_rank": 5,
+                "range_burn": [
+                  535
+                ],
+                "cooldown_burn": [
+                  24,
+                  21,
+                  19,
+                  16,
+                  14
+                ],
+                "cooldown_burn_float": [
+                  24,
+                  21.5,
+                  19,
+                  16.5,
+                  14
+                ],
+                "cost_burn": [
+                  70,
+                  60,
+                  50,
+                  40,
+                  30
+                ],
+                "tooltip": "<spellPassive>被动：</spellPassive>德莱厄斯获得20/25/30/35/40%护甲穿透。<br /><br /><spellActive>主动：</spellActive>德莱厄斯用他的斧头进行钩拽，造成<status>拖拽</status>、<status>击飞</status>和持续1秒的40%<status>减速</status>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/DariusAxeGrabCone.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0122/ability_0122_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "诺克萨斯断头台",
+                "description": "德莱厄斯跃向目标英雄并进行致命打击，造成真实伤害。目标身上的每层出血效果都会提升这个技能的伤害。如果诺克萨斯断头台完成了一次击杀，那么它的冷却时间会暂时被重置。",
+                "max_rank": 3,
+                "range_burn": [
+                  460
+                ],
+                "cooldown_burn": [
+                  120,
+                  100,
+                  80
+                ],
+                "cooldown_burn_float": [
+                  120,
+                  100,
+                  80
+                ],
+                "cost_burn": [
+                  100,
+                  100,
+                  0
+                ],
+                "tooltip": "德莱厄斯跳向一名敌人并进行一次致命猛击，造成<trueDamage>?真实伤害</trueDamage>。目标身上每有一层<keywordMajor>出血</keywordMajor>，这个技能就会造成额外的?%伤害，至多达到<trueDamage>?伤害</trueDamage>。<br /><br />如果这个技能击杀了目标，那么德莱厄斯就可以在?秒内<recast>再次施放</recast>这个技能。这个技能在技能等级达到3时，即可无需消耗法力并在击杀时完全刷新技能的冷却时间。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/DariusExecute.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0122/ability_0122_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 122000,
+                "champion_id": 122,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 450
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 260
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 122003,
+                "champion_id": 122,
+                "name": "勇敢的心 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_3.jpg",
+                "skin_video_url": "https://youtu.be/xd4LJHFcuLM",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2013-06-16T19:00:00+09:00"
+              },
+              {
+                "id": 122064,
+                "champion_id": 122,
+                "name": "圣洁神王 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_64.jpg",
+                "skin_video_url": null,
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 122033,
+                "champion_id": 122,
+                "name": "地下都市 梦魇 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_33.jpg",
+                "skin_video_url": "https://youtu.be/SIz54KWMZ9Q",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-08-26T04:00:00+09:00"
+              },
+              {
+                "id": 122014,
+                "champion_id": 122,
+                "name": "恐惧新星 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_14.jpg",
+                "skin_video_url": "https://youtu.be/j6hO0e1Qb6k",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 122004,
+                "champion_id": 122,
+                "name": "灌篮高手 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_4.jpg",
+                "skin_video_url": "https://youtu.be/IdE3qg1o0js",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1820
+                  }
+                ],
+                "sales": null,
+                "release_date": "2014-10-10T08:00:00+09:00"
+              },
+              {
+                "id": 122043,
+                "champion_id": 122,
+                "name": "灵魂莲华 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_43.jpg",
+                "skin_video_url": "https://youtu.be/EIq16JAMsag",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2022-10-06T04:00:00+09:00"
+              },
+              {
+                "id": 122008,
+                "champion_id": 122,
+                "name": "热血班长 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_8.jpg",
+                "skin_video_url": "https://youtu.be/8obM-aY_t3w",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2015-08-27T10:00:00+09:00"
+              },
+              {
+                "id": 122002,
+                "champion_id": 122,
+                "name": "生化骑士 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_2.jpg",
+                "skin_video_url": "https://youtu.be/r34I418m21c",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2012-11-12T15:00:00+09:00"
+              },
+              {
+                "id": 122015,
+                "champion_id": 122,
+                "name": "神王 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_15.jpg",
+                "skin_video_url": "https://youtu.be/FZJja0dm1Hw",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1820
+                  }
+                ],
+                "sales": null,
+                "release_date": "2018-06-26T23:00:00+09:00"
+              },
+              {
+                "id": 122024,
+                "champion_id": 122,
+                "name": "福牛守护者 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_24.jpg",
+                "skin_video_url": "https://youtu.be/yivy3Vcu5Fo",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 122016,
+                "champion_id": 122,
+                "name": "西部魔影 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_16.jpg",
+                "skin_video_url": "https://youtu.be/bTBzl_ugWUo",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2019-10-10T04:00:00+09:00"
+              },
+              {
+                "id": 122001,
+                "champion_id": 122,
+                "name": "铁血帝皇 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_1.jpg",
+                "skin_video_url": "https://youtu.be/YPZ8R8fB4rY",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2012-05-24T23:30:00+09:00"
+              },
+              {
+                "id": 122054,
+                "champion_id": 122,
+                "name": "青花瓷 德莱厄斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_54.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-02-22T10:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 67.74
+        },
+        {
           "champion_id": 75,
-          "play": 35,
-          "win": 18,
+          "play": 42,
+          "win": 22,
           "meta": {
             "id": 75,
             "key": "Nasus",
@@ -1015,15 +1704,15 @@
               }
             ]
           },
-          "win_rate": 51.43
+          "win_rate": 52.38
         }
       ]
     ],
     "counters": [
       {
         "champion_id": 75,
-        "play": 35,
-        "win": 18,
+        "play": 42,
+        "win": 22,
         "meta": {
           "id": 75,
           "key": "Nasus",
@@ -1341,6 +2030,347 @@
               ],
               "sales": null,
               "release_date": "2023-04-20T04:00:00+09:00"
+            }
+          ]
+        }
+      },
+      {
+        "champion_id": 122,
+        "play": 31,
+        "win": 21,
+        "meta": {
+          "id": 122,
+          "key": "Darius",
+          "name": "诺克萨斯之手",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Darius.png",
+          "evolve": [],
+          "partype": "法力",
+          "passive": {
+            "name": "出血",
+            "description": "德莱厄斯的攻击和伤害技能会导致敌人流血，在5秒里持续造成物理伤害，最多叠加5次。在他的目标达到最大层数后，德莱厄斯会进入激怒状态并获得巨额攻击力。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Darius_Icon_Hemorrhage.png",
+            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0122/ability_0122_P1.webm"
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "大杀四方",
+              "description": "德莱厄斯蓄力然后将他的斧头挥舞成一个大圈。被斧刃击中的敌人会比被斧柄击中的敌人受到更多伤害。德莱厄斯会基于被斧刃击中的敌方英雄或大型野怪的数量来获得治疗效果。",
+              "max_rank": 5,
+              "range_burn": [
+                1
+              ],
+              "cooldown_burn": [
+                9,
+                8,
+                7,
+                6,
+                5
+              ],
+              "cooldown_burn_float": [
+                9,
+                8,
+                7,
+                6,
+                5
+              ],
+              "cost_burn": [
+                25,
+                30,
+                35,
+                40,
+                45
+              ],
+              "tooltip": "德莱厄斯举起他的斧头然后挥舞一圈，斧刃造成<physicalDamage>?物理伤害</physicalDamage>并且斧柄造成<physicalDamage>?伤害</physicalDamage>。被斧柄命中的敌人不会被施加<keywordMajor>出血</keywordMajor>。<br /><br />德莱厄斯每用斧刃命中一个敌方英雄或大型野怪就会回复<healing>15%已损失生命值</healing>，至多回复<healing>45%</healing>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/DariusCleave.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0122/ability_0122_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "致残打击",
+              "description": "德莱厄斯的下一次攻击会打向敌人的大动脉。在目标流血不止的同时，目标的移动速度也会被减缓。",
+              "max_rank": 5,
+              "range_burn": [
+                300
+              ],
+              "cooldown_burn": [
+                5
+              ],
+              "cooldown_burn_float": [
+                5
+              ],
+              "cost_burn": [
+                40
+              ],
+              "tooltip": "德莱厄斯的下次攻击造成<physicalDamage>?物理伤害</physicalDamage>和持续1秒的90%<status>减速</status>。<br /><br />如果这个技能击杀了目标，那么会返还其法力消耗并缩短其50%的冷却时间。<br /><br /><rules>这个技能会在造成伤害时触发技能特效。</rules>?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/DariusNoxianTacticsONH.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0122/ability_0122_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "无情铁手",
+              "description": "德莱厄斯磨利他的巨斧，被动地让他的物理伤害无视目标一部分护甲。在主动施放时，德莱厄斯会用斧头上的钩子横扫他的敌人，并将他们拉到德莱厄斯身边。",
+              "max_rank": 5,
+              "range_burn": [
+                535
+              ],
+              "cooldown_burn": [
+                24,
+                21,
+                19,
+                16,
+                14
+              ],
+              "cooldown_burn_float": [
+                24,
+                21.5,
+                19,
+                16.5,
+                14
+              ],
+              "cost_burn": [
+                70,
+                60,
+                50,
+                40,
+                30
+              ],
+              "tooltip": "<spellPassive>被动：</spellPassive>德莱厄斯获得20/25/30/35/40%护甲穿透。<br /><br /><spellActive>主动：</spellActive>德莱厄斯用他的斧头进行钩拽，造成<status>拖拽</status>、<status>击飞</status>和持续1秒的40%<status>减速</status>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/DariusAxeGrabCone.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0122/ability_0122_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "诺克萨斯断头台",
+              "description": "德莱厄斯跃向目标英雄并进行致命打击，造成真实伤害。目标身上的每层出血效果都会提升这个技能的伤害。如果诺克萨斯断头台完成了一次击杀，那么它的冷却时间会暂时被重置。",
+              "max_rank": 3,
+              "range_burn": [
+                460
+              ],
+              "cooldown_burn": [
+                120,
+                100,
+                80
+              ],
+              "cooldown_burn_float": [
+                120,
+                100,
+                80
+              ],
+              "cost_burn": [
+                100,
+                100,
+                0
+              ],
+              "tooltip": "德莱厄斯跳向一名敌人并进行一次致命猛击，造成<trueDamage>?真实伤害</trueDamage>。目标身上每有一层<keywordMajor>出血</keywordMajor>，这个技能就会造成额外的?%伤害，至多达到<trueDamage>?伤害</trueDamage>。<br /><br />如果这个技能击杀了目标，那么德莱厄斯就可以在?秒内<recast>再次施放</recast>这个技能。这个技能在技能等级达到3时，即可无需消耗法力并在击杀时完全刷新技能的冷却时间。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/DariusExecute.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0122/ability_0122_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 122000,
+              "champion_id": 122,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 450
+                },
+                {
+                  "currency": "RP",
+                  "cost": 260
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 122003,
+              "champion_id": 122,
+              "name": "勇敢的心 德莱厄斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_3.jpg",
+              "skin_video_url": "https://youtu.be/xd4LJHFcuLM",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": "2013-06-16T19:00:00+09:00"
+            },
+            {
+              "id": 122064,
+              "champion_id": 122,
+              "name": "圣洁神王 德莱厄斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_64.jpg",
+              "skin_video_url": null,
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 122033,
+              "champion_id": 122,
+              "name": "地下都市 梦魇 德莱厄斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_33.jpg",
+              "skin_video_url": "https://youtu.be/SIz54KWMZ9Q",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2021-08-26T04:00:00+09:00"
+            },
+            {
+              "id": 122014,
+              "champion_id": 122,
+              "name": "恐惧新星 德莱厄斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_14.jpg",
+              "skin_video_url": "https://youtu.be/j6hO0e1Qb6k",
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 122004,
+              "champion_id": 122,
+              "name": "灌篮高手 德莱厄斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_4.jpg",
+              "skin_video_url": "https://youtu.be/IdE3qg1o0js",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1820
+                }
+              ],
+              "sales": null,
+              "release_date": "2014-10-10T08:00:00+09:00"
+            },
+            {
+              "id": 122043,
+              "champion_id": 122,
+              "name": "灵魂莲华 德莱厄斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_43.jpg",
+              "skin_video_url": "https://youtu.be/EIq16JAMsag",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2022-10-06T04:00:00+09:00"
+            },
+            {
+              "id": 122008,
+              "champion_id": 122,
+              "name": "热血班长 德莱厄斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_8.jpg",
+              "skin_video_url": "https://youtu.be/8obM-aY_t3w",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 750
+                }
+              ],
+              "sales": null,
+              "release_date": "2015-08-27T10:00:00+09:00"
+            },
+            {
+              "id": 122002,
+              "champion_id": 122,
+              "name": "生化骑士 德莱厄斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_2.jpg",
+              "skin_video_url": "https://youtu.be/r34I418m21c",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": "2012-11-12T15:00:00+09:00"
+            },
+            {
+              "id": 122015,
+              "champion_id": 122,
+              "name": "神王 德莱厄斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_15.jpg",
+              "skin_video_url": "https://youtu.be/FZJja0dm1Hw",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1820
+                }
+              ],
+              "sales": null,
+              "release_date": "2018-06-26T23:00:00+09:00"
+            },
+            {
+              "id": 122024,
+              "champion_id": 122,
+              "name": "福牛守护者 德莱厄斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_24.jpg",
+              "skin_video_url": "https://youtu.be/yivy3Vcu5Fo",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 122016,
+              "champion_id": 122,
+              "name": "西部魔影 德莱厄斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_16.jpg",
+              "skin_video_url": "https://youtu.be/bTBzl_ugWUo",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2019-10-10T04:00:00+09:00"
+            },
+            {
+              "id": 122001,
+              "champion_id": 122,
+              "name": "铁血帝皇 德莱厄斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_1.jpg",
+              "skin_video_url": "https://youtu.be/YPZ8R8fB4rY",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": "2012-05-24T23:30:00+09:00"
+            },
+            {
+              "id": 122054,
+              "champion_id": 122,
+              "name": "青花瓷 德莱厄斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Darius_54.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2024-02-22T10:00:00+09:00"
             }
           ]
         }
@@ -15866,18 +16896,27 @@
         6,
         12
       ],
-      "win": 138,
-      "play": 319,
-      "pick_rate": 0.6393
+      "win": 171,
+      "play": 400,
+      "pick_rate": 0.6472
     },
     {
       "ids": [
         4,
         12
       ],
-      "win": 88,
-      "play": 176,
-      "pick_rate": 0.3527
+      "win": 103,
+      "play": 213,
+      "pick_rate": 0.3447
+    },
+    {
+      "ids": [
+        12,
+        14
+      ],
+      "win": 1,
+      "play": 1,
+      "pick_rate": 0.0016
     },
     {
       "ids": [
@@ -15886,7 +16925,7 @@
       ],
       "win": 0,
       "play": 1,
-      "pick_rate": 0.002
+      "pick_rate": 0.0016
     },
     {
       "ids": [
@@ -15895,16 +16934,7 @@
       ],
       "win": 1,
       "play": 1,
-      "pick_rate": 0.002
-    },
-    {
-      "ids": [
-        4,
-        7
-      ],
-      "win": 1,
-      "play": 1,
-      "pick_rate": 0.002
+      "pick_rate": 0.0016
     }
   ],
   "trends": {
@@ -15913,8 +16943,8 @@
     "win": [
       {
         "version": "14.17",
-        "rate": 0.4589,
-        "rank": 56,
+        "rate": 0.4557,
+        "rank": 59,
         "created_at": "2024-08-27T22:39:12+09:00"
       },
       {
@@ -15963,8 +16993,8 @@
     "pick": [
       {
         "version": "14.17",
-        "rate": 0.0358,
-        "rank": 20,
+        "rate": 0.0363,
+        "rank": 19,
         "created_at": "2024-08-27T22:39:12+09:00"
       },
       {
@@ -16013,7 +17043,7 @@
     "ban": [
       {
         "version": "14.17",
-        "rate": 0.0214,
+        "rate": 0.0212,
         "rank": 21,
         "created_at": "2024-08-27T22:39:12+09:00"
       },
@@ -16064,33 +17094,33 @@
   "game_lengths": [
     {
       "game_length": 0,
-      "rate": 0.414508,
+      "rate": 0.408511,
       "average": 0.5,
-      "rank": 57
+      "rank": 58
     },
     {
       "game_length": 25,
-      "rate": 0.462963,
+      "rate": 0.483568,
       "average": 0.5,
-      "rank": 53
+      "rank": 43
     },
     {
       "game_length": 30,
-      "rate": 0.530864,
+      "rate": 0.486239,
       "average": 0.5,
-      "rank": 21
+      "rank": 38
     },
     {
       "game_length": 35,
-      "rate": 0.5,
+      "rate": 0.485714,
       "average": 0.5,
-      "rank": 28
+      "rank": 36
     },
     {
       "game_length": 40,
-      "rate": 0.538462,
+      "rate": 0.5,
       "average": 0.5,
-      "rank": 29
+      "rank": 31
     }
   ],
   "skills": [
@@ -16112,9 +17142,9 @@
         "W",
         "W"
       ],
-      "play": 144,
-      "win": 83,
-      "pick_rate": 0.5143
+      "play": 186,
+      "win": 101,
+      "pick_rate": 0.5225
     },
     {
       "order": [
@@ -16134,9 +17164,31 @@
         "W",
         "W"
       ],
-      "play": 45,
-      "win": 24,
-      "pick_rate": 0.1607
+      "play": 51,
+      "win": 26,
+      "pick_rate": 0.1433
+    },
+    {
+      "order": [
+        "Q",
+        "E",
+        "Q",
+        "W",
+        "Q",
+        "R",
+        "E",
+        "E",
+        "E",
+        "E",
+        "R",
+        "Q",
+        "Q",
+        "W",
+        "W"
+      ],
+      "play": 20,
+      "win": 13,
+      "pick_rate": 0.0562
     },
     {
       "order": [
@@ -16156,9 +17208,9 @@
         "W",
         "W"
       ],
-      "play": 14,
-      "win": 10,
-      "pick_rate": 0.05
+      "play": 16,
+      "win": 12,
+      "pick_rate": 0.0449
     },
     {
       "order": [
@@ -16168,41 +17220,19 @@
         "W",
         "Q",
         "R",
-        "E",
+        "Q",
         "E",
         "E",
         "E",
         "R",
-        "Q",
+        "E",
         "Q",
         "W",
         "W"
       ],
       "play": 13,
       "win": 7,
-      "pick_rate": 0.0464
-    },
-    {
-      "order": [
-        "Q",
-        "E",
-        "Q",
-        "W",
-        "Q",
-        "R",
-        "Q",
-        "E",
-        "E",
-        "E",
-        "R",
-        "E",
-        "Q",
-        "W",
-        "W"
-      ],
-      "play": 10,
-      "win": 7,
-      "pick_rate": 0.0357
+      "pick_rate": 0.0365
     }
   ],
   "skill_masteries": [
@@ -16212,9 +17242,9 @@
         "E",
         "W"
       ],
-      "play": 222,
-      "win": 121,
-      "pick_rate": 0.7929,
+      "play": 280,
+      "win": 145,
+      "pick_rate": 0.7865,
       "builds": [
         {
           "order": [
@@ -16234,9 +17264,9 @@
             "W",
             "W"
           ],
-          "play": 144,
-          "win": 83,
-          "pick_rate": 0.6486
+          "play": 186,
+          "win": 101,
+          "pick_rate": 0.6643
         },
         {
           "order": [
@@ -16256,9 +17286,9 @@
             "W",
             "W"
           ],
-          "play": 45,
-          "win": 24,
-          "pick_rate": 0.2027
+          "play": 51,
+          "win": 26,
+          "pick_rate": 0.1821
         },
         {
           "order": [
@@ -16280,7 +17310,7 @@
           ],
           "play": 5,
           "win": 3,
-          "pick_rate": 0.0225
+          "pick_rate": 0.0179
         },
         {
           "order": [
@@ -16300,9 +17330,9 @@
             "W",
             "W"
           ],
-          "play": 3,
+          "play": 4,
           "win": 0,
-          "pick_rate": 0.0135
+          "pick_rate": 0.0143
         },
         {
           "order": [
@@ -16324,7 +17354,7 @@
           ],
           "play": 2,
           "win": 1,
-          "pick_rate": 0.009
+          "pick_rate": 0.0071
         }
       ]
     },
@@ -16334,10 +17364,32 @@
         "Q",
         "W"
       ],
-      "play": 55,
-      "win": 38,
-      "pick_rate": 0.1964,
+      "play": 72,
+      "win": 47,
+      "pick_rate": 0.2022,
       "builds": [
+        {
+          "order": [
+            "Q",
+            "E",
+            "Q",
+            "W",
+            "Q",
+            "R",
+            "E",
+            "E",
+            "E",
+            "E",
+            "R",
+            "Q",
+            "Q",
+            "W",
+            "W"
+          ],
+          "play": 20,
+          "win": 13,
+          "pick_rate": 0.2778
+        },
         {
           "order": [
             "Q",
@@ -16356,9 +17408,9 @@
             "W",
             "W"
           ],
-          "play": 14,
-          "win": 10,
-          "pick_rate": 0.2545
+          "play": 16,
+          "win": 12,
+          "pick_rate": 0.2222
         },
         {
           "order": [
@@ -16368,26 +17420,26 @@
             "W",
             "Q",
             "R",
-            "E",
+            "Q",
             "E",
             "E",
             "E",
             "R",
-            "Q",
+            "E",
             "Q",
             "W",
             "W"
           ],
           "play": 13,
           "win": 7,
-          "pick_rate": 0.2364
+          "pick_rate": 0.1806
         },
         {
           "order": [
             "Q",
             "E",
-            "Q",
             "W",
+            "Q",
             "Q",
             "R",
             "Q",
@@ -16400,9 +17452,9 @@
             "W",
             "W"
           ],
-          "play": 10,
-          "win": 7,
-          "pick_rate": 0.1818
+          "play": 6,
+          "win": 3,
+          "pick_rate": 0.0833
         },
         {
           "order": [
@@ -16412,9 +17464,9 @@
             "Q",
             "Q",
             "R",
+            "E",
+            "E",
             "Q",
-            "E",
-            "E",
             "E",
             "R",
             "E",
@@ -16424,29 +17476,7 @@
           ],
           "play": 3,
           "win": 2,
-          "pick_rate": 0.0545
-        },
-        {
-          "order": [
-            "Q",
-            "E",
-            "W",
-            "Q",
-            "Q",
-            "R",
-            "E",
-            "E",
-            "Q",
-            "E",
-            "R",
-            "E",
-            "Q",
-            "W",
-            "W"
-          ],
-          "play": 2,
-          "win": 2,
-          "pick_rate": 0.0364
+          "pick_rate": 0.0417
         }
       ]
     },
@@ -16456,9 +17486,9 @@
         "W",
         "E"
       ],
-      "play": 2,
-      "win": 0,
-      "pick_rate": 0.0071,
+      "play": 3,
+      "win": 1,
+      "pick_rate": 0.0084,
       "builds": [
         {
           "order": [
@@ -16480,7 +17510,29 @@
           ],
           "play": 1,
           "win": 0,
-          "pick_rate": 0.5
+          "pick_rate": 0.3333
+        },
+        {
+          "order": [
+            "Q",
+            "E",
+            "W",
+            "Q",
+            "Q",
+            "R",
+            "Q",
+            "W",
+            "Q",
+            "W",
+            "R",
+            "W",
+            "W",
+            "E",
+            "E"
+          ],
+          "play": 1,
+          "win": 1,
+          "pick_rate": 0.3333
         },
         {
           "order": [
@@ -16502,7 +17554,7 @@
           ],
           "play": 1,
           "win": 0,
-          "pick_rate": 0.5
+          "pick_rate": 0.3333
         }
       ]
     },
@@ -16514,7 +17566,7 @@
       ],
       "play": 1,
       "win": 1,
-      "pick_rate": 0.0036,
+      "pick_rate": 0.0028,
       "builds": [
         {
           "order": [
@@ -16562,9 +17614,9 @@
         5001,
         5001
       ],
-      "play": 313,
-      "win": 146,
-      "pick_rate": 0.6285
+      "play": 403,
+      "win": 186,
+      "pick_rate": 0.6479
     },
     {
       "id": 8437,
@@ -16585,9 +17637,9 @@
         5001,
         5001
       ],
-      "play": 35,
-      "win": 12,
-      "pick_rate": 0.0703
+      "play": 44,
+      "win": 14,
+      "pick_rate": 0.0707
     },
     {
       "id": 8437,
@@ -16608,9 +17660,9 @@
         5001,
         5011
       ],
-      "play": 35,
-      "win": 26,
-      "pick_rate": 0.0703
+      "play": 38,
+      "win": 28,
+      "pick_rate": 0.0611
     },
     {
       "id": 8437,
@@ -16631,9 +17683,9 @@
         5001,
         5001
       ],
-      "play": 12,
-      "win": 1,
-      "pick_rate": 0.0241
+      "play": 14,
+      "win": 2,
+      "pick_rate": 0.0225
     },
     {
       "id": 8437,
@@ -16654,9 +17706,9 @@
         5001,
         5001
       ],
-      "play": 11,
+      "play": 13,
       "win": 6,
-      "pick_rate": 0.0221
+      "pick_rate": 0.0209
     }
   ],
   "rune_pages": [
@@ -16664,9 +17716,9 @@
       "id": 8437,
       "primary_page_id": 8400,
       "secondary_page_id": 8300,
-      "play": 423,
-      "win": 200,
-      "pick_rate": 0.8494,
+      "play": 530,
+      "win": 246,
+      "pick_rate": 0.8521,
       "builds": [
         {
           "id": 8437,
@@ -16687,9 +17739,9 @@
             5001,
             5001
           ],
-          "play": 313,
-          "win": 146,
-          "pick_rate": 0.74
+          "play": 403,
+          "win": 186,
+          "pick_rate": 0.7604
         },
         {
           "id": 8437,
@@ -16710,9 +17762,9 @@
             5001,
             5011
           ],
-          "play": 35,
-          "win": 26,
-          "pick_rate": 0.0827
+          "play": 38,
+          "win": 28,
+          "pick_rate": 0.0717
         },
         {
           "id": 8437,
@@ -16733,9 +17785,9 @@
             5001,
             5001
           ],
-          "play": 12,
-          "win": 1,
-          "pick_rate": 0.0284
+          "play": 14,
+          "win": 2,
+          "pick_rate": 0.0264
         },
         {
           "id": 8437,
@@ -16756,9 +17808,9 @@
             5001,
             5001
           ],
-          "play": 11,
+          "play": 13,
           "win": 6,
-          "pick_rate": 0.026
+          "pick_rate": 0.0245
         },
         {
           "id": 8437,
@@ -16779,9 +17831,9 @@
             5001,
             5001
           ],
-          "play": 9,
-          "win": 5,
-          "pick_rate": 0.0213
+          "play": 11,
+          "win": 6,
+          "pick_rate": 0.0208
         }
       ]
     },
@@ -16789,9 +17841,9 @@
       "id": 8437,
       "primary_page_id": 8400,
       "secondary_page_id": 8000,
-      "play": 49,
-      "win": 18,
-      "pick_rate": 0.0984,
+      "play": 62,
+      "win": 23,
+      "pick_rate": 0.0997,
       "builds": [
         {
           "id": 8437,
@@ -16812,9 +17864,9 @@
             5001,
             5001
           ],
-          "play": 35,
-          "win": 12,
-          "pick_rate": 0.7143
+          "play": 44,
+          "win": 14,
+          "pick_rate": 0.7097
         },
         {
           "id": 8437,
@@ -16837,7 +17889,30 @@
           ],
           "play": 2,
           "win": 1,
-          "pick_rate": 0.0408
+          "pick_rate": 0.0323
+        },
+        {
+          "id": 8437,
+          "primary_page_id": 8400,
+          "primary_rune_ids": [
+            8437,
+            8446,
+            8429,
+            8451
+          ],
+          "secondary_page_id": 8000,
+          "secondary_rune_ids": [
+            8299,
+            9111
+          ],
+          "stat_mod_ids": [
+            5005,
+            5008,
+            5001
+          ],
+          "play": 2,
+          "win": 2,
+          "pick_rate": 0.0323
         },
         {
           "id": 8437,
@@ -16860,30 +17935,7 @@
           ],
           "play": 1,
           "win": 0,
-          "pick_rate": 0.0204
-        },
-        {
-          "id": 8437,
-          "primary_page_id": 8400,
-          "primary_rune_ids": [
-            8437,
-            8446,
-            8473,
-            8451
-          ],
-          "secondary_page_id": 8000,
-          "secondary_rune_ids": [
-            8299,
-            9111
-          ],
-          "stat_mod_ids": [
-            5005,
-            5001,
-            5011
-          ],
-          "play": 1,
-          "win": 1,
-          "pick_rate": 0.0204
+          "pick_rate": 0.0161
         },
         {
           "id": 8437,
@@ -16906,7 +17958,7 @@
           ],
           "play": 1,
           "win": 0,
-          "pick_rate": 0.0204
+          "pick_rate": 0.0161
         }
       ]
     },
@@ -16914,9 +17966,9 @@
       "id": 8021,
       "primary_page_id": 8000,
       "secondary_page_id": 8400,
-      "play": 17,
+      "play": 18,
       "win": 8,
-      "pick_rate": 0.0341,
+      "pick_rate": 0.0289,
       "builds": [
         {
           "id": 8021,
@@ -16937,9 +17989,9 @@
             5008,
             5001
           ],
-          "play": 10,
+          "play": 11,
           "win": 4,
-          "pick_rate": 0.5882
+          "pick_rate": 0.6111
         },
         {
           "id": 8021,
@@ -16962,7 +18014,7 @@
           ],
           "play": 1,
           "win": 0,
-          "pick_rate": 0.0588
+          "pick_rate": 0.0556
         },
         {
           "id": 8021,
@@ -16985,7 +18037,7 @@
           ],
           "play": 1,
           "win": 1,
-          "pick_rate": 0.0588
+          "pick_rate": 0.0556
         },
         {
           "id": 8021,
@@ -17008,7 +18060,7 @@
           ],
           "play": 1,
           "win": 0,
-          "pick_rate": 0.0588
+          "pick_rate": 0.0556
         },
         {
           "id": 8021,
@@ -17031,7 +18083,7 @@
           ],
           "play": 1,
           "win": 0,
-          "pick_rate": 0.0588
+          "pick_rate": 0.0556
         }
       ]
     },
@@ -17039,9 +18091,9 @@
       "id": 8437,
       "primary_page_id": 8400,
       "secondary_page_id": 8200,
-      "play": 2,
+      "play": 3,
       "win": 0,
-      "pick_rate": 0.004,
+      "pick_rate": 0.0048,
       "builds": [
         {
           "id": 8437,
@@ -17064,7 +18116,30 @@
           ],
           "play": 1,
           "win": 0,
-          "pick_rate": 0.5
+          "pick_rate": 0.3333
+        },
+        {
+          "id": 8437,
+          "primary_page_id": 8400,
+          "primary_rune_ids": [
+            8437,
+            8446,
+            8444,
+            8451
+          ],
+          "secondary_page_id": 8200,
+          "secondary_rune_ids": [
+            8224,
+            8237
+          ],
+          "stat_mod_ids": [
+            5008,
+            5001,
+            5001
+          ],
+          "play": 1,
+          "win": 0,
+          "pick_rate": 0.3333
         },
         {
           "id": 8437,
@@ -17087,63 +18162,86 @@
           ],
           "play": 1,
           "win": 0,
-          "pick_rate": 0.5
+          "pick_rate": 0.3333
         }
       ]
     },
     {
-      "id": 8229,
-      "primary_page_id": 8200,
+      "id": 8369,
+      "primary_page_id": 8300,
       "secondary_page_id": 8400,
-      "play": 2,
-      "win": 1,
-      "pick_rate": 0.004,
+      "play": 3,
+      "win": 0,
+      "pick_rate": 0.0048,
       "builds": [
         {
-          "id": 8229,
-          "primary_page_id": 8200,
+          "id": 8369,
+          "primary_page_id": 8300,
           "primary_rune_ids": [
-            8229,
-            8224,
-            8210,
-            8237
+            8369,
+            8321,
+            8313,
+            8410
           ],
           "secondary_page_id": 8400,
           "secondary_rune_ids": [
-            8444,
-            8446
-          ],
-          "stat_mod_ids": [
-            5008,
-            5008,
-            5001
-          ],
-          "play": 1,
-          "win": 1,
-          "pick_rate": 0.5
-        },
-        {
-          "id": 8229,
-          "primary_page_id": 8200,
-          "primary_rune_ids": [
-            8229,
-            8275,
-            8210,
-            8237
-          ],
-          "secondary_page_id": 8400,
-          "secondary_rune_ids": [
-            8429,
+            8446,
             8451
           ],
           "stat_mod_ids": [
             5005,
             5001,
-            5011
+            5001
           ],
           "play": 1,
           "win": 0,
-          "pick_rate": 0.5
+          "pick_rate": 0.3333
+        },
+        {
+          "id": 8369,
+          "primary_page_id": 8300,
+          "primary_rune_ids": [
+            8369,
+            8321,
+            8313,
+            8347
+          ],
+          "secondary_page_id": 8400,
+          "secondary_rune_ids": [
+            8446,
+            8451
+          ],
+          "stat_mod_ids": [
+            5005,
+            5001,
+            5001
+          ],
+          "play": 1,
+          "win": 0,
+          "pick_rate": 0.3333
+        },
+        {
+          "id": 8369,
+          "primary_page_id": 8300,
+          "primary_rune_ids": [
+            8369,
+            8321,
+            8313,
+            8410
+          ],
+          "secondary_page_id": 8400,
+          "secondary_rune_ids": [
+            8446,
+            8451
+          ],
+          "stat_mod_ids": [
+            5007,
+            5001,
+            5001
+          ],
+          "play": 1,
+          "win": 0,
+          "pick_rate": 0.3333
         }
       ]
     }
@@ -17155,9 +18253,9 @@
         3084,
         3075
       ],
-      "play": 34,
+      "play": 37,
       "win": 21,
-      "pick_rate": 0.1511
+      "pick_rate": 0.1321
     },
     {
       "ids": [
@@ -17165,9 +18263,9 @@
         3084,
         3065
       ],
-      "play": 25,
-      "win": 14,
-      "pick_rate": 0.1111
+      "play": 30,
+      "win": 16,
+      "pick_rate": 0.1071
     },
     {
       "ids": [
@@ -17175,9 +18273,29 @@
         3083,
         3075
       ],
+      "play": 19,
+      "win": 9,
+      "pick_rate": 0.0679
+    },
+    {
+      "ids": [
+        3084,
+        3083,
+        3065
+      ],
+      "play": 17,
+      "win": 8,
+      "pick_rate": 0.0607
+    },
+    {
+      "ids": [
+        3084,
+        2502,
+        3065
+      ],
       "play": 16,
-      "win": 7,
-      "pick_rate": 0.0711
+      "win": 10,
+      "pick_rate": 0.0571
     },
     {
       "ids": [
@@ -17187,27 +18305,7 @@
       ],
       "play": 12,
       "win": 10,
-      "pick_rate": 0.0533
-    },
-    {
-      "ids": [
-        3084,
-        3083,
-        3065
-      ],
-      "play": 11,
-      "win": 6,
-      "pick_rate": 0.0489
-    },
-    {
-      "ids": [
-        3084,
-        2502,
-        3065
-      ],
-      "play": 10,
-      "win": 7,
-      "pick_rate": 0.0444
+      "pick_rate": 0.0429
     },
     {
       "ids": [
@@ -17215,29 +18313,9 @@
         3084,
         3748
       ],
-      "play": 9,
+      "play": 11,
       "win": 6,
-      "pick_rate": 0.04
-    },
-    {
-      "ids": [
-        3084,
-        3075,
-        3065
-      ],
-      "play": 7,
-      "win": 7,
-      "pick_rate": 0.0311
-    },
-    {
-      "ids": [
-        3083,
-        3084,
-        2502
-      ],
-      "play": 6,
-      "win": 2,
-      "pick_rate": 0.0267
+      "pick_rate": 0.0393
     },
     {
       "ids": [
@@ -17245,9 +18323,39 @@
         3068,
         3065
       ],
-      "play": 5,
-      "win": 3,
-      "pick_rate": 0.0222
+      "play": 9,
+      "win": 4,
+      "pick_rate": 0.0321
+    },
+    {
+      "ids": [
+        3084,
+        3075,
+        3065
+      ],
+      "play": 8,
+      "win": 8,
+      "pick_rate": 0.0286
+    },
+    {
+      "ids": [
+        3083,
+        3084,
+        2502
+      ],
+      "play": 7,
+      "win": 2,
+      "pick_rate": 0.025
+    },
+    {
+      "ids": [
+        3084,
+        3068,
+        3075
+      ],
+      "play": 6,
+      "win": 4,
+      "pick_rate": 0.0214
     },
     {
       "ids": [
@@ -17255,29 +18363,9 @@
         3065,
         3075
       ],
-      "play": 5,
-      "win": 2,
-      "pick_rate": 0.0222
-    },
-    {
-      "ids": [
-        3084,
-        3083,
-        3068
-      ],
-      "play": 4,
-      "win": 4,
-      "pick_rate": 0.0178
-    },
-    {
-      "ids": [
-        3083,
-        3084,
-        3143
-      ],
-      "play": 4,
+      "play": 6,
       "win": 3,
-      "pick_rate": 0.0178
+      "pick_rate": 0.0214
     },
     {
       "ids": [
@@ -17285,9 +18373,19 @@
         3084,
         3068
       ],
-      "play": 4,
-      "win": 1,
-      "pick_rate": 0.0178
+      "play": 6,
+      "win": 2,
+      "pick_rate": 0.0214
+    },
+    {
+      "ids": [
+        3084,
+        3083,
+        3068
+      ],
+      "play": 5,
+      "win": 5,
+      "pick_rate": 0.0179
     },
     {
       "ids": [
@@ -17297,7 +18395,7 @@
       ],
       "play": 4,
       "win": 4,
-      "pick_rate": 0.0178
+      "pick_rate": 0.0143
     }
   ],
   "boots": [
@@ -17305,25 +18403,25 @@
       "ids": [
         3009
       ],
-      "play": 211,
-      "win": 113,
-      "pick_rate": 0.4699
+      "play": 265,
+      "win": 139,
+      "pick_rate": 0.4783
     },
     {
       "ids": [
         3047
       ],
-      "play": 178,
-      "win": 81,
-      "pick_rate": 0.3964
+      "play": 214,
+      "win": 94,
+      "pick_rate": 0.3863
     },
     {
       "ids": [
         3111
       ],
-      "play": 60,
-      "win": 28,
-      "pick_rate": 0.1336
+      "play": 75,
+      "win": 33,
+      "pick_rate": 0.1354
     }
   ],
   "starter_items": [
@@ -17332,9 +18430,9 @@
         1054,
         2003
       ],
-      "play": 484,
-      "win": 224,
-      "pick_rate": 0.9398
+      "play": 601,
+      "win": 270,
+      "pick_rate": 0.9435
     },
     {
       "ids": [
@@ -17342,9 +18440,9 @@
         2003,
         2003
       ],
-      "play": 9,
-      "win": 2,
-      "pick_rate": 0.0175
+      "play": 12,
+      "win": 5,
+      "pick_rate": 0.0188
     },
     {
       "ids": [
@@ -17354,7 +18452,7 @@
       ],
       "play": 8,
       "win": 4,
-      "pick_rate": 0.0155
+      "pick_rate": 0.0126
     },
     {
       "ids": [
@@ -17362,9 +18460,9 @@
         1054,
         2003
       ],
-      "play": 4,
-      "win": 3,
-      "pick_rate": 0.0078
+      "play": 6,
+      "win": 4,
+      "pick_rate": 0.0094
     },
     {
       "ids": [
@@ -17372,7 +18470,7 @@
       ],
       "play": 4,
       "win": 2,
-      "pick_rate": 0.0078
+      "pick_rate": 0.0063
     },
     {
       "ids": [
@@ -17380,7 +18478,7 @@
       ],
       "play": 1,
       "win": 0,
-      "pick_rate": 0.0019
+      "pick_rate": 0.0016
     },
     {
       "ids": [
@@ -17389,7 +18487,7 @@
       ],
       "play": 1,
       "win": 1,
-      "pick_rate": 0.0019
+      "pick_rate": 0.0016
     },
     {
       "ids": [
@@ -17397,7 +18495,7 @@
       ],
       "play": 1,
       "win": 1,
-      "pick_rate": 0.0019
+      "pick_rate": 0.0016
     },
     {
       "ids": [
@@ -17407,7 +18505,7 @@
       ],
       "play": 1,
       "win": 0,
-      "pick_rate": 0.0019
+      "pick_rate": 0.0016
     },
     {
       "ids": [
@@ -17416,7 +18514,7 @@
       ],
       "play": 1,
       "win": 1,
-      "pick_rate": 0.0019
+      "pick_rate": 0.0016
     },
     {
       "ids": [
@@ -17425,7 +18523,7 @@
       ],
       "play": 1,
       "win": 0,
-      "pick_rate": 0.0019
+      "pick_rate": 0.0016
     }
   ],
   "last_items": [
@@ -17433,89 +18531,113 @@
       "ids": [
         3084
       ],
-      "play": 412,
-      "win": 207,
-      "pick_rate": 0.3229
+      "play": 514,
+      "win": 249,
+      "pick_rate": 0.3167
     },
     {
       "ids": [
         3083
       ],
-      "play": 292,
-      "win": 136,
-      "pick_rate": 0.2288
-    },
-    {
-      "ids": [
-        3075
-      ],
-      "play": 121,
-      "win": 70,
-      "pick_rate": 0.0948
+      "play": 370,
+      "win": 169,
+      "pick_rate": 0.228
     },
     {
       "ids": [
         3065
       ],
-      "play": 120,
-      "win": 77,
-      "pick_rate": 0.094
+      "play": 156,
+      "win": 94,
+      "pick_rate": 0.0961
+    },
+    {
+      "ids": [
+        3075
+      ],
+      "play": 147,
+      "win": 80,
+      "pick_rate": 0.0906
     },
     {
       "ids": [
         3076
       ],
-      "play": 78,
-      "win": 33,
-      "pick_rate": 0.0611
+      "play": 114,
+      "win": 45,
+      "pick_rate": 0.0702
     },
     {
       "ids": [
         3068
       ],
-      "play": 60,
-      "win": 27,
-      "pick_rate": 0.047
+      "play": 78,
+      "win": 38,
+      "pick_rate": 0.0481
     },
     {
       "ids": [
         2502
       ],
-      "play": 53,
-      "win": 34,
-      "pick_rate": 0.0415
+      "play": 72,
+      "win": 44,
+      "pick_rate": 0.0444
     },
     {
       "ids": [
         3748
       ],
-      "play": 35,
-      "win": 21,
-      "pick_rate": 0.0274
+      "play": 43,
+      "win": 24,
+      "pick_rate": 0.0265
     },
     {
       "ids": [
         3143
       ],
-      "play": 31,
-      "win": 22,
-      "pick_rate": 0.0243
-    },
-    {
-      "ids": [
-        3077
-      ],
-      "play": 13,
-      "win": 7,
-      "pick_rate": 0.0102
+      "play": 37,
+      "win": 24,
+      "pick_rate": 0.0228
     },
     {
       "ids": [
         6664
       ],
-      "play": 12,
-      "win": 3,
-      "pick_rate": 0.0094
+      "play": 16,
+      "win": 4,
+      "pick_rate": 0.0099
+    },
+    {
+      "ids": [
+        3077
+      ],
+      "play": 16,
+      "win": 8,
+      "pick_rate": 0.0099
+    },
+    {
+      "ids": [
+        2501
+      ],
+      "play": 8,
+      "win": 5,
+      "pick_rate": 0.0049
+    },
+    {
+      "ids": [
+        6665
+      ],
+      "play": 8,
+      "win": 5,
+      "pick_rate": 0.0049
+    },
+    {
+      "ids": [
+        8020
+      ],
+      "play": 7,
+      "win": 2,
+      "pick_rate": 0.0043
     },
     {
       "ids": [
@@ -17523,47 +18645,23 @@
       ],
       "play": 7,
       "win": 2,
-      "pick_rate": 0.0055
-    },
-    {
-      "ids": [
-        2501
-      ],
-      "play": 6,
-      "win": 4,
-      "pick_rate": 0.0047
-    },
-    {
-      "ids": [
-        6665
-      ],
-      "play": 6,
-      "win": 4,
-      "pick_rate": 0.0047
-    },
-    {
-      "ids": [
-        8020
-      ],
-      "play": 6,
-      "win": 2,
-      "pick_rate": 0.0047
+      "pick_rate": 0.0043
     },
     {
       "ids": [
         2504
       ],
-      "play": 5,
+      "play": 6,
       "win": 3,
-      "pick_rate": 0.0039
+      "pick_rate": 0.0037
     },
     {
       "ids": [
         4401
       ],
-      "play": 4,
-      "win": 2,
-      "pick_rate": 0.0031
+      "play": 6,
+      "win": 3,
+      "pick_rate": 0.0037
     },
     {
       "ids": [
@@ -17571,7 +18669,7 @@
       ],
       "play": 4,
       "win": 3,
-      "pick_rate": 0.0031
+      "pick_rate": 0.0025
     },
     {
       "ids": [
@@ -17579,7 +18677,23 @@
       ],
       "play": 3,
       "win": 2,
-      "pick_rate": 0.0024
+      "pick_rate": 0.0018
+    },
+    {
+      "ids": [
+        3181
+      ],
+      "play": 2,
+      "win": 1,
+      "pick_rate": 0.0012
+    },
+    {
+      "ids": [
+        3508
+      ],
+      "play": 1,
+      "win": 0,
+      "pick_rate": 0.0006
     },
     {
       "ids": [
@@ -17587,7 +18701,7 @@
       ],
       "play": 1,
       "win": 0,
-      "pick_rate": 0.0008
+      "pick_rate": 0.0006
     },
     {
       "ids": [
@@ -17595,7 +18709,7 @@
       ],
       "play": 1,
       "win": 0,
-      "pick_rate": 0.0008
+      "pick_rate": 0.0006
     },
     {
       "ids": [
@@ -17603,7 +18717,7 @@
       ],
       "play": 1,
       "win": 0,
-      "pick_rate": 0.0008
+      "pick_rate": 0.0006
     },
     {
       "ids": [
@@ -17611,7 +18725,7 @@
       ],
       "play": 1,
       "win": 1,
-      "pick_rate": 0.0008
+      "pick_rate": 0.0006
     },
     {
       "ids": [
@@ -17619,7 +18733,7 @@
       ],
       "play": 1,
       "win": 1,
-      "pick_rate": 0.0008
+      "pick_rate": 0.0006
     },
     {
       "ids": [
@@ -17627,7 +18741,7 @@
       ],
       "play": 1,
       "win": 0,
-      "pick_rate": 0.0008
+      "pick_rate": 0.0006
     },
     {
       "ids": [
@@ -17635,15 +18749,15 @@
       ],
       "play": 1,
       "win": 0,
-      "pick_rate": 0.0008
+      "pick_rate": 0.0006
     },
     {
       "ids": [
-        3181
+        3053
       ],
       "play": 1,
       "win": 1,
-      "pick_rate": 0.0008
+      "pick_rate": 0.0006
     }
   ]
 }
