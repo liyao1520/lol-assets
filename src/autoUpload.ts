@@ -36,7 +36,7 @@ async function main() {
   }
   await remove(__data__)
   await putFile('champion/list.json', response)
-  let first = false
+  let first = true
   for (const item of championRankingList) {
     const positionName = item.positionName.toLowerCase()
     const { href, key } = item.champion
