@@ -36,6 +36,7 @@ async function main() {
   }
   await remove(__data__)
   await putFile('champion/list.json', response)
+  let first = false
   for (const item of championRankingList) {
     const positionName = item.positionName.toLowerCase()
     const { href, key } = item.champion
@@ -44,7 +45,13 @@ async function main() {
     const res = await pRetry(() => getChampionDetail(detailHref), {
       retries: 4
     })
-
+    if(first) {
+      const meta = res.meta;
+      console.log(`putFile meta.json`)
+      await pRetry(() => putFile(`champion/meta.json`, meta), { retries: 2 })
+      first = false;
+    }
+    delete res.meta
     console.log(`download ${key}.json done`)
     await promiseTimeout(1500)
     console.log(`putFile ${key}.json`)
