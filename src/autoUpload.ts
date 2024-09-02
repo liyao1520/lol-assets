@@ -4,7 +4,9 @@ import { resolve } from 'node:path'
 import pRetry from 'p-retry'
 
 import { ensureFile, writeFile, remove } from 'fs-extra'
-import { readFile } from 'node:fs/promises'
+import { readFile, readdir } from 'node:fs/promises'
+import { putObject } from './cos'
+
 
 const __data__ = resolve(process.cwd(), '__data__')
 const promiseTimeout = (ms: number = 1000) => new Promise((resolve) => setTimeout(resolve, ms))
@@ -45,7 +47,7 @@ async function main() {
     const res = await pRetry(() => getChampionDetail(detailHref), {
       retries: 4
     })
-    if(first) {
+    if (first) {
       const meta = res.meta;
       console.log(`putFile meta.json`)
       await pRetry(() => putFile(`champion/meta.json`, meta), { retries: 2 })
@@ -59,7 +61,15 @@ async function main() {
     console.log(`putFile ${key}.json done`)
   }
 
-  console.log('finish')
+  console.log('download finish')
+  const files = await readdir(resolve(__data__, 'champion'))
+  for (const file of files) {
+    const filePath = resolve(__data__, 'champion', file)
+    const content = await readFile(filePath, 'utf-8')
+    await putObject(`champion/${file}`, JSON.parse(content))
+    console.log(`putObject ${file} done`)
+    await promiseTimeout(500)
+  }
   console.log(`all done, cost ${(Date.now() - startTime) / 1000}s`)
 }
 
