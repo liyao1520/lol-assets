@@ -417,37 +417,37 @@
             {
               "name": "FIGHTER",
               "stats": {
-                "win_rate": 0.505189,
-                "role_rate": 0.816911,
-                "play": 51262,
-                "win": 25897
+                "win_rate": 0.505155,
+                "role_rate": 0.816978,
+                "play": 51499,
+                "win": 26015
               }
             },
             {
               "name": "MARKSMAN",
               "stats": {
-                "win_rate": 0.549387,
-                "role_rate": 0.165049,
-                "play": 10357,
-                "win": 5690
+                "win_rate": 0.549817,
+                "role_rate": 0.164953,
+                "play": 10398,
+                "win": 5717
               }
             }
           ],
           "counters": [
             {
               "champion_id": 60,
-              "play": 659,
-              "win": 298
+              "play": 664,
+              "win": 300
             },
             {
               "champion_id": 121,
-              "play": 3298,
-              "win": 1526
+              "play": 3315,
+              "win": 1533
             },
             {
-              "champion_id": 35,
-              "play": 1296,
-              "win": 610
+              "champion_id": 72,
+              "play": 467,
+              "win": 219
             }
           ]
         }
@@ -458,8 +458,8 @@
       [
         {
           "champion_id": 60,
-          "play": 659,
-          "win": 298,
+          "play": 664,
+          "win": 300,
           "meta": {
             "id": 60,
             "key": "Elise",
@@ -720,12 +720,12 @@
               }
             ]
           },
-          "win_rate": 45.22
+          "win_rate": 45.18
         },
         {
           "champion_id": 121,
-          "play": 3298,
-          "win": 1526,
+          "play": 3315,
+          "win": 1533,
           "meta": {
             "id": 121,
             "key": "Khazix",
@@ -978,12 +978,250 @@
               }
             ]
           },
-          "win_rate": 46.27
+          "win_rate": 46.24
+        },
+        {
+          "champion_id": 72,
+          "play": 467,
+          "win": 219,
+          "meta": {
+            "id": 72,
+            "key": "Skarner",
+            "name": "上古领主",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Skarner.png",
+            "evolve": [],
+            "partype": "法力",
+            "passive": {
+              "name": "战栗",
+              "description": "斯卡纳的普通攻击、撼地、擎天和毒刺贯体都会施加战栗效果。在满层战栗时，敌人们会在其持续期间内受到最大生命值魔法伤害。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Skarner_Passive.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0072/ability_0072_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "撼地 / 擎天",
+                "description": "斯卡纳从地面掘出一块巨石来强化他的普攻，这块巨石可作为飞弹投掷。",
+                "max_rank": 5,
+                "range_burn": [
+                  400
+                ],
+                "cooldown_burn": [
+                  13,
+                  11,
+                  10,
+                  8,
+                  7
+                ],
+                "cooldown_burn_float": [
+                  13,
+                  11.5,
+                  10,
+                  8.5,
+                  7
+                ],
+                "cost_burn": [
+                  45
+                ],
+                "tooltip": "斯卡纳从地面掘出一块巨石，使他的下三次攻击拥有<attackSpeed>?%攻击速度</attackSpeed>并且对附近敌人们造成<physicalDamage>?物理伤害</physicalDamage>。 他的最后一次攻击将对被影响的敌人们造成额外的<physicalDamage>?%最大生命值物理伤害</physicalDamage>和持续?秒的?%<status>减速</status>。<br /><br /><recast>再次施放：</recast>斯卡纳结束这个技能并扔出他的巨石，对命中的第一个敌人——及其周围的其它敌人们——造成<physicalDamage>? + ?%最大生命值物理伤害</physicalDamage>和持续?秒的?%<status>减速</status>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SkarnerQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0072/ability_0072_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "震地壁垒",
+                "description": "斯卡纳获得一个护盾并生成一阵地震，地震的冲击波会伤害并减速敌人们。",
+                "max_rank": 5,
+                "range_burn": [
+                  700
+                ],
+                "cooldown_burn": [
+                  10,
+                  9,
+                  8,
+                  7,
+                  6
+                ],
+                "cooldown_burn_float": [
+                  10,
+                  9,
+                  8,
+                  7,
+                  6
+                ],
+                "cost_burn": [
+                  60,
+                  65,
+                  70,
+                  75,
+                  80
+                ],
+                "tooltip": "斯卡纳获得持续?秒的<shield>?护盾值</shield>并引发一阵地震，来对附近的敌人们造成<magicDamage>?魔法伤害</magicDamage>和持续?秒的?%<status>减速</status>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SkarnerW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0072/ability_0072_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "以绪塔尔冲击",
+                "description": "斯卡纳向前冲锋并穿过地形。如果他撞击到一个英雄或大型野怪，则可将其猛推到他命中的下一个墙体上，造成伤害和晕眩效果。",
+                "max_rank": 5,
+                "range_burn": [
+                  1700
+                ],
+                "cooldown_burn": [
+                  20,
+                  19,
+                  18,
+                  17,
+                  16
+                ],
+                "cooldown_burn_float": [
+                  20,
+                  19,
+                  18,
+                  17,
+                  16
+                ],
+                "cost_burn": [
+                  50,
+                  55,
+                  60,
+                  65,
+                  70
+                ],
+                "tooltip": "斯卡纳向前冲锋，朝着所选方向行驶并无视地形。如果斯卡纳碰上了一个英雄或大型野怪，那么他会在冲锋的剩余期间对其进行拖拽。<br /><br />拖着一个敌人碰撞到一个墙体时，会对该敌人造成<physicalDamage>?物理伤害</physicalDamage>和?秒<status>晕眩</status>。<br /><br />斯卡纳可以<recast>再次释放</recast>这个技能来提前结束他的冲锋。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SkarnerE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0072/ability_0072_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "毒刺贯体",
+                "description": "斯卡纳向前甩出他的尾巴，以压制敌方英雄们。一旦被压制，猎物们就会在斯卡纳移动时被拖行。",
+                "max_rank": 3,
+                "range_burn": [
+                  625
+                ],
+                "cooldown_burn": [
+                  120,
+                  105,
+                  90
+                ],
+                "cooldown_burn_float": [
+                  120,
+                  105,
+                  90
+                ],
+                "cost_burn": [
+                  100
+                ],
+                "tooltip": "斯卡纳向前甩出他的尾巴，对最先命中的3个英雄造成<magicDamage>?魔法伤害</magicDamage>和?秒<status>压制</status>。那些被命中的英雄会在这个技能的持续期间被斯卡纳拖行。<br /><br />如果斯卡纳至少命中了一个英雄，那么他会获得持续?秒的<speed>?%移动速度</speed>。<br /><br />如果<spellName>撼地</spellName>处于激活状态，那么斯卡纳将先施放<spellName>擎天</spellName>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SkarnerR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0072/ability_0072_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 72000,
+                "champion_id": 72,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Skarner_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 4800
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 880
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 72005,
+                "champion_id": 72,
+                "name": "天蝎星神 斯卡纳",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Skarner_5.jpg",
+                "skin_video_url": "https://youtu.be/mm-8xppKJhQ",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-11-24T04:00:00+09:00"
+              },
+              {
+                "id": 72003,
+                "champion_id": 72,
+                "name": "战地机甲 斯卡纳",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Skarner_3.jpg",
+                "skin_video_url": "https://youtu.be/iyau3MLdrI8",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1820
+                  }
+                ],
+                "sales": null,
+                "release_date": "2014-11-22T18:00:00+09:00"
+              },
+              {
+                "id": 72004,
+                "champion_id": 72,
+                "name": "沙之守护 斯卡纳",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Skarner_4.jpg",
+                "skin_video_url": "https://youtu.be/UiBsffKwdXA",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2015-04-27T10:00:00+09:00"
+              },
+              {
+                "id": 72001,
+                "champion_id": 72,
+                "name": "沙暴巨蝎 斯卡纳",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Skarner_1.jpg",
+                "skin_video_url": "https://youtu.be/GwPLNeMPMNA",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2011-08-09T06:00:00+09:00"
+              },
+              {
+                "id": 72002,
+                "champion_id": 72,
+                "name": "远土之灵 斯卡纳",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Skarner_2.jpg",
+                "skin_video_url": "https://youtu.be/nfc8fhDd9b4",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2011-08-09T21:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 46.9
         },
         {
           "champion_id": 35,
-          "play": 1296,
-          "win": 610,
+          "play": 1302,
+          "win": 615,
           "meta": {
             "id": 35,
             "key": "Shaco",
@@ -1306,12 +1544,12 @@
               }
             ]
           },
-          "win_rate": 47.07
+          "win_rate": 47.24
         },
         {
           "champion_id": 77,
-          "play": 1263,
-          "win": 597,
+          "play": 1271,
+          "win": 602,
           "meta": {
             "id": 77,
             "key": "Udyr",
@@ -1523,252 +1761,14 @@
               }
             ]
           },
-          "win_rate": 47.27
-        },
-        {
-          "champion_id": 72,
-          "play": 463,
-          "win": 219,
-          "meta": {
-            "id": 72,
-            "key": "Skarner",
-            "name": "上古领主",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Skarner.png",
-            "evolve": [],
-            "partype": "法力",
-            "passive": {
-              "name": "战栗",
-              "description": "斯卡纳的普通攻击、撼地、擎天和毒刺贯体都会施加战栗效果。在满层战栗时，敌人们会在其持续期间内受到最大生命值魔法伤害。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Skarner_Passive.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0072/ability_0072_P1.webm"
-            },
-            "spells": [
-              {
-                "key": "Q",
-                "name": "撼地 / 擎天",
-                "description": "斯卡纳从地面掘出一块巨石来强化他的普攻，这块巨石可作为飞弹投掷。",
-                "max_rank": 5,
-                "range_burn": [
-                  400
-                ],
-                "cooldown_burn": [
-                  13,
-                  11,
-                  10,
-                  8,
-                  7
-                ],
-                "cooldown_burn_float": [
-                  13,
-                  11.5,
-                  10,
-                  8.5,
-                  7
-                ],
-                "cost_burn": [
-                  45
-                ],
-                "tooltip": "斯卡纳从地面掘出一块巨石，使他的下三次攻击拥有<attackSpeed>?%攻击速度</attackSpeed>并且对附近敌人们造成<physicalDamage>?物理伤害</physicalDamage>。 他的最后一次攻击将对被影响的敌人们造成额外的<physicalDamage>?%最大生命值物理伤害</physicalDamage>和持续?秒的?%<status>减速</status>。<br /><br /><recast>再次施放：</recast>斯卡纳结束这个技能并扔出他的巨石，对命中的第一个敌人——及其周围的其它敌人们——造成<physicalDamage>? + ?%最大生命值物理伤害</physicalDamage>和持续?秒的?%<status>减速</status>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SkarnerQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0072/ability_0072_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "震地壁垒",
-                "description": "斯卡纳获得一个护盾并生成一阵地震，地震的冲击波会伤害并减速敌人们。",
-                "max_rank": 5,
-                "range_burn": [
-                  700
-                ],
-                "cooldown_burn": [
-                  10,
-                  9,
-                  8,
-                  7,
-                  6
-                ],
-                "cooldown_burn_float": [
-                  10,
-                  9,
-                  8,
-                  7,
-                  6
-                ],
-                "cost_burn": [
-                  60,
-                  65,
-                  70,
-                  75,
-                  80
-                ],
-                "tooltip": "斯卡纳获得持续?秒的<shield>?护盾值</shield>并引发一阵地震，来对附近的敌人们造成<magicDamage>?魔法伤害</magicDamage>和持续?秒的?%<status>减速</status>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SkarnerW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0072/ability_0072_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "以绪塔尔冲击",
-                "description": "斯卡纳向前冲锋并穿过地形。如果他撞击到一个英雄或大型野怪，则可将其猛推到他命中的下一个墙体上，造成伤害和晕眩效果。",
-                "max_rank": 5,
-                "range_burn": [
-                  1700
-                ],
-                "cooldown_burn": [
-                  20,
-                  19,
-                  18,
-                  17,
-                  16
-                ],
-                "cooldown_burn_float": [
-                  20,
-                  19,
-                  18,
-                  17,
-                  16
-                ],
-                "cost_burn": [
-                  50,
-                  55,
-                  60,
-                  65,
-                  70
-                ],
-                "tooltip": "斯卡纳向前冲锋，朝着所选方向行驶并无视地形。如果斯卡纳碰上了一个英雄或大型野怪，那么他会在冲锋的剩余期间对其进行拖拽。<br /><br />拖着一个敌人碰撞到一个墙体时，会对该敌人造成<physicalDamage>?物理伤害</physicalDamage>和?秒<status>晕眩</status>。<br /><br />斯卡纳可以<recast>再次释放</recast>这个技能来提前结束他的冲锋。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SkarnerE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0072/ability_0072_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "毒刺贯体",
-                "description": "斯卡纳向前甩出他的尾巴，以压制敌方英雄们。一旦被压制，猎物们就会在斯卡纳移动时被拖行。",
-                "max_rank": 3,
-                "range_burn": [
-                  625
-                ],
-                "cooldown_burn": [
-                  120,
-                  105,
-                  90
-                ],
-                "cooldown_burn_float": [
-                  120,
-                  105,
-                  90
-                ],
-                "cost_burn": [
-                  100
-                ],
-                "tooltip": "斯卡纳向前甩出他的尾巴，对最先命中的3个英雄造成<magicDamage>?魔法伤害</magicDamage>和?秒<status>压制</status>。那些被命中的英雄会在这个技能的持续期间被斯卡纳拖行。<br /><br />如果斯卡纳至少命中了一个英雄，那么他会获得持续?秒的<speed>?%移动速度</speed>。<br /><br />如果<spellName>撼地</spellName>处于激活状态，那么斯卡纳将先施放<spellName>擎天</spellName>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SkarnerR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0072/ability_0072_R1.webm"
-              }
-            ],
-            "skins": [
-              {
-                "id": 72000,
-                "champion_id": 72,
-                "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Skarner_0.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "IP",
-                    "cost": 4800
-                  },
-                  {
-                    "currency": "RP",
-                    "cost": 880
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 72005,
-                "champion_id": 72,
-                "name": "天蝎星神 斯卡纳",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Skarner_5.jpg",
-                "skin_video_url": "https://youtu.be/mm-8xppKJhQ",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2020-11-24T04:00:00+09:00"
-              },
-              {
-                "id": 72003,
-                "champion_id": 72,
-                "name": "战地机甲 斯卡纳",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Skarner_3.jpg",
-                "skin_video_url": "https://youtu.be/iyau3MLdrI8",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1820
-                  }
-                ],
-                "sales": null,
-                "release_date": "2014-11-22T18:00:00+09:00"
-              },
-              {
-                "id": 72004,
-                "champion_id": 72,
-                "name": "沙之守护 斯卡纳",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Skarner_4.jpg",
-                "skin_video_url": "https://youtu.be/UiBsffKwdXA",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2015-04-27T10:00:00+09:00"
-              },
-              {
-                "id": 72001,
-                "champion_id": 72,
-                "name": "沙暴巨蝎 斯卡纳",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Skarner_1.jpg",
-                "skin_video_url": "https://youtu.be/GwPLNeMPMNA",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2011-08-09T06:00:00+09:00"
-              },
-              {
-                "id": 72002,
-                "champion_id": 72,
-                "name": "远土之灵 斯卡纳",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Skarner_2.jpg",
-                "skin_video_url": "https://youtu.be/nfc8fhDd9b4",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 750
-                  }
-                ],
-                "sales": null,
-                "release_date": "2011-08-09T21:00:00+09:00"
-              }
-            ]
-          },
-          "win_rate": 47.3
+          "win_rate": 47.36
         }
       ],
       [
         {
           "champion_id": 517,
-          "play": 509,
-          "win": 295,
+          "play": 514,
+          "win": 299,
           "meta": {
             "id": 517,
             "key": "Sylas",
@@ -2017,12 +2017,12 @@
               }
             ]
           },
-          "win_rate": 57.96
+          "win_rate": 58.17
         },
         {
           "champion_id": 57,
-          "play": 219,
-          "win": 125,
+          "play": 221,
+          "win": 127,
           "meta": {
             "id": 57,
             "key": "Maokai",
@@ -2316,11 +2316,11 @@
               }
             ]
           },
-          "win_rate": 57.08
+          "win_rate": 57.47
         },
         {
           "champion_id": 30,
-          "play": 493,
+          "play": 495,
           "win": 281,
           "meta": {
             "id": 30,
@@ -2585,12 +2585,12 @@
               }
             ]
           },
-          "win_rate": 57
+          "win_rate": 56.77
         },
         {
           "champion_id": 107,
-          "play": 826,
-          "win": 467,
+          "play": 831,
+          "win": 471,
           "meta": {
             "id": 107,
             "key": "Rengar",
@@ -2838,12 +2838,12 @@
               }
             ]
           },
-          "win_rate": 56.54
+          "win_rate": 56.68
         },
         {
           "champion_id": 63,
-          "play": 680,
-          "win": 380,
+          "play": 684,
+          "win": 383,
           "meta": {
             "id": 63,
             "key": "Brand",
@@ -3171,15 +3171,15 @@
               }
             ]
           },
-          "win_rate": 55.88
+          "win_rate": 55.99
         }
       ]
     ],
     "counters": [
       {
         "champion_id": 64,
-        "play": 4856,
-        "win": 2393,
+        "play": 4872,
+        "win": 2397,
         "meta": {
           "id": 64,
           "key": "LeeSin",
@@ -3571,8 +3571,8 @@
       },
       {
         "champion_id": 121,
-        "play": 3298,
-        "win": 1526,
+        "play": 3315,
+        "win": 1533,
         "meta": {
           "id": 121,
           "key": "Khazix",
@@ -3828,8 +3828,8 @@
       },
       {
         "champion_id": 234,
-        "play": 2666,
-        "win": 1359,
+        "play": 2676,
+        "win": 1366,
         "meta": {
           "id": 234,
           "key": "Viego",
@@ -4049,8 +4049,8 @@
       },
       {
         "champion_id": 876,
-        "play": 2559,
-        "win": 1292,
+        "play": 2573,
+        "win": 1301,
         "meta": {
           "id": 876,
           "key": "Lillia",
@@ -4255,8 +4255,8 @@
       },
       {
         "champion_id": 32,
-        "play": 2206,
-        "win": 1060,
+        "play": 2214,
+        "win": 1064,
         "meta": {
           "id": 32,
           "key": "Amumu",
@@ -4579,8 +4579,8 @@
       },
       {
         "champion_id": 104,
-        "play": 1896,
-        "win": 1001,
+        "play": 1904,
+        "win": 1008,
         "meta": {
           "id": 104,
           "key": "Graves",
@@ -4925,7 +4925,7 @@
       },
       {
         "champion_id": 141,
-        "play": 1876,
+        "play": 1878,
         "win": 970,
         "meta": {
           "id": 141,
@@ -5187,8 +5187,8 @@
       },
       {
         "champion_id": 56,
-        "play": 1741,
-        "win": 880,
+        "play": 1747,
+        "win": 884,
         "meta": {
           "id": 56,
           "key": "Nocturne",
@@ -5487,8 +5487,8 @@
       },
       {
         "champion_id": 59,
-        "play": 1709,
-        "win": 906,
+        "play": 1713,
+        "win": 910,
         "meta": {
           "id": 59,
           "key": "JarvanIV",
@@ -5822,8 +5822,8 @@
       },
       {
         "champion_id": 120,
-        "play": 1644,
-        "win": 846,
+        "play": 1650,
+        "win": 849,
         "meta": {
           "id": 120,
           "key": "Hecarim",
@@ -6123,8 +6123,8 @@
       },
       {
         "champion_id": 254,
-        "play": 1584,
-        "win": 804,
+        "play": 1587,
+        "win": 805,
         "meta": {
           "id": 254,
           "key": "Vi",
@@ -6436,8 +6436,8 @@
       },
       {
         "champion_id": 131,
-        "play": 1429,
-        "win": 736,
+        "play": 1439,
+        "win": 740,
         "meta": {
           "id": 131,
           "key": "Diana",
@@ -6773,8 +6773,8 @@
       },
       {
         "champion_id": 33,
-        "play": 1377,
-        "win": 661,
+        "play": 1382,
+        "win": 664,
         "meta": {
           "id": 33,
           "key": "Rammus",
@@ -7052,8 +7052,8 @@
       },
       {
         "champion_id": 76,
-        "play": 1369,
-        "win": 744,
+        "play": 1375,
+        "win": 747,
         "meta": {
           "id": 76,
           "key": "Nidalee",
@@ -7418,8 +7418,8 @@
       },
       {
         "champion_id": 35,
-        "play": 1296,
-        "win": 610,
+        "play": 1302,
+        "win": 615,
         "meta": {
           "id": 35,
           "key": "Shaco",
@@ -7745,8 +7745,8 @@
       },
       {
         "champion_id": 77,
-        "play": 1263,
-        "win": 597,
+        "play": 1271,
+        "win": 602,
         "meta": {
           "id": 77,
           "key": "Udyr",
@@ -7960,9 +7960,185 @@
         }
       },
       {
+        "champion_id": 233,
+        "play": 1202,
+        "win": 601,
+        "meta": {
+          "id": 233,
+          "key": "Briar",
+          "name": "狂厄蔷薇",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Briar.png",
+          "evolve": [],
+          "partype": "怒气",
+          "passive": {
+            "name": "猩红诅咒",
+            "description": "贝蕾亚的攻击与技能会造成可叠加的流血效果，同时基于这个效果的伤害治疗自身。她永远处于饥饿状态，会根据自己的已损失生命值获得更高的治疗，但缺乏自带的生命回复。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/BriarP.png",
+            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_P1.webm"
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "冲头",
+              "description": "贝蕾亚跃向一个单位并用她的（痛苦之）脚镣命中敌人们，将他们晕眩并削减他们的护甲。",
+              "max_rank": 5,
+              "range_burn": [
+                475
+              ],
+              "cooldown_burn": [
+                13,
+                12,
+                11,
+                10,
+                9
+              ],
+              "cooldown_burn_float": [
+                13,
+                12,
+                11,
+                10,
+                9
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "贝蕾亚跃向一个单位，将其<status>晕眩</status>?秒，造成<magicDamage>?魔法伤害</magicDamage>和持续?秒的?%<scaleArmor>护甲削减</scaleArmor>与<scaleMR>魔抗削减</scaleMR>。<br /><br /><rules>如果贝蕾亚在<keywordMajor>血莽</keywordMajor>期间对一个小兵或野怪施放这个技能，那么她会停止将英雄作为优先目标。</rules>?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BriarQ.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "血莽 / 噬击",
+              "description": "贝蕾亚向前跳跃并击碎她的囚枷，进入一种【血莽】状态来使她无休止地追击相距最近的那个敌人（优先以英雄为目标）。在【血莽】状态下，她的攻击速度和移动速度获得提升，并且她的攻击会在她目标四周的一个区域内造成伤害。<br><br>贝蕾亚可以在【血莽】状态下再次激活这个技能，来让她的下一次攻击噬咬她的目标，造成基于目标已损失生命值的额外伤害，并且基于她造成的伤害来为她提供治疗效果。",
+              "max_rank": 5,
+              "range_burn": [
+                350
+              ],
+              "cooldown_burn": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "cooldown_burn_float": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "贝蕾亚跳跃并进入一种<keywordMajor>血莽</keywordMajor>状态，自我嘲讽至相距最近的那个敌人，持续?秒，优先以英雄为目标。在<keywordMajor>血莽</keywordMajor>状态下，她获得<attackSpeed>?%攻击速度</attackSpeed>和<speed>?%移动速度</speed>，并且她的攻击会对目标四周的敌人们造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br />贝蕾亚可以<recast>再次施放</recast>这个技能来强化她的下一次攻击。这次攻击造成<physicalDamage>? + ?%已损失生命值的物理伤害</physicalDamage>并<healing>为贝蕾亚提供?+?%已造成伤害值的治疗效果</healing>。<br />?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BriarW.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "惊吼",
+              "description": "贝蕾亚重新集中她的意志，移除【血莽】并将能量引导为一次强力吼叫，对敌人造成伤害和减速。在蓄力时，她获得伤害减免并回复一部分最大生命值。一次完全蓄力的吼叫会将敌人们击退，对那些与墙体碰撞的敌人造成额外伤害和晕眩。",
+              "max_rank": 5,
+              "range_burn": [
+                400
+              ],
+              "cooldown_burn": [
+                16
+              ],
+              "cooldown_burn_float": [
+                16
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "<charge>开始蓄力</charge>：贝蕾亚移除<keywordMajor>血莽</keywordMajor>并聚集能量，获得?%伤害减免并在1秒里持续获得共<healing>?治疗效果</healing>。<br /><br /><release>释放：</release>贝蕾亚释放一次吼叫，基于蓄力时间造成至多<magicDamage>?魔法伤害</magicDamage>，以及持续?秒的?%<status>减速</status>。在完全蓄力后，吼叫会<status>击退</status>敌人们，对那些与墙体碰撞的敌人造成<magicDamage>?魔法伤害</magicDamage>和?秒<status>晕眩</status>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BriarE.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "毙除",
+              "description": "贝蕾亚踢出她的囚枷中的血石，让被它命中的第一个英雄成为她的猎物。她随后会径直走向该目标，在抵达目标处时恐惧周围的其它敌人们，并进入一个彻底血狂的状态。她将追击她的猎物直至阵亡才罢休，获得【血莽】的助益以及额外的护甲、魔抗、生命偷取和移动速度。",
+              "max_rank": 3,
+              "range_burn": [
+                10000
+              ],
+              "cooldown_burn": [
+                120,
+                100,
+                80
+              ],
+              "cooldown_burn_float": [
+                120,
+                100,
+                80
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "贝蕾亚踢出她的囚枷中的血石并飞到被它命中的第一个英雄的位置，将这个英雄标记为她的猎物。在着陆时，她对附近的一切造成<magicDamage>?魔法伤害</magicDamage>并使那些并非她猎物的敌人们<status>逃跑</status>?秒。她随后会进入一个强化版<keywordMajor>血莽</keywordMajor>状态并将追击她的猎物直至阵亡才罢休。在此期间，她获得?<scaleArmor>护甲</scaleArmor> 和<scaleMR>魔法抗性</scaleMR>、?%生命偷取和额外的<speed>?%移动速度</speed>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BriarR.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 233000,
+              "champion_id": 233,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Briar_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 6300
+                },
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 233001,
+              "champion_id": 233,
+              "name": "妖怪艺术家 贝蕾亚",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Briar_1.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2023-09-13T11:00:00+09:00"
+            },
+            {
+              "id": 233010,
+              "champion_id": 233,
+              "name": "幻灵海魔人 贝蕾亚",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Briar_10.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2024-07-31T09:00:00+09:00"
+            }
+          ]
+        }
+      },
+      {
         "champion_id": 245,
-        "play": 1198,
-        "win": 654,
+        "play": 1201,
+        "win": 655,
         "meta": {
           "id": 245,
           "key": "Ekko",
@@ -8281,185 +8457,9 @@
         }
       },
       {
-        "champion_id": 233,
-        "play": 1196,
-        "win": 600,
-        "meta": {
-          "id": 233,
-          "key": "Briar",
-          "name": "狂厄蔷薇",
-          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Briar.png",
-          "evolve": [],
-          "partype": "怒气",
-          "passive": {
-            "name": "猩红诅咒",
-            "description": "贝蕾亚的攻击与技能会造成可叠加的流血效果，同时基于这个效果的伤害治疗自身。她永远处于饥饿状态，会根据自己的已损失生命值获得更高的治疗，但缺乏自带的生命回复。",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/BriarP.png",
-            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_P1.webm"
-          },
-          "spells": [
-            {
-              "key": "Q",
-              "name": "冲头",
-              "description": "贝蕾亚跃向一个单位并用她的（痛苦之）脚镣命中敌人们，将他们晕眩并削减他们的护甲。",
-              "max_rank": 5,
-              "range_burn": [
-                475
-              ],
-              "cooldown_burn": [
-                13,
-                12,
-                11,
-                10,
-                9
-              ],
-              "cooldown_burn_float": [
-                13,
-                12,
-                11,
-                10,
-                9
-              ],
-              "cost_burn": [
-                0
-              ],
-              "tooltip": "贝蕾亚跃向一个单位，将其<status>晕眩</status>?秒，造成<magicDamage>?魔法伤害</magicDamage>和持续?秒的?%<scaleArmor>护甲削减</scaleArmor>与<scaleMR>魔抗削减</scaleMR>。<br /><br /><rules>如果贝蕾亚在<keywordMajor>血莽</keywordMajor>期间对一个小兵或野怪施放这个技能，那么她会停止将英雄作为优先目标。</rules>?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BriarQ.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_Q1.webm"
-            },
-            {
-              "key": "W",
-              "name": "血莽 / 噬击",
-              "description": "贝蕾亚向前跳跃并击碎她的囚枷，进入一种【血莽】状态来使她无休止地追击相距最近的那个敌人（优先以英雄为目标）。在【血莽】状态下，她的攻击速度和移动速度获得提升，并且她的攻击会在她目标四周的一个区域内造成伤害。<br><br>贝蕾亚可以在【血莽】状态下再次激活这个技能，来让她的下一次攻击噬咬她的目标，造成基于目标已损失生命值的额外伤害，并且基于她造成的伤害来为她提供治疗效果。",
-              "max_rank": 5,
-              "range_burn": [
-                350
-              ],
-              "cooldown_burn": [
-                14,
-                13,
-                12,
-                11,
-                10
-              ],
-              "cooldown_burn_float": [
-                14,
-                13,
-                12,
-                11,
-                10
-              ],
-              "cost_burn": [
-                0
-              ],
-              "tooltip": "贝蕾亚跳跃并进入一种<keywordMajor>血莽</keywordMajor>状态，自我嘲讽至相距最近的那个敌人，持续?秒，优先以英雄为目标。在<keywordMajor>血莽</keywordMajor>状态下，她获得<attackSpeed>?%攻击速度</attackSpeed>和<speed>?%移动速度</speed>，并且她的攻击会对目标四周的敌人们造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br />贝蕾亚可以<recast>再次施放</recast>这个技能来强化她的下一次攻击。这次攻击造成<physicalDamage>? + ?%已损失生命值的物理伤害</physicalDamage>并<healing>为贝蕾亚提供?+?%已造成伤害值的治疗效果</healing>。<br />?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BriarW.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_W1.webm"
-            },
-            {
-              "key": "E",
-              "name": "惊吼",
-              "description": "贝蕾亚重新集中她的意志，移除【血莽】并将能量引导为一次强力吼叫，对敌人造成伤害和减速。在蓄力时，她获得伤害减免并回复一部分最大生命值。一次完全蓄力的吼叫会将敌人们击退，对那些与墙体碰撞的敌人造成额外伤害和晕眩。",
-              "max_rank": 5,
-              "range_burn": [
-                400
-              ],
-              "cooldown_burn": [
-                16
-              ],
-              "cooldown_burn_float": [
-                16
-              ],
-              "cost_burn": [
-                0
-              ],
-              "tooltip": "<charge>开始蓄力</charge>：贝蕾亚移除<keywordMajor>血莽</keywordMajor>并聚集能量，获得?%伤害减免并在1秒里持续获得共<healing>?治疗效果</healing>。<br /><br /><release>释放：</release>贝蕾亚释放一次吼叫，基于蓄力时间造成至多<magicDamage>?魔法伤害</magicDamage>，以及持续?秒的?%<status>减速</status>。在完全蓄力后，吼叫会<status>击退</status>敌人们，对那些与墙体碰撞的敌人造成<magicDamage>?魔法伤害</magicDamage>和?秒<status>晕眩</status>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BriarE.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_E1.webm"
-            },
-            {
-              "key": "R",
-              "name": "毙除",
-              "description": "贝蕾亚踢出她的囚枷中的血石，让被它命中的第一个英雄成为她的猎物。她随后会径直走向该目标，在抵达目标处时恐惧周围的其它敌人们，并进入一个彻底血狂的状态。她将追击她的猎物直至阵亡才罢休，获得【血莽】的助益以及额外的护甲、魔抗、生命偷取和移动速度。",
-              "max_rank": 3,
-              "range_burn": [
-                10000
-              ],
-              "cooldown_burn": [
-                120,
-                100,
-                80
-              ],
-              "cooldown_burn_float": [
-                120,
-                100,
-                80
-              ],
-              "cost_burn": [
-                0
-              ],
-              "tooltip": "贝蕾亚踢出她的囚枷中的血石并飞到被它命中的第一个英雄的位置，将这个英雄标记为她的猎物。在着陆时，她对附近的一切造成<magicDamage>?魔法伤害</magicDamage>并使那些并非她猎物的敌人们<status>逃跑</status>?秒。她随后会进入一个强化版<keywordMajor>血莽</keywordMajor>状态并将追击她的猎物直至阵亡才罢休。在此期间，她获得?<scaleArmor>护甲</scaleArmor> 和<scaleMR>魔法抗性</scaleMR>、?%生命偷取和额外的<speed>?%移动速度</speed>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BriarR.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_R1.webm"
-            }
-          ],
-          "skins": [
-            {
-              "id": 233000,
-              "champion_id": 233,
-              "name": "default",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Briar_0.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "IP",
-                  "cost": 6300
-                },
-                {
-                  "currency": "RP",
-                  "cost": 975
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 233001,
-              "champion_id": 233,
-              "name": "妖怪艺术家 贝蕾亚",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Briar_1.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2023-09-13T11:00:00+09:00"
-            },
-            {
-              "id": 233010,
-              "champion_id": 233,
-              "name": "幻灵海魔人 贝蕾亚",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Briar_10.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2024-07-31T09:00:00+09:00"
-            }
-          ]
-        }
-      },
-      {
         "champion_id": 102,
-        "play": 1135,
-        "win": 618,
+        "play": 1138,
+        "win": 620,
         "meta": {
           "id": 102,
           "key": "Shyvana",
@@ -8720,8 +8720,8 @@
       },
       {
         "champion_id": 203,
-        "play": 942,
-        "win": 477,
+        "play": 944,
+        "win": 479,
         "meta": {
           "id": 203,
           "key": "Kindred",
@@ -8974,8 +8974,8 @@
       },
       {
         "champion_id": 113,
-        "play": 895,
-        "win": 454,
+        "play": 900,
+        "win": 455,
         "meta": {
           "id": 113,
           "key": "Sejuani",
@@ -9284,8 +9284,8 @@
       },
       {
         "champion_id": 19,
-        "play": 881,
-        "win": 426,
+        "play": 885,
+        "win": 429,
         "meta": {
           "id": 19,
           "key": "Warwick",
@@ -9627,8 +9627,8 @@
       },
       {
         "champion_id": 154,
-        "play": 842,
-        "win": 412,
+        "play": 843,
+        "win": 413,
         "meta": {
           "id": 154,
           "key": "Zac",
@@ -9863,8 +9863,8 @@
       },
       {
         "champion_id": 106,
-        "play": 830,
-        "win": 422,
+        "play": 834,
+        "win": 425,
         "meta": {
           "id": 106,
           "key": "Volibear",
@@ -10130,8 +10130,8 @@
       },
       {
         "champion_id": 107,
-        "play": 826,
-        "win": 467,
+        "play": 831,
+        "win": 471,
         "meta": {
           "id": 107,
           "key": "Rengar",
@@ -10382,8 +10382,8 @@
       },
       {
         "champion_id": 5,
-        "play": 796,
-        "win": 413,
+        "play": 802,
+        "win": 416,
         "meta": {
           "id": 5,
           "key": "XinZhao",
@@ -10667,8 +10667,8 @@
       },
       {
         "champion_id": 62,
-        "play": 761,
-        "win": 378,
+        "play": 764,
+        "win": 379,
         "meta": {
           "id": 62,
           "key": "MonkeyKing",
@@ -10953,8 +10953,8 @@
       },
       {
         "champion_id": 9,
-        "play": 740,
-        "win": 379,
+        "play": 742,
+        "win": 380,
         "meta": {
           "id": 9,
           "key": "Fiddlesticks",
@@ -11275,8 +11275,8 @@
       },
       {
         "champion_id": 200,
-        "play": 699,
-        "win": 358,
+        "play": 706,
+        "win": 361,
         "meta": {
           "id": 200,
           "key": "Belveth",
@@ -11462,8 +11462,8 @@
       },
       {
         "champion_id": 28,
-        "play": 689,
-        "win": 355,
+        "play": 693,
+        "win": 357,
         "meta": {
           "id": 28,
           "key": "Evelynn",
@@ -11821,8 +11821,8 @@
       },
       {
         "champion_id": 20,
-        "play": 686,
-        "win": 350,
+        "play": 691,
+        "win": 353,
         "meta": {
           "id": 20,
           "key": "Nunu",
@@ -12135,8 +12135,8 @@
       },
       {
         "champion_id": 79,
-        "play": 685,
-        "win": 347,
+        "play": 689,
+        "win": 350,
         "meta": {
           "id": 79,
           "key": "Gragas",
@@ -12461,8 +12461,8 @@
       },
       {
         "champion_id": 63,
-        "play": 680,
-        "win": 380,
+        "play": 684,
+        "win": 383,
         "meta": {
           "id": 63,
           "key": "Brand",
@@ -12793,8 +12793,8 @@
       },
       {
         "champion_id": 60,
-        "play": 659,
-        "win": 298,
+        "play": 664,
+        "win": 300,
         "meta": {
           "id": 60,
           "key": "Elise",
@@ -13058,7 +13058,7 @@
       },
       {
         "champion_id": 238,
-        "play": 537,
+        "play": 539,
         "win": 292,
         "meta": {
           "id": 238,
@@ -13387,8 +13387,8 @@
       },
       {
         "champion_id": 517,
-        "play": 509,
-        "win": 295,
+        "play": 514,
+        "win": 299,
         "meta": {
           "id": 517,
           "key": "Sylas",
@@ -13640,7 +13640,7 @@
       },
       {
         "champion_id": 30,
-        "play": 493,
+        "play": 495,
         "win": 281,
         "meta": {
           "id": 30,
@@ -13908,7 +13908,7 @@
       },
       {
         "champion_id": 72,
-        "play": 463,
+        "play": 467,
         "win": 219,
         "meta": {
           "id": 72,
@@ -14145,8 +14145,8 @@
       },
       {
         "champion_id": 91,
-        "play": 428,
-        "win": 226,
+        "play": 430,
+        "win": 227,
         "meta": {
           "id": 91,
           "key": "Talon",
@@ -14463,7 +14463,7 @@
       },
       {
         "champion_id": 421,
-        "play": 401,
+        "play": 402,
         "win": 201,
         "meta": {
           "id": 421,
@@ -14676,8 +14676,8 @@
       },
       {
         "champion_id": 887,
-        "play": 397,
-        "win": 217,
+        "play": 399,
+        "win": 218,
         "meta": {
           "id": 887,
           "key": "Gwen",
@@ -14890,8 +14890,8 @@
       },
       {
         "champion_id": 427,
-        "play": 392,
-        "win": 206,
+        "play": 393,
+        "win": 207,
         "meta": {
           "id": 427,
           "key": "Ivern",
@@ -15096,7 +15096,7 @@
       },
       {
         "champion_id": 163,
-        "play": 339,
+        "play": 340,
         "win": 176,
         "meta": {
           "id": 163,
@@ -15326,8 +15326,8 @@
       },
       {
         "champion_id": 24,
-        "play": 329,
-        "win": 176,
+        "play": 332,
+        "win": 178,
         "meta": {
           "id": 24,
           "key": "Jax",
@@ -15709,8 +15709,8 @@
       },
       {
         "champion_id": 57,
-        "play": 219,
-        "win": 125,
+        "play": 221,
+        "win": 127,
         "meta": {
           "id": 57,
           "key": "Maokai",
@@ -16007,7 +16007,7 @@
       },
       {
         "champion_id": 143,
-        "play": 170,
+        "play": 171,
         "win": 90,
         "meta": {
           "id": 143,
@@ -16303,6 +16303,258 @@
               ],
               "sales": null,
               "release_date": "2020-04-16T04:00:00+09:00"
+            }
+          ]
+        }
+      },
+      {
+        "champion_id": 246,
+        "play": 163,
+        "win": 84,
+        "meta": {
+          "id": 246,
+          "key": "Qiyana",
+          "name": "元素女皇",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Qiyana.png",
+          "evolve": [],
+          "partype": "法力",
+          "passive": {
+            "name": "凌人贵气",
+            "description": "奇亚娜对每名敌人发起的第一次普攻或技能会造成额外伤害。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Qiyana_Passive.png",
+            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0246/ability_0246_P1.webm"
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "元素之怒 / 以绪塔尔之锋",
+              "description": "奇亚娜挥舞她的武器，造成伤害和基于她元素的额外效果。",
+              "max_rank": 5,
+              "range_burn": [
+                525
+              ],
+              "cooldown_burn": [
+                7
+              ],
+              "cooldown_burn_float": [
+                7
+              ],
+              "cost_burn": [
+                35
+              ],
+              "tooltip": "如果奇亚娜并未拥有一个<keywordMajor>附魔</keywordMajor>，那么她会进行斩击，对小范围内的敌人们造成<physicalDamage>?物理伤害</physicalDamage>。如果她已有一个<keywordMajor>附魔</keywordMajor>，那么这个技能会获得额外距离并基于<keywordMajor>附魔</keywordMajor>类型获得一个额外效果：<li><keywordMajor>寒冰附魔</keywordMajor>：暂时<status>禁锢</status>，然后是持续?秒的?%<status>减速</status>。<li><keywordMajor>岩石附魔</keywordMajor>：对低于?%生命值的敌人们造成额外的<physicalDamage>?物理伤害</physicalDamage>。<li><keywordMajor>荒野附魔</keywordMajor>：留下一条小径，来使奇亚娜<keywordStealth>隐形</keywordStealth>并提供<speed>?%移动速度</speed>。<br />?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/QiyanaQ.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0246/ability_0246_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "方圆塑令",
+              "description": "奇亚娜突进到一个位置并用一种元素为她的武器附魔。当武器有附魔时，她的攻击和技能会造成额外伤害。",
+              "max_rank": 5,
+              "range_burn": [
+                1100
+              ],
+              "cooldown_burn": [
+                7
+              ],
+              "cooldown_burn_float": [
+                7
+              ],
+              "cost_burn": [
+                25,
+                30,
+                35,
+                40,
+                45
+              ],
+              "tooltip": "<spellPassive>被动：</spellPassive>当奇亚娜的武器已被<keywordMajor>附魔</keywordMajor>时，她会获得<attackSpeed>?%攻击速度</attackSpeed>并且她的攻击造成额外的<magicDamage>?魔法伤害</magicDamage>。她还会在相应地形类型附近获得非战斗状态下的<speed>?%移动速度</speed>。<br /><br /><spellActive>主动：</spellActive>奇亚娜突进向一个附近的草丛、地形或河流，然后用该地形类型来<keywordMajor>附魔</keywordMajor>她的武器。这会刷新<spellName>元素之怒 / 以绪塔尔之锋</spellName>的冷却时间。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/QiyanaW.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0246/ability_0246_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "天纵之勇",
+              "description": "奇亚娜突进至一名敌人处，并对其造成伤害。",
+              "max_rank": 5,
+              "range_burn": [
+                650
+              ],
+              "cooldown_burn": [
+                11,
+                10,
+                9,
+                8,
+                7
+              ],
+              "cooldown_burn_float": [
+                11,
+                10,
+                9,
+                8,
+                7
+              ],
+              "cost_burn": [
+                40,
+                45,
+                50,
+                55,
+                60
+              ],
+              "tooltip": "奇亚娜冲刺并经过一名敌人，并对其造成<physicalDamage>?物理伤害</physicalDamage>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/QiyanaE.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0246/ability_0246_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "惊才绝景",
+              "description": "奇亚娜发出一道冲击波来引爆沿途命中的任何元素，对元素附近的敌人造成伤害和晕眩效果。",
+              "max_rank": 3,
+              "range_burn": [
+                950
+              ],
+              "cooldown_burn": [
+                120
+              ],
+              "cooldown_burn_float": [
+                120
+              ],
+              "cost_burn": [
+                100
+              ],
+              "tooltip": "奇亚娜放出一道冲击波来<status>击退</status>敌人们并在它命中墙体时爆炸。爆炸会沿着地形的完整边缘行进，<status>晕眩</status>0.5到?秒并造成<physicalDamage>?</physicalDamage>外加<physicalDamage>?最大生命值的物理伤害</physicalDamage>。 <status>晕眩</status>时长会随着爆炸的移动距离而缩短。<br /><br />冲击波途经的任何河流与草丛也会在短暂延迟后爆炸，造成等值的伤害和<status>晕眩</status>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/QiyanaR.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0246/ability_0246_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 246000,
+              "champion_id": 246,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Qiyana_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 4800
+                },
+                {
+                  "currency": "RP",
+                  "cost": 880
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 246020,
+              "champion_id": 246,
+              "name": "冲击之刃 奇亚娜",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Qiyana_20.jpg",
+              "skin_video_url": "https://youtu.be/lArx86ggd4c",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2022-02-17T04:00:00+09:00"
+            },
+            {
+              "id": 246011,
+              "champion_id": 246,
+              "name": "女帝 奇亚娜",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Qiyana_11.jpg",
+              "skin_video_url": "https://youtu.be/hYDae1XkpYs",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2020-12-10T04:00:00+09:00"
+            },
+            {
+              "id": 246001,
+              "champion_id": 246,
+              "name": "战场BOSS 奇亚娜",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Qiyana_1.jpg",
+              "skin_video_url": "https://youtu.be/QtUuwcGKUSA",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2019-06-28T04:00:00+09:00"
+            },
+            {
+              "id": 246030,
+              "champion_id": 246,
+              "name": "春晖神女 奇亚娜",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Qiyana_30.jpg",
+              "skin_video_url": "https://youtu.be/TtbgJL1ZSIw",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2023-01-26T04:00:00+09:00"
+            },
+            {
+              "id": 246040,
+              "champion_id": 246,
+              "name": "灵之菊 奇亚娜",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Qiyana_40.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2023-09-27T11:00:00+09:00"
+            },
+            {
+              "id": 246002,
+              "champion_id": 246,
+              "name": "真实伤害 奇亚娜",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Qiyana_2.jpg",
+              "skin_video_url": "https://youtu.be/GCKW8ntI7ig",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2019-11-09T19:00:00+09:00"
+            },
+            {
+              "id": 246010,
+              "champion_id": 246,
+              "name": "至臻 真实伤害 奇亚娜",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Qiyana_10.jpg",
+              "skin_video_url": "https://youtu.be/LnsJsZ5quew",
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 246021,
+              "champion_id": 246,
+              "name": "至臻 真实伤害 奇亚娜 (2022)",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Qiyana_21.jpg",
+              "skin_video_url": "https://youtu.be/cn4gvX1YE60",
+              "prices": null,
+              "sales": null,
+              "release_date": null
             }
           ]
         }
@@ -16624,258 +16876,6 @@
                   "cost": 1350
                 }
               ],
-              "sales": null,
-              "release_date": null
-            }
-          ]
-        }
-      },
-      {
-        "champion_id": 246,
-        "play": 162,
-        "win": 84,
-        "meta": {
-          "id": 246,
-          "key": "Qiyana",
-          "name": "元素女皇",
-          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Qiyana.png",
-          "evolve": [],
-          "partype": "法力",
-          "passive": {
-            "name": "凌人贵气",
-            "description": "奇亚娜对每名敌人发起的第一次普攻或技能会造成额外伤害。",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Qiyana_Passive.png",
-            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0246/ability_0246_P1.webm"
-          },
-          "spells": [
-            {
-              "key": "Q",
-              "name": "元素之怒 / 以绪塔尔之锋",
-              "description": "奇亚娜挥舞她的武器，造成伤害和基于她元素的额外效果。",
-              "max_rank": 5,
-              "range_burn": [
-                525
-              ],
-              "cooldown_burn": [
-                7
-              ],
-              "cooldown_burn_float": [
-                7
-              ],
-              "cost_burn": [
-                35
-              ],
-              "tooltip": "如果奇亚娜并未拥有一个<keywordMajor>附魔</keywordMajor>，那么她会进行斩击，对小范围内的敌人们造成<physicalDamage>?物理伤害</physicalDamage>。如果她已有一个<keywordMajor>附魔</keywordMajor>，那么这个技能会获得额外距离并基于<keywordMajor>附魔</keywordMajor>类型获得一个额外效果：<li><keywordMajor>寒冰附魔</keywordMajor>：暂时<status>禁锢</status>，然后是持续?秒的?%<status>减速</status>。<li><keywordMajor>岩石附魔</keywordMajor>：对低于?%生命值的敌人们造成额外的<physicalDamage>?物理伤害</physicalDamage>。<li><keywordMajor>荒野附魔</keywordMajor>：留下一条小径，来使奇亚娜<keywordStealth>隐形</keywordStealth>并提供<speed>?%移动速度</speed>。<br />?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/QiyanaQ.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0246/ability_0246_Q1.webm"
-            },
-            {
-              "key": "W",
-              "name": "方圆塑令",
-              "description": "奇亚娜突进到一个位置并用一种元素为她的武器附魔。当武器有附魔时，她的攻击和技能会造成额外伤害。",
-              "max_rank": 5,
-              "range_burn": [
-                1100
-              ],
-              "cooldown_burn": [
-                7
-              ],
-              "cooldown_burn_float": [
-                7
-              ],
-              "cost_burn": [
-                25,
-                30,
-                35,
-                40,
-                45
-              ],
-              "tooltip": "<spellPassive>被动：</spellPassive>当奇亚娜的武器已被<keywordMajor>附魔</keywordMajor>时，她会获得<attackSpeed>?%攻击速度</attackSpeed>并且她的攻击造成额外的<magicDamage>?魔法伤害</magicDamage>。她还会在相应地形类型附近获得非战斗状态下的<speed>?%移动速度</speed>。<br /><br /><spellActive>主动：</spellActive>奇亚娜突进向一个附近的草丛、地形或河流，然后用该地形类型来<keywordMajor>附魔</keywordMajor>她的武器。这会刷新<spellName>元素之怒 / 以绪塔尔之锋</spellName>的冷却时间。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/QiyanaW.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0246/ability_0246_W1.webm"
-            },
-            {
-              "key": "E",
-              "name": "天纵之勇",
-              "description": "奇亚娜突进至一名敌人处，并对其造成伤害。",
-              "max_rank": 5,
-              "range_burn": [
-                650
-              ],
-              "cooldown_burn": [
-                11,
-                10,
-                9,
-                8,
-                7
-              ],
-              "cooldown_burn_float": [
-                11,
-                10,
-                9,
-                8,
-                7
-              ],
-              "cost_burn": [
-                40,
-                45,
-                50,
-                55,
-                60
-              ],
-              "tooltip": "奇亚娜冲刺并经过一名敌人，并对其造成<physicalDamage>?物理伤害</physicalDamage>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/QiyanaE.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0246/ability_0246_E1.webm"
-            },
-            {
-              "key": "R",
-              "name": "惊才绝景",
-              "description": "奇亚娜发出一道冲击波来引爆沿途命中的任何元素，对元素附近的敌人造成伤害和晕眩效果。",
-              "max_rank": 3,
-              "range_burn": [
-                950
-              ],
-              "cooldown_burn": [
-                120
-              ],
-              "cooldown_burn_float": [
-                120
-              ],
-              "cost_burn": [
-                100
-              ],
-              "tooltip": "奇亚娜放出一道冲击波来<status>击退</status>敌人们并在它命中墙体时爆炸。爆炸会沿着地形的完整边缘行进，<status>晕眩</status>0.5到?秒并造成<physicalDamage>?</physicalDamage>外加<physicalDamage>?最大生命值的物理伤害</physicalDamage>。 <status>晕眩</status>时长会随着爆炸的移动距离而缩短。<br /><br />冲击波途经的任何河流与草丛也会在短暂延迟后爆炸，造成等值的伤害和<status>晕眩</status>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/QiyanaR.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0246/ability_0246_R1.webm"
-            }
-          ],
-          "skins": [
-            {
-              "id": 246000,
-              "champion_id": 246,
-              "name": "default",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Qiyana_0.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "IP",
-                  "cost": 4800
-                },
-                {
-                  "currency": "RP",
-                  "cost": 880
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 246020,
-              "champion_id": 246,
-              "name": "冲击之刃 奇亚娜",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Qiyana_20.jpg",
-              "skin_video_url": "https://youtu.be/lArx86ggd4c",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2022-02-17T04:00:00+09:00"
-            },
-            {
-              "id": 246011,
-              "champion_id": 246,
-              "name": "女帝 奇亚娜",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Qiyana_11.jpg",
-              "skin_video_url": "https://youtu.be/hYDae1XkpYs",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2020-12-10T04:00:00+09:00"
-            },
-            {
-              "id": 246001,
-              "champion_id": 246,
-              "name": "战场BOSS 奇亚娜",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Qiyana_1.jpg",
-              "skin_video_url": "https://youtu.be/QtUuwcGKUSA",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2019-06-28T04:00:00+09:00"
-            },
-            {
-              "id": 246030,
-              "champion_id": 246,
-              "name": "春晖神女 奇亚娜",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Qiyana_30.jpg",
-              "skin_video_url": "https://youtu.be/TtbgJL1ZSIw",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2023-01-26T04:00:00+09:00"
-            },
-            {
-              "id": 246040,
-              "champion_id": 246,
-              "name": "灵之菊 奇亚娜",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Qiyana_40.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2023-09-27T11:00:00+09:00"
-            },
-            {
-              "id": 246002,
-              "champion_id": 246,
-              "name": "真实伤害 奇亚娜",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Qiyana_2.jpg",
-              "skin_video_url": "https://youtu.be/GCKW8ntI7ig",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2019-11-09T19:00:00+09:00"
-            },
-            {
-              "id": 246010,
-              "champion_id": 246,
-              "name": "至臻 真实伤害 奇亚娜",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Qiyana_10.jpg",
-              "skin_video_url": "https://youtu.be/LnsJsZ5quew",
-              "prices": null,
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 246021,
-              "champion_id": 246,
-              "name": "至臻 真实伤害 奇亚娜 (2022)",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Qiyana_21.jpg",
-              "skin_video_url": "https://youtu.be/cn4gvX1YE60",
-              "prices": null,
               "sales": null,
               "release_date": null
             }
@@ -17249,17 +17249,17 @@
         4,
         11
       ],
-      "win": 29285,
-      "play": 56931,
-      "pick_rate": 0.9291
+      "win": 29415,
+      "play": 57187,
+      "pick_rate": 0.9292
     },
     {
       "ids": [
         6,
         11
       ],
-      "win": 1122,
-      "play": 2407,
+      "win": 1128,
+      "play": 2419,
       "pick_rate": 0.0393
     },
     {
@@ -17267,8 +17267,8 @@
         11,
         14
       ],
-      "win": 818,
-      "play": 1654,
+      "win": 820,
+      "play": 1659,
       "pick_rate": 0.027
     },
     {
@@ -17495,9 +17495,9 @@
         "W",
         "W"
       ],
-      "play": 23138,
-      "win": 15161,
-      "pick_rate": 0.6756
+      "play": 23242,
+      "win": 15229,
+      "pick_rate": 0.6754
     },
     {
       "order": [
@@ -17517,9 +17517,9 @@
         "W",
         "W"
       ],
-      "play": 3737,
-      "win": 2428,
-      "pick_rate": 0.1091
+      "play": 3749,
+      "win": 2435,
+      "pick_rate": 0.1089
     },
     {
       "order": [
@@ -17539,9 +17539,9 @@
         "W",
         "W"
       ],
-      "play": 536,
-      "win": 348,
-      "pick_rate": 0.0156
+      "play": 540,
+      "win": 350,
+      "pick_rate": 0.0157
     },
     {
       "order": [
@@ -17561,9 +17561,9 @@
         "W",
         "W"
       ],
-      "play": 479,
-      "win": 327,
-      "pick_rate": 0.014
+      "play": 485,
+      "win": 331,
+      "pick_rate": 0.0141
     },
     {
       "order": [
@@ -17583,8 +17583,8 @@
         "W",
         "W"
       ],
-      "play": 334,
-      "win": 223,
+      "play": 337,
+      "win": 224,
       "pick_rate": 0.0098
     }
   ],
@@ -17595,9 +17595,9 @@
         "E",
         "W"
       ],
-      "play": 31528,
-      "win": 20546,
-      "pick_rate": 0.9205,
+      "play": 31672,
+      "win": 20637,
+      "pick_rate": 0.9204,
       "builds": [
         {
           "order": [
@@ -17617,9 +17617,9 @@
             "W",
             "W"
           ],
-          "play": 23138,
-          "win": 15161,
-          "pick_rate": 0.7339
+          "play": 23242,
+          "win": 15229,
+          "pick_rate": 0.7338
         },
         {
           "order": [
@@ -17639,9 +17639,9 @@
             "W",
             "W"
           ],
-          "play": 3737,
-          "win": 2428,
-          "pick_rate": 0.1185
+          "play": 3749,
+          "win": 2435,
+          "pick_rate": 0.1184
         },
         {
           "order": [
@@ -17661,8 +17661,8 @@
             "W",
             "W"
           ],
-          "play": 536,
-          "win": 348,
+          "play": 540,
+          "win": 350,
           "pick_rate": 0.017
         },
         {
@@ -17683,8 +17683,8 @@
             "W",
             "W"
           ],
-          "play": 331,
-          "win": 195,
+          "play": 332,
+          "win": 196,
           "pick_rate": 0.0105
         },
         {
@@ -17717,9 +17717,9 @@
         "Q",
         "W"
       ],
-      "play": 1606,
-      "win": 1076,
-      "pick_rate": 0.0469,
+      "play": 1619,
+      "win": 1083,
+      "pick_rate": 0.047,
       "builds": [
         {
           "order": [
@@ -17739,9 +17739,9 @@
             "W",
             "W"
           ],
-          "play": 479,
-          "win": 327,
-          "pick_rate": 0.2983
+          "play": 485,
+          "win": 331,
+          "pick_rate": 0.2996
         },
         {
           "order": [
@@ -17761,9 +17761,9 @@
             "W",
             "W"
           ],
-          "play": 334,
-          "win": 223,
-          "pick_rate": 0.208
+          "play": 337,
+          "win": 224,
+          "pick_rate": 0.2082
         },
         {
           "order": [
@@ -17785,7 +17785,7 @@
           ],
           "play": 85,
           "win": 60,
-          "pick_rate": 0.0529
+          "pick_rate": 0.0525
         },
         {
           "order": [
@@ -17807,7 +17807,7 @@
           ],
           "play": 73,
           "win": 50,
-          "pick_rate": 0.0455
+          "pick_rate": 0.0451
         },
         {
           "order": [
@@ -17829,7 +17829,7 @@
           ],
           "play": 65,
           "win": 46,
-          "pick_rate": 0.0405
+          "pick_rate": 0.0401
         }
       ]
     },
@@ -17839,8 +17839,8 @@
         "W",
         "E"
       ],
-      "play": 837,
-      "win": 556,
+      "play": 840,
+      "win": 557,
       "pick_rate": 0.0244,
       "builds": [
         {
@@ -17863,7 +17863,7 @@
           ],
           "play": 293,
           "win": 206,
-          "pick_rate": 0.3501
+          "pick_rate": 0.3488
         },
         {
           "order": [
@@ -17885,7 +17885,7 @@
           ],
           "play": 38,
           "win": 26,
-          "pick_rate": 0.0454
+          "pick_rate": 0.0452
         },
         {
           "order": [
@@ -17907,7 +17907,7 @@
           ],
           "play": 32,
           "win": 21,
-          "pick_rate": 0.0382
+          "pick_rate": 0.0381
         },
         {
           "order": [
@@ -17929,7 +17929,7 @@
           ],
           "play": 25,
           "win": 20,
-          "pick_rate": 0.0299
+          "pick_rate": 0.0298
         },
         {
           "order": [
@@ -17949,9 +17949,9 @@
             "W",
             "E"
           ],
-          "play": 23,
+          "play": 24,
           "win": 18,
-          "pick_rate": 0.0275
+          "pick_rate": 0.0286
         }
       ]
     },
@@ -17961,9 +17961,9 @@
         "W",
         "Q"
       ],
-      "play": 135,
-      "win": 89,
-      "pick_rate": 0.0039,
+      "play": 136,
+      "win": 90,
+      "pick_rate": 0.004,
       "builds": [
         {
           "order": [
@@ -17985,7 +17985,7 @@
           ],
           "play": 18,
           "win": 8,
-          "pick_rate": 0.1333
+          "pick_rate": 0.1324
         },
         {
           "order": [
@@ -18007,7 +18007,7 @@
           ],
           "play": 6,
           "win": 4,
-          "pick_rate": 0.0444
+          "pick_rate": 0.0441
         },
         {
           "order": [
@@ -18029,7 +18029,7 @@
           ],
           "play": 4,
           "win": 2,
-          "pick_rate": 0.0296
+          "pick_rate": 0.0294
         },
         {
           "order": [
@@ -18051,7 +18051,7 @@
           ],
           "play": 4,
           "win": 2,
-          "pick_rate": 0.0296
+          "pick_rate": 0.0294
         },
         {
           "order": [
@@ -18073,7 +18073,7 @@
           ],
           "play": 4,
           "win": 2,
-          "pick_rate": 0.0296
+          "pick_rate": 0.0294
         }
       ]
     },
@@ -18221,9 +18221,9 @@
         5008,
         5001
       ],
-      "play": 28535,
-      "win": 14808,
-      "pick_rate": 0.4605
+      "play": 28660,
+      "win": 14868,
+      "pick_rate": 0.4606
     },
     {
       "id": 8005,
@@ -18244,9 +18244,9 @@
         5008,
         5001
       ],
-      "play": 8775,
-      "win": 4291,
-      "pick_rate": 0.1416
+      "play": 8815,
+      "win": 4312,
+      "pick_rate": 0.1417
     },
     {
       "id": 8005,
@@ -18267,9 +18267,9 @@
         5008,
         5001
       ],
-      "play": 2738,
-      "win": 1310,
-      "pick_rate": 0.0442
+      "play": 2744,
+      "win": 1311,
+      "pick_rate": 0.0441
     },
     {
       "id": 9923,
@@ -18290,9 +18290,9 @@
         5008,
         5001
       ],
-      "play": 2431,
-      "win": 1382,
-      "pick_rate": 0.0392
+      "play": 2435,
+      "win": 1385,
+      "pick_rate": 0.0391
     },
     {
       "id": 9923,
@@ -18313,8 +18313,8 @@
         5008,
         5013
       ],
-      "play": 1028,
-      "win": 525,
+      "play": 1031,
+      "win": 526,
       "pick_rate": 0.0166
     }
   ],
@@ -18323,8 +18323,8 @@
       "id": 9923,
       "primary_page_id": 8100,
       "secondary_page_id": 8000,
-      "play": 38385,
-      "win": 20031,
+      "play": 38550,
+      "win": 20109,
       "pick_rate": 0.6195,
       "builds": [
         {
@@ -18346,9 +18346,9 @@
             5008,
             5001
           ],
-          "play": 28535,
-          "win": 14808,
-          "pick_rate": 0.7434
+          "play": 28660,
+          "win": 14868,
+          "pick_rate": 0.7435
         },
         {
           "id": 9923,
@@ -18369,9 +18369,9 @@
             5008,
             5001
           ],
-          "play": 2431,
-          "win": 1382,
-          "pick_rate": 0.0633
+          "play": 2435,
+          "win": 1385,
+          "pick_rate": 0.0632
         },
         {
           "id": 9923,
@@ -18392,9 +18392,9 @@
             5008,
             5013
           ],
-          "play": 1028,
-          "win": 525,
-          "pick_rate": 0.0268
+          "play": 1031,
+          "win": 526,
+          "pick_rate": 0.0267
         },
         {
           "id": 9923,
@@ -18415,8 +18415,8 @@
             5008,
             5011
           ],
-          "play": 817,
-          "win": 445,
+          "play": 823,
+          "win": 446,
           "pick_rate": 0.0213
         },
         {
@@ -18438,8 +18438,8 @@
             5008,
             5001
           ],
-          "play": 695,
-          "win": 372,
+          "play": 697,
+          "win": 374,
           "pick_rate": 0.0181
         }
       ]
@@ -18448,9 +18448,9 @@
       "id": 8005,
       "primary_page_id": 8000,
       "secondary_page_id": 8100,
-      "play": 12768,
-      "win": 6292,
-      "pick_rate": 0.2061,
+      "play": 12820,
+      "win": 6319,
+      "pick_rate": 0.206,
       "builds": [
         {
           "id": 8005,
@@ -18471,9 +18471,9 @@
             5008,
             5001
           ],
-          "play": 8775,
-          "win": 4291,
-          "pick_rate": 0.6873
+          "play": 8815,
+          "win": 4312,
+          "pick_rate": 0.6876
         },
         {
           "id": 8005,
@@ -18494,9 +18494,9 @@
             5008,
             5001
           ],
-          "play": 913,
-          "win": 458,
-          "pick_rate": 0.0715
+          "play": 918,
+          "win": 460,
+          "pick_rate": 0.0716
         },
         {
           "id": 8005,
@@ -18519,7 +18519,7 @@
           ],
           "play": 290,
           "win": 147,
-          "pick_rate": 0.0227
+          "pick_rate": 0.0226
         },
         {
           "id": 8005,
@@ -18540,7 +18540,7 @@
             5008,
             5013
           ],
-          "play": 276,
+          "play": 277,
           "win": 145,
           "pick_rate": 0.0216
         },
@@ -18565,7 +18565,7 @@
           ],
           "play": 276,
           "win": 154,
-          "pick_rate": 0.0216
+          "pick_rate": 0.0215
         }
       ]
     },
@@ -18573,9 +18573,9 @@
       "id": 8005,
       "primary_page_id": 8000,
       "secondary_page_id": 8300,
-      "play": 3467,
-      "win": 1683,
-      "pick_rate": 0.056,
+      "play": 3475,
+      "win": 1685,
+      "pick_rate": 0.0558,
       "builds": [
         {
           "id": 8005,
@@ -18596,9 +18596,9 @@
             5008,
             5001
           ],
-          "play": 2738,
-          "win": 1310,
-          "pick_rate": 0.7897
+          "play": 2744,
+          "win": 1311,
+          "pick_rate": 0.7896
         },
         {
           "id": 8005,
@@ -18621,7 +18621,7 @@
           ],
           "play": 161,
           "win": 88,
-          "pick_rate": 0.0464
+          "pick_rate": 0.0463
         },
         {
           "id": 8005,
@@ -18644,7 +18644,7 @@
           ],
           "play": 87,
           "win": 49,
-          "pick_rate": 0.0251
+          "pick_rate": 0.025
         },
         {
           "id": 8005,
@@ -18667,7 +18667,7 @@
           ],
           "play": 86,
           "win": 43,
-          "pick_rate": 0.0248
+          "pick_rate": 0.0247
         },
         {
           "id": 8005,
@@ -18698,8 +18698,8 @@
       "id": 8010,
       "primary_page_id": 8000,
       "secondary_page_id": 8100,
-      "play": 3322,
-      "win": 1717,
+      "play": 3334,
+      "win": 1727,
       "pick_rate": 0.0536,
       "builds": [
         {
@@ -18721,9 +18721,9 @@
             5008,
             5001
           ],
-          "play": 1000,
-          "win": 525,
-          "pick_rate": 0.301
+          "play": 1002,
+          "win": 527,
+          "pick_rate": 0.3005
         },
         {
           "id": 8010,
@@ -18746,7 +18746,7 @@
           ],
           "play": 294,
           "win": 155,
-          "pick_rate": 0.0885
+          "pick_rate": 0.0882
         },
         {
           "id": 8010,
@@ -18769,7 +18769,7 @@
           ],
           "play": 266,
           "win": 144,
-          "pick_rate": 0.0801
+          "pick_rate": 0.0798
         },
         {
           "id": 8010,
@@ -18792,7 +18792,7 @@
           ],
           "play": 128,
           "win": 58,
-          "pick_rate": 0.0385
+          "pick_rate": 0.0384
         },
         {
           "id": 8010,
@@ -18815,7 +18815,7 @@
           ],
           "play": 119,
           "win": 60,
-          "pick_rate": 0.0358
+          "pick_rate": 0.0357
         }
       ]
     },
@@ -18823,8 +18823,8 @@
       "id": 9923,
       "primary_page_id": 8100,
       "secondary_page_id": 8300,
-      "play": 1152,
-      "win": 589,
+      "play": 1158,
+      "win": 594,
       "pick_rate": 0.0186,
       "builds": [
         {
@@ -18846,9 +18846,9 @@
             5008,
             5001
           ],
-          "play": 414,
-          "win": 215,
-          "pick_rate": 0.3594
+          "play": 417,
+          "win": 217,
+          "pick_rate": 0.3601
         },
         {
           "id": 9923,
@@ -18869,9 +18869,9 @@
             5008,
             5001
           ],
-          "play": 212,
-          "win": 105,
-          "pick_rate": 0.184
+          "play": 213,
+          "win": 106,
+          "pick_rate": 0.1839
         },
         {
           "id": 9923,
@@ -18894,7 +18894,7 @@
           ],
           "play": 60,
           "win": 28,
-          "pick_rate": 0.0521
+          "pick_rate": 0.0518
         },
         {
           "id": 9923,
@@ -18917,7 +18917,7 @@
           ],
           "play": 49,
           "win": 30,
-          "pick_rate": 0.0425
+          "pick_rate": 0.0423
         },
         {
           "id": 9923,
@@ -18940,7 +18940,7 @@
           ],
           "play": 42,
           "win": 19,
-          "pick_rate": 0.0365
+          "pick_rate": 0.0363
         }
       ]
     }
@@ -18952,9 +18952,9 @@
         3124,
         3091
       ],
-      "play": 7669,
-      "win": 4808,
-      "pick_rate": 0.2019
+      "play": 7722,
+      "win": 4841,
+      "pick_rate": 0.2024
     },
     {
       "ids": [
@@ -18962,8 +18962,8 @@
         3124,
         6672
       ],
-      "play": 4336,
-      "win": 2721,
+      "play": 4355,
+      "win": 2735,
       "pick_rate": 0.1142
     },
     {
@@ -18972,9 +18972,9 @@
         6672,
         3124
       ],
-      "play": 3800,
-      "win": 2365,
-      "pick_rate": 0.1001
+      "play": 3813,
+      "win": 2372,
+      "pick_rate": 0.1
     },
     {
       "ids": [
@@ -18982,9 +18982,9 @@
         6672,
         3091
       ],
-      "play": 2591,
-      "win": 1562,
-      "pick_rate": 0.0682
+      "play": 2605,
+      "win": 1569,
+      "pick_rate": 0.0683
     },
     {
       "ids": [
@@ -18992,8 +18992,8 @@
         3124,
         6333
       ],
-      "play": 1266,
-      "win": 762,
+      "play": 1271,
+      "win": 763,
       "pick_rate": 0.0333
     },
     {
@@ -19002,9 +19002,9 @@
         3091,
         3124
       ],
-      "play": 1025,
+      "play": 1027,
       "win": 630,
-      "pick_rate": 0.027
+      "pick_rate": 0.0269
     },
     {
       "ids": [
@@ -19012,8 +19012,8 @@
         6672,
         6333
       ],
-      "play": 972,
-      "win": 576,
+      "play": 978,
+      "win": 580,
       "pick_rate": 0.0256
     },
     {
@@ -19022,8 +19022,8 @@
         3124,
         3748
       ],
-      "play": 809,
-      "win": 474,
+      "play": 814,
+      "win": 478,
       "pick_rate": 0.0213
     },
     {
@@ -19032,9 +19032,9 @@
         3153,
         3124
       ],
-      "play": 747,
-      "win": 472,
-      "pick_rate": 0.0197
+      "play": 749,
+      "win": 473,
+      "pick_rate": 0.0196
     },
     {
       "ids": [
@@ -19042,9 +19042,9 @@
         3073,
         3050
       ],
-      "play": 716,
-      "win": 397,
-      "pick_rate": 0.0189
+      "play": 719,
+      "win": 400,
+      "pick_rate": 0.0188
     },
     {
       "ids": [
@@ -19052,9 +19052,9 @@
         3153,
         3124
       ],
-      "play": 511,
+      "play": 512,
       "win": 337,
-      "pick_rate": 0.0135
+      "pick_rate": 0.0134
     },
     {
       "ids": [
@@ -19062,8 +19062,8 @@
         3153,
         3091
       ],
-      "play": 470,
-      "win": 286,
+      "play": 472,
+      "win": 288,
       "pick_rate": 0.0124
     },
     {
@@ -19072,8 +19072,8 @@
         3091,
         6672
       ],
-      "play": 421,
-      "win": 251,
+      "play": 423,
+      "win": 252,
       "pick_rate": 0.0111
     },
     {
@@ -19082,8 +19082,8 @@
         6675,
         3071
       ],
-      "play": 417,
-      "win": 240,
+      "play": 420,
+      "win": 241,
       "pick_rate": 0.011
     },
     {
@@ -19092,8 +19092,8 @@
         3124,
         3153
       ],
-      "play": 413,
-      "win": 255,
+      "play": 415,
+      "win": 256,
       "pick_rate": 0.0109
     }
   ],
@@ -19102,41 +19102,41 @@
       "ids": [
         3006
       ],
-      "play": 30946,
-      "win": 16266,
-      "pick_rate": 0.5631
+      "play": 31094,
+      "win": 16341,
+      "pick_rate": 0.5633
     },
     {
       "ids": [
         3047
       ],
-      "play": 12304,
-      "win": 6401,
-      "pick_rate": 0.2239
+      "play": 12345,
+      "win": 6421,
+      "pick_rate": 0.2236
     },
     {
       "ids": [
         3111
       ],
-      "play": 11479,
-      "win": 6117,
-      "pick_rate": 0.2089
+      "play": 11534,
+      "win": 6142,
+      "pick_rate": 0.209
     },
     {
       "ids": [
         3009
       ],
-      "play": 140,
-      "win": 71,
-      "pick_rate": 0.0025
+      "play": 141,
+      "win": 72,
+      "pick_rate": 0.0026
     },
     {
       "ids": [
         3013
       ],
-      "play": 52,
+      "play": 53,
       "win": 16,
-      "pick_rate": 0.0009
+      "pick_rate": 0.001
     }
   ],
   "starter_items": [
@@ -19144,51 +19144,51 @@
       "ids": [
         1102
       ],
-      "play": 22611,
-      "win": 11923,
-      "pick_rate": 0.3604
+      "play": 22725,
+      "win": 11982,
+      "pick_rate": 0.3606
     },
     {
       "ids": [
         1102,
         2003
       ],
-      "play": 20846,
-      "win": 10531,
-      "pick_rate": 0.3322
+      "play": 20926,
+      "win": 10571,
+      "pick_rate": 0.332
     },
     {
       "ids": [
         1101,
         2003
       ],
-      "play": 8412,
-      "win": 3992,
-      "pick_rate": 0.1341
+      "play": 8460,
+      "win": 4014,
+      "pick_rate": 0.1342
     },
     {
       "ids": [
         1103,
         2003
       ],
-      "play": 3798,
-      "win": 1891,
-      "pick_rate": 0.0605
+      "play": 3808,
+      "win": 1897,
+      "pick_rate": 0.0604
     },
     {
       "ids": [
         1101
       ],
-      "play": 2929,
-      "win": 1462,
-      "pick_rate": 0.0467
+      "play": 2938,
+      "win": 1467,
+      "pick_rate": 0.0466
     },
     {
       "ids": [
         1103
       ],
-      "play": 2389,
-      "win": 1228,
+      "play": 2400,
+      "win": 1233,
       "pick_rate": 0.0381
     },
     {
@@ -19196,8 +19196,8 @@
         1036,
         1102
       ],
-      "play": 467,
-      "win": 302,
+      "play": 469,
+      "win": 304,
       "pick_rate": 0.0074
     },
     {
@@ -19216,8 +19216,8 @@
         1101,
         2003
       ],
-      "play": 131,
-      "win": 75,
+      "play": 132,
+      "win": 76,
       "pick_rate": 0.0021
     },
     {
@@ -19236,8 +19236,8 @@
         1102,
         2003
       ],
-      "play": 65,
-      "win": 35,
+      "play": 66,
+      "win": 36,
       "pick_rate": 0.001
     },
     {
@@ -19283,199 +19283,199 @@
       "ids": [
         3153
       ],
-      "play": 55641,
-      "win": 28984,
+      "play": 55902,
+      "win": 29119,
       "pick_rate": 0.3145
     },
     {
       "ids": [
         3124
       ],
-      "play": 31830,
-      "win": 18104,
+      "play": 31984,
+      "win": 18189,
       "pick_rate": 0.1799
     },
     {
       "ids": [
         6672
       ],
-      "play": 23839,
-      "win": 13335,
+      "play": 23945,
+      "win": 13391,
       "pick_rate": 0.1347
     },
     {
       "ids": [
         3091
       ],
-      "play": 18934,
-      "win": 11457,
-      "pick_rate": 0.107
+      "play": 19041,
+      "win": 11517,
+      "pick_rate": 0.1071
     },
     {
       "ids": [
         6333
       ],
-      "play": 7625,
-      "win": 4826,
+      "play": 7668,
+      "win": 4851,
       "pick_rate": 0.0431
     },
     {
       "ids": [
         3748
       ],
-      "play": 4719,
-      "win": 2883,
+      "play": 4741,
+      "win": 2898,
       "pick_rate": 0.0267
     },
     {
       "ids": [
         3073
       ],
-      "play": 4161,
-      "win": 2319,
+      "play": 4176,
+      "win": 2327,
       "pick_rate": 0.0235
     },
     {
       "ids": [
         3181
       ],
-      "play": 2148,
-      "win": 1269,
+      "play": 2155,
+      "win": 1272,
       "pick_rate": 0.0121
     },
     {
       "ids": [
         6676
       ],
-      "play": 2104,
-      "win": 1109,
+      "play": 2111,
+      "win": 1114,
       "pick_rate": 0.0119
     },
     {
       "ids": [
         6675
       ],
-      "play": 2017,
-      "win": 1180,
+      "play": 2025,
+      "win": 1184,
       "pick_rate": 0.0114
     },
     {
       "ids": [
         3031
       ],
-      "play": 1946,
-      "win": 1090,
+      "play": 1952,
+      "win": 1094,
       "pick_rate": 0.011
     },
     {
       "ids": [
         3053
       ],
-      "play": 1902,
-      "win": 1203,
+      "play": 1910,
+      "win": 1207,
       "pick_rate": 0.0107
     },
     {
       "ids": [
         3077
       ],
-      "play": 1792,
-      "win": 1015,
+      "play": 1799,
+      "win": 1019,
       "pick_rate": 0.0101
     },
     {
       "ids": [
         3026
       ],
-      "play": 1721,
-      "win": 1191,
+      "play": 1728,
+      "win": 1193,
       "pick_rate": 0.0097
     },
     {
       "ids": [
         3036
       ],
-      "play": 1620,
-      "win": 913,
+      "play": 1630,
+      "win": 921,
       "pick_rate": 0.0092
     },
     {
       "ids": [
         3143
       ],
-      "play": 1552,
-      "win": 891,
+      "play": 1556,
+      "win": 892,
       "pick_rate": 0.0088
     },
     {
       "ids": [
         1038
       ],
-      "play": 1267,
-      "win": 796,
+      "play": 1275,
+      "win": 800,
       "pick_rate": 0.0072
     },
     {
       "ids": [
         3302
       ],
-      "play": 1095,
-      "win": 683,
+      "play": 1101,
+      "win": 687,
       "pick_rate": 0.0062
     },
     {
       "ids": [
         3050
       ],
-      "play": 1036,
-      "win": 604,
+      "play": 1041,
+      "win": 608,
       "pick_rate": 0.0059
     },
     {
       "ids": [
         3033
       ],
-      "play": 902,
-      "win": 469,
+      "play": 907,
+      "win": 471,
       "pick_rate": 0.0051
     },
     {
       "ids": [
         3071
       ],
-      "play": 813,
-      "win": 489,
+      "play": 817,
+      "win": 490,
       "pick_rate": 0.0046
     },
     {
       "ids": [
         6698
       ],
-      "play": 782,
-      "win": 410,
+      "play": 785,
+      "win": 412,
       "pick_rate": 0.0044
     },
     {
       "ids": [
         3123
       ],
-      "play": 638,
-      "win": 252,
+      "play": 642,
+      "win": 254,
       "pick_rate": 0.0036
     },
     {
       "ids": [
         3139
       ],
-      "play": 493,
-      "win": 320,
+      "play": 497,
+      "win": 324,
       "pick_rate": 0.0028
     },
     {
       "ids": [
         3134
       ],
-      "play": 473,
+      "play": 474,
       "win": 220,
       "pick_rate": 0.0027
     },
@@ -19483,31 +19483,31 @@
       "ids": [
         3172
       ],
-      "play": 470,
-      "win": 301,
+      "play": 472,
+      "win": 303,
       "pick_rate": 0.0027
     },
     {
       "ids": [
         3156
       ],
-      "play": 486,
-      "win": 301,
+      "play": 488,
+      "win": 302,
       "pick_rate": 0.0027
     },
     {
       "ids": [
         6665
       ],
-      "play": 441,
-      "win": 271,
+      "play": 443,
+      "win": 273,
       "pick_rate": 0.0025
     },
     {
       "ids": [
         3142
       ],
-      "play": 399,
+      "play": 400,
       "win": 217,
       "pick_rate": 0.0023
     },
@@ -19515,7 +19515,7 @@
       "ids": [
         3814
       ],
-      "play": 260,
+      "play": 262,
       "win": 166,
       "pick_rate": 0.0015
     }
