@@ -1618,8 +1618,8 @@
         },
         {
           "champion_id": 910,
-          "play": 131,
-          "win": 63,
+          "play": 133,
+          "win": 64,
           "meta": {
             "id": 910,
             "key": "Hwei",
@@ -1796,14 +1796,14 @@
               }
             ]
           },
-          "win_rate": 48.09
+          "win_rate": 48.12
         }
       ],
       [
         {
           "champion_id": 901,
-          "play": 804,
-          "win": 473,
+          "play": 808,
+          "win": 475,
           "meta": {
             "id": 901,
             "key": "Smolder",
@@ -1968,12 +1968,12 @@
               }
             ]
           },
-          "win_rate": 58.83
+          "win_rate": 58.79
         },
         {
           "champion_id": 221,
-          "play": 408,
-          "win": 236,
+          "play": 409,
+          "win": 237,
           "meta": {
             "id": 221,
             "key": "Zeri",
@@ -2168,7 +2168,7 @@
               }
             ]
           },
-          "win_rate": 57.84
+          "win_rate": 57.95
         },
         {
           "champion_id": 157,
@@ -2951,270 +2951,158 @@
           "win_rate": 56.27
         },
         {
-          "champion_id": 63,
-          "play": 76,
-          "win": 42,
+          "champion_id": 119,
+          "play": 627,
+          "win": 346,
           "meta": {
-            "id": 63,
-            "key": "Brand",
-            "name": "复仇焰魂",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/Brand.png",
+            "id": 119,
+            "key": "Draven",
+            "name": "荣耀行刑官",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/Draven.png",
             "evolve": [],
             "partype": "法力",
             "passive": {
-              "name": "炽热之焰",
-              "description": "布兰德的技能会对他的目标施加【烈焰焚身】效果，在4秒里持续造成伤害，最多可叠加3次。如果布兰德击杀了身上带有【烈焰焚身】的敌人，那么他会回复法力值。当【炽热之焰】在一名英雄或大型野怪身上叠至满层时，它会变得不稳定。它会在2秒内爆炸，在目标附近的区域施加法术特效并造成大量伤害。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/passive/BrandP.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0063/ability_0063_P1.webm"
+              "name": "德莱文联盟",
+              "description": "在接住一把旋转飞斧或者击杀了一个小兵、野怪或防御塔后，德莱文会从他的粉丝那里获得崇拜效果。击杀一名敌方英雄会为德莱文提供额外赏金，赏金的多少取决于他拥有多少层崇拜效果。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/passive/Draven_passive.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0119/ability_0119_P1.webm"
             },
             "spells": [
               {
                 "key": "Q",
-                "name": "火焰烙印",
-                "description": "布兰德向前方放出一团可造成魔法伤害的火球。如果目标带有【烈焰焚身】效果，那么【Q火焰烙印】将使目标晕眩1.5秒。",
+                "name": "旋转飞斧",
+                "description": "德莱文的下次攻击会造成额外物理伤害。这个斧头将会从目标身上弹到高空。如果德莱文接住了它，那么会立刻准备好下一发旋转飞斧。德莱文可以同时拥有2发旋转飞斧。",
+                "max_rank": 5,
+                "range_burn": [
+                  300
+                ],
+                "cooldown_burn": [
+                  12,
+                  11,
+                  10,
+                  9,
+                  8
+                ],
+                "cooldown_burn_float": [
+                  12,
+                  11,
+                  10,
+                  9,
+                  8
+                ],
+                "cost_burn": [
+                  45
+                ],
+                "tooltip": "德莱文准备好一把<keywordMajor>旋转飞斧</keywordMajor>，使他的下一次攻击造成额外的<physicalDamage>?物理伤害</physicalDamage>然后弹到空中。如果德莱文接住了它，那么他会准备好另一把<keywordMajor>旋转飞斧</keywordMajor>。<br /><br />德莱文可以同时持有2把<keywordMajor>旋转飞斧</keywordMajor>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/spell/DravenSpinning.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0119/ability_0119_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "血性冲刺",
+                "description": "德莱文获得移动速度和攻击速度加成。移动速度加成在持续时间过后会急剧下降。在接到一把旋转飞斧后，血性冲刺会立刻冷却完毕。",
+                "max_rank": 5,
+                "range_burn": [
+                  1000
+                ],
+                "cooldown_burn": [
+                  12
+                ],
+                "cooldown_burn_float": [
+                  12
+                ],
+                "cost_burn": [
+                  40,
+                  35,
+                  30,
+                  25,
+                  20
+                ],
+                "tooltip": "德莱文进入幽灵状态，获得在1.5秒里持续衰减的<speed>50/55/60/65/70%移动速度</speed>和持续3秒的<attackSpeed>20/25/30/35/40%攻击速度</attackSpeed>。<br /><br />当德莱文接住一把<keywordMajor>旋转飞斧</keywordMajor>时，这个技能的冷却时间就会刷新。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/spell/DravenFury.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0119/ability_0119_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "开道利斧",
+                "description": "德莱文扔出他的斧头，对命中的目标造成物理伤害，并将他们击退至一边。被命中的目标会受到减速效果。",
                 "max_rank": 5,
                 "range_burn": [
                   1050
                 ],
                 "cooldown_burn": [
-                  8,
-                  7,
-                  7,
-                  6,
-                  6
+                  18,
+                  17,
+                  16,
+                  15,
+                  14
                 ],
                 "cooldown_burn_float": [
-                  8,
-                  7.5,
-                  7,
-                  6.5,
-                  6
+                  18,
+                  17,
+                  16,
+                  15,
+                  14
                 ],
                 "cost_burn": [
-                  50
+                  70
                 ],
-                "tooltip": "布兰德放出一团火球，对命中的第一个敌人造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />如果目标被<keywordMajor>烈焰焚身</keywordMajor>，那么还会被<status>晕眩</status>1.5秒。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/spell/BrandQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0063/ability_0063_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "烈焰之柱",
-                "description": "在短暂的延迟后，布兰德会在目标区域创造一根烈焰之柱，来对范围内的敌方单位造成魔法伤害。带有【烈焰焚身】效果的单位会额外受到25%伤害。",
-                "max_rank": 5,
-                "range_burn": [
-                  900
-                ],
-                "cooldown_burn": [
-                  10,
-                  9,
-                  9,
-                  8,
-                  8
-                ],
-                "cooldown_burn_float": [
-                  10,
-                  9.5,
-                  9,
-                  8.5,
-                  8
-                ],
-                "cost_burn": [
-                  60,
-                  70,
-                  80,
-                  90,
-                  100
-                ],
-                "tooltip": "布兰德生成一团纯火之柱，造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />被<keywordMajor>烈焰焚身</keywordMajor>的单位们会转而受到<magicDamage>?伤害</magicDamage>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/spell/BrandW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0063/ability_0063_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "烈火燃烧",
-                "description": "布兰德在目标身上引发一阵强力的爆裂至附近的敌人处，造成魔法伤害。如果目标带有【烈焰焚身】效果，那么【E烈火燃烧】的扩散距离翻倍。",
-                "max_rank": 5,
-                "range_burn": [
-                  625
-                ],
-                "cooldown_burn": [
-                  13,
-                  12,
-                  11,
-                  10,
-                  9
-                ],
-                "cooldown_burn_float": [
-                  13,
-                  12,
-                  11,
-                  10,
-                  9
-                ],
-                "cost_burn": [
-                  70,
-                  75,
-                  80,
-                  85,
-                  90
-                ],
-                "tooltip": "布兰德在目标身上引发一阵强力的爆裂，对附近的单位们造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />如果目标带有<keywordMajor>烈焰焚身</keywordMajor>，那么扩散距离翻倍。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/spell/BrandE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0063/ability_0063_E1.webm"
+                "tooltip": "德莱文抛掷一柄开山斧，造成<physicalDamage>?物理伤害</physicalDamage>，<status>击退</status>，以及持续2秒的20/25/30/35/40%<status>减速</status>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/spell/DravenDoubleShot.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0119/ability_0119_E1.webm"
               },
               {
                 "key": "R",
-                "name": "烈焰风暴",
-                "description": "布兰德释放一颗破坏力极强的火焰之种，火焰之种会在布兰德和附近敌人之间弹跳至多5次，每次弹跳时对敌人造成魔法伤害。弹跳会优先以带有即将满层的【炽热之焰】效果的英雄为目标。如果目标带有【烈焰焚身】效果，那么【R烈焰风暴】将使目标短暂减速。",
+                "name": "冷血追命",
+                "description": "德莱文掷出两柄大斧，对命中的每个单位造成物理伤害。在命中一名敌方英雄后，大斧会缓慢地调转方向，并回到德莱文身边。在斧头正在向外飞的时候，德莱文可以激活该技能来让斧头早点飞回来。每命中一个单位，伤害值就会减少。在斧头调转方向时，伤害值会重置。会处决那些生命值低于德莱文崇拜层数的敌人们。",
                 "max_rank": 3,
                 "range_burn": [
-                  750
+                  20000
                 ],
                 "cooldown_burn": [
-                  110,
                   100,
-                  90
+                  90,
+                  80
                 ],
                 "cooldown_burn_float": [
-                  110,
                   100,
-                  90
+                  90,
+                  80
                 ],
                 "cost_burn": [
                   100
                 ],
-                "tooltip": "布兰德释放一颗破坏力极强的火焰之种，火焰之种会在布兰德或另一名敌人之间弹跳至多5次，每次弹跳时对敌人造成<magicDamage>?魔法伤害</magicDamage>。弹跳会优先以带有即将满层的<keywordMajor>炽热之焰</keywordMajor>效果的英雄为目标。<br /><br />如果目标带有<keywordMajor>烈焰焚身</keywordMajor>，则会被暂时<status>减速</status>?%。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/spell/BrandR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0063/ability_0063_R1.webm"
+                "tooltip": "德莱文猛掷出两把巨斧来造成<physicalDamage>?物理伤害</physicalDamage>。在命中一名英雄或<recast>再次施放</recast>之后，巨斧会掉转方向并返回德莱文处。巨斧每命中一个敌人就会降低?%伤害，最低降至?%。<br /><br />如果<keywordMajor>冷血追命</keywordMajor>使一名敌方英雄的生命值低于德莱文目前的?%<keywordMajor>德莱文联盟</keywordMajor>层数(?)，那么德莱文会将该英雄处决。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/spell/DravenRCast.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0119/ability_0119_R1.webm"
               }
             ],
             "skins": [
               {
-                "id": 63000,
-                "champion_id": 63,
+                "id": 119000,
+                "champion_id": 119,
                 "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Brand_0.jpg",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Draven_0.jpg",
                 "skin_video_url": null,
                 "prices": [
                   {
                     "currency": "IP",
-                    "cost": 450
+                    "cost": 4800
                   },
                   {
                     "currency": "RP",
-                    "cost": 260
+                    "cost": 880
                   }
                 ],
                 "sales": null,
                 "release_date": null
               },
               {
-                "id": 63002,
-                "champion_id": 63,
-                "name": "V字仇杀者 布兰德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Brand_2.jpg",
-                "skin_video_url": "https://youtu.be/OzkdqYUasgQ",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 63004,
-                "champion_id": 63,
-                "name": "丧尸 布兰德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Brand_4.jpg",
-                "skin_video_url": "https://youtu.be/64_FgTale3k",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1820
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 63003,
-                "champion_id": 63,
-                "name": "冰晶之核 布兰德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Brand_3.jpg",
-                "skin_video_url": "https://youtu.be/N5gQuGIPS74",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2011-10-06T13:00:00+09:00"
-              },
-              {
-                "id": 63033,
-                "champion_id": 63,
-                "name": "妖怪艺术家 布兰德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Brand_33.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2023-09-13T11:00:00+09:00"
-              },
-              {
-                "id": 63006,
-                "champion_id": 63,
-                "name": "战场BOSS 布兰德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Brand_6.jpg",
-                "skin_video_url": "https://youtu.be/6LfQNrxkZj0",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2017-08-09T11:30:00+09:00"
-              },
-              {
-                "id": 63001,
-                "champion_id": 63,
-                "name": "末日余生 布兰德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Brand_1.jpg",
-                "skin_video_url": "https://youtu.be/ADl_HD24ZOY",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 750
-                  }
-                ],
-                "sales": null,
-                "release_date": "2011-04-13T13:00:00+09:00"
-              },
-              {
-                "id": 63005,
-                "champion_id": 63,
-                "name": "灵魂烈焰 布兰德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Brand_5.jpg",
-                "skin_video_url": "https://youtu.be/7nmbWKII6Bg",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2015-10-22T10:00:00+09:00"
-              },
-              {
-                "id": 63021,
-                "champion_id": 63,
-                "name": "焰执事 布兰德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Brand_21.jpg",
-                "skin_video_url": "https://youtu.be/bwdWcpn0jRM",
+                "id": 119029,
+                "champion_id": 119,
+                "name": "刃执事 德莱文",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Draven_29.jpg",
+                "skin_video_url": "https://youtu.be/1iknV9-Zqwo",
                 "prices": [
                   {
                     "currency": "RP",
@@ -3225,11 +3113,11 @@
                 "release_date": "2021-12-09T04:00:00+09:00"
               },
               {
-                "id": 63008,
-                "champion_id": 63,
-                "name": "神龙尊者 魔龙布兰德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Brand_8.jpg",
-                "skin_video_url": "https://youtu.be/VFMTy-k2XdE",
+                "id": 119012,
+                "champion_id": 119,
+                "name": "圣诞老人 德莱文",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Draven_12.jpg",
+                "skin_video_url": "https://youtu.be/O0WzDifRhvM",
                 "prices": [
                   {
                     "currency": "RP",
@@ -3237,23 +3125,141 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2020-10-01T04:00:00+09:00"
-              },
-              {
-                "id": 63022,
-                "champion_id": 63,
-                "name": "至臻 焰执事 布兰德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Brand_22.jpg",
-                "skin_video_url": "https://youtu.be/4imdw-skDC4",
-                "prices": null,
-                "sales": null,
                 "release_date": null
               },
               {
-                "id": 63042,
-                "champion_id": 63,
-                "name": "至高天 布兰德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Brand_42.jpg",
+                "id": 119006,
+                "champion_id": 119,
+                "name": "德莱德莱德莱文",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Draven_6.jpg",
+                "skin_video_url": "https://youtu.be/AP_D2uZliZE",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 520
+                  }
+                ],
+                "sales": null,
+                "release_date": "2016-04-01T04:00:00+09:00"
+              },
+              {
+                "id": 119004,
+                "champion_id": 119,
+                "name": "泳池派对 德莱文",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Draven_4.jpg",
+                "skin_video_url": "https://youtu.be/bv_vZRkzX-c",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2015-06-24T23:00:00+09:00"
+              },
+              {
+                "id": 119001,
+                "champion_id": 119,
+                "name": "灵魂收割者 德莱文",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Draven_1.jpg",
+                "skin_video_url": "https://youtu.be/RhgxwPnb_A4",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2012-06-06T21:00:00+09:00"
+              },
+              {
+                "id": 119013,
+                "champion_id": 119,
+                "name": "王国机神青龙 德莱文",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Draven_13.jpg",
+                "skin_video_url": "https://youtu.be/XWmd_OHsdqU",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": [
+                  {
+                    "currency": "RP",
+                    "cost": 675,
+                    "discount_rate": 0.5,
+                    "started_at": "2024-09-16T08:00:00+09:00",
+                    "ended_at": "2024-09-23T08:00:00+09:00"
+                  }
+                ],
+                "release_date": "2020-01-15T02:00:00+09:00"
+              },
+              {
+                "id": 119020,
+                "champion_id": 119,
+                "name": "破败军团 德莱文",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Draven_20.jpg",
+                "skin_video_url": "https://youtu.be/i53n1VsLBBQ",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-01-21T04:00:00+09:00"
+              },
+              {
+                "id": 119002,
+                "champion_id": 119,
+                "name": "绞肉机刽子手 德莱文",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Draven_2.jpg",
+                "skin_video_url": "https://youtu.be/bW8LBgdETrc",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2013-03-26T09:00:00+09:00"
+              },
+              {
+                "id": 119005,
+                "champion_id": 119,
+                "name": "野兽猎人 德莱文",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Draven_5.jpg",
+                "skin_video_url": "https://youtu.be/aSjtRH1kvLA",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2016-02-04T09:00:00+09:00"
+              },
+              {
+                "id": 119003,
+                "champion_id": 119,
+                "name": "金牌主播 德莱文",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Draven_3.jpg",
+                "skin_video_url": "https://youtu.be/hO4IkxJoexI",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2014-06-19T08:01:00+09:00"
+              },
+              {
+                "id": 119048,
+                "champion_id": 119,
+                "name": "魂蔷薇 德莱文",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Draven_48.jpg",
                 "skin_video_url": null,
                 "prices": [
                   {
@@ -3262,14 +3268,14 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2024-05-01T09:00:00+09:00"
+                "release_date": "2023-09-27T11:00:00+09:00"
               },
               {
-                "id": 63007,
-                "champion_id": 63,
-                "name": "苍穹之光 布兰德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Brand_7.jpg",
-                "skin_video_url": "https://youtu.be/UjKGisgfKVk",
+                "id": 119039,
+                "champion_id": 119,
+                "name": "魔域梦魇 德莱文",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Draven_39.jpg",
+                "skin_video_url": "https://youtu.be/OgN2WKZWKwE",
                 "prices": [
                   {
                     "currency": "RP",
@@ -3277,19 +3283,19 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2019-03-07T01:00:00+09:00"
+                "release_date": "2022-09-22T04:00:00+09:00"
               }
             ]
           },
-          "win_rate": 55.26
+          "win_rate": 55.18
         }
       ]
     ],
     "counters": [
       {
         "champion_id": 202,
-        "play": 3506,
-        "win": 1780,
+        "play": 3537,
+        "win": 1793,
         "meta": {
           "id": 202,
           "key": "Jhin",
@@ -3579,8 +3585,8 @@
       },
       {
         "champion_id": 145,
-        "play": 2549,
-        "win": 1372,
+        "play": 2562,
+        "win": 1378,
         "meta": {
           "id": 145,
           "key": "Kaisa",
@@ -3904,8 +3910,8 @@
       },
       {
         "champion_id": 222,
-        "play": 2536,
-        "win": 1315,
+        "play": 2548,
+        "win": 1322,
         "meta": {
           "id": 222,
           "key": "Jinx",
@@ -4252,8 +4258,8 @@
       },
       {
         "champion_id": 81,
-        "play": 1444,
-        "win": 792,
+        "play": 1453,
+        "win": 797,
         "meta": {
           "id": 81,
           "key": "Ezreal",
@@ -4685,8 +4691,8 @@
       },
       {
         "champion_id": 51,
-        "play": 1246,
-        "win": 646,
+        "play": 1256,
+        "win": 651,
         "meta": {
           "id": 51,
           "key": "Caitlyn",
@@ -5071,8 +5077,8 @@
       },
       {
         "champion_id": 22,
-        "play": 972,
-        "win": 508,
+        "play": 982,
+        "win": 514,
         "meta": {
           "id": 22,
           "key": "Ashe",
@@ -5468,7 +5474,7 @@
       },
       {
         "champion_id": 21,
-        "play": 966,
+        "play": 969,
         "win": 470,
         "meta": {
           "id": 21,
@@ -5930,8 +5936,8 @@
       },
       {
         "champion_id": 236,
-        "play": 928,
-        "win": 473,
+        "play": 933,
+        "win": 474,
         "meta": {
           "id": 236,
           "key": "Lucian",
@@ -6257,8 +6263,8 @@
       },
       {
         "champion_id": 901,
-        "play": 804,
-        "win": 473,
+        "play": 808,
+        "win": 475,
         "meta": {
           "id": 901,
           "key": "Smolder",
@@ -6426,8 +6432,8 @@
       },
       {
         "champion_id": 119,
-        "play": 625,
-        "win": 344,
+        "play": 627,
+        "win": 346,
         "meta": {
           "id": 119,
           "key": "Draven",
@@ -6764,8 +6770,8 @@
       },
       {
         "champion_id": 360,
-        "play": 573,
-        "win": 315,
+        "play": 579,
+        "win": 317,
         "meta": {
           "id": 360,
           "key": "Samira",
@@ -6974,8 +6980,8 @@
       },
       {
         "champion_id": 29,
-        "play": 526,
-        "win": 277,
+        "play": 528,
+        "win": 279,
         "meta": {
           "id": 29,
           "key": "Twitch",
@@ -7300,8 +7306,8 @@
       },
       {
         "champion_id": 115,
-        "play": 455,
-        "win": 222,
+        "play": 456,
+        "win": 223,
         "meta": {
           "id": 115,
           "key": "Ziggs",
@@ -7604,8 +7610,8 @@
       },
       {
         "champion_id": 110,
-        "play": 444,
-        "win": 237,
+        "play": 447,
+        "win": 238,
         "meta": {
           "id": 110,
           "key": "Varus",
@@ -7949,8 +7955,8 @@
       },
       {
         "champion_id": 221,
-        "play": 408,
-        "win": 236,
+        "play": 409,
+        "win": 237,
         "meta": {
           "id": 221,
           "key": "Zeri",
@@ -8148,8 +8154,8 @@
       },
       {
         "champion_id": 523,
-        "play": 401,
-        "win": 206,
+        "play": 404,
+        "win": 208,
         "meta": {
           "id": 523,
           "key": "Aphelios",
@@ -8747,8 +8753,8 @@
       },
       {
         "champion_id": 498,
-        "play": 271,
-        "win": 133,
+        "play": 272,
+        "win": 134,
         "meta": {
           "id": 498,
           "key": "Xayah",
@@ -9069,7 +9075,7 @@
       },
       {
         "champion_id": 15,
-        "play": 229,
+        "play": 230,
         "win": 114,
         "meta": {
           "id": 15,
@@ -9444,8 +9450,8 @@
       },
       {
         "champion_id": 895,
-        "play": 176,
-        "win": 88,
+        "play": 178,
+        "win": 89,
         "meta": {
           "id": 895,
           "key": "Nilah",
@@ -9616,7 +9622,7 @@
       },
       {
         "champion_id": 429,
-        "play": 151,
+        "play": 154,
         "win": 81,
         "meta": {
           "id": 429,
@@ -10115,8 +10121,8 @@
       },
       {
         "champion_id": 910,
-        "play": 131,
-        "win": 63,
+        "play": 133,
+        "win": 64,
         "meta": {
           "id": 910,
           "key": "Hwei",
@@ -11301,7 +11307,7 @@
       },
       {
         "champion_id": 63,
-        "play": 76,
+        "play": 78,
         "win": 42,
         "meta": {
           "id": 63,
@@ -12278,17 +12284,17 @@
         4,
         21
       ],
-      "win": 9105,
-      "play": 17284,
-      "pick_rate": 0.7467
+      "win": 9159,
+      "play": 17391,
+      "pick_rate": 0.7465
     },
     {
       "ids": [
         4,
         6
       ],
-      "win": 1381,
-      "play": 2626,
+      "win": 1388,
+      "play": 2643,
       "pick_rate": 0.1135
     },
     {
@@ -12296,8 +12302,8 @@
         1,
         4
       ],
-      "win": 956,
-      "play": 1824,
+      "win": 962,
+      "play": 1835,
       "pick_rate": 0.0788
     },
     {
@@ -12305,8 +12311,8 @@
         4,
         12
       ],
-      "win": 458,
-      "play": 833,
+      "win": 460,
+      "play": 839,
       "pick_rate": 0.036
     },
     {
@@ -12314,9 +12320,9 @@
         3,
         4
       ],
-      "win": 126,
-      "play": 261,
-      "pick_rate": 0.0113
+      "win": 127,
+      "play": 265,
+      "pick_rate": 0.0114
     }
   ],
   "trends": {
@@ -12542,9 +12548,9 @@
         "E",
         "E"
       ],
-      "play": 4968,
-      "win": 3063,
-      "pick_rate": 0.4535
+      "play": 5001,
+      "win": 3081,
+      "pick_rate": 0.4539
     },
     {
       "order": [
@@ -12564,9 +12570,9 @@
         "E",
         "E"
       ],
-      "play": 1656,
-      "win": 992,
-      "pick_rate": 0.1512
+      "play": 1662,
+      "win": 995,
+      "pick_rate": 0.1508
     },
     {
       "order": [
@@ -12586,8 +12592,8 @@
         "W",
         "W"
       ],
-      "play": 438,
-      "win": 243,
+      "play": 441,
+      "win": 245,
       "pick_rate": 0.04
     },
     {
@@ -12608,8 +12614,8 @@
         "E",
         "E"
       ],
-      "play": 240,
-      "win": 154,
+      "play": 241,
+      "win": 155,
       "pick_rate": 0.0219
     },
     {
@@ -12630,8 +12636,8 @@
         "W",
         "W"
       ],
-      "play": 235,
-      "win": 145,
+      "play": 237,
+      "win": 147,
       "pick_rate": 0.0215
     }
   ],
@@ -12642,9 +12648,9 @@
         "Q",
         "E"
       ],
-      "play": 9253,
-      "win": 5653,
-      "pick_rate": 0.8446,
+      "play": 9305,
+      "win": 5682,
+      "pick_rate": 0.8445,
       "builds": [
         {
           "order": [
@@ -12664,9 +12670,9 @@
             "E",
             "E"
           ],
-          "play": 4968,
-          "win": 3063,
-          "pick_rate": 0.5369
+          "play": 5001,
+          "win": 3081,
+          "pick_rate": 0.5375
         },
         {
           "order": [
@@ -12686,9 +12692,9 @@
             "E",
             "E"
           ],
-          "play": 1656,
-          "win": 992,
-          "pick_rate": 0.179
+          "play": 1662,
+          "win": 995,
+          "pick_rate": 0.1786
         },
         {
           "order": [
@@ -12708,8 +12714,8 @@
             "E",
             "E"
           ],
-          "play": 240,
-          "win": 154,
+          "play": 241,
+          "win": 155,
           "pick_rate": 0.0259
         },
         {
@@ -12730,9 +12736,9 @@
             "E",
             "E"
           ],
-          "play": 216,
+          "play": 218,
           "win": 126,
-          "pick_rate": 0.0233
+          "pick_rate": 0.0234
         },
         {
           "order": [
@@ -12752,8 +12758,8 @@
             "E",
             "E"
           ],
-          "play": 145,
-          "win": 84,
+          "play": 146,
+          "win": 85,
           "pick_rate": 0.0157
         }
       ]
@@ -12764,9 +12770,9 @@
         "Q",
         "W"
       ],
-      "play": 1093,
-      "win": 623,
-      "pick_rate": 0.0998,
+      "play": 1101,
+      "win": 627,
+      "pick_rate": 0.0999,
       "builds": [
         {
           "order": [
@@ -12786,9 +12792,9 @@
             "W",
             "W"
           ],
-          "play": 438,
-          "win": 243,
-          "pick_rate": 0.4007
+          "play": 441,
+          "win": 245,
+          "pick_rate": 0.4005
         },
         {
           "order": [
@@ -12808,9 +12814,9 @@
             "W",
             "W"
           ],
-          "play": 235,
-          "win": 145,
-          "pick_rate": 0.215
+          "play": 237,
+          "win": 147,
+          "pick_rate": 0.2153
         },
         {
           "order": [
@@ -12830,9 +12836,9 @@
             "W",
             "W"
           ],
-          "play": 91,
+          "play": 93,
           "win": 51,
-          "pick_rate": 0.0833
+          "pick_rate": 0.0845
         },
         {
           "order": [
@@ -12854,7 +12860,7 @@
           ],
           "play": 66,
           "win": 32,
-          "pick_rate": 0.0604
+          "pick_rate": 0.0599
         },
         {
           "order": [
@@ -12876,7 +12882,7 @@
           ],
           "play": 24,
           "win": 17,
-          "pick_rate": 0.022
+          "pick_rate": 0.0218
         }
       ]
     },
@@ -12886,9 +12892,9 @@
         "E",
         "Q"
       ],
-      "play": 398,
+      "play": 399,
       "win": 241,
-      "pick_rate": 0.0363,
+      "pick_rate": 0.0362,
       "builds": [
         {
           "order": [
@@ -12910,7 +12916,7 @@
           ],
           "play": 124,
           "win": 82,
-          "pick_rate": 0.3116
+          "pick_rate": 0.3108
         },
         {
           "order": [
@@ -12932,7 +12938,7 @@
           ],
           "play": 30,
           "win": 18,
-          "pick_rate": 0.0754
+          "pick_rate": 0.0752
         },
         {
           "order": [
@@ -12954,7 +12960,7 @@
           ],
           "play": 20,
           "win": 13,
-          "pick_rate": 0.0503
+          "pick_rate": 0.0501
         },
         {
           "order": [
@@ -12976,7 +12982,7 @@
           ],
           "play": 16,
           "win": 8,
-          "pick_rate": 0.0402
+          "pick_rate": 0.0401
         },
         {
           "order": [
@@ -13010,7 +13016,7 @@
       ],
       "play": 107,
       "win": 63,
-      "pick_rate": 0.0098,
+      "pick_rate": 0.0097,
       "builds": [
         {
           "order": [
@@ -13130,9 +13136,9 @@
         "W",
         "Q"
       ],
-      "play": 90,
-      "win": 47,
-      "pick_rate": 0.0082,
+      "play": 93,
+      "win": 50,
+      "pick_rate": 0.0084,
       "builds": [
         {
           "order": [
@@ -13152,9 +13158,9 @@
             "Q",
             "Q"
           ],
-          "play": 10,
-          "win": 8,
-          "pick_rate": 0.1111
+          "play": 11,
+          "win": 9,
+          "pick_rate": 0.1183
         },
         {
           "order": [
@@ -13176,7 +13182,7 @@
           ],
           "play": 10,
           "win": 4,
-          "pick_rate": 0.1111
+          "pick_rate": 0.1075
         },
         {
           "order": [
@@ -13198,7 +13204,7 @@
           ],
           "play": 10,
           "win": 2,
-          "pick_rate": 0.1111
+          "pick_rate": 0.1075
         },
         {
           "order": [
@@ -13220,7 +13226,7 @@
           ],
           "play": 7,
           "win": 5,
-          "pick_rate": 0.0778
+          "pick_rate": 0.0753
         },
         {
           "order": [
@@ -13242,7 +13248,7 @@
           ],
           "play": 3,
           "win": 1,
-          "pick_rate": 0.0333
+          "pick_rate": 0.0323
         }
       ]
     }
@@ -13268,9 +13274,9 @@
         5008,
         5001
       ],
-      "play": 9285,
-      "win": 4823,
-      "pick_rate": 0.3968
+      "play": 9331,
+      "win": 4846,
+      "pick_rate": 0.3962
     },
     {
       "id": 8005,
@@ -13291,9 +13297,9 @@
         5008,
         5001
       ],
-      "play": 1895,
-      "win": 965,
-      "pick_rate": 0.081
+      "play": 1912,
+      "win": 974,
+      "pick_rate": 0.0812
     },
     {
       "id": 8005,
@@ -13314,9 +13320,9 @@
         5008,
         5001
       ],
-      "play": 1159,
-      "win": 618,
-      "pick_rate": 0.0495
+      "play": 1163,
+      "win": 621,
+      "pick_rate": 0.0494
     },
     {
       "id": 8005,
@@ -13337,9 +13343,9 @@
         5008,
         5001
       ],
-      "play": 384,
+      "play": 385,
       "win": 217,
-      "pick_rate": 0.0164
+      "pick_rate": 0.0163
     },
     {
       "id": 8005,
@@ -13347,7 +13353,7 @@
       "primary_rune_ids": [
         8005,
         9111,
-        9104,
+        9103,
         8299
       ],
       "secondary_page_id": 8400,
@@ -13360,8 +13366,8 @@
         5008,
         5011
       ],
-      "play": 337,
-      "win": 178,
+      "play": 340,
+      "win": 183,
       "pick_rate": 0.0144
     }
   ],
@@ -13370,9 +13376,9 @@
       "id": 8005,
       "primary_page_id": 8000,
       "secondary_page_id": 8400,
-      "play": 15527,
-      "win": 8194,
-      "pick_rate": 0.6636,
+      "play": 15618,
+      "win": 8235,
+      "pick_rate": 0.6631,
       "builds": [
         {
           "id": 8005,
@@ -13393,9 +13399,9 @@
             5008,
             5001
           ],
-          "play": 9285,
-          "win": 4823,
-          "pick_rate": 0.598
+          "play": 9331,
+          "win": 4846,
+          "pick_rate": 0.5975
         },
         {
           "id": 8005,
@@ -13416,9 +13422,9 @@
             5008,
             5001
           ],
-          "play": 1159,
-          "win": 618,
-          "pick_rate": 0.0746
+          "play": 1163,
+          "win": 621,
+          "pick_rate": 0.0745
         },
         {
           "id": 8005,
@@ -13439,7 +13445,7 @@
             5008,
             5001
           ],
-          "play": 384,
+          "play": 385,
           "win": 217,
           "pick_rate": 0.0247
         },
@@ -13462,9 +13468,9 @@
             5008,
             5011
           ],
-          "play": 337,
+          "play": 340,
           "win": 178,
-          "pick_rate": 0.0217
+          "pick_rate": 0.0218
         },
         {
           "id": 8005,
@@ -13485,9 +13491,9 @@
             5008,
             5011
           ],
-          "play": 335,
-          "win": 180,
-          "pick_rate": 0.0216
+          "play": 340,
+          "win": 183,
+          "pick_rate": 0.0218
         }
       ]
     },
@@ -13495,9 +13501,9 @@
       "id": 8005,
       "primary_page_id": 8000,
       "secondary_page_id": 8100,
-      "play": 2510,
-      "win": 1282,
-      "pick_rate": 0.1073,
+      "play": 2532,
+      "win": 1294,
+      "pick_rate": 0.1075,
       "builds": [
         {
           "id": 8005,
@@ -13518,9 +13524,9 @@
             5008,
             5001
           ],
-          "play": 1895,
-          "win": 965,
-          "pick_rate": 0.755
+          "play": 1912,
+          "win": 974,
+          "pick_rate": 0.7551
         },
         {
           "id": 8005,
@@ -13543,7 +13549,7 @@
           ],
           "play": 84,
           "win": 45,
-          "pick_rate": 0.0335
+          "pick_rate": 0.0332
         },
         {
           "id": 8005,
@@ -13564,9 +13570,9 @@
             5008,
             5011
           ],
-          "play": 70,
-          "win": 33,
-          "pick_rate": 0.0279
+          "play": 71,
+          "win": 34,
+          "pick_rate": 0.028
         },
         {
           "id": 8005,
@@ -13589,7 +13595,7 @@
           ],
           "play": 69,
           "win": 35,
-          "pick_rate": 0.0275
+          "pick_rate": 0.0273
         },
         {
           "id": 8005,
@@ -13612,7 +13618,7 @@
           ],
           "play": 40,
           "win": 25,
-          "pick_rate": 0.0159
+          "pick_rate": 0.0158
         }
       ]
     },
@@ -13620,9 +13626,9 @@
       "id": 8229,
       "primary_page_id": 8200,
       "secondary_page_id": 8000,
-      "play": 1630,
-      "win": 870,
-      "pick_rate": 0.0697,
+      "play": 1650,
+      "win": 882,
+      "pick_rate": 0.0701,
       "builds": [
         {
           "id": 8229,
@@ -13643,9 +13649,9 @@
             5008,
             5001
           ],
-          "play": 220,
-          "win": 112,
-          "pick_rate": 0.135
+          "play": 226,
+          "win": 116,
+          "pick_rate": 0.137
         },
         {
           "id": 8229,
@@ -13666,9 +13672,9 @@
             5008,
             5001
           ],
-          "play": 99,
-          "win": 42,
-          "pick_rate": 0.0607
+          "play": 100,
+          "win": 43,
+          "pick_rate": 0.0606
         },
         {
           "id": 8229,
@@ -13691,7 +13697,7 @@
           ],
           "play": 89,
           "win": 47,
-          "pick_rate": 0.0546
+          "pick_rate": 0.0539
         },
         {
           "id": 8229,
@@ -13714,7 +13720,7 @@
           ],
           "play": 80,
           "win": 47,
-          "pick_rate": 0.0491
+          "pick_rate": 0.0485
         },
         {
           "id": 8229,
@@ -13737,7 +13743,7 @@
           ],
           "play": 80,
           "win": 42,
-          "pick_rate": 0.0491
+          "pick_rate": 0.0485
         }
       ]
     },
@@ -13745,9 +13751,9 @@
       "id": 8005,
       "primary_page_id": 8000,
       "secondary_page_id": 8300,
-      "play": 1441,
-      "win": 804,
-      "pick_rate": 0.0616,
+      "play": 1446,
+      "win": 806,
+      "pick_rate": 0.0614,
       "builds": [
         {
           "id": 8005,
@@ -13770,7 +13776,7 @@
           ],
           "play": 112,
           "win": 65,
-          "pick_rate": 0.0777
+          "pick_rate": 0.0775
         },
         {
           "id": 8005,
@@ -13793,7 +13799,7 @@
           ],
           "play": 68,
           "win": 42,
-          "pick_rate": 0.0472
+          "pick_rate": 0.047
         },
         {
           "id": 8005,
@@ -13816,7 +13822,7 @@
           ],
           "play": 57,
           "win": 34,
-          "pick_rate": 0.0396
+          "pick_rate": 0.0394
         },
         {
           "id": 8005,
@@ -13839,7 +13845,7 @@
           ],
           "play": 41,
           "win": 30,
-          "pick_rate": 0.0285
+          "pick_rate": 0.0284
         },
         {
           "id": 8005,
@@ -13860,9 +13866,9 @@
             5008,
             5011
           ],
-          "play": 33,
+          "play": 34,
           "win": 20,
-          "pick_rate": 0.0229
+          "pick_rate": 0.0235
         }
       ]
     },
@@ -13870,9 +13876,9 @@
       "id": 8005,
       "primary_page_id": 8000,
       "secondary_page_id": 8200,
-      "play": 795,
-      "win": 406,
-      "pick_rate": 0.034,
+      "play": 805,
+      "win": 411,
+      "pick_rate": 0.0342,
       "builds": [
         {
           "id": 8005,
@@ -13893,9 +13899,9 @@
             5008,
             5001
           ],
-          "play": 99,
-          "win": 50,
-          "pick_rate": 0.1245
+          "play": 100,
+          "win": 51,
+          "pick_rate": 0.1242
         },
         {
           "id": 8005,
@@ -13918,7 +13924,7 @@
           ],
           "play": 36,
           "win": 22,
-          "pick_rate": 0.0453
+          "pick_rate": 0.0447
         },
         {
           "id": 8005,
@@ -13941,7 +13947,7 @@
           ],
           "play": 34,
           "win": 16,
-          "pick_rate": 0.0428
+          "pick_rate": 0.0422
         },
         {
           "id": 8005,
@@ -13964,7 +13970,7 @@
           ],
           "play": 28,
           "win": 16,
-          "pick_rate": 0.0352
+          "pick_rate": 0.0348
         },
         {
           "id": 8005,
@@ -13987,7 +13993,7 @@
           ],
           "play": 28,
           "win": 15,
-          "pick_rate": 0.0352
+          "pick_rate": 0.0348
         }
       ]
     }
@@ -13999,9 +14005,9 @@
         3124,
         3085
       ],
-      "play": 4924,
-      "win": 2848,
-      "pick_rate": 0.3156
+      "play": 4944,
+      "win": 2857,
+      "pick_rate": 0.315
     },
     {
       "ids": [
@@ -14009,9 +14015,9 @@
         3124,
         3091
       ],
-      "play": 1822,
-      "win": 986,
-      "pick_rate": 0.1168
+      "play": 1835,
+      "win": 995,
+      "pick_rate": 0.1169
     },
     {
       "ids": [
@@ -14019,9 +14025,9 @@
         3124,
         3302
       ],
-      "play": 1215,
-      "win": 685,
-      "pick_rate": 0.0779
+      "play": 1227,
+      "win": 689,
+      "pick_rate": 0.0782
     },
     {
       "ids": [
@@ -14029,9 +14035,9 @@
         3124,
         6675
       ],
-      "play": 649,
-      "win": 418,
-      "pick_rate": 0.0416
+      "play": 655,
+      "win": 422,
+      "pick_rate": 0.0417
     },
     {
       "ids": [
@@ -14039,9 +14045,9 @@
         3085,
         3124
       ],
-      "play": 437,
-      "win": 255,
-      "pick_rate": 0.028
+      "play": 438,
+      "win": 256,
+      "pick_rate": 0.0279
     },
     {
       "ids": [
@@ -14051,7 +14057,7 @@
       ],
       "play": 310,
       "win": 190,
-      "pick_rate": 0.0199
+      "pick_rate": 0.0198
     },
     {
       "ids": [
@@ -14061,7 +14067,7 @@
       ],
       "play": 221,
       "win": 115,
-      "pick_rate": 0.0142
+      "pick_rate": 0.0141
     },
     {
       "ids": [
@@ -14071,7 +14077,7 @@
       ],
       "play": 195,
       "win": 120,
-      "pick_rate": 0.0125
+      "pick_rate": 0.0124
     },
     {
       "ids": [
@@ -14091,7 +14097,7 @@
       ],
       "play": 159,
       "win": 108,
-      "pick_rate": 0.0102
+      "pick_rate": 0.0101
     },
     {
       "ids": [
@@ -14109,8 +14115,18 @@
         3124,
         6672
       ],
+      "play": 138,
+      "win": 87,
+      "pick_rate": 0.0088
+    },
+    {
+      "ids": [
+        3153,
+        3091,
+        3085
+      ],
       "play": 136,
-      "win": 86,
+      "win": 79,
       "pick_rate": 0.0087
     },
     {
@@ -14119,19 +14135,9 @@
         3124,
         3153
       ],
-      "play": 134,
-      "win": 87,
-      "pick_rate": 0.0086
-    },
-    {
-      "ids": [
-        3153,
-        3091,
-        3085
-      ],
-      "play": 134,
-      "win": 79,
-      "pick_rate": 0.0086
+      "play": 137,
+      "win": 89,
+      "pick_rate": 0.0087
     },
     {
       "ids": [
@@ -14149,24 +14155,24 @@
       "ids": [
         3006
       ],
-      "play": 19601,
-      "win": 10395,
-      "pick_rate": 0.8496
+      "play": 19725,
+      "win": 10454,
+      "pick_rate": 0.8495
     },
     {
       "ids": [
         3020
       ],
-      "play": 2126,
-      "win": 1135,
-      "pick_rate": 0.0921
+      "play": 2144,
+      "win": 1145,
+      "pick_rate": 0.0923
     },
     {
       "ids": [
         3047
       ],
-      "play": 681,
-      "win": 354,
+      "play": 685,
+      "win": 355,
       "pick_rate": 0.0295
     },
     {
@@ -14175,7 +14181,7 @@
       ],
       "play": 343,
       "win": 181,
-      "pick_rate": 0.0149
+      "pick_rate": 0.0148
     },
     {
       "ids": [
@@ -14183,7 +14189,7 @@
       ],
       "play": 255,
       "win": 140,
-      "pick_rate": 0.0111
+      "pick_rate": 0.011
     }
   ],
   "starter_items": [
@@ -14192,9 +14198,9 @@
         1055,
         2003
       ],
-      "play": 19336,
-      "win": 10182,
-      "pick_rate": 0.8146
+      "play": 19457,
+      "win": 10237,
+      "pick_rate": 0.8145
     },
     {
       "ids": [
@@ -14202,17 +14208,17 @@
         2003,
         2003
       ],
-      "play": 2504,
-      "win": 1307,
-      "pick_rate": 0.1055
+      "play": 2525,
+      "win": 1318,
+      "pick_rate": 0.1057
     },
     {
       "ids": [
         1083,
         2003
       ],
-      "play": 845,
-      "win": 424,
+      "play": 850,
+      "win": 427,
       "pick_rate": 0.0356
     },
     {
@@ -14222,7 +14228,7 @@
       ],
       "play": 144,
       "win": 79,
-      "pick_rate": 0.0061
+      "pick_rate": 0.006
     },
     {
       "ids": [
@@ -14230,7 +14236,7 @@
         2003,
         3070
       ],
-      "play": 123,
+      "play": 124,
       "win": 64,
       "pick_rate": 0.0052
     },
@@ -14266,6 +14272,16 @@
     },
     {
       "ids": [
+        1042,
+        1055,
+        2003
+      ],
+      "play": 61,
+      "win": 36,
+      "pick_rate": 0.0026
+    },
+    {
+      "ids": [
         1001,
         1055,
         2003
@@ -14283,16 +14299,6 @@
       ],
       "play": 59,
       "win": 32,
-      "pick_rate": 0.0025
-    },
-    {
-      "ids": [
-        1042,
-        1055,
-        2003
-      ],
-      "play": 60,
-      "win": 36,
       "pick_rate": 0.0025
     },
     {
@@ -14323,8 +14329,8 @@
         1055,
         2003
       ],
-      "play": 21,
-      "win": 17,
+      "play": 22,
+      "win": 18,
       "pick_rate": 0.0009
     },
     {
@@ -14344,111 +14350,111 @@
       "ids": [
         3153
       ],
-      "play": 18667,
-      "win": 9910,
+      "play": 18781,
+      "win": 9962,
       "pick_rate": 0.2615
     },
     {
       "ids": [
         3124
       ],
-      "play": 16591,
-      "win": 9097,
-      "pick_rate": 0.2324
+      "play": 16684,
+      "win": 9143,
+      "pick_rate": 0.2323
     },
     {
       "ids": [
         3085
       ],
-      "play": 8650,
-      "win": 4987,
-      "pick_rate": 0.1212
+      "play": 8688,
+      "win": 5005,
+      "pick_rate": 0.121
     },
     {
       "ids": [
         3091
       ],
-      "play": 4801,
-      "win": 2688,
-      "pick_rate": 0.0673
+      "play": 4827,
+      "win": 2703,
+      "pick_rate": 0.0672
     },
     {
       "ids": [
         3302
       ],
-      "play": 4003,
-      "win": 2243,
+      "play": 4028,
+      "win": 2254,
       "pick_rate": 0.0561
     },
     {
       "ids": [
         6675
       ],
-      "play": 2940,
-      "win": 1727,
+      "play": 2960,
+      "win": 1738,
       "pick_rate": 0.0412
     },
     {
       "ids": [
         6665
       ],
-      "play": 2411,
-      "win": 1355,
-      "pick_rate": 0.0338
+      "play": 2420,
+      "win": 1360,
+      "pick_rate": 0.0337
     },
     {
       "ids": [
         6672
       ],
-      "play": 2003,
-      "win": 1146,
+      "play": 2020,
+      "win": 1153,
       "pick_rate": 0.0281
     },
     {
       "ids": [
         6655
       ],
-      "play": 1489,
-      "win": 803,
+      "play": 1503,
+      "win": 812,
       "pick_rate": 0.0209
     },
     {
       "ids": [
         3040
       ],
-      "play": 1030,
-      "win": 560,
-      "pick_rate": 0.0144
+      "play": 1038,
+      "win": 564,
+      "pick_rate": 0.0145
     },
     {
       "ids": [
         3172
       ],
-      "play": 756,
-      "win": 428,
+      "play": 760,
+      "win": 430,
       "pick_rate": 0.0106
     },
     {
       "ids": [
         4645
       ],
-      "play": 635,
-      "win": 343,
+      "play": 642,
+      "win": 347,
       "pick_rate": 0.0089
     },
     {
       "ids": [
         4628
       ],
-      "play": 616,
-      "win": 339,
+      "play": 621,
+      "win": 341,
       "pick_rate": 0.0086
     },
     {
       "ids": [
         6653
       ],
-      "play": 555,
+      "play": 557,
       "win": 270,
       "pick_rate": 0.0078
     },
@@ -14456,15 +14462,15 @@
       "ids": [
         3118
       ],
-      "play": 548,
-      "win": 291,
+      "play": 553,
+      "win": 294,
       "pick_rate": 0.0077
     },
     {
       "ids": [
         3143
       ],
-      "play": 429,
+      "play": 431,
       "win": 229,
       "pick_rate": 0.006
     },
@@ -14472,7 +14478,7 @@
       "ids": [
         3748
       ],
-      "play": 427,
+      "play": 429,
       "win": 252,
       "pick_rate": 0.006
     },
@@ -14480,39 +14486,39 @@
       "ids": [
         3089
       ],
-      "play": 421,
-      "win": 240,
+      "play": 423,
+      "win": 242,
       "pick_rate": 0.0059
     },
     {
       "ids": [
         3070
       ],
-      "play": 301,
-      "win": 148,
+      "play": 303,
+      "win": 149,
       "pick_rate": 0.0042
     },
     {
       "ids": [
         3077
       ],
-      "play": 258,
-      "win": 143,
+      "play": 261,
+      "win": 144,
       "pick_rate": 0.0036
     },
     {
       "ids": [
         2503
       ],
-      "play": 242,
-      "win": 118,
+      "play": 245,
+      "win": 119,
       "pick_rate": 0.0034
     },
     {
       "ids": [
         3157
       ],
-      "play": 224,
+      "play": 226,
       "win": 122,
       "pick_rate": 0.0031
     },
@@ -14526,33 +14532,33 @@
     },
     {
       "ids": [
-        3135
+        3139
       ],
-      "play": 195,
-      "win": 93,
+      "play": 196,
+      "win": 113,
       "pick_rate": 0.0027
     },
     {
       "ids": [
-        3139
+        3135
       ],
-      "play": 195,
-      "win": 112,
+      "play": 196,
+      "win": 93,
       "pick_rate": 0.0027
     },
     {
       "ids": [
         1082
       ],
-      "play": 186,
-      "win": 108,
+      "play": 188,
+      "win": 109,
       "pick_rate": 0.0026
     },
     {
       "ids": [
         3116
       ],
-      "play": 187,
+      "play": 189,
       "win": 97,
       "pick_rate": 0.0026
     },
@@ -14560,7 +14566,7 @@
       "ids": [
         3123
       ],
-      "play": 175,
+      "play": 176,
       "win": 68,
       "pick_rate": 0.0025
     },

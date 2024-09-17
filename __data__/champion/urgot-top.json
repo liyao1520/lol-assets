@@ -507,7 +507,7 @@
         },
         {
           "champion_id": 240,
-          "play": 188,
+          "play": 189,
           "win": 87,
           "meta": {
             "id": 240,
@@ -728,7 +728,7 @@
               }
             ]
           },
-          "win_rate": 46.28
+          "win_rate": 46.03
         },
         {
           "champion_id": 31,
@@ -1029,217 +1029,166 @@
           "win_rate": 46.55
         },
         {
-          "champion_id": 77,
-          "play": 70,
-          "win": 33,
+          "champion_id": 164,
+          "play": 704,
+          "win": 335,
           "meta": {
-            "id": 77,
-            "key": "Udyr",
-            "name": "兽灵行者",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/Udyr.png",
+            "id": 164,
+            "key": "Camille",
+            "name": "青钢影",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/Camille.png",
             "evolve": [],
             "partype": "法力",
             "passive": {
-              "name": "众灵纽带",
-              "description": "乌迪尔的四个基础技能会让他在四种姿态之间来回转换，并且再次施放同一技能会带来终极技能助益。此外，在使用一个技能后，乌迪尔的下两次攻击获得攻击速度。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/passive/Udyr_P.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0077/ability_0077_P1.webm"
+              "name": "适应性防御",
+              "description": "对敌方英雄发起的普攻会基于该英雄的伤害类型（物理或魔法）提供一层专门吸收该类型伤害的护盾，护盾的生命值相当于卡蜜尔的一部分最大生命值，持续一小段时间。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/passive/Camille_Passive.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0164/ability_0164_P1.webm"
             },
             "spells": [
               {
                 "key": "Q",
-                "name": "狂暴爪击",
-                "description": "乌迪尔获得攻击速度加成并且他的下两次攻击造成额外的物理伤害。再次施放：获得更多攻击速度加成，并且下两次攻击会召唤闪电打击目标。",
-                "max_rank": 6,
+                "name": "精准礼仪",
+                "description": "卡蜜尔的下一次普通攻击会斩击敌人，造成额外物理伤害，并为自身提供短暂的爆发性移动速度加成。这个技能可以在释放后的短时间内再次施放，并且如果两次释放之间存在一定的间隔，那么第二段攻击会造成显著的额外伤害。",
+                "max_rank": 5,
                 "range_burn": [
-                  600
+                  325
                 ],
                 "cooldown_burn": [
-                  6
+                  9,
+                  8,
+                  7,
+                  6,
+                  5
                 ],
                 "cooldown_burn_float": [
-                  6
+                  9,
+                  8,
+                  7,
+                  6,
+                  5
                 ],
                 "cost_burn": [
-                  20
+                  25
                 ],
-                "tooltip": "<spellActive>爪击姿态：</spellActive>乌迪尔获得<attackSpeed>?%攻击速度</attackSpeed>并且他攻击造成<physicalDamage>?物理伤害</physicalDamage> %i:OnHit%<OnHit>攻击特效</OnHit>，持续?秒。此外，乌迪尔在这个姿态中的下两次攻击造成额外的<physicalDamage>?最大生命值的物理伤害</physicalDamage>并获得?距离。<br /><br /><keywordMajor>觉醒：</keywordMajor>将额外<attackSpeed>攻击速度</attackSpeed>提升至<attackSpeed>?</attackSpeed>并且将百分比生命值伤害提升至<physicalDamage>{{ q2totalonhithpdamage }}</physicalDamage>。此外，乌迪尔的下两次攻击会召唤闪电进行6次打击，对落单的目标造成共计<magicDamage>?最大生命值的魔法伤害</magicDamage>(如果可能的话，闪电打击会弹射至附近的其它目标)。<br />?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/spell/UdyrQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0077/ability_0077_Q1.webm"
+                "tooltip": "卡蜜尔的下次攻击造成额外的<physicalDamage>?物理伤害</physicalDamage>并为她提供<speed>?%移动速度</speed>，持续?秒。这个技能可以在接下来的?秒里无消耗地<recast>再次施放</recast>。<br /><br />如果<recast>再次施放</recast>的攻击与第一段攻击相距至少?秒，那么额外伤害会提升至<physicalDamage>?</physicalDamage>，并且该次攻击的?伤害转化为<trueDamage>真实伤害</trueDamage>。<br /><br /><rules>这个技能会在造成伤害时触发技能特效。</rules>?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/spell/CamilleQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0164/ability_0164_Q1.webm"
               },
               {
                 "key": "W",
-                "name": "坚铁甲胄",
-                "description": "乌迪尔获得护盾，并且下两次攻击会回复生命值。再次施放：获得更厚的护盾并且在接下来的若干秒内持续获得基于最大生命值的治疗效果。",
-                "max_rank": 6,
+                "name": "战术横扫",
+                "description": "卡蜜尔在短暂延迟后引爆一个锥形范围，并造成伤害。外沿的敌人会被减速并且受到额外伤害，同时还会治疗卡蜜尔。",
+                "max_rank": 5,
                 "range_burn": [
-                  0
+                  610
                 ],
                 "cooldown_burn": [
-                  6
+                  17,
+                  15,
+                  14,
+                  12,
+                  11
                 ],
                 "cooldown_burn_float": [
-                  6
+                  17,
+                  15.5,
+                  14,
+                  12.5,
+                  11
                 ],
                 "cost_burn": [
-                  40
+                  50,
+                  55,
+                  60,
+                  65,
+                  70
                 ],
-                "tooltip": "<spellPassive>甲胄姿态：</spellPassive>乌迪尔获得持续?秒的<shield>?护盾值</shield>。此外，乌迪尔的下两次攻击具有?%生命偷取并回复<healing>?生命值</healing>。<br /><br /><keywordMajor>觉醒：</keywordMajor>获得<shield>?护盾值</shield>，在?秒里持续回复<healing>?生命值</healing>，并且乌迪尔的下两次攻击转而具有?%生命偷取并回复<healing>?生命值</healing>。<br />?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/spell/UdyrW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0077/ability_0077_W1.webm"
+                "tooltip": "卡蜜尔蓄力然后切割，造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br />被外沿命中的敌人会被<status>减速</status>?%，减速效果会在?秒里持续衰减，并会受到额外的<physicalDamage>?最大生命值的物理伤害</physicalDamage>。卡蜜尔会回复<healing>对敌方英雄们的?%实际额外伤害值的生命值</healing>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/spell/CamilleW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0164/ability_0164_W1.webm"
               },
               {
                 "key": "E",
-                "name": "踏火蛮冲",
-                "description": "乌迪尔获得移动速度并且他对每个目标打出的第一次攻击将造成晕眩。再次施放：获得更多移动速度并在若干秒里免疫定身效果。 ",
-                "max_rank": 6,
+                "name": "钩索",
+                "description": "卡蜜尔将她自己拉向一个墙体，然后跳下并在落地时击飞敌方英雄。",
+                "max_rank": 5,
                 "range_burn": [
-                  600
+                  800
                 ],
                 "cooldown_burn": [
-                  6
+                  16,
+                  15,
+                  14,
+                  13,
+                  12
                 ],
                 "cooldown_burn_float": [
-                  6
+                  16,
+                  15,
+                  14,
+                  13,
+                  12
                 ],
                 "cost_burn": [
-                  40
+                  70
                 ],
-                "tooltip": "<spellActive>蛮冲姿态：</spellActive>乌迪尔获得在?秒里持续衰减的<speed>?%移动速度</speed>。此外，乌迪尔的攻击会使他冲刺到目标处并造成?秒<status>晕眩</status>。(对每个目标各有?秒冷却时间)。<br /><br /><keywordMajor>觉醒：</keywordMajor>免疫<status>定身</status>和<status>限制</status>效果，并额外提供持续?秒的<speed>?移动速度</speed>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/spell/UdyrE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0077/ability_0077_E1.webm"
+                "tooltip": "卡蜜尔发射一个可附着在地形上的钩索，并将卡蜜尔拉到钩索处，并使此技能可以在1秒内<recast>再次施放</recast>。<br /><br /><recast>再次施放：</recast>卡蜜尔从墙体上跳下，与命中的第一个敌方英雄进行碰撞。在着陆时，她会对附近的敌人造成<physicalDamage>?物理伤害</physicalDamage>并对附近的敌方英雄造成?秒<status>晕眩</status>。朝着敌方英雄突进时，突进距离翻倍并在碰撞后提供<attackSpeed>?%攻击速度</attackSpeed>，持续?秒。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/spell/CamilleE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0164/ability_0164_E1.webm"
               },
               {
                 "key": "R",
-                "name": "极凌飓风",
-                "description": "乌迪尔召唤冰川风暴环绕自身，对附近的敌人造成伤害和减速。再次施放：强化并释放风暴，让风暴追踪敌人并造成额外伤害。",
-                "max_rank": 6,
+                "name": "海克斯最后通牒",
+                "description": "卡蜜尔冲向目标英雄，并将该英雄锚定在区域中。她对目标英雄发起的普攻还会造成额外的魔法伤害。",
+                "max_rank": 3,
                 "range_burn": [
-                  370
+                  475
                 ],
                 "cooldown_burn": [
-                  6
+                  140,
+                  115,
+                  90
                 ],
                 "cooldown_burn_float": [
-                  6
+                  140,
+                  115,
+                  90
                 ],
                 "cost_burn": [
-                  40
+                  100
                 ],
-                "tooltip": "<spellActive>飓风姿态：</spellActive>乌迪尔召唤冰川风暴环绕自身?秒，每秒对附近的敌人造成<magicDamage>?魔法伤害</magicDamage>，并对这些敌人造成?%<status>减速</status>。此外，乌迪尔在这个姿态中的下两次攻击对风暴中的敌人造成<magicDamage>?魔法伤害</magicDamage>。<br /><br /><keywordMajor>觉醒：</keywordMajor>释放风暴，使它跟随乌迪尔最后攻击的那名敌人，在持续期间造成额外的<magicDamage>?最大生命值的魔法伤害</magicDamage>，和额外的?<status>减速</status>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/spell/UdyrR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0077/ability_0077_R1.webm"
+                "tooltip": "卡蜜尔暂时变得无法被选取，并且跳向一个敌方英雄，打断引导状态并将该英雄锁定在一个区域内，并且该英雄怎样都无法逃出这个区域，持续?秒。其它敌人会被<status>震开</status>。她的攻击会对目标敌人造成额外的<magicDamage>?加上?%当前生命值的魔法伤害</magicDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/spell/CamilleR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0164/ability_0164_R1.webm"
               }
             ],
             "skins": [
               {
-                "id": 77000,
-                "champion_id": 77,
+                "id": 164000,
+                "champion_id": 164,
                 "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Udyr_0.jpg",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Camille_0.jpg",
                 "skin_video_url": null,
                 "prices": [
                   {
                     "currency": "IP",
-                    "cost": 1350
+                    "cost": 4800
                   },
                   {
                     "currency": "RP",
-                    "cost": 585
+                    "cost": 880
                   }
                 ],
                 "sales": null,
                 "release_date": null
               },
               {
-                "id": 77002,
-                "champion_id": 77,
-                "name": "四神之力 乌迪尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Udyr_2.jpg",
-                "skin_video_url": "https://youtu.be/s7MOAX2dgzU",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 77006,
-                "champion_id": 77,
-                "name": "墨影行者 乌迪尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Udyr_6.jpg",
-                "skin_video_url": "https://youtu.be/lsLfGO6t7ic",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": [
-                  {
-                    "currency": "RP",
-                    "cost": 675,
-                    "discount_rate": 0.5,
-                    "started_at": "2024-09-16T17:00:00+09:00",
-                    "ended_at": "2024-09-19T17:00:00+09:00"
-                  }
-                ],
-                "release_date": "2023-05-03T04:00:00+09:00"
-              },
-              {
-                "id": 77001,
-                "champion_id": 77,
-                "name": "武力全开 乌迪尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Udyr_1.jpg",
-                "skin_video_url": "https://youtu.be/PFepeOU5YME",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 520
-                  }
-                ],
-                "sales": null,
-                "release_date": "2010-07-12T15:00:00+09:00"
-              },
-              {
-                "id": 77003,
-                "champion_id": 77,
-                "name": "灵魂守卫 乌迪尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Udyr_3.jpg",
-                "skin_video_url": "https://youtu.be/b0CI01k4B0s",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 3250
-                  }
-                ],
-                "sales": null,
-                "release_date": "2013-03-10T08:00:00+09:00"
-              },
-              {
-                "id": 77004,
-                "champion_id": 77,
-                "name": "这货不是乌迪尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Udyr_4.jpg",
-                "skin_video_url": "https://youtu.be/cIpI66YMh4A",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2015-03-09T15:00:00+09:00"
-              },
-              {
-                "id": 77005,
-                "champion_id": 77,
-                "name": "龙神之力 乌迪尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Udyr_5.jpg",
-                "skin_video_url": "https://youtu.be/FrxIZL-JrF8",
+                "id": 164010,
+                "champion_id": 164,
+                "name": "iG 卡蜜尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Camille_10.jpg",
+                "skin_video_url": "https://youtu.be/JvHGQMMYNko",
                 "prices": [
                   {
                     "currency": "RP",
@@ -1247,11 +1196,96 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2019-08-15T01:00:00+09:00"
+                "release_date": null
+              },
+              {
+                "id": 164031,
+                "champion_id": 164,
+                "name": "北极星钢影 卡蜜尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Camille_31.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2023-12-06T10:00:00+09:00"
+              },
+              {
+                "id": 164021,
+                "champion_id": 164,
+                "name": "海珀利安小队 Y03-权天使 卡蜜尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Camille_21.jpg",
+                "skin_video_url": "https://youtu.be/7EeRdPYzwog",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2022-08-25T04:00:00+09:00"
+              },
+              {
+                "id": 164001,
+                "champion_id": 164,
+                "name": "源代码 卡蜜尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Camille_1.jpg",
+                "skin_video_url": "https://youtu.be/u6Bf82z9nZM",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2016-12-12T09:00:00+09:00"
+              },
+              {
+                "id": 164032,
+                "champion_id": 164,
+                "name": "至臻 北极星钢影 卡蜜尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Camille_32.jpg",
+                "skin_video_url": "https://youtu.be/TQfQhDUQ_WM",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 164011,
+                "champion_id": 164,
+                "name": "莫测之影 卡蜜尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Camille_11.jpg",
+                "skin_video_url": "https://youtu.be/dvtPMq6PJAk",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-05-13T04:00:00+09:00"
+              },
+              {
+                "id": 164002,
+                "champion_id": 164,
+                "name": "魔女 卡蜜尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/14.18.1/champion/centered/Camille_2.jpg",
+                "skin_video_url": "https://youtu.be/Ver4BIYjg2g",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2018-11-26T07:00:00+09:00"
               }
             ]
           },
-          "win_rate": 47.14
+          "win_rate": 47.59
         },
         {
           "champion_id": 2,
@@ -1817,7 +1851,7 @@
         },
         {
           "champion_id": 901,
-          "play": 306,
+          "play": 307,
           "win": 189,
           "meta": {
             "id": 901,
@@ -1983,12 +2017,12 @@
               }
             ]
           },
-          "win_rate": 61.76
+          "win_rate": 61.56
         },
         {
           "champion_id": 85,
-          "play": 208,
-          "win": 120,
+          "play": 210,
+          "win": 121,
           "meta": {
             "id": 85,
             "key": "Kennen",
@@ -2290,12 +2324,12 @@
               }
             ]
           },
-          "win_rate": 57.69
+          "win_rate": 57.62
         },
         {
           "champion_id": 84,
-          "play": 106,
-          "win": 61,
+          "play": 108,
+          "win": 62,
           "meta": {
             "id": 84,
             "key": "Akali",
@@ -2724,11 +2758,11 @@
               }
             ]
           },
-          "win_rate": 57.55
+          "win_rate": 57.41
         },
         {
           "champion_id": 80,
-          "play": 231,
+          "play": 232,
           "win": 132,
           "meta": {
             "id": 80,
@@ -3034,15 +3068,15 @@
               }
             ]
           },
-          "win_rate": 57.14
+          "win_rate": 56.9
         }
       ]
     ],
     "counters": [
       {
         "champion_id": 266,
-        "play": 1320,
-        "win": 669,
+        "play": 1329,
+        "win": 674,
         "meta": {
           "id": 266,
           "key": "Aatrox",
@@ -3355,8 +3389,8 @@
       },
       {
         "champion_id": 86,
-        "play": 1193,
-        "win": 598,
+        "play": 1199,
+        "win": 602,
         "meta": {
           "id": 86,
           "key": "Garen",
@@ -3698,8 +3732,8 @@
       },
       {
         "champion_id": 8,
-        "play": 895,
-        "win": 471,
+        "play": 899,
+        "win": 474,
         "meta": {
           "id": 8,
           "key": "Vladimir",
@@ -4038,8 +4072,8 @@
       },
       {
         "champion_id": 122,
-        "play": 825,
-        "win": 445,
+        "play": 830,
+        "win": 449,
         "meta": {
           "id": 122,
           "key": "Darius",
@@ -4379,8 +4413,8 @@
       },
       {
         "champion_id": 875,
-        "play": 728,
-        "win": 382,
+        "play": 732,
+        "win": 384,
         "meta": {
           "id": 875,
           "key": "Sett",
@@ -4648,8 +4682,8 @@
       },
       {
         "champion_id": 82,
-        "play": 704,
-        "win": 366,
+        "play": 709,
+        "win": 368,
         "meta": {
           "id": 82,
           "key": "Mordekaiser",
@@ -4965,7 +4999,7 @@
       },
       {
         "champion_id": 164,
-        "play": 701,
+        "play": 704,
         "win": 335,
         "meta": {
           "id": 164,
@@ -5223,8 +5257,8 @@
       },
       {
         "champion_id": 58,
-        "play": 686,
-        "win": 368,
+        "play": 690,
+        "win": 370,
         "meta": {
           "id": 58,
           "key": "Renekton",
@@ -5559,8 +5593,8 @@
       },
       {
         "champion_id": 75,
-        "play": 653,
-        "win": 342,
+        "play": 659,
+        "win": 345,
         "meta": {
           "id": 75,
           "key": "Nasus",
@@ -6283,8 +6317,8 @@
       },
       {
         "champion_id": 106,
-        "play": 579,
-        "win": 293,
+        "play": 582,
+        "win": 294,
         "meta": {
           "id": 106,
           "key": "Volibear",
@@ -6558,8 +6592,8 @@
       },
       {
         "champion_id": 92,
-        "play": 569,
-        "win": 312,
+        "play": 570,
+        "win": 313,
         "meta": {
           "id": 92,
           "key": "Riven",
@@ -6948,8 +6982,8 @@
       },
       {
         "champion_id": 777,
-        "play": 559,
-        "win": 294,
+        "play": 561,
+        "win": 296,
         "meta": {
           "id": 777,
           "key": "Yone",
@@ -7219,8 +7253,8 @@
       },
       {
         "champion_id": 114,
-        "play": 534,
-        "win": 281,
+        "play": 537,
+        "win": 284,
         "meta": {
           "id": 114,
           "key": "Fiora",
@@ -7605,8 +7639,8 @@
       },
       {
         "champion_id": 150,
-        "play": 534,
-        "win": 282,
+        "play": 537,
+        "win": 284,
         "meta": {
           "id": 150,
           "key": "Gnar",
@@ -7886,8 +7920,8 @@
       },
       {
         "champion_id": 420,
-        "play": 462,
-        "win": 253,
+        "play": 464,
+        "win": 254,
         "meta": {
           "id": 420,
           "key": "Illaoi",
@@ -8115,7 +8149,7 @@
       },
       {
         "champion_id": 83,
-        "play": 426,
+        "play": 427,
         "win": 226,
         "meta": {
           "id": 83,
@@ -8378,8 +8412,8 @@
       },
       {
         "champion_id": 516,
-        "play": 421,
-        "win": 202,
+        "play": 424,
+        "win": 204,
         "meta": {
           "id": 516,
           "key": "Ornn",
@@ -8600,8 +8634,8 @@
       },
       {
         "champion_id": 54,
-        "play": 420,
-        "win": 212,
+        "play": 423,
+        "win": 213,
         "meta": {
           "id": 54,
           "key": "Malphite",
@@ -8921,8 +8955,8 @@
       },
       {
         "champion_id": 887,
-        "play": 413,
-        "win": 204,
+        "play": 415,
+        "win": 206,
         "meta": {
           "id": 887,
           "key": "Gwen",
@@ -9135,7 +9169,7 @@
       },
       {
         "champion_id": 41,
-        "play": 396,
+        "play": 397,
         "win": 215,
         "meta": {
           "id": 41,
@@ -9456,8 +9490,8 @@
       },
       {
         "champion_id": 98,
-        "play": 367,
-        "win": 179,
+        "play": 372,
+        "win": 183,
         "meta": {
           "id": 98,
           "key": "Shen",
@@ -9764,8 +9798,8 @@
       },
       {
         "champion_id": 126,
-        "play": 367,
-        "win": 196,
+        "play": 368,
+        "win": 197,
         "meta": {
           "id": 126,
           "key": "Jayce",
@@ -10055,8 +10089,8 @@
       },
       {
         "champion_id": 23,
-        "play": 362,
-        "win": 184,
+        "play": 365,
+        "win": 185,
         "meta": {
           "id": 23,
           "key": "Tryndamere",
@@ -10857,7 +10891,7 @@
       },
       {
         "champion_id": 901,
-        "play": 306,
+        "play": 307,
         "win": 189,
         "meta": {
           "id": 901,
@@ -11026,7 +11060,7 @@
       },
       {
         "champion_id": 14,
-        "play": 294,
+        "play": 295,
         "win": 143,
         "meta": {
           "id": 14,
@@ -11318,8 +11352,8 @@
       },
       {
         "champion_id": 79,
-        "play": 279,
-        "win": 142,
+        "play": 281,
+        "win": 144,
         "meta": {
           "id": 79,
           "key": "Gragas",
@@ -11941,8 +11975,8 @@
       },
       {
         "champion_id": 223,
-        "play": 262,
-        "win": 137,
+        "play": 264,
+        "win": 138,
         "meta": {
           "id": 223,
           "key": "TahmKench",
@@ -12185,8 +12219,8 @@
       },
       {
         "champion_id": 36,
-        "play": 260,
-        "win": 133,
+        "play": 262,
+        "win": 134,
         "meta": {
           "id": 36,
           "key": "DrMundo",
@@ -12477,8 +12511,8 @@
       },
       {
         "champion_id": 39,
-        "play": 239,
-        "win": 120,
+        "play": 240,
+        "win": 121,
         "meta": {
           "id": 39,
           "key": "Irelia",
@@ -12830,8 +12864,8 @@
       },
       {
         "champion_id": 62,
-        "play": 236,
-        "win": 115,
+        "play": 237,
+        "win": 116,
         "meta": {
           "id": 62,
           "key": "MonkeyKing",
@@ -13124,7 +13158,7 @@
       },
       {
         "champion_id": 80,
-        "play": 231,
+        "play": 232,
         "win": 132,
         "meta": {
           "id": 80,
@@ -13433,8 +13467,8 @@
       },
       {
         "champion_id": 85,
-        "play": 208,
-        "win": 120,
+        "play": 210,
+        "win": 121,
         "meta": {
           "id": 85,
           "key": "Kennen",
@@ -13739,8 +13773,8 @@
       },
       {
         "champion_id": 157,
-        "play": 194,
-        "win": 93,
+        "play": 195,
+        "win": 94,
         "meta": {
           "id": 157,
           "key": "Yasuo",
@@ -14123,8 +14157,8 @@
       },
       {
         "champion_id": 19,
-        "play": 191,
-        "win": 103,
+        "play": 192,
+        "win": 104,
         "meta": {
           "id": 19,
           "key": "Warwick",
@@ -14458,7 +14492,7 @@
       },
       {
         "champion_id": 240,
-        "play": 188,
+        "play": 189,
         "win": 87,
         "meta": {
           "id": 240,
@@ -14682,8 +14716,8 @@
       },
       {
         "champion_id": 10,
-        "play": 182,
-        "win": 88,
+        "play": 183,
+        "win": 89,
         "meta": {
           "id": 10,
           "key": "Kayle",
@@ -15053,8 +15087,8 @@
       },
       {
         "champion_id": 17,
-        "play": 179,
-        "win": 100,
+        "play": 180,
+        "win": 101,
         "meta": {
           "id": 17,
           "key": "Teemo",
@@ -15390,8 +15424,8 @@
       },
       {
         "champion_id": 78,
-        "play": 173,
-        "win": 85,
+        "play": 175,
+        "win": 87,
         "meta": {
           "id": 78,
           "key": "Poppy",
@@ -15713,8 +15747,8 @@
       },
       {
         "champion_id": 27,
-        "play": 170,
-        "win": 95,
+        "play": 172,
+        "win": 96,
         "meta": {
           "id": 27,
           "key": "Singed",
@@ -16436,8 +16470,8 @@
       },
       {
         "champion_id": 133,
-        "play": 130,
-        "win": 62,
+        "play": 133,
+        "win": 64,
         "meta": {
           "id": 133,
           "key": "Quinn",
@@ -16682,7 +16716,7 @@
       },
       {
         "champion_id": 67,
-        "play": 124,
+        "play": 125,
         "win": 65,
         "meta": {
           "id": 67,
@@ -17076,8 +17110,8 @@
       },
       {
         "champion_id": 68,
-        "play": 124,
-        "win": 66,
+        "play": 125,
+        "win": 67,
         "meta": {
           "id": 68,
           "key": "Rumble",
@@ -17632,8 +17666,8 @@
       },
       {
         "champion_id": 154,
-        "play": 115,
-        "win": 57,
+        "play": 116,
+        "win": 58,
         "meta": {
           "id": 154,
           "key": "Zac",
@@ -17868,8 +17902,8 @@
       },
       {
         "champion_id": 84,
-        "play": 106,
-        "win": 61,
+        "play": 108,
+        "win": 62,
         "meta": {
           "id": 84,
           "key": "Akali",
@@ -18824,8 +18858,8 @@
       },
       {
         "champion_id": 77,
-        "play": 70,
-        "win": 33,
+        "play": 71,
+        "win": 34,
         "meta": {
           "id": 77,
           "key": "Udyr",
