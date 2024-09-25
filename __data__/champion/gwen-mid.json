@@ -1,0 +1,880 @@
+{
+  "summary": {
+    "version": {
+      "patch_index": 1419,
+      "version": "14.19"
+    },
+    "versions": [
+      "14.19",
+      "14.18",
+      "14.17"
+    ],
+    "meta": {
+      "id": 887,
+      "key": "Gwen",
+      "name": "灵罗娃娃",
+      "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Gwen.png",
+      "evolve": [],
+      "partype": "法力",
+      "passive": {
+        "name": "千穿百孔",
+        "description": "格温的攻击会造成基于目标生命值的额外魔法伤害。她自身会获得治疗效果，数额相当于这个效果对英雄造成的一部分伤害值。",
+        "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Gwen_Passive.png",
+        "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0887/ability_0887_P1.webm"
+      },
+      "spells": [
+        {
+          "key": "Q",
+          "name": "快刀剪乱",
+          "description": "格温在一个锥形区域剪切她的剪刀至多6次，来造成魔法伤害。格温的每次剪切会对中心区域的敌人造成真实伤害并对它们施加她的被动技能。",
+          "max_rank": 5,
+          "range_burn": [
+            450
+          ],
+          "cooldown_burn": [
+            6,
+            5,
+            5,
+            4,
+            3
+          ],
+          "cooldown_burn_float": [
+            6.5,
+            5.75,
+            5,
+            4.25,
+            3.5
+          ],
+          "cost_burn": [
+            40
+          ],
+          "tooltip": "<spellPassive>被动</spellPassive>：格温的每次攻击在命中敌人时会获得1层充能， (最大4层，持续?秒)。<br /><br /><spellActive>主动</spellActive>：消耗全部充能。格温进行(1+充能层数)次剪切，每次剪切造成<magicDamage>?魔法伤害</magicDamage>，然后进行最终剪切来造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />对每次剪切的中心区域的敌人们造成的伤害将有?%转化为<trueDamage>真实伤害</trueDamage>，并对其施加<spellName>千穿百孔</spellName>。<br /><rules><br />对小兵造成?%伤害。<br />低于?%生命值的小兵们会受到?%额外伤害而非削减过的伤害。</rules>?",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/GwenQ.png",
+          "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0887/ability_0887_Q1.webm"
+        },
+        {
+          "key": "W",
+          "name": "丝缕缠流",
+          "description": "格温召唤圣霭来保护她免受圣霭外敌人的进攻。她只会被进入圣霭内的敌人们选为目标。",
+          "max_rank": 5,
+          "range_burn": [
+            0
+          ],
+          "cooldown_burn": [
+            22,
+            21,
+            20,
+            19,
+            18
+          ],
+          "cooldown_burn_float": [
+            22,
+            21,
+            20,
+            19,
+            18
+          ],
+          "cost_burn": [
+            60
+          ],
+          "tooltip": "格温召唤圣霭结界，使她对结界之外的所有敌人(防御塔除外)来说处于无法被选取状态，持续?秒或直到她离开结界为止。在结界中，格温获得?<scaleArmor>护甲</scaleArmor>和<scaleMR>魔法抗性</scaleMR>。<br /><br />格温可以<recast>再次施放</recast>这个技能，来将结界召唤到她所在的位置，但只有1次机会。格温在第一次尝试离开结界时会自动进行<recast>再次施放</recast>。?",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/GwenW.png",
+          "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0887/ability_0887_W1.webm"
+        },
+        {
+          "key": "E",
+          "name": "断续疾走",
+          "description": "格温冲刺一小段距离然后获得攻击速度、攻击距离和魔法伤害<OnHit>攻击特效</OnHit>，持续若干秒。如果她在此期间命中了一个敌人，那么这个技能的冷却时间会获得部分返还。",
+          "max_rank": 5,
+          "range_burn": [
+            400
+          ],
+          "cooldown_burn": [
+            13,
+            12,
+            12,
+            11,
+            11
+          ],
+          "cooldown_burn_float": [
+            13,
+            12.5,
+            12,
+            11.5,
+            11
+          ],
+          "cost_burn": [
+            35
+          ],
+          "tooltip": "格温冲刺并强化她的攻击?秒。<br /><br />强化攻击获得<attackSpeed>?攻击速度</attackSpeed>，<magicDamage>?附加魔法伤害</magicDamage>%i:OnHit% <OnHit>攻击特效</OnHit>，?攻击距离，并且首次攻击在命中一名敌人时会返还此技能?%冷却时间。?",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/GwenE.png",
+          "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0887/ability_0887_E1.webm"
+        },
+        {
+          "key": "R",
+          "name": "引针簇射",
+          "description": "格温掷出一根针来对命中的敌人们造成减速、魔法伤害，并对命中的英雄们施加【千穿百孔】。<br><br>这个技能至多可进行2段再次施放，每一段再次施放都会投掷更多的针，并造成更多伤害。格温必须在每段施放之间用攻击或技能命中一名敌人才能解锁下一段施放。",
+          "max_rank": 3,
+          "range_burn": [
+            1200
+          ],
+          "cooldown_burn": [
+            120,
+            100,
+            80
+          ],
+          "cooldown_burn_float": [
+            120,
+            100,
+            80
+          ],
+          "cost_burn": [
+            100
+          ],
+          "tooltip": "<spellActive>第一段施放：</spellActive>掷出一根针来对命中的所有敌人造成<magicDamage>?魔法伤害</magicDamage>，以及持续?秒的?%<status>减速</status>，并施加<spellName>千穿百孔</spellName>。格温可以在6秒内<recast>再次施放</recast>这个技能至多2次(每次施放之间的冷却时间为?秒)。<br /><br /><recast>第二段施放：</recast>发射3根针来造成<magicDamage>?魔法伤害</magicDamage><br /><recast>第三段施放：</recast>发射5根针来造成<magicDamage>?魔法伤害</magicDamage>?",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/GwenR.png",
+          "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0887/ability_0887_R1.webm"
+        }
+      ],
+      "skins": [
+        {
+          "id": 887000,
+          "champion_id": 887,
+          "name": "default",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Gwen_0.jpg",
+          "skin_video_url": null,
+          "prices": [
+            {
+              "currency": "IP",
+              "cost": 4800
+            },
+            {
+              "currency": "RP",
+              "cost": 880
+            }
+          ],
+          "sales": null,
+          "release_date": null
+        },
+        {
+          "id": 887011,
+          "champion_id": 887,
+          "name": "咖啡甜心 格温",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Gwen_11.jpg",
+          "skin_video_url": "https://youtu.be/XkZMDKoubsA",
+          "prices": [
+            {
+              "currency": "RP",
+              "cost": 1350
+            }
+          ],
+          "sales": null,
+          "release_date": "2021-12-02T04:00:00+09:00"
+        },
+        {
+          "id": 887001,
+          "champion_id": 887,
+          "name": "太空律动 “百万调音” 格温",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Gwen_1.jpg",
+          "skin_video_url": "https://youtu.be/1sYgJ-oDAiw",
+          "prices": [
+            {
+              "currency": "RP",
+              "cost": 1350
+            }
+          ],
+          "sales": null,
+          "release_date": "2021-04-15T04:00:00+09:00"
+        },
+        {
+          "id": 887030,
+          "champion_id": 887,
+          "name": "女帝 格温",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Gwen_30.jpg",
+          "skin_video_url": null,
+          "prices": [
+            {
+              "currency": "RP",
+              "cost": 1350
+            }
+          ],
+          "sales": null,
+          "release_date": "2024-08-28T09:00:00+09:00"
+        },
+        {
+          "id": 887020,
+          "champion_id": 887,
+          "name": "斗魂觉醒 格温",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Gwen_20.jpg",
+          "skin_video_url": "https://youtu.be/Pirn4-Kspyw",
+          "prices": [
+            {
+              "currency": "RP",
+              "cost": 1350
+            }
+          ],
+          "sales": null,
+          "release_date": "2023-08-03T11:00:00+09:00"
+        }
+      ]
+    },
+    "summary": {
+      "id": 887,
+      "is_rotation": true,
+      "is_rip": false,
+      "average_stats": {
+        "play": 63,
+        "win_rate": 0.460317,
+        "pick_rate": 0.0482167,
+        "ban_rate": 0.0160722,
+        "kda": 1.811268,
+        "tier": 3,
+        "rank": 116,
+        "tier_data": {
+          "tier": 3,
+          "rank": 116,
+          "rank_prev": 140,
+          "rank_prev_patch": 57
+        }
+      },
+      "positions": [
+        {
+          "name": "TOP",
+          "stats": {
+            "play": 36,
+            "win_rate": 0.555556,
+            "pick_rate": 0.0275335,
+            "role_rate": 0.571429,
+            "ban_rate": 0.00918414,
+            "kda": 1.695,
+            "tier_data": {
+              "tier": 2,
+              "rank": 23,
+              "rank_prev": 30,
+              "rank_prev_patch": 19
+            }
+          },
+          "roles": [
+            {
+              "name": "MAGE",
+              "stats": {
+                "win_rate": 0.571429,
+                "role_rate": 0.972222,
+                "play": 35,
+                "win": 20
+              }
+            },
+            {
+              "name": "MARKSMAN",
+              "stats": {
+                "win_rate": 0,
+                "role_rate": 0.0277778,
+                "play": 1,
+                "win": 0
+              }
+            }
+          ],
+          "counters": []
+        },
+        {
+          "name": "JUNGLE",
+          "stats": {
+            "play": 20,
+            "win_rate": 0.4,
+            "pick_rate": 0.0154024,
+            "role_rate": 0.31746,
+            "ban_rate": 0.0051023,
+            "kda": 2.385965,
+            "tier_data": {
+              "tier": 4,
+              "rank": 45,
+              "rank_prev": 49,
+              "rank_prev_patch": 32
+            }
+          },
+          "roles": [
+            {
+              "name": "MAGE",
+              "stats": {
+                "win_rate": 0.4,
+                "role_rate": 0.952381,
+                "play": 20,
+                "win": 8
+              }
+            }
+          ],
+          "counters": []
+        },
+        {
+          "name": "MID",
+          "stats": {
+            "play": 7,
+            "win_rate": 0.142857,
+            "pick_rate": 0.00538048,
+            "role_rate": 0.111111,
+            "ban_rate": 0.00178581,
+            "kda": 0.780488,
+            "tier_data": {
+              "tier": 5,
+              "rank": 66,
+              "rank_prev": 70,
+              "rank_prev_patch": null
+            }
+          },
+          "roles": [
+            {
+              "name": "MAGE",
+              "stats": {
+                "win_rate": 0.142857,
+                "role_rate": 1,
+                "play": 7,
+                "win": 1
+              }
+            }
+          ],
+          "counters": []
+        }
+      ],
+      "roles": []
+    },
+    "opponents": [
+      [],
+      []
+    ],
+    "counters": []
+  },
+  "summoner_spells": [
+    {
+      "ids": [
+        6,
+        12
+      ],
+      "win": 1,
+      "play": 4,
+      "pick_rate": 0.6667
+    },
+    {
+      "ids": [
+        12,
+        14
+      ],
+      "win": 0,
+      "play": 1,
+      "pick_rate": 0.1667
+    },
+    {
+      "ids": [
+        4,
+        12
+      ],
+      "win": 0,
+      "play": 1,
+      "pick_rate": 0.1667
+    }
+  ],
+  "trends": {
+    "total_rank": 168,
+    "total_position_rank": 66,
+    "win": [
+      {
+        "version": "14.19",
+        "rate": 0.1429,
+        "rank": 66,
+        "created_at": "2024-09-24T22:31:28+09:00"
+      },
+      {
+        "version": "14.18",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-09-23T22:31:22+09:00"
+      },
+      {
+        "version": "14.17",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-09-09T22:31:38+09:00"
+      },
+      {
+        "version": "14.16",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-08-26T22:35:51+09:00"
+      },
+      {
+        "version": "14.15",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-08-12T23:36:41+09:00"
+      },
+      {
+        "version": "14.14",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-07-29T23:15:12+09:00"
+      },
+      {
+        "version": "14.13",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-07-15T23:14:12+09:00"
+      },
+      {
+        "version": "14.12",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-06-24T23:11:54+09:00"
+      },
+      {
+        "version": "14.11",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-06-10T23:11:19+09:00"
+      },
+      {
+        "version": "14.10",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-05-28T23:08:43+09:00"
+      }
+    ],
+    "pick": [
+      {
+        "version": "14.19",
+        "rate": 0.0054,
+        "rank": 66,
+        "created_at": "2024-09-24T22:31:28+09:00"
+      },
+      {
+        "version": "14.18",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-09-23T22:31:22+09:00"
+      },
+      {
+        "version": "14.17",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-09-09T22:31:38+09:00"
+      },
+      {
+        "version": "14.16",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-08-26T22:35:51+09:00"
+      },
+      {
+        "version": "14.15",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-08-12T23:36:41+09:00"
+      },
+      {
+        "version": "14.14",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-07-29T23:15:12+09:00"
+      },
+      {
+        "version": "14.13",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-07-15T23:14:12+09:00"
+      },
+      {
+        "version": "14.12",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-06-24T23:11:54+09:00"
+      },
+      {
+        "version": "14.11",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-06-10T23:11:19+09:00"
+      },
+      {
+        "version": "14.10",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-05-28T23:08:43+09:00"
+      }
+    ],
+    "ban": [
+      {
+        "version": "14.19",
+        "rate": 0.0018,
+        "rank": 60,
+        "created_at": "2024-09-24T22:31:28+09:00"
+      },
+      {
+        "version": "14.18",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-09-23T22:31:22+09:00"
+      },
+      {
+        "version": "14.17",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-09-09T22:31:38+09:00"
+      },
+      {
+        "version": "14.16",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-08-26T22:35:51+09:00"
+      },
+      {
+        "version": "14.15",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-08-12T23:36:41+09:00"
+      },
+      {
+        "version": "14.14",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-07-29T23:15:12+09:00"
+      },
+      {
+        "version": "14.13",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-07-15T23:14:12+09:00"
+      },
+      {
+        "version": "14.12",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-06-24T23:11:54+09:00"
+      },
+      {
+        "version": "14.11",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-06-10T23:11:19+09:00"
+      },
+      {
+        "version": "14.10",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-05-28T23:08:43+09:00"
+      }
+    ]
+  },
+  "game_lengths": [
+    {
+      "game_length": 0,
+      "rate": 0.166667,
+      "average": 0.5,
+      "rank": 64
+    },
+    {
+      "game_length": 25,
+      "rate": 0,
+      "average": 0.5,
+      "rank": 64
+    }
+  ],
+  "skills": [],
+  "skill_masteries": [],
+  "skill_evolves": [],
+  "runes": [
+    {
+      "id": 8010,
+      "primary_page_id": 8000,
+      "primary_rune_ids": [
+        8010,
+        8009,
+        9104,
+        8299
+      ],
+      "secondary_page_id": 8400,
+      "secondary_rune_ids": [
+        8242,
+        8473
+      ],
+      "stat_mod_ids": [
+        5005,
+        5008,
+        5001
+      ],
+      "play": 3,
+      "win": 0,
+      "pick_rate": 0.5
+    },
+    {
+      "id": 8010,
+      "primary_page_id": 8000,
+      "primary_rune_ids": [
+        8010,
+        8009,
+        9104,
+        8299
+      ],
+      "secondary_page_id": 8300,
+      "secondary_rune_ids": [
+        8304,
+        8345
+      ],
+      "stat_mod_ids": [
+        5005,
+        5008,
+        5001
+      ],
+      "play": 1,
+      "win": 0,
+      "pick_rate": 0.1667
+    },
+    {
+      "id": 8010,
+      "primary_page_id": 8000,
+      "primary_rune_ids": [
+        8010,
+        8009,
+        9104,
+        8299
+      ],
+      "secondary_page_id": 8400,
+      "secondary_rune_ids": [
+        8451,
+        8473
+      ],
+      "stat_mod_ids": [
+        5005,
+        5008,
+        5011
+      ],
+      "play": 1,
+      "win": 1,
+      "pick_rate": 0.1667
+    },
+    {
+      "id": 8010,
+      "primary_page_id": 8000,
+      "primary_rune_ids": [
+        8010,
+        8009,
+        9104,
+        8299
+      ],
+      "secondary_page_id": 8400,
+      "secondary_rune_ids": [
+        8444,
+        8453
+      ],
+      "stat_mod_ids": [
+        5005,
+        5008,
+        5001
+      ],
+      "play": 1,
+      "win": 0,
+      "pick_rate": 0.1667
+    }
+  ],
+  "rune_pages": [
+    {
+      "id": 8010,
+      "primary_page_id": 8000,
+      "secondary_page_id": 8400,
+      "play": 5,
+      "win": 1,
+      "pick_rate": 0.8333,
+      "builds": [
+        {
+          "id": 8010,
+          "primary_page_id": 8000,
+          "primary_rune_ids": [
+            8010,
+            8009,
+            9104,
+            8299
+          ],
+          "secondary_page_id": 8400,
+          "secondary_rune_ids": [
+            8242,
+            8473
+          ],
+          "stat_mod_ids": [
+            5005,
+            5008,
+            5001
+          ],
+          "play": 3,
+          "win": 0,
+          "pick_rate": 0.6
+        },
+        {
+          "id": 8010,
+          "primary_page_id": 8000,
+          "primary_rune_ids": [
+            8010,
+            8009,
+            9104,
+            8299
+          ],
+          "secondary_page_id": 8400,
+          "secondary_rune_ids": [
+            8451,
+            8473
+          ],
+          "stat_mod_ids": [
+            5005,
+            5008,
+            5011
+          ],
+          "play": 1,
+          "win": 1,
+          "pick_rate": 0.2
+        },
+        {
+          "id": 8010,
+          "primary_page_id": 8000,
+          "primary_rune_ids": [
+            8010,
+            8009,
+            9104,
+            8299
+          ],
+          "secondary_page_id": 8400,
+          "secondary_rune_ids": [
+            8444,
+            8453
+          ],
+          "stat_mod_ids": [
+            5005,
+            5008,
+            5001
+          ],
+          "play": 1,
+          "win": 0,
+          "pick_rate": 0.2
+        }
+      ]
+    },
+    {
+      "id": 8010,
+      "primary_page_id": 8000,
+      "secondary_page_id": 8300,
+      "play": 1,
+      "win": 0,
+      "pick_rate": 0.1667,
+      "builds": [
+        {
+          "id": 8010,
+          "primary_page_id": 8000,
+          "primary_rune_ids": [
+            8010,
+            8009,
+            9104,
+            8299
+          ],
+          "secondary_page_id": 8300,
+          "secondary_rune_ids": [
+            8304,
+            8345
+          ],
+          "stat_mod_ids": [
+            5005,
+            5008,
+            5001
+          ],
+          "play": 1,
+          "win": 0,
+          "pick_rate": 1
+        }
+      ]
+    }
+  ],
+  "core_items": [],
+  "boots": [
+    {
+      "ids": [
+        3009
+      ],
+      "play": 1,
+      "win": 1,
+      "pick_rate": 0.2
+    },
+    {
+      "ids": [
+        3158
+      ],
+      "play": 1,
+      "win": 0,
+      "pick_rate": 0.2
+    },
+    {
+      "ids": [
+        3111
+      ],
+      "play": 1,
+      "win": 0,
+      "pick_rate": 0.2
+    },
+    {
+      "ids": [
+        3047
+      ],
+      "play": 1,
+      "win": 0,
+      "pick_rate": 0.2
+    },
+    {
+      "ids": [
+        3020
+      ],
+      "play": 1,
+      "win": 0,
+      "pick_rate": 0.2
+    }
+  ],
+  "starter_items": [
+    {
+      "ids": [
+        1056,
+        2003,
+        2003
+      ],
+      "play": 6,
+      "win": 1,
+      "pick_rate": 0.8571
+    },
+    {
+      "ids": [
+        1054,
+        2003
+      ],
+      "play": 1,
+      "win": 0,
+      "pick_rate": 0.1429
+    }
+  ],
+  "last_items": [
+    {
+      "ids": [
+        4633
+      ],
+      "play": 6,
+      "win": 1,
+      "pick_rate": 0.75
+    },
+    {
+      "ids": [
+        3115
+      ],
+      "play": 1,
+      "win": 1,
+      "pick_rate": 0.125
+    },
+    {
+      "ids": [
+        4645
+      ],
+      "play": 1,
+      "win": 0,
+      "pick_rate": 0.125
+    }
+  ]
+}

@@ -1,0 +1,1514 @@
+{
+  "summary": {
+    "version": {
+      "patch_index": 1419,
+      "version": "14.19"
+    },
+    "versions": [
+      "14.19",
+      "14.18",
+      "14.17"
+    ],
+    "meta": {
+      "id": 21,
+      "key": "MissFortune",
+      "name": "赏金猎人",
+      "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/MissFortune.png",
+      "evolve": [],
+      "partype": "法力",
+      "passive": {
+        "name": "厄运的眷顾",
+        "description": "在对一个新目标进行普攻时，厄运小姐会造成额外物理伤害。",
+        "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/MissFortune_W.png",
+        "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0021/ability_0021_P1.webm"
+      },
+      "spells": [
+        {
+          "key": "Q",
+          "name": "一箭双雕",
+          "description": "厄运小姐向敌人发射子弹，伤害他们以及他们后面的目标。两次攻击都可以施加【厄运的眷顾】。",
+          "max_rank": 5,
+          "range_burn": [
+            650
+          ],
+          "cooldown_burn": [
+            7,
+            6,
+            5,
+            4,
+            3
+          ],
+          "cooldown_burn_float": [
+            7,
+            6,
+            5,
+            4,
+            3
+          ],
+          "cost_burn": [
+            43,
+            46,
+            49,
+            52,
+            55
+          ],
+          "tooltip": "厄运小姐发射一次弹跳射击，对一个敌人及其身后的另一个敌人造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br />第二段射击可以暴击。如果第一段射击击杀了它的目标，那么第二段射击就必定暴击。?",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/MissFortuneRicochetShot.png",
+          "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0021/ability_0021_Q1.webm"
+        },
+        {
+          "key": "W",
+          "name": "大步流星",
+          "description": "厄运小姐在不被攻击时会被动获得移动速度加成。可以主动施放这个技能来获得短时间的攻击速度加成。在【大步流星】尚未冷却完毕时，【厄运的眷顾】可减少【大步流星】的剩余持续时间。",
+          "max_rank": 5,
+          "range_burn": [
+            600
+          ],
+          "cooldown_burn": [
+            12
+          ],
+          "cooldown_burn_float": [
+            12
+          ],
+          "cost_burn": [
+            45
+          ],
+          "tooltip": "<passive>被动：</passive>如果?秒内没有受到伤害，厄运小姐就会获得<speed>?移动速度</speed>。再过?秒后，这个加成会提升至<speed>?</speed>。<br /><br /><active>主动：</active>获得被动效果的全额<speed>移动速度</speed>加成并提供<attackSpeed>?%攻击速度</attackSpeed>，持续? 秒。<br /><br /><spellName>厄运的眷顾</spellName>会使这个技能的冷却时间缩短?秒。?",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/MissFortuneViciousStrikes.png",
+          "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0021/ability_0021_W1.webm"
+        },
+        {
+          "key": "E",
+          "name": "枪林弹雨",
+          "description": "厄运小姐发射一阵弹雨来获得目标区域的视野，对敌人造成几波伤害，并减缓他们的移动速度。",
+          "max_rank": 5,
+          "range_burn": [
+            1000
+          ],
+          "cooldown_burn": [
+            18,
+            17,
+            16,
+            15,
+            14
+          ],
+          "cooldown_burn_float": [
+            18,
+            17,
+            16,
+            15,
+            14
+          ],
+          "cost_burn": [
+            80
+          ],
+          "tooltip": "厄运小姐发射一阵弹雨，来显形一个区域，造成?<status>减速</status>和每秒<magicDamage>?魔法伤害</magicDamage>，持续?秒(总共<magicDamage>?魔法伤害</magicDamage>)。?",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/MissFortuneScattershot.png",
+          "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0021/ability_0021_E1.webm"
+        },
+        {
+          "key": "R",
+          "name": "弹幕时间",
+          "description": "厄运小姐向她面前的锥形范围内引导一阵子弹风暴，对敌人造成大量伤害。这个技能的每波子弹都可以暴击。",
+          "max_rank": 3,
+          "range_burn": [
+            25000
+          ],
+          "cooldown_burn": [
+            120,
+            110,
+            100
+          ],
+          "cooldown_burn_float": [
+            120,
+            110,
+            100
+          ],
+          "cost_burn": [
+            100
+          ],
+          "tooltip": "厄运小姐向前方锥形地带引导一阵弹幕，在?秒里持续发射共?波，每波弹幕造成<physicalDamage>?物理伤害</physicalDamage>(总共<physicalDamage>?物理伤害</physicalDamage>)。<br /><br />每一波都可以暴击来造成%i:scaleCrit% <physicalDamage>?物理伤害</physicalDamage>(总共%i:scaleCrit%<physicalDamage>?物理伤害</physicalDamage>)。?",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/MissFortuneBulletTime.png",
+          "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0021/ability_0021_R1.webm"
+        }
+      ],
+      "skins": [
+        {
+          "id": 21000,
+          "champion_id": 21,
+          "name": "default",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/MissFortune_0.jpg",
+          "skin_video_url": null,
+          "prices": [
+            {
+              "currency": "IP",
+              "cost": 450
+            },
+            {
+              "currency": "RP",
+              "cost": 260
+            }
+          ],
+          "sales": null,
+          "release_date": null
+        },
+        {
+          "id": 21004,
+          "champion_id": 21,
+          "name": "圣诞糖果棒 厄运小姐",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/MissFortune_4.jpg",
+          "skin_video_url": "https://youtu.be/ghbA7wTlysA",
+          "prices": [
+            {
+              "currency": "RP",
+              "cost": 975
+            }
+          ],
+          "sales": null,
+          "release_date": null
+        },
+        {
+          "id": 21060,
+          "champion_id": 21,
+          "name": "女帝 厄运小姐",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/MissFortune_60.jpg",
+          "skin_video_url": null,
+          "prices": [
+            {
+              "currency": "RP",
+              "cost": 1350
+            }
+          ],
+          "sales": null,
+          "release_date": "2024-08-28T09:00:00+09:00"
+        },
+        {
+          "id": 21008,
+          "champion_id": 21,
+          "name": "女船长 厄运小姐",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/MissFortune_8.jpg",
+          "skin_video_url": "https://youtu.be/WiBk9cp5DMo",
+          "prices": [
+            {
+              "currency": "RP",
+              "cost": 975
+            }
+          ],
+          "sales": null,
+          "release_date": "2015-07-29T06:00:00+09:00"
+        },
+        {
+          "id": 21032,
+          "champion_id": 21,
+          "name": "幻灵战斗兔司令 厄运小姐",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/MissFortune_32.jpg",
+          "skin_video_url": "https://youtu.be/Qs4Z8PorxFE",
+          "prices": null,
+          "sales": null,
+          "release_date": null
+        },
+        {
+          "id": 21031,
+          "champion_id": 21,
+          "name": "幻灵战斗队长 厄运小姐",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/MissFortune_31.jpg",
+          "skin_video_url": "https://youtu.be/PAChVJpVz58",
+          "prices": [
+            {
+              "currency": "RP",
+              "cost": 1820
+            }
+          ],
+          "sales": null,
+          "release_date": "2022-03-31T04:00:00+09:00"
+        },
+        {
+          "id": 21015,
+          "champion_id": 21,
+          "name": "星之守护者 厄运小姐",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/MissFortune_15.jpg",
+          "skin_video_url": "https://youtu.be/6EMPHpiWGnw",
+          "prices": [
+            {
+              "currency": "RP",
+              "cost": 1350
+            }
+          ],
+          "sales": null,
+          "release_date": "2017-09-07T02:00:00+09:00"
+        },
+        {
+          "id": 21016,
+          "champion_id": 21,
+          "name": "武装战姬 厄运小姐",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/MissFortune_16.jpg",
+          "skin_video_url": "https://youtu.be/2y0gx5WaIJ8",
+          "prices": [
+            {
+              "currency": "RP",
+              "cost": 2775
+            }
+          ],
+          "sales": null,
+          "release_date": "2018-03-21T23:00:00+09:00"
+        },
+        {
+          "id": 21002,
+          "champion_id": 21,
+          "name": "法国皇室 厄运小姐",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/MissFortune_2.jpg",
+          "skin_video_url": "https://youtu.be/1SE_zj6qNS0",
+          "prices": [
+            {
+              "currency": "RP",
+              "cost": 520
+            }
+          ],
+          "sales": null,
+          "release_date": "2010-07-12T15:00:00+09:00"
+        },
+        {
+          "id": 21009,
+          "champion_id": 21,
+          "name": "泳池派对 厄运小姐",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/MissFortune_9.jpg",
+          "skin_video_url": "https://youtu.be/hYiZz91tpWU",
+          "prices": [
+            {
+              "currency": "RP",
+              "cost": 1350
+            }
+          ],
+          "sales": null,
+          "release_date": "2016-07-13T15:00:00+09:00"
+        },
+        {
+          "id": 21003,
+          "champion_id": 21,
+          "name": "特工狂花 厄运小姐",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/MissFortune_3.jpg",
+          "skin_video_url": "https://youtu.be/2gR-vtzoEEk",
+          "prices": null,
+          "sales": null,
+          "release_date": null
+        },
+        {
+          "id": 21007,
+          "champion_id": 21,
+          "name": "电玩女神 厄运小姐",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/MissFortune_7.jpg",
+          "skin_video_url": "https://youtu.be/vJxTZO59l9w",
+          "prices": [
+            {
+              "currency": "RP",
+              "cost": 1350
+            }
+          ],
+          "sales": null,
+          "release_date": "2014-08-12T06:00:00+09:00"
+        },
+        {
+          "id": 21017,
+          "champion_id": 21,
+          "name": "睡衣守护者 厄运小姐",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/MissFortune_17.jpg",
+          "skin_video_url": "https://youtu.be/Wp-BZg7qJV8",
+          "prices": [
+            {
+              "currency": "RP",
+              "cost": 1350
+            }
+          ],
+          "sales": null,
+          "release_date": "2018-11-21T07:00:00+09:00"
+        },
+        {
+          "id": 21021,
+          "champion_id": 21,
+          "name": "破败军团 厄运小姐",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/MissFortune_21.jpg",
+          "skin_video_url": "https://youtu.be/P5GLvuqxeAY",
+          "prices": [
+            {
+              "currency": "RP",
+              "cost": 1350
+            }
+          ],
+          "sales": null,
+          "release_date": "2021-07-22T04:00:00+09:00"
+        },
+        {
+          "id": 21040,
+          "champion_id": 21,
+          "name": "绝息圣堂 厄运小姐",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/MissFortune_40.jpg",
+          "skin_video_url": "https://youtu.be/3J7vDhsfUuo",
+          "prices": [
+            {
+              "currency": "RP",
+              "cost": 1350
+            },
+            {
+              "currency": "RP",
+              "cost": 1350
+            }
+          ],
+          "sales": null,
+          "release_date": "2023-03-09T04:00:00+09:00"
+        },
+        {
+          "id": 21041,
+          "champion_id": 21,
+          "name": "至臻 绝息圣堂 厄运小姐",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/MissFortune_41.jpg",
+          "skin_video_url": null,
+          "prices": null,
+          "sales": null,
+          "release_date": null
+        },
+        {
+          "id": 21020,
+          "champion_id": 21,
+          "name": "至臻 魅惑女巫 厄运小姐",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/MissFortune_20.jpg",
+          "skin_video_url": "https://youtu.be/S9dFpv9t5Ao",
+          "prices": null,
+          "sales": null,
+          "release_date": null
+        },
+        {
+          "id": 21033,
+          "champion_id": 21,
+          "name": "至臻 魅惑女巫 厄运小姐 (2022)",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/MissFortune_33.jpg",
+          "skin_video_url": "https://youtu.be/FiQRrJGN6vs",
+          "prices": null,
+          "sales": null,
+          "release_date": null
+        },
+        {
+          "id": 21005,
+          "champion_id": 21,
+          "name": "荒野女警 厄运小姐",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/MissFortune_5.jpg",
+          "skin_video_url": "https://youtu.be/401MEQ_ggm8",
+          "prices": null,
+          "sales": null,
+          "release_date": null
+        },
+        {
+          "id": 21001,
+          "champion_id": 21,
+          "name": "西部牛仔 厄运小姐",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/MissFortune_1.jpg",
+          "skin_video_url": "https://youtu.be/-FEcX6KsbeA",
+          "prices": [
+            {
+              "currency": "RP",
+              "cost": 750
+            }
+          ],
+          "sales": null,
+          "release_date": "2010-07-12T15:00:00+09:00"
+        },
+        {
+          "id": 21050,
+          "champion_id": 21,
+          "name": "青花瓷 厄运小姐",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/MissFortune_50.jpg",
+          "skin_video_url": "https://youtu.be/wJnYsYVlg6w",
+          "prices": [
+            {
+              "currency": "RP",
+              "cost": 1350
+            }
+          ],
+          "sales": null,
+          "release_date": "2024-02-22T10:00:00+09:00"
+        },
+        {
+          "id": 21018,
+          "champion_id": 21,
+          "name": "魅惑女巫 厄运小姐",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/MissFortune_18.jpg",
+          "skin_video_url": "https://youtu.be/DI4fVjj0zso",
+          "prices": [
+            {
+              "currency": "RP",
+              "cost": 1350
+            }
+          ],
+          "sales": null,
+          "release_date": null
+        },
+        {
+          "id": 21006,
+          "champion_id": 21,
+          "name": "黑帮狂花 厄运小姐",
+          "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/MissFortune_6.jpg",
+          "skin_video_url": "https://youtu.be/9YZFpOL__G0",
+          "prices": [
+            {
+              "currency": "RP",
+              "cost": 975
+            }
+          ],
+          "sales": null,
+          "release_date": "2011-10-28T15:00:00+09:00"
+        }
+      ]
+    },
+    "summary": {
+      "id": 21,
+      "is_rotation": false,
+      "is_rip": false,
+      "average_stats": {
+        "play": 68,
+        "win_rate": 0.426471,
+        "pick_rate": 0.0520435,
+        "ban_rate": 0.0184448,
+        "kda": 2.112745,
+        "tier": 4,
+        "rank": 137,
+        "tier_data": {
+          "tier": 4,
+          "rank": 137,
+          "rank_prev": 146,
+          "rank_prev_patch": 94
+        }
+      },
+      "positions": [
+        {
+          "name": "ADC",
+          "stats": {
+            "play": 58,
+            "win_rate": 0.431034,
+            "pick_rate": 0.0437076,
+            "role_rate": 0.852941,
+            "ban_rate": 0.0157323,
+            "kda": 2.20059,
+            "tier_data": {
+              "tier": 5,
+              "rank": 22,
+              "rank_prev": 21,
+              "rank_prev_patch": 14
+            }
+          },
+          "roles": [
+            {
+              "name": "MARKSMAN",
+              "stats": {
+                "win_rate": 0.407407,
+                "role_rate": 0.931035,
+                "play": 54,
+                "win": 22
+              }
+            },
+            {
+              "name": "SLAYER",
+              "stats": {
+                "win_rate": 0.75,
+                "role_rate": 0.0689655,
+                "play": 4,
+                "win": 3
+              }
+            }
+          ],
+          "counters": []
+        },
+        {
+          "name": "SUPPORT",
+          "stats": {
+            "play": 9,
+            "win_rate": 0.333333,
+            "pick_rate": 0.00692841,
+            "role_rate": 0.132353,
+            "ban_rate": 0.00244123,
+            "kda": 1.616667,
+            "tier_data": {
+              "tier": 5,
+              "rank": 52,
+              "rank_prev": 53,
+              "rank_prev_patch": null
+            }
+          },
+          "roles": [
+            {
+              "name": "MARKSMAN",
+              "stats": {
+                "win_rate": 1,
+                "role_rate": 1,
+                "play": 1,
+                "win": 1
+              }
+            },
+            {
+              "name": "MAGE",
+              "stats": {
+                "win_rate": 0.142857,
+                "role_rate": 0.777778,
+                "play": 7,
+                "win": 1
+              }
+            },
+            {
+              "name": "FIGHTER",
+              "stats": {
+                "win_rate": 1,
+                "role_rate": 0.125,
+                "play": 1,
+                "win": 1
+              }
+            }
+          ],
+          "counters": []
+        }
+      ],
+      "roles": []
+    },
+    "opponents": [
+      [],
+      []
+    ],
+    "counters": []
+  },
+  "summoner_spells": [
+    {
+      "ids": [
+        3,
+        4
+      ],
+      "win": 1,
+      "play": 3,
+      "pick_rate": 0.375
+    },
+    {
+      "ids": [
+        4,
+        21
+      ],
+      "win": 1,
+      "play": 2,
+      "pick_rate": 0.25
+    },
+    {
+      "ids": [
+        4,
+        7
+      ],
+      "win": 1,
+      "play": 2,
+      "pick_rate": 0.25
+    },
+    {
+      "ids": [
+        1,
+        4
+      ],
+      "win": 0,
+      "play": 1,
+      "pick_rate": 0.125
+    }
+  ],
+  "trends": {
+    "total_rank": 168,
+    "total_position_rank": 54,
+    "win": [
+      {
+        "version": "14.19",
+        "rate": 0.3333,
+        "rank": 50,
+        "created_at": "2024-09-24T22:31:28+09:00"
+      },
+      {
+        "version": "14.18",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-09-23T22:31:22+09:00"
+      },
+      {
+        "version": "14.17",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-09-09T22:31:38+09:00"
+      },
+      {
+        "version": "14.16",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-08-26T22:35:51+09:00"
+      },
+      {
+        "version": "14.15",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-08-12T23:36:41+09:00"
+      },
+      {
+        "version": "14.14",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-07-29T23:15:12+09:00"
+      },
+      {
+        "version": "14.13",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-07-15T23:14:12+09:00"
+      },
+      {
+        "version": "14.12",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-06-24T23:11:54+09:00"
+      },
+      {
+        "version": "14.11",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-06-10T23:11:19+09:00"
+      },
+      {
+        "version": "14.10",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-05-28T23:08:43+09:00"
+      }
+    ],
+    "pick": [
+      {
+        "version": "14.19",
+        "rate": 0.0069,
+        "rank": 49,
+        "created_at": "2024-09-24T22:31:28+09:00"
+      },
+      {
+        "version": "14.18",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-09-23T22:31:22+09:00"
+      },
+      {
+        "version": "14.17",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-09-09T22:31:38+09:00"
+      },
+      {
+        "version": "14.16",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-08-26T22:35:51+09:00"
+      },
+      {
+        "version": "14.15",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-08-12T23:36:41+09:00"
+      },
+      {
+        "version": "14.14",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-07-29T23:15:12+09:00"
+      },
+      {
+        "version": "14.13",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-07-15T23:14:12+09:00"
+      },
+      {
+        "version": "14.12",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-06-24T23:11:54+09:00"
+      },
+      {
+        "version": "14.11",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-06-10T23:11:19+09:00"
+      },
+      {
+        "version": "14.10",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-05-28T23:08:43+09:00"
+      }
+    ],
+    "ban": [
+      {
+        "version": "14.19",
+        "rate": 0.0024,
+        "rank": 46,
+        "created_at": "2024-09-24T22:31:28+09:00"
+      },
+      {
+        "version": "14.18",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-09-23T22:31:22+09:00"
+      },
+      {
+        "version": "14.17",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-09-09T22:31:38+09:00"
+      },
+      {
+        "version": "14.16",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-08-26T22:35:51+09:00"
+      },
+      {
+        "version": "14.15",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-08-12T23:36:41+09:00"
+      },
+      {
+        "version": "14.14",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-07-29T23:15:12+09:00"
+      },
+      {
+        "version": "14.13",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-07-15T23:14:12+09:00"
+      },
+      {
+        "version": "14.12",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-06-24T23:11:54+09:00"
+      },
+      {
+        "version": "14.11",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-06-10T23:11:19+09:00"
+      },
+      {
+        "version": "14.10",
+        "rate": 0,
+        "rank": null,
+        "created_at": "2024-05-28T23:08:43+09:00"
+      }
+    ]
+  },
+  "game_lengths": [
+    {
+      "game_length": 0,
+      "rate": 0,
+      "average": 0.5,
+      "rank": 53
+    },
+    {
+      "game_length": 25,
+      "rate": 0,
+      "average": 0.5,
+      "rank": 54
+    },
+    {
+      "game_length": 30,
+      "rate": 0.5,
+      "average": 0.5,
+      "rank": 29
+    },
+    {
+      "game_length": 35,
+      "rate": 1,
+      "average": 0.5,
+      "rank": 1
+    }
+  ],
+  "skills": [
+    {
+      "order": [
+        "E",
+        "Q",
+        "W",
+        "E",
+        "E",
+        "R",
+        "E",
+        "Q",
+        "E",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "W",
+        "W"
+      ],
+      "play": 1,
+      "win": 1,
+      "pick_rate": 0.25
+    },
+    {
+      "order": [
+        "E",
+        "W",
+        "E",
+        "W",
+        "Q",
+        "R",
+        "E",
+        "E",
+        "E",
+        "W",
+        "W",
+        "R",
+        "W",
+        "Q",
+        "Q"
+      ],
+      "play": 1,
+      "win": 1,
+      "pick_rate": 0.25
+    },
+    {
+      "order": [
+        "E",
+        "W",
+        "E",
+        "Q",
+        "E",
+        "R",
+        "E",
+        "Q",
+        "E",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "W",
+        "W"
+      ],
+      "play": 1,
+      "win": 0,
+      "pick_rate": 0.25
+    },
+    {
+      "order": [
+        "E",
+        "Q",
+        "W",
+        "Q",
+        "Q",
+        "R",
+        "Q",
+        "W",
+        "Q",
+        "W",
+        "R",
+        "W",
+        "W",
+        "E",
+        "E"
+      ],
+      "play": 1,
+      "win": 1,
+      "pick_rate": 0.25
+    }
+  ],
+  "skill_masteries": [
+    {
+      "ids": [
+        "E",
+        "Q",
+        "W"
+      ],
+      "play": 2,
+      "win": 1,
+      "pick_rate": 0.5,
+      "builds": [
+        {
+          "order": [
+            "E",
+            "Q",
+            "W",
+            "E",
+            "E",
+            "R",
+            "E",
+            "Q",
+            "E",
+            "Q",
+            "R",
+            "Q",
+            "Q",
+            "W",
+            "W"
+          ],
+          "play": 1,
+          "win": 1,
+          "pick_rate": 0.5
+        },
+        {
+          "order": [
+            "E",
+            "W",
+            "E",
+            "Q",
+            "E",
+            "R",
+            "E",
+            "Q",
+            "E",
+            "Q",
+            "R",
+            "Q",
+            "Q",
+            "W",
+            "W"
+          ],
+          "play": 1,
+          "win": 0,
+          "pick_rate": 0.5
+        }
+      ]
+    },
+    {
+      "ids": [
+        "E",
+        "W",
+        "Q"
+      ],
+      "play": 1,
+      "win": 1,
+      "pick_rate": 0.25,
+      "builds": [
+        {
+          "order": [
+            "E",
+            "W",
+            "E",
+            "W",
+            "Q",
+            "R",
+            "E",
+            "E",
+            "E",
+            "W",
+            "W",
+            "R",
+            "W",
+            "Q",
+            "Q"
+          ],
+          "play": 1,
+          "win": 1,
+          "pick_rate": 1
+        }
+      ]
+    },
+    {
+      "ids": [
+        "Q",
+        "W",
+        "E"
+      ],
+      "play": 1,
+      "win": 1,
+      "pick_rate": 0.25,
+      "builds": [
+        {
+          "order": [
+            "E",
+            "Q",
+            "W",
+            "Q",
+            "Q",
+            "R",
+            "Q",
+            "W",
+            "Q",
+            "W",
+            "R",
+            "W",
+            "W",
+            "E",
+            "E"
+          ],
+          "play": 1,
+          "win": 1,
+          "pick_rate": 1
+        }
+      ]
+    }
+  ],
+  "skill_evolves": [],
+  "runes": [
+    {
+      "id": 8369,
+      "primary_page_id": 8300,
+      "primary_rune_ids": [
+        8369,
+        8304,
+        8345,
+        8347
+      ],
+      "secondary_page_id": 8000,
+      "secondary_rune_ids": [
+        8009,
+        8014
+      ],
+      "stat_mod_ids": [
+        5008,
+        5008,
+        5001
+      ],
+      "play": 3,
+      "win": 0,
+      "pick_rate": 0.375
+    },
+    {
+      "id": 8229,
+      "primary_page_id": 8200,
+      "primary_rune_ids": [
+        8229,
+        8226,
+        8210,
+        8237
+      ],
+      "secondary_page_id": 8100,
+      "secondary_rune_ids": [
+        8106,
+        8126
+      ],
+      "stat_mod_ids": [
+        5008,
+        5008,
+        5001
+      ],
+      "play": 2,
+      "win": 0,
+      "pick_rate": 0.25
+    },
+    {
+      "id": 8229,
+      "primary_page_id": 8200,
+      "primary_rune_ids": [
+        8229,
+        8226,
+        8210,
+        8237
+      ],
+      "secondary_page_id": 8100,
+      "secondary_rune_ids": [
+        8126,
+        8135
+      ],
+      "stat_mod_ids": [
+        5008,
+        5008,
+        5011
+      ],
+      "play": 1,
+      "win": 1,
+      "pick_rate": 0.125
+    },
+    {
+      "id": 8369,
+      "primary_page_id": 8300,
+      "primary_rune_ids": [
+        8369,
+        8321,
+        8313,
+        8347
+      ],
+      "secondary_page_id": 8200,
+      "secondary_rune_ids": [
+        8210,
+        8226
+      ],
+      "stat_mod_ids": [
+        5008,
+        5008,
+        5013
+      ],
+      "play": 1,
+      "win": 1,
+      "pick_rate": 0.125
+    },
+    {
+      "id": 8008,
+      "primary_page_id": 8000,
+      "primary_rune_ids": [
+        8008,
+        8009,
+        9103,
+        8014
+      ],
+      "secondary_page_id": 8200,
+      "secondary_rune_ids": [
+        8210,
+        8226
+      ],
+      "stat_mod_ids": [
+        5005,
+        5008,
+        5001
+      ],
+      "play": 1,
+      "win": 1,
+      "pick_rate": 0.125
+    }
+  ],
+  "rune_pages": [
+    {
+      "id": 8229,
+      "primary_page_id": 8200,
+      "secondary_page_id": 8100,
+      "play": 3,
+      "win": 1,
+      "pick_rate": 0.375,
+      "builds": [
+        {
+          "id": 8229,
+          "primary_page_id": 8200,
+          "primary_rune_ids": [
+            8229,
+            8226,
+            8210,
+            8237
+          ],
+          "secondary_page_id": 8100,
+          "secondary_rune_ids": [
+            8106,
+            8126
+          ],
+          "stat_mod_ids": [
+            5008,
+            5008,
+            5001
+          ],
+          "play": 2,
+          "win": 0,
+          "pick_rate": 0.6667
+        },
+        {
+          "id": 8229,
+          "primary_page_id": 8200,
+          "primary_rune_ids": [
+            8229,
+            8226,
+            8210,
+            8237
+          ],
+          "secondary_page_id": 8100,
+          "secondary_rune_ids": [
+            8126,
+            8135
+          ],
+          "stat_mod_ids": [
+            5008,
+            5008,
+            5011
+          ],
+          "play": 1,
+          "win": 1,
+          "pick_rate": 0.3333
+        }
+      ]
+    },
+    {
+      "id": 8369,
+      "primary_page_id": 8300,
+      "secondary_page_id": 8000,
+      "play": 3,
+      "win": 0,
+      "pick_rate": 0.375,
+      "builds": [
+        {
+          "id": 8369,
+          "primary_page_id": 8300,
+          "primary_rune_ids": [
+            8369,
+            8304,
+            8345,
+            8347
+          ],
+          "secondary_page_id": 8000,
+          "secondary_rune_ids": [
+            8009,
+            8014
+          ],
+          "stat_mod_ids": [
+            5008,
+            5008,
+            5001
+          ],
+          "play": 3,
+          "win": 0,
+          "pick_rate": 1
+        }
+      ]
+    },
+    {
+      "id": 8369,
+      "primary_page_id": 8300,
+      "secondary_page_id": 8200,
+      "play": 1,
+      "win": 1,
+      "pick_rate": 0.125,
+      "builds": [
+        {
+          "id": 8369,
+          "primary_page_id": 8300,
+          "primary_rune_ids": [
+            8369,
+            8321,
+            8313,
+            8347
+          ],
+          "secondary_page_id": 8200,
+          "secondary_rune_ids": [
+            8210,
+            8226
+          ],
+          "stat_mod_ids": [
+            5008,
+            5008,
+            5013
+          ],
+          "play": 1,
+          "win": 1,
+          "pick_rate": 1
+        }
+      ]
+    },
+    {
+      "id": 8008,
+      "primary_page_id": 8000,
+      "secondary_page_id": 8200,
+      "play": 1,
+      "win": 1,
+      "pick_rate": 0.125,
+      "builds": [
+        {
+          "id": 8008,
+          "primary_page_id": 8000,
+          "primary_rune_ids": [
+            8008,
+            8009,
+            9103,
+            8014
+          ],
+          "secondary_page_id": 8200,
+          "secondary_rune_ids": [
+            8210,
+            8226
+          ],
+          "stat_mod_ids": [
+            5005,
+            5008,
+            5001
+          ],
+          "play": 1,
+          "win": 1,
+          "pick_rate": 1
+        }
+      ]
+    }
+  ],
+  "core_items": [
+    {
+      "ids": [
+        3070,
+        6653,
+        3042,
+        6676
+      ],
+      "play": 1,
+      "win": 1,
+      "pick_rate": 0.3333
+    },
+    {
+      "ids": [
+        3070,
+        6655,
+        3116,
+        6653
+      ],
+      "play": 1,
+      "win": 1,
+      "pick_rate": 0.3333
+    },
+    {
+      "ids": [
+        6676,
+        3508,
+        3033
+      ],
+      "play": 1,
+      "win": 1,
+      "pick_rate": 0.3333
+    }
+  ],
+  "boots": [
+    {
+      "ids": [
+        3020
+      ],
+      "play": 3,
+      "win": 1,
+      "pick_rate": 0.5
+    },
+    {
+      "ids": [
+        3158
+      ],
+      "play": 2,
+      "win": 1,
+      "pick_rate": 0.3333
+    },
+    {
+      "ids": [
+        3006
+      ],
+      "play": 1,
+      "win": 1,
+      "pick_rate": 0.1667
+    }
+  ],
+  "starter_items": [
+    {
+      "ids": [
+        2003,
+        2003,
+        3865
+      ],
+      "play": 8,
+      "win": 3,
+      "pick_rate": 0.8889
+    },
+    {
+      "ids": [
+        3865
+      ],
+      "play": 1,
+      "win": 0,
+      "pick_rate": 0.1111
+    }
+  ],
+  "last_items": [
+    {
+      "ids": [
+        3871
+      ],
+      "play": 8,
+      "win": 2,
+      "pick_rate": 0.2667
+    },
+    {
+      "ids": [
+        6653
+      ],
+      "play": 5,
+      "win": 2,
+      "pick_rate": 0.1667
+    },
+    {
+      "ids": [
+        2503
+      ],
+      "play": 3,
+      "win": 0,
+      "pick_rate": 0.1
+    },
+    {
+      "ids": [
+        6676
+      ],
+      "play": 2,
+      "win": 2,
+      "pick_rate": 0.0667
+    },
+    {
+      "ids": [
+        6655
+      ],
+      "play": 2,
+      "win": 1,
+      "pick_rate": 0.0667
+    },
+    {
+      "ids": [
+        3916
+      ],
+      "play": 2,
+      "win": 0,
+      "pick_rate": 0.0667
+    },
+    {
+      "ids": [
+        3042
+      ],
+      "play": 1,
+      "win": 1,
+      "pick_rate": 0.0333
+    },
+    {
+      "ids": [
+        3123
+      ],
+      "play": 1,
+      "win": 1,
+      "pick_rate": 0.0333
+    },
+    {
+      "ids": [
+        3070
+      ],
+      "play": 1,
+      "win": 1,
+      "pick_rate": 0.0333
+    },
+    {
+      "ids": [
+        3116
+      ],
+      "play": 1,
+      "win": 1,
+      "pick_rate": 0.0333
+    },
+    {
+      "ids": [
+        1038
+      ],
+      "play": 1,
+      "win": 0,
+      "pick_rate": 0.0333
+    },
+    {
+      "ids": [
+        3031
+      ],
+      "play": 1,
+      "win": 1,
+      "pick_rate": 0.0333
+    },
+    {
+      "ids": [
+        3033
+      ],
+      "play": 1,
+      "win": 1,
+      "pick_rate": 0.0333
+    },
+    {
+      "ids": [
+        3508
+      ],
+      "play": 1,
+      "win": 1,
+      "pick_rate": 0.0333
+    }
+  ]
+}
