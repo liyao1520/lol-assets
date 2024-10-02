@@ -323,10 +323,10 @@
             {
               "name": "MAGE",
               "stats": {
-                "win_rate": 0.513058,
-                "role_rate": 0.988374,
-                "play": 13517,
-                "win": 6935
+                "win_rate": 0.513079,
+                "role_rate": 0.988452,
+                "play": 13610,
+                "win": 6983
               }
             }
           ],
@@ -338,12 +338,12 @@
             },
             {
               "champion_id": 75,
-              "play": 87,
-              "win": 36
+              "play": 89,
+              "win": 37
             },
             {
               "champion_id": 910,
-              "play": 365,
+              "play": 366,
               "win": 161
             }
           ]
@@ -548,8 +548,8 @@
         },
         {
           "champion_id": 75,
-          "play": 87,
-          "win": 36,
+          "play": 89,
+          "win": 37,
           "meta": {
             "id": 75,
             "key": "Nasus",
@@ -870,11 +870,11 @@
               }
             ]
           },
-          "win_rate": 41.38
+          "win_rate": 41.57
         },
         {
           "champion_id": 910,
-          "play": 365,
+          "play": 366,
           "win": 161,
           "meta": {
             "id": 910,
@@ -1052,354 +1052,176 @@
               }
             ]
           },
-          "win_rate": 44.11
+          "win_rate": 43.99
         },
         {
-          "champion_id": 166,
-          "play": 66,
-          "win": 30,
+          "champion_id": 80,
+          "play": 74,
+          "win": 34,
           "meta": {
-            "id": 166,
-            "key": "Akshan",
-            "name": "影哨",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Akshan.png",
+            "id": 80,
+            "key": "Pantheon",
+            "name": "不屈之枪",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Pantheon.png",
             "evolve": [],
             "partype": "法力",
             "passive": {
-              "name": "无所不用",
-              "description": "来自阿克尚攻击或技能的每第三次命中会造成额外伤害，并且如果目标是英雄还会为他提供一层护盾。<br><br>在阿克尚攻击时，他会进行一次额外的射击，来造成较少伤害。如果他取消掉了这次额外射击，那么他会转而获得移动速度。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/akshan_p.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0166/ability_0166_P1.webm"
+              "name": "矢志不退",
+              "description": "在数次技能或攻击后，潘森的下一个技能会得到强化。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Pantheon_Passive.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0080/ability_0080_P1.webm"
             },
             "spells": [
               {
                 "key": "Q",
-                "name": "去而复还",
-                "description": "阿克尚掷出一个回旋镖，在去程和返程时造成伤害，会在它每次命中一名敌人时延长它的距离。",
+                "name": "贯星长枪",
+                "description": "潘森朝着选定方向刺出或投掷他的长枪。",
                 "max_rank": 5,
                 "range_burn": [
-                  850
+                  575
                 ],
                 "cooldown_burn": [
+                  11,
+                  10,
+                  9,
                   8,
-                  7,
-                  6,
-                  5,
-                  5
+                  8
                 ],
                 "cooldown_burn_float": [
-                  8,
-                  7.25,
-                  6.5,
-                  5.75,
-                  5
+                  11,
+                  10.25,
+                  9.5,
+                  8.75,
+                  8
                 ],
                 "cost_burn": [
-                  60,
-                  65,
-                  70,
-                  75,
-                  80
+                  25
                 ],
-                "tooltip": "阿克尚掷出一个回旋镖，造成<physicalDamage>?物理伤害</physicalDamage>，每次命中一名敌人时会延长其距离。<br /><br />命中英雄时会为阿克尚提供在?秒里持续衰减的<speed>?移动速度</speed>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AkshanQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0166/ability_0166_Q1.webm"
+                "tooltip": "<span class=\"colorFF8C00\">秒放：</span>潘森刺出他的长枪，对命中的敌人们造成<physicalDamage>?物理伤害</physicalDamage>。返还此技能?%的冷却时间。<br /><br /><span class=\"colorFF8C00\">蓄力：</span>潘森挥出他的长枪，对命中的首个敌人造成<physicalDamage>?物理伤害</physicalDamage>并对后续目标造成的伤害减少?%。<br /><br />此技能会在对抗低于?%生命值的敌人时获得强化，造成<physicalDamage>?物理伤害</physicalDamage>作为替代。<br /><br /><span class=\"colorEDDA74\">矢志不退加成：</span>造成额外的<physicalDamage>?物理伤害</physicalDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/PantheonQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0080/ability_0080_Q1.webm"
               },
               {
                 "key": "W",
-                "name": "赴险夺人",
-                "description": "被动效果：敌方英雄在击杀了阿克尚的友方英雄时，会被标记为恶人。如果阿克尚击杀了一名恶人，那么他会复活被该恶人击杀的友方英雄，获得额外金币，并清除所有恶人标记。<br><br>主动施放时，阿克尚会进入伪装状态并在朝着恶人移动时获得移动速度和法力回复。在离开草丛或墙体附近后，阿克尚会失去伪装状态。",
+                "name": "斗盾跃击",
+                "description": "潘森跃向一个目标，对其造成伤害和晕眩。",
                 "max_rank": 5,
+                "range_burn": [
+                  600
+                ],
+                "cooldown_burn": [
+                  13,
+                  12,
+                  11,
+                  10,
+                  9
+                ],
+                "cooldown_burn_float": [
+                  13,
+                  12,
+                  11,
+                  10,
+                  9
+                ],
+                "cost_burn": [
+                  55
+                ],
+                "tooltip": "潘森跃向他的目标，<status>晕眩</status>?秒并造成<physicalDamage>?最大生命值物理伤害</physicalDamage>。<br /><br /><keywordMajor>矢志不退加成：</keywordMajor>潘森的下一次攻击会打击?次，总共造成<physicalDamage>?物理伤害</physicalDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/PantheonW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0080/ability_0080_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "神佑枪阵",
+                "description": "潘森架起他的圣盾，变得免疫来自前方的伤害，并快速地用他的长枪戳刺。",
+                "max_rank": 5,
+                "range_burn": [
+                  400
+                ],
+                "cooldown_burn": [
+                  22,
+                  21,
+                  20,
+                  19,
+                  18
+                ],
+                "cooldown_burn_float": [
+                  22,
+                  21,
+                  20,
+                  19,
+                  18
+                ],
+                "cost_burn": [
+                  80
+                ],
+                "tooltip": "潘森架起他的圣盾并与选定方向上的敌人交战?秒，变得免疫来自所选方向的伤害(防御塔除外)并在持续期间造成<physicalDamage>?物理伤害</physicalDamage>。在引导之后，潘森会用他的圣盾进行猛击，造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br /><span class=\"colorEDDA74\">矢志不退加成：</span>当潘森猛击他的圣盾时，获得持续?秒的<scaleArmor>?护甲</scaleArmor>和<scaleMR>?魔法抗性</scaleMR>，以及持续?秒的<speed>?%移动速度</speed>。<br />?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/PantheonE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0080/ability_0080_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "大荒星陨",
+                "description": "潘森屏气凝神然后跃至空中， 随后如流星一般落到选定的位置上。",
+                "max_rank": 3,
                 "range_burn": [
                   5500
                 ],
                 "cooldown_burn": [
-                  18,
-                  14,
-                  10,
-                  6,
-                  2
+                  180,
+                  165,
+                  150
                 ],
                 "cooldown_burn_float": [
-                  18,
-                  14,
-                  10,
-                  6,
-                  2
-                ],
-                "cost_burn": [
-                  40,
-                  30,
-                  20,
-                  10,
-                  0
-                ],
-                "tooltip": "{{ Spell_AkshanW_Tooltip_? }}?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AkshanW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0166/ability_0166_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "骄行荡寇",
-                "description": "阿克尚发射一个钩爪来吸附住地形，然后围绕它进行摆荡，在摆荡时快速朝相距最近的敌人开火。他可以提前从绳索上荡下来，或在与一名敌方英雄或地形产生碰撞时落下。",
-                "max_rank": 5,
-                "range_burn": [
-                  800
-                ],
-                "cooldown_burn": [
-                  18,
-                  16,
-                  15,
-                  13,
-                  12
-                ],
-                "cooldown_burn_float": [
-                  18,
-                  16.5,
-                  15,
-                  13.5,
-                  12
-                ],
-                "cost_burn": [
-                  70
-                ],
-                "tooltip": "<spellActive>第一段施放：</spellActive>阿克尚发射一个钩爪，吸附在命中的第一个地形上。<br /><br /><spellActive>第二段施放：</spellActive>阿克尚在地形附近摆荡，朝相距最近的敌人进行快速射击，每次射击造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br /><spellActive>第三段施放：</spellActive>阿克尚从绳索上荡下来，并进行一次终极射击。<br /><br />与一名敌方英雄或地形产生碰撞，会提前结束摆荡。<br /><br />参与击杀敌方英雄后会刷新这个技能的冷却时间。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AkshanE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0166/ability_0166_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "恩怨相抵",
-                "description": "阿克尚锁定一名敌方英雄并开始储存他的子弹。在释放时，他会发射所有已储存的子弹，对命中的第一个英雄、小兵或建筑物造成基于已损失生命值的伤害。",
-                "max_rank": 3,
-                "range_burn": [
-                  2500
-                ],
-                "cooldown_burn": [
-                  100,
-                  85,
-                  70
-                ],
-                "cooldown_burn_float": [
-                  100,
-                  85,
-                  70
+                  180,
+                  165,
+                  150
                 ],
                 "cost_burn": [
                   100
                 ],
-                "tooltip": "阿克尚锁定一名敌方英雄并开始过载充能他的枪械至多?秒，至多可储存?颗子弹。<br /><br /><recast>再次施放：</recast>阿克尚释放已储存的子弹，每颗子弹对命中的首个敌人或建筑物至少造成<physicalDamage>?物理伤害</physicalDamage>，基于已损失生命值至多提升至<physicalDamage>?物理伤害</physicalDamage>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AkshanR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0166/ability_0166_R1.webm"
+                "tooltip": "<spellPassive>被动：</spellPassive>潘森获得?%护甲穿透。<br /><br /><spellActive>主动：</spellActive>潘森聚集他的力量以跃至空中。他会从天上掷出他的长枪，在小范围内造成<physicalDamage>?物理伤害</physicalDamage>和持续?秒的?%<status>减速</status>。<br /><br />潘森随后会如陨石一般落向目标区域。对一条直线上的敌人最多造成<magicDamage>?魔法伤害</magicDamage>(最多降低至?%伤害，极小值出现于区域的边缘)。<br /><br />这个技能会立刻使<span class=\"colorEDDA74\">矢志不退</span>准备就绪。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/PantheonR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0080/ability_0080_R1.webm"
               }
             ],
             "skins": [
               {
-                "id": 166000,
-                "champion_id": 166,
+                "id": 80000,
+                "champion_id": 80,
                 "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Akshan_0.jpg",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Pantheon_0.jpg",
                 "skin_video_url": null,
                 "prices": [
                   {
                     "currency": "IP",
-                    "cost": 4800
+                    "cost": 1350
                   },
                   {
                     "currency": "RP",
-                    "cost": 880
+                    "cost": 585
                   }
                 ],
                 "sales": null,
                 "release_date": null
               },
               {
-                "id": 166010,
-                "champion_id": 166,
-                "name": "水晶玫瑰 阿克尚",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Akshan_10.jpg",
-                "skin_video_url": "https://youtu.be/aR20_eMvl4c",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2022-02-10T04:00:00+09:00"
-              },
-              {
-                "id": 166020,
-                "champion_id": 166,
-                "name": "荣誉使者 阿克尚",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Akshan_20.jpg",
-                "skin_video_url": "https://youtu.be/IiZV4C9xuCI",
+                "id": 80002,
+                "champion_id": 80,
+                "name": "万人敌 潘森",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Pantheon_2.jpg",
+                "skin_video_url": "https://youtu.be/iXsbGj4nCrM",
                 "prices": null,
                 "sales": null,
                 "release_date": null
               },
               {
-                "id": 166001,
-                "champion_id": 166,
-                "name": "赛博潮流 阿克尚",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Akshan_1.jpg",
-                "skin_video_url": "https://youtu.be/CNiq1LTvRZY",
+                "id": 80007,
+                "champion_id": 80,
+                "name": "丧尸杀手 潘森",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Pantheon_7.jpg",
+                "skin_video_url": "https://youtu.be/NtmfTGjaur4",
                 "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2021-07-22T04:00:00+09:00"
-              }
-            ]
-          },
-          "win_rate": 45.45
-        },
-        {
-          "champion_id": 893,
-          "play": 133,
-          "win": 61,
-          "meta": {
-            "id": 893,
-            "key": "Aurora",
-            "name": "双界灵兔",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Aurora.png",
-            "evolve": [],
-            "partype": "法力",
-            "passive": {
-              "name": "驱灵奇术",
-              "description": "阿萝拉的技能或攻击伤害能从敌人身上抽离出灵物。被抽离的灵物会跟在阿萝拉身边，为她恢复生命值并给予她额外移动速度。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/AuroraPassive.Aurora.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0893/ability_0893_P1.webm"
-            },
-            "spells": [
-              {
-                "key": "Q",
-                "name": "飞去来咒",
-                "description": "阿萝拉放出一道飞弹，诅咒所有命中的敌人。阿萝拉可以再次施放该技能，来将所有激活的诅咒抽回自己身上。诅咒在返回途中会对命中的敌人造成伤害。",
-                "max_rank": 5,
-                "range_burn": [
-                  850
-                ],
-                "cooldown_burn": [
-                  8,
-                  7,
-                  7,
-                  6,
-                  6
-                ],
-                "cooldown_burn_float": [
-                  8,
-                  7.5,
-                  7,
-                  6.5,
-                  6
-                ],
-                "cost_burn": [
-                  60
-                ],
-                "tooltip": "朝一个方向发射诅咒能量，对沿途所有敌人造成<magicDamage>?魔法伤害</magicDamage>和持续?秒的诅咒印记。<br /><br /><recast>再次施放：</recast>终止诅咒，将该敌人的一部分灵魂抽回到自己身上，对途经的敌人造成至多<magicDamage>{{ q2damagemax }}魔法伤害</magicDamage>(基于其已损失生命值)。第一次命中后的伤害降低至20%。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AuroraQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0893/ability_0893_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "灵纱洞开",
-                "description": "阿萝拉跳向选定方向，并在落地时进入精神领域，在短时间内获得隐形。",
-                "max_rank": 5,
-                "range_burn": [
-                  700
-                ],
-                "cooldown_burn": [
-                  22,
-                  21,
-                  20,
-                  19,
-                  18
-                ],
-                "cooldown_burn_float": [
-                  22,
-                  21,
-                  20,
-                  19,
-                  18
-                ],
-                "cost_burn": [
-                  80
-                ],
-                "tooltip": "跳向一个方向。落地时，进入精神领域，<keywordStealth>隐形</keywordStealth>?秒并进入<keywordMajor>双界行者</keywordMajor>状态。<br /><br />参与击杀一个敌方英雄后，会重置该技能的冷却时间。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AuroraW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0893/ability_0893_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "怪奇喷涌",
-                "description": "阿萝拉打开界域之窗，施放出一道灵魂魔法洪流，让双界汇聚，放出一道灵物魔法震波，对敌人造成伤害和减速，然后阿萝拉也会向后跳到安全处。",
-                "max_rank": 5,
-                "range_burn": [
-                  850
-                ],
-                "cooldown_burn": [
-                  15,
-                  14,
-                  13,
-                  12,
-                  11
-                ],
-                "cooldown_burn_float": [
-                  15,
-                  14,
-                  13,
-                  12,
-                  11
-                ],
-                "cost_burn": [
-                  80
-                ],
-                "tooltip": "打开界域之窗，施放出一道灵魂魔法洪流，对区域内的所有敌人造成<magicDamage>?魔法伤害</magicDamage>和持续?秒的?%<status>减速</status>（减速效果持续衰减）。<br /><br />施放该技能后，阿萝拉会向后位移一小段距离。<br /><br />?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AuroraE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0893/ability_0893_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "双界合一",
-                "description": "阿萝拉跳向选定方向，释放出一片灵冲击波，对命中的敌人造成伤害和减速。然后，她会创造一个区域来困住其中的敌人们，并且允许阿萝拉从该区域的一侧传送到另一侧。",
-                "max_rank": 3,
-                "range_burn": [
-                  250
-                ],
-                "cooldown_burn": [
-                  140,
-                  120,
-                  100
-                ],
-                "cooldown_burn_float": [
-                  140,
-                  120,
-                  100
-                ],
-                "cost_burn": [
-                  100
-                ],
-                "tooltip": "跳向一个方向。落地时，阿萝拉将双界合二为一，发出一道灵魂能量激波，对命中的敌人们造成<magicDamage>?魔法伤害</magicDamage>和持续2秒的?%<status>减速</status>。<br /><br />交界领域会持续存在?秒，强化阿萝拉的<keywordMajor>双界行者</keywordMajor>效果，并让她能够从区域边缘传送至另一侧边缘。<br /><br />任何尝试进入或离开该区域的敌人都会被推向中心，同时获得持续?秒的?%<status>减速</status>。<br /><br />阿萝拉可以<recast>再次施放</recast>这个技能来提前结束区域效果。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AuroraR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0893/ability_0893_R1.webm"
-              }
-            ],
-            "skins": [
-              {
-                "id": 893000,
-                "champion_id": 893,
-                "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Aurora_0.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "IP",
-                    "cost": 6300
-                  },
                   {
                     "currency": "RP",
                     "cost": 975
@@ -1409,11 +1231,21 @@
                 "release_date": null
               },
               {
-                "id": 893001,
-                "champion_id": 893,
-                "name": "幻灵战斗兔 阿萝拉",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Aurora_1.jpg",
-                "skin_video_url": "https://youtu.be/KVIuCZTkJDo",
+                "id": 80005,
+                "champion_id": 80,
+                "name": "大夏武士 潘森",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Pantheon_5.jpg",
+                "skin_video_url": "https://youtu.be/bwFarfyEaAY",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 80006,
+                "champion_id": 80,
+                "name": "屠龙勇士 潘森",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Pantheon_6.jpg",
+                "skin_video_url": "https://youtu.be/emVF71vIfc0",
                 "prices": [
                   {
                     "currency": "RP",
@@ -1421,11 +1253,398 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2024-07-17T09:00:00+09:00"
+                "release_date": "2014-05-15T10:00:00+09:00"
+              },
+              {
+                "id": 80001,
+                "champion_id": 80,
+                "name": "斯巴达之魂 潘森",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Pantheon_1.jpg",
+                "skin_video_url": "https://youtu.be/7_tacUHw548",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 520
+                  }
+                ],
+                "sales": null,
+                "release_date": "2010-07-12T15:00:00+09:00"
+              },
+              {
+                "id": 80016,
+                "champion_id": 80,
+                "name": "未来战士 潘森",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Pantheon_16.jpg",
+                "skin_video_url": "https://youtu.be/ZqDzqexbiac",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-05-14T04:00:00+09:00"
+              },
+              {
+                "id": 80036,
+                "champion_id": 80,
+                "name": "灰烬征服者 潘森",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Pantheon_36.jpg",
+                "skin_video_url": "https://youtu.be/tYz5yPYCyu0",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 80025,
+                "champion_id": 80,
+                "name": "破败军团 潘森",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Pantheon_25.jpg",
+                "skin_video_url": "https://youtu.be/CKqsXcil2zI",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-07-08T04:00:00+09:00"
+              },
+              {
+                "id": 80026,
+                "champion_id": 80,
+                "name": "至臻 飞升战神 潘森",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Pantheon_26.jpg",
+                "skin_video_url": "https://youtu.be/QDpTEdJkL2g",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 80003,
+                "champion_id": 80,
+                "name": "英仙座珀尔修斯 潘森",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Pantheon_3.jpg",
+                "skin_video_url": "https://youtu.be/E0AbOZUm-UQ",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 80004,
+                "champion_id": 80,
+                "name": "钢铁意志 潘森",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Pantheon_4.jpg",
+                "skin_video_url": "https://youtu.be/rQASSPACkMk",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2011-08-01T02:00:00+09:00"
+              },
+              {
+                "id": 80008,
+                "champion_id": 80,
+                "name": "面包之王 潘森",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Pantheon_8.jpg",
+                "skin_video_url": "https://youtu.be/xyhoz9NP8fg",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2016-09-07T05:30:00+09:00"
               }
             ]
           },
-          "win_rate": 45.86
+          "win_rate": 45.95
+        },
+        {
+          "champion_id": 101,
+          "play": 154,
+          "win": 71,
+          "meta": {
+            "id": 101,
+            "key": "Xerath",
+            "name": "远古巫灵",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Xerath.png",
+            "evolve": [],
+            "partype": "法力",
+            "passive": {
+              "name": "法力澎湃",
+              "description": "泽拉斯的普通攻击会周期性地恢复法力值。每当泽拉斯击杀了一个单位时，这个冷却时间就会缩短。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Xerath_Passive1.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0101/ability_0101_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "奥能脉冲",
+                "description": "泽拉斯聚集能量，随后发射出一道射程很远的能量光束，对所有命中的目标造成魔法伤害。",
+                "max_rank": 5,
+                "range_burn": [
+                  750
+                ],
+                "cooldown_burn": [
+                  9,
+                  8,
+                  7,
+                  6,
+                  5
+                ],
+                "cooldown_burn_float": [
+                  9,
+                  8,
+                  7,
+                  6,
+                  5
+                ],
+                "cost_burn": [
+                  80,
+                  90,
+                  100,
+                  110,
+                  120
+                ],
+                "tooltip": "<charge>开始蓄力：</charge>泽拉斯开始积蓄一次奥术光束，自身逐步<status>减速</status>，至多可达50%。<br /><br /><release>释放：</release>泽拉斯发射光束，造成<magicDamage>?魔法伤害</magicDamage>。距离随蓄力时间提升。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/XerathArcanopulseChargeUp.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0101/ability_0101_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "毁灭之眼",
+                "description": "在目标区域降下奥术能量的弹幕，对一个区域内的所有敌人造成减速效果和魔法伤害。区域中心的目标会受到额外伤害和一个更强大的减速效果。",
+                "max_rank": 5,
+                "range_burn": [
+                  1000
+                ],
+                "cooldown_burn": [
+                  14,
+                  13,
+                  12,
+                  11,
+                  10
+                ],
+                "cooldown_burn_float": [
+                  14,
+                  13,
+                  12,
+                  11,
+                  10
+                ],
+                "cost_burn": [
+                  80,
+                  90,
+                  100,
+                  110,
+                  120
+                ],
+                "tooltip": "泽拉斯引爆目标区域的奥术能量，造成<magicDamage>?魔法伤害</magicDamage>并使敌人<status>减速</status>?%，持续?秒。区域中心的敌人会受到<magicDamage>?魔法伤害</magicDamage>，并被<status>减速</status>?%，减速效果会在?秒里持续衰减。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/XerathArcaneBarrage2.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0101/ability_0101_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "冲击法球",
+                "description": "对单个敌人造成魔法伤害和晕眩效果。",
+                "max_rank": 5,
+                "range_burn": [
+                  1050
+                ],
+                "cooldown_burn": [
+                  13,
+                  12,
+                  12,
+                  11,
+                  11
+                ],
+                "cooldown_burn_float": [
+                  13,
+                  12.5,
+                  12,
+                  11.5,
+                  11
+                ],
+                "cost_burn": [
+                  60,
+                  65,
+                  70,
+                  75,
+                  80
+                ],
+                "tooltip": "泽拉斯发射一颗原生魔法之球，基于飞行距离使命中第一个的敌人<status>晕眩</status>至多?秒，并造成<magicDamage>?魔法伤害</magicDamage>。 ?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/XerathMageSpear.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0101/ability_0101_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "奥术仪式",
+                "description": "泽拉斯将自己固定在一处魔力之源上，并获得数次远程施法的机会。",
+                "max_rank": 3,
+                "range_burn": [
+                  5000
+                ],
+                "cooldown_burn": [
+                  130,
+                  115,
+                  100
+                ],
+                "cooldown_burn_float": [
+                  130,
+                  115,
+                  100
+                ],
+                "cost_burn": [
+                  100
+                ],
+                "tooltip": "泽拉斯飞升至他的真正形态并引导10秒。在此期间，他可以<recast>再次施放</recast>此技能至多4/5/6次。<br /><br /><recast>再次施放：</recast>泽拉斯发射一道魔法炮击，造成<magicDamage>?魔法伤害</magicDamage>。每次命中英雄时，炮击都会造成额外的<magicDamage>?魔法伤害</magicDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/XerathLocusOfPower2.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0101/ability_0101_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 101000,
+                "champion_id": 101,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 1350
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 585
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 101021,
+                "champion_id": 101,
+                "name": "宇航员 泽拉斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_21.jpg",
+                "skin_video_url": "https://youtu.be/OjctXSqUTss",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2023-02-24T04:00:00+09:00"
+              },
+              {
+                "id": 101002,
+                "champion_id": 101,
+                "name": "战地法师 泽拉斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_2.jpg",
+                "skin_video_url": "https://youtu.be/2tHHmNjN-To",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 520
+                  }
+                ],
+                "sales": null,
+                "release_date": "2011-10-06T14:00:00+09:00"
+              },
+              {
+                "id": 101005,
+                "champion_id": 101,
+                "name": "暗星 泽拉斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_5.jpg",
+                "skin_video_url": "https://youtu.be/LptoG7mqWSM",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-03-26T04:00:00+09:00"
+              },
+              {
+                "id": 101003,
+                "champion_id": 101,
+                "name": "枯萎之壤 泽拉斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_3.jpg",
+                "skin_video_url": "https://youtu.be/wRWnvPWzyXk",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2012-07-20T08:00:00+09:00"
+              },
+              {
+                "id": 101012,
+                "champion_id": 101,
+                "name": "欲望之主 泽拉斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_12.jpg",
+                "skin_video_url": "https://youtu.be/fFSwwdDk_7k",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-05-13T04:00:00+09:00"
+              },
+              {
+                "id": 101030,
+                "champion_id": 101,
+                "name": "水晶巫灵 泽拉斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_30.jpg",
+                "skin_video_url": null,
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 101004,
+                "champion_id": 101,
+                "name": "沙之守护 泽拉斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_4.jpg",
+                "skin_video_url": "https://youtu.be/AQvqbwQtK4M",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2015-04-27T10:00:00+09:00"
+              },
+              {
+                "id": 101001,
+                "champion_id": 101,
+                "name": "符文生物 泽拉斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_1.jpg",
+                "skin_video_url": "https://youtu.be/Zy9nSATyXbk",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2011-10-06T15:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 46.1
         }
       ],
       [
@@ -1685,157 +1904,148 @@
           "win_rate": 58.7
         },
         {
-          "champion_id": 268,
-          "play": 72,
-          "win": 42,
+          "champion_id": 163,
+          "play": 82,
+          "win": 48,
           "meta": {
-            "id": 268,
-            "key": "Azir",
-            "name": "沙漠皇帝",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Azir.png",
+            "id": 163,
+            "key": "Taliyah",
+            "name": "岩雀",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Taliyah.png",
             "evolve": [],
             "partype": "法力",
             "passive": {
-              "name": "恕瑞玛的传承",
-              "description": "阿兹尔可以从友方或敌方防御塔的废墟中召唤太阳圆盘。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Azir_Passive.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0268/ability_0268_P1.webm"
+              "name": "浮石冲",
+              "description": "塔莉垭在墙体附近时会获得移动速度。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Taliyah_Passive.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0163/ability_0163_P1.webm"
             },
             "spells": [
               {
                 "key": "Q",
-                "name": "狂沙猛攻",
-                "description": "阿兹尔把所有黄沙士兵派往一个地点。黄沙士兵会对沿途的所有敌人造成魔法伤害，并施加持续1秒的减速效果。",
+                "name": "石穿",
+                "description": "塔莉垭朝目标方向扔出一串岩石，同时自身可自由移动。这个技能会在她脚下生成【掘石场】。如果塔莉垭在【掘石场】上使用【Q石穿】，她将消耗掉【掘石场】来投掷一颗更强大的岩石来减速敌人。",
                 "max_rank": 5,
                 "range_burn": [
-                  740
+                  1000
                 ],
                 "cooldown_burn": [
-                  14,
-                  12,
-                  10,
-                  8,
-                  6
+                  7,
+                  6,
+                  5,
+                  4,
+                  3
                 ],
                 "cooldown_burn_float": [
-                  14,
-                  12,
-                  10,
-                  8,
-                  6
+                  7,
+                  6,
+                  5,
+                  4,
+                  3
                 ],
                 "cost_burn": [
+                  65,
                   70,
+                  75,
                   80,
-                  90,
-                  100,
-                  110
+                  85
                 ],
-                "tooltip": "阿兹尔命令所有<keywordMajor>黄沙士兵</keywordMajor>前往一个区域，对他们途经的敌人们造成<magicDamage>?魔法伤害</magicDamage>和持续1秒的25%<status>减速</status>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AzirQWrapper.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0268/ability_0268_Q1.webm"
+                "tooltip": "塔莉垭挥出5块石头，每块会在命中的第一个敌人的附近区域内造成<magicDamage>?魔法伤害</magicDamage>并在该区域生成【掘石场】。对相同敌人的后续命中造成的伤害降低?%。<br /><br />在掘石场上施放时会消耗20法力并且冷却时间缩短?%，消耗掉【掘石场】，并挥出一块巨石来对命中的敌人们造成持续?秒的?%<status>减速</status>，对首要目标造成<magicDamage>?魔法伤害</magicDamage>。被巨石命中的野怪会被<status>晕眩</status>?秒。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TaliyahQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0163/ability_0163_Q1.webm"
               },
               {
                 "key": "W",
-                "name": "沙兵现身",
-                "description": "阿兹尔召唤一个黄沙士兵来为他攻击附近的敌方单位。如果敌方单位在士兵的攻击距离内，那么士兵会代替阿兹尔进行普攻。士兵的攻击会对一条直线上的敌人造成魔法伤害。这个技能还会被动为阿兹尔和他的士兵们提供攻击速度加成。",
+                "name": "岩突",
+                "description": "塔莉垭在目标区域引发岩突，并将区域内的敌人们扔向她所选的方向。",
                 "max_rank": 5,
                 "range_burn": [
-                  525
+                  900
                 ],
                 "cooldown_burn": [
-                  1
+                  14,
+                  12,
+                  11,
+                  9,
+                  8
                 ],
                 "cooldown_burn_float": [
-                  1.5
+                  14,
+                  12.5,
+                  11,
+                  9.5,
+                  8
                 ],
                 "cost_burn": [
                   40,
-                  35,
                   30,
-                  25,
-                  20
+                  20,
+                  10,
+                  0
                 ],
-                "tooltip": "阿兹尔召唤一个持续10秒的<keywordMajor>黄沙士兵</keywordMajor>。当阿兹尔攻击处在一个<keywordMajor>黄沙士兵</keywordMajor>附近的敌人时，他会转而命令该士兵进行戳刺，在其方向上造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />这个技能拥有?层充能。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AzirW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0268/ability_0268_W1.webm"
+                "tooltip": "塔莉垭动摇大地，将一个区域内的敌人们<status>强制位移</status>至一个所选方向。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TaliyahWVC.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0163/ability_0163_W1.webm"
               },
               {
                 "key": "E",
-                "name": "流沙移形",
-                "description": "阿兹尔暂时套上一层护盾并冲向他的一个黄沙士兵，伤害敌人。如果他命中了一位敌方英雄，那么他就会准备好一个新的黄沙士兵并中断他的位移。",
+                "name": "撒石阵",
+                "description": "塔莉垭创造一个可减速的雷区。如果敌人在使用冲刺技能途径雷区或是被强制位移效果途经雷区，石雷就会爆炸并晕眩该敌人。",
                 "max_rank": 5,
                 "range_burn": [
-                  1100
+                  950
                 ],
                 "cooldown_burn": [
-                  22,
-                  20,
-                  19,
-                  17,
-                  16
+                  14
                 ],
                 "cooldown_burn_float": [
-                  22,
-                  20.5,
-                  19,
-                  17.5,
-                  16
+                  14
                 ],
                 "cost_burn": [
-                  60
+                  90,
+                  95,
+                  100,
+                  105,
+                  110
                 ],
-                "tooltip": "阿兹尔为他自身提供<shield>?护盾值</shield>，持续1.5秒并朝着他的一位<keywordMajor>黄沙士兵</keywordMajor>突进，对途经的敌人们造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />如果阿兹尔命中了一名敌方英雄，那么他就会停下来并获得一层<spellName>黄沙士兵</spellName>充能。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AzirEWrapper.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0268/ability_0268_E1.webm"
+                "tooltip": "塔莉垭在一个区域内布下碎石阵，对命中的敌人造成<magicDamage>?魔法伤害</magicDamage>和?%<status>减速</status>。碎石会在敌人冲刺或被<status>强制位移</status>途经它们时爆炸，造成剩余位移时长+?秒<status>晕眩</status>和<magicDamage>?魔法伤害</magicDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TaliyahE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0163/ability_0163_E1.webm"
               },
               {
                 "key": "R",
-                "name": "禁军之墙",
-                "description": "阿兹尔召唤一道由禁军组成的人墙向前冲锋，对敌人造成伤害和击退效果。",
+                "name": "墙幔",
+                "description": "塔莉垭创造出一个非常长的石墙，然后在石墙上冲浪。",
                 "max_rank": 3,
                 "range_burn": [
-                  250
+                  2500,
+                  4500,
+                  6500
                 ],
                 "cooldown_burn": [
-                  120,
-                  105,
-                  90
+                  180,
+                  150,
+                  120
                 ],
                 "cooldown_burn_float": [
-                  120,
-                  105,
-                  90
+                  180,
+                  150,
+                  120
                 ],
                 "cost_burn": [
                   100
                 ],
-                "tooltip": "阿兹尔召唤一道由禁军组成的人墙向前冲锋，<status>击退</status>敌人们并造成<magicDamage>?魔法伤害</magicDamage>。然后这道由禁军组成的人墙会持续5秒，来阻挡敌人的前进。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AzirR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0268/ability_0268_R1.webm"
+                "tooltip": "塔莉垭生成一道巨型土墙，持续4秒。如果她立刻<recast>再次施放</recast>，那么她将踏上土墙随其一路骑行。移动或受到定身都将结束这段骑行。<br /><br />如果塔莉垭在?秒内曾受到过来自英雄或建筑物的伤害，那么她将不能施放这个技能。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TaliyahR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0163/ability_0163_R1.webm"
               }
             ],
             "skins": [
               {
-                "id": 268014,
-                "champion_id": 268,
-                "name": "2022 全球总决赛 阿兹尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Azir_14.jpg",
-                "skin_video_url": "https://youtu.be/tGgH7VV1OFY",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2024-09-25T08:59:00+09:00"
-              },
-              {
-                "id": 268000,
-                "champion_id": 268,
+                "id": 163000,
+                "champion_id": 163,
                 "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Azir_0.jpg",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taliyah_0.jpg",
                 "skin_video_url": null,
                 "prices": [
                   {
@@ -1851,41 +2061,66 @@
                 "release_date": null
               },
               {
-                "id": 268003,
-                "champion_id": 268,
-                "name": "SKT T1 阿兹尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Azir_3.jpg",
-                "skin_video_url": "https://youtu.be/Z1buLIrGcA4",
+                "id": 163002,
+                "champion_id": 163,
+                "name": "SSG 塔莉垭",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taliyah_2.jpg",
+                "skin_video_url": "https://youtu.be/hymvG7UPkRU",
                 "prices": [
                   {
                     "currency": "RP",
-                    "cost": 975
+                    "cost": 1350
                   }
                 ],
                 "sales": null,
                 "release_date": "2024-09-25T08:59:00+09:00"
               },
               {
-                "id": 268004,
-                "champion_id": 268,
-                "name": "司马懿 仲达",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Azir_4.jpg",
-                "skin_video_url": "https://youtu.be/fix4LFUx7NY",
+                "id": 163001,
+                "champion_id": 163,
+                "name": "弗雷尔卓德 塔莉垭",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taliyah_1.jpg",
+                "skin_video_url": "https://youtu.be/XbujC7cWlok",
                 "prices": [
                   {
                     "currency": "RP",
                     "cost": 1350
                   }
                 ],
+                "sales": null,
+                "release_date": "2016-05-18T10:00:00+09:00"
+              },
+              {
+                "id": 163011,
+                "champion_id": 163,
+                "name": "星之守护者 塔莉垭",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taliyah_11.jpg",
+                "skin_video_url": "https://youtu.be/4FZzoFICJ0g",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2022-07-28T04:00:00+09:00"
+              },
+              {
+                "id": 163021,
+                "champion_id": 163,
+                "name": "水晶圣骑 塔莉垭",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taliyah_21.jpg",
+                "skin_video_url": null,
+                "prices": null,
                 "sales": null,
                 "release_date": null
               },
               {
-                "id": 268002,
-                "champion_id": 268,
-                "name": "幽冥领主 阿兹尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Azir_2.jpg",
-                "skin_video_url": "https://youtu.be/H6Im_H-KEtQ",
+                "id": 163003,
+                "champion_id": 163,
+                "name": "泳池派对 塔莉垭",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taliyah_3.jpg",
+                "skin_video_url": "https://youtu.be/lzfLmiq-OUA",
                 "prices": [
                   {
                     "currency": "RP",
@@ -1893,302 +2128,16 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2015-12-01T09:00:00+09:00"
-              },
-              {
-                "id": 268001,
-                "champion_id": 268,
-                "name": "星际之门 阿兹尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Azir_1.jpg",
-                "skin_video_url": "https://youtu.be/gY4z0pBdSts",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2014-09-16T07:00:00+09:00"
-              },
-              {
-                "id": 268005,
-                "champion_id": 268,
-                "name": "永恒之森 阿兹尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Azir_5.jpg",
-                "skin_video_url": "https://youtu.be/weJc1lQ6PyY",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2020-12-10T04:00:00+09:00"
-              },
-              {
-                "id": 268019,
-                "champion_id": 268,
-                "name": "精英律师 阿兹尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Azir_19.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2024-09-11T09:00:00+09:00"
+                "release_date": "2020-07-02T04:00:00+09:00"
               }
             ]
           },
-          "win_rate": 58.33
-        },
-        {
-          "champion_id": 161,
-          "play": 60,
-          "win": 35,
-          "meta": {
-            "id": 161,
-            "key": "Velkoz",
-            "name": "虚空之眼",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Velkoz.png",
-            "evolve": [],
-            "partype": "法力",
-            "passive": {
-              "name": "有机体解构",
-              "description": "维克兹的技能会对命中的敌人施加<keywordName>有机体解构</keywordName>效果。如果累积到3层效果，敌人就会受到爆发性的真实伤害。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/VelKoz_Passive.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0161/ability_0161_P1.webm"
-            },
-            "spells": [
-              {
-                "key": "Q",
-                "name": "等离子裂变",
-                "description": "维克兹发射一束等离子，再次施放此技能或在命中一名敌人后，等离子束会一分为二。等离子束在命中时会造成伤害和减速效果。",
-                "max_rank": 5,
-                "range_burn": [
-                  1050
-                ],
-                "cooldown_burn": [
-                  7
-                ],
-                "cooldown_burn_float": [
-                  7
-                ],
-                "cost_burn": [
-                  40,
-                  45,
-                  50,
-                  55,
-                  60
-                ],
-                "tooltip": "维克兹发射一束等离子，造成<magicDamage>?魔法伤害</magicDamage>和在?秒里持续衰减的?%<status>减速</status>。在到达它的距离终点，或是命中一个目标，或是<recast>再次施放</recast>此技能时，等离子束会分裂成新的两束并呈90度角发射出去。<br /><br />用这个技能击杀一个单位，就会回复<scaleMana>?法力</scaleMana>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VelkozQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0161/ability_0161_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "虚空裂隙",
-                "description": "维克兹开启一道虚空裂隙，造成初始爆发伤害，并在短暂的延迟后爆炸，造成第二段爆发伤害。",
-                "max_rank": 5,
-                "range_burn": [
-                  1050
-                ],
-                "cooldown_burn": [
-                  1
-                ],
-                "cooldown_burn_float": [
-                  1.5
-                ],
-                "cost_burn": [
-                  50,
-                  55,
-                  60,
-                  65,
-                  70
-                ],
-                "tooltip": "维克兹打开一道虚空裂隙，造成<magicDamage>?魔法伤害</magicDamage>。然后裂隙会喷发，造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />这个技能有2层充能(?秒刷新时间)。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VelkozW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0161/ability_0161_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "构造分解",
-                "description": "维克兹让一个区域爆炸，击飞敌人，并将近处的敌人略微击退。",
-                "max_rank": 5,
-                "range_burn": [
-                  810
-                ],
-                "cooldown_burn": [
-                  16,
-                  15,
-                  14,
-                  13,
-                  12
-                ],
-                "cooldown_burn_float": [
-                  16,
-                  15,
-                  14,
-                  13,
-                  12
-                ],
-                "cost_burn": [
-                  50,
-                  55,
-                  60,
-                  65,
-                  70
-                ],
-                "tooltip": "维克兹瓦解一个附近的区域，导致它爆炸，造成?秒<status>击飞</status>和<magicDamage>?魔法伤害</magicDamage>。靠近维克兹的敌人们将被<status>击退</status>，而不是<status>击飞</status>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VelkozE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0161/ability_0161_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "生命形态瓦解射线",
-                "description": "维克兹释放一束被引导的光线跟随鼠标指针，可造成魔法伤害，持续2.5秒。【有机体解构】效果会研究敌方英雄，从而使他们受到真实伤害。",
-                "max_rank": 3,
-                "range_burn": [
-                  1575
-                ],
-                "cooldown_burn": [
-                  120,
-                  100,
-                  80
-                ],
-                "cooldown_burn_float": [
-                  120,
-                  100,
-                  80
-                ],
-                "cost_burn": [
-                  100
-                ],
-                "tooltip": "维克兹引导一道能量射线来跟随鼠标指针，在2.5秒里持续造成共<magicDamage>?魔法伤害</magicDamage>和20%<status>减速</status>。对近期被<spellName>有机体解构</spellName>伤害过的敌人们造成<trueDamage>真实伤害</trueDamage>作为替代。<br /><br />射线内的敌人会周期性地获得<keywordMajor>解构</keywordMajor>层数。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VelkozR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0161/ability_0161_R1.webm"
-              }
-            ],
-            "skins": [
-              {
-                "id": 161000,
-                "champion_id": 161,
-                "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_0.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "IP",
-                    "cost": 3141
-                  },
-                  {
-                    "currency": "RP",
-                    "cost": 790
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 161004,
-                "champion_id": 161,
-                "name": "地狱火 维克兹",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_4.jpg",
-                "skin_video_url": "https://youtu.be/q2D85TFwlqo",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2020-07-16T04:00:00+09:00"
-              },
-              {
-                "id": 161020,
-                "champion_id": 161,
-                "name": "天才蜂 维克兹",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_20.jpg",
-                "skin_video_url": "https://youtu.be/tvirPcodYHY",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2023-11-21T12:00:00+09:00"
-              },
-              {
-                "id": 161001,
-                "champion_id": 161,
-                "name": "战地机甲 维克兹",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_1.jpg",
-                "skin_video_url": "https://youtu.be/WkfiQrrWMCc",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2014-03-03T08:00:00+09:00"
-              },
-              {
-                "id": 161002,
-                "champion_id": 161,
-                "name": "苍穹之光 维克兹",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_2.jpg",
-                "skin_video_url": "https://youtu.be/poARvjZh8w4",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2015-01-20T16:00:00+09:00"
-              },
-              {
-                "id": 161003,
-                "champion_id": 161,
-                "name": "这货不是维克兹",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_3.jpg",
-                "skin_video_url": "https://youtu.be/TSXxbxP16a4",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 750
-                  }
-                ],
-                "sales": null,
-                "release_date": "2016-03-31T13:00:00+09:00"
-              },
-              {
-                "id": 161011,
-                "champion_id": 161,
-                "name": "黯晶之眼 维克兹",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_11.jpg",
-                "skin_video_url": "https://youtu.be/lmDZ2WeGrjc",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2021-04-15T04:00:00+09:00"
-              }
-            ]
-          },
-          "win_rate": 58.33
+          "win_rate": 58.54
         },
         {
           "champion_id": 245,
-          "play": 83,
-          "win": 48,
+          "play": 84,
+          "win": 49,
           "meta": {
             "id": 245,
             "key": "Ekko",
@@ -2505,151 +2454,160 @@
               }
             ]
           },
-          "win_rate": 57.83
+          "win_rate": 58.33
         },
         {
-          "champion_id": 163,
-          "play": 78,
-          "win": 45,
+          "champion_id": 268,
+          "play": 72,
+          "win": 42,
           "meta": {
-            "id": 163,
-            "key": "Taliyah",
-            "name": "岩雀",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Taliyah.png",
+            "id": 268,
+            "key": "Azir",
+            "name": "沙漠皇帝",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Azir.png",
             "evolve": [],
             "partype": "法力",
             "passive": {
-              "name": "浮石冲",
-              "description": "塔莉垭在墙体附近时会获得移动速度。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Taliyah_Passive.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0163/ability_0163_P1.webm"
+              "name": "恕瑞玛的传承",
+              "description": "阿兹尔可以从友方或敌方防御塔的废墟中召唤太阳圆盘。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Azir_Passive.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0268/ability_0268_P1.webm"
             },
             "spells": [
               {
                 "key": "Q",
-                "name": "石穿",
-                "description": "塔莉垭朝目标方向扔出一串岩石，同时自身可自由移动。这个技能会在她脚下生成【掘石场】。如果塔莉垭在【掘石场】上使用【Q石穿】，她将消耗掉【掘石场】来投掷一颗更强大的岩石来减速敌人。",
+                "name": "狂沙猛攻",
+                "description": "阿兹尔把所有黄沙士兵派往一个地点。黄沙士兵会对沿途的所有敌人造成魔法伤害，并施加持续1秒的减速效果。",
                 "max_rank": 5,
                 "range_burn": [
-                  1000
-                ],
-                "cooldown_burn": [
-                  7,
-                  6,
-                  5,
-                  4,
-                  3
-                ],
-                "cooldown_burn_float": [
-                  7,
-                  6,
-                  5,
-                  4,
-                  3
-                ],
-                "cost_burn": [
-                  65,
-                  70,
-                  75,
-                  80,
-                  85
-                ],
-                "tooltip": "塔莉垭挥出5块石头，每块会在命中的第一个敌人的附近区域内造成<magicDamage>?魔法伤害</magicDamage>并在该区域生成【掘石场】。对相同敌人的后续命中造成的伤害降低?%。<br /><br />在掘石场上施放时会消耗20法力并且冷却时间缩短?%，消耗掉【掘石场】，并挥出一块巨石来对命中的敌人们造成持续?秒的?%<status>减速</status>，对首要目标造成<magicDamage>?魔法伤害</magicDamage>。被巨石命中的野怪会被<status>晕眩</status>?秒。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TaliyahQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0163/ability_0163_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "岩突",
-                "description": "塔莉垭在目标区域引发岩突，并将区域内的敌人们扔向她所选的方向。",
-                "max_rank": 5,
-                "range_burn": [
-                  900
+                  740
                 ],
                 "cooldown_burn": [
                   14,
                   12,
-                  11,
-                  9,
-                  8
+                  10,
+                  8,
+                  6
                 ],
                 "cooldown_burn_float": [
                   14,
-                  12.5,
-                  11,
-                  9.5,
-                  8
+                  12,
+                  10,
+                  8,
+                  6
+                ],
+                "cost_burn": [
+                  70,
+                  80,
+                  90,
+                  100,
+                  110
+                ],
+                "tooltip": "阿兹尔命令所有<keywordMajor>黄沙士兵</keywordMajor>前往一个区域，对他们途经的敌人们造成<magicDamage>?魔法伤害</magicDamage>和持续1秒的25%<status>减速</status>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AzirQWrapper.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0268/ability_0268_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "沙兵现身",
+                "description": "阿兹尔召唤一个黄沙士兵来为他攻击附近的敌方单位。如果敌方单位在士兵的攻击距离内，那么士兵会代替阿兹尔进行普攻。士兵的攻击会对一条直线上的敌人造成魔法伤害。这个技能还会被动为阿兹尔和他的士兵们提供攻击速度加成。",
+                "max_rank": 5,
+                "range_burn": [
+                  525
+                ],
+                "cooldown_burn": [
+                  1
+                ],
+                "cooldown_burn_float": [
+                  1.5
                 ],
                 "cost_burn": [
                   40,
+                  35,
                   30,
-                  20,
-                  10,
-                  0
+                  25,
+                  20
                 ],
-                "tooltip": "塔莉垭动摇大地，将一个区域内的敌人们<status>强制位移</status>至一个所选方向。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TaliyahWVC.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0163/ability_0163_W1.webm"
+                "tooltip": "阿兹尔召唤一个持续10秒的<keywordMajor>黄沙士兵</keywordMajor>。当阿兹尔攻击处在一个<keywordMajor>黄沙士兵</keywordMajor>附近的敌人时，他会转而命令该士兵进行戳刺，在其方向上造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />这个技能拥有?层充能。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AzirW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0268/ability_0268_W1.webm"
               },
               {
                 "key": "E",
-                "name": "撒石阵",
-                "description": "塔莉垭创造一个可减速的雷区。如果敌人在使用冲刺技能途径雷区或是被强制位移效果途经雷区，石雷就会爆炸并晕眩该敌人。",
+                "name": "流沙移形",
+                "description": "阿兹尔暂时套上一层护盾并冲向他的一个黄沙士兵，伤害敌人。如果他命中了一位敌方英雄，那么他就会准备好一个新的黄沙士兵并中断他的位移。",
                 "max_rank": 5,
                 "range_burn": [
-                  950
+                  1100
                 ],
                 "cooldown_burn": [
-                  14
+                  22,
+                  20,
+                  19,
+                  17,
+                  16
                 ],
                 "cooldown_burn_float": [
-                  14
+                  22,
+                  20.5,
+                  19,
+                  17.5,
+                  16
                 ],
                 "cost_burn": [
-                  90,
-                  95,
-                  100,
-                  105,
-                  110
+                  60
                 ],
-                "tooltip": "塔莉垭在一个区域内布下碎石阵，对命中的敌人造成<magicDamage>?魔法伤害</magicDamage>和?%<status>减速</status>。碎石会在敌人冲刺或被<status>强制位移</status>途经它们时爆炸，造成剩余位移时长+?秒<status>晕眩</status>和<magicDamage>?魔法伤害</magicDamage>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TaliyahE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0163/ability_0163_E1.webm"
+                "tooltip": "阿兹尔为他自身提供<shield>?护盾值</shield>，持续1.5秒并朝着他的一位<keywordMajor>黄沙士兵</keywordMajor>突进，对途经的敌人们造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />如果阿兹尔命中了一名敌方英雄，那么他就会停下来并获得一层<spellName>黄沙士兵</spellName>充能。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AzirEWrapper.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0268/ability_0268_E1.webm"
               },
               {
                 "key": "R",
-                "name": "墙幔",
-                "description": "塔莉垭创造出一个非常长的石墙，然后在石墙上冲浪。",
+                "name": "禁军之墙",
+                "description": "阿兹尔召唤一道由禁军组成的人墙向前冲锋，对敌人造成伤害和击退效果。",
                 "max_rank": 3,
                 "range_burn": [
-                  2500,
-                  4500,
-                  6500
+                  250
                 ],
                 "cooldown_burn": [
-                  180,
-                  150,
-                  120
+                  120,
+                  105,
+                  90
                 ],
                 "cooldown_burn_float": [
-                  180,
-                  150,
-                  120
+                  120,
+                  105,
+                  90
                 ],
                 "cost_burn": [
                   100
                 ],
-                "tooltip": "塔莉垭生成一道巨型土墙，持续4秒。如果她立刻<recast>再次施放</recast>，那么她将踏上土墙随其一路骑行。移动或受到定身都将结束这段骑行。<br /><br />如果塔莉垭在?秒内曾受到过来自英雄或建筑物的伤害，那么她将不能施放这个技能。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TaliyahR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0163/ability_0163_R1.webm"
+                "tooltip": "阿兹尔召唤一道由禁军组成的人墙向前冲锋，<status>击退</status>敌人们并造成<magicDamage>?魔法伤害</magicDamage>。然后这道由禁军组成的人墙会持续5秒，来阻挡敌人的前进。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AzirR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0268/ability_0268_R1.webm"
               }
             ],
             "skins": [
               {
-                "id": 163000,
-                "champion_id": 163,
+                "id": 268014,
+                "champion_id": 268,
+                "name": "2022 全球总决赛 阿兹尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Azir_14.jpg",
+                "skin_video_url": "https://youtu.be/tGgH7VV1OFY",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-09-25T08:59:00+09:00"
+              },
+              {
+                "id": 268000,
+                "champion_id": 268,
                 "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taliyah_0.jpg",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Azir_0.jpg",
                 "skin_video_url": null,
                 "prices": [
                   {
@@ -2665,66 +2623,41 @@
                 "release_date": null
               },
               {
-                "id": 163002,
-                "champion_id": 163,
-                "name": "SSG 塔莉垭",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taliyah_2.jpg",
-                "skin_video_url": "https://youtu.be/hymvG7UPkRU",
+                "id": 268003,
+                "champion_id": 268,
+                "name": "SKT T1 阿兹尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Azir_3.jpg",
+                "skin_video_url": "https://youtu.be/Z1buLIrGcA4",
                 "prices": [
                   {
                     "currency": "RP",
-                    "cost": 1350
+                    "cost": 975
                   }
                 ],
                 "sales": null,
                 "release_date": "2024-09-25T08:59:00+09:00"
               },
               {
-                "id": 163001,
-                "champion_id": 163,
-                "name": "弗雷尔卓德 塔莉垭",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taliyah_1.jpg",
-                "skin_video_url": "https://youtu.be/XbujC7cWlok",
+                "id": 268004,
+                "champion_id": 268,
+                "name": "司马懿 仲达",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Azir_4.jpg",
+                "skin_video_url": "https://youtu.be/fix4LFUx7NY",
                 "prices": [
                   {
                     "currency": "RP",
                     "cost": 1350
                   }
                 ],
-                "sales": null,
-                "release_date": "2016-05-18T10:00:00+09:00"
-              },
-              {
-                "id": 163011,
-                "champion_id": 163,
-                "name": "星之守护者 塔莉垭",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taliyah_11.jpg",
-                "skin_video_url": "https://youtu.be/4FZzoFICJ0g",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2022-07-28T04:00:00+09:00"
-              },
-              {
-                "id": 163021,
-                "champion_id": 163,
-                "name": "水晶圣骑 塔莉垭",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taliyah_21.jpg",
-                "skin_video_url": null,
-                "prices": null,
                 "sales": null,
                 "release_date": null
               },
               {
-                "id": 163003,
-                "champion_id": 163,
-                "name": "泳池派对 塔莉垭",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taliyah_3.jpg",
-                "skin_video_url": "https://youtu.be/lzfLmiq-OUA",
+                "id": 268002,
+                "champion_id": 268,
+                "name": "幽冥领主 阿兹尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Azir_2.jpg",
+                "skin_video_url": "https://youtu.be/H6Im_H-KEtQ",
                 "prices": [
                   {
                     "currency": "RP",
@@ -2732,19 +2665,305 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2020-07-02T04:00:00+09:00"
+                "release_date": "2015-12-01T09:00:00+09:00"
+              },
+              {
+                "id": 268001,
+                "champion_id": 268,
+                "name": "星际之门 阿兹尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Azir_1.jpg",
+                "skin_video_url": "https://youtu.be/gY4z0pBdSts",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2014-09-16T07:00:00+09:00"
+              },
+              {
+                "id": 268005,
+                "champion_id": 268,
+                "name": "永恒之森 阿兹尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Azir_5.jpg",
+                "skin_video_url": "https://youtu.be/weJc1lQ6PyY",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-12-10T04:00:00+09:00"
+              },
+              {
+                "id": 268019,
+                "champion_id": 268,
+                "name": "精英律师 阿兹尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Azir_19.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-09-11T09:00:00+09:00"
               }
             ]
           },
-          "win_rate": 57.69
+          "win_rate": 58.33
+        },
+        {
+          "champion_id": 161,
+          "play": 62,
+          "win": 36,
+          "meta": {
+            "id": 161,
+            "key": "Velkoz",
+            "name": "虚空之眼",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Velkoz.png",
+            "evolve": [],
+            "partype": "法力",
+            "passive": {
+              "name": "有机体解构",
+              "description": "维克兹的技能会对命中的敌人施加<keywordName>有机体解构</keywordName>效果。如果累积到3层效果，敌人就会受到爆发性的真实伤害。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/VelKoz_Passive.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0161/ability_0161_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "等离子裂变",
+                "description": "维克兹发射一束等离子，再次施放此技能或在命中一名敌人后，等离子束会一分为二。等离子束在命中时会造成伤害和减速效果。",
+                "max_rank": 5,
+                "range_burn": [
+                  1050
+                ],
+                "cooldown_burn": [
+                  7
+                ],
+                "cooldown_burn_float": [
+                  7
+                ],
+                "cost_burn": [
+                  40,
+                  45,
+                  50,
+                  55,
+                  60
+                ],
+                "tooltip": "维克兹发射一束等离子，造成<magicDamage>?魔法伤害</magicDamage>和在?秒里持续衰减的?%<status>减速</status>。在到达它的距离终点，或是命中一个目标，或是<recast>再次施放</recast>此技能时，等离子束会分裂成新的两束并呈90度角发射出去。<br /><br />用这个技能击杀一个单位，就会回复<scaleMana>?法力</scaleMana>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VelkozQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0161/ability_0161_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "虚空裂隙",
+                "description": "维克兹开启一道虚空裂隙，造成初始爆发伤害，并在短暂的延迟后爆炸，造成第二段爆发伤害。",
+                "max_rank": 5,
+                "range_burn": [
+                  1050
+                ],
+                "cooldown_burn": [
+                  1
+                ],
+                "cooldown_burn_float": [
+                  1.5
+                ],
+                "cost_burn": [
+                  50,
+                  55,
+                  60,
+                  65,
+                  70
+                ],
+                "tooltip": "维克兹打开一道虚空裂隙，造成<magicDamage>?魔法伤害</magicDamage>。然后裂隙会喷发，造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />这个技能有2层充能(?秒刷新时间)。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VelkozW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0161/ability_0161_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "构造分解",
+                "description": "维克兹让一个区域爆炸，击飞敌人，并将近处的敌人略微击退。",
+                "max_rank": 5,
+                "range_burn": [
+                  810
+                ],
+                "cooldown_burn": [
+                  16,
+                  15,
+                  14,
+                  13,
+                  12
+                ],
+                "cooldown_burn_float": [
+                  16,
+                  15,
+                  14,
+                  13,
+                  12
+                ],
+                "cost_burn": [
+                  50,
+                  55,
+                  60,
+                  65,
+                  70
+                ],
+                "tooltip": "维克兹瓦解一个附近的区域，导致它爆炸，造成?秒<status>击飞</status>和<magicDamage>?魔法伤害</magicDamage>。靠近维克兹的敌人们将被<status>击退</status>，而不是<status>击飞</status>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VelkozE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0161/ability_0161_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "生命形态瓦解射线",
+                "description": "维克兹释放一束被引导的光线跟随鼠标指针，可造成魔法伤害，持续2.5秒。【有机体解构】效果会研究敌方英雄，从而使他们受到真实伤害。",
+                "max_rank": 3,
+                "range_burn": [
+                  1575
+                ],
+                "cooldown_burn": [
+                  120,
+                  100,
+                  80
+                ],
+                "cooldown_burn_float": [
+                  120,
+                  100,
+                  80
+                ],
+                "cost_burn": [
+                  100
+                ],
+                "tooltip": "维克兹引导一道能量射线来跟随鼠标指针，在2.5秒里持续造成共<magicDamage>?魔法伤害</magicDamage>和20%<status>减速</status>。对近期被<spellName>有机体解构</spellName>伤害过的敌人们造成<trueDamage>真实伤害</trueDamage>作为替代。<br /><br />射线内的敌人会周期性地获得<keywordMajor>解构</keywordMajor>层数。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VelkozR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0161/ability_0161_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 161000,
+                "champion_id": 161,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 3141
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 790
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 161004,
+                "champion_id": 161,
+                "name": "地狱火 维克兹",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_4.jpg",
+                "skin_video_url": "https://youtu.be/q2D85TFwlqo",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-07-16T04:00:00+09:00"
+              },
+              {
+                "id": 161020,
+                "champion_id": 161,
+                "name": "天才蜂 维克兹",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_20.jpg",
+                "skin_video_url": "https://youtu.be/tvirPcodYHY",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2023-11-21T12:00:00+09:00"
+              },
+              {
+                "id": 161001,
+                "champion_id": 161,
+                "name": "战地机甲 维克兹",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_1.jpg",
+                "skin_video_url": "https://youtu.be/WkfiQrrWMCc",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2014-03-03T08:00:00+09:00"
+              },
+              {
+                "id": 161002,
+                "champion_id": 161,
+                "name": "苍穹之光 维克兹",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_2.jpg",
+                "skin_video_url": "https://youtu.be/poARvjZh8w4",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2015-01-20T16:00:00+09:00"
+              },
+              {
+                "id": 161003,
+                "champion_id": 161,
+                "name": "这货不是维克兹",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_3.jpg",
+                "skin_video_url": "https://youtu.be/TSXxbxP16a4",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2016-03-31T13:00:00+09:00"
+              },
+              {
+                "id": 161011,
+                "champion_id": 161,
+                "name": "黯晶之眼 维克兹",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_11.jpg",
+                "skin_video_url": "https://youtu.be/lmDZ2WeGrjc",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-04-15T04:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 58.06
         }
       ]
     ],
     "counters": [
       {
         "champion_id": 134,
-        "play": 622,
-        "win": 308,
+        "play": 625,
+        "win": 310,
         "meta": {
           "id": 134,
           "key": "Syndra",
@@ -3064,8 +3283,8 @@
       },
       {
         "champion_id": 7,
-        "play": 531,
-        "win": 282,
+        "play": 537,
+        "win": 287,
         "meta": {
           "id": 7,
           "key": "Leblanc",
@@ -3399,7 +3618,7 @@
       },
       {
         "champion_id": 777,
-        "play": 516,
+        "play": 519,
         "win": 263,
         "meta": {
           "id": 777,
@@ -3662,7 +3881,7 @@
       },
       {
         "champion_id": 517,
-        "play": 424,
+        "play": 426,
         "win": 200,
         "meta": {
           "id": 517,
@@ -3923,7 +4142,7 @@
       },
       {
         "champion_id": 910,
-        "play": 365,
+        "play": 366,
         "win": 161,
         "meta": {
           "id": 910,
@@ -4104,8 +4323,8 @@
       },
       {
         "champion_id": 55,
-        "play": 358,
-        "win": 197,
+        "play": 361,
+        "win": 199,
         "meta": {
           "id": 55,
           "key": "Katarina",
@@ -4483,8 +4702,8 @@
       },
       {
         "champion_id": 103,
-        "play": 343,
-        "win": 175,
+        "play": 347,
+        "win": 177,
         "meta": {
           "id": 103,
           "key": "Ahri",
@@ -4890,7 +5109,7 @@
       },
       {
         "champion_id": 157,
-        "play": 337,
+        "play": 338,
         "win": 186,
         "meta": {
           "id": 157,
@@ -5266,8 +5485,8 @@
       },
       {
         "champion_id": 84,
-        "play": 303,
-        "win": 148,
+        "play": 304,
+        "win": 149,
         "meta": {
           "id": 84,
           "key": "Akali",
@@ -5691,8 +5910,8 @@
       },
       {
         "champion_id": 61,
-        "play": 277,
-        "win": 148,
+        "play": 279,
+        "win": 149,
         "meta": {
           "id": 61,
           "key": "Orianna",
@@ -6390,8 +6609,8 @@
       },
       {
         "champion_id": 136,
-        "play": 225,
-        "win": 119,
+        "play": 226,
+        "win": 120,
         "meta": {
           "id": 136,
           "key": "AurelionSol",
@@ -6603,8 +6822,8 @@
       },
       {
         "champion_id": 99,
-        "play": 182,
-        "win": 89,
+        "play": 184,
+        "win": 90,
         "meta": {
           "id": 99,
           "key": "Lux",
@@ -7369,8 +7588,8 @@
       },
       {
         "champion_id": 127,
-        "play": 176,
-        "win": 94,
+        "play": 179,
+        "win": 97,
         "meta": {
           "id": 127,
           "key": "Lissandra",
@@ -8442,7 +8661,7 @@
       },
       {
         "champion_id": 4,
-        "play": 138,
+        "play": 139,
         "win": 75,
         "meta": {
           "id": 4,
@@ -9051,9 +9270,256 @@
         }
       },
       {
+        "champion_id": 112,
+        "play": 137,
+        "win": 67,
+        "meta": {
+          "id": 112,
+          "key": "Viktor",
+          "name": "机械先驱",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Viktor.png",
+          "evolve": [],
+          "partype": "法力",
+          "passive": {
+            "name": "光荣进化",
+            "description": "维克托在击杀敌人时能够强化他的基础技能。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Viktor_Passive.png",
+            "video_url": null
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "虹吸能量",
+              "description": "维克托引爆一名敌方单位，造成魔法伤害，同时形成一个护盾，并强化他的下次普通攻击。<br><br>增强：虹吸能量的护盾提升60%并且维克托在施放后获得移动速度加成。",
+              "max_rank": 5,
+              "range_burn": [
+                600
+              ],
+              "cooldown_burn": [
+                9,
+                8,
+                7,
+                6,
+                5
+              ],
+              "cooldown_burn_float": [
+                9,
+                8,
+                7,
+                6,
+                5
+              ],
+              "cost_burn": [
+                45,
+                50,
+                55,
+                60,
+                65
+              ],
+              "tooltip": "维克托引爆一名敌方单位，造成<magicDamage>?魔法伤害</magicDamage>并为维克托提供持续?秒的<shield>?护盾值</shield>。<br /><br />维克托在3.5秒内的下一次攻击会造成<magicDamage>?魔法伤害</magicDamage>。<br /><br /><keywordMajor>升级版：</keywordMajor>提供<shield>?护盾值</shield>并且维克托还会获得持续?秒的<speed>?%移动速度</speed>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ViktorPowerTransfer.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0112/ability_0112_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "重力场",
+              "description": "维克托放出一个重力限制设备，减缓其半径内所有敌人的移动速度。如果敌人在设备的半径内呆得过久，就会被晕眩。<br><br>增强：维克托的非周期性技能会给敌人施加减速。",
+              "max_rank": 5,
+              "range_burn": [
+                800
+              ],
+              "cooldown_burn": [
+                17,
+                16,
+                15,
+                14,
+                13
+              ],
+              "cooldown_burn_float": [
+                17,
+                16,
+                15,
+                14,
+                13
+              ],
+              "cost_burn": [
+                65
+              ],
+              "tooltip": "维克托部署一个持续?秒的重力限制设备，使其中的敌人<status>减速</status>?%。敌人在其中驻留1.5秒后，就会被<status>晕眩</status>?秒。<br /><br /><keywordMajor>升级版被动效果：</keywordMajor>维克托的非终极技能会造成持续1秒的?%<status>减速</status>。<br /><br />?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ViktorGravitonField.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0112/ability_0112_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "死亡射线",
+              "description": "维克托用他的机械臂发射一束混乱光线，笔直地切割战场，沿途对行进路上的敌人造成魔法伤害。<br><br>增强：射线照过的地方会产生爆炸，造成魔法伤害。",
+              "max_rank": 5,
+              "range_burn": [
+                525
+              ],
+              "cooldown_burn": [
+                12,
+                11,
+                10,
+                9,
+                8
+              ],
+              "cooldown_burn_float": [
+                12,
+                11,
+                10,
+                9,
+                8
+              ],
+              "cost_burn": [
+                70,
+                80,
+                90,
+                100,
+                110
+              ],
+              "tooltip": "维克托朝所选方向发射一道死亡射线，对命中的敌人们造成<magicDamage>?魔法伤害</magicDamage>。<br /><br /><keywordMajor>升级版：</keywordMajor>一道余波会跟随死亡射线，造成<magicDamage>?魔法伤害</magicDamage>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ViktorDeathRay.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0112/ability_0112_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "混乱风暴",
+              "description": "维克托朝目标区域发射一枚奇点，对敌人造成魔法伤害并打断敌人的引导技能。之后奇点会周期性地对所有附近的敌人造成魔法伤害。维克托可以重新定位这枚奇点。<br><br>增强：混乱风暴的移动加快25%。",
+              "max_rank": 3,
+              "range_burn": [
+                700
+              ],
+              "cooldown_burn": [
+                120,
+                100,
+                80
+              ],
+              "cooldown_burn_float": [
+                120,
+                100,
+                80
+              ],
+              "cost_burn": [
+                100
+              ],
+              "tooltip": "维克托在一个区域内召唤一道持续?秒的混乱风暴，对周围的敌人们立刻造成<magicDamage>?魔法伤害</magicDamage>随后每秒造成<magicDamage>?魔法伤害</magicDamage>。混乱风暴会自动跟随它近期造成过伤害的英雄。<br /><br /><recast>再次施放：</recast>维克托手动移动混乱风暴。<br /><br /><keywordMajor>升级版：</keywordMajor>混乱风暴的移动速度加快?%。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ViktorChaosStorm.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0112/ability_0112_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 112000,
+              "champion_id": 112,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 4800
+                },
+                {
+                  "currency": "RP",
+                  "cost": 880
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 112001,
+              "champion_id": 112,
+              "name": "全金属狂潮 维克托",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_1.jpg",
+              "skin_video_url": "https://youtu.be/bSzjLJptAdI",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": "2011-12-29T08:00:00+09:00"
+            },
+            {
+              "id": 112002,
+              "champion_id": 112,
+              "name": "初号机 维克托",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_2.jpg",
+              "skin_video_url": "https://youtu.be/i1dv9zQt804",
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 112004,
+              "champion_id": 112,
+              "name": "死亡誓约 维克托",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_4.jpg",
+              "skin_video_url": "https://youtu.be/jWHUVsLnPgE",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 112005,
+              "champion_id": 112,
+              "name": "灵能特工 维克托",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_5.jpg",
+              "skin_video_url": "https://youtu.be/H0S78zTZNPk",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2020-09-17T04:00:00+09:00"
+            },
+            {
+              "id": 112014,
+              "champion_id": 112,
+              "name": "西部魔影 天才机械师 维克托",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_14.jpg",
+              "skin_video_url": "https://youtu.be/hkJdgOwJUY8",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2022-05-26T04:00:00+09:00"
+            },
+            {
+              "id": 112003,
+              "champion_id": 112,
+              "name": "造物主 维克托",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_3.jpg",
+              "skin_video_url": "https://youtu.be/Apg957qheOs",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2013-10-14T07:00:00+09:00"
+            }
+          ]
+        }
+      },
+      {
         "champion_id": 3,
-        "play": 135,
-        "win": 66,
+        "play": 136,
+        "win": 67,
         "meta": {
           "id": 3,
           "key": "Galio",
@@ -9349,256 +9815,9 @@
         }
       },
       {
-        "champion_id": 112,
-        "play": 133,
-        "win": 66,
-        "meta": {
-          "id": 112,
-          "key": "Viktor",
-          "name": "机械先驱",
-          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Viktor.png",
-          "evolve": [],
-          "partype": "法力",
-          "passive": {
-            "name": "光荣进化",
-            "description": "维克托在击杀敌人时能够强化他的基础技能。",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Viktor_Passive.png",
-            "video_url": null
-          },
-          "spells": [
-            {
-              "key": "Q",
-              "name": "虹吸能量",
-              "description": "维克托引爆一名敌方单位，造成魔法伤害，同时形成一个护盾，并强化他的下次普通攻击。<br><br>增强：虹吸能量的护盾提升60%并且维克托在施放后获得移动速度加成。",
-              "max_rank": 5,
-              "range_burn": [
-                600
-              ],
-              "cooldown_burn": [
-                9,
-                8,
-                7,
-                6,
-                5
-              ],
-              "cooldown_burn_float": [
-                9,
-                8,
-                7,
-                6,
-                5
-              ],
-              "cost_burn": [
-                45,
-                50,
-                55,
-                60,
-                65
-              ],
-              "tooltip": "维克托引爆一名敌方单位，造成<magicDamage>?魔法伤害</magicDamage>并为维克托提供持续?秒的<shield>?护盾值</shield>。<br /><br />维克托在3.5秒内的下一次攻击会造成<magicDamage>?魔法伤害</magicDamage>。<br /><br /><keywordMajor>升级版：</keywordMajor>提供<shield>?护盾值</shield>并且维克托还会获得持续?秒的<speed>?%移动速度</speed>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ViktorPowerTransfer.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0112/ability_0112_Q1.webm"
-            },
-            {
-              "key": "W",
-              "name": "重力场",
-              "description": "维克托放出一个重力限制设备，减缓其半径内所有敌人的移动速度。如果敌人在设备的半径内呆得过久，就会被晕眩。<br><br>增强：维克托的非周期性技能会给敌人施加减速。",
-              "max_rank": 5,
-              "range_burn": [
-                800
-              ],
-              "cooldown_burn": [
-                17,
-                16,
-                15,
-                14,
-                13
-              ],
-              "cooldown_burn_float": [
-                17,
-                16,
-                15,
-                14,
-                13
-              ],
-              "cost_burn": [
-                65
-              ],
-              "tooltip": "维克托部署一个持续?秒的重力限制设备，使其中的敌人<status>减速</status>?%。敌人在其中驻留1.5秒后，就会被<status>晕眩</status>?秒。<br /><br /><keywordMajor>升级版被动效果：</keywordMajor>维克托的非终极技能会造成持续1秒的?%<status>减速</status>。<br /><br />?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ViktorGravitonField.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0112/ability_0112_W1.webm"
-            },
-            {
-              "key": "E",
-              "name": "死亡射线",
-              "description": "维克托用他的机械臂发射一束混乱光线，笔直地切割战场，沿途对行进路上的敌人造成魔法伤害。<br><br>增强：射线照过的地方会产生爆炸，造成魔法伤害。",
-              "max_rank": 5,
-              "range_burn": [
-                525
-              ],
-              "cooldown_burn": [
-                12,
-                11,
-                10,
-                9,
-                8
-              ],
-              "cooldown_burn_float": [
-                12,
-                11,
-                10,
-                9,
-                8
-              ],
-              "cost_burn": [
-                70,
-                80,
-                90,
-                100,
-                110
-              ],
-              "tooltip": "维克托朝所选方向发射一道死亡射线，对命中的敌人们造成<magicDamage>?魔法伤害</magicDamage>。<br /><br /><keywordMajor>升级版：</keywordMajor>一道余波会跟随死亡射线，造成<magicDamage>?魔法伤害</magicDamage>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ViktorDeathRay.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0112/ability_0112_E1.webm"
-            },
-            {
-              "key": "R",
-              "name": "混乱风暴",
-              "description": "维克托朝目标区域发射一枚奇点，对敌人造成魔法伤害并打断敌人的引导技能。之后奇点会周期性地对所有附近的敌人造成魔法伤害。维克托可以重新定位这枚奇点。<br><br>增强：混乱风暴的移动加快25%。",
-              "max_rank": 3,
-              "range_burn": [
-                700
-              ],
-              "cooldown_burn": [
-                120,
-                100,
-                80
-              ],
-              "cooldown_burn_float": [
-                120,
-                100,
-                80
-              ],
-              "cost_burn": [
-                100
-              ],
-              "tooltip": "维克托在一个区域内召唤一道持续?秒的混乱风暴，对周围的敌人们立刻造成<magicDamage>?魔法伤害</magicDamage>随后每秒造成<magicDamage>?魔法伤害</magicDamage>。混乱风暴会自动跟随它近期造成过伤害的英雄。<br /><br /><recast>再次施放：</recast>维克托手动移动混乱风暴。<br /><br /><keywordMajor>升级版：</keywordMajor>混乱风暴的移动速度加快?%。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ViktorChaosStorm.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0112/ability_0112_R1.webm"
-            }
-          ],
-          "skins": [
-            {
-              "id": 112000,
-              "champion_id": 112,
-              "name": "default",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_0.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "IP",
-                  "cost": 4800
-                },
-                {
-                  "currency": "RP",
-                  "cost": 880
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 112001,
-              "champion_id": 112,
-              "name": "全金属狂潮 维克托",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_1.jpg",
-              "skin_video_url": "https://youtu.be/bSzjLJptAdI",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 975
-                }
-              ],
-              "sales": null,
-              "release_date": "2011-12-29T08:00:00+09:00"
-            },
-            {
-              "id": 112002,
-              "champion_id": 112,
-              "name": "初号机 维克托",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_2.jpg",
-              "skin_video_url": "https://youtu.be/i1dv9zQt804",
-              "prices": null,
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 112004,
-              "champion_id": 112,
-              "name": "死亡誓约 维克托",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_4.jpg",
-              "skin_video_url": "https://youtu.be/jWHUVsLnPgE",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 112005,
-              "champion_id": 112,
-              "name": "灵能特工 维克托",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_5.jpg",
-              "skin_video_url": "https://youtu.be/H0S78zTZNPk",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2020-09-17T04:00:00+09:00"
-            },
-            {
-              "id": 112014,
-              "champion_id": 112,
-              "name": "西部魔影 天才机械师 维克托",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_14.jpg",
-              "skin_video_url": "https://youtu.be/hkJdgOwJUY8",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2022-05-26T04:00:00+09:00"
-            },
-            {
-              "id": 112003,
-              "champion_id": 112,
-              "name": "造物主 维克托",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_3.jpg",
-              "skin_video_url": "https://youtu.be/Apg957qheOs",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2013-10-14T07:00:00+09:00"
-            }
-          ]
-        }
-      },
-      {
         "champion_id": 893,
-        "play": 133,
-        "win": 61,
+        "play": 134,
+        "win": 62,
         "meta": {
           "id": 893,
           "key": "Aurora",
@@ -9766,7 +9985,7 @@
       },
       {
         "champion_id": 90,
-        "play": 122,
+        "play": 123,
         "win": 57,
         "meta": {
           "id": 90,
@@ -10388,8 +10607,8 @@
       },
       {
         "champion_id": 131,
-        "play": 116,
-        "win": 56,
+        "play": 117,
+        "win": 57,
         "meta": {
           "id": 131,
           "key": "Diana",
@@ -10725,7 +10944,7 @@
       },
       {
         "champion_id": 105,
-        "play": 114,
+        "play": 115,
         "win": 54,
         "meta": {
           "id": 105,
@@ -12426,6 +12645,175 @@
         }
       },
       {
+        "champion_id": 901,
+        "play": 93,
+        "win": 45,
+        "meta": {
+          "id": 901,
+          "key": "Smolder",
+          "name": "炽炎雏龙",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Smolder.png",
+          "evolve": [],
+          "partype": "法力",
+          "passive": {
+            "name": "龙之研习",
+            "description": "用技能命中英雄和用超级灼热龙息 击杀敌人时会提供一层龙之研习。层数会提升斯莫德各基础技能的伤害。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Icons_Smolder_Passive.png",
+            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_P1.webm"
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "超级灼热龙息",
+              "description": "斯莫德在一名敌人身上喷吐烈焰。随着他获得更多层数，这个技能会变得更加强力。",
+              "max_rank": 5,
+              "range_burn": [
+                550
+              ],
+              "cooldown_burn": [
+                5,
+                5,
+                4,
+                4,
+                3
+              ],
+              "cooldown_burn_float": [
+                5.5,
+                5,
+                4.5,
+                4,
+                3.5
+              ],
+              "cost_burn": [
+                25
+              ],
+              "tooltip": "斯莫德喷出烈焰，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。<br /><br />基于<spellName>龙之研习</spellName>的层数，这个技能会不断进化以获得以下效果：<li><keywordMajor>?层</keywordMajor>：伤害目标周围的所有敌人。</li><li><keywordMajor>?层</keywordMajor>：在目标后侧引发<spellName>{{ tier2_numberofblowback }}</spellName>次爆炸，造成{{ tier2_blowbackpercentagedamage }}%此技能伤害。</li><li><keywordMajor>?层</keywordMajor>：灼烧目标，在{{ tier3_dotlength }}秒里持续造成共<trueDamage>{{ tier3_burn }}最大生命值的真实伤害</trueDamage>。 敌方英雄如果在灼烧期间跌到<trueDamage>{{ tier3_executethreshold }}</trueDamage>总生命值以下，则会被立刻击杀。</li>?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderQ.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "阿嚏！",
+              "description": "斯莫德发出一个萌萌的烈焰喷嚏，喷嚏会在命中敌人时爆炸。",
+              "max_rank": 5,
+              "range_burn": [
+                1500
+              ],
+              "cooldown_burn": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "cooldown_burn_float": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "cost_burn": [
+                60
+              ],
+              "tooltip": "斯莫德发出一个萌萌的烈焰喷嚏，造成<physicalDamage>?物理伤害</physicalDamage>和持续?秒的?%<status>减速</status>。<br /><br />命中英雄时会引发一次爆炸，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderW.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "扑棱，扑棱，扑棱！",
+              "description": "斯莫德展翅高飞，无视地形并轰击生命值最低的敌人。",
+              "max_rank": 5,
+              "range_burn": [
+                700
+              ],
+              "cooldown_burn": [
+                24,
+                22,
+                20,
+                18,
+                16
+              ],
+              "cooldown_burn_float": [
+                24,
+                22,
+                20,
+                18,
+                16
+              ],
+              "cost_burn": [
+                65
+              ],
+              "tooltip": "斯莫德展翅高飞，获得<speed>?%移动速度</speed>并无视地形，持续?秒。<br /><br />飞行时，斯莫德轰击生命值最低的敌方英雄<spellName>?</spellName>次(向下取整)，每次命中造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderE.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "妈----！",
+              "description": "斯莫德召唤他的妈妈从天空喷吐烈焰，对她的烈焰中心的敌人们造成额外伤害和减速。",
+              "max_rank": 3,
+              "range_burn": [
+                4200
+              ],
+              "cooldown_burn": [
+                140,
+                130,
+                120
+              ],
+              "cooldown_burn_float": [
+                140,
+                130,
+                120
+              ],
+              "cost_burn": [
+                100
+              ],
+              "tooltip": "斯莫德的妈妈从天空喷吐烈焰，造成<physicalDamage>?物理伤害</physicalDamage>。中心的敌人们会转而受到<physicalDamage>?</physicalDamage>伤害和持续?秒的?%<status>减速</status>。<br /><br />斯莫德的妈妈如果命中了她的儿子，则会为他治疗<healing>?生命值</healing>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderR.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 901000,
+              "champion_id": 901,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Smolder_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 6300
+                },
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 901001,
+              "champion_id": 901,
+              "name": "天龙之子 斯莫德",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Smolder_1.jpg",
+              "skin_video_url": "https://youtu.be/XeJNB08BRYU",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2024-01-31T10:00:00+09:00"
+            }
+          ]
+        }
+      },
+      {
         "champion_id": 246,
         "play": 92,
         "win": 45,
@@ -12678,178 +13066,9 @@
         }
       },
       {
-        "champion_id": 901,
-        "play": 92,
-        "win": 44,
-        "meta": {
-          "id": 901,
-          "key": "Smolder",
-          "name": "炽炎雏龙",
-          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Smolder.png",
-          "evolve": [],
-          "partype": "法力",
-          "passive": {
-            "name": "龙之研习",
-            "description": "用技能命中英雄和用超级灼热龙息 击杀敌人时会提供一层龙之研习。层数会提升斯莫德各基础技能的伤害。",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Icons_Smolder_Passive.png",
-            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_P1.webm"
-          },
-          "spells": [
-            {
-              "key": "Q",
-              "name": "超级灼热龙息",
-              "description": "斯莫德在一名敌人身上喷吐烈焰。随着他获得更多层数，这个技能会变得更加强力。",
-              "max_rank": 5,
-              "range_burn": [
-                550
-              ],
-              "cooldown_burn": [
-                5,
-                5,
-                4,
-                4,
-                3
-              ],
-              "cooldown_burn_float": [
-                5.5,
-                5,
-                4.5,
-                4,
-                3.5
-              ],
-              "cost_burn": [
-                25
-              ],
-              "tooltip": "斯莫德喷出烈焰，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。<br /><br />基于<spellName>龙之研习</spellName>的层数，这个技能会不断进化以获得以下效果：<li><keywordMajor>?层</keywordMajor>：伤害目标周围的所有敌人。</li><li><keywordMajor>?层</keywordMajor>：在目标后侧引发<spellName>{{ tier2_numberofblowback }}</spellName>次爆炸，造成{{ tier2_blowbackpercentagedamage }}%此技能伤害。</li><li><keywordMajor>?层</keywordMajor>：灼烧目标，在{{ tier3_dotlength }}秒里持续造成共<trueDamage>{{ tier3_burn }}最大生命值的真实伤害</trueDamage>。 敌方英雄如果在灼烧期间跌到<trueDamage>{{ tier3_executethreshold }}</trueDamage>总生命值以下，则会被立刻击杀。</li>?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderQ.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_Q1.webm"
-            },
-            {
-              "key": "W",
-              "name": "阿嚏！",
-              "description": "斯莫德发出一个萌萌的烈焰喷嚏，喷嚏会在命中敌人时爆炸。",
-              "max_rank": 5,
-              "range_burn": [
-                1500
-              ],
-              "cooldown_burn": [
-                14,
-                13,
-                12,
-                11,
-                10
-              ],
-              "cooldown_burn_float": [
-                14,
-                13,
-                12,
-                11,
-                10
-              ],
-              "cost_burn": [
-                60
-              ],
-              "tooltip": "斯莫德发出一个萌萌的烈焰喷嚏，造成<physicalDamage>?物理伤害</physicalDamage>和持续?秒的?%<status>减速</status>。<br /><br />命中英雄时会引发一次爆炸，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderW.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_W1.webm"
-            },
-            {
-              "key": "E",
-              "name": "扑棱，扑棱，扑棱！",
-              "description": "斯莫德展翅高飞，无视地形并轰击生命值最低的敌人。",
-              "max_rank": 5,
-              "range_burn": [
-                700
-              ],
-              "cooldown_burn": [
-                24,
-                22,
-                20,
-                18,
-                16
-              ],
-              "cooldown_burn_float": [
-                24,
-                22,
-                20,
-                18,
-                16
-              ],
-              "cost_burn": [
-                65
-              ],
-              "tooltip": "斯莫德展翅高飞，获得<speed>?%移动速度</speed>并无视地形，持续?秒。<br /><br />飞行时，斯莫德轰击生命值最低的敌方英雄<spellName>?</spellName>次(向下取整)，每次命中造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderE.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_E1.webm"
-            },
-            {
-              "key": "R",
-              "name": "妈----！",
-              "description": "斯莫德召唤他的妈妈从天空喷吐烈焰，对她的烈焰中心的敌人们造成额外伤害和减速。",
-              "max_rank": 3,
-              "range_burn": [
-                4200
-              ],
-              "cooldown_burn": [
-                140,
-                130,
-                120
-              ],
-              "cooldown_burn_float": [
-                140,
-                130,
-                120
-              ],
-              "cost_burn": [
-                100
-              ],
-              "tooltip": "斯莫德的妈妈从天空喷吐烈焰，造成<physicalDamage>?物理伤害</physicalDamage>。中心的敌人们会转而受到<physicalDamage>?</physicalDamage>伤害和持续?秒的?%<status>减速</status>。<br /><br />斯莫德的妈妈如果命中了她的儿子，则会为他治疗<healing>?生命值</healing>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderR.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_R1.webm"
-            }
-          ],
-          "skins": [
-            {
-              "id": 901000,
-              "champion_id": 901,
-              "name": "default",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Smolder_0.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "IP",
-                  "cost": 6300
-                },
-                {
-                  "currency": "RP",
-                  "cost": 975
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 901001,
-              "champion_id": 901,
-              "name": "天龙之子 斯莫德",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Smolder_1.jpg",
-              "skin_video_url": "https://youtu.be/XeJNB08BRYU",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2024-01-31T10:00:00+09:00"
-            }
-          ]
-        }
-      },
-      {
         "champion_id": 75,
-        "play": 87,
-        "win": 36,
+        "play": 89,
+        "win": 37,
         "meta": {
           "id": 75,
           "key": "Nasus",
@@ -13173,8 +13392,8 @@
       },
       {
         "champion_id": 245,
-        "play": 83,
-        "win": 48,
+        "play": 84,
+        "win": 49,
         "meta": {
           "id": 245,
           "key": "Ekko",
@@ -13494,8 +13713,8 @@
       },
       {
         "champion_id": 163,
-        "play": 78,
-        "win": 45,
+        "play": 82,
+        "win": 48,
         "meta": {
           "id": 163,
           "key": "Taliyah",
@@ -13723,200 +13942,8 @@
         }
       },
       {
-        "champion_id": 950,
-        "play": 74,
-        "win": 29,
-        "meta": {
-          "id": 950,
-          "key": "Naafiri",
-          "name": "百裂冥犬",
-          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Naafiri.png",
-          "evolve": [],
-          "partype": "法力",
-          "passive": {
-            "name": "狂烈种群",
-            "description": "纳亚菲利生成狗群伙伴，它们会在她攻击或施放技能时攻击目标。",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Icons_Naafiri_P.png",
-            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0950/ability_0950_P1.webm"
-          },
-          "spells": [
-            {
-              "key": "Q",
-              "name": "暗裔犬牙",
-              "description": "纳亚菲利猛投出两根犬牙，每根都会施加流血效果，或在目标已经流血时施加额外伤害。<br><br>狗群伙伴们会跃向并攻击被这个技能命中的英雄。",
-              "max_rank": 5,
-              "range_burn": [
-                900
-              ],
-              "cooldown_burn": [
-                9,
-                8,
-                8,
-                7,
-                7
-              ],
-              "cooldown_burn_float": [
-                9,
-                8.5,
-                8,
-                7.5,
-                7
-              ],
-              "cost_burn": [
-                55,
-                60,
-                65,
-                70,
-                75
-              ],
-              "tooltip": "纳亚菲利猛投出多个侵染了暗裔能量的犬牙，造成<physicalDamage>?物理伤害</physicalDamage>并施加一个流血效果，流血会在?秒里持续造成共<physicalDamage>?物理伤害</physicalDamage>。<br /><br />纳亚菲利可以<recast>再次施放</recast>这个技能。如果被命中的敌人已经被施加了来自这个技能的流血，那么它会转而造成剩余的流血伤害外加<physicalDamage>? </physicalDamage>到<physicalDamage>?物理伤害</physicalDamage>，基于该敌人的已损失生命值。如果该目标是一个英雄或大型野怪，那么纳亚菲利会回复<healing>?生命值</healing>。<br /><br /><keywordMajor>狗群伙伴</keywordMajor>们将跃向被命中的第一个英雄并攻击该英雄?秒。<br /><br />?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NaafiriQ.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0950/ability_0950_Q1.webm"
-            },
-            {
-              "key": "W",
-              "name": "猎狗血性",
-              "description": "纳亚菲利与她的狗群伙伴们一起向一个敌人冲刺，撞击命中的第一个敌方英雄并造成伤害。",
-              "max_rank": 5,
-              "range_burn": [
-                700
-              ],
-              "cooldown_burn": [
-                22,
-                20,
-                18,
-                16,
-                14
-              ],
-              "cooldown_burn_float": [
-                22,
-                20,
-                18,
-                16,
-                14
-              ],
-              "cost_burn": [
-                70,
-                60,
-                50,
-                40,
-                30
-              ],
-              "tooltip": "纳亚菲利向一个敌人冲刺，在她命中第一个英雄时停下，对其造成<physicalDamage>?物理伤害</physicalDamage>和短暂<status>减速</status>。<br /><br /><keywordMajor>狗群伙伴</keywordMajor>们会变为不可被选取状态并与纳亚菲利一起冲刺，每只<keywordMajor>狗群伙伴</keywordMajor>造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br />这个技能会基于终极技能的技能等级获得距离。当前加成：?<br />?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NaafiriW.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0950/ability_0950_W1.webm"
-            },
-            {
-              "key": "E",
-              "name": "剔骨本能",
-              "description": "纳亚菲利冲刺并伤害她附近一个区域内的敌人们，唤回她的狗群并完全回复它们的生命值。",
-              "max_rank": 5,
-              "range_burn": [
-                350
-              ],
-              "cooldown_burn": [
-                10,
-                9,
-                9,
-                8,
-                8
-              ],
-              "cooldown_burn_float": [
-                10,
-                9.5,
-                9,
-                8.5,
-                8
-              ],
-              "cost_burn": [
-                35
-              ],
-              "tooltip": "纳亚菲利向前奔涌，造成<physicalDamage>?物理伤害</physicalDamage>，然后爆裂出一连串利刃，造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br /><keywordMajor>狗群伙伴</keywordMajor>会被唤回至纳亚菲利处并<healing>回复100%生命值</healing>。<br />?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NaafiriE.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0950/ability_0950_E1.webm"
-            },
-            {
-              "key": "R",
-              "name": "暴吼",
-              "description": "纳亚菲利强化她的狗群并生成额外的狗群伙伴，立刻获得爆发性的速度和视野，并在她首次命中另一名英雄时获得一个护盾。<br><br>在首次击杀另一名英雄后，所有效果都会刷新。<br>",
-              "max_rank": 3,
-              "range_burn": [
-                400
-              ],
-              "cooldown_burn": [
-                120,
-                110,
-                100
-              ],
-              "cooldown_burn_float": [
-                120,
-                110,
-                100
-              ],
-              "cost_burn": [
-                100
-              ],
-              "tooltip": "<spellPassive>被动：</spellPassive><spellActive>猎狗血性</spellActive>获得?距离。<br /><br /><spellActive>主动：</spellActive>纳亚菲利准备狩猎，获得<physicalDamage>?攻击力</physicalDamage>、<keywordMajor>强化她的狗群</keywordMajor>、并生成<keywordMajor>?只额外的狗群伙伴</keywordMajor>，持续?秒。<br /><br />纳亚菲利还会获得她周围环境的视野和<speed>在?秒里持续衰减的?%移动速度，这个移速加成会在受到伤害时降低至?%。</speed>在她第一次命中一个英雄时，她获会获得持续?秒的<shield>?护盾值</shield>。<br /><br />首次参与击杀一名英雄后，所有效果都会刷新。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NaafiriR.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0950/ability_0950_R1.webm"
-            }
-          ],
-          "skins": [
-            {
-              "id": 950000,
-              "champion_id": 950,
-              "name": "default",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Naafiri_0.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "IP",
-                  "cost": 6300
-                },
-                {
-                  "currency": "RP",
-                  "cost": 975
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 950001,
-              "champion_id": 950,
-              "name": "斗魂觉醒 纳亚菲利",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Naafiri_1.jpg",
-              "skin_video_url": "https://youtu.be/iaKpBpkzThg",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2023-07-20T04:00:00+09:00"
-            },
-            {
-              "id": 950011,
-              "champion_id": 950,
-              "name": "源计划：狂猎 纳亚菲利",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Naafiri_11.jpg",
-              "skin_video_url": "https://youtu.be/TSHtyXzA1Vo",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2024-03-06T10:00:00+09:00"
-            }
-          ]
-        }
-      },
-      {
         "champion_id": 80,
-        "play": 73,
+        "play": 74,
         "win": 34,
         "meta": {
           "id": 80,
@@ -14224,6 +14251,198 @@
         }
       },
       {
+        "champion_id": 950,
+        "play": 74,
+        "win": 29,
+        "meta": {
+          "id": 950,
+          "key": "Naafiri",
+          "name": "百裂冥犬",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Naafiri.png",
+          "evolve": [],
+          "partype": "法力",
+          "passive": {
+            "name": "狂烈种群",
+            "description": "纳亚菲利生成狗群伙伴，它们会在她攻击或施放技能时攻击目标。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Icons_Naafiri_P.png",
+            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0950/ability_0950_P1.webm"
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "暗裔犬牙",
+              "description": "纳亚菲利猛投出两根犬牙，每根都会施加流血效果，或在目标已经流血时施加额外伤害。<br><br>狗群伙伴们会跃向并攻击被这个技能命中的英雄。",
+              "max_rank": 5,
+              "range_burn": [
+                900
+              ],
+              "cooldown_burn": [
+                9,
+                8,
+                8,
+                7,
+                7
+              ],
+              "cooldown_burn_float": [
+                9,
+                8.5,
+                8,
+                7.5,
+                7
+              ],
+              "cost_burn": [
+                55,
+                60,
+                65,
+                70,
+                75
+              ],
+              "tooltip": "纳亚菲利猛投出多个侵染了暗裔能量的犬牙，造成<physicalDamage>?物理伤害</physicalDamage>并施加一个流血效果，流血会在?秒里持续造成共<physicalDamage>?物理伤害</physicalDamage>。<br /><br />纳亚菲利可以<recast>再次施放</recast>这个技能。如果被命中的敌人已经被施加了来自这个技能的流血，那么它会转而造成剩余的流血伤害外加<physicalDamage>? </physicalDamage>到<physicalDamage>?物理伤害</physicalDamage>，基于该敌人的已损失生命值。如果该目标是一个英雄或大型野怪，那么纳亚菲利会回复<healing>?生命值</healing>。<br /><br /><keywordMajor>狗群伙伴</keywordMajor>们将跃向被命中的第一个英雄并攻击该英雄?秒。<br /><br />?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NaafiriQ.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0950/ability_0950_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "猎狗血性",
+              "description": "纳亚菲利与她的狗群伙伴们一起向一个敌人冲刺，撞击命中的第一个敌方英雄并造成伤害。",
+              "max_rank": 5,
+              "range_burn": [
+                700
+              ],
+              "cooldown_burn": [
+                22,
+                20,
+                18,
+                16,
+                14
+              ],
+              "cooldown_burn_float": [
+                22,
+                20,
+                18,
+                16,
+                14
+              ],
+              "cost_burn": [
+                70,
+                60,
+                50,
+                40,
+                30
+              ],
+              "tooltip": "纳亚菲利向一个敌人冲刺，在她命中第一个英雄时停下，对其造成<physicalDamage>?物理伤害</physicalDamage>和短暂<status>减速</status>。<br /><br /><keywordMajor>狗群伙伴</keywordMajor>们会变为不可被选取状态并与纳亚菲利一起冲刺，每只<keywordMajor>狗群伙伴</keywordMajor>造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br />这个技能会基于终极技能的技能等级获得距离。当前加成：?<br />?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NaafiriW.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0950/ability_0950_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "剔骨本能",
+              "description": "纳亚菲利冲刺并伤害她附近一个区域内的敌人们，唤回她的狗群并完全回复它们的生命值。",
+              "max_rank": 5,
+              "range_burn": [
+                350
+              ],
+              "cooldown_burn": [
+                10,
+                9,
+                9,
+                8,
+                8
+              ],
+              "cooldown_burn_float": [
+                10,
+                9.5,
+                9,
+                8.5,
+                8
+              ],
+              "cost_burn": [
+                35
+              ],
+              "tooltip": "纳亚菲利向前奔涌，造成<physicalDamage>?物理伤害</physicalDamage>，然后爆裂出一连串利刃，造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br /><keywordMajor>狗群伙伴</keywordMajor>会被唤回至纳亚菲利处并<healing>回复100%生命值</healing>。<br />?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NaafiriE.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0950/ability_0950_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "暴吼",
+              "description": "纳亚菲利强化她的狗群并生成额外的狗群伙伴，立刻获得爆发性的速度和视野，并在她首次命中另一名英雄时获得一个护盾。<br><br>在首次击杀另一名英雄后，所有效果都会刷新。<br>",
+              "max_rank": 3,
+              "range_burn": [
+                400
+              ],
+              "cooldown_burn": [
+                120,
+                110,
+                100
+              ],
+              "cooldown_burn_float": [
+                120,
+                110,
+                100
+              ],
+              "cost_burn": [
+                100
+              ],
+              "tooltip": "<spellPassive>被动：</spellPassive><spellActive>猎狗血性</spellActive>获得?距离。<br /><br /><spellActive>主动：</spellActive>纳亚菲利准备狩猎，获得<physicalDamage>?攻击力</physicalDamage>、<keywordMajor>强化她的狗群</keywordMajor>、并生成<keywordMajor>?只额外的狗群伙伴</keywordMajor>，持续?秒。<br /><br />纳亚菲利还会获得她周围环境的视野和<speed>在?秒里持续衰减的?%移动速度，这个移速加成会在受到伤害时降低至?%。</speed>在她第一次命中一个英雄时，她获会获得持续?秒的<shield>?护盾值</shield>。<br /><br />首次参与击杀一名英雄后，所有效果都会刷新。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NaafiriR.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0950/ability_0950_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 950000,
+              "champion_id": 950,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Naafiri_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 6300
+                },
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 950001,
+              "champion_id": 950,
+              "name": "斗魂觉醒 纳亚菲利",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Naafiri_1.jpg",
+              "skin_video_url": "https://youtu.be/iaKpBpkzThg",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2023-07-20T04:00:00+09:00"
+            },
+            {
+              "id": 950011,
+              "champion_id": 950,
+              "name": "源计划：狂猎 纳亚菲利",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Naafiri_11.jpg",
+              "skin_video_url": "https://youtu.be/TSHtyXzA1Vo",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2024-03-06T10:00:00+09:00"
+            }
+          ]
+        }
+      },
+      {
         "champion_id": 268,
         "play": 72,
         "win": 42,
@@ -14484,8 +14703,8 @@
       },
       {
         "champion_id": 166,
-        "play": 66,
-        "win": 30,
+        "play": 67,
+        "win": 31,
         "meta": {
           "id": 166,
           "key": "Akshan",
@@ -14680,6 +14899,246 @@
               ],
               "sales": null,
               "release_date": "2021-07-22T04:00:00+09:00"
+            }
+          ]
+        }
+      },
+      {
+        "champion_id": 161,
+        "play": 62,
+        "win": 36,
+        "meta": {
+          "id": 161,
+          "key": "Velkoz",
+          "name": "虚空之眼",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Velkoz.png",
+          "evolve": [],
+          "partype": "法力",
+          "passive": {
+            "name": "有机体解构",
+            "description": "维克兹的技能会对命中的敌人施加<keywordName>有机体解构</keywordName>效果。如果累积到3层效果，敌人就会受到爆发性的真实伤害。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/VelKoz_Passive.png",
+            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0161/ability_0161_P1.webm"
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "等离子裂变",
+              "description": "维克兹发射一束等离子，再次施放此技能或在命中一名敌人后，等离子束会一分为二。等离子束在命中时会造成伤害和减速效果。",
+              "max_rank": 5,
+              "range_burn": [
+                1050
+              ],
+              "cooldown_burn": [
+                7
+              ],
+              "cooldown_burn_float": [
+                7
+              ],
+              "cost_burn": [
+                40,
+                45,
+                50,
+                55,
+                60
+              ],
+              "tooltip": "维克兹发射一束等离子，造成<magicDamage>?魔法伤害</magicDamage>和在?秒里持续衰减的?%<status>减速</status>。在到达它的距离终点，或是命中一个目标，或是<recast>再次施放</recast>此技能时，等离子束会分裂成新的两束并呈90度角发射出去。<br /><br />用这个技能击杀一个单位，就会回复<scaleMana>?法力</scaleMana>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VelkozQ.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0161/ability_0161_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "虚空裂隙",
+              "description": "维克兹开启一道虚空裂隙，造成初始爆发伤害，并在短暂的延迟后爆炸，造成第二段爆发伤害。",
+              "max_rank": 5,
+              "range_burn": [
+                1050
+              ],
+              "cooldown_burn": [
+                1
+              ],
+              "cooldown_burn_float": [
+                1.5
+              ],
+              "cost_burn": [
+                50,
+                55,
+                60,
+                65,
+                70
+              ],
+              "tooltip": "维克兹打开一道虚空裂隙，造成<magicDamage>?魔法伤害</magicDamage>。然后裂隙会喷发，造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />这个技能有2层充能(?秒刷新时间)。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VelkozW.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0161/ability_0161_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "构造分解",
+              "description": "维克兹让一个区域爆炸，击飞敌人，并将近处的敌人略微击退。",
+              "max_rank": 5,
+              "range_burn": [
+                810
+              ],
+              "cooldown_burn": [
+                16,
+                15,
+                14,
+                13,
+                12
+              ],
+              "cooldown_burn_float": [
+                16,
+                15,
+                14,
+                13,
+                12
+              ],
+              "cost_burn": [
+                50,
+                55,
+                60,
+                65,
+                70
+              ],
+              "tooltip": "维克兹瓦解一个附近的区域，导致它爆炸，造成?秒<status>击飞</status>和<magicDamage>?魔法伤害</magicDamage>。靠近维克兹的敌人们将被<status>击退</status>，而不是<status>击飞</status>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VelkozE.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0161/ability_0161_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "生命形态瓦解射线",
+              "description": "维克兹释放一束被引导的光线跟随鼠标指针，可造成魔法伤害，持续2.5秒。【有机体解构】效果会研究敌方英雄，从而使他们受到真实伤害。",
+              "max_rank": 3,
+              "range_burn": [
+                1575
+              ],
+              "cooldown_burn": [
+                120,
+                100,
+                80
+              ],
+              "cooldown_burn_float": [
+                120,
+                100,
+                80
+              ],
+              "cost_burn": [
+                100
+              ],
+              "tooltip": "维克兹引导一道能量射线来跟随鼠标指针，在2.5秒里持续造成共<magicDamage>?魔法伤害</magicDamage>和20%<status>减速</status>。对近期被<spellName>有机体解构</spellName>伤害过的敌人们造成<trueDamage>真实伤害</trueDamage>作为替代。<br /><br />射线内的敌人会周期性地获得<keywordMajor>解构</keywordMajor>层数。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VelkozR.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0161/ability_0161_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 161000,
+              "champion_id": 161,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 3141
+                },
+                {
+                  "currency": "RP",
+                  "cost": 790
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 161004,
+              "champion_id": 161,
+              "name": "地狱火 维克兹",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_4.jpg",
+              "skin_video_url": "https://youtu.be/q2D85TFwlqo",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2020-07-16T04:00:00+09:00"
+            },
+            {
+              "id": 161020,
+              "champion_id": 161,
+              "name": "天才蜂 维克兹",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_20.jpg",
+              "skin_video_url": "https://youtu.be/tvirPcodYHY",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2023-11-21T12:00:00+09:00"
+            },
+            {
+              "id": 161001,
+              "champion_id": 161,
+              "name": "战地机甲 维克兹",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_1.jpg",
+              "skin_video_url": "https://youtu.be/WkfiQrrWMCc",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2014-03-03T08:00:00+09:00"
+            },
+            {
+              "id": 161002,
+              "champion_id": 161,
+              "name": "苍穹之光 维克兹",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_2.jpg",
+              "skin_video_url": "https://youtu.be/poARvjZh8w4",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2015-01-20T16:00:00+09:00"
+            },
+            {
+              "id": 161003,
+              "champion_id": 161,
+              "name": "这货不是维克兹",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_3.jpg",
+              "skin_video_url": "https://youtu.be/TSXxbxP16a4",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 750
+                }
+              ],
+              "sales": null,
+              "release_date": "2016-03-31T13:00:00+09:00"
+            },
+            {
+              "id": 161011,
+              "champion_id": 161,
+              "name": "黯晶之眼 维克兹",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_11.jpg",
+              "skin_video_url": "https://youtu.be/lmDZ2WeGrjc",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2021-04-15T04:00:00+09:00"
             }
           ]
         }
@@ -14971,246 +15430,6 @@
               ],
               "sales": null,
               "release_date": "2013-02-18T15:00:00+09:00"
-            }
-          ]
-        }
-      },
-      {
-        "champion_id": 161,
-        "play": 60,
-        "win": 35,
-        "meta": {
-          "id": 161,
-          "key": "Velkoz",
-          "name": "虚空之眼",
-          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Velkoz.png",
-          "evolve": [],
-          "partype": "法力",
-          "passive": {
-            "name": "有机体解构",
-            "description": "维克兹的技能会对命中的敌人施加<keywordName>有机体解构</keywordName>效果。如果累积到3层效果，敌人就会受到爆发性的真实伤害。",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/VelKoz_Passive.png",
-            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0161/ability_0161_P1.webm"
-          },
-          "spells": [
-            {
-              "key": "Q",
-              "name": "等离子裂变",
-              "description": "维克兹发射一束等离子，再次施放此技能或在命中一名敌人后，等离子束会一分为二。等离子束在命中时会造成伤害和减速效果。",
-              "max_rank": 5,
-              "range_burn": [
-                1050
-              ],
-              "cooldown_burn": [
-                7
-              ],
-              "cooldown_burn_float": [
-                7
-              ],
-              "cost_burn": [
-                40,
-                45,
-                50,
-                55,
-                60
-              ],
-              "tooltip": "维克兹发射一束等离子，造成<magicDamage>?魔法伤害</magicDamage>和在?秒里持续衰减的?%<status>减速</status>。在到达它的距离终点，或是命中一个目标，或是<recast>再次施放</recast>此技能时，等离子束会分裂成新的两束并呈90度角发射出去。<br /><br />用这个技能击杀一个单位，就会回复<scaleMana>?法力</scaleMana>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VelkozQ.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0161/ability_0161_Q1.webm"
-            },
-            {
-              "key": "W",
-              "name": "虚空裂隙",
-              "description": "维克兹开启一道虚空裂隙，造成初始爆发伤害，并在短暂的延迟后爆炸，造成第二段爆发伤害。",
-              "max_rank": 5,
-              "range_burn": [
-                1050
-              ],
-              "cooldown_burn": [
-                1
-              ],
-              "cooldown_burn_float": [
-                1.5
-              ],
-              "cost_burn": [
-                50,
-                55,
-                60,
-                65,
-                70
-              ],
-              "tooltip": "维克兹打开一道虚空裂隙，造成<magicDamage>?魔法伤害</magicDamage>。然后裂隙会喷发，造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />这个技能有2层充能(?秒刷新时间)。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VelkozW.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0161/ability_0161_W1.webm"
-            },
-            {
-              "key": "E",
-              "name": "构造分解",
-              "description": "维克兹让一个区域爆炸，击飞敌人，并将近处的敌人略微击退。",
-              "max_rank": 5,
-              "range_burn": [
-                810
-              ],
-              "cooldown_burn": [
-                16,
-                15,
-                14,
-                13,
-                12
-              ],
-              "cooldown_burn_float": [
-                16,
-                15,
-                14,
-                13,
-                12
-              ],
-              "cost_burn": [
-                50,
-                55,
-                60,
-                65,
-                70
-              ],
-              "tooltip": "维克兹瓦解一个附近的区域，导致它爆炸，造成?秒<status>击飞</status>和<magicDamage>?魔法伤害</magicDamage>。靠近维克兹的敌人们将被<status>击退</status>，而不是<status>击飞</status>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VelkozE.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0161/ability_0161_E1.webm"
-            },
-            {
-              "key": "R",
-              "name": "生命形态瓦解射线",
-              "description": "维克兹释放一束被引导的光线跟随鼠标指针，可造成魔法伤害，持续2.5秒。【有机体解构】效果会研究敌方英雄，从而使他们受到真实伤害。",
-              "max_rank": 3,
-              "range_burn": [
-                1575
-              ],
-              "cooldown_burn": [
-                120,
-                100,
-                80
-              ],
-              "cooldown_burn_float": [
-                120,
-                100,
-                80
-              ],
-              "cost_burn": [
-                100
-              ],
-              "tooltip": "维克兹引导一道能量射线来跟随鼠标指针，在2.5秒里持续造成共<magicDamage>?魔法伤害</magicDamage>和20%<status>减速</status>。对近期被<spellName>有机体解构</spellName>伤害过的敌人们造成<trueDamage>真实伤害</trueDamage>作为替代。<br /><br />射线内的敌人会周期性地获得<keywordMajor>解构</keywordMajor>层数。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VelkozR.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0161/ability_0161_R1.webm"
-            }
-          ],
-          "skins": [
-            {
-              "id": 161000,
-              "champion_id": 161,
-              "name": "default",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_0.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "IP",
-                  "cost": 3141
-                },
-                {
-                  "currency": "RP",
-                  "cost": 790
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 161004,
-              "champion_id": 161,
-              "name": "地狱火 维克兹",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_4.jpg",
-              "skin_video_url": "https://youtu.be/q2D85TFwlqo",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2020-07-16T04:00:00+09:00"
-            },
-            {
-              "id": 161020,
-              "champion_id": 161,
-              "name": "天才蜂 维克兹",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_20.jpg",
-              "skin_video_url": "https://youtu.be/tvirPcodYHY",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2023-11-21T12:00:00+09:00"
-            },
-            {
-              "id": 161001,
-              "champion_id": 161,
-              "name": "战地机甲 维克兹",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_1.jpg",
-              "skin_video_url": "https://youtu.be/WkfiQrrWMCc",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2014-03-03T08:00:00+09:00"
-            },
-            {
-              "id": 161002,
-              "champion_id": 161,
-              "name": "苍穹之光 维克兹",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_2.jpg",
-              "skin_video_url": "https://youtu.be/poARvjZh8w4",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2015-01-20T16:00:00+09:00"
-            },
-            {
-              "id": 161003,
-              "champion_id": 161,
-              "name": "这货不是维克兹",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_3.jpg",
-              "skin_video_url": "https://youtu.be/TSXxbxP16a4",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 750
-                }
-              ],
-              "sales": null,
-              "release_date": "2016-03-31T13:00:00+09:00"
-            },
-            {
-              "id": 161011,
-              "champion_id": 161,
-              "name": "黯晶之眼 维克兹",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Velkoz_11.jpg",
-              "skin_video_url": "https://youtu.be/lmDZ2WeGrjc",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2021-04-15T04:00:00+09:00"
             }
           ]
         }
@@ -17167,8 +17386,8 @@
       },
       {
         "champion_id": 63,
-        "play": 31,
-        "win": 16,
+        "play": 32,
+        "win": 17,
         "meta": {
           "id": 63,
           "key": "Brand",
@@ -17505,18 +17724,18 @@
         4,
         12
       ],
-      "win": 6575,
-      "play": 12818,
-      "pick_rate": 0.9674
+      "win": 6621,
+      "play": 12908,
+      "pick_rate": 0.9671
     },
     {
       "ids": [
         4,
         14
       ],
-      "win": 187,
-      "play": 397,
-      "pick_rate": 0.03
+      "win": 192,
+      "play": 402,
+      "pick_rate": 0.0301
     },
     {
       "ids": [
@@ -17787,9 +18006,9 @@
         "Q",
         "Q"
       ],
-      "play": 2153,
-      "win": 1262,
-      "pick_rate": 0.2301
+      "play": 2164,
+      "win": 1269,
+      "pick_rate": 0.2299
     },
     {
       "order": [
@@ -17809,8 +18028,8 @@
         "W",
         "W"
       ],
-      "play": 703,
-      "win": 403,
+      "play": 707,
+      "win": 406,
       "pick_rate": 0.0751
     },
     {
@@ -17831,8 +18050,8 @@
         "W",
         "W"
       ],
-      "play": 559,
-      "win": 340,
+      "play": 562,
+      "win": 343,
       "pick_rate": 0.0597
     },
     {
@@ -17853,7 +18072,7 @@
         "Q",
         "Q"
       ],
-      "play": 492,
+      "play": 495,
       "win": 302,
       "pick_rate": 0.0526
     },
@@ -17875,9 +18094,9 @@
         "Q",
         "Q"
       ],
-      "play": 386,
-      "win": 232,
-      "pick_rate": 0.0413
+      "play": 387,
+      "win": 233,
+      "pick_rate": 0.0411
     }
   ],
   "skill_masteries": [
@@ -17887,9 +18106,9 @@
         "W",
         "Q"
       ],
-      "play": 5385,
-      "win": 3209,
-      "pick_rate": 0.5756,
+      "play": 5418,
+      "win": 3232,
+      "pick_rate": 0.5757,
       "builds": [
         {
           "order": [
@@ -17909,9 +18128,9 @@
             "Q",
             "Q"
           ],
-          "play": 2153,
-          "win": 1262,
-          "pick_rate": 0.3998
+          "play": 2164,
+          "win": 1269,
+          "pick_rate": 0.3994
         },
         {
           "order": [
@@ -17931,7 +18150,7 @@
             "Q",
             "Q"
           ],
-          "play": 492,
+          "play": 495,
           "win": 302,
           "pick_rate": 0.0914
         },
@@ -17953,9 +18172,9 @@
             "Q",
             "Q"
           ],
-          "play": 386,
-          "win": 232,
-          "pick_rate": 0.0717
+          "play": 387,
+          "win": 233,
+          "pick_rate": 0.0714
         },
         {
           "order": [
@@ -17977,7 +18196,7 @@
           ],
           "play": 220,
           "win": 122,
-          "pick_rate": 0.0409
+          "pick_rate": 0.0406
         },
         {
           "order": [
@@ -17997,9 +18216,9 @@
             "Q",
             "Q"
           ],
-          "play": 209,
-          "win": 130,
-          "pick_rate": 0.0388
+          "play": 212,
+          "win": 133,
+          "pick_rate": 0.0391
         }
       ]
     },
@@ -18009,9 +18228,9 @@
         "Q",
         "W"
       ],
-      "play": 2381,
-      "win": 1488,
-      "pick_rate": 0.2545,
+      "play": 2391,
+      "win": 1496,
+      "pick_rate": 0.2541,
       "builds": [
         {
           "order": [
@@ -18031,9 +18250,9 @@
             "W",
             "W"
           ],
-          "play": 559,
-          "win": 340,
-          "pick_rate": 0.2348
+          "play": 562,
+          "win": 343,
+          "pick_rate": 0.235
         },
         {
           "order": [
@@ -18055,7 +18274,7 @@
           ],
           "play": 178,
           "win": 110,
-          "pick_rate": 0.0748
+          "pick_rate": 0.0744
         },
         {
           "order": [
@@ -18075,9 +18294,9 @@
             "W",
             "W"
           ],
-          "play": 139,
-          "win": 80,
-          "pick_rate": 0.0584
+          "play": 143,
+          "win": 84,
+          "pick_rate": 0.0598
         },
         {
           "order": [
@@ -18099,7 +18318,7 @@
           ],
           "play": 102,
           "win": 66,
-          "pick_rate": 0.0428
+          "pick_rate": 0.0427
         },
         {
           "order": [
@@ -18121,7 +18340,7 @@
           ],
           "play": 93,
           "win": 64,
-          "pick_rate": 0.0391
+          "pick_rate": 0.0389
         }
       ]
     },
@@ -18131,9 +18350,9 @@
         "E",
         "W"
       ],
-      "play": 1462,
-      "win": 851,
-      "pick_rate": 0.1563,
+      "play": 1472,
+      "win": 857,
+      "pick_rate": 0.1564,
       "builds": [
         {
           "order": [
@@ -18153,9 +18372,9 @@
             "W",
             "W"
           ],
-          "play": 703,
-          "win": 403,
-          "pick_rate": 0.4808
+          "play": 707,
+          "win": 406,
+          "pick_rate": 0.4803
         },
         {
           "order": [
@@ -18175,9 +18394,9 @@
             "W",
             "W"
           ],
-          "play": 119,
-          "win": 74,
-          "pick_rate": 0.0814
+          "play": 120,
+          "win": 75,
+          "pick_rate": 0.0815
         },
         {
           "order": [
@@ -18199,7 +18418,7 @@
           ],
           "play": 92,
           "win": 51,
-          "pick_rate": 0.0629
+          "pick_rate": 0.0625
         },
         {
           "order": [
@@ -18221,7 +18440,7 @@
           ],
           "play": 63,
           "win": 38,
-          "pick_rate": 0.0431
+          "pick_rate": 0.0428
         },
         {
           "order": [
@@ -18241,9 +18460,9 @@
             "W",
             "W"
           ],
-          "play": 55,
+          "play": 56,
           "win": 36,
-          "pick_rate": 0.0376
+          "pick_rate": 0.038
         }
       ]
     },
@@ -18253,9 +18472,9 @@
         "W",
         "E"
       ],
-      "play": 78,
+      "play": 80,
       "win": 42,
-      "pick_rate": 0.0083,
+      "pick_rate": 0.0085,
       "builds": [
         {
           "order": [
@@ -18275,9 +18494,9 @@
             "E",
             "E"
           ],
-          "play": 31,
+          "play": 32,
           "win": 17,
-          "pick_rate": 0.3974
+          "pick_rate": 0.4
         },
         {
           "order": [
@@ -18299,51 +18518,7 @@
           ],
           "play": 6,
           "win": 3,
-          "pick_rate": 0.0769
-        },
-        {
-          "order": [
-            "Q",
-            "W",
-            "Q",
-            "E",
-            "Q",
-            "R",
-            "Q",
-            "W",
-            "Q",
-            "W",
-            "R",
-            "W",
-            "W",
-            "E",
-            "E"
-          ],
-          "play": 3,
-          "win": 2,
-          "pick_rate": 0.0385
-        },
-        {
-          "order": [
-            "Q",
-            "W",
-            "E",
-            "Q",
-            "Q",
-            "R",
-            "Q",
-            "E",
-            "Q",
-            "W",
-            "R",
-            "W",
-            "W",
-            "W",
-            "E"
-          ],
-          "play": 3,
-          "win": 2,
-          "pick_rate": 0.0385
+          "pick_rate": 0.075
         },
         {
           "order": [
@@ -18363,9 +18538,53 @@
             "E",
             "E"
           ],
-          "play": 3,
+          "play": 4,
           "win": 1,
-          "pick_rate": 0.0385
+          "pick_rate": 0.05
+        },
+        {
+          "order": [
+            "Q",
+            "W",
+            "Q",
+            "E",
+            "Q",
+            "R",
+            "Q",
+            "W",
+            "Q",
+            "W",
+            "R",
+            "W",
+            "W",
+            "E",
+            "E"
+          ],
+          "play": 3,
+          "win": 2,
+          "pick_rate": 0.0375
+        },
+        {
+          "order": [
+            "Q",
+            "W",
+            "E",
+            "Q",
+            "Q",
+            "R",
+            "Q",
+            "E",
+            "Q",
+            "W",
+            "R",
+            "W",
+            "W",
+            "W",
+            "E"
+          ],
+          "play": 3,
+          "win": 2,
+          "pick_rate": 0.0375
         }
       ]
     },
@@ -18377,7 +18596,7 @@
       ],
       "play": 38,
       "win": 15,
-      "pick_rate": 0.0041,
+      "pick_rate": 0.004,
       "builds": [
         {
           "order": [
@@ -18513,9 +18732,9 @@
         5008,
         5001
       ],
-      "play": 2068,
-      "win": 997,
-      "pick_rate": 0.1539
+      "play": 2090,
+      "win": 1010,
+      "pick_rate": 0.1545
     },
     {
       "id": 8112,
@@ -18536,9 +18755,9 @@
         5008,
         5001
       ],
-      "play": 1519,
-      "win": 703,
-      "pick_rate": 0.1131
+      "play": 1534,
+      "win": 706,
+      "pick_rate": 0.1134
     },
     {
       "id": 8112,
@@ -18559,9 +18778,9 @@
         5001,
         5001
       ],
-      "play": 632,
-      "win": 356,
-      "pick_rate": 0.047
+      "play": 633,
+      "win": 357,
+      "pick_rate": 0.0468
     },
     {
       "id": 8369,
@@ -18582,8 +18801,8 @@
         5008,
         5001
       ],
-      "play": 566,
-      "win": 301,
+      "play": 570,
+      "win": 302,
       "pick_rate": 0.0421
     },
     {
@@ -18607,7 +18826,7 @@
       ],
       "play": 477,
       "win": 280,
-      "pick_rate": 0.0355
+      "pick_rate": 0.0353
     }
   ],
   "rune_pages": [
@@ -18615,9 +18834,9 @@
       "id": 8112,
       "primary_page_id": 8100,
       "secondary_page_id": 8000,
-      "play": 2785,
-      "win": 1360,
-      "pick_rate": 0.2073,
+      "play": 2813,
+      "win": 1368,
+      "pick_rate": 0.208,
       "builds": [
         {
           "id": 8112,
@@ -18638,9 +18857,9 @@
             5008,
             5001
           ],
-          "play": 1519,
-          "win": 703,
-          "pick_rate": 0.5454
+          "play": 1534,
+          "win": 706,
+          "pick_rate": 0.5453
         },
         {
           "id": 8112,
@@ -18661,9 +18880,9 @@
             5008,
             5001
           ],
-          "play": 262,
+          "play": 265,
           "win": 130,
-          "pick_rate": 0.0941
+          "pick_rate": 0.0942
         },
         {
           "id": 8112,
@@ -18684,9 +18903,9 @@
             5008,
             5001
           ],
-          "play": 106,
-          "win": 60,
-          "pick_rate": 0.0381
+          "play": 108,
+          "win": 61,
+          "pick_rate": 0.0384
         },
         {
           "id": 8112,
@@ -18707,8 +18926,8 @@
             5008,
             5001
           ],
-          "play": 98,
-          "win": 57,
+          "play": 99,
+          "win": 58,
           "pick_rate": 0.0352
         },
         {
@@ -18730,9 +18949,9 @@
             5008,
             5011
           ],
-          "play": 78,
+          "play": 79,
           "win": 46,
-          "pick_rate": 0.028
+          "pick_rate": 0.0281
         }
       ]
     },
@@ -18740,9 +18959,9 @@
       "id": 8021,
       "primary_page_id": 8000,
       "secondary_page_id": 8400,
-      "play": 2785,
-      "win": 1372,
-      "pick_rate": 0.2073,
+      "play": 2811,
+      "win": 1387,
+      "pick_rate": 0.2078,
       "builds": [
         {
           "id": 8021,
@@ -18763,9 +18982,9 @@
             5008,
             5001
           ],
-          "play": 2068,
-          "win": 997,
-          "pick_rate": 0.7425
+          "play": 2090,
+          "win": 1010,
+          "pick_rate": 0.7435
         },
         {
           "id": 8021,
@@ -18788,7 +19007,7 @@
           ],
           "play": 71,
           "win": 42,
-          "pick_rate": 0.0255
+          "pick_rate": 0.0253
         },
         {
           "id": 8021,
@@ -18811,7 +19030,7 @@
           ],
           "play": 64,
           "win": 34,
-          "pick_rate": 0.023
+          "pick_rate": 0.0228
         },
         {
           "id": 8021,
@@ -18834,7 +19053,7 @@
           ],
           "play": 57,
           "win": 23,
-          "pick_rate": 0.0205
+          "pick_rate": 0.0203
         },
         {
           "id": 8021,
@@ -18857,7 +19076,7 @@
           ],
           "play": 44,
           "win": 23,
-          "pick_rate": 0.0158
+          "pick_rate": 0.0157
         }
       ]
     },
@@ -18865,9 +19084,9 @@
       "id": 8112,
       "primary_page_id": 8100,
       "secondary_page_id": 8400,
-      "play": 2257,
-      "win": 1187,
-      "pick_rate": 0.168,
+      "play": 2265,
+      "win": 1192,
+      "pick_rate": 0.1675,
       "builds": [
         {
           "id": 8112,
@@ -18888,9 +19107,9 @@
             5001,
             5001
           ],
-          "play": 632,
-          "win": 356,
-          "pick_rate": 0.28
+          "play": 633,
+          "win": 357,
+          "pick_rate": 0.2795
         },
         {
           "id": 8112,
@@ -18911,9 +19130,9 @@
             5008,
             5001
           ],
-          "play": 337,
+          "play": 338,
           "win": 159,
-          "pick_rate": 0.1493
+          "pick_rate": 0.1492
         },
         {
           "id": 8112,
@@ -18934,9 +19153,9 @@
             5008,
             5001
           ],
-          "play": 206,
-          "win": 107,
-          "pick_rate": 0.0913
+          "play": 208,
+          "win": 108,
+          "pick_rate": 0.0918
         },
         {
           "id": 8112,
@@ -18959,7 +19178,7 @@
           ],
           "play": 144,
           "win": 75,
-          "pick_rate": 0.0638
+          "pick_rate": 0.0636
         },
         {
           "id": 8112,
@@ -18982,7 +19201,7 @@
           ],
           "play": 93,
           "win": 53,
-          "pick_rate": 0.0412
+          "pick_rate": 0.0411
         }
       ]
     },
@@ -18990,9 +19209,9 @@
       "id": 8369,
       "primary_page_id": 8300,
       "secondary_page_id": 8100,
-      "play": 2112,
-      "win": 1172,
-      "pick_rate": 0.1572,
+      "play": 2125,
+      "win": 1178,
+      "pick_rate": 0.1571,
       "builds": [
         {
           "id": 8369,
@@ -19013,9 +19232,9 @@
             5008,
             5001
           ],
-          "play": 566,
-          "win": 301,
-          "pick_rate": 0.268
+          "play": 570,
+          "win": 302,
+          "pick_rate": 0.2682
         },
         {
           "id": 8369,
@@ -19038,7 +19257,7 @@
           ],
           "play": 477,
           "win": 280,
-          "pick_rate": 0.2259
+          "pick_rate": 0.2245
         },
         {
           "id": 8369,
@@ -19059,8 +19278,8 @@
             5001,
             5001
           ],
-          "play": 183,
-          "win": 103,
+          "play": 184,
+          "win": 104,
           "pick_rate": 0.0866
         },
         {
@@ -19084,7 +19303,7 @@
           ],
           "play": 151,
           "win": 87,
-          "pick_rate": 0.0715
+          "pick_rate": 0.0711
         },
         {
           "id": 8369,
@@ -19105,9 +19324,9 @@
             5008,
             5001
           ],
-          "play": 105,
-          "win": 63,
-          "pick_rate": 0.0497
+          "play": 106,
+          "win": 64,
+          "pick_rate": 0.0499
         }
       ]
     },
@@ -19115,9 +19334,9 @@
       "id": 8112,
       "primary_page_id": 8100,
       "secondary_page_id": 8200,
-      "play": 584,
-      "win": 309,
-      "pick_rate": 0.0435,
+      "play": 587,
+      "win": 311,
+      "pick_rate": 0.0434,
       "builds": [
         {
           "id": 8112,
@@ -19138,9 +19357,9 @@
             5008,
             5001
           ],
-          "play": 138,
-          "win": 73,
-          "pick_rate": 0.2363
+          "play": 140,
+          "win": 74,
+          "pick_rate": 0.2385
         },
         {
           "id": 8112,
@@ -19161,9 +19380,9 @@
             5001,
             5001
           ],
-          "play": 129,
-          "win": 73,
-          "pick_rate": 0.2209
+          "play": 130,
+          "win": 74,
+          "pick_rate": 0.2215
         },
         {
           "id": 8112,
@@ -19186,7 +19405,7 @@
           ],
           "play": 27,
           "win": 12,
-          "pick_rate": 0.0462
+          "pick_rate": 0.046
         },
         {
           "id": 8112,
@@ -19209,7 +19428,7 @@
           ],
           "play": 20,
           "win": 14,
-          "pick_rate": 0.0342
+          "pick_rate": 0.0341
         },
         {
           "id": 8112,
@@ -19232,7 +19451,7 @@
           ],
           "play": 20,
           "win": 12,
-          "pick_rate": 0.0342
+          "pick_rate": 0.0341
         }
       ]
     }
@@ -19245,9 +19464,9 @@
         3040,
         3118
       ],
-      "play": 1714,
-      "win": 1014,
-      "pick_rate": 0.1936
+      "play": 1728,
+      "win": 1022,
+      "pick_rate": 0.1941
     },
     {
       "ids": [
@@ -19256,9 +19475,9 @@
         3040,
         3157
       ],
-      "play": 1049,
-      "win": 565,
-      "pick_rate": 0.1185
+      "play": 1057,
+      "win": 571,
+      "pick_rate": 0.1188
     },
     {
       "ids": [
@@ -19267,9 +19486,9 @@
         3118,
         3040
       ],
-      "play": 463,
-      "win": 254,
-      "pick_rate": 0.0523
+      "play": 466,
+      "win": 257,
+      "pick_rate": 0.0524
     },
     {
       "ids": [
@@ -19280,7 +19499,7 @@
       ],
       "play": 433,
       "win": 264,
-      "pick_rate": 0.0489
+      "pick_rate": 0.0486
     },
     {
       "ids": [
@@ -19291,7 +19510,7 @@
       ],
       "play": 347,
       "win": 207,
-      "pick_rate": 0.0392
+      "pick_rate": 0.039
     },
     {
       "ids": [
@@ -19300,8 +19519,8 @@
         3040,
         3157
       ],
-      "play": 337,
-      "win": 190,
+      "play": 339,
+      "win": 191,
       "pick_rate": 0.0381
     },
     {
@@ -19311,9 +19530,9 @@
         3040,
         3118
       ],
-      "play": 301,
-      "win": 199,
-      "pick_rate": 0.034
+      "play": 304,
+      "win": 201,
+      "pick_rate": 0.0342
     },
     {
       "ids": [
@@ -19322,9 +19541,9 @@
         3040,
         3100
       ],
-      "play": 253,
+      "play": 254,
       "win": 149,
-      "pick_rate": 0.0286
+      "pick_rate": 0.0285
     },
     {
       "ids": [
@@ -19333,8 +19552,8 @@
         3040,
         3089
       ],
-      "play": 163,
-      "win": 90,
+      "play": 164,
+      "win": 91,
       "pick_rate": 0.0184
     },
     {
@@ -19344,8 +19563,8 @@
         3040,
         3089
       ],
-      "play": 162,
-      "win": 117,
+      "play": 163,
+      "win": 118,
       "pick_rate": 0.0183
     },
     {
@@ -19355,8 +19574,8 @@
         3040,
         3041
       ],
-      "play": 161,
-      "win": 138,
+      "play": 162,
+      "win": 139,
       "pick_rate": 0.0182
     },
     {
@@ -19367,7 +19586,7 @@
       ],
       "play": 131,
       "win": 81,
-      "pick_rate": 0.0148
+      "pick_rate": 0.0147
     },
     {
       "ids": [
@@ -19378,7 +19597,7 @@
       ],
       "play": 129,
       "win": 84,
-      "pick_rate": 0.0146
+      "pick_rate": 0.0145
     },
     {
       "ids": [
@@ -19398,9 +19617,9 @@
         3040,
         3135
       ],
-      "play": 107,
-      "win": 58,
-      "pick_rate": 0.0121
+      "play": 109,
+      "win": 59,
+      "pick_rate": 0.0122
     }
   ],
   "boots": [
@@ -19408,33 +19627,33 @@
       "ids": [
         3020
       ],
-      "play": 8345,
-      "win": 4478,
-      "pick_rate": 0.691
+      "play": 8402,
+      "win": 4513,
+      "pick_rate": 0.6909
     },
     {
       "ids": [
         3111
       ],
-      "play": 1941,
-      "win": 1036,
-      "pick_rate": 0.1607
+      "play": 1950,
+      "win": 1041,
+      "pick_rate": 0.1603
     },
     {
       "ids": [
         3047
       ],
-      "play": 911,
-      "win": 477,
-      "pick_rate": 0.0754
+      "play": 921,
+      "win": 481,
+      "pick_rate": 0.0757
     },
     {
       "ids": [
         3158
       ],
-      "play": 836,
-      "win": 428,
-      "pick_rate": 0.0692
+      "play": 844,
+      "win": 430,
+      "pick_rate": 0.0694
     },
     {
       "ids": [
@@ -19451,18 +19670,18 @@
         1054,
         2003
       ],
-      "play": 7343,
-      "win": 3663,
-      "pick_rate": 0.5368
+      "play": 7401,
+      "win": 3690,
+      "pick_rate": 0.5374
     },
     {
       "ids": [
         1082,
         2031
       ],
-      "play": 3855,
-      "win": 2109,
-      "pick_rate": 0.2818
+      "play": 3878,
+      "win": 2124,
+      "pick_rate": 0.2816
     },
     {
       "ids": [
@@ -19470,9 +19689,9 @@
         2003,
         2003
       ],
-      "play": 1836,
-      "win": 915,
-      "pick_rate": 0.1342
+      "play": 1843,
+      "win": 919,
+      "pick_rate": 0.1338
     },
     {
       "ids": [
@@ -19480,9 +19699,9 @@
         2003,
         3070
       ],
-      "play": 322,
-      "win": 151,
-      "pick_rate": 0.0235
+      "play": 325,
+      "win": 153,
+      "pick_rate": 0.0236
     },
     {
       "ids": [
@@ -19532,9 +19751,9 @@
         2003,
         2003
       ],
-      "play": 15,
+      "play": 16,
       "win": 10,
-      "pick_rate": 0.0011
+      "pick_rate": 0.0012
     },
     {
       "ids": [
@@ -19595,87 +19814,87 @@
       "ids": [
         3040
       ],
-      "play": 10919,
-      "win": 5972,
-      "pick_rate": 0.2336
+      "play": 10996,
+      "win": 6020,
+      "pick_rate": 0.2337
     },
     {
       "ids": [
         3118
       ],
-      "play": 9597,
-      "win": 5289,
-      "pick_rate": 0.2053
+      "play": 9670,
+      "win": 5334,
+      "pick_rate": 0.2055
     },
     {
       "ids": [
         6657
       ],
-      "play": 6875,
-      "win": 3541,
+      "play": 6923,
+      "win": 3569,
       "pick_rate": 0.1471
     },
     {
       "ids": [
         1082
       ],
-      "play": 3787,
-      "win": 1819,
+      "play": 3810,
+      "win": 1834,
       "pick_rate": 0.081
     },
     {
       "ids": [
         3157
       ],
-      "play": 3735,
-      "win": 2251,
+      "play": 3760,
+      "win": 2268,
       "pick_rate": 0.0799
     },
     {
       "ids": [
         3089
       ],
-      "play": 2471,
-      "win": 1618,
+      "play": 2487,
+      "win": 1633,
       "pick_rate": 0.0529
     },
     {
       "ids": [
         3070
       ],
-      "play": 1870,
-      "win": 621,
+      "play": 1884,
+      "win": 623,
       "pick_rate": 0.04
     },
     {
       "ids": [
         3041
       ],
-      "play": 1244,
-      "win": 1080,
+      "play": 1251,
+      "win": 1087,
       "pick_rate": 0.0266
     },
     {
       "ids": [
         3135
       ],
-      "play": 1100,
-      "win": 682,
+      "play": 1105,
+      "win": 685,
       "pick_rate": 0.0235
     },
     {
       "ids": [
         3100
       ],
-      "play": 1075,
-      "win": 652,
+      "play": 1080,
+      "win": 655,
       "pick_rate": 0.023
     },
     {
       "ids": [
         3110
       ],
-      "play": 777,
+      "play": 779,
       "win": 483,
       "pick_rate": 0.0166
     },
@@ -19683,23 +19902,23 @@
       "ids": [
         4646
       ],
-      "play": 500,
-      "win": 290,
+      "play": 502,
+      "win": 291,
       "pick_rate": 0.0107
     },
     {
       "ids": [
         2420
       ],
-      "play": 485,
-      "win": 251,
+      "play": 489,
+      "win": 254,
       "pick_rate": 0.0104
     },
     {
       "ids": [
         6655
       ],
-      "play": 393,
+      "play": 394,
       "win": 197,
       "pick_rate": 0.0084
     },
@@ -19709,31 +19928,31 @@
       ],
       "play": 340,
       "win": 192,
-      "pick_rate": 0.0073
+      "pick_rate": 0.0072
     },
     {
       "ids": [
         8020
       ],
-      "play": 328,
-      "win": 220,
+      "play": 329,
+      "win": 221,
       "pick_rate": 0.007
     },
     {
       "ids": [
         3003
       ],
-      "play": 278,
-      "win": 139,
-      "pick_rate": 0.0059
+      "play": 280,
+      "win": 140,
+      "pick_rate": 0.006
     },
     {
       "ids": [
         3102
       ],
-      "play": 197,
-      "win": 127,
-      "pick_rate": 0.0042
+      "play": 201,
+      "win": 130,
+      "pick_rate": 0.0043
     },
     {
       "ids": [
@@ -19747,7 +19966,7 @@
       "ids": [
         3137
       ],
-      "play": 107,
+      "play": 108,
       "win": 71,
       "pick_rate": 0.0023
     },
@@ -19779,8 +19998,8 @@
       "ids": [
         4633
       ],
-      "play": 42,
-      "win": 28,
+      "play": 43,
+      "win": 29,
       "pick_rate": 0.0009
     },
     {
