@@ -412,8 +412,8 @@
           "counters": [
             {
               "champion_id": 74,
-              "play": 77,
-              "win": 30
+              "play": 80,
+              "win": 32
             },
             {
               "champion_id": 27,
@@ -434,8 +434,8 @@
       [
         {
           "champion_id": 74,
-          "play": 77,
-          "win": 30,
+          "play": 80,
+          "win": 32,
           "meta": {
             "id": 74,
             "key": "Heimerdinger",
@@ -688,7 +688,7 @@
               }
             ]
           },
-          "win_rate": 38.96
+          "win_rate": 40
         },
         {
           "champion_id": 27,
@@ -1240,8 +1240,8 @@
         },
         {
           "champion_id": 83,
-          "play": 349,
-          "win": 156,
+          "play": 350,
+          "win": 157,
           "meta": {
             "id": 83,
             "key": "Yorick",
@@ -1500,7 +1500,7 @@
               }
             ]
           },
-          "win_rate": 44.7
+          "win_rate": 44.86
         },
         {
           "champion_id": 54,
@@ -1828,8 +1828,8 @@
       [
         {
           "champion_id": 517,
-          "play": 83,
-          "win": 49,
+          "play": 84,
+          "win": 50,
           "meta": {
             "id": 517,
             "key": "Sylas",
@@ -2086,7 +2086,7 @@
               }
             ]
           },
-          "win_rate": 59.04
+          "win_rate": 59.52
         },
         {
           "champion_id": 69,
@@ -2357,8 +2357,8 @@
         },
         {
           "champion_id": 39,
-          "play": 357,
-          "win": 201,
+          "play": 361,
+          "win": 202,
           "meta": {
             "id": 39,
             "key": "Irelia",
@@ -2707,12 +2707,12 @@
               }
             ]
           },
-          "win_rate": 56.3
+          "win_rate": 55.96
         },
         {
           "champion_id": 80,
-          "play": 265,
-          "win": 148,
+          "play": 267,
+          "win": 149,
           "meta": {
             "id": 80,
             "key": "Pantheon",
@@ -3017,151 +3017,281 @@
               }
             ]
           },
-          "win_rate": 55.85
+          "win_rate": 55.81
         },
         {
-          "champion_id": 901,
-          "play": 185,
-          "win": 103,
+          "champion_id": 8,
+          "play": 346,
+          "win": 193,
           "meta": {
-            "id": 901,
-            "key": "Smolder",
-            "name": "炽炎雏龙",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Smolder.png",
+            "id": 8,
+            "key": "Vladimir",
+            "name": "猩红收割者",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Vladimir.png",
             "evolve": [],
-            "partype": "法力",
+            "partype": "猩红冲刺",
             "passive": {
-              "name": "龙之研习",
-              "description": "用技能命中英雄和用超级灼热龙息 击杀敌人时会提供一层龙之研习。层数会提升斯莫德各基础技能的伤害。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Icons_Smolder_Passive.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_P1.webm"
+              "name": "血色契约",
+              "description": "每30生命值加成给予弗拉基米尔1法术强度，每1法术强度给予弗拉基米尔1.6生命值（不会自我循环叠加）。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/VladimirP.png",
+              "video_url": null
             },
             "spells": [
               {
                 "key": "Q",
-                "name": "超级灼热龙息",
-                "description": "斯莫德在一名敌人身上喷吐烈焰。随着他获得更多层数，这个技能会变得更加强力。",
+                "name": "鲜血转换",
+                "description": "弗拉基米尔从目标敌人身上偷取生命值。当弗拉基米尔的资源槽攒满后，鲜血转换将暂时获得增益，提升伤害和治疗效果。",
                 "max_rank": 5,
                 "range_burn": [
-                  550
+                  600
                 ],
                 "cooldown_burn": [
+                  9,
+                  7,
+                  6,
                   5,
-                  5,
-                  4,
-                  4,
-                  3
+                  4
                 ],
                 "cooldown_burn_float": [
-                  5.5,
-                  5,
-                  4.5,
-                  4,
-                  3.5
+                  9,
+                  7.9,
+                  6.8,
+                  5.7,
+                  4.6
                 ],
                 "cost_burn": [
-                  25
+                  0
                 ],
-                "tooltip": "斯莫德喷出烈焰，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。<br /><br />基于<spellName>龙之研习</spellName>的层数，这个技能会不断进化以获得以下效果：<li><keywordMajor>?层</keywordMajor>：伤害目标周围的所有敌人。</li><li><keywordMajor>?层</keywordMajor>：在目标后侧引发<spellName>{{ tier2_numberofblowback }}</spellName>次爆炸，造成{{ tier2_blowbackpercentagedamage }}%此技能伤害。</li><li><keywordMajor>?层</keywordMajor>：灼烧目标，在{{ tier3_dotlength }}秒里持续造成共<trueDamage>{{ tier3_burn }}最大生命值的真实伤害</trueDamage>。 敌方英雄如果在灼烧期间跌到<trueDamage>{{ tier3_executethreshold }}</trueDamage>总生命值以下，则会被立刻击杀。</li>?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_Q1.webm"
+                "tooltip": "弗拉基米尔汲取目标的生命力，造成<magicDamage>?魔法伤害</magicDamage>并回复<healing>?生命值</healing>。在使用2次这个技能后，弗拉基米尔会获得<speed>?%移动速度</speed>，持续0.5秒，并强化这个技能的下一次使用，持续2.5秒。<br /><br />这个技能的强化版会造成<magicDamage>?魔法伤害</magicDamage>并回复额外的<healing>?加上?已损失生命值</healing>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VladimirQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0008/ability_0008_Q1.webm"
               },
               {
                 "key": "W",
-                "name": "阿嚏！",
-                "description": "斯莫德发出一个萌萌的烈焰喷嚏，喷嚏会在命中敌人时爆炸。",
+                "name": "血红之池",
+                "description": "弗拉基米尔潜入血泊之中，变得不可被选取，持续2秒。血泊上的敌人被减速，同时弗拉基米尔会从他们身上吸取生命。",
                 "max_rank": 5,
                 "range_burn": [
-                  1500
+                  350
                 ],
                 "cooldown_burn": [
-                  14,
-                  13,
-                  12,
-                  11,
-                  10
+                  28,
+                  25,
+                  22,
+                  19,
+                  16
                 ],
                 "cooldown_burn_float": [
-                  14,
-                  13,
-                  12,
-                  11,
-                  10
+                  28,
+                  25,
+                  22,
+                  19,
+                  16
                 ],
                 "cost_burn": [
-                  60
+                  0
                 ],
-                "tooltip": "斯莫德发出一个萌萌的烈焰喷嚏，造成<physicalDamage>?物理伤害</physicalDamage>和持续?秒的?%<status>减速</status>。<br /><br />命中英雄时会引发一次爆炸，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_W1.webm"
+                "tooltip": "弗拉基米尔化成一滩持续2秒的血池，获得<speed>?%持续衰减的移动速度</speed>，持续?秒，并进入<keyword>无法被选取</keyword>和<keyword>幽灵</keyword>状态，同时使血池中的敌人<status>减速</status>?%。<br /><br />弗拉基米尔在期间会持续造成<magicDamage>?魔法伤害</magicDamage>，并且每命中一个敌人就会为弗拉基米尔回复<healing>?生命值</healing>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VladimirSanguinePool.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0008/ability_0008_W1.webm"
               },
               {
                 "key": "E",
-                "name": "扑棱，扑棱，扑棱！",
-                "description": "斯莫德展翅高飞，无视地形并轰击生命值最低的敌人。",
+                "name": "血之潮汐",
+                "description": "弗拉基米尔消耗他的生命值来持续灌注一个蓄血库，蓄血库在释放时会对他身边的敌人造成伤害，但会被敌方单位所阻挡。",
                 "max_rank": 5,
                 "range_burn": [
-                  700
+                  600
                 ],
                 "cooldown_burn": [
-                  24,
-                  22,
-                  20,
-                  18,
-                  16
+                  13,
+                  11,
+                  9,
+                  7,
+                  5
                 ],
                 "cooldown_burn_float": [
-                  24,
-                  22,
-                  20,
-                  18,
-                  16
+                  13,
+                  11,
+                  9,
+                  7,
+                  5
                 ],
                 "cost_burn": [
-                  65
+                  0
                 ],
-                "tooltip": "斯莫德展翅高飞，获得<speed>?%移动速度</speed>并无视地形，持续?秒。<br /><br />飞行时，斯莫德轰击生命值最低的敌方英雄<spellName>?</spellName>次(向下取整)，每次命中造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_E1.webm"
+                "tooltip": "<charge>开始蓄力：</charge>弗拉基米尔积攒一个蓄血库，至多消耗<span class=\"colorCC3300\">?生命值</span>。在攒满后，弗拉基米尔会被<status>减速</status>20%。<br /><br /><release>释放：</release>弗拉基米尔对附近的敌人释放一股血弹激流，基于蓄力时间造成<magicDamage>?</magicDamage>至<magicDamage>?魔法伤害</magicDamage>。如果这个技能蓄力了至少1秒，那么它还会使目标<status>减速</status>40/45/50/55/60%，持续0.5秒。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VladimirE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0008/ability_0008_E1.webm"
               },
               {
                 "key": "R",
-                "name": "妈----！",
-                "description": "斯莫德召唤他的妈妈从天空喷吐烈焰，对她的烈焰中心的敌人们造成额外伤害和减速。",
+                "name": "血之瘟疫",
+                "description": "弗拉基米尔令一片区域感染上剧毒瘟疫，增加受感染敌人所受的伤害。在几秒后，血之瘟疫会对被感染的敌人造成魔法伤害，并根据命中的敌方英雄数来治疗弗拉基米尔。",
                 "max_rank": 3,
                 "range_burn": [
-                  4200
+                  625
                 ],
                 "cooldown_burn": [
-                  140,
-                  130,
                   120
                 ],
                 "cooldown_burn_float": [
-                  140,
-                  130,
                   120
                 ],
                 "cost_burn": [
-                  100
+                  0
                 ],
-                "tooltip": "斯莫德的妈妈从天空喷吐烈焰，造成<physicalDamage>?物理伤害</physicalDamage>。中心的敌人们会转而受到<physicalDamage>?</physicalDamage>伤害和持续?秒的?%<status>减速</status>。<br /><br />斯莫德的妈妈如果命中了她的儿子，则会为他治疗<healing>?生命值</healing>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_R1.webm"
+                "tooltip": "弗拉基米尔生成一个剧毒瘟疫，使他的目标们所受伤害(所有来源)提高10%，持续4秒。在它消散后，弗拉基米尔对所有被感染的目标造成<magicDamage>?魔法伤害</magicDamage>。如果弗拉基米尔命中了一名敌方英雄，那么就会治疗自身<healing>?生命值</healing>，此后每命中一名敌方英雄会治疗自身额外的<healing>?生命值</healing>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VladimirHemoplague.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0008/ability_0008_R1.webm"
               }
             ],
             "skins": [
               {
-                "id": 901000,
-                "champion_id": 901,
+                "id": 8000,
+                "champion_id": 8,
                 "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Smolder_0.jpg",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_0.jpg",
                 "skin_video_url": null,
                 "prices": [
                   {
                     "currency": "IP",
-                    "cost": 6300
+                    "cost": 3150
                   },
+                  {
+                    "currency": "RP",
+                    "cost": 790
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 8030,
+                "champion_id": 8,
+                "name": "咖啡甜心 弗拉基米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_30.jpg",
+                "skin_video_url": "https://youtu.be/VYM6kSA1Ryw",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-12-02T04:00:00+09:00"
+              },
+              {
+                "id": 8007,
+                "champion_id": 8,
+                "name": "学生会长 弗拉基米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_7.jpg",
+                "skin_video_url": "https://youtu.be/50QjcmBq_W8",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2015-08-27T10:00:00+09:00"
+              },
+              {
+                "id": 8001,
+                "champion_id": 8,
+                "name": "弗拉基米尔伯爵",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_1.jpg",
+                "skin_video_url": "https://youtu.be/ZMYrSMSm6_k",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 8002,
+                "champion_id": 8,
+                "name": "弗拉基米尔侯爵",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_2.jpg",
+                "skin_video_url": "https://youtu.be/i3lIFX74VTc",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 520
+                  }
+                ],
+                "sales": null,
+                "release_date": "2010-07-12T15:00:00+09:00"
+              },
+              {
+                "id": 8006,
+                "champion_id": 8,
+                "name": "摄魂男爵 弗拉基米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_6.jpg",
+                "skin_video_url": "https://youtu.be/tHCzYwVNJ4U",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2014-07-08T06:00:00+09:00"
+              },
+              {
+                "id": 8021,
+                "champion_id": 8,
+                "name": "波江星神 弗拉基米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_21.jpg",
+                "skin_video_url": "https://youtu.be/iWBT0p1hCME",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-11-24T04:00:00+09:00"
+              },
+              {
+                "id": 8039,
+                "champion_id": 8,
+                "name": "绝息圣堂 弗拉基米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_39.jpg",
+                "skin_video_url": "https://youtu.be/QLo9reFoI7o",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2023-03-09T04:00:00+09:00"
+              },
+              {
+                "id": 8005,
+                "champion_id": 8,
+                "name": "血石领主 弗拉基米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_5.jpg",
+                "skin_video_url": "https://youtu.be/SRMzt9tZxoY",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1820
+                  }
+                ],
+                "sales": null,
+                "release_date": "2011-11-20T23:00:00+09:00"
+              },
+              {
+                "id": 8003,
+                "champion_id": 8,
+                "name": "诺斯费拉图  弗拉基米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_3.jpg",
+                "skin_video_url": "https://youtu.be/vMPdDxeUmMg",
+                "prices": [
                   {
                     "currency": "RP",
                     "cost": 975
@@ -3171,11 +3301,21 @@
                 "release_date": null
               },
               {
-                "id": 901001,
-                "champion_id": 901,
-                "name": "天龙之子 斯莫德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Smolder_1.jpg",
-                "skin_video_url": "https://youtu.be/XeJNB08BRYU",
+                "id": 8004,
+                "champion_id": 8,
+                "name": "霹雳游侠 弗拉基米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_4.jpg",
+                "skin_video_url": "https://youtu.be/Ih4gSWsVedo",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 8014,
+                "champion_id": 8,
+                "name": "黑夜使者 弗拉基米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_14.jpg",
+                "skin_video_url": "https://youtu.be/WIebREN28qM",
                 "prices": [
                   {
                     "currency": "RP",
@@ -3183,19 +3323,34 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2024-01-31T10:00:00+09:00"
+                "release_date": "2019-12-12T04:00:00+09:00"
+              },
+              {
+                "id": 8008,
+                "champion_id": 8,
+                "name": "黑潮 弗拉基米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_8.jpg",
+                "skin_video_url": "https://youtu.be/rjaPBYVxaPE",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2018-05-30T23:00:00+09:00"
               }
             ]
           },
-          "win_rate": 55.68
+          "win_rate": 55.78
         }
       ]
     ],
     "counters": [
       {
         "champion_id": 266,
-        "play": 1816,
-        "win": 897,
+        "play": 1827,
+        "win": 904,
         "meta": {
           "id": 266,
           "key": "Aatrox",
@@ -3508,7 +3663,7 @@
       },
       {
         "champion_id": 164,
-        "play": 1457,
+        "play": 1464,
         "win": 719,
         "meta": {
           "id": 164,
@@ -3766,8 +3921,8 @@
       },
       {
         "champion_id": 58,
-        "play": 1091,
-        "win": 576,
+        "play": 1096,
+        "win": 580,
         "meta": {
           "id": 58,
           "key": "Renekton",
@@ -4102,8 +4257,8 @@
       },
       {
         "champion_id": 24,
-        "play": 1060,
-        "win": 507,
+        "play": 1062,
+        "win": 509,
         "meta": {
           "id": 24,
           "key": "Jax",
@@ -4485,8 +4640,8 @@
       },
       {
         "champion_id": 86,
-        "play": 1006,
-        "win": 558,
+        "play": 1009,
+        "win": 560,
         "meta": {
           "id": 86,
           "key": "Garen",
@@ -4828,8 +4983,8 @@
       },
       {
         "champion_id": 777,
-        "play": 1003,
-        "win": 517,
+        "play": 1008,
+        "win": 521,
         "meta": {
           "id": 777,
           "key": "Yone",
@@ -5091,8 +5246,8 @@
       },
       {
         "champion_id": 875,
-        "play": 908,
-        "win": 445,
+        "play": 912,
+        "win": 446,
         "meta": {
           "id": 875,
           "key": "Sett",
@@ -5360,8 +5515,8 @@
       },
       {
         "champion_id": 106,
-        "play": 887,
-        "win": 425,
+        "play": 893,
+        "win": 428,
         "meta": {
           "id": 106,
           "key": "Volibear",
@@ -5627,8 +5782,8 @@
       },
       {
         "champion_id": 82,
-        "play": 829,
-        "win": 416,
+        "play": 836,
+        "win": 419,
         "meta": {
           "id": 82,
           "key": "Mordekaiser",
@@ -5936,8 +6091,8 @@
       },
       {
         "champion_id": 897,
-        "play": 822,
-        "win": 413,
+        "play": 826,
+        "win": 416,
         "meta": {
           "id": 897,
           "key": "KSante",
@@ -6138,8 +6293,8 @@
       },
       {
         "champion_id": 36,
-        "play": 813,
-        "win": 376,
+        "play": 821,
+        "win": 379,
         "meta": {
           "id": 36,
           "key": "DrMundo",
@@ -6430,8 +6585,8 @@
       },
       {
         "champion_id": 75,
-        "play": 714,
-        "win": 340,
+        "play": 718,
+        "win": 342,
         "meta": {
           "id": 75,
           "key": "Nasus",
@@ -6985,8 +7140,8 @@
       },
       {
         "champion_id": 114,
-        "play": 675,
-        "win": 337,
+        "play": 677,
+        "win": 338,
         "meta": {
           "id": 114,
           "key": "Fiora",
@@ -7363,8 +7518,8 @@
       },
       {
         "champion_id": 150,
-        "play": 608,
-        "win": 296,
+        "play": 614,
+        "win": 299,
         "meta": {
           "id": 150,
           "key": "Gnar",
@@ -8034,8 +8189,8 @@
       },
       {
         "champion_id": 98,
-        "play": 593,
-        "win": 296,
+        "play": 596,
+        "win": 299,
         "meta": {
           "id": 98,
           "key": "Shen",
@@ -8350,8 +8505,8 @@
       },
       {
         "champion_id": 126,
-        "play": 551,
-        "win": 274,
+        "play": 556,
+        "win": 276,
         "meta": {
           "id": 126,
           "key": "Jayce",
@@ -8641,8 +8796,8 @@
       },
       {
         "champion_id": 887,
-        "play": 521,
-        "win": 252,
+        "play": 523,
+        "win": 254,
         "meta": {
           "id": 887,
           "key": "Gwen",
@@ -8855,8 +9010,8 @@
       },
       {
         "champion_id": 420,
-        "play": 434,
-        "win": 205,
+        "play": 438,
+        "win": 208,
         "meta": {
           "id": 420,
           "key": "Illaoi",
@@ -9084,8 +9239,8 @@
       },
       {
         "champion_id": 85,
-        "play": 421,
-        "win": 202,
+        "play": 422,
+        "win": 203,
         "meta": {
           "id": 85,
           "key": "Kennen",
@@ -9382,8 +9537,8 @@
       },
       {
         "champion_id": 14,
-        "play": 414,
-        "win": 207,
+        "play": 418,
+        "win": 209,
         "meta": {
           "id": 14,
           "key": "Sion",
@@ -9995,8 +10150,8 @@
       },
       {
         "champion_id": 79,
-        "play": 403,
-        "win": 186,
+        "play": 406,
+        "win": 188,
         "meta": {
           "id": 79,
           "key": "Gragas",
@@ -10321,8 +10476,8 @@
       },
       {
         "champion_id": 6,
-        "play": 368,
-        "win": 178,
+        "play": 371,
+        "win": 181,
         "meta": {
           "id": 6,
           "key": "Urgot",
@@ -10573,8 +10728,8 @@
       },
       {
         "champion_id": 39,
-        "play": 357,
-        "win": 201,
+        "play": 361,
+        "win": 202,
         "meta": {
           "id": 39,
           "key": "Irelia",
@@ -10926,8 +11081,8 @@
       },
       {
         "champion_id": 83,
-        "play": 349,
-        "win": 156,
+        "play": 350,
+        "win": 157,
         "meta": {
           "id": 83,
           "key": "Yorick",
@@ -11189,8 +11344,8 @@
       },
       {
         "champion_id": 8,
-        "play": 342,
-        "win": 190,
+        "play": 346,
+        "win": 193,
         "meta": {
           "id": 8,
           "key": "Vladimir",
@@ -11816,8 +11971,8 @@
       },
       {
         "champion_id": 223,
-        "play": 332,
-        "win": 164,
+        "play": 334,
+        "win": 166,
         "meta": {
           "id": 223,
           "key": "TahmKench",
@@ -12060,8 +12215,8 @@
       },
       {
         "champion_id": 62,
-        "play": 330,
-        "win": 158,
+        "play": 332,
+        "win": 159,
         "meta": {
           "id": 62,
           "key": "MonkeyKing",
@@ -12722,8 +12877,8 @@
       },
       {
         "champion_id": 41,
-        "play": 319,
-        "win": 157,
+        "play": 321,
+        "win": 158,
         "meta": {
           "id": 41,
           "key": "Gangplank",
@@ -13043,8 +13198,8 @@
       },
       {
         "champion_id": 67,
-        "play": 281,
-        "win": 146,
+        "play": 284,
+        "win": 149,
         "meta": {
           "id": 67,
           "key": "Vayne",
@@ -13429,7 +13584,7 @@
       },
       {
         "champion_id": 78,
-        "play": 275,
+        "play": 276,
         "win": 138,
         "meta": {
           "id": 78,
@@ -13752,8 +13907,8 @@
       },
       {
         "champion_id": 19,
-        "play": 272,
-        "win": 133,
+        "play": 275,
+        "win": 134,
         "meta": {
           "id": 19,
           "key": "Warwick",
@@ -14087,8 +14242,8 @@
       },
       {
         "champion_id": 2,
-        "play": 271,
-        "win": 135,
+        "play": 274,
+        "win": 137,
         "meta": {
           "id": 2,
           "key": "Olaf",
@@ -14392,8 +14547,8 @@
       },
       {
         "champion_id": 80,
-        "play": 265,
-        "win": 148,
+        "play": 267,
+        "win": 149,
         "meta": {
           "id": 80,
           "key": "Pantheon",
@@ -14701,8 +14856,8 @@
       },
       {
         "champion_id": 31,
-        "play": 263,
-        "win": 122,
+        "play": 265,
+        "win": 124,
         "meta": {
           "id": 31,
           "key": "Chogath",
@@ -14990,8 +15145,8 @@
       },
       {
         "champion_id": 240,
-        "play": 263,
-        "win": 136,
+        "play": 265,
+        "win": 137,
         "meta": {
           "id": 240,
           "key": "Kled",
@@ -15206,7 +15361,7 @@
       },
       {
         "champion_id": 893,
-        "play": 244,
+        "play": 245,
         "win": 121,
         "meta": {
           "id": 893,
@@ -15754,7 +15909,7 @@
       },
       {
         "champion_id": 77,
-        "play": 213,
+        "play": 214,
         "win": 110,
         "meta": {
           "id": 77,
@@ -16270,8 +16425,8 @@
       },
       {
         "champion_id": 48,
-        "play": 198,
-        "win": 103,
+        "play": 201,
+        "win": 105,
         "meta": {
           "id": 48,
           "key": "Trundle",
@@ -16516,8 +16671,8 @@
       },
       {
         "champion_id": 154,
-        "play": 190,
-        "win": 92,
+        "play": 191,
+        "win": 93,
         "meta": {
           "id": 154,
           "key": "Zac",
@@ -16760,8 +16915,8 @@
       },
       {
         "champion_id": 17,
-        "play": 187,
-        "win": 96,
+        "play": 188,
+        "win": 97,
         "meta": {
           "id": 17,
           "key": "Teemo",
@@ -17276,8 +17431,8 @@
       },
       {
         "champion_id": 84,
-        "play": 177,
-        "win": 82,
+        "play": 179,
+        "win": 83,
         "meta": {
           "id": 84,
           "key": "Akali",
@@ -19014,8 +19169,8 @@
       },
       {
         "champion_id": 517,
-        "play": 83,
-        "win": 49,
+        "play": 84,
+        "win": 50,
         "meta": {
           "id": 517,
           "key": "Sylas",
@@ -19275,8 +19430,8 @@
       },
       {
         "champion_id": 74,
-        "play": 77,
-        "win": 30,
+        "play": 80,
+        "win": 32,
         "meta": {
           "id": 74,
           "key": "Heimerdinger",
@@ -19538,26 +19693,26 @@
         4,
         6
       ],
-      "win": 17962,
-      "play": 35805,
-      "pick_rate": 0.9103
+      "win": 18059,
+      "play": 35977,
+      "pick_rate": 0.9104
     },
     {
       "ids": [
         4,
         14
       ],
-      "win": 1167,
-      "play": 2388,
-      "pick_rate": 0.0607
+      "win": 1173,
+      "play": 2396,
+      "pick_rate": 0.0606
     },
     {
       "ids": [
         4,
         12
       ],
-      "win": 359,
-      "play": 737,
+      "win": 361,
+      "play": 739,
       "pick_rate": 0.0187
     },
     {
@@ -19566,7 +19721,7 @@
         12
       ],
       "win": 74,
-      "play": 172,
+      "play": 174,
       "pick_rate": 0.0044
     },
     {
@@ -19820,9 +19975,9 @@
         "W",
         "W"
       ],
-      "play": 8026,
-      "win": 4729,
-      "pick_rate": 0.3245
+      "play": 8070,
+      "win": 4760,
+      "pick_rate": 0.3248
     },
     {
       "order": [
@@ -19842,9 +19997,9 @@
         "W",
         "W"
       ],
-      "play": 4986,
-      "win": 2974,
-      "pick_rate": 0.2016
+      "play": 5012,
+      "win": 2990,
+      "pick_rate": 0.2017
     },
     {
       "order": [
@@ -19864,9 +20019,9 @@
         "W",
         "W"
       ],
-      "play": 4503,
-      "win": 2609,
-      "pick_rate": 0.1821
+      "play": 4528,
+      "win": 2622,
+      "pick_rate": 0.1822
     },
     {
       "order": [
@@ -19886,9 +20041,9 @@
         "W",
         "W"
       ],
-      "play": 3453,
-      "win": 1997,
-      "pick_rate": 0.1396
+      "play": 3464,
+      "win": 2006,
+      "pick_rate": 0.1394
     },
     {
       "order": [
@@ -19908,8 +20063,8 @@
         "W",
         "W"
       ],
-      "play": 503,
-      "win": 306,
+      "play": 505,
+      "win": 308,
       "pick_rate": 0.0203
     }
   ],
@@ -19920,9 +20075,9 @@
         "E",
         "W"
       ],
-      "play": 23611,
-      "win": 13838,
-      "pick_rate": 0.9547,
+      "play": 23724,
+      "win": 13911,
+      "pick_rate": 0.9548,
       "builds": [
         {
           "order": [
@@ -19942,9 +20097,9 @@
             "W",
             "W"
           ],
-          "play": 8026,
-          "win": 4729,
-          "pick_rate": 0.3399
+          "play": 8070,
+          "win": 4760,
+          "pick_rate": 0.3402
         },
         {
           "order": [
@@ -19964,9 +20119,9 @@
             "W",
             "W"
           ],
-          "play": 4986,
-          "win": 2974,
-          "pick_rate": 0.2112
+          "play": 5012,
+          "win": 2990,
+          "pick_rate": 0.2113
         },
         {
           "order": [
@@ -19986,9 +20141,9 @@
             "W",
             "W"
           ],
-          "play": 4503,
-          "win": 2609,
-          "pick_rate": 0.1907
+          "play": 4528,
+          "win": 2622,
+          "pick_rate": 0.1909
         },
         {
           "order": [
@@ -20008,9 +20163,9 @@
             "W",
             "W"
           ],
-          "play": 3453,
-          "win": 1997,
-          "pick_rate": 0.1462
+          "play": 3464,
+          "win": 2006,
+          "pick_rate": 0.146
         },
         {
           "order": [
@@ -20030,8 +20185,8 @@
             "W",
             "W"
           ],
-          "play": 503,
-          "win": 306,
+          "play": 505,
+          "win": 308,
           "pick_rate": 0.0213
         }
       ]
@@ -20042,9 +20197,9 @@
         "W",
         "E"
       ],
-      "play": 1028,
-      "win": 576,
-      "pick_rate": 0.0416,
+      "play": 1031,
+      "win": 579,
+      "pick_rate": 0.0415,
       "builds": [
         {
           "order": [
@@ -20064,9 +20219,9 @@
             "E",
             "E"
           ],
-          "play": 235,
-          "win": 140,
-          "pick_rate": 0.2286
+          "play": 236,
+          "win": 141,
+          "pick_rate": 0.2289
         },
         {
           "order": [
@@ -20088,7 +20243,7 @@
           ],
           "play": 169,
           "win": 84,
-          "pick_rate": 0.1644
+          "pick_rate": 0.1639
         },
         {
           "order": [
@@ -20110,7 +20265,7 @@
           ],
           "play": 151,
           "win": 87,
-          "pick_rate": 0.1469
+          "pick_rate": 0.1465
         },
         {
           "order": [
@@ -20132,7 +20287,7 @@
           ],
           "play": 100,
           "win": 51,
-          "pick_rate": 0.0973
+          "pick_rate": 0.097
         },
         {
           "order": [
@@ -20546,9 +20701,9 @@
         5008,
         5001
       ],
-      "play": 7492,
-      "win": 3679,
-      "pick_rate": 0.1878
+      "play": 7532,
+      "win": 3705,
+      "pick_rate": 0.188
     },
     {
       "id": 8010,
@@ -20569,9 +20724,9 @@
         5008,
         5001
       ],
-      "play": 5174,
-      "win": 2488,
-      "pick_rate": 0.1297
+      "play": 5205,
+      "win": 2505,
+      "pick_rate": 0.1299
     },
     {
       "id": 8010,
@@ -20592,9 +20747,9 @@
         5008,
         5001
       ],
-      "play": 2834,
-      "win": 1409,
-      "pick_rate": 0.0711
+      "play": 2844,
+      "win": 1415,
+      "pick_rate": 0.071
     },
     {
       "id": 8010,
@@ -20615,8 +20770,8 @@
         5008,
         5011
       ],
-      "play": 2377,
-      "win": 1250,
+      "play": 2386,
+      "win": 1255,
       "pick_rate": 0.0596
     },
     {
@@ -20638,8 +20793,8 @@
         5008,
         5001
       ],
-      "play": 1282,
-      "win": 643,
+      "play": 1287,
+      "win": 644,
       "pick_rate": 0.0321
     }
   ],
@@ -20648,9 +20803,9 @@
       "id": 8010,
       "primary_page_id": 8000,
       "secondary_page_id": 8400,
-      "play": 23616,
-      "win": 11784,
-      "pick_rate": 0.5921,
+      "play": 23719,
+      "win": 11839,
+      "pick_rate": 0.592,
       "builds": [
         {
           "id": 8010,
@@ -20671,9 +20826,9 @@
             5008,
             5001
           ],
-          "play": 5174,
-          "win": 2488,
-          "pick_rate": 0.2191
+          "play": 5205,
+          "win": 2505,
+          "pick_rate": 0.2194
         },
         {
           "id": 8010,
@@ -20694,9 +20849,9 @@
             5008,
             5001
           ],
-          "play": 2834,
-          "win": 1409,
-          "pick_rate": 0.12
+          "play": 2844,
+          "win": 1415,
+          "pick_rate": 0.1199
         },
         {
           "id": 8010,
@@ -20717,8 +20872,8 @@
             5008,
             5001
           ],
-          "play": 1282,
-          "win": 643,
+          "play": 1287,
+          "win": 644,
           "pick_rate": 0.0543
         },
         {
@@ -20740,8 +20895,8 @@
             5008,
             5011
           ],
-          "play": 1097,
-          "win": 581,
+          "play": 1104,
+          "win": 586,
           "pick_rate": 0.0465
         },
         {
@@ -20763,8 +20918,8 @@
             5008,
             5011
           ],
-          "play": 1033,
-          "win": 536,
+          "play": 1036,
+          "win": 537,
           "pick_rate": 0.0437
         }
       ]
@@ -20773,8 +20928,8 @@
       "id": 8010,
       "primary_page_id": 8000,
       "secondary_page_id": 8200,
-      "play": 12044,
-      "win": 6026,
+      "play": 12101,
+      "win": 6060,
       "pick_rate": 0.302,
       "builds": [
         {
@@ -20796,9 +20951,9 @@
             5008,
             5001
           ],
-          "play": 7492,
-          "win": 3679,
-          "pick_rate": 0.6221
+          "play": 7532,
+          "win": 3705,
+          "pick_rate": 0.6224
         },
         {
           "id": 8010,
@@ -20819,9 +20974,9 @@
             5008,
             5011
           ],
-          "play": 2377,
-          "win": 1250,
-          "pick_rate": 0.1974
+          "play": 2386,
+          "win": 1255,
+          "pick_rate": 0.1972
         },
         {
           "id": 8010,
@@ -20842,9 +20997,9 @@
             5008,
             5013
           ],
-          "play": 519,
+          "play": 520,
           "win": 264,
-          "pick_rate": 0.0431
+          "pick_rate": 0.043
         },
         {
           "id": 8010,
@@ -20865,7 +21020,7 @@
             5008,
             5001
           ],
-          "play": 154,
+          "play": 155,
           "win": 80,
           "pick_rate": 0.0128
         },
@@ -20890,7 +21045,7 @@
           ],
           "play": 85,
           "win": 41,
-          "pick_rate": 0.0071
+          "pick_rate": 0.007
         }
       ]
     },
@@ -20898,9 +21053,9 @@
       "id": 8010,
       "primary_page_id": 8000,
       "secondary_page_id": 8300,
-      "play": 1784,
-      "win": 931,
-      "pick_rate": 0.0447,
+      "play": 1794,
+      "win": 939,
+      "pick_rate": 0.0448,
       "builds": [
         {
           "id": 8010,
@@ -20921,9 +21076,9 @@
             5008,
             5011
           ],
-          "play": 660,
-          "win": 355,
-          "pick_rate": 0.37
+          "play": 665,
+          "win": 359,
+          "pick_rate": 0.3707
         },
         {
           "id": 8010,
@@ -20944,9 +21099,9 @@
             5008,
             5001
           ],
-          "play": 419,
-          "win": 219,
-          "pick_rate": 0.2349
+          "play": 422,
+          "win": 221,
+          "pick_rate": 0.2352
         },
         {
           "id": 8010,
@@ -20969,7 +21124,7 @@
           ],
           "play": 74,
           "win": 37,
-          "pick_rate": 0.0415
+          "pick_rate": 0.0412
         },
         {
           "id": 8010,
@@ -20992,7 +21147,7 @@
           ],
           "play": 56,
           "win": 29,
-          "pick_rate": 0.0314
+          "pick_rate": 0.0312
         },
         {
           "id": 8010,
@@ -21015,7 +21170,7 @@
           ],
           "play": 55,
           "win": 24,
-          "pick_rate": 0.0308
+          "pick_rate": 0.0307
         }
       ]
     },
@@ -21023,8 +21178,8 @@
       "id": 8008,
       "primary_page_id": 8000,
       "secondary_page_id": 8400,
-      "play": 690,
-      "win": 355,
+      "play": 694,
+      "win": 358,
       "pick_rate": 0.0173,
       "builds": [
         {
@@ -21048,7 +21203,7 @@
           ],
           "play": 74,
           "win": 30,
-          "pick_rate": 0.1072
+          "pick_rate": 0.1066
         },
         {
           "id": 8008,
@@ -21069,9 +21224,9 @@
             5008,
             5001
           ],
-          "play": 71,
-          "win": 38,
-          "pick_rate": 0.1029
+          "play": 74,
+          "win": 40,
+          "pick_rate": 0.1066
         },
         {
           "id": 8008,
@@ -21094,7 +21249,7 @@
           ],
           "play": 43,
           "win": 19,
-          "pick_rate": 0.0623
+          "pick_rate": 0.062
         },
         {
           "id": 8008,
@@ -21117,7 +21272,7 @@
           ],
           "play": 38,
           "win": 24,
-          "pick_rate": 0.0551
+          "pick_rate": 0.0548
         },
         {
           "id": 8008,
@@ -21140,7 +21295,7 @@
           ],
           "play": 38,
           "win": 18,
-          "pick_rate": 0.0551
+          "pick_rate": 0.0548
         }
       ]
     },
@@ -21148,8 +21303,8 @@
       "id": 8005,
       "primary_page_id": 8000,
       "secondary_page_id": 8400,
-      "play": 321,
-      "win": 152,
+      "play": 322,
+      "win": 153,
       "pick_rate": 0.008,
       "builds": [
         {
@@ -21171,9 +21326,9 @@
             5008,
             5001
           ],
-          "play": 215,
-          "win": 96,
-          "pick_rate": 0.6698
+          "play": 216,
+          "win": 97,
+          "pick_rate": 0.6708
         },
         {
           "id": 8005,
@@ -21196,7 +21351,7 @@
           ],
           "play": 14,
           "win": 6,
-          "pick_rate": 0.0436
+          "pick_rate": 0.0435
         },
         {
           "id": 8005,
@@ -21265,7 +21420,7 @@
           ],
           "play": 6,
           "win": 5,
-          "pick_rate": 0.0187
+          "pick_rate": 0.0186
         }
       ]
     }
@@ -21277,8 +21432,8 @@
         3053,
         3742
       ],
-      "play": 2225,
-      "win": 1402,
+      "play": 2237,
+      "win": 1409,
       "pick_rate": 0.1076
     },
     {
@@ -21287,9 +21442,9 @@
         3742,
         3053
       ],
-      "play": 1620,
-      "win": 1008,
-      "pick_rate": 0.0783
+      "play": 1622,
+      "win": 1010,
+      "pick_rate": 0.078
     },
     {
       "ids": [
@@ -21297,8 +21452,8 @@
         3053,
         3742
       ],
-      "play": 1492,
-      "win": 947,
+      "play": 1499,
+      "win": 951,
       "pick_rate": 0.0721
     },
     {
@@ -21307,9 +21462,9 @@
         3053,
         4401
       ],
-      "play": 1148,
-      "win": 629,
-      "pick_rate": 0.0555
+      "play": 1152,
+      "win": 630,
+      "pick_rate": 0.0554
     },
     {
       "ids": [
@@ -21317,9 +21472,9 @@
         3742,
         3053
       ],
-      "play": 812,
-      "win": 516,
-      "pick_rate": 0.0392
+      "play": 816,
+      "win": 520,
+      "pick_rate": 0.0393
     },
     {
       "ids": [
@@ -21327,8 +21482,8 @@
         3742,
         4401
       ],
-      "play": 794,
-      "win": 460,
+      "play": 799,
+      "win": 465,
       "pick_rate": 0.0384
     },
     {
@@ -21337,9 +21492,9 @@
         3053,
         4401
       ],
-      "play": 754,
-      "win": 443,
-      "pick_rate": 0.0364
+      "play": 758,
+      "win": 444,
+      "pick_rate": 0.0365
     },
     {
       "ids": [
@@ -21349,7 +21504,7 @@
       ],
       "play": 423,
       "win": 260,
-      "pick_rate": 0.0204
+      "pick_rate": 0.0203
     },
     {
       "ids": [
@@ -21357,9 +21512,9 @@
         4401,
         3053
       ],
-      "play": 309,
-      "win": 173,
-      "pick_rate": 0.0149
+      "play": 312,
+      "win": 175,
+      "pick_rate": 0.015
     },
     {
       "ids": [
@@ -21367,8 +21522,8 @@
         3742,
         4401
       ],
-      "play": 302,
-      "win": 177,
+      "play": 304,
+      "win": 178,
       "pick_rate": 0.0146
     },
     {
@@ -21377,8 +21532,8 @@
         4401,
         3742
       ],
-      "play": 277,
-      "win": 153,
+      "play": 278,
+      "win": 154,
       "pick_rate": 0.0134
     },
     {
@@ -21387,8 +21542,8 @@
         3053,
         6665
       ],
-      "play": 238,
-      "win": 122,
+      "play": 239,
+      "win": 123,
       "pick_rate": 0.0115
     },
     {
@@ -21399,7 +21554,7 @@
       ],
       "play": 213,
       "win": 132,
-      "pick_rate": 0.0103
+      "pick_rate": 0.0102
     },
     {
       "ids": [
@@ -21407,18 +21562,18 @@
         3053,
         6665
       ],
-      "play": 193,
-      "win": 126,
+      "play": 194,
+      "win": 127,
       "pick_rate": 0.0093
     },
     {
       "ids": [
         6631,
-        3053,
-        3143
+        3742,
+        3071
       ],
-      "play": 170,
-      "win": 92,
+      "play": 171,
+      "win": 90,
       "pick_rate": 0.0082
     }
   ],
@@ -21427,25 +21582,25 @@
       "ids": [
         3047
       ],
-      "play": 21966,
-      "win": 11151,
-      "pick_rate": 0.5632
+      "play": 22057,
+      "win": 11199,
+      "pick_rate": 0.563
     },
     {
       "ids": [
         3111
       ],
-      "play": 12817,
-      "win": 6372,
-      "pick_rate": 0.3286
+      "play": 12881,
+      "win": 6414,
+      "pick_rate": 0.3288
     },
     {
       "ids": [
         3009
       ],
-      "play": 3955,
-      "win": 2134,
-      "pick_rate": 0.1014
+      "play": 3970,
+      "win": 2144,
+      "pick_rate": 0.1013
     },
     {
       "ids": [
@@ -21470,18 +21625,18 @@
         1055,
         2003
       ],
-      "play": 23113,
-      "win": 11701,
-      "pick_rate": 0.5719
+      "play": 23198,
+      "win": 11756,
+      "pick_rate": 0.5714
     },
     {
       "ids": [
         1054,
         2003
       ],
-      "play": 15796,
-      "win": 7683,
-      "pick_rate": 0.3908
+      "play": 15888,
+      "win": 7728,
+      "pick_rate": 0.3913
     },
     {
       "ids": [
@@ -21500,7 +21655,7 @@
         2003,
         2003
       ],
-      "play": 163,
+      "play": 164,
       "win": 103,
       "pick_rate": 0.004
     },
@@ -21520,7 +21675,7 @@
         2003,
         2003
       ],
-      "play": 133,
+      "play": 134,
       "win": 79,
       "pick_rate": 0.0033
     },
@@ -21540,8 +21695,8 @@
         1054,
         2003
       ],
-      "play": 89,
-      "win": 44,
+      "play": 91,
+      "win": 46,
       "pick_rate": 0.0022
     },
     {
@@ -21552,7 +21707,7 @@
       ],
       "play": 71,
       "win": 39,
-      "pick_rate": 0.0018
+      "pick_rate": 0.0017
     },
     {
       "ids": [
@@ -21571,8 +21726,8 @@
         1054,
         2003
       ],
-      "play": 59,
-      "win": 33,
+      "play": 60,
+      "win": 34,
       "pick_rate": 0.0015
     },
     {
@@ -21590,9 +21745,9 @@
         1083,
         2003
       ],
-      "play": 41,
-      "win": 20,
-      "pick_rate": 0.001
+      "play": 43,
+      "win": 21,
+      "pick_rate": 0.0011
     },
     {
       "ids": [
@@ -21601,8 +21756,8 @@
         2003,
         2003
       ],
-      "play": 36,
-      "win": 17,
+      "play": 37,
+      "win": 18,
       "pick_rate": 0.0009
     },
     {
@@ -21622,167 +21777,167 @@
       "ids": [
         6631
       ],
-      "play": 22235,
-      "win": 11262,
-      "pick_rate": 0.206
+      "play": 22331,
+      "win": 11319,
+      "pick_rate": 0.2059
     },
     {
       "ids": [
         3053
       ],
-      "play": 20454,
-      "win": 11406,
-      "pick_rate": 0.1895
+      "play": 20540,
+      "win": 11453,
+      "pick_rate": 0.1894
     },
     {
       "ids": [
         3078
       ],
-      "play": 15162,
-      "win": 7848,
+      "play": 15234,
+      "win": 7890,
       "pick_rate": 0.1405
     },
     {
       "ids": [
         3742
       ],
-      "play": 15072,
-      "win": 8873,
-      "pick_rate": 0.1396
+      "play": 15147,
+      "win": 8919,
+      "pick_rate": 0.1397
     },
     {
       "ids": [
         4401
       ],
-      "play": 8246,
-      "win": 4566,
+      "play": 8286,
+      "win": 4589,
       "pick_rate": 0.0764
     },
     {
       "ids": [
         3071
       ],
-      "play": 3706,
-      "win": 1857,
+      "play": 3724,
+      "win": 1869,
       "pick_rate": 0.0343
     },
     {
       "ids": [
         6333
       ],
-      "play": 2940,
-      "win": 1793,
+      "play": 2950,
+      "win": 1801,
       "pick_rate": 0.0272
     },
     {
       "ids": [
         6665
       ],
-      "play": 2301,
-      "win": 1307,
-      "pick_rate": 0.0213
+      "play": 2317,
+      "win": 1316,
+      "pick_rate": 0.0214
     },
     {
       "ids": [
         3123
       ],
-      "play": 2178,
-      "win": 1040,
+      "play": 2188,
+      "win": 1045,
       "pick_rate": 0.0202
     },
     {
       "ids": [
         6610
       ],
-      "play": 2169,
-      "win": 1220,
+      "play": 2178,
+      "win": 1227,
       "pick_rate": 0.0201
     },
     {
       "ids": [
         3076
       ],
-      "play": 1899,
-      "win": 850,
+      "play": 1909,
+      "win": 854,
       "pick_rate": 0.0176
     },
     {
       "ids": [
         3075
       ],
-      "play": 1811,
-      "win": 943,
+      "play": 1822,
+      "win": 949,
       "pick_rate": 0.0168
     },
     {
       "ids": [
         3143
       ],
-      "play": 1718,
-      "win": 920,
+      "play": 1726,
+      "win": 926,
       "pick_rate": 0.0159
     },
     {
       "ids": [
         3748
       ],
-      "play": 1238,
-      "win": 685,
-      "pick_rate": 0.0115
+      "play": 1241,
+      "win": 687,
+      "pick_rate": 0.0114
     },
     {
       "ids": [
         2504
       ],
-      "play": 935,
-      "win": 513,
+      "play": 941,
+      "win": 517,
       "pick_rate": 0.0087
     },
     {
       "ids": [
         3156
       ],
-      "play": 829,
-      "win": 448,
+      "play": 835,
+      "win": 453,
       "pick_rate": 0.0077
     },
     {
       "ids": [
         3181
       ],
-      "play": 716,
-      "win": 399,
+      "play": 719,
+      "win": 402,
       "pick_rate": 0.0066
     },
     {
       "ids": [
         3065
       ],
-      "play": 666,
-      "win": 389,
+      "play": 668,
+      "win": 390,
       "pick_rate": 0.0062
     },
     {
       "ids": [
         3077
       ],
-      "play": 663,
-      "win": 215,
+      "play": 666,
+      "win": 216,
       "pick_rate": 0.0061
     },
     {
       "ids": [
         6609
       ],
-      "play": 360,
-      "win": 196,
+      "play": 361,
+      "win": 197,
       "pick_rate": 0.0033
     },
     {
       "ids": [
         3110
       ],
-      "play": 349,
+      "play": 350,
       "win": 193,
       "pick_rate": 0.0032
     },
@@ -21792,13 +21947,13 @@
       ],
       "play": 287,
       "win": 142,
-      "pick_rate": 0.0027
+      "pick_rate": 0.0026
     },
     {
       "ids": [
         2501
       ],
-      "play": 232,
+      "play": 233,
       "win": 136,
       "pick_rate": 0.0021
     },
@@ -21806,47 +21961,47 @@
       "ids": [
         3026
       ],
-      "play": 187,
-      "win": 124,
+      "play": 188,
+      "win": 125,
       "pick_rate": 0.0017
     },
     {
       "ids": [
         3161
       ],
-      "play": 161,
-      "win": 82,
+      "play": 166,
+      "win": 84,
       "pick_rate": 0.0015
     },
     {
       "ids": [
         1038
       ],
-      "play": 139,
-      "win": 100,
+      "play": 140,
+      "win": 101,
       "pick_rate": 0.0013
     },
     {
       "ids": [
         3046
       ],
-      "play": 103,
-      "win": 64,
+      "play": 104,
+      "win": 65,
       "pick_rate": 0.001
     },
     {
       "ids": [
         3139
       ],
-      "play": 103,
-      "win": 62,
+      "play": 105,
+      "win": 64,
       "pick_rate": 0.001
     },
     {
       "ids": [
         6692
       ],
-      "play": 80,
+      "play": 81,
       "win": 35,
       "pick_rate": 0.0007
     },
