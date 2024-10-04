@@ -344,11 +344,11 @@
       "is_rotation": false,
       "is_rip": false,
       "average_stats": {
-        "play": 65091,
-        "win_rate": 0.506153,
-        "pick_rate": 0.096952,
-        "ban_rate": 0.367354,
-        "kda": 2.902593,
+        "play": 65488,
+        "win_rate": 0.506184,
+        "pick_rate": 0.0970453,
+        "ban_rate": 0.367576,
+        "kda": 2.902792,
         "tier": 2,
         "rank": 20,
         "tier_data": {
@@ -362,12 +362,12 @@
         {
           "name": "MID",
           "stats": {
-            "play": 58455,
-            "win_rate": 0.505996,
-            "pick_rate": 0.0871583,
-            "role_rate": 0.89805,
-            "ban_rate": 0.329903,
-            "kda": 2.953818,
+            "play": 58801,
+            "win_rate": 0.505893,
+            "pick_rate": 0.0872253,
+            "role_rate": 0.89789,
+            "ban_rate": 0.330042,
+            "kda": 2.953803,
             "tier_data": {
               "tier": 1,
               "rank": 5,
@@ -379,43 +379,43 @@
             {
               "name": "MAGE",
               "stats": {
-                "win_rate": 0.506862,
-                "role_rate": 0.996611,
-                "play": 58223,
-                "win": 29511
+                "win_rate": 0.506848,
+                "role_rate": 0.996613,
+                "play": 58558,
+                "win": 29680
               }
             }
           ],
           "counters": [
-            {
-              "champion_id": 69,
-              "play": 271,
-              "win": 113
-            },
             {
               "champion_id": 54,
               "play": 86,
               "win": 36
             },
             {
-              "champion_id": 1,
-              "play": 347,
-              "win": 152
+              "champion_id": 69,
+              "play": 273,
+              "win": 115
+            },
+            {
+              "champion_id": 711,
+              "play": 2158,
+              "win": 950
             }
           ]
         },
         {
           "name": "SUPPORT",
           "stats": {
-            "play": 5400,
-            "win_rate": 0.510185,
-            "pick_rate": 0.00816751,
-            "role_rate": 0.0829608,
-            "ban_rate": 0.030476,
-            "kda": 2.535706,
+            "play": 5443,
+            "win_rate": 0.511483,
+            "pick_rate": 0.00819063,
+            "role_rate": 0.0831145,
+            "ban_rate": 0.0305509,
+            "kda": 2.537987,
             "tier_data": {
               "tier": 4,
-              "rank": 28,
+              "rank": 27,
               "rank_prev": 28,
               "rank_prev_patch": 24
             }
@@ -424,19 +424,19 @@
             {
               "name": "MAGE",
               "stats": {
-                "win_rate": 0.511654,
-                "role_rate": 0.984638,
-                "play": 5320,
-                "win": 2722
+                "win_rate": 0.512395,
+                "role_rate": 0.984584,
+                "play": 5365,
+                "win": 2749
               }
             },
             {
               "name": "TANK",
               "stats": {
-                "win_rate": 0.5,
-                "role_rate": 0.010728,
-                "play": 56,
-                "win": 28
+                "win_rate": 0.508772,
+                "role_rate": 0.0104606,
+                "play": 57,
+                "win": 29
               }
             }
           ],
@@ -448,13 +448,13 @@
             },
             {
               "champion_id": 63,
-              "play": 40,
+              "play": 41,
               "win": 16
             },
             {
-              "champion_id": 12,
-              "play": 85,
-              "win": 36
+              "champion_id": 143,
+              "play": 39,
+              "win": 17
             }
           ]
         }
@@ -837,7 +837,7 @@
         },
         {
           "champion_id": 63,
-          "play": 40,
+          "play": 41,
           "win": 16,
           "meta": {
             "id": 63,
@@ -1166,12 +1166,591 @@
               }
             ]
           },
-          "win_rate": 40
+          "win_rate": 39.02
+        },
+        {
+          "champion_id": 143,
+          "play": 39,
+          "win": 17,
+          "meta": {
+            "id": 143,
+            "key": "Zyra",
+            "name": "荆棘之兴",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Zyra.png",
+            "evolve": [],
+            "partype": "法力",
+            "passive": {
+              "name": "荆棘花园",
+              "description": "种子会周期性地在婕拉身边生成，生成速度随等级提升。婕拉可通过在种子附近施放致命棘刺或缠绕之根来让种子长成为婕拉而战的植物。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/ZyraP.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0143/ability_0143_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "致命棘刺",
+                "description": "浓密的藤蔓在地面蔓延，并爆炸成棘刺，对范围内的敌人造成魔法伤害。如果在一颗种子附近施放，那么【Q致命棘刺】就会让种子长成一株荆棘喷射者，可对远处的敌人进行攻击。",
+                "max_rank": 5,
+                "range_burn": [
+                  800
+                ],
+                "cooldown_burn": [
+                  7,
+                  6,
+                  6,
+                  5,
+                  5
+                ],
+                "cooldown_burn_float": [
+                  7,
+                  6.5,
+                  6,
+                  5.5,
+                  5
+                ],
+                "cost_burn": [
+                  55
+                ],
+                "tooltip": "婕拉使稠密的藤蔓们扩散并爆炸成尖刺，造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />如果这个技能在一颗<keywordMajor>种子</keywordMajor>附近施放，那么这颗<keywordMajor>种子</keywordMajor>就会长成荆棘喷射者，造成<magicDamage>?魔法伤害</magicDamage>并持续?秒。荆棘喷射者拥有575攻击距离。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZyraQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0143/ability_0143_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "狂野生长",
+                "description": "婕拉播下一颗种子，最多持续60秒。在种子附近施放【Q致命棘刺】或【E缠绕之根】会让种子长成植物，与婕拉并肩作战。婕拉可以同时存有多个种子，并且击杀敌人会减少【W狂野生长】的充能时间。",
+                "max_rank": 5,
+                "range_burn": [
+                  850
+                ],
+                "cooldown_burn": [
+                  0
+                ],
+                "cooldown_burn_float": [
+                  0
+                ],
+                "cost_burn": [
+                  0
+                ],
+                "tooltip": "婕拉种下一颗持续60秒的<keywordMajor>种子</keywordMajor>。这些<keywordMajor>种子</keywordMajor>在被敌方英雄踩到后会提供该英雄的<keywordStealth>真实视野</keywordStealth>，持续2秒，但仍然会被摧毁。<br /><br />这个技能有2层充能，充能时间为?秒。击杀一个敌方小兵或野怪会使充能时间缩短35%。参与击杀英雄会转而使充能时间缩短100%。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZyraW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0143/ability_0143_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "缠绕之根",
+                "description": "婕拉朝前方放出贯穿地面的藤蔓来诱捕她的目标，藤蔓经过的敌人会受到伤害和束缚效果。如果在一颗种子附近施放，那么【E缠绕之根】就会让种子长成一株藤蔓鞭击者，可进行短程攻击并降低敌人的移动速度。",
+                "max_rank": 5,
+                "range_burn": [
+                  1100
+                ],
+                "cooldown_burn": [
+                  12
+                ],
+                "cooldown_burn_float": [
+                  12
+                ],
+                "cost_burn": [
+                  70,
+                  75,
+                  80,
+                  85,
+                  90
+                ],
+                "tooltip": "婕拉向前方放出藤蔓，<status>禁锢</status>1/1.25/1.5/1.75/2秒并造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />如果这个技能在一颗<keywordMajor>种子</keywordMajor>附近经过，那么这颗<keywordMajor>种子</keywordMajor>就会长成藤蔓鞭击者，造成<magicDamage>?魔法伤害</magicDamage>并持续?秒。藤蔓鞭击者拥有400攻击距离，并且它们的攻击会施加持续2秒的30%<status>减速</status>。来自多个藤蔓鞭击者的<status>减速</status>可以至多叠加?次。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZyraE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0143/ability_0143_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "绞杀之藤",
+                "description": "婕拉在目标区域召唤一个扭曲的密林，在蔓延时对区域内的所有敌人造成伤害，并在收缩时击飞区域内的所有敌人。密林内的植物会被进入激怒状态。",
+                "max_rank": 3,
+                "range_burn": [
+                  700
+                ],
+                "cooldown_burn": [
+                  110,
+                  100,
+                  90
+                ],
+                "cooldown_burn_float": [
+                  110,
+                  100,
+                  90
+                ],
+                "cost_burn": [
+                  100
+                ],
+                "tooltip": "婕拉召唤自然之怒，长出一个扭曲的密林，造成<magicDamage>?魔法伤害</magicDamage>。在2秒后，藤蔓会向上方抽击，使敌人<status>击飞</status>1秒。<br /><br />婕拉在密林中的植物们会被激怒，重置持续时间，获得<healing>50%生命值</healing>并且攻击会造成?%额外伤害。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZyraR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0143/ability_0143_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 143000,
+                "champion_id": 143,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 3150
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 790
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 143003,
+                "champion_id": 143,
+                "name": "SKT T1 婕拉",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_3.jpg",
+                "skin_video_url": "https://youtu.be/c_81WSlUmqk",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-09-25T08:59:00+09:00"
+              },
+              {
+                "id": 143036,
+                "champion_id": 143,
+                "name": "剪纸仙灵 婕拉",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_36.jpg",
+                "skin_video_url": "https://youtu.be/SmYO-eGQKx8",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 143016,
+                "champion_id": 143,
+                "name": "地下都市 梦魇 婕拉",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_16.jpg",
+                "skin_video_url": "https://youtu.be/SY0PeCns7MY",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-08-26T04:00:00+09:00"
+              },
+              {
+                "id": 143046,
+                "champion_id": 143,
+                "name": "妖怪艺术家 婕拉",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_46.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2023-09-13T11:00:00+09:00"
+              },
+              {
+                "id": 143007,
+                "champion_id": 143,
+                "name": "水晶玫瑰 婕拉",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_7.jpg",
+                "skin_video_url": "https://youtu.be/2Vm0Caz4oIU",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-02-11T04:00:00+09:00"
+              },
+              {
+                "id": 143055,
+                "champion_id": 143,
+                "name": "腥红之月 婕拉",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_55.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-04-17T09:00:00+09:00"
+              },
+              {
+                "id": 143006,
+                "champion_id": 143,
+                "name": "至臻 魔女 婕拉",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_6.jpg",
+                "skin_video_url": "https://youtu.be/OTIe4nuX7B4",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 143001,
+                "champion_id": 143,
+                "name": "野火之藤 婕拉",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_1.jpg",
+                "skin_video_url": "https://youtu.be/HUcp0w-60bg",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2012-07-25T02:00:00+09:00"
+              },
+              {
+                "id": 143004,
+                "champion_id": 143,
+                "name": "驯龙女巫 婕拉",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_4.jpg",
+                "skin_video_url": "https://youtu.be/iU7PpRWYGaI",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": [
+                  {
+                    "currency": "RP",
+                    "cost": 607,
+                    "discount_rate": 0.55,
+                    "started_at": "2024-09-30T08:00:00+09:00",
+                    "ended_at": "2024-10-07T08:00:00+09:00"
+                  }
+                ],
+                "release_date": "2017-03-09T02:00:00+09:00"
+              },
+              {
+                "id": 143002,
+                "champion_id": 143,
+                "name": "鬼影森森 婕拉",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_2.jpg",
+                "skin_video_url": "https://youtu.be/VKSqFHAKYqs",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2013-10-30T07:00:00+09:00"
+              },
+              {
+                "id": 143005,
+                "champion_id": 143,
+                "name": "魔女 婕拉",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_5.jpg",
+                "skin_video_url": "https://youtu.be/2_80nQVJSXw",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-04-16T04:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 43.59
+        },
+        {
+          "champion_id": 201,
+          "play": 70,
+          "win": 31,
+          "meta": {
+            "id": 201,
+            "key": "Braum",
+            "name": "弗雷尔卓德之心",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Braum.png",
+            "evolve": [],
+            "partype": "法力",
+            "passive": {
+              "name": "震荡猛击",
+              "description": "布隆的普通攻击会对目标施加震荡猛击效果。一旦施加了第一层震荡猛击，<font color='#FFF673'>友军</font>的普通攻击也会对目标叠加震荡猛击。<br><br>在效果到达4层后，目标会被击晕并受到魔法伤害。在接下来的数秒里，布隆和友军无法再次对目标叠加震荡猛击的层数，但布隆的攻击会对目标造成额外魔法伤害。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Braum_Passive.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0201/ability_0201_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "寒冬之咬",
+                "description": "布隆驱动盾牌中的冷冻冰块，对敌人造成魔法伤害和减速效果。<br><br>对目标施加一层<font color='#FFF673'>震荡猛击</font>。",
+                "max_rank": 5,
+                "range_burn": [
+                  1000
+                ],
+                "cooldown_burn": [
+                  8,
+                  7,
+                  7,
+                  6,
+                  6
+                ],
+                "cooldown_burn_float": [
+                  8,
+                  7.5,
+                  7,
+                  6.5,
+                  6
+                ],
+                "cost_burn": [
+                  45,
+                  50,
+                  55,
+                  60,
+                  65
+                ],
+                "tooltip": "布隆驱动盾牌里的冷冻冰块，对命中的第一个敌人造成<magicDamage>?魔法伤害</magicDamage>和在2秒里持续衰减的70%<status>减速</status>。<br /><br />施加一层<keywordMajor>震荡猛击</keywordMajor>。 ?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BraumQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0201/ability_0201_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "挺身而出",
+                "description": "布隆跃向目标友军英雄或小兵。在抵达时，布隆和友军会暂时获得护甲和魔法抗性加成。",
+                "max_rank": 5,
+                "range_burn": [
+                  650
+                ],
+                "cooldown_burn": [
+                  12,
+                  11,
+                  10,
+                  9,
+                  8
+                ],
+                "cooldown_burn_float": [
+                  12,
+                  11,
+                  10,
+                  9,
+                  8
+                ],
+                "cost_burn": [
+                  40
+                ],
+                "tooltip": "布隆跃向一名友方英雄或小兵。在抵达时，布隆为目标提供持续3秒的<scaleArmor>?护甲</scaleArmor>和<scaleMR>?魔法抗性</scaleMR>。布隆为他自己提供相同持续时间的<scaleArmor>?护甲</scaleArmor>和<scaleMR>?魔法抗性</scaleMR>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BraumW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0201/ability_0201_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "坚不可摧",
+                "description": "布隆朝一个方向举起盾牌，持续数秒，可以拦截所有敌方飞行道具，并将它们摧毁，但自身要承受这些飞行道具的伤害。在举盾后，布隆将使承受的第一次攻击变得完全无效，并降低来自这个方向的所有后续攻击的伤害。",
+                "max_rank": 5,
+                "range_burn": [
+                  25000
+                ],
+                "cooldown_burn": [
+                  16,
+                  14,
+                  12,
+                  10,
+                  8
+                ],
+                "cooldown_burn_float": [
+                  16,
+                  14,
+                  12,
+                  10,
+                  8
+                ],
+                "cost_burn": [
+                  30,
+                  35,
+                  40,
+                  45,
+                  50
+                ],
+                "tooltip": "布隆将他的盾牌举起3/3.25/3.5/3.75/4秒，拦截来自选定方向的所有敌方弹体，使其命中布隆然后被摧毁。布隆格挡的首个弹体不会造成伤害，并且后续弹体造成的伤害降低35/40/45/50/55%。<br /><br />布隆在举盾时获得<speed>10%移动速度</speed>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BraumE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0201/ability_0201_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "冰川裂隙",
+                "description": "布隆敲击地面，击飞他身边和前方一条直线上的所有敌人。此外，还会在前方的直线上留下一条能让敌方减速的裂隙。",
+                "max_rank": 3,
+                "range_burn": [
+                  1250
+                ],
+                "cooldown_burn": [
+                  120,
+                  100,
+                  80
+                ],
+                "cooldown_burn_float": [
+                  120,
+                  100,
+                  80
+                ],
+                "cost_burn": [
+                  100
+                ],
+                "tooltip": "布隆猛砸地面并向前发出一道裂隙，来<status>击飞</status>沿途和布隆身边的敌人，并造成<magicDamage>?魔法伤害</magicDamage>。被命中的第一个目标会被<status>击飞</status>?到?秒，取决于其与布隆之间的距离。被命中的其他目标也会被击飞?秒。<br /><br />裂隙还会留下一个持续?秒的地带，可使敌人<status>减速</status>?%。<br />?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BraumRWrapper.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0201/ability_0201_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 201000,
+                "champion_id": 201,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Braum_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 3150
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 790
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 201010,
+                "champion_id": 201,
+                "name": "圣诞老人 布隆",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Braum_10.jpg",
+                "skin_video_url": "https://youtu.be/RZvyZgeVqeU",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 201001,
+                "champion_id": 201,
+                "name": "屠龙勇士 布隆",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Braum_1.jpg",
+                "skin_video_url": "https://youtu.be/ToDZh2vJHdQ",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2014-05-11T07:00:00+09:00"
+              },
+              {
+                "id": 201003,
+                "champion_id": 201,
+                "name": "布隆·狮心",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Braum_3.jpg",
+                "skin_video_url": "https://youtu.be/dV5O-nBp-EA",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2015-12-07T09:00:00+09:00"
+              },
+              {
+                "id": 201033,
+                "champion_id": 201,
+                "name": "泳池派对 布隆",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Braum_33.jpg",
+                "skin_video_url": "https://youtu.be/yzOUlxAvydU",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-06-09T04:00:00+09:00"
+              },
+              {
+                "id": 201002,
+                "champion_id": 201,
+                "name": "猛虎 布隆",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Braum_2.jpg",
+                "skin_video_url": "https://youtu.be/LYEDFmBckz0",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2015-01-20T15:00:00+09:00"
+              },
+              {
+                "id": 201024,
+                "champion_id": 201,
+                "name": "糖果大战 布隆",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Braum_24.jpg",
+                "skin_video_url": "https://youtu.be/IF1dWKcVfgs",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2019-12-17T04:00:00+09:00"
+              },
+              {
+                "id": 201011,
+                "champion_id": 201,
+                "name": "黑帮管家 布隆",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Braum_11.jpg",
+                "skin_video_url": "https://youtu.be/y65A1w45mt8",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2018-08-22T10:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 44.29
         },
         {
           "champion_id": 12,
-          "play": 85,
-          "win": 36,
+          "play": 88,
+          "win": 39,
           "meta": {
             "id": 12,
             "key": "Alistar",
@@ -1518,133 +2097,487 @@
               }
             ]
           },
-          "win_rate": 42.35
-        },
+          "win_rate": 44.32
+        }
+      ],
+      [
         {
-          "champion_id": 143,
-          "play": 39,
-          "win": 17,
+          "champion_id": 37,
+          "play": 37,
+          "win": 23,
           "meta": {
-            "id": 143,
-            "key": "Zyra",
-            "name": "荆棘之兴",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Zyra.png",
+            "id": 37,
+            "key": "Sona",
+            "name": "琴瑟仙女",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Sona.png",
             "evolve": [],
             "partype": "法力",
             "passive": {
-              "name": "荆棘花园",
-              "description": "种子会周期性地在婕拉身边生成，生成速度随等级提升。婕拉可通过在种子附近施放致命棘刺或缠绕之根来让种子长成为婕拉而战的植物。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/ZyraP.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0143/ability_0143_P1.webm"
+              "name": "能量和弦",
+              "description": "<passive>渐入佳音</passive>：娑娜在出色地使用她的技能时，会获得非终极技能的技能急速，直到达到上限为止。在达到上限之后，后续的成功使用将转而缩短她终极技能的冷却时间。<br><br><passive>能量和弦</passive>：每施放若干次技能，娑娜的下次攻击将造成额外魔法伤害并基于最新激活的基础技能施加一个额外效果。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Sona_Passive_Charged.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0037/ability_0037_P1.webm"
             },
             "spells": [
               {
                 "key": "Q",
-                "name": "致命棘刺",
-                "description": "浓密的藤蔓在地面蔓延，并爆炸成棘刺，对范围内的敌人造成魔法伤害。如果在一颗种子附近施放，那么【Q致命棘刺】就会让种子长成一株荆棘喷射者，可对远处的敌人进行攻击。",
+                "name": "英勇赞美诗",
+                "description": "娑娜弹奏英勇赞美诗，弹出音波，对附近的两名敌人造成魔法伤害，优先选取英雄和野怪为目标。娑娜会暂时获得一个光环，为附近友军的下一次攻击提供额外魔法伤害。",
+                "max_rank": 5,
+                "range_burn": [
+                  825
+                ],
+                "cooldown_burn": [
+                  8
+                ],
+                "cooldown_burn_float": [
+                  8
+                ],
+                "cost_burn": [
+                  50,
+                  55,
+                  60,
+                  65,
+                  70
+                ],
+                "tooltip": "娑娜对相距最近的2名敌人造成<magicDamage>?魔法伤害</magicDamage>，优先以英雄为目标。她随后会开始一段新的<keywordMajor>旋律</keywordMajor>。这个技能每对一名敌方英雄造成伤害就会获得1层<keywordMajor>渐入佳音</keywordMajor>。<br /><br /><keywordMajor>旋律：</keywordMajor>娑娜获得一个持续?秒的光环，来使其中的友方英雄在?秒内的下一次攻击附带<magicDamage>?魔法伤害</magicDamage> %i:OnHit%。<br /><br /><keywordMajor>能量和弦—断奏：</keywordMajor>【能量和弦】造成额外伤害 (<magicDamage>?总魔法伤害</magicDamage>)。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SonaQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0037/ability_0037_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "坚毅咏叹调",
+                "description": "娑娜弹奏坚毅咏叹调，弹出保护性的旋律，治疗娑娜和附近的一个受伤的友军。娑娜会暂时获得一个光环，为附近的友军提供一层护盾。",
+                "max_rank": 5,
+                "range_burn": [
+                  1000
+                ],
+                "cooldown_burn": [
+                  10
+                ],
+                "cooldown_burn_float": [
+                  10
+                ],
+                "cost_burn": [
+                  80,
+                  85,
+                  90,
+                  95,
+                  100
+                ],
+                "tooltip": "<spellPassive>主动：</spellPassive>娑娜为她自己和一名附近的友方英雄回复<healing>?生命值</healing>，优先以伤势最重的英雄为目标。她随后会开始一段新的<keywordMajor>旋律</keywordMajor>。<br /><br /><keywordMajor>旋律：</keywordMajor>娑娜获得一个持续?秒的光环，来为其中的友方英雄提供持续?秒的<shield>?护盾值</shield>。<br /><br />每当你治疗了一名受伤的友方英雄，或用这个护盾为一名友方英雄格挡了至少?伤害时，都会获得一层<keywordMajor>渐入佳音</keywordMajor>。<br /><br /><keywordMajor>能量和弦—渐弱：</keywordMajor>【能量和弦】也会使目标造成的物理和魔法伤害降低?，持续?秒。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SonaW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0037/ability_0037_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "迅捷奏鸣曲",
+                "description": "娑娜弹奏迅捷奏鸣曲，为她自己提供移动速度加成。娑娜会暂时获得一个光环，为进入区域的友方英雄提供移动速度加成。",
+                "max_rank": 5,
+                "range_burn": [
+                  430
+                ],
+                "cooldown_burn": [
+                  14
+                ],
+                "cooldown_burn_float": [
+                  14
+                ],
+                "cost_burn": [
+                  65
+                ],
+                "tooltip": "<spellPassive>主动：</spellPassive>她开始一段新的<keywordMajor>旋律</keywordMajor>并为自身提供<speed>?移动速度</speed>，持续?秒，如果她未受到伤害则延长至最多?秒。<br /><br /><keywordMajor>旋律：</keywordMajor>娑娜获得一个持续?秒的光环，来为其中的友方英雄提供<speed>?移动速度</speed>，持续?秒。<br /><br /><keywordMajor>能量和弦—节奏：</keywordMajor>【能量和弦】还会对目标造成持续?秒的?的<status>减速</status>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SonaE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0037/ability_0037_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "狂舞终乐章",
+                "description": "娑娜弹奏她的终极和弦，对敌方英雄造成魔法伤害，并晕眩他们，强制他们开始跳舞。这个技能的等级会减少所有基础技能的基础冷却时间。",
+                "max_rank": 3,
+                "range_burn": [
+                  900
+                ],
+                "cooldown_burn": [
+                  140,
+                  120,
+                  100
+                ],
+                "cooldown_burn_float": [
+                  140,
+                  120,
+                  100
+                ],
+                "cost_burn": [
+                  100
+                ],
+                "tooltip": "娑娜弹出一段不可抗拒的音符，对敌人造成?秒<status>晕眩</status>和<magicDamage>?魔法伤害</magicDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SonaR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0037/ability_0037_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 37000,
+                "champion_id": 37,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 450
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 260
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 37006,
+                "champion_id": 37,
+                "name": "DJ 娑娜",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_6.jpg",
+                "skin_video_url": "https://youtu.be/MGx75GaGnuc",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 3250
+                  }
+                ],
+                "sales": null,
+                "release_date": "2015-02-12T05:39:57+09:00"
+              },
+              {
+                "id": 37026,
+                "champion_id": 37,
+                "name": "五杀摇滚 III：遗失的章节 娑娜",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_26.jpg",
+                "skin_video_url": "https://youtu.be/XmlzPhCjoag",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-09-09T04:00:00+09:00"
+              },
+              {
+                "id": 37002,
+                "champion_id": 37,
+                "name": "五杀摇滚键盘手 娑娜",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_2.jpg",
+                "skin_video_url": "https://youtu.be/msYMaQip0Gc",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2010-07-12T15:00:00+09:00"
+              },
+              {
+                "id": 37004,
+                "champion_id": 37,
+                "name": "古琴余韵 娑娜",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_4.jpg",
+                "skin_video_url": "https://youtu.be/u29w2AZsnks",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2012-01-11T21:00:00+09:00"
+              },
+              {
+                "id": 37009,
+                "champion_id": 37,
+                "name": "奥德赛 娑娜",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_9.jpg",
+                "skin_video_url": "https://youtu.be/CoB9IIFEdzY",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2018-09-10T22:00:00+09:00"
+              },
+              {
+                "id": 37003,
+                "champion_id": 37,
+                "name": "平安夜女神 娑娜",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_3.jpg",
+                "skin_video_url": "https://youtu.be/LuiTvxEl8Ag",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 520
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 37035,
+                "champion_id": 37,
+                "name": "星之守护者 娑娜",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_35.jpg",
+                "skin_video_url": "https://youtu.be/_03yQzZrQ0o",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2022-07-14T04:00:00+09:00"
+              },
+              {
+                "id": 37017,
+                "champion_id": 37,
+                "name": "灵能特工 娑娜",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_17.jpg",
+                "skin_video_url": "https://youtu.be/K_qC14FO3a8",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1820
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-09-03T04:00:00+09:00"
+              },
+              {
+                "id": 37045,
+                "champion_id": 37,
+                "name": "玉剑传说 琴仙子",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_45.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2023-08-16T11:00:00+09:00"
+              },
+              {
+                "id": 37007,
+                "champion_id": 37,
+                "name": "甜心宝贝 娑娜",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_7.jpg",
+                "skin_video_url": "https://youtu.be/zmwW7sKLgLA",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 37005,
+                "champion_id": 37,
+                "name": "电玩女神 娑娜",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_5.jpg",
+                "skin_video_url": "https://youtu.be/zY26Xh-ep2M",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2012-09-04T23:00:00+09:00"
+              },
+              {
+                "id": 37001,
+                "champion_id": 37,
+                "name": "缪斯女神 娑娜",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_1.jpg",
+                "skin_video_url": "https://youtu.be/g-jB7qVGVhM",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 37056,
+                "champion_id": 37,
+                "name": "胜利女神 娑娜",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_56.jpg",
+                "skin_video_url": null,
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 37046,
+                "champion_id": 37,
+                "name": "至臻 玉剑传说 琴仙子",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_46.jpg",
+                "skin_video_url": null,
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              }
+            ]
+          },
+          "win_rate": 62.16
+        },
+        {
+          "champion_id": 43,
+          "play": 156,
+          "win": 96,
+          "meta": {
+            "id": 43,
+            "key": "Karma",
+            "name": "天启者",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Karma.png",
+            "evolve": [],
+            "partype": "法力",
+            "passive": {
+              "name": "聚能之炎",
+              "description": "卡尔玛的伤害型技能将缩短梵咒的冷却时间。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Karma_Passive.png",
+              "video_url": null
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "心灵烈焰",
+                "description": "卡尔玛向前方发射一枚灵能法球。这枚法球会在命中第一个敌人时爆炸，并造成伤害。<br><br>梵咒增效：除爆炸之外，梵咒还会提升她的心灵烈焰的破坏力，同时创造出一个火环，火环会在短暂的延时后造成伤害。",
+                "max_rank": 5,
+                "range_burn": [
+                  950
+                ],
+                "cooldown_burn": [
+                  9,
+                  8,
+                  7,
+                  6,
+                  5
+                ],
+                "cooldown_burn_float": [
+                  9,
+                  8,
+                  7,
+                  6,
+                  5
+                ],
+                "cost_burn": [
+                  40,
+                  50,
+                  60,
+                  70,
+                  80
+                ],
+                "tooltip": "卡尔玛发射一团能量，对命中的第一个目标及其周围的敌人们造成<magicDamage>?魔法伤害</magicDamage>，以及持续?秒的?%<status>减速</status>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/KarmaQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0043/ability_0043_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "坚定不移",
+                "description": "卡尔玛在她和目标敌人之间产生一条灵链，同时造成伤害，并使目标暴露。如果灵链在一段时间内没有被破坏，那么目标敌人就会被束缚在原地并再次受到伤害。<br><br>梵咒增效：卡尔玛强化灵链，治疗自身并延长禁锢时长。",
+                "max_rank": 5,
+                "range_burn": [
+                  675
+                ],
+                "cooldown_burn": [
+                  12
+                ],
+                "cooldown_burn_float": [
+                  12
+                ],
+                "cost_burn": [
+                  50,
+                  55,
+                  60,
+                  65,
+                  70
+                ],
+                "tooltip": "卡尔玛用灵链来连接她和一名敌方英雄或野怪，造成<magicDamage>?魔法伤害</magicDamage>并使其显形?秒。如果灵链一直未断裂，那么目标会再次受到<magicDamage>?魔法伤害</magicDamage>并被<status>禁锢</status>?秒。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/KarmaSpiritBind.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0043/ability_0043_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "鼓舞",
+                "description": "卡尔玛召唤一个防御性的护盾来吸收即将到来的伤害，并为目标友军提升移动速度。<br><br>梵咒增效：能量从目标处向外辐射，强化初始护盾，并对附近的友方英雄施加鼓舞效果。",
                 "max_rank": 5,
                 "range_burn": [
                   800
                 ],
                 "cooldown_burn": [
-                  7,
-                  6,
-                  6,
-                  5,
-                  5
+                  10,
+                  9,
+                  9,
+                  8,
+                  8
                 ],
                 "cooldown_burn_float": [
-                  7,
-                  6.5,
-                  6,
-                  5.5,
-                  5
+                  10,
+                  9.5,
+                  9,
+                  8.5,
+                  8
                 ],
                 "cost_burn": [
-                  55
+                  50,
+                  55,
+                  60,
+                  65,
+                  70
                 ],
-                "tooltip": "婕拉使稠密的藤蔓们扩散并爆炸成尖刺，造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />如果这个技能在一颗<keywordMajor>种子</keywordMajor>附近施放，那么这颗<keywordMajor>种子</keywordMajor>就会长成荆棘喷射者，造成<magicDamage>?魔法伤害</magicDamage>并持续?秒。荆棘喷射者拥有575攻击距离。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZyraQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0143/ability_0143_Q1.webm"
+                "tooltip": "卡尔玛为一名友方英雄提供持续?秒的<shield>?护盾值</shield>和持续?秒的<speed>?%移动速度</speed>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/KarmaSolKimShield.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0043/ability_0043_E1.webm"
               },
               {
-                "key": "W",
-                "name": "狂野生长",
-                "description": "婕拉播下一颗种子，最多持续60秒。在种子附近施放【Q致命棘刺】或【E缠绕之根】会让种子长成植物，与婕拉并肩作战。婕拉可以同时存有多个种子，并且击杀敌人会减少【W狂野生长】的充能时间。",
-                "max_rank": 5,
-                "range_burn": [
-                  850
-                ],
-                "cooldown_burn": [
-                  0
-                ],
-                "cooldown_burn_float": [
-                  0
-                ],
-                "cost_burn": [
-                  0
-                ],
-                "tooltip": "婕拉种下一颗持续60秒的<keywordMajor>种子</keywordMajor>。这些<keywordMajor>种子</keywordMajor>在被敌方英雄踩到后会提供该英雄的<keywordStealth>真实视野</keywordStealth>，持续2秒，但仍然会被摧毁。<br /><br />这个技能有2层充能，充能时间为?秒。击杀一个敌方小兵或野怪会使充能时间缩短35%。参与击杀英雄会转而使充能时间缩短100%。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZyraW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0143/ability_0143_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "缠绕之根",
-                "description": "婕拉朝前方放出贯穿地面的藤蔓来诱捕她的目标，藤蔓经过的敌人会受到伤害和束缚效果。如果在一颗种子附近施放，那么【E缠绕之根】就会让种子长成一株藤蔓鞭击者，可进行短程攻击并降低敌人的移动速度。",
-                "max_rank": 5,
+                "key": "R",
+                "name": "梵咒",
+                "description": "卡尔玛的下个技能会获得强化，造成额外特效。梵咒在1级时就可以使用，并且不需要投入技能点。",
+                "max_rank": 4,
                 "range_burn": [
                   1100
                 ],
                 "cooldown_burn": [
-                  12
+                  40,
+                  38,
+                  36,
+                  34
                 ],
                 "cooldown_burn_float": [
-                  12
+                  40,
+                  38,
+                  36,
+                  34
                 ],
                 "cost_burn": [
-                  70,
-                  75,
-                  80,
-                  85,
-                  90
+                  0
                 ],
-                "tooltip": "婕拉向前方放出藤蔓，<status>禁锢</status>1/1.25/1.5/1.75/2秒并造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />如果这个技能在一颗<keywordMajor>种子</keywordMajor>附近经过，那么这颗<keywordMajor>种子</keywordMajor>就会长成藤蔓鞭击者，造成<magicDamage>?魔法伤害</magicDamage>并持续?秒。藤蔓鞭击者拥有400攻击距离，并且它们的攻击会施加持续2秒的30%<status>减速</status>。来自多个藤蔓鞭击者的<status>减速</status>可以至多叠加?次。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZyraE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0143/ability_0143_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "绞杀之藤",
-                "description": "婕拉在目标区域召唤一个扭曲的密林，在蔓延时对区域内的所有敌人造成伤害，并在收缩时击飞区域内的所有敌人。密林内的植物会被进入激怒状态。",
-                "max_rank": 3,
-                "range_burn": [
-                  700
-                ],
-                "cooldown_burn": [
-                  110,
-                  100,
-                  90
-                ],
-                "cooldown_burn_float": [
-                  110,
-                  100,
-                  90
-                ],
-                "cost_burn": [
-                  100
-                ],
-                "tooltip": "婕拉召唤自然之怒，长出一个扭曲的密林，造成<magicDamage>?魔法伤害</magicDamage>。在2秒后，藤蔓会向上方抽击，使敌人<status>击飞</status>1秒。<br /><br />婕拉在密林中的植物们会被激怒，重置持续时间，获得<healing>50%生命值</healing>并且攻击会造成?%额外伤害。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZyraR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0143/ability_0143_R1.webm"
+                "tooltip": "卡尔玛增强她在8秒内使用的下一个技能。<br /><li><spellName>心灵烈焰</spellName>：造成额外的<magicDamage>?魔法伤害</magicDamage>并留下一道烈焰圆环，<status>减速</status>敌人并造成额外的<magicDamage>?魔法伤害</magicDamage>。<li><spellName>坚定不移</spellName>：卡尔玛将在灵链的开始和结束时回复<healing>?已损失生命值</healing>，并且<status>禁锢</status>延长?秒。<li><spellName>鼓舞</spellName>：卡尔玛为她的目标提供<shield>额外的?护盾值</shield>，并且还会对目标附近的友军提供护盾，为他们提供<shield>?护盾值</shield>和<speed>?%移动速度</speed>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/KarmaMantra.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0043/ability_0043_R1.webm"
               }
             ],
             "skins": [
               {
-                "id": 143000,
-                "champion_id": 143,
+                "id": 43000,
+                "champion_id": 43,
                 "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_0.jpg",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_0.jpg",
                 "skin_video_url": null,
                 "prices": [
                   {
@@ -1660,11 +2593,21 @@
                 "release_date": null
               },
               {
-                "id": 143003,
-                "champion_id": 143,
-                "name": "SKT T1 婕拉",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_3.jpg",
-                "skin_video_url": "https://youtu.be/c_81WSlUmqk",
+                "id": 43003,
+                "champion_id": 43,
+                "name": "传统服饰 卡尔玛",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_3.jpg",
+                "skin_video_url": "https://youtu.be/Iw3jwFtLZHA",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 43005,
+                "champion_id": 43,
+                "name": "光明骑士 卡尔玛",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_5.jpg",
+                "skin_video_url": "https://youtu.be/aJcS-5VqTY0",
                 "prices": [
                   {
                     "currency": "RP",
@@ -1672,14 +2615,14 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2024-09-25T08:59:00+09:00"
+                "release_date": "2015-10-01T10:00:00+09:00"
               },
               {
-                "id": 143036,
-                "champion_id": 143,
-                "name": "剪纸仙灵 婕拉",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_36.jpg",
-                "skin_video_url": "https://youtu.be/SmYO-eGQKx8",
+                "id": 43006,
+                "champion_id": 43,
+                "name": "冬季仙境 卡尔玛",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_6.jpg",
+                "skin_video_url": "https://youtu.be/aFh1Upp3nOY",
                 "prices": [
                   {
                     "currency": "RP",
@@ -1690,11 +2633,11 @@
                 "release_date": null
               },
               {
-                "id": 143016,
-                "champion_id": 143,
-                "name": "地下都市 梦魇 婕拉",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_16.jpg",
-                "skin_video_url": "https://youtu.be/SY0PeCns7MY",
+                "id": 43061,
+                "champion_id": 43,
+                "name": "地狱火 卡尔玛",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_61.jpg",
+                "skin_video_url": "https://youtu.be/wJdpE11EJOU",
                 "prices": [
                   {
                     "currency": "RP",
@@ -1702,14 +2645,14 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2021-08-26T04:00:00+09:00"
+                "release_date": "2024-05-30T09:00:00+09:00"
               },
               {
-                "id": 143046,
-                "champion_id": 143,
-                "name": "妖怪艺术家 婕拉",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_46.jpg",
-                "skin_video_url": null,
+                "id": 43026,
+                "champion_id": 43,
+                "name": "奥德赛 卡尔玛",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_26.jpg",
+                "skin_video_url": "https://youtu.be/-ev9bME_3Sk",
                 "prices": [
                   {
                     "currency": "RP",
@@ -1717,54 +2660,14 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2023-09-13T11:00:00+09:00"
+                "release_date": "2020-10-15T04:00:00+09:00"
               },
               {
-                "id": 143007,
-                "champion_id": 143,
-                "name": "水晶玫瑰 婕拉",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_7.jpg",
-                "skin_video_url": "https://youtu.be/2Vm0Caz4oIU",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2021-02-11T04:00:00+09:00"
-              },
-              {
-                "id": 143055,
-                "champion_id": 143,
-                "name": "腥红之月 婕拉",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_55.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2024-04-17T09:00:00+09:00"
-              },
-              {
-                "id": 143006,
-                "champion_id": 143,
-                "name": "至臻 魔女 婕拉",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_6.jpg",
-                "skin_video_url": "https://youtu.be/OTIe4nuX7B4",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 143001,
-                "champion_id": 143,
-                "name": "野火之藤 婕拉",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_1.jpg",
-                "skin_video_url": "https://youtu.be/HUcp0w-60bg",
+                "id": 43007,
+                "champion_id": 43,
+                "name": "征服者 卡尔玛",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_7.jpg",
+                "skin_video_url": "https://youtu.be/Ajunb1OImuk",
                 "prices": [
                   {
                     "currency": "RP",
@@ -1772,234 +2675,24 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2012-07-25T02:00:00+09:00"
+                "release_date": null
               },
               {
-                "id": 143004,
-                "champion_id": 143,
-                "name": "驯龙女巫 婕拉",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_4.jpg",
-                "skin_video_url": "https://youtu.be/iU7PpRWYGaI",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": [
-                  {
-                    "currency": "RP",
-                    "cost": 607,
-                    "discount_rate": 0.55,
-                    "started_at": "2024-09-30T08:00:00+09:00",
-                    "ended_at": "2024-10-07T08:00:00+09:00"
-                  }
-                ],
-                "release_date": "2017-03-09T02:00:00+09:00"
-              },
-              {
-                "id": 143002,
-                "champion_id": 143,
-                "name": "鬼影森森 婕拉",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_2.jpg",
-                "skin_video_url": "https://youtu.be/VKSqFHAKYqs",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2013-10-30T07:00:00+09:00"
-              },
-              {
-                "id": 143005,
-                "champion_id": 143,
-                "name": "魔女 婕拉",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zyra_5.jpg",
-                "skin_video_url": "https://youtu.be/2_80nQVJSXw",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2020-04-16T04:00:00+09:00"
-              }
-            ]
-          },
-          "win_rate": 43.59
-        },
-        {
-          "champion_id": 101,
-          "play": 80,
-          "win": 35,
-          "meta": {
-            "id": 101,
-            "key": "Xerath",
-            "name": "远古巫灵",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Xerath.png",
-            "evolve": [],
-            "partype": "法力",
-            "passive": {
-              "name": "法力澎湃",
-              "description": "泽拉斯的普通攻击会周期性地恢复法力值。每当泽拉斯击杀了一个单位时，这个冷却时间就会缩短。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Xerath_Passive1.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0101/ability_0101_P1.webm"
-            },
-            "spells": [
-              {
-                "key": "Q",
-                "name": "奥能脉冲",
-                "description": "泽拉斯聚集能量，随后发射出一道射程很远的能量光束，对所有命中的目标造成魔法伤害。",
-                "max_rank": 5,
-                "range_burn": [
-                  750
-                ],
-                "cooldown_burn": [
-                  9,
-                  8,
-                  7,
-                  6,
-                  5
-                ],
-                "cooldown_burn_float": [
-                  9,
-                  8,
-                  7,
-                  6,
-                  5
-                ],
-                "cost_burn": [
-                  80,
-                  90,
-                  100,
-                  110,
-                  120
-                ],
-                "tooltip": "<charge>开始蓄力：</charge>泽拉斯开始积蓄一次奥术光束，自身逐步<status>减速</status>，至多可达50%。<br /><br /><release>释放：</release>泽拉斯发射光束，造成<magicDamage>?魔法伤害</magicDamage>。距离随蓄力时间提升。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/XerathArcanopulseChargeUp.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0101/ability_0101_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "毁灭之眼",
-                "description": "在目标区域降下奥术能量的弹幕，对一个区域内的所有敌人造成减速效果和魔法伤害。区域中心的目标会受到额外伤害和一个更强大的减速效果。",
-                "max_rank": 5,
-                "range_burn": [
-                  1000
-                ],
-                "cooldown_burn": [
-                  14,
-                  13,
-                  12,
-                  11,
-                  10
-                ],
-                "cooldown_burn_float": [
-                  14,
-                  13,
-                  12,
-                  11,
-                  10
-                ],
-                "cost_burn": [
-                  80,
-                  90,
-                  100,
-                  110,
-                  120
-                ],
-                "tooltip": "泽拉斯引爆目标区域的奥术能量，造成<magicDamage>?魔法伤害</magicDamage>并使敌人<status>减速</status>?%，持续?秒。区域中心的敌人会受到<magicDamage>?魔法伤害</magicDamage>，并被<status>减速</status>?%，减速效果会在?秒里持续衰减。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/XerathArcaneBarrage2.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0101/ability_0101_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "冲击法球",
-                "description": "对单个敌人造成魔法伤害和晕眩效果。",
-                "max_rank": 5,
-                "range_burn": [
-                  1050
-                ],
-                "cooldown_burn": [
-                  13,
-                  12,
-                  12,
-                  11,
-                  11
-                ],
-                "cooldown_burn_float": [
-                  13,
-                  12.5,
-                  12,
-                  11.5,
-                  11
-                ],
-                "cost_burn": [
-                  60,
-                  65,
-                  70,
-                  75,
-                  80
-                ],
-                "tooltip": "泽拉斯发射一颗原生魔法之球，基于飞行距离使命中第一个的敌人<status>晕眩</status>至多?秒，并造成<magicDamage>?魔法伤害</magicDamage>。 ?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/XerathMageSpear.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0101/ability_0101_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "奥术仪式",
-                "description": "泽拉斯将自己固定在一处魔力之源上，并获得数次远程施法的机会。",
-                "max_rank": 3,
-                "range_burn": [
-                  5000
-                ],
-                "cooldown_burn": [
-                  130,
-                  115,
-                  100
-                ],
-                "cooldown_burn_float": [
-                  130,
-                  115,
-                  100
-                ],
-                "cost_burn": [
-                  100
-                ],
-                "tooltip": "泽拉斯飞升至他的真正形态并引导10秒。在此期间，他可以<recast>再次施放</recast>此技能至多4/5/6次。<br /><br /><recast>再次施放：</recast>泽拉斯发射一道魔法炮击，造成<magicDamage>?魔法伤害</magicDamage>。每次命中英雄时，炮击都会造成额外的<magicDamage>?魔法伤害</magicDamage>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/XerathLocusOfPower2.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0101/ability_0101_R1.webm"
-              }
-            ],
-            "skins": [
-              {
-                "id": 101000,
-                "champion_id": 101,
-                "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_0.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "IP",
-                    "cost": 1350
-                  },
-                  {
-                    "currency": "RP",
-                    "cost": 585
-                  }
-                ],
+                "id": 43001,
+                "champion_id": 43,
+                "name": "日冕女神 卡尔玛",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_1.jpg",
+                "skin_video_url": "https://youtu.be/IE8hGXELLDo",
+                "prices": null,
                 "sales": null,
                 "release_date": null
               },
               {
-                "id": 101021,
-                "champion_id": 101,
-                "name": "宇航员 泽拉斯",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_21.jpg",
-                "skin_video_url": "https://youtu.be/OjctXSqUTss",
+                "id": 43008,
+                "champion_id": 43,
+                "name": "暗星 卡尔玛",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_8.jpg",
+                "skin_video_url": "https://youtu.be/qLdm4SlkPd4",
                 "prices": [
                   {
                     "currency": "RP",
@@ -2007,14 +2700,14 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2023-02-24T04:00:00+09:00"
+                "release_date": "2019-06-13T01:00:00+09:00"
               },
               {
-                "id": 101002,
-                "champion_id": 101,
-                "name": "战地法师 泽拉斯",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_2.jpg",
-                "skin_video_url": "https://youtu.be/2tHHmNjN-To",
+                "id": 43002,
+                "champion_id": 43,
+                "name": "樱花乱舞 卡尔玛",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_2.jpg",
+                "skin_video_url": "https://youtu.be/Kzs5Iine6bQ",
                 "prices": [
                   {
                     "currency": "RP",
@@ -2022,14 +2715,14 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2011-10-06T14:00:00+09:00"
+                "release_date": "2011-01-31T20:00:00+09:00"
               },
               {
-                "id": 101005,
-                "champion_id": 101,
-                "name": "暗星 泽拉斯",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_5.jpg",
-                "skin_video_url": "https://youtu.be/LptoG7mqWSM",
+                "id": 43027,
+                "champion_id": 43,
+                "name": "破败军团 卡尔玛",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_27.jpg",
+                "skin_video_url": "https://youtu.be/MpA-Z-v7PTc",
                 "prices": [
                   {
                     "currency": "RP",
@@ -2037,14 +2730,14 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2020-03-26T04:00:00+09:00"
+                "release_date": "2021-01-21T04:00:00+09:00"
               },
               {
-                "id": 101003,
-                "champion_id": 101,
-                "name": "枯萎之壤 泽拉斯",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_3.jpg",
-                "skin_video_url": "https://youtu.be/wRWnvPWzyXk",
+                "id": 43044,
+                "champion_id": 43,
+                "name": "神龙尊者 宁静之龙 卡尔玛",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_44.jpg",
+                "skin_video_url": "https://youtu.be/i3qi95mkXII",
                 "prices": [
                   {
                     "currency": "RP",
@@ -2052,72 +2745,55 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2012-07-20T08:00:00+09:00"
+                "release_date": "2021-10-21T04:00:00+09:00"
               },
               {
-                "id": 101012,
-                "champion_id": 101,
-                "name": "欲望之主 泽拉斯",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_12.jpg",
-                "skin_video_url": "https://youtu.be/fFSwwdDk_7k",
+                "id": 43054,
+                "champion_id": 43,
+                "name": "花仙女王 卡尔玛",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_54.jpg",
+                "skin_video_url": "https://youtu.be/kUlFiU6Oa-E",
                 "prices": [
                   {
                     "currency": "RP",
-                    "cost": 1350
+                    "cost": 1820
                   }
                 ],
                 "sales": null,
-                "release_date": "2021-05-13T04:00:00+09:00"
+                "release_date": "2023-03-23T04:00:00+09:00"
               },
               {
-                "id": 101030,
-                "champion_id": 101,
-                "name": "水晶巫灵 泽拉斯",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_30.jpg",
-                "skin_video_url": null,
+                "id": 43004,
+                "champion_id": 43,
+                "name": "莲花之令 卡尔玛",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_4.jpg",
+                "skin_video_url": "https://youtu.be/0SlE_uXopnc",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2014-10-02T16:00:00+09:00"
+              },
+              {
+                "id": 43019,
+                "champion_id": 43,
+                "name": "黎明使者 卡尔玛",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_19.jpg",
+                "skin_video_url": "https://youtu.be/TAMGl-7iEiE",
                 "prices": null,
                 "sales": null,
                 "release_date": null
-              },
-              {
-                "id": 101004,
-                "champion_id": 101,
-                "name": "沙之守护 泽拉斯",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_4.jpg",
-                "skin_video_url": "https://youtu.be/AQvqbwQtK4M",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2015-04-27T10:00:00+09:00"
-              },
-              {
-                "id": 101001,
-                "champion_id": 101,
-                "name": "符文生物 泽拉斯",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Xerath_1.jpg",
-                "skin_video_url": "https://youtu.be/Zy9nSATyXbk",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 750
-                  }
-                ],
-                "sales": null,
-                "release_date": "2011-10-06T15:00:00+09:00"
               }
             ]
           },
-          "win_rate": 43.75
-        }
-      ],
-      [
+          "win_rate": 61.54
+        },
         {
           "champion_id": 25,
-          "play": 32,
+          "play": 33,
           "win": 20,
           "meta": {
             "id": 25,
@@ -2473,701 +3149,11 @@
               }
             ]
           },
-          "win_rate": 62.5
-        },
-        {
-          "champion_id": 37,
-          "play": 37,
-          "win": 23,
-          "meta": {
-            "id": 37,
-            "key": "Sona",
-            "name": "琴瑟仙女",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Sona.png",
-            "evolve": [],
-            "partype": "法力",
-            "passive": {
-              "name": "能量和弦",
-              "description": "<passive>渐入佳音</passive>：娑娜在出色地使用她的技能时，会获得非终极技能的技能急速，直到达到上限为止。在达到上限之后，后续的成功使用将转而缩短她终极技能的冷却时间。<br><br><passive>能量和弦</passive>：每施放若干次技能，娑娜的下次攻击将造成额外魔法伤害并基于最新激活的基础技能施加一个额外效果。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Sona_Passive_Charged.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0037/ability_0037_P1.webm"
-            },
-            "spells": [
-              {
-                "key": "Q",
-                "name": "英勇赞美诗",
-                "description": "娑娜弹奏英勇赞美诗，弹出音波，对附近的两名敌人造成魔法伤害，优先选取英雄和野怪为目标。娑娜会暂时获得一个光环，为附近友军的下一次攻击提供额外魔法伤害。",
-                "max_rank": 5,
-                "range_burn": [
-                  825
-                ],
-                "cooldown_burn": [
-                  8
-                ],
-                "cooldown_burn_float": [
-                  8
-                ],
-                "cost_burn": [
-                  50,
-                  55,
-                  60,
-                  65,
-                  70
-                ],
-                "tooltip": "娑娜对相距最近的2名敌人造成<magicDamage>?魔法伤害</magicDamage>，优先以英雄为目标。她随后会开始一段新的<keywordMajor>旋律</keywordMajor>。这个技能每对一名敌方英雄造成伤害就会获得1层<keywordMajor>渐入佳音</keywordMajor>。<br /><br /><keywordMajor>旋律：</keywordMajor>娑娜获得一个持续?秒的光环，来使其中的友方英雄在?秒内的下一次攻击附带<magicDamage>?魔法伤害</magicDamage> %i:OnHit%。<br /><br /><keywordMajor>能量和弦—断奏：</keywordMajor>【能量和弦】造成额外伤害 (<magicDamage>?总魔法伤害</magicDamage>)。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SonaQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0037/ability_0037_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "坚毅咏叹调",
-                "description": "娑娜弹奏坚毅咏叹调，弹出保护性的旋律，治疗娑娜和附近的一个受伤的友军。娑娜会暂时获得一个光环，为附近的友军提供一层护盾。",
-                "max_rank": 5,
-                "range_burn": [
-                  1000
-                ],
-                "cooldown_burn": [
-                  10
-                ],
-                "cooldown_burn_float": [
-                  10
-                ],
-                "cost_burn": [
-                  80,
-                  85,
-                  90,
-                  95,
-                  100
-                ],
-                "tooltip": "<spellPassive>主动：</spellPassive>娑娜为她自己和一名附近的友方英雄回复<healing>?生命值</healing>，优先以伤势最重的英雄为目标。她随后会开始一段新的<keywordMajor>旋律</keywordMajor>。<br /><br /><keywordMajor>旋律：</keywordMajor>娑娜获得一个持续?秒的光环，来为其中的友方英雄提供持续?秒的<shield>?护盾值</shield>。<br /><br />每当你治疗了一名受伤的友方英雄，或用这个护盾为一名友方英雄格挡了至少?伤害时，都会获得一层<keywordMajor>渐入佳音</keywordMajor>。<br /><br /><keywordMajor>能量和弦—渐弱：</keywordMajor>【能量和弦】也会使目标造成的物理和魔法伤害降低?，持续?秒。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SonaW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0037/ability_0037_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "迅捷奏鸣曲",
-                "description": "娑娜弹奏迅捷奏鸣曲，为她自己提供移动速度加成。娑娜会暂时获得一个光环，为进入区域的友方英雄提供移动速度加成。",
-                "max_rank": 5,
-                "range_burn": [
-                  430
-                ],
-                "cooldown_burn": [
-                  14
-                ],
-                "cooldown_burn_float": [
-                  14
-                ],
-                "cost_burn": [
-                  65
-                ],
-                "tooltip": "<spellPassive>主动：</spellPassive>她开始一段新的<keywordMajor>旋律</keywordMajor>并为自身提供<speed>?移动速度</speed>，持续?秒，如果她未受到伤害则延长至最多?秒。<br /><br /><keywordMajor>旋律：</keywordMajor>娑娜获得一个持续?秒的光环，来为其中的友方英雄提供<speed>?移动速度</speed>，持续?秒。<br /><br /><keywordMajor>能量和弦—节奏：</keywordMajor>【能量和弦】还会对目标造成持续?秒的?的<status>减速</status>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SonaE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0037/ability_0037_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "狂舞终乐章",
-                "description": "娑娜弹奏她的终极和弦，对敌方英雄造成魔法伤害，并晕眩他们，强制他们开始跳舞。这个技能的等级会减少所有基础技能的基础冷却时间。",
-                "max_rank": 3,
-                "range_burn": [
-                  900
-                ],
-                "cooldown_burn": [
-                  140,
-                  120,
-                  100
-                ],
-                "cooldown_burn_float": [
-                  140,
-                  120,
-                  100
-                ],
-                "cost_burn": [
-                  100
-                ],
-                "tooltip": "娑娜弹出一段不可抗拒的音符，对敌人造成?秒<status>晕眩</status>和<magicDamage>?魔法伤害</magicDamage>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SonaR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0037/ability_0037_R1.webm"
-              }
-            ],
-            "skins": [
-              {
-                "id": 37000,
-                "champion_id": 37,
-                "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_0.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "IP",
-                    "cost": 450
-                  },
-                  {
-                    "currency": "RP",
-                    "cost": 260
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 37006,
-                "champion_id": 37,
-                "name": "DJ 娑娜",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_6.jpg",
-                "skin_video_url": "https://youtu.be/MGx75GaGnuc",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 3250
-                  }
-                ],
-                "sales": null,
-                "release_date": "2015-02-12T05:39:57+09:00"
-              },
-              {
-                "id": 37026,
-                "champion_id": 37,
-                "name": "五杀摇滚 III：遗失的章节 娑娜",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_26.jpg",
-                "skin_video_url": "https://youtu.be/XmlzPhCjoag",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2021-09-09T04:00:00+09:00"
-              },
-              {
-                "id": 37002,
-                "champion_id": 37,
-                "name": "五杀摇滚键盘手 娑娜",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_2.jpg",
-                "skin_video_url": "https://youtu.be/msYMaQip0Gc",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2010-07-12T15:00:00+09:00"
-              },
-              {
-                "id": 37004,
-                "champion_id": 37,
-                "name": "古琴余韵 娑娜",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_4.jpg",
-                "skin_video_url": "https://youtu.be/u29w2AZsnks",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2012-01-11T21:00:00+09:00"
-              },
-              {
-                "id": 37009,
-                "champion_id": 37,
-                "name": "奥德赛 娑娜",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_9.jpg",
-                "skin_video_url": "https://youtu.be/CoB9IIFEdzY",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2018-09-10T22:00:00+09:00"
-              },
-              {
-                "id": 37003,
-                "champion_id": 37,
-                "name": "平安夜女神 娑娜",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_3.jpg",
-                "skin_video_url": "https://youtu.be/LuiTvxEl8Ag",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 520
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 37035,
-                "champion_id": 37,
-                "name": "星之守护者 娑娜",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_35.jpg",
-                "skin_video_url": "https://youtu.be/_03yQzZrQ0o",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2022-07-14T04:00:00+09:00"
-              },
-              {
-                "id": 37017,
-                "champion_id": 37,
-                "name": "灵能特工 娑娜",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_17.jpg",
-                "skin_video_url": "https://youtu.be/K_qC14FO3a8",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1820
-                  }
-                ],
-                "sales": null,
-                "release_date": "2020-09-03T04:00:00+09:00"
-              },
-              {
-                "id": 37045,
-                "champion_id": 37,
-                "name": "玉剑传说 琴仙子",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_45.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2023-08-16T11:00:00+09:00"
-              },
-              {
-                "id": 37007,
-                "champion_id": 37,
-                "name": "甜心宝贝 娑娜",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_7.jpg",
-                "skin_video_url": "https://youtu.be/zmwW7sKLgLA",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 37005,
-                "champion_id": 37,
-                "name": "电玩女神 娑娜",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_5.jpg",
-                "skin_video_url": "https://youtu.be/zY26Xh-ep2M",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2012-09-04T23:00:00+09:00"
-              },
-              {
-                "id": 37001,
-                "champion_id": 37,
-                "name": "缪斯女神 娑娜",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_1.jpg",
-                "skin_video_url": "https://youtu.be/g-jB7qVGVhM",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 37056,
-                "champion_id": 37,
-                "name": "胜利女神 娑娜",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_56.jpg",
-                "skin_video_url": null,
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 37046,
-                "champion_id": 37,
-                "name": "至臻 玉剑传说 琴仙子",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sona_46.jpg",
-                "skin_video_url": null,
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              }
-            ]
-          },
-          "win_rate": 62.16
-        },
-        {
-          "champion_id": 43,
-          "play": 154,
-          "win": 95,
-          "meta": {
-            "id": 43,
-            "key": "Karma",
-            "name": "天启者",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Karma.png",
-            "evolve": [],
-            "partype": "法力",
-            "passive": {
-              "name": "聚能之炎",
-              "description": "卡尔玛的伤害型技能将缩短梵咒的冷却时间。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Karma_Passive.png",
-              "video_url": null
-            },
-            "spells": [
-              {
-                "key": "Q",
-                "name": "心灵烈焰",
-                "description": "卡尔玛向前方发射一枚灵能法球。这枚法球会在命中第一个敌人时爆炸，并造成伤害。<br><br>梵咒增效：除爆炸之外，梵咒还会提升她的心灵烈焰的破坏力，同时创造出一个火环，火环会在短暂的延时后造成伤害。",
-                "max_rank": 5,
-                "range_burn": [
-                  950
-                ],
-                "cooldown_burn": [
-                  9,
-                  8,
-                  7,
-                  6,
-                  5
-                ],
-                "cooldown_burn_float": [
-                  9,
-                  8,
-                  7,
-                  6,
-                  5
-                ],
-                "cost_burn": [
-                  40,
-                  50,
-                  60,
-                  70,
-                  80
-                ],
-                "tooltip": "卡尔玛发射一团能量，对命中的第一个目标及其周围的敌人们造成<magicDamage>?魔法伤害</magicDamage>，以及持续?秒的?%<status>减速</status>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/KarmaQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0043/ability_0043_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "坚定不移",
-                "description": "卡尔玛在她和目标敌人之间产生一条灵链，同时造成伤害，并使目标暴露。如果灵链在一段时间内没有被破坏，那么目标敌人就会被束缚在原地并再次受到伤害。<br><br>梵咒增效：卡尔玛强化灵链，治疗自身并延长禁锢时长。",
-                "max_rank": 5,
-                "range_burn": [
-                  675
-                ],
-                "cooldown_burn": [
-                  12
-                ],
-                "cooldown_burn_float": [
-                  12
-                ],
-                "cost_burn": [
-                  50,
-                  55,
-                  60,
-                  65,
-                  70
-                ],
-                "tooltip": "卡尔玛用灵链来连接她和一名敌方英雄或野怪，造成<magicDamage>?魔法伤害</magicDamage>并使其显形?秒。如果灵链一直未断裂，那么目标会再次受到<magicDamage>?魔法伤害</magicDamage>并被<status>禁锢</status>?秒。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/KarmaSpiritBind.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0043/ability_0043_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "鼓舞",
-                "description": "卡尔玛召唤一个防御性的护盾来吸收即将到来的伤害，并为目标友军提升移动速度。<br><br>梵咒增效：能量从目标处向外辐射，强化初始护盾，并对附近的友方英雄施加鼓舞效果。",
-                "max_rank": 5,
-                "range_burn": [
-                  800
-                ],
-                "cooldown_burn": [
-                  10,
-                  9,
-                  9,
-                  8,
-                  8
-                ],
-                "cooldown_burn_float": [
-                  10,
-                  9.5,
-                  9,
-                  8.5,
-                  8
-                ],
-                "cost_burn": [
-                  50,
-                  55,
-                  60,
-                  65,
-                  70
-                ],
-                "tooltip": "卡尔玛为一名友方英雄提供持续?秒的<shield>?护盾值</shield>和持续?秒的<speed>?%移动速度</speed>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/KarmaSolKimShield.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0043/ability_0043_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "梵咒",
-                "description": "卡尔玛的下个技能会获得强化，造成额外特效。梵咒在1级时就可以使用，并且不需要投入技能点。",
-                "max_rank": 4,
-                "range_burn": [
-                  1100
-                ],
-                "cooldown_burn": [
-                  40,
-                  38,
-                  36,
-                  34
-                ],
-                "cooldown_burn_float": [
-                  40,
-                  38,
-                  36,
-                  34
-                ],
-                "cost_burn": [
-                  0
-                ],
-                "tooltip": "卡尔玛增强她在8秒内使用的下一个技能。<br /><li><spellName>心灵烈焰</spellName>：造成额外的<magicDamage>?魔法伤害</magicDamage>并留下一道烈焰圆环，<status>减速</status>敌人并造成额外的<magicDamage>?魔法伤害</magicDamage>。<li><spellName>坚定不移</spellName>：卡尔玛将在灵链的开始和结束时回复<healing>?已损失生命值</healing>，并且<status>禁锢</status>延长?秒。<li><spellName>鼓舞</spellName>：卡尔玛为她的目标提供<shield>额外的?护盾值</shield>，并且还会对目标附近的友军提供护盾，为他们提供<shield>?护盾值</shield>和<speed>?%移动速度</speed>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/KarmaMantra.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0043/ability_0043_R1.webm"
-              }
-            ],
-            "skins": [
-              {
-                "id": 43000,
-                "champion_id": 43,
-                "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_0.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "IP",
-                    "cost": 3150
-                  },
-                  {
-                    "currency": "RP",
-                    "cost": 790
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 43003,
-                "champion_id": 43,
-                "name": "传统服饰 卡尔玛",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_3.jpg",
-                "skin_video_url": "https://youtu.be/Iw3jwFtLZHA",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 43005,
-                "champion_id": 43,
-                "name": "光明骑士 卡尔玛",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_5.jpg",
-                "skin_video_url": "https://youtu.be/aJcS-5VqTY0",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 750
-                  }
-                ],
-                "sales": null,
-                "release_date": "2015-10-01T10:00:00+09:00"
-              },
-              {
-                "id": 43006,
-                "champion_id": 43,
-                "name": "冬季仙境 卡尔玛",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_6.jpg",
-                "skin_video_url": "https://youtu.be/aFh1Upp3nOY",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 43061,
-                "champion_id": 43,
-                "name": "地狱火 卡尔玛",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_61.jpg",
-                "skin_video_url": "https://youtu.be/wJdpE11EJOU",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2024-05-30T09:00:00+09:00"
-              },
-              {
-                "id": 43026,
-                "champion_id": 43,
-                "name": "奥德赛 卡尔玛",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_26.jpg",
-                "skin_video_url": "https://youtu.be/-ev9bME_3Sk",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2020-10-15T04:00:00+09:00"
-              },
-              {
-                "id": 43007,
-                "champion_id": 43,
-                "name": "征服者 卡尔玛",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_7.jpg",
-                "skin_video_url": "https://youtu.be/Ajunb1OImuk",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 43001,
-                "champion_id": 43,
-                "name": "日冕女神 卡尔玛",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_1.jpg",
-                "skin_video_url": "https://youtu.be/IE8hGXELLDo",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 43008,
-                "champion_id": 43,
-                "name": "暗星 卡尔玛",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_8.jpg",
-                "skin_video_url": "https://youtu.be/qLdm4SlkPd4",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2019-06-13T01:00:00+09:00"
-              },
-              {
-                "id": 43002,
-                "champion_id": 43,
-                "name": "樱花乱舞 卡尔玛",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_2.jpg",
-                "skin_video_url": "https://youtu.be/Kzs5Iine6bQ",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 520
-                  }
-                ],
-                "sales": null,
-                "release_date": "2011-01-31T20:00:00+09:00"
-              },
-              {
-                "id": 43027,
-                "champion_id": 43,
-                "name": "破败军团 卡尔玛",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_27.jpg",
-                "skin_video_url": "https://youtu.be/MpA-Z-v7PTc",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2021-01-21T04:00:00+09:00"
-              },
-              {
-                "id": 43044,
-                "champion_id": 43,
-                "name": "神龙尊者 宁静之龙 卡尔玛",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_44.jpg",
-                "skin_video_url": "https://youtu.be/i3qi95mkXII",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2021-10-21T04:00:00+09:00"
-              },
-              {
-                "id": 43054,
-                "champion_id": 43,
-                "name": "花仙女王 卡尔玛",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_54.jpg",
-                "skin_video_url": "https://youtu.be/kUlFiU6Oa-E",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1820
-                  }
-                ],
-                "sales": null,
-                "release_date": "2023-03-23T04:00:00+09:00"
-              },
-              {
-                "id": 43004,
-                "champion_id": 43,
-                "name": "莲花之令 卡尔玛",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_4.jpg",
-                "skin_video_url": "https://youtu.be/0SlE_uXopnc",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2014-10-02T16:00:00+09:00"
-              },
-              {
-                "id": 43019,
-                "champion_id": 43,
-                "name": "黎明使者 卡尔玛",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Karma_19.jpg",
-                "skin_video_url": "https://youtu.be/TAMGl-7iEiE",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              }
-            ]
-          },
-          "win_rate": 61.69
+          "win_rate": 60.61
         },
         {
           "champion_id": 161,
-          "play": 41,
+          "play": 42,
           "win": 25,
           "meta": {
             "id": 161,
@@ -3404,12 +3390,12 @@
               }
             ]
           },
-          "win_rate": 60.98
+          "win_rate": 59.52
         },
         {
           "champion_id": 57,
-          "play": 30,
-          "win": 18,
+          "play": 32,
+          "win": 19,
           "meta": {
             "id": 57,
             "key": "Maokai",
@@ -3703,15 +3689,15 @@
               }
             ]
           },
-          "win_rate": 60
+          "win_rate": 59.38
         }
       ]
     ],
     "counters": [
       {
         "champion_id": 117,
-        "play": 287,
-        "win": 132,
+        "play": 289,
+        "win": 134,
         "meta": {
           "id": 117,
           "key": "Lulu",
@@ -4031,8 +4017,8 @@
       },
       {
         "champion_id": 412,
-        "play": 235,
-        "win": 127,
+        "play": 237,
+        "win": 128,
         "meta": {
           "id": 412,
           "key": "Thresh",
@@ -4423,7 +4409,7 @@
       },
       {
         "champion_id": 111,
-        "play": 191,
+        "play": 192,
         "win": 93,
         "meta": {
           "id": 111,
@@ -4718,8 +4704,8 @@
       },
       {
         "champion_id": 267,
-        "play": 185,
-        "win": 87,
+        "play": 187,
+        "win": 88,
         "meta": {
           "id": 267,
           "key": "Nami",
@@ -5318,8 +5304,8 @@
       },
       {
         "champion_id": 555,
-        "play": 169,
-        "win": 82,
+        "play": 171,
+        "win": 84,
         "meta": {
           "id": 555,
           "key": "Pyke",
@@ -5616,7 +5602,7 @@
       },
       {
         "champion_id": 526,
-        "play": 158,
+        "play": 159,
         "win": 86,
         "meta": {
           "id": 526,
@@ -5799,8 +5785,8 @@
       },
       {
         "champion_id": 43,
-        "play": 154,
-        "win": 95,
+        "play": 156,
+        "win": 96,
         "meta": {
           "id": 43,
           "key": "Karma",
@@ -6539,8 +6525,8 @@
       },
       {
         "champion_id": 78,
-        "play": 131,
-        "win": 69,
+        "play": 132,
+        "win": 70,
         "meta": {
           "id": 78,
           "key": "Poppy",
@@ -6862,8 +6848,8 @@
       },
       {
         "champion_id": 350,
-        "play": 114,
-        "win": 58,
+        "play": 116,
+        "win": 59,
         "meta": {
           "id": 350,
           "key": "Yuumi",
@@ -7558,8 +7544,8 @@
       },
       {
         "champion_id": 53,
-        "play": 108,
-        "win": 49,
+        "play": 110,
+        "win": 50,
         "meta": {
           "id": 53,
           "key": "Blitzcrank",
@@ -8778,8 +8764,8 @@
       },
       {
         "champion_id": 12,
-        "play": 85,
-        "win": 36,
+        "play": 88,
+        "win": 39,
         "meta": {
           "id": 12,
           "key": "Alistar",
@@ -9129,8 +9115,8 @@
       },
       {
         "champion_id": 101,
-        "play": 80,
-        "win": 35,
+        "play": 84,
+        "win": 38,
         "meta": {
           "id": 101,
           "key": "Xerath",
@@ -10085,7 +10071,7 @@
       },
       {
         "champion_id": 201,
-        "play": 69,
+        "play": 70,
         "win": 31,
         "meta": {
           "id": 201,
@@ -10352,7 +10338,7 @@
       },
       {
         "champion_id": 432,
-        "play": 64,
+        "play": 65,
         "win": 29,
         "meta": {
           "id": 432,
@@ -10603,8 +10589,8 @@
       },
       {
         "champion_id": 26,
-        "play": 57,
-        "win": 28,
+        "play": 59,
+        "win": 30,
         "meta": {
           "id": 26,
           "key": "Zilean",
@@ -11164,7 +11150,7 @@
       },
       {
         "champion_id": 161,
-        "play": 41,
+        "play": 42,
         "win": 25,
         "meta": {
           "id": 161,
@@ -11404,7 +11390,7 @@
       },
       {
         "champion_id": 63,
-        "play": 40,
+        "play": 41,
         "win": 16,
         "meta": {
           "id": 63,
@@ -12636,7 +12622,7 @@
       },
       {
         "champion_id": 25,
-        "play": 32,
+        "play": 33,
         "win": 20,
         "meta": {
           "id": 25,
@@ -12995,8 +12981,8 @@
       },
       {
         "champion_id": 57,
-        "play": 30,
-        "win": 18,
+        "play": 32,
+        "win": 19,
         "meta": {
           "id": 57,
           "key": "Maokai",
@@ -13299,9 +13285,9 @@
         4,
         14
       ],
-      "win": 2586,
-      "play": 5070,
-      "pick_rate": 0.9653
+      "win": 2614,
+      "play": 5115,
+      "pick_rate": 0.9655
     },
     {
       "ids": [
@@ -13310,7 +13296,7 @@
       ],
       "win": 34,
       "play": 70,
-      "pick_rate": 0.0133
+      "pick_rate": 0.0132
     },
     {
       "ids": [
@@ -13318,8 +13304,8 @@
         14
       ],
       "win": 19,
-      "play": 34,
-      "pick_rate": 0.0065
+      "play": 35,
+      "pick_rate": 0.0066
     },
     {
       "ids": [
@@ -13328,7 +13314,7 @@
       ],
       "win": 16,
       "play": 33,
-      "pick_rate": 0.0063
+      "pick_rate": 0.0062
     },
     {
       "ids": [
@@ -13346,8 +13332,8 @@
     "win": [
       {
         "version": "14.19",
-        "rate": 0.5102,
-        "rank": 12,
+        "rate": 0.5115,
+        "rank": 9,
         "created_at": "2024-10-03T22:36:41+09:00"
       },
       {
@@ -13470,7 +13456,7 @@
     "ban": [
       {
         "version": "14.19",
-        "rate": 0.0305,
+        "rate": 0.0306,
         "rank": 15,
         "created_at": "2024-10-03T22:36:41+09:00"
       },
@@ -13533,31 +13519,31 @@
   "game_lengths": [
     {
       "game_length": 35,
-      "rate": 0.427609,
+      "rate": 0.42953,
       "average": 0.5,
       "rank": 45
     },
     {
       "game_length": 40,
-      "rate": 0.482072,
+      "rate": 0.480469,
       "average": 0.5,
-      "rank": 37
+      "rank": 38
     },
     {
       "game_length": 30,
-      "rate": 0.492251,
+      "rate": 0.493764,
       "average": 0.5,
       "rank": 33
     },
     {
       "game_length": 25,
-      "rate": 0.518659,
+      "rate": 0.519448,
       "average": 0.5,
       "rank": 6
     },
     {
       "game_length": 0,
-      "rate": 0.551575,
+      "rate": 0.553244,
       "average": 0.5,
       "rank": 3
     }
@@ -13581,9 +13567,9 @@
         "E",
         "E"
       ],
-      "play": 240,
-      "win": 146,
-      "pick_rate": 0.2477
+      "play": 244,
+      "win": 149,
+      "pick_rate": 0.249
     },
     {
       "order": [
@@ -13603,9 +13589,9 @@
         "E",
         "E"
       ],
-      "play": 161,
+      "play": 162,
       "win": 91,
-      "pick_rate": 0.1662
+      "pick_rate": 0.1653
     },
     {
       "order": [
@@ -13625,9 +13611,9 @@
         "E",
         "E"
       ],
-      "play": 137,
-      "win": 79,
-      "pick_rate": 0.1414
+      "play": 139,
+      "win": 80,
+      "pick_rate": 0.1418
     },
     {
       "order": [
@@ -13649,7 +13635,7 @@
       ],
       "play": 46,
       "win": 28,
-      "pick_rate": 0.0475
+      "pick_rate": 0.0469
     },
     {
       "order": [
@@ -13671,7 +13657,7 @@
       ],
       "play": 36,
       "win": 25,
-      "pick_rate": 0.0372
+      "pick_rate": 0.0367
     }
   ],
   "skill_masteries": [
@@ -13681,9 +13667,9 @@
         "Q",
         "E"
       ],
-      "play": 746,
-      "win": 442,
-      "pick_rate": 0.7699,
+      "play": 755,
+      "win": 448,
+      "pick_rate": 0.7704,
       "builds": [
         {
           "order": [
@@ -13703,9 +13689,9 @@
             "E",
             "E"
           ],
-          "play": 240,
-          "win": 146,
-          "pick_rate": 0.3217
+          "play": 244,
+          "win": 149,
+          "pick_rate": 0.3232
         },
         {
           "order": [
@@ -13725,9 +13711,9 @@
             "E",
             "E"
           ],
-          "play": 161,
+          "play": 162,
           "win": 91,
-          "pick_rate": 0.2158
+          "pick_rate": 0.2146
         },
         {
           "order": [
@@ -13747,9 +13733,9 @@
             "E",
             "E"
           ],
-          "play": 137,
-          "win": 79,
-          "pick_rate": 0.1836
+          "play": 139,
+          "win": 80,
+          "pick_rate": 0.1841
         },
         {
           "order": [
@@ -13771,7 +13757,7 @@
           ],
           "play": 34,
           "win": 18,
-          "pick_rate": 0.0456
+          "pick_rate": 0.045
         },
         {
           "order": [
@@ -13793,7 +13779,7 @@
           ],
           "play": 17,
           "win": 11,
-          "pick_rate": 0.0228
+          "pick_rate": 0.0225
         }
       ]
     },
@@ -13803,9 +13789,9 @@
         "W",
         "E"
       ],
-      "play": 193,
+      "play": 194,
       "win": 121,
-      "pick_rate": 0.1992,
+      "pick_rate": 0.198,
       "builds": [
         {
           "order": [
@@ -13827,7 +13813,7 @@
           ],
           "play": 46,
           "win": 28,
-          "pick_rate": 0.2383
+          "pick_rate": 0.2371
         },
         {
           "order": [
@@ -13849,7 +13835,7 @@
           ],
           "play": 36,
           "win": 25,
-          "pick_rate": 0.1865
+          "pick_rate": 0.1856
         },
         {
           "order": [
@@ -13871,7 +13857,7 @@
           ],
           "play": 35,
           "win": 21,
-          "pick_rate": 0.1813
+          "pick_rate": 0.1804
         },
         {
           "order": [
@@ -13893,7 +13879,7 @@
           ],
           "play": 16,
           "win": 10,
-          "pick_rate": 0.0829
+          "pick_rate": 0.0825
         },
         {
           "order": [
@@ -13915,7 +13901,7 @@
           ],
           "play": 11,
           "win": 5,
-          "pick_rate": 0.057
+          "pick_rate": 0.0567
         }
       ]
     },
@@ -13927,7 +13913,7 @@
       ],
       "play": 13,
       "win": 8,
-      "pick_rate": 0.0134,
+      "pick_rate": 0.0133,
       "builds": [
         {
           "order": [
@@ -14047,12 +14033,34 @@
         "E",
         "W"
       ],
-      "play": 9,
+      "play": 10,
       "win": 5,
-      "pick_rate": 0.0093,
+      "pick_rate": 0.0102,
       "builds": [
         {
           "order": [
+            "W",
+            "E",
+            "Q",
+            "Q",
+            "Q",
+            "R",
+            "Q",
+            "E",
+            "Q",
+            "E",
+            "R",
+            "E",
+            "E",
+            "W",
+            "W"
+          ],
+          "play": 2,
+          "win": 1,
+          "pick_rate": 0.2
+        },
+        {
+          "order": [
             "E",
             "W",
             "Q",
@@ -14071,7 +14079,7 @@
           ],
           "play": 1,
           "win": 1,
-          "pick_rate": 0.1111
+          "pick_rate": 0.1
         },
         {
           "order": [
@@ -14093,7 +14101,7 @@
           ],
           "play": 1,
           "win": 0,
-          "pick_rate": 0.1111
+          "pick_rate": 0.1
         },
         {
           "order": [
@@ -14115,7 +14123,7 @@
           ],
           "play": 1,
           "win": 0,
-          "pick_rate": 0.1111
+          "pick_rate": 0.1
         },
         {
           "order": [
@@ -14137,29 +14145,7 @@
           ],
           "play": 1,
           "win": 1,
-          "pick_rate": 0.1111
-        },
-        {
-          "order": [
-            "Q",
-            "W",
-            "E",
-            "Q",
-            "Q",
-            "R",
-            "Q",
-            "E",
-            "Q",
-            "R",
-            "E",
-            "E",
-            "E",
-            "W",
-            "W"
-          ],
-          "play": 1,
-          "win": 1,
-          "pick_rate": 0.1111
+          "pick_rate": 0.1
         }
       ]
     },
@@ -14171,7 +14157,7 @@
       ],
       "play": 5,
       "win": 3,
-      "pick_rate": 0.0052,
+      "pick_rate": 0.0051,
       "builds": [
         {
           "order": [
@@ -14307,9 +14293,9 @@
         5008,
         5001
       ],
-      "play": 1927,
-      "win": 989,
-      "pick_rate": 0.3607
+      "play": 1948,
+      "win": 1002,
+      "pick_rate": 0.3611
     },
     {
       "id": 8369,
@@ -14330,9 +14316,9 @@
         5008,
         5001
       ],
-      "play": 181,
-      "win": 83,
-      "pick_rate": 0.0339
+      "play": 182,
+      "win": 84,
+      "pick_rate": 0.0337
     },
     {
       "id": 8112,
@@ -14355,7 +14341,7 @@
       ],
       "play": 108,
       "win": 57,
-      "pick_rate": 0.0202
+      "pick_rate": 0.02
     },
     {
       "id": 8112,
@@ -14378,7 +14364,7 @@
       ],
       "play": 101,
       "win": 58,
-      "pick_rate": 0.0189
+      "pick_rate": 0.0187
     },
     {
       "id": 8112,
@@ -14401,7 +14387,7 @@
       ],
       "play": 90,
       "win": 48,
-      "pick_rate": 0.0168
+      "pick_rate": 0.0167
     }
   ],
   "rune_pages": [
@@ -14409,9 +14395,9 @@
       "id": 8112,
       "primary_page_id": 8100,
       "secondary_page_id": 8200,
-      "play": 3884,
-      "win": 1996,
-      "pick_rate": 0.7269,
+      "play": 3920,
+      "win": 2018,
+      "pick_rate": 0.7267,
       "builds": [
         {
           "id": 8112,
@@ -14432,9 +14418,9 @@
             5008,
             5001
           ],
-          "play": 1927,
-          "win": 989,
-          "pick_rate": 0.4961
+          "play": 1948,
+          "win": 1002,
+          "pick_rate": 0.4969
         },
         {
           "id": 8112,
@@ -14457,7 +14443,7 @@
           ],
           "play": 108,
           "win": 57,
-          "pick_rate": 0.0278
+          "pick_rate": 0.0276
         },
         {
           "id": 8112,
@@ -14480,7 +14466,7 @@
           ],
           "play": 101,
           "win": 58,
-          "pick_rate": 0.026
+          "pick_rate": 0.0258
         },
         {
           "id": 8112,
@@ -14503,7 +14489,7 @@
           ],
           "play": 90,
           "win": 48,
-          "pick_rate": 0.0232
+          "pick_rate": 0.023
         },
         {
           "id": 8112,
@@ -14526,7 +14512,7 @@
           ],
           "play": 76,
           "win": 40,
-          "pick_rate": 0.0196
+          "pick_rate": 0.0194
         }
       ]
     },
@@ -14534,9 +14520,9 @@
       "id": 8369,
       "primary_page_id": 8300,
       "secondary_page_id": 8100,
-      "play": 450,
-      "win": 222,
-      "pick_rate": 0.0842,
+      "play": 456,
+      "win": 225,
+      "pick_rate": 0.0845,
       "builds": [
         {
           "id": 8369,
@@ -14557,9 +14543,9 @@
             5008,
             5001
           ],
-          "play": 181,
-          "win": 83,
-          "pick_rate": 0.4022
+          "play": 182,
+          "win": 84,
+          "pick_rate": 0.3991
         },
         {
           "id": 8369,
@@ -14580,9 +14566,9 @@
             5008,
             5001
           ],
-          "play": 23,
+          "play": 24,
           "win": 13,
-          "pick_rate": 0.0511
+          "pick_rate": 0.0526
         },
         {
           "id": 8369,
@@ -14603,9 +14589,9 @@
             5008,
             5001
           ],
-          "play": 20,
-          "win": 9,
-          "pick_rate": 0.0444
+          "play": 21,
+          "win": 10,
+          "pick_rate": 0.0461
         },
         {
           "id": 8369,
@@ -14628,7 +14614,7 @@
           ],
           "play": 15,
           "win": 9,
-          "pick_rate": 0.0333
+          "pick_rate": 0.0329
         },
         {
           "id": 8369,
@@ -14651,7 +14637,132 @@
           ],
           "play": 14,
           "win": 9,
-          "pick_rate": 0.0311
+          "pick_rate": 0.0307
+        }
+      ]
+    },
+    {
+      "id": 8112,
+      "primary_page_id": 8100,
+      "secondary_page_id": 8000,
+      "play": 264,
+      "win": 127,
+      "pick_rate": 0.0489,
+      "builds": [
+        {
+          "id": 8112,
+          "primary_page_id": 8100,
+          "primary_rune_ids": [
+            8112,
+            8143,
+            8138,
+            8135
+          ],
+          "secondary_page_id": 8000,
+          "secondary_rune_ids": [
+            8009,
+            8017
+          ],
+          "stat_mod_ids": [
+            5008,
+            5008,
+            5001
+          ],
+          "play": 24,
+          "win": 11,
+          "pick_rate": 0.0909
+        },
+        {
+          "id": 8112,
+          "primary_page_id": 8100,
+          "primary_rune_ids": [
+            8112,
+            8139,
+            8136,
+            8135
+          ],
+          "secondary_page_id": 8000,
+          "secondary_rune_ids": [
+            8014,
+            9111
+          ],
+          "stat_mod_ids": [
+            5005,
+            5008,
+            5001
+          ],
+          "play": 22,
+          "win": 13,
+          "pick_rate": 0.0833
+        },
+        {
+          "id": 8112,
+          "primary_page_id": 8100,
+          "primary_rune_ids": [
+            8112,
+            8143,
+            8138,
+            8135
+          ],
+          "secondary_page_id": 8000,
+          "secondary_rune_ids": [
+            8017,
+            9105
+          ],
+          "stat_mod_ids": [
+            5008,
+            5008,
+            5011
+          ],
+          "play": 19,
+          "win": 9,
+          "pick_rate": 0.072
+        },
+        {
+          "id": 8112,
+          "primary_page_id": 8100,
+          "primary_rune_ids": [
+            8112,
+            8143,
+            8138,
+            8105
+          ],
+          "secondary_page_id": 8000,
+          "secondary_rune_ids": [
+            8017,
+            9105
+          ],
+          "stat_mod_ids": [
+            5008,
+            5008,
+            5001
+          ],
+          "play": 15,
+          "win": 7,
+          "pick_rate": 0.0568
+        },
+        {
+          "id": 8112,
+          "primary_page_id": 8100,
+          "primary_rune_ids": [
+            8112,
+            8143,
+            8138,
+            8105
+          ],
+          "secondary_page_id": 8000,
+          "secondary_rune_ids": [
+            8017,
+            9101
+          ],
+          "stat_mod_ids": [
+            5005,
+            5008,
+            5011
+          ],
+          "play": 14,
+          "win": 8,
+          "pick_rate": 0.053
         }
       ]
     },
@@ -14661,7 +14772,7 @@
       "secondary_page_id": 8300,
       "play": 264,
       "win": 135,
-      "pick_rate": 0.0494,
+      "pick_rate": 0.0489,
       "builds": [
         {
           "id": 8112,
@@ -14781,137 +14892,12 @@
       ]
     },
     {
-      "id": 8112,
-      "primary_page_id": 8100,
-      "secondary_page_id": 8000,
-      "play": 263,
-      "win": 126,
-      "pick_rate": 0.0492,
-      "builds": [
-        {
-          "id": 8112,
-          "primary_page_id": 8100,
-          "primary_rune_ids": [
-            8112,
-            8143,
-            8138,
-            8135
-          ],
-          "secondary_page_id": 8000,
-          "secondary_rune_ids": [
-            8009,
-            8017
-          ],
-          "stat_mod_ids": [
-            5008,
-            5008,
-            5001
-          ],
-          "play": 24,
-          "win": 11,
-          "pick_rate": 0.0913
-        },
-        {
-          "id": 8112,
-          "primary_page_id": 8100,
-          "primary_rune_ids": [
-            8112,
-            8139,
-            8136,
-            8135
-          ],
-          "secondary_page_id": 8000,
-          "secondary_rune_ids": [
-            8014,
-            9111
-          ],
-          "stat_mod_ids": [
-            5005,
-            5008,
-            5001
-          ],
-          "play": 22,
-          "win": 13,
-          "pick_rate": 0.0837
-        },
-        {
-          "id": 8112,
-          "primary_page_id": 8100,
-          "primary_rune_ids": [
-            8112,
-            8143,
-            8138,
-            8135
-          ],
-          "secondary_page_id": 8000,
-          "secondary_rune_ids": [
-            8017,
-            9105
-          ],
-          "stat_mod_ids": [
-            5008,
-            5008,
-            5011
-          ],
-          "play": 19,
-          "win": 9,
-          "pick_rate": 0.0722
-        },
-        {
-          "id": 8112,
-          "primary_page_id": 8100,
-          "primary_rune_ids": [
-            8112,
-            8143,
-            8138,
-            8105
-          ],
-          "secondary_page_id": 8000,
-          "secondary_rune_ids": [
-            8017,
-            9105
-          ],
-          "stat_mod_ids": [
-            5008,
-            5008,
-            5001
-          ],
-          "play": 15,
-          "win": 7,
-          "pick_rate": 0.057
-        },
-        {
-          "id": 8112,
-          "primary_page_id": 8100,
-          "primary_rune_ids": [
-            8112,
-            8143,
-            8138,
-            8105
-          ],
-          "secondary_page_id": 8000,
-          "secondary_rune_ids": [
-            8017,
-            9101
-          ],
-          "stat_mod_ids": [
-            5005,
-            5008,
-            5011
-          ],
-          "play": 14,
-          "win": 8,
-          "pick_rate": 0.0532
-        }
-      ]
-    },
-    {
       "id": 8128,
       "primary_page_id": 8100,
       "secondary_page_id": 8200,
-      "play": 118,
-      "win": 63,
-      "pick_rate": 0.0221,
+      "play": 120,
+      "win": 64,
+      "pick_rate": 0.0222,
       "builds": [
         {
           "id": 8128,
@@ -14934,7 +14920,7 @@
           ],
           "play": 15,
           "win": 7,
-          "pick_rate": 0.1271
+          "pick_rate": 0.125
         },
         {
           "id": 8128,
@@ -14957,7 +14943,7 @@
           ],
           "play": 12,
           "win": 9,
-          "pick_rate": 0.1017
+          "pick_rate": 0.1
         },
         {
           "id": 8128,
@@ -14980,7 +14966,7 @@
           ],
           "play": 10,
           "win": 6,
-          "pick_rate": 0.0847
+          "pick_rate": 0.0833
         },
         {
           "id": 8128,
@@ -15003,7 +14989,7 @@
           ],
           "play": 7,
           "win": 3,
-          "pick_rate": 0.0593
+          "pick_rate": 0.0583
         },
         {
           "id": 8128,
@@ -15012,21 +14998,21 @@
             8128,
             8143,
             8138,
-            8135
+            8105
           ],
           "secondary_page_id": 8200,
           "secondary_rune_ids": [
             8210,
-            8226
+            8236
           ],
           "stat_mod_ids": [
             5008,
             5008,
-            5011
+            5001
           ],
-          "play": 5,
-          "win": 3,
-          "pick_rate": 0.0424
+          "play": 6,
+          "win": 4,
+          "pick_rate": 0.05
         }
       ]
     }
@@ -15038,9 +15024,9 @@
         4646,
         4645
       ],
-      "play": 183,
-      "win": 89,
-      "pick_rate": 0.1249
+      "play": 187,
+      "win": 91,
+      "pick_rate": 0.1262
     },
     {
       "ids": [
@@ -15050,7 +15036,7 @@
       ],
       "play": 67,
       "win": 34,
-      "pick_rate": 0.0457
+      "pick_rate": 0.0452
     },
     {
       "ids": [
@@ -15059,9 +15045,9 @@
         3041,
         4646
       ],
-      "play": 66,
-      "win": 54,
-      "pick_rate": 0.0451
+      "play": 67,
+      "win": 55,
+      "pick_rate": 0.0452
     },
     {
       "ids": [
@@ -15069,9 +15055,9 @@
         4646,
         3157
       ],
-      "play": 62,
+      "play": 63,
       "win": 35,
-      "pick_rate": 0.0423
+      "pick_rate": 0.0425
     },
     {
       "ids": [
@@ -15081,7 +15067,7 @@
       ],
       "play": 54,
       "win": 26,
-      "pick_rate": 0.0369
+      "pick_rate": 0.0364
     },
     {
       "ids": [
@@ -15092,7 +15078,7 @@
       ],
       "play": 53,
       "win": 39,
-      "pick_rate": 0.0362
+      "pick_rate": 0.0358
     },
     {
       "ids": [
@@ -15102,7 +15088,7 @@
       ],
       "play": 32,
       "win": 11,
-      "pick_rate": 0.0218
+      "pick_rate": 0.0216
     },
     {
       "ids": [
@@ -15112,7 +15098,7 @@
       ],
       "play": 32,
       "win": 13,
-      "pick_rate": 0.0218
+      "pick_rate": 0.0216
     },
     {
       "ids": [
@@ -15120,9 +15106,9 @@
         4645,
         3089
       ],
-      "play": 31,
-      "win": 19,
-      "pick_rate": 0.0212
+      "play": 32,
+      "win": 20,
+      "pick_rate": 0.0216
     },
     {
       "ids": [
@@ -15130,9 +15116,9 @@
         4646,
         3137
       ],
-      "play": 29,
-      "win": 19,
-      "pick_rate": 0.0198
+      "play": 30,
+      "win": 20,
+      "pick_rate": 0.0202
     },
     {
       "ids": [
@@ -15143,7 +15129,7 @@
       ],
       "play": 28,
       "win": 19,
-      "pick_rate": 0.0191
+      "pick_rate": 0.0189
     },
     {
       "ids": [
@@ -15153,7 +15139,7 @@
       ],
       "play": 27,
       "win": 11,
-      "pick_rate": 0.0184
+      "pick_rate": 0.0182
     },
     {
       "ids": [
@@ -15163,7 +15149,7 @@
       ],
       "play": 26,
       "win": 16,
-      "pick_rate": 0.0177
+      "pick_rate": 0.0175
     },
     {
       "ids": [
@@ -15174,17 +15160,17 @@
       ],
       "play": 26,
       "win": 22,
-      "pick_rate": 0.0177
+      "pick_rate": 0.0175
     },
     {
       "ids": [
+        6655,
         4646,
-        4645,
-        3157
+        3165
       ],
       "play": 25,
-      "win": 15,
-      "pick_rate": 0.0171
+      "win": 11,
+      "pick_rate": 0.0169
     }
   ],
   "boots": [
@@ -15192,23 +15178,23 @@
       "ids": [
         3020
       ],
-      "play": 4253,
-      "win": 2223,
-      "pick_rate": 0.852
+      "play": 4295,
+      "win": 2249,
+      "pick_rate": 0.8522
     },
     {
       "ids": [
         3158
       ],
-      "play": 512,
-      "win": 258,
+      "play": 517,
+      "win": 261,
       "pick_rate": 0.1026
     },
     {
       "ids": [
         3013
       ],
-      "play": 123,
+      "play": 124,
       "win": 72,
       "pick_rate": 0.0246
     },
@@ -15218,7 +15204,7 @@
       ],
       "play": 49,
       "win": 20,
-      "pick_rate": 0.0098
+      "pick_rate": 0.0097
     },
     {
       "ids": [
@@ -15236,9 +15222,9 @@
         2003,
         3865
       ],
-      "play": 5111,
-      "win": 2626,
-      "pick_rate": 0.9456
+      "play": 5163,
+      "win": 2656,
+      "pick_rate": 0.946
     },
     {
       "ids": [
@@ -15246,7 +15232,7 @@
       ],
       "play": 80,
       "win": 33,
-      "pick_rate": 0.0148
+      "pick_rate": 0.0147
     },
     {
       "ids": [
@@ -15255,9 +15241,9 @@
         2003,
         3865
       ],
-      "play": 43,
-      "win": 25,
-      "pick_rate": 0.008
+      "play": 44,
+      "win": 26,
+      "pick_rate": 0.0081
     },
     {
       "ids": [
@@ -15266,7 +15252,7 @@
       ],
       "play": 33,
       "win": 12,
-      "pick_rate": 0.0061
+      "pick_rate": 0.006
     },
     {
       "ids": [
@@ -15277,7 +15263,7 @@
       ],
       "play": 27,
       "win": 13,
-      "pick_rate": 0.005
+      "pick_rate": 0.0049
     },
     {
       "ids": [
@@ -15297,7 +15283,7 @@
       ],
       "play": 22,
       "win": 14,
-      "pick_rate": 0.0041
+      "pick_rate": 0.004
     },
     {
       "ids": [
@@ -15318,7 +15304,7 @@
       ],
       "play": 15,
       "win": 3,
-      "pick_rate": 0.0028
+      "pick_rate": 0.0027
     },
     {
       "ids": [
@@ -15352,7 +15338,7 @@
       ],
       "play": 3,
       "win": 2,
-      "pick_rate": 0.0006
+      "pick_rate": 0.0005
     },
     {
       "ids": [
@@ -15393,63 +15379,63 @@
       "ids": [
         3871
       ],
-      "play": 4862,
-      "win": 2504,
+      "play": 4905,
+      "win": 2531,
       "pick_rate": 0.2736
     },
     {
       "ids": [
         6655
       ],
-      "play": 3991,
-      "win": 2065,
+      "play": 4027,
+      "win": 2086,
       "pick_rate": 0.2246
     },
     {
       "ids": [
         4646
       ],
-      "play": 2868,
-      "win": 1519,
-      "pick_rate": 0.1614
+      "play": 2895,
+      "win": 1535,
+      "pick_rate": 0.1615
     },
     {
       "ids": [
         4645
       ],
-      "play": 1394,
-      "win": 755,
-      "pick_rate": 0.0784
+      "play": 1404,
+      "win": 761,
+      "pick_rate": 0.0783
     },
     {
       "ids": [
         1082
       ],
-      "play": 1209,
-      "win": 583,
-      "pick_rate": 0.068
+      "play": 1217,
+      "win": 589,
+      "pick_rate": 0.0679
     },
     {
       "ids": [
         3041
       ],
-      "play": 543,
-      "win": 435,
-      "pick_rate": 0.0306
+      "play": 547,
+      "win": 439,
+      "pick_rate": 0.0305
     },
     {
       "ids": [
         3157
       ],
-      "play": 416,
-      "win": 234,
+      "play": 419,
+      "win": 235,
       "pick_rate": 0.0234
     },
     {
       "ids": [
         3916
       ],
-      "play": 416,
+      "play": 419,
       "win": 184,
       "pick_rate": 0.0234
     },
@@ -15457,31 +15443,31 @@
       "ids": [
         3869
       ],
-      "play": 348,
-      "win": 165,
+      "play": 352,
+      "win": 168,
       "pick_rate": 0.0196
     },
     {
       "ids": [
         3089
       ],
-      "play": 314,
-      "win": 179,
-      "pick_rate": 0.0177
+      "play": 315,
+      "win": 180,
+      "pick_rate": 0.0176
     },
     {
       "ids": [
         3102
       ],
-      "play": 234,
+      "play": 235,
       "win": 123,
-      "pick_rate": 0.0132
+      "pick_rate": 0.0131
     },
     {
       "ids": [
         3135
       ],
-      "play": 203,
+      "play": 204,
       "win": 104,
       "pick_rate": 0.0114
     },
@@ -15489,56 +15475,56 @@
       "ids": [
         3118
       ],
-      "play": 163,
-      "win": 91,
+      "play": 165,
+      "win": 93,
       "pick_rate": 0.0092
     },
     {
       "ids": [
         3165
       ],
-      "play": 148,
-      "win": 77,
-      "pick_rate": 0.0083
+      "play": 150,
+      "win": 78,
+      "pick_rate": 0.0084
     },
     {
       "ids": [
         3137
       ],
-      "play": 141,
-      "win": 83,
-      "pick_rate": 0.0079
+      "play": 145,
+      "win": 86,
+      "pick_rate": 0.0081
     },
     {
       "ids": [
         2420
       ],
-      "play": 98,
-      "win": 51,
-      "pick_rate": 0.0055
+      "play": 100,
+      "win": 52,
+      "pick_rate": 0.0056
     },
     {
       "ids": [
         6653
       ],
-      "play": 64,
-      "win": 31,
+      "play": 65,
+      "win": 32,
       "pick_rate": 0.0036
     },
     {
       "ids": [
         4628
       ],
-      "play": 40,
-      "win": 24,
+      "play": 41,
+      "win": 25,
       "pick_rate": 0.0023
     },
     {
       "ids": [
         3084
       ],
-      "play": 41,
-      "win": 22,
+      "play": 42,
+      "win": 23,
       "pick_rate": 0.0023
     },
     {
@@ -15559,19 +15545,19 @@
     },
     {
       "ids": [
-        3876
+        2503
       ],
-      "play": 27,
+      "play": 26,
       "win": 15,
       "pick_rate": 0.0015
     },
     {
       "ids": [
-        2503
+        3876
       ],
-      "play": 25,
-      "win": 14,
-      "pick_rate": 0.0014
+      "play": 27,
+      "win": 15,
+      "pick_rate": 0.0015
     },
     {
       "ids": [
