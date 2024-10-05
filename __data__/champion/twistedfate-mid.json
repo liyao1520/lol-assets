@@ -400,18 +400,18 @@
             {
               "name": "MAGE",
               "stats": {
-                "win_rate": 0.502708,
-                "role_rate": 0.938014,
-                "play": 23819,
-                "win": 11974
+                "win_rate": 0.502068,
+                "role_rate": 0.937735,
+                "play": 23690,
+                "win": 11894
               }
             },
             {
               "name": "MARKSMAN",
               "stats": {
-                "win_rate": 0.391572,
-                "role_rate": 0.0383176,
-                "play": 973,
+                "win_rate": 0.391975,
+                "role_rate": 0.0384752,
+                "play": 972,
                 "win": 381
               }
             },
@@ -427,6 +427,11 @@
           ],
           "counters": [
             {
+              "champion_id": 69,
+              "play": 120,
+              "win": 48
+            },
+            {
               "champion_id": 80,
               "play": 72,
               "win": 29
@@ -435,11 +440,6 @@
               "champion_id": 20,
               "play": 64,
               "win": 26
-            },
-            {
-              "champion_id": 105,
-              "play": 265,
-              "win": 109
             }
           ]
         }
@@ -448,6 +448,273 @@
     },
     "opponents": [
       [
+        {
+          "champion_id": 69,
+          "play": 120,
+          "win": 48,
+          "meta": {
+            "id": 69,
+            "key": "Cassiopeia",
+            "name": "魔蛇之拥",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Cassiopeia.png",
+            "evolve": [],
+            "partype": "法力",
+            "passive": {
+              "name": "优雅蛇行",
+              "description": "卡西奥佩娅随等级获得移动速度，但她无法购买鞋子类装备。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Cassiopeia_Passive.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0069/ability_0069_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "瘟毒爆炸",
+                "description": "在短暂的延迟后，卡西奥佩娅用毒素引爆一片区域，并且如果命中了一名敌方英雄，就会获得移动速度加成。",
+                "max_rank": 5,
+                "range_burn": [
+                  850
+                ],
+                "cooldown_burn": [
+                  3
+                ],
+                "cooldown_burn_float": [
+                  3.5
+                ],
+                "cost_burn": [
+                  50,
+                  55,
+                  60,
+                  65,
+                  70
+                ],
+                "tooltip": "卡西奥佩娅引爆毒性气体，使敌人<keywordMajor>中毒</keywordMajor>并且在3秒内造成<magicDamage>?魔法伤害</magicDamage>。命中一名英雄会为卡西奥佩娅提供在3秒里持续衰减的<speed>30/35/40/45/50%移动速度</speed>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/CassiopeiaQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0069/ability_0069_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "剧毒迷雾",
+                "description": "卡西奥佩娅释放出若干团毒云，对经过毒云的敌人造成减速效果、缚地效果和轻量伤害。被缚地的敌人无法使用位移技能。",
+                "max_rank": 5,
+                "range_burn": [
+                  700
+                ],
+                "cooldown_burn": [
+                  24,
+                  22,
+                  20,
+                  18,
+                  16
+                ],
+                "cooldown_burn_float": [
+                  24,
+                  22,
+                  20,
+                  18,
+                  16
+                ],
+                "cost_burn": [
+                  70,
+                  75,
+                  80,
+                  85,
+                  90
+                ],
+                "tooltip": "卡西奥佩娅吐出毒液，留下一团持续5秒的毒云。毒云内的敌人们每秒受到<magicDamage>?魔法伤害</magicDamage>，<keywordMajor>中毒</keywordMajor>，<status>缚地</status>，以及<status>减速</status>40/50/60/70/80%。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/CassiopeiaW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0069/ability_0069_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "双生毒牙",
+                "description": "卡西奥佩娅释放一次攻击，可对中毒的目标造成额外伤害并且基于实际伤害值为她提供治疗效果。如果目标死于这次攻击，卡西奥佩娅会回复法力值。",
+                "max_rank": 5,
+                "range_burn": [
+                  700
+                ],
+                "cooldown_burn": [
+                  0
+                ],
+                "cooldown_burn_float": [
+                  0.75
+                ],
+                "cost_burn": [
+                  40
+                ],
+                "tooltip": "卡西奥佩娅发射致命的毒牙，造成<magicDamage>?魔法伤害</magicDamage>。如果敌人已经<keywordMajor>中毒</keywordMajor>，那么还会受到额外的<magicDamage>?魔法伤害</magicDamage>并且卡西奥佩娅回复<healing>?生命值</healing>，对抗小兵和小型野怪降低至<healing>?生命值</healing>。<br /><br />如果这个技能击杀了目标，那么卡西奥佩娅回复<scaleMana>40法力值</scaleMana>。<br /><br />?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/CassiopeiaE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0069/ability_0069_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "石化凝视",
+                "description": "卡西奥佩娅从眼中放出一团魔法能量，对她前方的任何面对她的敌人造成晕眩效果并对其它背对她的敌人造成减速效果。",
+                "max_rank": 3,
+                "range_burn": [
+                  825
+                ],
+                "cooldown_burn": [
+                  120,
+                  100,
+                  80
+                ],
+                "cooldown_burn_float": [
+                  120,
+                  100,
+                  80
+                ],
+                "cost_burn": [
+                  100
+                ],
+                "tooltip": "卡西奥佩娅释放一道震慑敌人的凝视，造成<magicDamage>?魔法伤害</magicDamage>并将面朝她的敌人们<status>晕眩</status>?秒。作为替代，未面朝她的敌人们会被<status>减速</status>?%，在相同时长内持续衰减。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/CassiopeiaR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0069/ability_0069_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 69000,
+                "champion_id": 69,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 4800
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 880
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 69008,
+                "champion_id": 69,
+                "name": "上古魔蛇 卡西奥佩娅",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_8.jpg",
+                "skin_video_url": "https://youtu.be/Hy_8-uTFyI0",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2017-09-21T02:00:00+09:00"
+              },
+              {
+                "id": 69002,
+                "champion_id": 69,
+                "name": "深海妖姬 卡西奥佩娅",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_2.jpg",
+                "skin_video_url": "https://youtu.be/a2OAleQQ0_0",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 520
+                  }
+                ],
+                "sales": null,
+                "release_date": "2010-12-13T21:00:00+09:00"
+              },
+              {
+                "id": 69009,
+                "champion_id": 69,
+                "name": "灵魂莲华 卡西奥佩娅",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_9.jpg",
+                "skin_video_url": "https://youtu.be/GD51mdlNLf4",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-08-06T04:00:00+09:00"
+              },
+              {
+                "id": 69004,
+                "champion_id": 69,
+                "name": "碧玉之牙 卡西奥佩娅",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_4.jpg",
+                "skin_video_url": "https://youtu.be/IvO4U8xhsF4",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2013-02-06T09:00:00+09:00"
+              },
+              {
+                "id": 69001,
+                "champion_id": 69,
+                "name": "荒漠之咬 卡西奥佩娅",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_1.jpg",
+                "skin_video_url": "https://youtu.be/tnQogpHIoAE",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 520
+                  }
+                ],
+                "sales": null,
+                "release_date": "2010-12-13T22:00:00+09:00"
+              },
+              {
+                "id": 69003,
+                "champion_id": 69,
+                "name": "蛇发女妖 卡西奥佩娅",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_3.jpg",
+                "skin_video_url": "https://youtu.be/-zyvBAdZ-48",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2012-07-24T04:00:00+09:00"
+              },
+              {
+                "id": 69028,
+                "champion_id": 69,
+                "name": "魅惑女巫 卡西奥佩娅",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_28.jpg",
+                "skin_video_url": "https://youtu.be/Y21gH7GAA7w",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 69018,
+                "champion_id": 69,
+                "name": "魔女 卡西奥佩娅",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_18.jpg",
+                "skin_video_url": "https://youtu.be/yY7tDgIPCyQ",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-08-12T04:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 40
+        },
         {
           "champion_id": 80,
           "play": 72,
@@ -1090,7 +1357,7 @@
         },
         {
           "champion_id": 105,
-          "play": 265,
+          "play": 264,
           "win": 109,
           "meta": {
             "id": 105,
@@ -1434,262 +1701,173 @@
               }
             ]
           },
-          "win_rate": 41.13
+          "win_rate": 41.29
         },
         {
-          "champion_id": 69,
-          "play": 123,
-          "win": 51,
+          "champion_id": 950,
+          "play": 103,
+          "win": 43,
           "meta": {
-            "id": 69,
-            "key": "Cassiopeia",
-            "name": "魔蛇之拥",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Cassiopeia.png",
+            "id": 950,
+            "key": "Naafiri",
+            "name": "百裂冥犬",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Naafiri.png",
             "evolve": [],
             "partype": "法力",
             "passive": {
-              "name": "优雅蛇行",
-              "description": "卡西奥佩娅随等级获得移动速度，但她无法购买鞋子类装备。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Cassiopeia_Passive.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0069/ability_0069_P1.webm"
+              "name": "狂烈种群",
+              "description": "纳亚菲利生成狗群伙伴，它们会在她攻击或施放技能时攻击目标。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Icons_Naafiri_P.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0950/ability_0950_P1.webm"
             },
             "spells": [
               {
                 "key": "Q",
-                "name": "瘟毒爆炸",
-                "description": "在短暂的延迟后，卡西奥佩娅用毒素引爆一片区域，并且如果命中了一名敌方英雄，就会获得移动速度加成。",
+                "name": "暗裔犬牙",
+                "description": "纳亚菲利猛投出两根犬牙，每根都会施加流血效果，或在目标已经流血时施加额外伤害。<br><br>狗群伙伴们会跃向并攻击被这个技能命中的英雄。",
                 "max_rank": 5,
                 "range_burn": [
-                  850
+                  900
                 ],
                 "cooldown_burn": [
-                  3
+                  9,
+                  8,
+                  8,
+                  7,
+                  7
                 ],
                 "cooldown_burn_float": [
-                  3.5
+                  9,
+                  8.5,
+                  8,
+                  7.5,
+                  7
                 ],
                 "cost_burn": [
-                  50,
                   55,
                   60,
                   65,
-                  70
+                  70,
+                  75
                 ],
-                "tooltip": "卡西奥佩娅引爆毒性气体，使敌人<keywordMajor>中毒</keywordMajor>并且在3秒内造成<magicDamage>?魔法伤害</magicDamage>。命中一名英雄会为卡西奥佩娅提供在3秒里持续衰减的<speed>30/35/40/45/50%移动速度</speed>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/CassiopeiaQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0069/ability_0069_Q1.webm"
+                "tooltip": "纳亚菲利猛投出多个侵染了暗裔能量的犬牙，造成<physicalDamage>?物理伤害</physicalDamage>并施加一个流血效果，流血会在?秒里持续造成共<physicalDamage>?物理伤害</physicalDamage>。<br /><br />纳亚菲利可以<recast>再次施放</recast>这个技能。如果被命中的敌人已经被施加了来自这个技能的流血，那么它会转而造成剩余的流血伤害外加<physicalDamage>? </physicalDamage>到<physicalDamage>?物理伤害</physicalDamage>，基于该敌人的已损失生命值。如果该目标是一个英雄或大型野怪，那么纳亚菲利会回复<healing>?生命值</healing>。<br /><br /><keywordMajor>狗群伙伴</keywordMajor>们将跃向被命中的第一个英雄并攻击该英雄?秒。<br /><br />?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NaafiriQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0950/ability_0950_Q1.webm"
               },
               {
                 "key": "W",
-                "name": "剧毒迷雾",
-                "description": "卡西奥佩娅释放出若干团毒云，对经过毒云的敌人造成减速效果、缚地效果和轻量伤害。被缚地的敌人无法使用位移技能。",
+                "name": "猎狗血性",
+                "description": "纳亚菲利与她的狗群伙伴们一起向一个敌人冲刺，撞击命中的第一个敌方英雄并造成伤害。",
                 "max_rank": 5,
                 "range_burn": [
                   700
                 ],
                 "cooldown_burn": [
-                  24,
                   22,
                   20,
                   18,
-                  16
+                  16,
+                  14
                 ],
                 "cooldown_burn_float": [
-                  24,
                   22,
                   20,
                   18,
-                  16
+                  16,
+                  14
                 ],
                 "cost_burn": [
                   70,
-                  75,
-                  80,
-                  85,
-                  90
+                  60,
+                  50,
+                  40,
+                  30
                 ],
-                "tooltip": "卡西奥佩娅吐出毒液，留下一团持续5秒的毒云。毒云内的敌人们每秒受到<magicDamage>?魔法伤害</magicDamage>，<keywordMajor>中毒</keywordMajor>，<status>缚地</status>，以及<status>减速</status>40/50/60/70/80%。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/CassiopeiaW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0069/ability_0069_W1.webm"
+                "tooltip": "纳亚菲利向一个敌人冲刺，在她命中第一个英雄时停下，对其造成<physicalDamage>?物理伤害</physicalDamage>和短暂<status>减速</status>。<br /><br /><keywordMajor>狗群伙伴</keywordMajor>们会变为不可被选取状态并与纳亚菲利一起冲刺，每只<keywordMajor>狗群伙伴</keywordMajor>造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br />这个技能会基于终极技能的技能等级获得距离。当前加成：?<br />?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NaafiriW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0950/ability_0950_W1.webm"
               },
               {
                 "key": "E",
-                "name": "双生毒牙",
-                "description": "卡西奥佩娅释放一次攻击，可对中毒的目标造成额外伤害并且基于实际伤害值为她提供治疗效果。如果目标死于这次攻击，卡西奥佩娅会回复法力值。",
+                "name": "剔骨本能",
+                "description": "纳亚菲利冲刺并伤害她附近一个区域内的敌人们，唤回她的狗群并完全回复它们的生命值。",
                 "max_rank": 5,
                 "range_burn": [
-                  700
+                  350
                 ],
                 "cooldown_burn": [
-                  0
+                  10,
+                  9,
+                  9,
+                  8,
+                  8
                 ],
                 "cooldown_burn_float": [
-                  0.75
+                  10,
+                  9.5,
+                  9,
+                  8.5,
+                  8
                 ],
                 "cost_burn": [
-                  40
+                  35
                 ],
-                "tooltip": "卡西奥佩娅发射致命的毒牙，造成<magicDamage>?魔法伤害</magicDamage>。如果敌人已经<keywordMajor>中毒</keywordMajor>，那么还会受到额外的<magicDamage>?魔法伤害</magicDamage>并且卡西奥佩娅回复<healing>?生命值</healing>，对抗小兵和小型野怪降低至<healing>?生命值</healing>。<br /><br />如果这个技能击杀了目标，那么卡西奥佩娅回复<scaleMana>40法力值</scaleMana>。<br /><br />?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/CassiopeiaE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0069/ability_0069_E1.webm"
+                "tooltip": "纳亚菲利向前奔涌，造成<physicalDamage>?物理伤害</physicalDamage>，然后爆裂出一连串利刃，造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br /><keywordMajor>狗群伙伴</keywordMajor>会被唤回至纳亚菲利处并<healing>回复100%生命值</healing>。<br />?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NaafiriE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0950/ability_0950_E1.webm"
               },
               {
                 "key": "R",
-                "name": "石化凝视",
-                "description": "卡西奥佩娅从眼中放出一团魔法能量，对她前方的任何面对她的敌人造成晕眩效果并对其它背对她的敌人造成减速效果。",
+                "name": "暴吼",
+                "description": "纳亚菲利强化她的狗群并生成额外的狗群伙伴，立刻获得爆发性的速度和视野，并在她首次命中另一名英雄时获得一个护盾。<br><br>在首次击杀另一名英雄后，所有效果都会刷新。<br>",
                 "max_rank": 3,
                 "range_burn": [
-                  825
+                  400
                 ],
                 "cooldown_burn": [
                   120,
-                  100,
-                  80
+                  110,
+                  100
                 ],
                 "cooldown_burn_float": [
                   120,
-                  100,
-                  80
+                  110,
+                  100
                 ],
                 "cost_burn": [
                   100
                 ],
-                "tooltip": "卡西奥佩娅释放一道震慑敌人的凝视，造成<magicDamage>?魔法伤害</magicDamage>并将面朝她的敌人们<status>晕眩</status>?秒。作为替代，未面朝她的敌人们会被<status>减速</status>?%，在相同时长内持续衰减。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/CassiopeiaR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0069/ability_0069_R1.webm"
+                "tooltip": "<spellPassive>被动：</spellPassive><spellActive>猎狗血性</spellActive>获得?距离。<br /><br /><spellActive>主动：</spellActive>纳亚菲利准备狩猎，获得<physicalDamage>?攻击力</physicalDamage>、<keywordMajor>强化她的狗群</keywordMajor>、并生成<keywordMajor>?只额外的狗群伙伴</keywordMajor>，持续?秒。<br /><br />纳亚菲利还会获得她周围环境的视野和<speed>在?秒里持续衰减的?%移动速度，这个移速加成会在受到伤害时降低至?%。</speed>在她第一次命中一个英雄时，她获会获得持续?秒的<shield>?护盾值</shield>。<br /><br />首次参与击杀一名英雄后，所有效果都会刷新。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/NaafiriR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0950/ability_0950_R1.webm"
               }
             ],
             "skins": [
               {
-                "id": 69000,
-                "champion_id": 69,
+                "id": 950000,
+                "champion_id": 950,
                 "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_0.jpg",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Naafiri_0.jpg",
                 "skin_video_url": null,
                 "prices": [
                   {
                     "currency": "IP",
-                    "cost": 4800
+                    "cost": 6300
                   },
-                  {
-                    "currency": "RP",
-                    "cost": 880
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 69008,
-                "champion_id": 69,
-                "name": "上古魔蛇 卡西奥佩娅",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_8.jpg",
-                "skin_video_url": "https://youtu.be/Hy_8-uTFyI0",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2017-09-21T02:00:00+09:00"
-              },
-              {
-                "id": 69002,
-                "champion_id": 69,
-                "name": "深海妖姬 卡西奥佩娅",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_2.jpg",
-                "skin_video_url": "https://youtu.be/a2OAleQQ0_0",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 520
-                  }
-                ],
-                "sales": null,
-                "release_date": "2010-12-13T21:00:00+09:00"
-              },
-              {
-                "id": 69009,
-                "champion_id": 69,
-                "name": "灵魂莲华 卡西奥佩娅",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_9.jpg",
-                "skin_video_url": "https://youtu.be/GD51mdlNLf4",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2020-08-06T04:00:00+09:00"
-              },
-              {
-                "id": 69004,
-                "champion_id": 69,
-                "name": "碧玉之牙 卡西奥佩娅",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_4.jpg",
-                "skin_video_url": "https://youtu.be/IvO4U8xhsF4",
-                "prices": [
                   {
                     "currency": "RP",
                     "cost": 975
                   }
                 ],
                 "sales": null,
-                "release_date": "2013-02-06T09:00:00+09:00"
-              },
-              {
-                "id": 69001,
-                "champion_id": 69,
-                "name": "荒漠之咬 卡西奥佩娅",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_1.jpg",
-                "skin_video_url": "https://youtu.be/tnQogpHIoAE",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 520
-                  }
-                ],
-                "sales": null,
-                "release_date": "2010-12-13T22:00:00+09:00"
-              },
-              {
-                "id": 69003,
-                "champion_id": 69,
-                "name": "蛇发女妖 卡西奥佩娅",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_3.jpg",
-                "skin_video_url": "https://youtu.be/-zyvBAdZ-48",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2012-07-24T04:00:00+09:00"
-              },
-              {
-                "id": 69028,
-                "champion_id": 69,
-                "name": "魅惑女巫 卡西奥佩娅",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_28.jpg",
-                "skin_video_url": "https://youtu.be/Y21gH7GAA7w",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
                 "release_date": null
               },
               {
-                "id": 69018,
-                "champion_id": 69,
-                "name": "魔女 卡西奥佩娅",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Cassiopeia_18.jpg",
-                "skin_video_url": "https://youtu.be/yY7tDgIPCyQ",
+                "id": 950001,
+                "champion_id": 950,
+                "name": "斗魂觉醒 纳亚菲利",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Naafiri_1.jpg",
+                "skin_video_url": "https://youtu.be/iaKpBpkzThg",
                 "prices": [
                   {
                     "currency": "RP",
@@ -1697,270 +1875,26 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2021-08-12T04:00:00+09:00"
+                "release_date": "2023-07-20T04:00:00+09:00"
+              },
+              {
+                "id": 950011,
+                "champion_id": 950,
+                "name": "源计划：狂猎 纳亚菲利",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Naafiri_11.jpg",
+                "skin_video_url": "https://youtu.be/TSHtyXzA1Vo",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-03-06T10:00:00+09:00"
               }
             ]
           },
-          "win_rate": 41.46
-        },
-        {
-          "champion_id": 50,
-          "play": 43,
-          "win": 18,
-          "meta": {
-            "id": 50,
-            "key": "Swain",
-            "name": "诺克萨斯统领",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Swain.png",
-            "evolve": [],
-            "partype": "法力",
-            "passive": {
-              "name": "狂食鸦群",
-              "description": "斯维因的鸦群会收集<i>魂屑</i>来治疗斯维因并永久提升他的最大生命值。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Swain_P.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0050/ability_0050_P1.webm"
-            },
-            "spells": [
-              {
-                "key": "Q",
-                "name": "解脱之触",
-                "description": "斯维因释放多道恶魔之力，这种力量可以穿透命中的目标。被一道以上的恶魔之力所命中的敌人，会受到基于恶魔之力数量的更多伤害。",
-                "max_rank": 5,
-                "range_burn": [
-                  750
-                ],
-                "cooldown_burn": [
-                  7,
-                  6,
-                  5,
-                  4,
-                  3
-                ],
-                "cooldown_burn_float": [
-                  7,
-                  6,
-                  5,
-                  4,
-                  3
-                ],
-                "cost_burn": [
-                  45,
-                  50,
-                  55,
-                  60,
-                  65
-                ],
-                "tooltip": "斯维因释放5道恶魔之力，造成<magicDamage>?魔法伤害</magicDamage>，第一道之后的每道恶魔之力造成<magicDamage>?魔法伤害</magicDamage>(最大伤害为<magicDamage>?魔法伤害</magicDamage>)。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SwainQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0050/ability_0050_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "帝国视界",
-                "description": "斯维因睁开恶魔之眼来对敌人造成伤害和减速效果。在命中敌方英雄时会使该英雄显形，并为斯维因提供一片魂屑。",
-                "max_rank": 5,
-                "range_burn": [
-                  5500,
-                  6000,
-                  6500,
-                  7000,
-                  7500
-                ],
-                "cooldown_burn": [
-                  22,
-                  21,
-                  20,
-                  19,
-                  18
-                ],
-                "cooldown_burn_float": [
-                  22,
-                  21,
-                  20,
-                  19,
-                  18
-                ],
-                "cost_burn": [
-                  60,
-                  65,
-                  70,
-                  75,
-                  80
-                ],
-                "tooltip": "斯维因睁开一只恶魔之眼，来使一个位置显形1.5秒，然后造成<magicDamage>?魔法伤害</magicDamage>和持续2.5秒的25/35/45/55/65%<status>减速</status>。被命中的英雄会为斯维因提供一片<span class=\"size18 colorFF3F3F\">魂屑</span>并显形4/5/6/7/8秒。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SwainW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0050/ability_0050_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "永不复行",
-                "description": "斯维因释放一道恶魔之手向前击出。手臂随后会返回至斯维因处，并禁锢它命中的敌人。斯维因之后可以选择将所有被禁锢的英雄们拉拽得更靠近他。这个技能在【恶魔升华】期间会有一个更短的冷却时间。",
-                "max_rank": 5,
-                "range_burn": [
-                  850
-                ],
-                "cooldown_burn": [
-                  10
-                ],
-                "cooldown_burn_float": [
-                  10
-                ],
-                "cost_burn": [
-                  50
-                ],
-                "tooltip": "斯维因发射一道恶魔能量波，造成<magicDamage>?魔法伤害</magicDamage>。之后能量波会折返，并在其命中第一个敌人时爆炸，对一个区域内的敌人造成<magicDamage>?魔法伤害</magicDamage>和1.5秒<status>禁锢</status>。在<spellName>恶魔升华</spellName>期间，这个技能的冷却时间缩短?%。<br /><br />用【永不复行】命中一名英雄后，可使斯维因再次施放这个技能来拉拽所有被【永不复行】命中的英雄们，并且每个被他拉拽的英雄将为他提供一个<span class=\"size18 colorFF3F3F\">魂屑</span>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SwainE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0050/ability_0050_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "恶魔升华",
-                "description": "斯维因变身为恶魔并从附近的敌方英雄、小兵和中立野怪身上汲取生命值。斯维因能施放【恶魔耀光】来用一道魂焰新星残害并减速附近的敌人们。这个形态可以在斯维因汲取敌方英雄时无限持续。",
-                "max_rank": 3,
-                "range_burn": [
-                  650
-                ],
-                "cooldown_burn": [
-                  100,
-                  80,
-                  60
-                ],
-                "cooldown_burn_float": [
-                  100,
-                  80,
-                  60
-                ],
-                "cost_burn": [
-                  100
-                ],
-                "tooltip": "斯维因使体内的恶魔解脱，每秒造成<magicDamage>?魔法伤害</magicDamage>并且每伤害一个目标就会回复<healing>?生命值</healing>。他的恶魔能量会持续消耗，并且可通过汲取敌方英雄来无限期地充能并且会在参与击杀英雄后完全回复。<br /><br />在?秒后，斯维因能够施放<spellName>恶魔耀光</spellName>来对敌人们造成<magicDamage>?魔法伤害</magicDamage>和持续?秒的?%<status>减速</status>。<br /><br /><rules>对非英雄单位的治疗效果降低至<healing>?</healing>。<br />在?秒后，斯维因的恶魔能量会消耗得更快。</rules>?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SwainR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0050/ability_0050_R1.webm"
-              }
-            ],
-            "skins": [
-              {
-                "id": 50000,
-                "champion_id": 50,
-                "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_0.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "IP",
-                    "cost": 3150
-                  },
-                  {
-                    "currency": "RP",
-                    "cost": 790
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 50021,
-                "champion_id": 50,
-                "name": "北极星猎人 斯维因",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_21.jpg",
-                "skin_video_url": "https://youtu.be/0FQTWh_tXmE",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2022-12-08T04:00:00+09:00"
-              },
-              {
-                "id": 50001,
-                "champion_id": 50,
-                "name": "北领前线 斯维因",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_1.jpg",
-                "skin_video_url": "https://youtu.be/VVkhj_yFohA",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 750
-                  }
-                ],
-                "sales": null,
-                "release_date": "2010-10-04T15:00:00+09:00"
-              },
-              {
-                "id": 50012,
-                "champion_id": 50,
-                "name": "水晶玫瑰 斯维因",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_12.jpg",
-                "skin_video_url": "https://youtu.be/Ee8sb6kHU-U",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2021-02-11T04:00:00+09:00"
-              },
-              {
-                "id": 50011,
-                "champion_id": 50,
-                "name": "海克斯科技 斯维因",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_11.jpg",
-                "skin_video_url": "https://youtu.be/zXsQbHMY4tg",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 50002,
-                "champion_id": 50,
-                "name": "海贼参谋 斯维因",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_2.jpg",
-                "skin_video_url": "https://youtu.be/GZb6zOr5PdI",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 520
-                  }
-                ],
-                "sales": null,
-                "release_date": "2010-10-04T15:00:00+09:00"
-              },
-              {
-                "id": 50003,
-                "champion_id": 50,
-                "name": "绝代智将 斯维因",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_3.jpg",
-                "skin_video_url": "https://youtu.be/p3K4chD-QAI",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2012-05-24T23:00:00+09:00"
-              },
-              {
-                "id": 50004,
-                "champion_id": 50,
-                "name": "驯龙大师 斯维因",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_4.jpg",
-                "skin_video_url": "https://youtu.be/0r97R6SmFJw",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2018-02-21T20:00:00+09:00"
-              }
-            ]
-          },
-          "win_rate": 41.86
+          "win_rate": 41.75
         }
       ],
       [
@@ -2309,178 +2243,8 @@
           "win_rate": 62.5
         },
         {
-          "champion_id": 901,
-          "play": 220,
-          "win": 131,
-          "meta": {
-            "id": 901,
-            "key": "Smolder",
-            "name": "炽炎雏龙",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Smolder.png",
-            "evolve": [],
-            "partype": "法力",
-            "passive": {
-              "name": "龙之研习",
-              "description": "用技能命中英雄和用超级灼热龙息 击杀敌人时会提供一层龙之研习。层数会提升斯莫德各基础技能的伤害。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Icons_Smolder_Passive.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_P1.webm"
-            },
-            "spells": [
-              {
-                "key": "Q",
-                "name": "超级灼热龙息",
-                "description": "斯莫德在一名敌人身上喷吐烈焰。随着他获得更多层数，这个技能会变得更加强力。",
-                "max_rank": 5,
-                "range_burn": [
-                  550
-                ],
-                "cooldown_burn": [
-                  5,
-                  5,
-                  4,
-                  4,
-                  3
-                ],
-                "cooldown_burn_float": [
-                  5.5,
-                  5,
-                  4.5,
-                  4,
-                  3.5
-                ],
-                "cost_burn": [
-                  25
-                ],
-                "tooltip": "斯莫德喷出烈焰，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。<br /><br />基于<spellName>龙之研习</spellName>的层数，这个技能会不断进化以获得以下效果：<li><keywordMajor>?层</keywordMajor>：伤害目标周围的所有敌人。</li><li><keywordMajor>?层</keywordMajor>：在目标后侧引发<spellName>{{ tier2_numberofblowback }}</spellName>次爆炸，造成{{ tier2_blowbackpercentagedamage }}%此技能伤害。</li><li><keywordMajor>?层</keywordMajor>：灼烧目标，在{{ tier3_dotlength }}秒里持续造成共<trueDamage>{{ tier3_burn }}最大生命值的真实伤害</trueDamage>。 敌方英雄如果在灼烧期间跌到<trueDamage>{{ tier3_executethreshold }}</trueDamage>总生命值以下，则会被立刻击杀。</li>?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "阿嚏！",
-                "description": "斯莫德发出一个萌萌的烈焰喷嚏，喷嚏会在命中敌人时爆炸。",
-                "max_rank": 5,
-                "range_burn": [
-                  1500
-                ],
-                "cooldown_burn": [
-                  14,
-                  13,
-                  12,
-                  11,
-                  10
-                ],
-                "cooldown_burn_float": [
-                  14,
-                  13,
-                  12,
-                  11,
-                  10
-                ],
-                "cost_burn": [
-                  60
-                ],
-                "tooltip": "斯莫德发出一个萌萌的烈焰喷嚏，造成<physicalDamage>?物理伤害</physicalDamage>和持续?秒的?%<status>减速</status>。<br /><br />命中英雄时会引发一次爆炸，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "扑棱，扑棱，扑棱！",
-                "description": "斯莫德展翅高飞，无视地形并轰击生命值最低的敌人。",
-                "max_rank": 5,
-                "range_burn": [
-                  700
-                ],
-                "cooldown_burn": [
-                  24,
-                  22,
-                  20,
-                  18,
-                  16
-                ],
-                "cooldown_burn_float": [
-                  24,
-                  22,
-                  20,
-                  18,
-                  16
-                ],
-                "cost_burn": [
-                  65
-                ],
-                "tooltip": "斯莫德展翅高飞，获得<speed>?%移动速度</speed>并无视地形，持续?秒。<br /><br />飞行时，斯莫德轰击生命值最低的敌方英雄<spellName>?</spellName>次(向下取整)，每次命中造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "妈----！",
-                "description": "斯莫德召唤他的妈妈从天空喷吐烈焰，对她的烈焰中心的敌人们造成额外伤害和减速。",
-                "max_rank": 3,
-                "range_burn": [
-                  4200
-                ],
-                "cooldown_burn": [
-                  140,
-                  130,
-                  120
-                ],
-                "cooldown_burn_float": [
-                  140,
-                  130,
-                  120
-                ],
-                "cost_burn": [
-                  100
-                ],
-                "tooltip": "斯莫德的妈妈从天空喷吐烈焰，造成<physicalDamage>?物理伤害</physicalDamage>。中心的敌人们会转而受到<physicalDamage>?</physicalDamage>伤害和持续?秒的?%<status>减速</status>。<br /><br />斯莫德的妈妈如果命中了她的儿子，则会为他治疗<healing>?生命值</healing>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_R1.webm"
-              }
-            ],
-            "skins": [
-              {
-                "id": 901000,
-                "champion_id": 901,
-                "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Smolder_0.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "IP",
-                    "cost": 6300
-                  },
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 901001,
-                "champion_id": 901,
-                "name": "天龙之子 斯莫德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Smolder_1.jpg",
-                "skin_video_url": "https://youtu.be/XeJNB08BRYU",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2024-01-31T10:00:00+09:00"
-              }
-            ]
-          },
-          "win_rate": 59.55
-        },
-        {
           "champion_id": 115,
-          "play": 86,
+          "play": 85,
           "win": 51,
           "meta": {
             "id": 115,
@@ -2781,12 +2545,182 @@
               }
             ]
           },
-          "win_rate": 59.3
+          "win_rate": 60
+        },
+        {
+          "champion_id": 901,
+          "play": 219,
+          "win": 130,
+          "meta": {
+            "id": 901,
+            "key": "Smolder",
+            "name": "炽炎雏龙",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Smolder.png",
+            "evolve": [],
+            "partype": "法力",
+            "passive": {
+              "name": "龙之研习",
+              "description": "用技能命中英雄和用超级灼热龙息 击杀敌人时会提供一层龙之研习。层数会提升斯莫德各基础技能的伤害。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Icons_Smolder_Passive.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "超级灼热龙息",
+                "description": "斯莫德在一名敌人身上喷吐烈焰。随着他获得更多层数，这个技能会变得更加强力。",
+                "max_rank": 5,
+                "range_burn": [
+                  550
+                ],
+                "cooldown_burn": [
+                  5,
+                  5,
+                  4,
+                  4,
+                  3
+                ],
+                "cooldown_burn_float": [
+                  5.5,
+                  5,
+                  4.5,
+                  4,
+                  3.5
+                ],
+                "cost_burn": [
+                  25
+                ],
+                "tooltip": "斯莫德喷出烈焰，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。<br /><br />基于<spellName>龙之研习</spellName>的层数，这个技能会不断进化以获得以下效果：<li><keywordMajor>?层</keywordMajor>：伤害目标周围的所有敌人。</li><li><keywordMajor>?层</keywordMajor>：在目标后侧引发<spellName>{{ tier2_numberofblowback }}</spellName>次爆炸，造成{{ tier2_blowbackpercentagedamage }}%此技能伤害。</li><li><keywordMajor>?层</keywordMajor>：灼烧目标，在{{ tier3_dotlength }}秒里持续造成共<trueDamage>{{ tier3_burn }}最大生命值的真实伤害</trueDamage>。 敌方英雄如果在灼烧期间跌到<trueDamage>{{ tier3_executethreshold }}</trueDamage>总生命值以下，则会被立刻击杀。</li>?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "阿嚏！",
+                "description": "斯莫德发出一个萌萌的烈焰喷嚏，喷嚏会在命中敌人时爆炸。",
+                "max_rank": 5,
+                "range_burn": [
+                  1500
+                ],
+                "cooldown_burn": [
+                  14,
+                  13,
+                  12,
+                  11,
+                  10
+                ],
+                "cooldown_burn_float": [
+                  14,
+                  13,
+                  12,
+                  11,
+                  10
+                ],
+                "cost_burn": [
+                  60
+                ],
+                "tooltip": "斯莫德发出一个萌萌的烈焰喷嚏，造成<physicalDamage>?物理伤害</physicalDamage>和持续?秒的?%<status>减速</status>。<br /><br />命中英雄时会引发一次爆炸，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "扑棱，扑棱，扑棱！",
+                "description": "斯莫德展翅高飞，无视地形并轰击生命值最低的敌人。",
+                "max_rank": 5,
+                "range_burn": [
+                  700
+                ],
+                "cooldown_burn": [
+                  24,
+                  22,
+                  20,
+                  18,
+                  16
+                ],
+                "cooldown_burn_float": [
+                  24,
+                  22,
+                  20,
+                  18,
+                  16
+                ],
+                "cost_burn": [
+                  65
+                ],
+                "tooltip": "斯莫德展翅高飞，获得<speed>?%移动速度</speed>并无视地形，持续?秒。<br /><br />飞行时，斯莫德轰击生命值最低的敌方英雄<spellName>?</spellName>次(向下取整)，每次命中造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "妈----！",
+                "description": "斯莫德召唤他的妈妈从天空喷吐烈焰，对她的烈焰中心的敌人们造成额外伤害和减速。",
+                "max_rank": 3,
+                "range_burn": [
+                  4200
+                ],
+                "cooldown_burn": [
+                  140,
+                  130,
+                  120
+                ],
+                "cooldown_burn_float": [
+                  140,
+                  130,
+                  120
+                ],
+                "cost_burn": [
+                  100
+                ],
+                "tooltip": "斯莫德的妈妈从天空喷吐烈焰，造成<physicalDamage>?物理伤害</physicalDamage>。中心的敌人们会转而受到<physicalDamage>?</physicalDamage>伤害和持续?秒的?%<status>减速</status>。<br /><br />斯莫德的妈妈如果命中了她的儿子，则会为他治疗<healing>?生命值</healing>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 901000,
+                "champion_id": 901,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Smolder_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 6300
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 901001,
+                "champion_id": 901,
+                "name": "天龙之子 斯莫德",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Smolder_1.jpg",
+                "skin_video_url": "https://youtu.be/XeJNB08BRYU",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-01-31T10:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 59.36
         },
         {
           "champion_id": 268,
-          "play": 167,
-          "win": 97,
+          "play": 166,
+          "win": 96,
           "meta": {
             "id": 268,
             "key": "Azir",
@@ -3041,7 +2975,7 @@
               }
             ]
           },
-          "win_rate": 58.08
+          "win_rate": 57.83
         },
         {
           "champion_id": 54,
@@ -3370,8 +3304,8 @@
     "counters": [
       {
         "champion_id": 517,
-        "play": 1216,
-        "win": 572,
+        "play": 1209,
+        "win": 567,
         "meta": {
           "id": 517,
           "key": "Sylas",
@@ -3631,8 +3565,8 @@
       },
       {
         "champion_id": 777,
-        "play": 1104,
-        "win": 573,
+        "play": 1096,
+        "win": 568,
         "meta": {
           "id": 777,
           "key": "Yone",
@@ -3894,8 +3828,8 @@
       },
       {
         "champion_id": 134,
-        "play": 1009,
-        "win": 503,
+        "play": 1003,
+        "win": 499,
         "meta": {
           "id": 134,
           "key": "Syndra",
@@ -4215,8 +4149,8 @@
       },
       {
         "champion_id": 910,
-        "play": 943,
-        "win": 426,
+        "play": 940,
+        "win": 425,
         "meta": {
           "id": 910,
           "key": "Hwei",
@@ -4396,8 +4330,8 @@
       },
       {
         "champion_id": 7,
-        "play": 834,
-        "win": 455,
+        "play": 832,
+        "win": 454,
         "meta": {
           "id": 7,
           "key": "Leblanc",
@@ -4731,8 +4665,8 @@
       },
       {
         "champion_id": 103,
-        "play": 767,
-        "win": 376,
+        "play": 761,
+        "win": 375,
         "meta": {
           "id": 103,
           "key": "Ahri",
@@ -5138,8 +5072,8 @@
       },
       {
         "champion_id": 84,
-        "play": 747,
-        "win": 393,
+        "play": 741,
+        "win": 389,
         "meta": {
           "id": 84,
           "key": "Akali",
@@ -5563,8 +5497,8 @@
       },
       {
         "champion_id": 157,
-        "play": 655,
-        "win": 317,
+        "play": 652,
+        "win": 314,
         "meta": {
           "id": 157,
           "key": "Yasuo",
@@ -5939,8 +5873,8 @@
       },
       {
         "champion_id": 61,
-        "play": 651,
-        "win": 315,
+        "play": 647,
+        "win": 313,
         "meta": {
           "id": 61,
           "key": "Orianna",
@@ -6260,7 +6194,7 @@
       },
       {
         "champion_id": 238,
-        "play": 520,
+        "play": 519,
         "win": 244,
         "meta": {
           "id": 238,
@@ -6589,8 +6523,8 @@
       },
       {
         "champion_id": 55,
-        "play": 486,
-        "win": 252,
+        "play": 483,
+        "win": 249,
         "meta": {
           "id": 55,
           "key": "Katarina",
@@ -6968,8 +6902,8 @@
       },
       {
         "champion_id": 3,
-        "play": 468,
-        "win": 215,
+        "play": 467,
+        "win": 214,
         "meta": {
           "id": 3,
           "key": "Galio",
@@ -7266,8 +7200,8 @@
       },
       {
         "champion_id": 136,
-        "play": 365,
-        "win": 169,
+        "play": 364,
+        "win": 168,
         "meta": {
           "id": 136,
           "key": "AurelionSol",
@@ -7479,7 +7413,7 @@
       },
       {
         "champion_id": 99,
-        "play": 345,
+        "play": 344,
         "win": 183,
         "meta": {
           "id": 99,
@@ -7921,8 +7855,8 @@
       },
       {
         "champion_id": 127,
-        "play": 340,
-        "win": 182,
+        "play": 339,
+        "win": 181,
         "meta": {
           "id": 127,
           "key": "Lissandra",
@@ -8198,7 +8132,7 @@
       },
       {
         "champion_id": 45,
-        "play": 327,
+        "play": 326,
         "win": 169,
         "meta": {
           "id": 45,
@@ -8576,8 +8510,8 @@
       },
       {
         "champion_id": 711,
-        "play": 323,
-        "win": 148,
+        "play": 322,
+        "win": 147,
         "meta": {
           "id": 711,
           "key": "Vex",
@@ -8762,7 +8696,7 @@
       },
       {
         "champion_id": 101,
-        "play": 322,
+        "play": 321,
         "win": 167,
         "meta": {
           "id": 101,
@@ -9043,7 +8977,7 @@
       },
       {
         "champion_id": 893,
-        "play": 313,
+        "play": 312,
         "win": 141,
         "meta": {
           "id": 893,
@@ -9212,7 +9146,7 @@
       },
       {
         "champion_id": 142,
-        "play": 296,
+        "play": 295,
         "win": 128,
         "meta": {
           "id": 142,
@@ -9466,8 +9400,8 @@
       },
       {
         "champion_id": 90,
-        "play": 284,
-        "win": 153,
+        "play": 283,
+        "win": 152,
         "meta": {
           "id": 90,
           "key": "Malzahar",
@@ -10028,7 +9962,7 @@
       },
       {
         "champion_id": 105,
-        "play": 265,
+        "play": 264,
         "win": 109,
         "meta": {
           "id": 105,
@@ -10375,8 +10309,8 @@
       },
       {
         "champion_id": 38,
-        "play": 232,
-        "win": 110,
+        "play": 231,
+        "win": 109,
         "meta": {
           "id": 38,
           "key": "Kassadin",
@@ -10654,8 +10588,8 @@
       },
       {
         "champion_id": 91,
-        "play": 230,
-        "win": 113,
+        "play": 229,
+        "win": 112,
         "meta": {
           "id": 91,
           "key": "Talon",
@@ -10964,7 +10898,7 @@
       },
       {
         "champion_id": 34,
-        "play": 228,
+        "play": 227,
         "win": 111,
         "meta": {
           "id": 34,
@@ -11271,8 +11205,8 @@
       },
       {
         "champion_id": 8,
-        "play": 227,
-        "win": 114,
+        "play": 225,
+        "win": 112,
         "meta": {
           "id": 8,
           "key": "Vladimir",
@@ -11595,8 +11529,8 @@
       },
       {
         "champion_id": 901,
-        "play": 220,
-        "win": 131,
+        "play": 219,
+        "win": 130,
         "meta": {
           "id": 901,
           "key": "Smolder",
@@ -11764,7 +11698,7 @@
       },
       {
         "champion_id": 131,
-        "play": 203,
+        "play": 202,
         "win": 94,
         "meta": {
           "id": 131,
@@ -12331,8 +12265,8 @@
       },
       {
         "champion_id": 13,
-        "play": 199,
-        "win": 105,
+        "play": 196,
+        "win": 104,
         "meta": {
           "id": 13,
           "key": "Ryze",
@@ -12664,7 +12598,7 @@
       },
       {
         "champion_id": 245,
-        "play": 194,
+        "play": 193,
         "win": 99,
         "meta": {
           "id": 245,
@@ -12985,8 +12919,8 @@
       },
       {
         "champion_id": 39,
-        "play": 188,
-        "win": 94,
+        "play": 186,
+        "win": 93,
         "meta": {
           "id": 39,
           "key": "Irelia",
@@ -13338,7 +13272,7 @@
       },
       {
         "champion_id": 246,
-        "play": 182,
+        "play": 181,
         "win": 92,
         "meta": {
           "id": 246,
@@ -13590,8 +13524,8 @@
       },
       {
         "champion_id": 268,
-        "play": 167,
-        "win": 97,
+        "play": 166,
+        "win": 96,
         "meta": {
           "id": 268,
           "key": "Azir",
@@ -13849,8 +13783,8 @@
       },
       {
         "champion_id": 18,
-        "play": 161,
-        "win": 81,
+        "play": 160,
+        "win": 80,
         "meta": {
           "id": 18,
           "key": "Tristana",
@@ -14410,8 +14344,8 @@
       },
       {
         "champion_id": 75,
-        "play": 143,
-        "win": 71,
+        "play": 140,
+        "win": 69,
         "meta": {
           "id": 75,
           "key": "Nasus",
@@ -14735,7 +14669,7 @@
       },
       {
         "champion_id": 126,
-        "play": 140,
+        "play": 139,
         "win": 69,
         "meta": {
           "id": 126,
@@ -15026,8 +14960,8 @@
       },
       {
         "champion_id": 1,
-        "play": 123,
-        "win": 56,
+        "play": 120,
+        "win": 54,
         "meta": {
           "id": 1,
           "key": "Annie",
@@ -15401,8 +15335,8 @@
       },
       {
         "champion_id": 69,
-        "play": 123,
-        "win": 51,
+        "play": 120,
+        "win": 48,
         "meta": {
           "id": 69,
           "key": "Cassiopeia",
@@ -15907,8 +15841,8 @@
       },
       {
         "champion_id": 950,
-        "play": 105,
-        "win": 45,
+        "play": 103,
+        "win": 43,
         "meta": {
           "id": 950,
           "key": "Naafiri",
@@ -16099,7 +16033,7 @@
       },
       {
         "champion_id": 115,
-        "play": 86,
+        "play": 85,
         "win": 51,
         "meta": {
           "id": 115,
@@ -19518,36 +19452,36 @@
         4,
         12
       ],
-      "win": 10112,
-      "play": 20402,
-      "pick_rate": 0.822
+      "win": 10047,
+      "play": 20296,
+      "pick_rate": 0.8221
     },
     {
       "ids": [
         4,
         6
       ],
-      "win": 1164,
-      "play": 2266,
-      "pick_rate": 0.0913
+      "win": 1160,
+      "play": 2257,
+      "pick_rate": 0.0914
     },
     {
       "ids": [
         4,
         14
       ],
-      "win": 883,
-      "play": 1735,
-      "pick_rate": 0.0699
+      "win": 872,
+      "play": 1720,
+      "pick_rate": 0.0697
     },
     {
       "ids": [
         3,
         4
       ],
-      "win": 74,
-      "play": 153,
-      "pick_rate": 0.0062
+      "win": 73,
+      "play": 151,
+      "pick_rate": 0.0061
     },
     {
       "ids": [
@@ -19800,9 +19734,9 @@
         "E",
         "E"
       ],
-      "play": 5581,
-      "win": 3125,
-      "pick_rate": 0.3347
+      "play": 5554,
+      "win": 3107,
+      "pick_rate": 0.3346
     },
     {
       "order": [
@@ -19822,9 +19756,9 @@
         "E",
         "E"
       ],
-      "play": 4971,
-      "win": 2865,
-      "pick_rate": 0.2981
+      "play": 4947,
+      "win": 2846,
+      "pick_rate": 0.298
     },
     {
       "order": [
@@ -19844,9 +19778,9 @@
         "E",
         "E"
       ],
-      "play": 1381,
-      "win": 739,
-      "pick_rate": 0.0828
+      "play": 1378,
+      "win": 738,
+      "pick_rate": 0.083
     },
     {
       "order": [
@@ -19866,8 +19800,8 @@
         "E",
         "E"
       ],
-      "play": 1115,
-      "win": 630,
+      "play": 1110,
+      "win": 626,
       "pick_rate": 0.0669
     },
     {
@@ -19888,9 +19822,9 @@
         "E",
         "E"
       ],
-      "play": 683,
-      "win": 386,
-      "pick_rate": 0.041
+      "play": 679,
+      "win": 383,
+      "pick_rate": 0.0409
     }
   ],
   "skill_masteries": [
@@ -19900,9 +19834,9 @@
         "W",
         "E"
       ],
-      "play": 15837,
-      "win": 9000,
-      "pick_rate": 0.9497,
+      "play": 15763,
+      "win": 8946,
+      "pick_rate": 0.9496,
       "builds": [
         {
           "order": [
@@ -19922,9 +19856,9 @@
             "E",
             "E"
           ],
-          "play": 5581,
-          "win": 3125,
-          "pick_rate": 0.3524
+          "play": 5554,
+          "win": 3107,
+          "pick_rate": 0.3523
         },
         {
           "order": [
@@ -19944,9 +19878,9 @@
             "E",
             "E"
           ],
-          "play": 4971,
-          "win": 2865,
-          "pick_rate": 0.3139
+          "play": 4947,
+          "win": 2846,
+          "pick_rate": 0.3138
         },
         {
           "order": [
@@ -19966,9 +19900,9 @@
             "E",
             "E"
           ],
-          "play": 1381,
-          "win": 739,
-          "pick_rate": 0.0872
+          "play": 1378,
+          "win": 738,
+          "pick_rate": 0.0874
         },
         {
           "order": [
@@ -19988,8 +19922,8 @@
             "E",
             "E"
           ],
-          "play": 1115,
-          "win": 630,
+          "play": 1110,
+          "win": 626,
           "pick_rate": 0.0704
         },
         {
@@ -20010,8 +19944,8 @@
             "E",
             "E"
           ],
-          "play": 683,
-          "win": 386,
+          "play": 679,
+          "win": 383,
           "pick_rate": 0.0431
         }
       ]
@@ -20024,7 +19958,7 @@
       ],
       "play": 390,
       "win": 224,
-      "pick_rate": 0.0234,
+      "pick_rate": 0.0235,
       "builds": [
         {
           "order": [
@@ -20146,7 +20080,7 @@
       ],
       "play": 284,
       "win": 165,
-      "pick_rate": 0.017,
+      "pick_rate": 0.0171,
       "builds": [
         {
           "order": [
@@ -20266,7 +20200,7 @@
         "E",
         "W"
       ],
-      "play": 85,
+      "play": 84,
       "win": 45,
       "pick_rate": 0.0051,
       "builds": [
@@ -20288,9 +20222,9 @@
             "W",
             "W"
           ],
-          "play": 33,
+          "play": 32,
           "win": 16,
-          "pick_rate": 0.3882
+          "pick_rate": 0.381
         },
         {
           "order": [
@@ -20312,7 +20246,7 @@
           ],
           "play": 5,
           "win": 2,
-          "pick_rate": 0.0588
+          "pick_rate": 0.0595
         },
         {
           "order": [
@@ -20334,7 +20268,7 @@
           ],
           "play": 4,
           "win": 3,
-          "pick_rate": 0.0471
+          "pick_rate": 0.0476
         },
         {
           "order": [
@@ -20356,7 +20290,7 @@
           ],
           "play": 3,
           "win": 2,
-          "pick_rate": 0.0353
+          "pick_rate": 0.0357
         },
         {
           "order": [
@@ -20378,7 +20312,7 @@
           ],
           "play": 2,
           "win": 2,
-          "pick_rate": 0.0235
+          "pick_rate": 0.0238
         }
       ]
     },
@@ -20388,8 +20322,8 @@
         "E",
         "Q"
       ],
-      "play": 52,
-      "win": 31,
+      "play": 51,
+      "win": 30,
       "pick_rate": 0.0031,
       "builds": [
         {
@@ -20412,7 +20346,7 @@
           ],
           "play": 15,
           "win": 9,
-          "pick_rate": 0.2885
+          "pick_rate": 0.2941
         },
         {
           "order": [
@@ -20434,7 +20368,7 @@
           ],
           "play": 3,
           "win": 2,
-          "pick_rate": 0.0577
+          "pick_rate": 0.0588
         },
         {
           "order": [
@@ -20456,7 +20390,7 @@
           ],
           "play": 2,
           "win": 2,
-          "pick_rate": 0.0385
+          "pick_rate": 0.0392
         },
         {
           "order": [
@@ -20478,7 +20412,7 @@
           ],
           "play": 1,
           "win": 0,
-          "pick_rate": 0.0192
+          "pick_rate": 0.0196
         },
         {
           "order": [
@@ -20500,7 +20434,7 @@
           ],
           "play": 1,
           "win": 0,
-          "pick_rate": 0.0192
+          "pick_rate": 0.0196
         }
       ]
     }
@@ -20526,9 +20460,9 @@
         5008,
         5001
       ],
-      "play": 2140,
-      "win": 971,
-      "pick_rate": 0.0851
+      "play": 2127,
+      "win": 963,
+      "pick_rate": 0.085
     },
     {
       "id": 8112,
@@ -20549,9 +20483,9 @@
         5008,
         5011
       ],
-      "play": 1969,
-      "win": 975,
-      "pick_rate": 0.0783
+      "play": 1961,
+      "win": 971,
+      "pick_rate": 0.0784
     },
     {
       "id": 8369,
@@ -20572,9 +20506,9 @@
         5008,
         5001
       ],
-      "play": 1104,
-      "win": 558,
-      "pick_rate": 0.0439
+      "play": 1096,
+      "win": 555,
+      "pick_rate": 0.0438
     },
     {
       "id": 8112,
@@ -20595,9 +20529,9 @@
         5008,
         5001
       ],
-      "play": 1103,
-      "win": 544,
-      "pick_rate": 0.0439
+      "play": 1094,
+      "win": 537,
+      "pick_rate": 0.0437
     },
     {
       "id": 8021,
@@ -20618,9 +20552,9 @@
         5008,
         5011
       ],
-      "play": 1018,
-      "win": 447,
-      "pick_rate": 0.0405
+      "play": 1011,
+      "win": 444,
+      "pick_rate": 0.0404
     }
   ],
   "rune_pages": [
@@ -20628,9 +20562,9 @@
       "id": 8112,
       "primary_page_id": 8100,
       "secondary_page_id": 8400,
-      "play": 5512,
-      "win": 2757,
-      "pick_rate": 0.2192,
+      "play": 5485,
+      "win": 2739,
+      "pick_rate": 0.2193,
       "builds": [
         {
           "id": 8112,
@@ -20651,9 +20585,9 @@
             5008,
             5011
           ],
-          "play": 1969,
-          "win": 975,
-          "pick_rate": 0.3572
+          "play": 1961,
+          "win": 971,
+          "pick_rate": 0.3575
         },
         {
           "id": 8112,
@@ -20674,9 +20608,9 @@
             5008,
             5001
           ],
-          "play": 1103,
-          "win": 544,
-          "pick_rate": 0.2001
+          "play": 1094,
+          "win": 537,
+          "pick_rate": 0.1995
         },
         {
           "id": 8112,
@@ -20697,8 +20631,8 @@
             5008,
             5011
           ],
-          "play": 430,
-          "win": 233,
+          "play": 428,
+          "win": 231,
           "pick_rate": 0.078
         },
         {
@@ -20720,9 +20654,9 @@
             5008,
             5011
           ],
-          "play": 326,
-          "win": 172,
-          "pick_rate": 0.0591
+          "play": 323,
+          "win": 171,
+          "pick_rate": 0.0589
         },
         {
           "id": 8112,
@@ -20743,8 +20677,8 @@
             5008,
             5001
           ],
-          "play": 215,
-          "win": 99,
+          "play": 214,
+          "win": 98,
           "pick_rate": 0.039
         }
       ]
@@ -20753,9 +20687,9 @@
       "id": 8112,
       "primary_page_id": 8100,
       "secondary_page_id": 8300,
-      "play": 5187,
-      "win": 2485,
-      "pick_rate": 0.2063,
+      "play": 5158,
+      "win": 2464,
+      "pick_rate": 0.2062,
       "builds": [
         {
           "id": 8112,
@@ -20776,9 +20710,9 @@
             5008,
             5001
           ],
-          "play": 2140,
-          "win": 971,
-          "pick_rate": 0.4126
+          "play": 2127,
+          "win": 963,
+          "pick_rate": 0.4124
         },
         {
           "id": 8112,
@@ -20799,9 +20733,9 @@
             5008,
             5001
           ],
-          "play": 308,
-          "win": 145,
-          "pick_rate": 0.0594
+          "play": 306,
+          "win": 143,
+          "pick_rate": 0.0593
         },
         {
           "id": 8112,
@@ -20824,7 +20758,7 @@
           ],
           "play": 205,
           "win": 102,
-          "pick_rate": 0.0395
+          "pick_rate": 0.0397
         },
         {
           "id": 8112,
@@ -20847,7 +20781,7 @@
           ],
           "play": 185,
           "win": 91,
-          "pick_rate": 0.0357
+          "pick_rate": 0.0359
         },
         {
           "id": 8112,
@@ -20870,7 +20804,7 @@
           ],
           "play": 184,
           "win": 92,
-          "pick_rate": 0.0355
+          "pick_rate": 0.0357
         }
       ]
     },
@@ -20878,9 +20812,9 @@
       "id": 8369,
       "primary_page_id": 8300,
       "secondary_page_id": 8200,
-      "play": 2336,
-      "win": 1164,
-      "pick_rate": 0.0929,
+      "play": 2320,
+      "win": 1156,
+      "pick_rate": 0.0928,
       "builds": [
         {
           "id": 8369,
@@ -20901,9 +20835,9 @@
             5008,
             5001
           ],
-          "play": 1104,
-          "win": 558,
-          "pick_rate": 0.4726
+          "play": 1096,
+          "win": 555,
+          "pick_rate": 0.4724
         },
         {
           "id": 8369,
@@ -20926,7 +20860,7 @@
           ],
           "play": 112,
           "win": 53,
-          "pick_rate": 0.0479
+          "pick_rate": 0.0483
         },
         {
           "id": 8369,
@@ -20949,7 +20883,7 @@
           ],
           "play": 79,
           "win": 47,
-          "pick_rate": 0.0338
+          "pick_rate": 0.0341
         },
         {
           "id": 8369,
@@ -20970,9 +20904,9 @@
             5008,
             5001
           ],
-          "play": 78,
+          "play": 77,
           "win": 26,
-          "pick_rate": 0.0334
+          "pick_rate": 0.0332
         },
         {
           "id": 8369,
@@ -20995,7 +20929,7 @@
           ],
           "play": 49,
           "win": 26,
-          "pick_rate": 0.021
+          "pick_rate": 0.0211
         }
       ]
     },
@@ -21003,9 +20937,9 @@
       "id": 8360,
       "primary_page_id": 8300,
       "secondary_page_id": 8400,
-      "play": 1601,
-      "win": 835,
-      "pick_rate": 0.0637,
+      "play": 1595,
+      "win": 830,
+      "pick_rate": 0.0638,
       "builds": [
         {
           "id": 8360,
@@ -21028,7 +20962,7 @@
           ],
           "play": 282,
           "win": 149,
-          "pick_rate": 0.1761
+          "pick_rate": 0.1768
         },
         {
           "id": 8360,
@@ -21051,7 +20985,7 @@
           ],
           "play": 125,
           "win": 70,
-          "pick_rate": 0.0781
+          "pick_rate": 0.0784
         },
         {
           "id": 8360,
@@ -21074,7 +21008,7 @@
           ],
           "play": 80,
           "win": 46,
-          "pick_rate": 0.05
+          "pick_rate": 0.0502
         },
         {
           "id": 8360,
@@ -21095,9 +21029,9 @@
             5008,
             5011
           ],
-          "play": 70,
-          "win": 34,
-          "pick_rate": 0.0437
+          "play": 69,
+          "win": 33,
+          "pick_rate": 0.0433
         },
         {
           "id": 8360,
@@ -21120,7 +21054,7 @@
           ],
           "play": 62,
           "win": 34,
-          "pick_rate": 0.0387
+          "pick_rate": 0.0389
         }
       ]
     },
@@ -21128,8 +21062,8 @@
       "id": 8112,
       "primary_page_id": 8100,
       "secondary_page_id": 8200,
-      "play": 1469,
-      "win": 734,
+      "play": 1460,
+      "win": 729,
       "pick_rate": 0.0584,
       "builds": [
         {
@@ -21153,7 +21087,7 @@
           ],
           "play": 157,
           "win": 70,
-          "pick_rate": 0.1069
+          "pick_rate": 0.1075
         },
         {
           "id": 8112,
@@ -21174,9 +21108,9 @@
             5008,
             5011
           ],
-          "play": 118,
-          "win": 59,
-          "pick_rate": 0.0803
+          "play": 117,
+          "win": 58,
+          "pick_rate": 0.0801
         },
         {
           "id": 8112,
@@ -21197,9 +21131,9 @@
             5008,
             5001
           ],
-          "play": 38,
+          "play": 37,
           "win": 21,
-          "pick_rate": 0.0259
+          "pick_rate": 0.0253
         },
         {
           "id": 8112,
@@ -21222,7 +21156,7 @@
           ],
           "play": 32,
           "win": 16,
-          "pick_rate": 0.0218
+          "pick_rate": 0.0219
         },
         {
           "id": 8112,
@@ -21245,7 +21179,7 @@
           ],
           "play": 30,
           "win": 13,
-          "pick_rate": 0.0204
+          "pick_rate": 0.0205
         }
       ]
     }
@@ -21257,9 +21191,9 @@
         3100,
         3094
       ],
-      "play": 4483,
-      "win": 2378,
-      "pick_rate": 0.2655
+      "play": 4463,
+      "win": 2365,
+      "pick_rate": 0.2656
     },
     {
       "ids": [
@@ -21268,9 +21202,9 @@
         3100,
         3094
       ],
-      "play": 1372,
-      "win": 841,
-      "pick_rate": 0.0813
+      "play": 1371,
+      "win": 840,
+      "pick_rate": 0.0816
     },
     {
       "ids": [
@@ -21278,9 +21212,9 @@
         3100,
         3094
       ],
-      "play": 1324,
-      "win": 715,
-      "pick_rate": 0.0784
+      "play": 1312,
+      "win": 705,
+      "pick_rate": 0.0781
     },
     {
       "ids": [
@@ -21288,9 +21222,9 @@
         3100,
         3094
       ],
-      "play": 821,
-      "win": 455,
-      "pick_rate": 0.0486
+      "play": 819,
+      "win": 453,
+      "pick_rate": 0.0487
     },
     {
       "ids": [
@@ -21298,9 +21232,9 @@
         3094,
         3100
       ],
-      "play": 662,
+      "play": 660,
       "win": 351,
-      "pick_rate": 0.0392
+      "pick_rate": 0.0393
     },
     {
       "ids": [
@@ -21308,9 +21242,9 @@
         3094,
         3100
       ],
-      "play": 383,
-      "win": 187,
-      "pick_rate": 0.0227
+      "play": 380,
+      "win": 185,
+      "pick_rate": 0.0226
     },
     {
       "ids": [
@@ -21318,8 +21252,8 @@
         3100,
         3157
       ],
-      "play": 340,
-      "win": 175,
+      "play": 337,
+      "win": 174,
       "pick_rate": 0.0201
     },
     {
@@ -21329,9 +21263,9 @@
         3100,
         3094
       ],
-      "play": 337,
-      "win": 227,
-      "pick_rate": 0.02
+      "play": 335,
+      "win": 225,
+      "pick_rate": 0.0199
     },
     {
       "ids": [
@@ -21339,8 +21273,8 @@
         3100,
         4646
       ],
-      "play": 273,
-      "win": 162,
+      "play": 272,
+      "win": 161,
       "pick_rate": 0.0162
     },
     {
@@ -21349,9 +21283,9 @@
         3100,
         3089
       ],
-      "play": 209,
-      "win": 112,
-      "pick_rate": 0.0124
+      "play": 207,
+      "win": 111,
+      "pick_rate": 0.0123
     },
     {
       "ids": [
@@ -21360,8 +21294,8 @@
         3100,
         3094
       ],
-      "play": 200,
-      "win": 127,
+      "play": 199,
+      "win": 126,
       "pick_rate": 0.0118
     },
     {
@@ -21371,8 +21305,8 @@
         3100,
         3041
       ],
-      "play": 182,
-      "win": 149,
+      "play": 181,
+      "win": 148,
       "pick_rate": 0.0108
     },
     {
@@ -21381,9 +21315,9 @@
         3094,
         3157
       ],
-      "play": 180,
-      "win": 95,
-      "pick_rate": 0.0107
+      "play": 178,
+      "win": 94,
+      "pick_rate": 0.0106
     },
     {
       "ids": [
@@ -21391,18 +21325,18 @@
         3100,
         3089
       ],
-      "play": 159,
-      "win": 78,
+      "play": 158,
+      "win": 77,
       "pick_rate": 0.0094
     },
     {
       "ids": [
-        6655,
-        4646,
-        3094
+        6657,
+        3094,
+        2065
       ],
-      "play": 157,
-      "win": 84,
+      "play": 156,
+      "win": 93,
       "pick_rate": 0.0093
     }
   ],
@@ -21411,41 +21345,41 @@
       "ids": [
         3009
       ],
-      "play": 6769,
-      "win": 3364,
+      "play": 6735,
+      "win": 3344,
       "pick_rate": 0.2746
     },
     {
       "ids": [
         3020
       ],
-      "play": 5892,
-      "win": 2994,
-      "pick_rate": 0.239
+      "play": 5850,
+      "win": 2967,
+      "pick_rate": 0.2385
     },
     {
       "ids": [
         3158
       ],
-      "play": 5559,
-      "win": 2719,
-      "pick_rate": 0.2255
+      "play": 5529,
+      "win": 2701,
+      "pick_rate": 0.2254
     },
     {
       "ids": [
         3111
       ],
-      "play": 3740,
-      "win": 1892,
-      "pick_rate": 0.1517
+      "play": 3731,
+      "win": 1885,
+      "pick_rate": 0.1521
     },
     {
       "ids": [
         3013
       ],
-      "play": 1407,
-      "win": 755,
-      "pick_rate": 0.0571
+      "play": 1402,
+      "win": 752,
+      "pick_rate": 0.0572
     }
   ],
   "starter_items": [
@@ -21455,35 +21389,35 @@
         2003,
         2003
       ],
-      "play": 22250,
-      "win": 11088,
-      "pick_rate": 0.8755
+      "play": 22134,
+      "win": 11019,
+      "pick_rate": 0.8754
     },
     {
       "ids": [
         1055,
         2003
       ],
-      "play": 1081,
-      "win": 481,
-      "pick_rate": 0.0425
+      "play": 1078,
+      "win": 480,
+      "pick_rate": 0.0426
     },
     {
       "ids": [
         1083,
         2003
       ],
-      "play": 576,
-      "win": 261,
-      "pick_rate": 0.0227
+      "play": 570,
+      "win": 257,
+      "pick_rate": 0.0225
     },
     {
       "ids": [
         1082,
         2031
       ],
-      "play": 434,
-      "win": 222,
+      "play": 433,
+      "win": 221,
       "pick_rate": 0.0171
     },
     {
@@ -21491,8 +21425,8 @@
         1054,
         2003
       ],
-      "play": 176,
-      "win": 92,
+      "play": 174,
+      "win": 90,
       "pick_rate": 0.0069
     },
     {
@@ -21512,8 +21446,8 @@
         1001,
         2031
       ],
-      "play": 105,
-      "win": 51,
+      "play": 104,
+      "win": 50,
       "pick_rate": 0.0041
     },
     {
@@ -21543,9 +21477,9 @@
         1056,
         2003
       ],
-      "play": 63,
-      "win": 36,
-      "pick_rate": 0.0025
+      "play": 61,
+      "win": 34,
+      "pick_rate": 0.0024
     },
     {
       "ids": [
@@ -21608,112 +21542,112 @@
       "ids": [
         3100
       ],
-      "play": 18236,
-      "win": 9680,
-      "pick_rate": 0.2221
+      "play": 18151,
+      "win": 9625,
+      "pick_rate": 0.2222
     },
     {
       "ids": [
         3094
       ],
-      "play": 15256,
-      "win": 8252,
-      "pick_rate": 0.1858
+      "play": 15186,
+      "win": 8204,
+      "pick_rate": 0.1859
     },
     {
       "ids": [
         6657
       ],
-      "play": 14275,
-      "win": 7042,
+      "play": 14208,
+      "win": 7004,
       "pick_rate": 0.1739
     },
     {
       "ids": [
         6655
       ],
-      "play": 6060,
-      "win": 3058,
-      "pick_rate": 0.0738
+      "play": 6012,
+      "win": 3027,
+      "pick_rate": 0.0736
     },
     {
       "ids": [
         1082
       ],
-      "play": 5854,
-      "win": 2853,
-      "pick_rate": 0.0713
+      "play": 5829,
+      "win": 2838,
+      "pick_rate": 0.0714
     },
     {
       "ids": [
         3157
       ],
-      "play": 4464,
-      "win": 2537,
+      "play": 4442,
+      "win": 2523,
       "pick_rate": 0.0544
     },
     {
       "ids": [
         2065
       ],
-      "play": 3252,
-      "win": 1753,
+      "play": 3239,
+      "win": 1741,
       "pick_rate": 0.0396
     },
     {
       "ids": [
         3089
       ],
-      "play": 2857,
-      "win": 1651,
+      "play": 2841,
+      "win": 1639,
       "pick_rate": 0.0348
     },
     {
       "ids": [
         4646
       ],
-      "play": 2535,
-      "win": 1416,
-      "pick_rate": 0.0309
+      "play": 2514,
+      "win": 1401,
+      "pick_rate": 0.0308
     },
     {
       "ids": [
         3041
       ],
-      "play": 1775,
-      "win": 1464,
+      "play": 1766,
+      "win": 1455,
       "pick_rate": 0.0216
     },
     {
       "ids": [
         2420
       ],
-      "play": 1089,
-      "win": 625,
-      "pick_rate": 0.0133
+      "play": 1080,
+      "win": 619,
+      "pick_rate": 0.0132
     },
     {
       "ids": [
         3102
       ],
-      "play": 952,
-      "win": 549,
+      "play": 950,
+      "win": 548,
       "pick_rate": 0.0116
     },
     {
       "ids": [
         3916
       ],
-      "play": 624,
-      "win": 239,
+      "play": 617,
+      "win": 235,
       "pick_rate": 0.0076
     },
     {
       "ids": [
         4645
       ],
-      "play": 519,
-      "win": 292,
+      "play": 512,
+      "win": 288,
       "pick_rate": 0.0063
     },
     {
@@ -21728,16 +21662,16 @@
       "ids": [
         3135
       ],
-      "play": 513,
-      "win": 257,
+      "play": 508,
+      "win": 254,
       "pick_rate": 0.0062
     },
     {
       "ids": [
         3152
       ],
-      "play": 344,
-      "win": 200,
+      "play": 343,
+      "win": 199,
       "pick_rate": 0.0042
     },
     {
@@ -21746,7 +21680,7 @@
       ],
       "play": 307,
       "win": 148,
-      "pick_rate": 0.0037
+      "pick_rate": 0.0038
     },
     {
       "ids": [
@@ -21760,23 +21694,23 @@
       "ids": [
         3165
       ],
-      "play": 286,
-      "win": 137,
+      "play": 285,
+      "win": 136,
       "pick_rate": 0.0035
     },
     {
       "ids": [
         4629
       ],
-      "play": 233,
-      "win": 129,
+      "play": 231,
+      "win": 127,
       "pick_rate": 0.0028
     },
     {
       "ids": [
         6653
       ],
-      "play": 228,
+      "play": 225,
       "win": 112,
       "pick_rate": 0.0028
     },
@@ -21784,8 +21718,8 @@
       "ids": [
         3087
       ],
-      "play": 197,
-      "win": 90,
+      "play": 196,
+      "win": 89,
       "pick_rate": 0.0024
     },
     {
