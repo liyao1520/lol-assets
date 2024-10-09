@@ -271,17 +271,17 @@
       "is_rotation": false,
       "is_rip": false,
       "average_stats": {
-        "play": 1061,
-        "win_rate": 0.492931,
-        "pick_rate": 0.0175259,
-        "ban_rate": 0.00339615,
-        "kda": 1.45203,
+        "play": 1146,
+        "win_rate": 0.486911,
+        "pick_rate": 0.0175346,
+        "ban_rate": 0.0033784,
+        "kda": 1.448835,
         "tier": 4,
-        "rank": 149,
+        "rank": 156,
         "tier_data": {
           "tier": 4,
-          "rank": 149,
-          "rank_prev": 150,
+          "rank": 156,
+          "rank_prev": 149,
           "rank_prev_patch": 142
         }
       },
@@ -289,16 +289,16 @@
         {
           "name": "TOP",
           "stats": {
-            "play": 783,
-            "win_rate": 0.47765,
-            "pick_rate": 0.0130675,
-            "role_rate": 0.737983,
-            "ban_rate": 0.0025063,
-            "kda": 1.162641,
+            "play": 850,
+            "win_rate": 0.471765,
+            "pick_rate": 0.0131415,
+            "role_rate": 0.74171,
+            "ban_rate": 0.00250579,
+            "kda": 1.169082,
             "tier_data": {
               "tier": 5,
               "rank": 56,
-              "rank_prev": 57,
+              "rank_prev": 56,
               "rank_prev_patch": 44
             }
           },
@@ -306,26 +306,36 @@
             {
               "name": "FIGHTER",
               "stats": {
-                "win_rate": 0.477302,
-                "role_rate": 0.968593,
-                "play": 771,
-                "win": 368
+                "win_rate": 0.475904,
+                "role_rate": 0.967366,
+                "play": 830,
+                "win": 395
               }
             },
             {
               "name": "TANK",
               "stats": {
-                "win_rate": 0.454545,
-                "role_rate": 0.0365449,
-                "play": 22,
-                "win": 10
+                "win_rate": 0.44,
+                "role_rate": 0.0291375,
+                "play": 25,
+                "win": 11
               }
             }
           ],
           "counters": [
             {
+              "champion_id": 24,
+              "play": 33,
+              "win": 13
+            },
+            {
               "champion_id": 266,
-              "play": 32,
+              "play": 34,
+              "win": 15
+            },
+            {
+              "champion_id": 106,
+              "play": 31,
               "win": 15
             }
           ]
@@ -336,8 +346,393 @@
     "opponents": [
       [
         {
+          "champion_id": 24,
+          "play": 33,
+          "win": 13,
+          "meta": {
+            "id": 24,
+            "key": "Jax",
+            "name": "武器大师",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Jax.png",
+            "evolve": [],
+            "title": "贾克斯",
+            "partype": "法力",
+            "passive": {
+              "name": "无情连打",
+              "description": "贾克斯连续的普通攻击，会持续地提高他的攻击速度。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Armsmaster_MasterOfArms.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0024/ability_0024_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "跳斩",
+                "description": "贾克斯跳向一个单位。如果目标是敌人，贾克斯会用他的武器狠狠地抽打敌人的脸，造成额外伤害。",
+                "max_rank": 5,
+                "range_burn": [
+                  700
+                ],
+                "cooldown_burn": [
+                  8,
+                  7,
+                  7,
+                  6,
+                  6
+                ],
+                "cooldown_burn_float": [
+                  8,
+                  7.5,
+                  7,
+                  6.5,
+                  6
+                ],
+                "cost_burn": [
+                  65
+                ],
+                "tooltip": "贾克斯跳向一个友方或敌方单位或守卫，如果目标是敌人则会造成<physicalDamage>?物理伤害</physicalDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/JaxQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0024/ability_0024_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "蓄力一击",
+                "description": "贾克斯为武器充能，使他的下次攻击能造成额外伤害。",
+                "max_rank": 5,
+                "range_burn": [
+                  300
+                ],
+                "cooldown_burn": [
+                  7,
+                  6,
+                  5,
+                  4,
+                  3
+                ],
+                "cooldown_burn_float": [
+                  7,
+                  6,
+                  5,
+                  4,
+                  3
+                ],
+                "cost_burn": [
+                  30
+                ],
+                "tooltip": "贾克斯给他的武器充能，使他的下次攻击或<spellName>跳斩</spellName>造成额外的<magicDamage>?魔法伤害</magicDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/JaxW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0024/ability_0024_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "反击风暴",
+                "description": "贾克斯的武艺让他能够在短时间里躲闪掉所有即将到来的普通攻击，随后对所有周围的敌人快速发起反击，并将他们击晕。",
+                "max_rank": 5,
+                "range_burn": [
+                  300
+                ],
+                "cooldown_burn": [
+                  17,
+                  15,
+                  13,
+                  11,
+                  9
+                ],
+                "cooldown_burn_float": [
+                  17,
+                  15,
+                  13,
+                  11,
+                  9
+                ],
+                "cost_burn": [
+                  50,
+                  60,
+                  70,
+                  80,
+                  90
+                ],
+                "tooltip": "贾克斯进入一个最多持续?秒的防御姿态，能够躲闪掉一切即将到来的攻击，并且减少?%来自群体技能的伤害。在?秒后，或<recast>再次施放</recast>后，贾克斯会造成<magicDamage>? + ?%最大生命值的魔法伤害</magicDamage>并使附近的敌人<status>晕眩</status>?秒。<br /><br />贾克斯每躲掉一次攻击，这个伤害值就会提升?%，最多可提升至最大值<magicDamage>? + ?%最大生命值</magicDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/JaxE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0024/ability_0024_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "武器大师",
+                "description": "每连续攻击2次，第3次攻击就会造成额外的魔法伤害。另外，贾克斯可以激活这个技能来在他周围造成伤害并增强他的决心，从而暂时性地提升他的护甲和魔法抗性。",
+                "max_rank": 3,
+                "range_burn": [
+                  260
+                ],
+                "cooldown_burn": [
+                  100,
+                  90,
+                  80
+                ],
+                "cooldown_burn_float": [
+                  100,
+                  90,
+                  80
+                ],
+                "cost_burn": [
+                  100
+                ],
+                "tooltip": "<spellPassive>被动：</spellPassive>?秒内的每第三次攻击造成额外的<magicDamage>?魔法伤害</magicDamage>。<br /><br /><spellActive>主动：</spellActive>贾克斯将他的灯柱砸落，对附近的敌人们造成<magicDamage>?魔法伤害</magicDamage>。如果他命中了一名英雄，那么他会获得<scaleArmor>?护甲</scaleArmor>和<scaleMR>?魔法抗性</scaleMR>，并且每额外命中一个英雄就会获得额外的<scaleArmor>?护甲</scaleArmor>和<scaleMR>?魔法抗性</scaleMR>，持续?秒。在此期间，他每第二次攻击（而非每第三次攻击）造成额外的<magicDamage>魔法伤害</magicDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/JaxR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0024/ability_0024_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 24000,
+                "champion_id": 24,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 1350
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 585
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 24008,
+                "champion_id": 24,
+                "name": "SKT T1 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_8.jpg",
+                "skin_video_url": "https://youtu.be/HhNqSs4DLzc",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-09-25T08:59:00+09:00"
+              },
+              {
+                "id": 24002,
+                "champion_id": 24,
+                "name": "万夫莫开 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_2.jpg",
+                "skin_video_url": "https://youtu.be/9It6mL1S3Y8",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 520
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 24012,
+                "champion_id": 24,
+                "name": "光明骑士 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_12.jpg",
+                "skin_video_url": "https://youtu.be/Z0Gl9S5LA40",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2015-10-01T10:00:00+09:00"
+              },
+              {
+                "id": 24001,
+                "champion_id": 24,
+                "name": "冰球队员 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_1.jpg",
+                "skin_video_url": "https://youtu.be/aIOc0yaOyCM",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 520
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 24004,
+                "champion_id": 24,
+                "name": "卧虎藏龙 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_4.jpg",
+                "skin_video_url": "https://youtu.be/bWUilAVjuRw",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 24007,
+                "champion_id": 24,
+                "name": "复仇武神 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_7.jpg",
+                "skin_video_url": "https://youtu.be/txjdEmL67mQ",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2012-09-27T08:00:00+09:00"
+              },
+              {
+                "id": 24003,
+                "champion_id": 24,
+                "name": "宗师级钓鱼训练师 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_3.jpg",
+                "skin_video_url": "https://youtu.be/Hln4td193i4",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 24006,
+                "champion_id": 24,
+                "name": "少林武僧 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_6.jpg",
+                "skin_video_url": "https://youtu.be/hypQ_XXZRBM",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2011-11-15T16:00:00+09:00"
+              },
+              {
+                "id": 24020,
+                "champion_id": 24,
+                "name": "征服者 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_20.jpg",
+                "skin_video_url": "https://youtu.be/fnUe3KugE1Y",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 24032,
+                "champion_id": 24,
+                "name": "新卧虎藏龙 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_32.jpg",
+                "skin_video_url": null,
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 24013,
+                "champion_id": 24,
+                "name": "武神 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_13.jpg",
+                "skin_video_url": "https://youtu.be/rfPMvl7LkY4",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2018-01-11T09:00:00+09:00"
+              },
+              {
+                "id": 24033,
+                "champion_id": 24,
+                "name": "源计划：孤狼 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_33.jpg",
+                "skin_video_url": "https://youtu.be/w_Mj6zsrChE",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-03-06T10:00:00+09:00"
+              },
+              {
+                "id": 24014,
+                "champion_id": 24,
+                "name": "王国机神白虎 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_14.jpg",
+                "skin_video_url": "https://youtu.be/xAG9waDGyBI",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1820
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-01-15T02:00:00+09:00"
+              },
+              {
+                "id": 24005,
+                "champion_id": 24,
+                "name": "百夫长 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_5.jpg",
+                "skin_video_url": "https://youtu.be/_teH-WBh_n8",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2011-05-09T19:00:00+09:00"
+              },
+              {
+                "id": 24021,
+                "champion_id": 24,
+                "name": "至臻 征服者 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_21.jpg",
+                "skin_video_url": "https://youtu.be/Ox8Nb2EgJKg",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 24022,
+                "champion_id": 24,
+                "name": "至高天 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_22.jpg",
+                "skin_video_url": "https://youtu.be/jnjirlRhGto",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2022-11-03T04:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 39.39
+        },
+        {
           "champion_id": 266,
-          "play": 32,
+          "play": 34,
           "win": 15,
           "meta": {
             "id": 266,
@@ -649,13 +1044,551 @@
               }
             ]
           },
-          "win_rate": 46.88
+          "win_rate": 44.12
+        },
+        {
+          "champion_id": 106,
+          "play": 31,
+          "win": 15,
+          "meta": {
+            "id": 106,
+            "key": "Volibear",
+            "name": "不灭狂雷",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Volibear.png",
+            "evolve": [],
+            "title": "沃利贝尔",
+            "partype": "法力",
+            "passive": {
+              "name": "狂雷渐起",
+              "description": "沃利贝尔的攻击和技能会提供攻击速度，并且最终使他的攻击对附近的敌人们造成额外魔法伤害。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Volibear_Icon_P.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0106/ability_0106_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "擂首一击",
+                "description": "沃利贝尔在朝着敌人时会获得移动速度，并且会对他攻击的第一个敌人造成<status>晕眩</status>和伤害。",
+                "max_rank": 5,
+                "range_burn": [
+                  300
+                ],
+                "cooldown_burn": [
+                  14,
+                  13,
+                  12,
+                  11,
+                  10
+                ],
+                "cooldown_burn_float": [
+                  14,
+                  13,
+                  12,
+                  11,
+                  10
+                ],
+                "cost_burn": [
+                  50
+                ],
+                "tooltip": "沃利贝尔获得<speed>?移动速度</speed>，在朝着敌方英雄时翻倍至<speed>?</speed>，持续?秒。在激活时，沃利贝尔的下次攻击会造成<physicalDamage>?物理伤害</physicalDamage>并使目标<status>晕眩</status>?秒。<br /><br />如果在沃利贝尔对一个目标造成<status>晕眩</status>效果前被敌人<status>定身</status>的话，那么他会因发怒而提前结束这个技能但刷新它的冷却时间。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VolibearQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0106/ability_0106_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "暴怒撕咬",
+                "description": "沃利贝尔伤害一名敌人，施加攻击特效并将其标记。对相同目标再次施放这个技能，会造成额外伤害并治疗沃利贝尔。",
+                "max_rank": 5,
+                "range_burn": [
+                  325
+                ],
+                "cooldown_burn": [
+                  5
+                ],
+                "cooldown_burn_float": [
+                  5
+                ],
+                "cost_burn": [
+                  30,
+                  35,
+                  40,
+                  45,
+                  50
+                ],
+                "tooltip": "沃利贝尔猛拍一名敌人，造成<physicalDamage>?物理伤害</physicalDamage>，并标记目标?秒。<br /><br />如果这个技能施放在一个被标记的目标身上，那么这个技能的伤害会提升至<physicalDamage>?</physicalDamage>，并且沃利贝尔会回复<healing>?生命值+他?的已损失生命值</healing>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VolibearW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0106/ability_0106_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "霹天雳地",
+                "description": "沃利贝尔在目标区域召唤一道闪电箭，对其中的敌人造成魔法伤害和减速效果，并且如果沃利贝尔在闪电落点区域内，他还会获得一层护盾。",
+                "max_rank": 5,
+                "range_burn": [
+                  1200
+                ],
+                "cooldown_burn": [
+                  12
+                ],
+                "cooldown_burn_float": [
+                  12
+                ],
+                "cost_burn": [
+                  60
+                ],
+                "tooltip": "沃利贝尔在目标区域召唤一道闪电箭，造成<magicDamage>?加上?%最大生命值的魔法伤害</magicDamage>并使敌人<status>减速</status>?%，持续?秒。<br /><br />如果沃利贝尔在闪电落点区域内，他还会获得一层<shield>?加上?%最大生命值的护盾</shield>，持续?秒。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VolibearE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0106/ability_0106_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "天声震落",
+                "description": "沃利贝尔跃向一个目标区域，对他身下的敌人们造成伤害和减速效果，同时获得额外生命值。在他着陆时，附近的敌方防御塔也会暂时失效。",
+                "max_rank": 3,
+                "range_burn": [
+                  550
+                ],
+                "cooldown_burn": [
+                  160,
+                  135,
+                  110
+                ],
+                "cooldown_burn_float": [
+                  160,
+                  135,
+                  110
+                ],
+                "cost_burn": [
+                  100
+                ],
+                "tooltip": "沃利贝尔变换形态并跃向一个目标区域，获得<healing>?生命值</healing>和?攻击距离，持续?秒。<br /><br />在着陆时，附近的敌方防御塔会<status>失效</status>?秒，并受到<physicalDamage>?物理伤害</physicalDamage>。附近的敌人会被<status>减速</status>?%，减速效果会在1秒里持续衰减。被沃利贝尔直接压住的敌人们会受到<physicalDamage>?物理伤害</physicalDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VolibearR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0106/ability_0106_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 106000,
+                "champion_id": 106,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 1350
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 585
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 106002,
+                "champion_id": 106,
+                "name": "北地风暴 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_2.jpg",
+                "skin_video_url": "https://youtu.be/96V2l_Pmg98",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 106006,
+                "champion_id": 106,
+                "name": "坚韧不屈 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_6.jpg",
+                "skin_video_url": "https://youtu.be/VANcAGsDm6U",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-06-10T04:00:00+09:00"
+              },
+              {
+                "id": 106019,
+                "champion_id": 106,
+                "name": "墨影之灵 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_19.jpg",
+                "skin_video_url": "https://youtu.be/DpwO5iA1mZM",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2023-05-03T04:00:00+09:00"
+              },
+              {
+                "id": 106005,
+                "champion_id": 106,
+                "name": "怒熊 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_5.jpg",
+                "skin_video_url": "https://youtu.be/03Jf0P6Vbas",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2016-06-02T13:00:00+09:00"
+              },
+              {
+                "id": 106007,
+                "champion_id": 106,
+                "name": "神龙尊者 均衡之龙 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_7.jpg",
+                "skin_video_url": "https://youtu.be/HrfBfFy_-9c",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-10-21T04:00:00+09:00"
+              },
+              {
+                "id": 106003,
+                "champion_id": 106,
+                "name": "符文战熊 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_3.jpg",
+                "skin_video_url": "https://youtu.be/8yHQhrdcQsk",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2013-04-30T05:00:00+09:00"
+              },
+              {
+                "id": 106009,
+                "champion_id": 106,
+                "name": "至臻 神龙尊者 均衡之龙 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_9.jpg",
+                "skin_video_url": "https://youtu.be/XR-8qvuhtOs",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 106004,
+                "champion_id": 106,
+                "name": "警长 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_4.jpg",
+                "skin_video_url": "https://youtu.be/QI7KzWdflI8",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2014-11-28T08:00:00+09:00"
+              },
+              {
+                "id": 106001,
+                "champion_id": 106,
+                "name": "雷霆领主 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_1.jpg",
+                "skin_video_url": "https://youtu.be/WS-Zkrh1s-c",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 520
+                  }
+                ],
+                "sales": null,
+                "release_date": "2011-11-27T07:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 48.39
         }
       ],
       [
         {
+          "champion_id": 106,
+          "play": 31,
+          "win": 15,
+          "meta": {
+            "id": 106,
+            "key": "Volibear",
+            "name": "不灭狂雷",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Volibear.png",
+            "evolve": [],
+            "title": "沃利贝尔",
+            "partype": "法力",
+            "passive": {
+              "name": "狂雷渐起",
+              "description": "沃利贝尔的攻击和技能会提供攻击速度，并且最终使他的攻击对附近的敌人们造成额外魔法伤害。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Volibear_Icon_P.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0106/ability_0106_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "擂首一击",
+                "description": "沃利贝尔在朝着敌人时会获得移动速度，并且会对他攻击的第一个敌人造成<status>晕眩</status>和伤害。",
+                "max_rank": 5,
+                "range_burn": [
+                  300
+                ],
+                "cooldown_burn": [
+                  14,
+                  13,
+                  12,
+                  11,
+                  10
+                ],
+                "cooldown_burn_float": [
+                  14,
+                  13,
+                  12,
+                  11,
+                  10
+                ],
+                "cost_burn": [
+                  50
+                ],
+                "tooltip": "沃利贝尔获得<speed>?移动速度</speed>，在朝着敌方英雄时翻倍至<speed>?</speed>，持续?秒。在激活时，沃利贝尔的下次攻击会造成<physicalDamage>?物理伤害</physicalDamage>并使目标<status>晕眩</status>?秒。<br /><br />如果在沃利贝尔对一个目标造成<status>晕眩</status>效果前被敌人<status>定身</status>的话，那么他会因发怒而提前结束这个技能但刷新它的冷却时间。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VolibearQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0106/ability_0106_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "暴怒撕咬",
+                "description": "沃利贝尔伤害一名敌人，施加攻击特效并将其标记。对相同目标再次施放这个技能，会造成额外伤害并治疗沃利贝尔。",
+                "max_rank": 5,
+                "range_burn": [
+                  325
+                ],
+                "cooldown_burn": [
+                  5
+                ],
+                "cooldown_burn_float": [
+                  5
+                ],
+                "cost_burn": [
+                  30,
+                  35,
+                  40,
+                  45,
+                  50
+                ],
+                "tooltip": "沃利贝尔猛拍一名敌人，造成<physicalDamage>?物理伤害</physicalDamage>，并标记目标?秒。<br /><br />如果这个技能施放在一个被标记的目标身上，那么这个技能的伤害会提升至<physicalDamage>?</physicalDamage>，并且沃利贝尔会回复<healing>?生命值+他?的已损失生命值</healing>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VolibearW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0106/ability_0106_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "霹天雳地",
+                "description": "沃利贝尔在目标区域召唤一道闪电箭，对其中的敌人造成魔法伤害和减速效果，并且如果沃利贝尔在闪电落点区域内，他还会获得一层护盾。",
+                "max_rank": 5,
+                "range_burn": [
+                  1200
+                ],
+                "cooldown_burn": [
+                  12
+                ],
+                "cooldown_burn_float": [
+                  12
+                ],
+                "cost_burn": [
+                  60
+                ],
+                "tooltip": "沃利贝尔在目标区域召唤一道闪电箭，造成<magicDamage>?加上?%最大生命值的魔法伤害</magicDamage>并使敌人<status>减速</status>?%，持续?秒。<br /><br />如果沃利贝尔在闪电落点区域内，他还会获得一层<shield>?加上?%最大生命值的护盾</shield>，持续?秒。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VolibearE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0106/ability_0106_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "天声震落",
+                "description": "沃利贝尔跃向一个目标区域，对他身下的敌人们造成伤害和减速效果，同时获得额外生命值。在他着陆时，附近的敌方防御塔也会暂时失效。",
+                "max_rank": 3,
+                "range_burn": [
+                  550
+                ],
+                "cooldown_burn": [
+                  160,
+                  135,
+                  110
+                ],
+                "cooldown_burn_float": [
+                  160,
+                  135,
+                  110
+                ],
+                "cost_burn": [
+                  100
+                ],
+                "tooltip": "沃利贝尔变换形态并跃向一个目标区域，获得<healing>?生命值</healing>和?攻击距离，持续?秒。<br /><br />在着陆时，附近的敌方防御塔会<status>失效</status>?秒，并受到<physicalDamage>?物理伤害</physicalDamage>。附近的敌人会被<status>减速</status>?%，减速效果会在1秒里持续衰减。被沃利贝尔直接压住的敌人们会受到<physicalDamage>?物理伤害</physicalDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VolibearR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0106/ability_0106_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 106000,
+                "champion_id": 106,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 1350
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 585
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 106002,
+                "champion_id": 106,
+                "name": "北地风暴 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_2.jpg",
+                "skin_video_url": "https://youtu.be/96V2l_Pmg98",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 106006,
+                "champion_id": 106,
+                "name": "坚韧不屈 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_6.jpg",
+                "skin_video_url": "https://youtu.be/VANcAGsDm6U",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-06-10T04:00:00+09:00"
+              },
+              {
+                "id": 106019,
+                "champion_id": 106,
+                "name": "墨影之灵 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_19.jpg",
+                "skin_video_url": "https://youtu.be/DpwO5iA1mZM",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2023-05-03T04:00:00+09:00"
+              },
+              {
+                "id": 106005,
+                "champion_id": 106,
+                "name": "怒熊 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_5.jpg",
+                "skin_video_url": "https://youtu.be/03Jf0P6Vbas",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2016-06-02T13:00:00+09:00"
+              },
+              {
+                "id": 106007,
+                "champion_id": 106,
+                "name": "神龙尊者 均衡之龙 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_7.jpg",
+                "skin_video_url": "https://youtu.be/HrfBfFy_-9c",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-10-21T04:00:00+09:00"
+              },
+              {
+                "id": 106003,
+                "champion_id": 106,
+                "name": "符文战熊 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_3.jpg",
+                "skin_video_url": "https://youtu.be/8yHQhrdcQsk",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2013-04-30T05:00:00+09:00"
+              },
+              {
+                "id": 106009,
+                "champion_id": 106,
+                "name": "至臻 神龙尊者 均衡之龙 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_9.jpg",
+                "skin_video_url": "https://youtu.be/XR-8qvuhtOs",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 106004,
+                "champion_id": 106,
+                "name": "警长 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_4.jpg",
+                "skin_video_url": "https://youtu.be/QI7KzWdflI8",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2014-11-28T08:00:00+09:00"
+              },
+              {
+                "id": 106001,
+                "champion_id": 106,
+                "name": "雷霆领主 沃利贝尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_1.jpg",
+                "skin_video_url": "https://youtu.be/WS-Zkrh1s-c",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 520
+                  }
+                ],
+                "sales": null,
+                "release_date": "2011-11-27T07:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 48.39
+        },
+        {
           "champion_id": 266,
-          "play": 32,
+          "play": 34,
           "win": 15,
           "meta": {
             "id": 266,
@@ -967,14 +1900,399 @@
               }
             ]
           },
-          "win_rate": 46.88
+          "win_rate": 44.12
+        },
+        {
+          "champion_id": 24,
+          "play": 33,
+          "win": 13,
+          "meta": {
+            "id": 24,
+            "key": "Jax",
+            "name": "武器大师",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Jax.png",
+            "evolve": [],
+            "title": "贾克斯",
+            "partype": "法力",
+            "passive": {
+              "name": "无情连打",
+              "description": "贾克斯连续的普通攻击，会持续地提高他的攻击速度。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Armsmaster_MasterOfArms.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0024/ability_0024_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "跳斩",
+                "description": "贾克斯跳向一个单位。如果目标是敌人，贾克斯会用他的武器狠狠地抽打敌人的脸，造成额外伤害。",
+                "max_rank": 5,
+                "range_burn": [
+                  700
+                ],
+                "cooldown_burn": [
+                  8,
+                  7,
+                  7,
+                  6,
+                  6
+                ],
+                "cooldown_burn_float": [
+                  8,
+                  7.5,
+                  7,
+                  6.5,
+                  6
+                ],
+                "cost_burn": [
+                  65
+                ],
+                "tooltip": "贾克斯跳向一个友方或敌方单位或守卫，如果目标是敌人则会造成<physicalDamage>?物理伤害</physicalDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/JaxQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0024/ability_0024_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "蓄力一击",
+                "description": "贾克斯为武器充能，使他的下次攻击能造成额外伤害。",
+                "max_rank": 5,
+                "range_burn": [
+                  300
+                ],
+                "cooldown_burn": [
+                  7,
+                  6,
+                  5,
+                  4,
+                  3
+                ],
+                "cooldown_burn_float": [
+                  7,
+                  6,
+                  5,
+                  4,
+                  3
+                ],
+                "cost_burn": [
+                  30
+                ],
+                "tooltip": "贾克斯给他的武器充能，使他的下次攻击或<spellName>跳斩</spellName>造成额外的<magicDamage>?魔法伤害</magicDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/JaxW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0024/ability_0024_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "反击风暴",
+                "description": "贾克斯的武艺让他能够在短时间里躲闪掉所有即将到来的普通攻击，随后对所有周围的敌人快速发起反击，并将他们击晕。",
+                "max_rank": 5,
+                "range_burn": [
+                  300
+                ],
+                "cooldown_burn": [
+                  17,
+                  15,
+                  13,
+                  11,
+                  9
+                ],
+                "cooldown_burn_float": [
+                  17,
+                  15,
+                  13,
+                  11,
+                  9
+                ],
+                "cost_burn": [
+                  50,
+                  60,
+                  70,
+                  80,
+                  90
+                ],
+                "tooltip": "贾克斯进入一个最多持续?秒的防御姿态，能够躲闪掉一切即将到来的攻击，并且减少?%来自群体技能的伤害。在?秒后，或<recast>再次施放</recast>后，贾克斯会造成<magicDamage>? + ?%最大生命值的魔法伤害</magicDamage>并使附近的敌人<status>晕眩</status>?秒。<br /><br />贾克斯每躲掉一次攻击，这个伤害值就会提升?%，最多可提升至最大值<magicDamage>? + ?%最大生命值</magicDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/JaxE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0024/ability_0024_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "武器大师",
+                "description": "每连续攻击2次，第3次攻击就会造成额外的魔法伤害。另外，贾克斯可以激活这个技能来在他周围造成伤害并增强他的决心，从而暂时性地提升他的护甲和魔法抗性。",
+                "max_rank": 3,
+                "range_burn": [
+                  260
+                ],
+                "cooldown_burn": [
+                  100,
+                  90,
+                  80
+                ],
+                "cooldown_burn_float": [
+                  100,
+                  90,
+                  80
+                ],
+                "cost_burn": [
+                  100
+                ],
+                "tooltip": "<spellPassive>被动：</spellPassive>?秒内的每第三次攻击造成额外的<magicDamage>?魔法伤害</magicDamage>。<br /><br /><spellActive>主动：</spellActive>贾克斯将他的灯柱砸落，对附近的敌人们造成<magicDamage>?魔法伤害</magicDamage>。如果他命中了一名英雄，那么他会获得<scaleArmor>?护甲</scaleArmor>和<scaleMR>?魔法抗性</scaleMR>，并且每额外命中一个英雄就会获得额外的<scaleArmor>?护甲</scaleArmor>和<scaleMR>?魔法抗性</scaleMR>，持续?秒。在此期间，他每第二次攻击（而非每第三次攻击）造成额外的<magicDamage>魔法伤害</magicDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/JaxR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0024/ability_0024_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 24000,
+                "champion_id": 24,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 1350
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 585
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 24008,
+                "champion_id": 24,
+                "name": "SKT T1 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_8.jpg",
+                "skin_video_url": "https://youtu.be/HhNqSs4DLzc",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-09-25T08:59:00+09:00"
+              },
+              {
+                "id": 24002,
+                "champion_id": 24,
+                "name": "万夫莫开 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_2.jpg",
+                "skin_video_url": "https://youtu.be/9It6mL1S3Y8",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 520
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 24012,
+                "champion_id": 24,
+                "name": "光明骑士 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_12.jpg",
+                "skin_video_url": "https://youtu.be/Z0Gl9S5LA40",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2015-10-01T10:00:00+09:00"
+              },
+              {
+                "id": 24001,
+                "champion_id": 24,
+                "name": "冰球队员 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_1.jpg",
+                "skin_video_url": "https://youtu.be/aIOc0yaOyCM",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 520
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 24004,
+                "champion_id": 24,
+                "name": "卧虎藏龙 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_4.jpg",
+                "skin_video_url": "https://youtu.be/bWUilAVjuRw",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 24007,
+                "champion_id": 24,
+                "name": "复仇武神 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_7.jpg",
+                "skin_video_url": "https://youtu.be/txjdEmL67mQ",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2012-09-27T08:00:00+09:00"
+              },
+              {
+                "id": 24003,
+                "champion_id": 24,
+                "name": "宗师级钓鱼训练师 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_3.jpg",
+                "skin_video_url": "https://youtu.be/Hln4td193i4",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 24006,
+                "champion_id": 24,
+                "name": "少林武僧 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_6.jpg",
+                "skin_video_url": "https://youtu.be/hypQ_XXZRBM",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2011-11-15T16:00:00+09:00"
+              },
+              {
+                "id": 24020,
+                "champion_id": 24,
+                "name": "征服者 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_20.jpg",
+                "skin_video_url": "https://youtu.be/fnUe3KugE1Y",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 24032,
+                "champion_id": 24,
+                "name": "新卧虎藏龙 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_32.jpg",
+                "skin_video_url": null,
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 24013,
+                "champion_id": 24,
+                "name": "武神 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_13.jpg",
+                "skin_video_url": "https://youtu.be/rfPMvl7LkY4",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2018-01-11T09:00:00+09:00"
+              },
+              {
+                "id": 24033,
+                "champion_id": 24,
+                "name": "源计划：孤狼 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_33.jpg",
+                "skin_video_url": "https://youtu.be/w_Mj6zsrChE",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-03-06T10:00:00+09:00"
+              },
+              {
+                "id": 24014,
+                "champion_id": 24,
+                "name": "王国机神白虎 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_14.jpg",
+                "skin_video_url": "https://youtu.be/xAG9waDGyBI",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1820
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-01-15T02:00:00+09:00"
+              },
+              {
+                "id": 24005,
+                "champion_id": 24,
+                "name": "百夫长 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_5.jpg",
+                "skin_video_url": "https://youtu.be/_teH-WBh_n8",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2011-05-09T19:00:00+09:00"
+              },
+              {
+                "id": 24021,
+                "champion_id": 24,
+                "name": "至臻 征服者 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_21.jpg",
+                "skin_video_url": "https://youtu.be/Ox8Nb2EgJKg",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 24022,
+                "champion_id": 24,
+                "name": "至高天 贾克斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_22.jpg",
+                "skin_video_url": "https://youtu.be/jnjirlRhGto",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2022-11-03T04:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 39.39
         }
       ]
     ],
     "counters": [
       {
         "champion_id": 266,
-        "play": 32,
+        "play": 34,
         "win": 15,
         "meta": {
           "id": 266,
@@ -1286,6 +2604,658 @@
             }
           ]
         }
+      },
+      {
+        "champion_id": 24,
+        "play": 33,
+        "win": 13,
+        "meta": {
+          "id": 24,
+          "key": "Jax",
+          "name": "武器大师",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Jax.png",
+          "evolve": [],
+          "title": "贾克斯",
+          "partype": "法力",
+          "passive": {
+            "name": "无情连打",
+            "description": "贾克斯连续的普通攻击，会持续地提高他的攻击速度。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Armsmaster_MasterOfArms.png",
+            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0024/ability_0024_P1.webm"
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "跳斩",
+              "description": "贾克斯跳向一个单位。如果目标是敌人，贾克斯会用他的武器狠狠地抽打敌人的脸，造成额外伤害。",
+              "max_rank": 5,
+              "range_burn": [
+                700
+              ],
+              "cooldown_burn": [
+                8,
+                7,
+                7,
+                6,
+                6
+              ],
+              "cooldown_burn_float": [
+                8,
+                7.5,
+                7,
+                6.5,
+                6
+              ],
+              "cost_burn": [
+                65
+              ],
+              "tooltip": "贾克斯跳向一个友方或敌方单位或守卫，如果目标是敌人则会造成<physicalDamage>?物理伤害</physicalDamage>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/JaxQ.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0024/ability_0024_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "蓄力一击",
+              "description": "贾克斯为武器充能，使他的下次攻击能造成额外伤害。",
+              "max_rank": 5,
+              "range_burn": [
+                300
+              ],
+              "cooldown_burn": [
+                7,
+                6,
+                5,
+                4,
+                3
+              ],
+              "cooldown_burn_float": [
+                7,
+                6,
+                5,
+                4,
+                3
+              ],
+              "cost_burn": [
+                30
+              ],
+              "tooltip": "贾克斯给他的武器充能，使他的下次攻击或<spellName>跳斩</spellName>造成额外的<magicDamage>?魔法伤害</magicDamage>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/JaxW.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0024/ability_0024_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "反击风暴",
+              "description": "贾克斯的武艺让他能够在短时间里躲闪掉所有即将到来的普通攻击，随后对所有周围的敌人快速发起反击，并将他们击晕。",
+              "max_rank": 5,
+              "range_burn": [
+                300
+              ],
+              "cooldown_burn": [
+                17,
+                15,
+                13,
+                11,
+                9
+              ],
+              "cooldown_burn_float": [
+                17,
+                15,
+                13,
+                11,
+                9
+              ],
+              "cost_burn": [
+                50,
+                60,
+                70,
+                80,
+                90
+              ],
+              "tooltip": "贾克斯进入一个最多持续?秒的防御姿态，能够躲闪掉一切即将到来的攻击，并且减少?%来自群体技能的伤害。在?秒后，或<recast>再次施放</recast>后，贾克斯会造成<magicDamage>? + ?%最大生命值的魔法伤害</magicDamage>并使附近的敌人<status>晕眩</status>?秒。<br /><br />贾克斯每躲掉一次攻击，这个伤害值就会提升?%，最多可提升至最大值<magicDamage>? + ?%最大生命值</magicDamage>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/JaxE.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0024/ability_0024_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "武器大师",
+              "description": "每连续攻击2次，第3次攻击就会造成额外的魔法伤害。另外，贾克斯可以激活这个技能来在他周围造成伤害并增强他的决心，从而暂时性地提升他的护甲和魔法抗性。",
+              "max_rank": 3,
+              "range_burn": [
+                260
+              ],
+              "cooldown_burn": [
+                100,
+                90,
+                80
+              ],
+              "cooldown_burn_float": [
+                100,
+                90,
+                80
+              ],
+              "cost_burn": [
+                100
+              ],
+              "tooltip": "<spellPassive>被动：</spellPassive>?秒内的每第三次攻击造成额外的<magicDamage>?魔法伤害</magicDamage>。<br /><br /><spellActive>主动：</spellActive>贾克斯将他的灯柱砸落，对附近的敌人们造成<magicDamage>?魔法伤害</magicDamage>。如果他命中了一名英雄，那么他会获得<scaleArmor>?护甲</scaleArmor>和<scaleMR>?魔法抗性</scaleMR>，并且每额外命中一个英雄就会获得额外的<scaleArmor>?护甲</scaleArmor>和<scaleMR>?魔法抗性</scaleMR>，持续?秒。在此期间，他每第二次攻击（而非每第三次攻击）造成额外的<magicDamage>魔法伤害</magicDamage>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/JaxR.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0024/ability_0024_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 24000,
+              "champion_id": 24,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 1350
+                },
+                {
+                  "currency": "RP",
+                  "cost": 585
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 24008,
+              "champion_id": 24,
+              "name": "SKT T1 贾克斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_8.jpg",
+              "skin_video_url": "https://youtu.be/HhNqSs4DLzc",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 750
+                }
+              ],
+              "sales": null,
+              "release_date": "2024-09-25T08:59:00+09:00"
+            },
+            {
+              "id": 24002,
+              "champion_id": 24,
+              "name": "万夫莫开 贾克斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_2.jpg",
+              "skin_video_url": "https://youtu.be/9It6mL1S3Y8",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 520
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 24012,
+              "champion_id": 24,
+              "name": "光明骑士 贾克斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_12.jpg",
+              "skin_video_url": "https://youtu.be/Z0Gl9S5LA40",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 750
+                }
+              ],
+              "sales": null,
+              "release_date": "2015-10-01T10:00:00+09:00"
+            },
+            {
+              "id": 24001,
+              "champion_id": 24,
+              "name": "冰球队员 贾克斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_1.jpg",
+              "skin_video_url": "https://youtu.be/aIOc0yaOyCM",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 520
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 24004,
+              "champion_id": 24,
+              "name": "卧虎藏龙 贾克斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_4.jpg",
+              "skin_video_url": "https://youtu.be/bWUilAVjuRw",
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 24007,
+              "champion_id": 24,
+              "name": "复仇武神 贾克斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_7.jpg",
+              "skin_video_url": "https://youtu.be/txjdEmL67mQ",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": "2012-09-27T08:00:00+09:00"
+            },
+            {
+              "id": 24003,
+              "champion_id": 24,
+              "name": "宗师级钓鱼训练师 贾克斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_3.jpg",
+              "skin_video_url": "https://youtu.be/Hln4td193i4",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 24006,
+              "champion_id": 24,
+              "name": "少林武僧 贾克斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_6.jpg",
+              "skin_video_url": "https://youtu.be/hypQ_XXZRBM",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 750
+                }
+              ],
+              "sales": null,
+              "release_date": "2011-11-15T16:00:00+09:00"
+            },
+            {
+              "id": 24020,
+              "champion_id": 24,
+              "name": "征服者 贾克斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_20.jpg",
+              "skin_video_url": "https://youtu.be/fnUe3KugE1Y",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 24032,
+              "champion_id": 24,
+              "name": "新卧虎藏龙 贾克斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_32.jpg",
+              "skin_video_url": null,
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 24013,
+              "champion_id": 24,
+              "name": "武神 贾克斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_13.jpg",
+              "skin_video_url": "https://youtu.be/rfPMvl7LkY4",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2018-01-11T09:00:00+09:00"
+            },
+            {
+              "id": 24033,
+              "champion_id": 24,
+              "name": "源计划：孤狼 贾克斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_33.jpg",
+              "skin_video_url": "https://youtu.be/w_Mj6zsrChE",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2024-03-06T10:00:00+09:00"
+            },
+            {
+              "id": 24014,
+              "champion_id": 24,
+              "name": "王国机神白虎 贾克斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_14.jpg",
+              "skin_video_url": "https://youtu.be/xAG9waDGyBI",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1820
+                }
+              ],
+              "sales": null,
+              "release_date": "2020-01-15T02:00:00+09:00"
+            },
+            {
+              "id": 24005,
+              "champion_id": 24,
+              "name": "百夫长 贾克斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_5.jpg",
+              "skin_video_url": "https://youtu.be/_teH-WBh_n8",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": "2011-05-09T19:00:00+09:00"
+            },
+            {
+              "id": 24021,
+              "champion_id": 24,
+              "name": "至臻 征服者 贾克斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_21.jpg",
+              "skin_video_url": "https://youtu.be/Ox8Nb2EgJKg",
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 24022,
+              "champion_id": 24,
+              "name": "至高天 贾克斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jax_22.jpg",
+              "skin_video_url": "https://youtu.be/jnjirlRhGto",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2022-11-03T04:00:00+09:00"
+            }
+          ]
+        }
+      },
+      {
+        "champion_id": 106,
+        "play": 31,
+        "win": 15,
+        "meta": {
+          "id": 106,
+          "key": "Volibear",
+          "name": "不灭狂雷",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Volibear.png",
+          "evolve": [],
+          "title": "沃利贝尔",
+          "partype": "法力",
+          "passive": {
+            "name": "狂雷渐起",
+            "description": "沃利贝尔的攻击和技能会提供攻击速度，并且最终使他的攻击对附近的敌人们造成额外魔法伤害。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Volibear_Icon_P.png",
+            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0106/ability_0106_P1.webm"
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "擂首一击",
+              "description": "沃利贝尔在朝着敌人时会获得移动速度，并且会对他攻击的第一个敌人造成<status>晕眩</status>和伤害。",
+              "max_rank": 5,
+              "range_burn": [
+                300
+              ],
+              "cooldown_burn": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "cooldown_burn_float": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "cost_burn": [
+                50
+              ],
+              "tooltip": "沃利贝尔获得<speed>?移动速度</speed>，在朝着敌方英雄时翻倍至<speed>?</speed>，持续?秒。在激活时，沃利贝尔的下次攻击会造成<physicalDamage>?物理伤害</physicalDamage>并使目标<status>晕眩</status>?秒。<br /><br />如果在沃利贝尔对一个目标造成<status>晕眩</status>效果前被敌人<status>定身</status>的话，那么他会因发怒而提前结束这个技能但刷新它的冷却时间。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VolibearQ.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0106/ability_0106_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "暴怒撕咬",
+              "description": "沃利贝尔伤害一名敌人，施加攻击特效并将其标记。对相同目标再次施放这个技能，会造成额外伤害并治疗沃利贝尔。",
+              "max_rank": 5,
+              "range_burn": [
+                325
+              ],
+              "cooldown_burn": [
+                5
+              ],
+              "cooldown_burn_float": [
+                5
+              ],
+              "cost_burn": [
+                30,
+                35,
+                40,
+                45,
+                50
+              ],
+              "tooltip": "沃利贝尔猛拍一名敌人，造成<physicalDamage>?物理伤害</physicalDamage>，并标记目标?秒。<br /><br />如果这个技能施放在一个被标记的目标身上，那么这个技能的伤害会提升至<physicalDamage>?</physicalDamage>，并且沃利贝尔会回复<healing>?生命值+他?的已损失生命值</healing>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VolibearW.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0106/ability_0106_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "霹天雳地",
+              "description": "沃利贝尔在目标区域召唤一道闪电箭，对其中的敌人造成魔法伤害和减速效果，并且如果沃利贝尔在闪电落点区域内，他还会获得一层护盾。",
+              "max_rank": 5,
+              "range_burn": [
+                1200
+              ],
+              "cooldown_burn": [
+                12
+              ],
+              "cooldown_burn_float": [
+                12
+              ],
+              "cost_burn": [
+                60
+              ],
+              "tooltip": "沃利贝尔在目标区域召唤一道闪电箭，造成<magicDamage>?加上?%最大生命值的魔法伤害</magicDamage>并使敌人<status>减速</status>?%，持续?秒。<br /><br />如果沃利贝尔在闪电落点区域内，他还会获得一层<shield>?加上?%最大生命值的护盾</shield>，持续?秒。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VolibearE.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0106/ability_0106_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "天声震落",
+              "description": "沃利贝尔跃向一个目标区域，对他身下的敌人们造成伤害和减速效果，同时获得额外生命值。在他着陆时，附近的敌方防御塔也会暂时失效。",
+              "max_rank": 3,
+              "range_burn": [
+                550
+              ],
+              "cooldown_burn": [
+                160,
+                135,
+                110
+              ],
+              "cooldown_burn_float": [
+                160,
+                135,
+                110
+              ],
+              "cost_burn": [
+                100
+              ],
+              "tooltip": "沃利贝尔变换形态并跃向一个目标区域，获得<healing>?生命值</healing>和?攻击距离，持续?秒。<br /><br />在着陆时，附近的敌方防御塔会<status>失效</status>?秒，并受到<physicalDamage>?物理伤害</physicalDamage>。附近的敌人会被<status>减速</status>?%，减速效果会在1秒里持续衰减。被沃利贝尔直接压住的敌人们会受到<physicalDamage>?物理伤害</physicalDamage>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VolibearR.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0106/ability_0106_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 106000,
+              "champion_id": 106,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 1350
+                },
+                {
+                  "currency": "RP",
+                  "cost": 585
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 106002,
+              "champion_id": 106,
+              "name": "北地风暴 沃利贝尔",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_2.jpg",
+              "skin_video_url": "https://youtu.be/96V2l_Pmg98",
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 106006,
+              "champion_id": 106,
+              "name": "坚韧不屈 沃利贝尔",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_6.jpg",
+              "skin_video_url": "https://youtu.be/VANcAGsDm6U",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": "2020-06-10T04:00:00+09:00"
+            },
+            {
+              "id": 106019,
+              "champion_id": 106,
+              "name": "墨影之灵 沃利贝尔",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_19.jpg",
+              "skin_video_url": "https://youtu.be/DpwO5iA1mZM",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2023-05-03T04:00:00+09:00"
+            },
+            {
+              "id": 106005,
+              "champion_id": 106,
+              "name": "怒熊 沃利贝尔",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_5.jpg",
+              "skin_video_url": "https://youtu.be/03Jf0P6Vbas",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 750
+                }
+              ],
+              "sales": null,
+              "release_date": "2016-06-02T13:00:00+09:00"
+            },
+            {
+              "id": 106007,
+              "champion_id": 106,
+              "name": "神龙尊者 均衡之龙 沃利贝尔",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_7.jpg",
+              "skin_video_url": "https://youtu.be/HrfBfFy_-9c",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2021-10-21T04:00:00+09:00"
+            },
+            {
+              "id": 106003,
+              "champion_id": 106,
+              "name": "符文战熊 沃利贝尔",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_3.jpg",
+              "skin_video_url": "https://youtu.be/8yHQhrdcQsk",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": "2013-04-30T05:00:00+09:00"
+            },
+            {
+              "id": 106009,
+              "champion_id": 106,
+              "name": "至臻 神龙尊者 均衡之龙 沃利贝尔",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_9.jpg",
+              "skin_video_url": "https://youtu.be/XR-8qvuhtOs",
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 106004,
+              "champion_id": 106,
+              "name": "警长 沃利贝尔",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_4.jpg",
+              "skin_video_url": "https://youtu.be/QI7KzWdflI8",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 750
+                }
+              ],
+              "sales": null,
+              "release_date": "2014-11-28T08:00:00+09:00"
+            },
+            {
+              "id": 106001,
+              "champion_id": 106,
+              "name": "雷霆领主 沃利贝尔",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Volibear_1.jpg",
+              "skin_video_url": "https://youtu.be/WS-Zkrh1s-c",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 520
+                }
+              ],
+              "sales": null,
+              "release_date": "2011-11-27T07:00:00+09:00"
+            }
+          ]
+        }
       }
     ]
   },
@@ -1295,45 +3265,45 @@
         6,
         12
       ],
-      "win": 203,
-      "play": 394,
-      "pick_rate": 0.5117
+      "win": 217,
+      "play": 422,
+      "pick_rate": 0.5072
     },
     {
       "ids": [
         4,
         12
       ],
-      "win": 114,
-      "play": 261,
-      "pick_rate": 0.339
+      "win": 121,
+      "play": 281,
+      "pick_rate": 0.3377
     },
     {
       "ids": [
         4,
         14
       ],
-      "win": 23,
-      "play": 53,
-      "pick_rate": 0.0688
+      "win": 26,
+      "play": 60,
+      "pick_rate": 0.0721
     },
     {
       "ids": [
         4,
         6
       ],
-      "win": 7,
-      "play": 20,
-      "pick_rate": 0.026
+      "win": 9,
+      "play": 23,
+      "pick_rate": 0.0276
     },
     {
       "ids": [
         6,
         14
       ],
-      "win": 6,
-      "play": 13,
-      "pick_rate": 0.0169
+      "win": 7,
+      "play": 14,
+      "pick_rate": 0.0168
     }
   ],
   "trends": {
@@ -1342,8 +3312,8 @@
     "win": [
       {
         "version": "14.20",
-        "rate": 0.4777,
-        "rank": 56,
+        "rate": 0.4718,
+        "rank": 57,
         "created_at": "2024-10-08T23:15:07+09:00"
       },
       {
@@ -1529,33 +3499,33 @@
   "game_lengths": [
     {
       "game_length": 30,
-      "rate": 0.407821,
+      "rate": 0.408163,
       "average": 0.5,
       "rank": 60
     },
     {
       "game_length": 0,
-      "rate": 0.477032,
+      "rate": 0.47541,
       "average": 0.5,
-      "rank": 47
+      "rank": 48
     },
     {
       "game_length": 25,
-      "rate": 0.506276,
+      "rate": 0.498069,
       "average": 0.5,
-      "rank": 24
+      "rank": 29
     },
     {
       "game_length": 35,
-      "rate": 0.537037,
+      "rate": 0.5,
       "average": 0.5,
-      "rank": 13
+      "rank": 31
     },
     {
       "game_length": 40,
       "rate": 0.571429,
       "average": 0.5,
-      "rank": 16
+      "rank": 14
     }
   ],
   "skills": [
@@ -1577,9 +3547,9 @@
         "E",
         "E"
       ],
-      "play": 308,
-      "win": 164,
-      "pick_rate": 0.643
+      "play": 339,
+      "win": 179,
+      "pick_rate": 0.6494
     },
     {
       "order": [
@@ -1599,9 +3569,9 @@
         "E",
         "E"
       ],
-      "play": 88,
-      "win": 57,
-      "pick_rate": 0.1837
+      "play": 92,
+      "win": 59,
+      "pick_rate": 0.1762
     },
     {
       "order": [
@@ -1621,9 +3591,9 @@
         "E",
         "E"
       ],
-      "play": 22,
-      "win": 11,
-      "pick_rate": 0.0459
+      "play": 24,
+      "win": 12,
+      "pick_rate": 0.046
     },
     {
       "order": [
@@ -1643,9 +3613,9 @@
         "E",
         "E"
       ],
-      "play": 7,
+      "play": 9,
       "win": 1,
-      "pick_rate": 0.0146
+      "pick_rate": 0.0172
     },
     {
       "order": [
@@ -1667,7 +3637,7 @@
       ],
       "play": 5,
       "win": 4,
-      "pick_rate": 0.0104
+      "pick_rate": 0.0096
     }
   ],
   "skill_masteries": [
@@ -1677,9 +3647,9 @@
         "W",
         "E"
       ],
-      "play": 457,
-      "win": 251,
-      "pick_rate": 0.9541,
+      "play": 497,
+      "win": 271,
+      "pick_rate": 0.9521,
       "builds": [
         {
           "order": [
@@ -1699,9 +3669,9 @@
             "E",
             "E"
           ],
-          "play": 308,
-          "win": 164,
-          "pick_rate": 0.674
+          "play": 339,
+          "win": 179,
+          "pick_rate": 0.6821
         },
         {
           "order": [
@@ -1721,9 +3691,9 @@
             "E",
             "E"
           ],
-          "play": 88,
-          "win": 57,
-          "pick_rate": 0.1926
+          "play": 92,
+          "win": 59,
+          "pick_rate": 0.1851
         },
         {
           "order": [
@@ -1743,9 +3713,9 @@
             "E",
             "E"
           ],
-          "play": 22,
-          "win": 11,
-          "pick_rate": 0.0481
+          "play": 24,
+          "win": 12,
+          "pick_rate": 0.0483
         },
         {
           "order": [
@@ -1767,7 +3737,7 @@
           ],
           "play": 5,
           "win": 4,
-          "pick_rate": 0.0109
+          "pick_rate": 0.0101
         },
         {
           "order": [
@@ -1789,7 +3759,7 @@
           ],
           "play": 3,
           "win": 0,
-          "pick_rate": 0.0066
+          "pick_rate": 0.006
         }
       ]
     },
@@ -1799,9 +3769,9 @@
         "Q",
         "E"
       ],
-      "play": 21,
-      "win": 9,
-      "pick_rate": 0.0438,
+      "play": 24,
+      "win": 10,
+      "pick_rate": 0.046,
       "builds": [
         {
           "order": [
@@ -1821,9 +3791,9 @@
             "E",
             "E"
           ],
-          "play": 7,
+          "play": 9,
           "win": 1,
-          "pick_rate": 0.3333
+          "pick_rate": 0.375
         },
         {
           "order": [
@@ -1845,7 +3815,7 @@
           ],
           "play": 4,
           "win": 1,
-          "pick_rate": 0.1905
+          "pick_rate": 0.1667
         },
         {
           "order": [
@@ -1867,7 +3837,7 @@
           ],
           "play": 2,
           "win": 2,
-          "pick_rate": 0.0952
+          "pick_rate": 0.0833
         },
         {
           "order": [
@@ -1889,7 +3859,7 @@
           ],
           "play": 1,
           "win": 1,
-          "pick_rate": 0.0476
+          "pick_rate": 0.0417
         },
         {
           "order": [
@@ -1911,7 +3881,7 @@
           ],
           "play": 1,
           "win": 0,
-          "pick_rate": 0.0476
+          "pick_rate": 0.0417
         }
       ]
     },
@@ -1923,7 +3893,7 @@
       ],
       "play": 1,
       "win": 1,
-      "pick_rate": 0.0021,
+      "pick_rate": 0.0019,
       "builds": [
         {
           "order": [
@@ -1971,9 +3941,9 @@
         5008,
         5001
       ],
-      "play": 318,
-      "win": 150,
-      "pick_rate": 0.4141
+      "play": 339,
+      "win": 158,
+      "pick_rate": 0.4094
     },
     {
       "id": 8005,
@@ -1994,9 +3964,9 @@
         5008,
         5001
       ],
-      "play": 45,
-      "win": 24,
-      "pick_rate": 0.0586
+      "play": 47,
+      "win": 26,
+      "pick_rate": 0.0568
     },
     {
       "id": 8008,
@@ -2019,7 +3989,7 @@
       ],
       "play": 28,
       "win": 16,
-      "pick_rate": 0.0365
+      "pick_rate": 0.0338
     },
     {
       "id": 8008,
@@ -2040,9 +4010,9 @@
         5008,
         5011
       ],
-      "play": 23,
-      "win": 9,
-      "pick_rate": 0.0299
+      "play": 24,
+      "win": 10,
+      "pick_rate": 0.029
     },
     {
       "id": 8008,
@@ -2065,7 +4035,7 @@
       ],
       "play": 20,
       "win": 9,
-      "pick_rate": 0.026
+      "pick_rate": 0.0242
     }
   ],
   "rune_pages": [
@@ -2073,9 +4043,9 @@
       "id": 8008,
       "primary_page_id": 8000,
       "secondary_page_id": 8400,
-      "play": 594,
-      "win": 282,
-      "pick_rate": 0.7734,
+      "play": 637,
+      "win": 300,
+      "pick_rate": 0.7693,
       "builds": [
         {
           "id": 8008,
@@ -2096,9 +4066,9 @@
             5008,
             5001
           ],
-          "play": 318,
-          "win": 150,
-          "pick_rate": 0.5354
+          "play": 339,
+          "win": 158,
+          "pick_rate": 0.5322
         },
         {
           "id": 8008,
@@ -2121,7 +4091,7 @@
           ],
           "play": 28,
           "win": 16,
-          "pick_rate": 0.0471
+          "pick_rate": 0.044
         },
         {
           "id": 8008,
@@ -2142,9 +4112,9 @@
             5008,
             5011
           ],
-          "play": 23,
-          "win": 9,
-          "pick_rate": 0.0387
+          "play": 24,
+          "win": 10,
+          "pick_rate": 0.0377
         },
         {
           "id": 8008,
@@ -2167,7 +4137,7 @@
           ],
           "play": 20,
           "win": 9,
-          "pick_rate": 0.0337
+          "pick_rate": 0.0314
         },
         {
           "id": 8008,
@@ -2188,9 +4158,9 @@
             5008,
             5001
           ],
-          "play": 16,
-          "win": 6,
-          "pick_rate": 0.0269
+          "play": 17,
+          "win": 7,
+          "pick_rate": 0.0267
         }
       ]
     },
@@ -2198,9 +4168,9 @@
       "id": 8005,
       "primary_page_id": 8000,
       "secondary_page_id": 8400,
-      "play": 67,
-      "win": 35,
-      "pick_rate": 0.0872,
+      "play": 73,
+      "win": 38,
+      "pick_rate": 0.0882,
       "builds": [
         {
           "id": 8005,
@@ -2221,9 +4191,9 @@
             5008,
             5001
           ],
-          "play": 45,
-          "win": 24,
-          "pick_rate": 0.6716
+          "play": 47,
+          "win": 26,
+          "pick_rate": 0.6438
         },
         {
           "id": 8005,
@@ -2246,7 +4216,30 @@
           ],
           "play": 3,
           "win": 1,
-          "pick_rate": 0.0448
+          "pick_rate": 0.0411
+        },
+        {
+          "id": 8005,
+          "primary_page_id": 8000,
+          "primary_rune_ids": [
+            8005,
+            8009,
+            9104,
+            8299
+          ],
+          "secondary_page_id": 8400,
+          "secondary_rune_ids": [
+            8446,
+            8473
+          ],
+          "stat_mod_ids": [
+            5005,
+            5008,
+            5001
+          ],
+          "play": 2,
+          "win": 1,
+          "pick_rate": 0.0274
         },
         {
           "id": 8005,
@@ -2269,7 +4262,7 @@
           ],
           "play": 2,
           "win": 1,
-          "pick_rate": 0.0299
+          "pick_rate": 0.0274
         },
         {
           "id": 8005,
@@ -2292,30 +4285,7 @@
           ],
           "play": 1,
           "win": 1,
-          "pick_rate": 0.0149
-        },
-        {
-          "id": 8005,
-          "primary_page_id": 8000,
-          "primary_rune_ids": [
-            8005,
-            9111,
-            9104,
-            8014
-          ],
-          "secondary_page_id": 8400,
-          "secondary_rune_ids": [
-            8451,
-            8473
-          ],
-          "stat_mod_ids": [
-            5005,
-            5008,
-            5001
-          ],
-          "play": 1,
-          "win": 1,
-          "pick_rate": 0.0149
+          "pick_rate": 0.0137
         }
       ]
     },
@@ -2323,9 +4293,9 @@
       "id": 8437,
       "primary_page_id": 8400,
       "secondary_page_id": 8000,
-      "play": 54,
-      "win": 25,
-      "pick_rate": 0.0703,
+      "play": 62,
+      "win": 30,
+      "pick_rate": 0.0749,
       "builds": [
         {
           "id": 8437,
@@ -2348,7 +4318,7 @@
           ],
           "play": 13,
           "win": 4,
-          "pick_rate": 0.2407
+          "pick_rate": 0.2097
         },
         {
           "id": 8437,
@@ -2371,7 +4341,7 @@
           ],
           "play": 7,
           "win": 3,
-          "pick_rate": 0.1296
+          "pick_rate": 0.1129
         },
         {
           "id": 8437,
@@ -2394,7 +4364,30 @@
           ],
           "play": 4,
           "win": 1,
-          "pick_rate": 0.0741
+          "pick_rate": 0.0645
+        },
+        {
+          "id": 8437,
+          "primary_page_id": 8400,
+          "primary_rune_ids": [
+            8437,
+            8446,
+            8473,
+            8451
+          ],
+          "secondary_page_id": 8000,
+          "secondary_rune_ids": [
+            9104,
+            9111
+          ],
+          "stat_mod_ids": [
+            5005,
+            5008,
+            5001
+          ],
+          "play": 3,
+          "win": 1,
+          "pick_rate": 0.0484
         },
         {
           "id": 8437,
@@ -2417,30 +4410,7 @@
           ],
           "play": 3,
           "win": 1,
-          "pick_rate": 0.0556
-        },
-        {
-          "id": 8437,
-          "primary_page_id": 8400,
-          "primary_rune_ids": [
-            8437,
-            8446,
-            8429,
-            8451
-          ],
-          "secondary_page_id": 8000,
-          "secondary_rune_ids": [
-            8299,
-            9104
-          ],
-          "stat_mod_ids": [
-            5005,
-            5008,
-            5001
-          ],
-          "play": 3,
-          "win": 0,
-          "pick_rate": 0.0556
+          "pick_rate": 0.0484
         }
       ]
     },
@@ -2448,7 +4418,7 @@
       "id": 8010,
       "primary_page_id": 8000,
       "secondary_page_id": 8400,
-      "play": 25,
+      "play": 27,
       "win": 12,
       "pick_rate": 0.0326,
       "builds": [
@@ -2471,9 +4441,9 @@
             5008,
             5001
           ],
-          "play": 13,
+          "play": 14,
           "win": 8,
-          "pick_rate": 0.52
+          "pick_rate": 0.5185
         },
         {
           "id": 8010,
@@ -2496,7 +4466,7 @@
           ],
           "play": 1,
           "win": 1,
-          "pick_rate": 0.04
+          "pick_rate": 0.037
         },
         {
           "id": 8010,
@@ -2519,7 +4489,7 @@
           ],
           "play": 1,
           "win": 0,
-          "pick_rate": 0.04
+          "pick_rate": 0.037
         },
         {
           "id": 8010,
@@ -2542,7 +4512,7 @@
           ],
           "play": 1,
           "win": 0,
-          "pick_rate": 0.04
+          "pick_rate": 0.037
         },
         {
           "id": 8010,
@@ -2565,7 +4535,7 @@
           ],
           "play": 1,
           "win": 0,
-          "pick_rate": 0.04
+          "pick_rate": 0.037
         }
       ]
     },
@@ -2575,7 +4545,7 @@
       "secondary_page_id": 8300,
       "play": 6,
       "win": 4,
-      "pick_rate": 0.0078,
+      "pick_rate": 0.0072,
       "builds": [
         {
           "id": 8437,
@@ -2702,9 +4672,19 @@
         3078,
         3181
       ],
-      "play": 141,
-      "win": 84,
-      "pick_rate": 0.3271
+      "play": 147,
+      "win": 88,
+      "pick_rate": 0.3134
+    },
+    {
+      "ids": [
+        3074,
+        3153,
+        3181
+      ],
+      "play": 27,
+      "win": 9,
+      "pick_rate": 0.0576
     },
     {
       "ids": [
@@ -2714,17 +4694,7 @@
       ],
       "play": 23,
       "win": 12,
-      "pick_rate": 0.0534
-    },
-    {
-      "ids": [
-        3074,
-        3153,
-        3181
-      ],
-      "play": 22,
-      "win": 9,
-      "pick_rate": 0.051
+      "pick_rate": 0.049
     },
     {
       "ids": [
@@ -2732,9 +4702,9 @@
         3181,
         3078
       ],
-      "play": 19,
+      "play": 21,
       "win": 10,
-      "pick_rate": 0.0441
+      "pick_rate": 0.0448
     },
     {
       "ids": [
@@ -2742,9 +4712,9 @@
         3153,
         3078
       ],
-      "play": 14,
-      "win": 7,
-      "pick_rate": 0.0325
+      "play": 16,
+      "win": 9,
+      "pick_rate": 0.0341
     },
     {
       "ids": [
@@ -2752,9 +4722,9 @@
         3078,
         3153
       ],
-      "play": 10,
-      "win": 6,
-      "pick_rate": 0.0232
+      "play": 12,
+      "win": 7,
+      "pick_rate": 0.0256
     },
     {
       "ids": [
@@ -2764,7 +4734,7 @@
       ],
       "play": 9,
       "win": 4,
-      "pick_rate": 0.0209
+      "pick_rate": 0.0192
     },
     {
       "ids": [
@@ -2774,7 +4744,7 @@
       ],
       "play": 9,
       "win": 3,
-      "pick_rate": 0.0209
+      "pick_rate": 0.0192
     },
     {
       "ids": [
@@ -2784,7 +4754,7 @@
       ],
       "play": 8,
       "win": 4,
-      "pick_rate": 0.0186
+      "pick_rate": 0.0171
     },
     {
       "ids": [
@@ -2794,7 +4764,27 @@
       ],
       "play": 7,
       "win": 3,
-      "pick_rate": 0.0162
+      "pick_rate": 0.0149
+    },
+    {
+      "ids": [
+        3074,
+        3078,
+        3091
+      ],
+      "play": 7,
+      "win": 4,
+      "pick_rate": 0.0149
+    },
+    {
+      "ids": [
+        3074,
+        3078,
+        3075
+      ],
+      "play": 7,
+      "win": 2,
+      "pick_rate": 0.0149
     },
     {
       "ids": [
@@ -2804,27 +4794,7 @@
       ],
       "play": 6,
       "win": 5,
-      "pick_rate": 0.0139
-    },
-    {
-      "ids": [
-        3074,
-        3078,
-        3091
-      ],
-      "play": 6,
-      "win": 3,
-      "pick_rate": 0.0139
-    },
-    {
-      "ids": [
-        3074,
-        3078,
-        3075
-      ],
-      "play": 6,
-      "win": 2,
-      "pick_rate": 0.0139
+      "pick_rate": 0.0128
     },
     {
       "ids": [
@@ -2834,7 +4804,7 @@
       ],
       "play": 6,
       "win": 6,
-      "pick_rate": 0.0139
+      "pick_rate": 0.0128
     },
     {
       "ids": [
@@ -2844,7 +4814,7 @@
       ],
       "play": 5,
       "win": 2,
-      "pick_rate": 0.0116
+      "pick_rate": 0.0107
     }
   ],
   "boots": [
@@ -2852,33 +4822,33 @@
       "ids": [
         3047
       ],
-      "play": 380,
-      "win": 199,
-      "pick_rate": 0.5345
+      "play": 414,
+      "win": 218,
+      "pick_rate": 0.5391
     },
     {
       "ids": [
         3111
       ],
-      "play": 195,
-      "win": 83,
-      "pick_rate": 0.2743
+      "play": 214,
+      "win": 89,
+      "pick_rate": 0.2786
     },
     {
       "ids": [
         3009
       ],
-      "play": 92,
-      "win": 47,
-      "pick_rate": 0.1294
+      "play": 95,
+      "win": 49,
+      "pick_rate": 0.1237
     },
     {
       "ids": [
         3006
       ],
-      "play": 43,
+      "play": 44,
       "win": 21,
-      "pick_rate": 0.0605
+      "pick_rate": 0.0573
     },
     {
       "ids": [
@@ -2886,7 +4856,7 @@
       ],
       "play": 1,
       "win": 0,
-      "pick_rate": 0.0014
+      "pick_rate": 0.0013
     }
   ],
   "starter_items": [
@@ -2895,18 +4865,18 @@
         1055,
         2003
       ],
-      "play": 548,
-      "win": 259,
-      "pick_rate": 0.6902
+      "play": 589,
+      "win": 278,
+      "pick_rate": 0.6881
     },
     {
       "ids": [
         1054,
         2003
       ],
-      "play": 207,
-      "win": 100,
-      "pick_rate": 0.2607
+      "play": 221,
+      "win": 106,
+      "pick_rate": 0.2582
     },
     {
       "ids": [
@@ -2914,18 +4884,9 @@
         1055,
         2003
       ],
-      "play": 9,
-      "win": 6,
-      "pick_rate": 0.0113
-    },
-    {
-      "ids": [
-        1029,
-        2031
-      ],
-      "play": 5,
-      "win": 2,
-      "pick_rate": 0.0063
+      "play": 10,
+      "win": 7,
+      "pick_rate": 0.0117
     },
     {
       "ids": [
@@ -2934,18 +4895,46 @@
         2003,
         2003
       ],
-      "play": 5,
+      "play": 6,
       "win": 3,
-      "pick_rate": 0.0063
+      "pick_rate": 0.007
     },
     {
       "ids": [
         1036,
         2031
       ],
-      "play": 5,
+      "play": 6,
       "win": 1,
-      "pick_rate": 0.0063
+      "pick_rate": 0.007
+    },
+    {
+      "ids": [
+        1029,
+        2031
+      ],
+      "play": 5,
+      "win": 2,
+      "pick_rate": 0.0058
+    },
+    {
+      "ids": [
+        1028,
+        1055,
+        2003
+      ],
+      "play": 3,
+      "win": 1,
+      "pick_rate": 0.0035
+    },
+    {
+      "ids": [
+        1083,
+        2003
+      ],
+      "play": 3,
+      "win": 1,
+      "pick_rate": 0.0035
     },
     {
       "ids": [
@@ -2955,16 +4944,7 @@
       ],
       "play": 3,
       "win": 0,
-      "pick_rate": 0.0038
-    },
-    {
-      "ids": [
-        1083,
-        2003
-      ],
-      "play": 2,
-      "win": 1,
-      "pick_rate": 0.0025
+      "pick_rate": 0.0035
     },
     {
       "ids": [
@@ -2975,7 +4955,7 @@
       ],
       "play": 2,
       "win": 2,
-      "pick_rate": 0.0025
+      "pick_rate": 0.0023
     },
     {
       "ids": [
@@ -2985,17 +4965,7 @@
       ],
       "play": 2,
       "win": 2,
-      "pick_rate": 0.0025
-    },
-    {
-      "ids": [
-        1028,
-        1055,
-        2003
-      ],
-      "play": 2,
-      "win": 0,
-      "pick_rate": 0.0025
+      "pick_rate": 0.0023
     },
     {
       "ids": [
@@ -3007,7 +4977,18 @@
       ],
       "play": 1,
       "win": 0,
-      "pick_rate": 0.0013
+      "pick_rate": 0.0012
+    },
+    {
+      "ids": [
+        1036,
+        2003,
+        2003,
+        2003
+      ],
+      "play": 1,
+      "win": 1,
+      "pick_rate": 0.0012
     },
     {
       "ids": [
@@ -3018,7 +4999,7 @@
       ],
       "play": 1,
       "win": 1,
-      "pick_rate": 0.0013
+      "pick_rate": 0.0012
     },
     {
       "ids": [
@@ -3028,17 +5009,7 @@
       ],
       "play": 1,
       "win": 1,
-      "pick_rate": 0.0013
-    },
-    {
-      "ids": [
-        1029,
-        1036,
-        2031
-      ],
-      "play": 1,
-      "win": 0,
-      "pick_rate": 0.0013
+      "pick_rate": 0.0012
     }
   ],
   "last_items": [
@@ -3046,81 +5017,89 @@
       "ids": [
         3074
       ],
-      "play": 623,
-      "win": 301,
-      "pick_rate": 0.2794
+      "play": 669,
+      "win": 322,
+      "pick_rate": 0.2769
     },
     {
       "ids": [
         3078
       ],
-      "play": 485,
-      "win": 263,
-      "pick_rate": 0.2175
+      "play": 523,
+      "win": 286,
+      "pick_rate": 0.2165
     },
     {
       "ids": [
         3181
       ],
-      "play": 339,
-      "win": 188,
-      "pick_rate": 0.152
+      "play": 366,
+      "win": 199,
+      "pick_rate": 0.1515
     },
     {
       "ids": [
         3153
       ],
-      "play": 260,
-      "win": 134,
-      "pick_rate": 0.1166
+      "play": 289,
+      "win": 147,
+      "pick_rate": 0.1196
     },
     {
       "ids": [
         3075
       ],
-      "play": 59,
-      "win": 33,
-      "pick_rate": 0.0265
+      "play": 67,
+      "win": 35,
+      "pick_rate": 0.0277
     },
     {
       "ids": [
         3076
       ],
-      "play": 59,
-      "win": 32,
-      "pick_rate": 0.0265
+      "play": 63,
+      "win": 35,
+      "pick_rate": 0.0261
     },
     {
       "ids": [
         3091
       ],
-      "play": 54,
-      "win": 23,
-      "pick_rate": 0.0242
-    },
-    {
-      "ids": [
-        3065
-      ],
-      "play": 47,
-      "win": 20,
-      "pick_rate": 0.0211
+      "play": 57,
+      "win": 24,
+      "pick_rate": 0.0236
     },
     {
       "ids": [
         3077
       ],
-      "play": 46,
-      "win": 17,
-      "pick_rate": 0.0206
+      "play": 53,
+      "win": 20,
+      "pick_rate": 0.0219
+    },
+    {
+      "ids": [
+        3065
+      ],
+      "play": 53,
+      "win": 22,
+      "pick_rate": 0.0219
     },
     {
       "ids": [
         3053
       ],
-      "play": 42,
-      "win": 24,
-      "pick_rate": 0.0188
+      "play": 43,
+      "win": 25,
+      "pick_rate": 0.0178
+    },
+    {
+      "ids": [
+        3748
+      ],
+      "play": 40,
+      "win": 25,
+      "pick_rate": 0.0166
     },
     {
       "ids": [
@@ -3128,39 +5107,31 @@
       ],
       "play": 37,
       "win": 24,
-      "pick_rate": 0.0166
-    },
-    {
-      "ids": [
-        3748
-      ],
-      "play": 37,
-      "win": 22,
-      "pick_rate": 0.0166
+      "pick_rate": 0.0153
     },
     {
       "ids": [
         3123
       ],
-      "play": 35,
+      "play": 36,
       "win": 11,
-      "pick_rate": 0.0157
+      "pick_rate": 0.0149
     },
     {
       "ids": [
         3110
       ],
-      "play": 23,
-      "win": 13,
-      "pick_rate": 0.0103
+      "play": 26,
+      "win": 16,
+      "pick_rate": 0.0108
     },
     {
       "ids": [
         6631
       ],
-      "play": 10,
+      "play": 11,
       "win": 3,
-      "pick_rate": 0.0045
+      "pick_rate": 0.0046
     },
     {
       "ids": [
@@ -3168,7 +5139,7 @@
       ],
       "play": 10,
       "win": 4,
-      "pick_rate": 0.0045
+      "pick_rate": 0.0041
     },
     {
       "ids": [
@@ -3176,31 +5147,39 @@
       ],
       "play": 9,
       "win": 4,
-      "pick_rate": 0.004
+      "pick_rate": 0.0037
     },
     {
       "ids": [
         6662
       ],
-      "play": 7,
-      "win": 1,
-      "pick_rate": 0.0031
+      "play": 8,
+      "win": 2,
+      "pick_rate": 0.0033
     },
     {
       "ids": [
         3742
       ],
-      "play": 6,
+      "play": 7,
       "win": 2,
-      "pick_rate": 0.0027
+      "pick_rate": 0.0029
     },
     {
       "ids": [
         4401
       ],
+      "play": 7,
+      "win": 3,
+      "pick_rate": 0.0029
+    },
+    {
+      "ids": [
+        6665
+      ],
       "play": 6,
-      "win": 2,
-      "pick_rate": 0.0027
+      "win": 3,
+      "pick_rate": 0.0025
     },
     {
       "ids": [
@@ -3208,23 +5187,15 @@
       ],
       "play": 4,
       "win": 2,
-      "pick_rate": 0.0018
+      "pick_rate": 0.0017
     },
     {
       "ids": [
-        6665
+        6609
       ],
       "play": 4,
-      "win": 2,
-      "pick_rate": 0.0018
-    },
-    {
-      "ids": [
-        3036
-      ],
-      "play": 3,
-      "win": 1,
-      "pick_rate": 0.0013
+      "win": 3,
+      "pick_rate": 0.0017
     },
     {
       "ids": [
@@ -3232,15 +5203,23 @@
       ],
       "play": 3,
       "win": 1,
-      "pick_rate": 0.0013
+      "pick_rate": 0.0012
     },
     {
       "ids": [
-        6609
+        2504
       ],
       "play": 3,
-      "win": 3,
-      "pick_rate": 0.0013
+      "win": 1,
+      "pick_rate": 0.0012
+    },
+    {
+      "ids": [
+        3036
+      ],
+      "play": 3,
+      "win": 1,
+      "pick_rate": 0.0012
     },
     {
       "ids": [
@@ -3248,15 +5227,7 @@
       ],
       "play": 3,
       "win": 2,
-      "pick_rate": 0.0013
-    },
-    {
-      "ids": [
-        6695
-      ],
-      "play": 2,
-      "win": 1,
-      "pick_rate": 0.0009
+      "pick_rate": 0.0012
     },
     {
       "ids": [
@@ -3264,7 +5235,7 @@
       ],
       "play": 2,
       "win": 1,
-      "pick_rate": 0.0009
+      "pick_rate": 0.0008
     },
     {
       "ids": [
@@ -3272,7 +5243,7 @@
       ],
       "play": 2,
       "win": 1,
-      "pick_rate": 0.0009
+      "pick_rate": 0.0008
     },
     {
       "ids": [
@@ -3280,7 +5251,7 @@
       ],
       "play": 2,
       "win": 1,
-      "pick_rate": 0.0009
+      "pick_rate": 0.0008
     }
   ]
 }
