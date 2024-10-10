@@ -269,11 +269,11 @@
       "is_rotation": false,
       "is_rip": false,
       "average_stats": {
-        "play": 1407,
-        "win_rate": 0.462687,
-        "pick_rate": 0.0165643,
-        "ban_rate": 0.00223683,
-        "kda": 2.087026,
+        "play": 1474,
+        "win_rate": 0.464722,
+        "pick_rate": 0.0167382,
+        "ban_rate": 0.00226658,
+        "kda": 2.080883,
         "tier": 5,
         "rank": 167,
         "tier_data": {
@@ -287,15 +287,15 @@
         {
           "name": "MID",
           "stats": {
-            "play": 1228,
-            "win_rate": 0.455212,
-            "pick_rate": 0.0143942,
-            "role_rate": 0.872779,
-            "ban_rate": 0.00195225,
-            "kda": 2.11101,
+            "play": 1289,
+            "win_rate": 0.456943,
+            "pick_rate": 0.0145765,
+            "role_rate": 0.874491,
+            "ban_rate": 0.0019821,
+            "kda": 2.098626,
             "tier_data": {
               "tier": 5,
-              "rank": 57,
+              "rank": 56,
               "rank_prev": 57,
               "rank_prev_patch": 52
             }
@@ -304,27 +304,27 @@
             {
               "name": "MAGE",
               "stats": {
-                "win_rate": 0.450853,
-                "role_rate": 0.991942,
-                "play": 1231,
-                "win": 555
+                "win_rate": 0.453978,
+                "role_rate": 0.991493,
+                "play": 1282,
+                "win": 582
               }
             }
           ],
           "counters": [
             {
-              "champion_id": 103,
-              "play": 57,
-              "win": 17
-            },
-            {
               "champion_id": 7,
-              "play": 30,
+              "play": 32,
               "win": 10
             },
             {
+              "champion_id": 103,
+              "play": 65,
+              "win": 22
+            },
+            {
               "champion_id": 61,
-              "play": 51,
+              "play": 52,
               "win": 21
             }
           ]
@@ -335,9 +335,346 @@
     "opponents": [
       [
         {
+          "champion_id": 7,
+          "play": 32,
+          "win": 10,
+          "meta": {
+            "id": 7,
+            "key": "Leblanc",
+            "name": "诡术妖姬",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Leblanc.png",
+            "evolve": [],
+            "title": "乐芙兰",
+            "partype": "法力",
+            "passive": {
+              "name": "镜花水月",
+              "description": "当乐芙兰跌至40%最大生命值以下时，她会隐形1秒并创造一个幻像（不能造成伤害），幻像最多可持续8秒。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/LeBlancP.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0007/ability_0007_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "恶意魔印",
+                "description": "乐芙兰朝目标投射一个魔印，造成魔法伤害并标记目标3.5秒。用一个技能对被标记的目标造成伤害时，会引爆魔印，造成附加伤害。如果这两部分伤害中有任一部分击杀了目标，那么乐芙兰就会返还此技能的法力消耗和此技能的一部分剩余冷却时间。",
+                "max_rank": 5,
+                "range_burn": [
+                  700
+                ],
+                "cooldown_burn": [
+                  6
+                ],
+                "cooldown_burn_float": [
+                  6
+                ],
+                "cost_burn": [
+                  50
+                ],
+                "tooltip": "乐芙兰对一个敌人投出一个魔印，造成<magicDamage>?魔法伤害</magicDamage>并将其标记?秒。<br /><br />用一个技能对被标记的目标造成伤害时，会引爆魔印，从而造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />如果这两部分伤害中有任一部分击杀了目标，那么乐芙兰就会返还此技能的?%法力消耗和此技能的?%剩余冷却时间。<br /><br /><rules>初始魔印对小兵造成额外的?伤害。</rules>?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/LeblancQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0007/ability_0007_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "魔影迷踪",
+                "description": "乐芙兰位移至目标位置，并对目标位置附近的敌人造成伤害。在接下来的4秒里，她可以激活此技能来回到她的初始位置。",
+                "max_rank": 5,
+                "range_burn": [
+                  600
+                ],
+                "cooldown_burn": [
+                  15,
+                  13,
+                  12,
+                  11,
+                  10
+                ],
+                "cooldown_burn_float": [
+                  15,
+                  13.75,
+                  12.5,
+                  11.25,
+                  10
+                ],
+                "cost_burn": [
+                  60,
+                  70,
+                  80,
+                  90,
+                  100
+                ],
+                "tooltip": "乐芙兰冲刺然后对附近的敌人们造成<magicDamage>?魔法伤害</magicDamage>。在冲刺后的4秒里，乐芙兰可以<recast>再次施放</recast>。<br /><br /><recast>再次施放：</recast>乐芙兰回到她的初始位置。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/LeblancW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0007/ability_0007_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "幻影锁链",
+                "description": "乐芙兰抛出一条锁链来束缚命中的第一个敌人。如果目标持续被束缚1.5秒，那么目标就会受到额外的魔法伤害并且被禁锢。",
+                "max_rank": 5,
+                "range_burn": [
+                  925
+                ],
+                "cooldown_burn": [
+                  14,
+                  13,
+                  12,
+                  11,
+                  11
+                ],
+                "cooldown_burn_float": [
+                  14,
+                  13.25,
+                  12.5,
+                  11.75,
+                  11
+                ],
+                "cost_burn": [
+                  50
+                ],
+                "tooltip": "乐芙兰抛出一个锁链来束缚命中的第一个敌人，造成<magicDamage>?魔法伤害</magicDamage>并提供目标的<keywordStealth>真实视野</keywordStealth>。<br /><br />如果目标持续被束缚1.5秒，则乐芙兰会将其<status>禁锢</status>1.5秒，并造成额外的<magicDamage>?魔法伤害</magicDamage>。 ?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/LeblancE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0007/ability_0007_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "故技重施",
+                "description": "乐芙兰可以施放她一个技能的故技重施版。",
+                "max_rank": 3,
+                "range_burn": [
+                  25000
+                ],
+                "cooldown_burn": [
+                  50,
+                  40,
+                  30
+                ],
+                "cooldown_burn_float": [
+                  50,
+                  40,
+                  30
+                ],
+                "cost_burn": [
+                  0
+                ],
+                "tooltip": "乐芙兰故技重施，将她放过的上一个技能再施放一次。故技重施版技能的伤害会获得提升。<br /><br /><spellName>故技重施版恶意魔印</spellName>在施加印记时造成<magicDamage>{{ rq1damage }}魔法伤害</magicDamage>，并在消耗印记时造成<magicDamage>{{ rq2damage }}魔法伤害</magicDamage> 。<br /><spellName>故技重施版魔影迷踪</spellName>造成<magicDamage>?魔法伤害</magicDamage>。<br /><spellName>故技重施版幻影锁链</spellName>在链到目标时造成<magicDamage>{{ re1damage }}魔法伤害</magicDamage>并在<status>禁锢</status>时造成<magicDamage>{{ re2damage }}魔法伤害</magicDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/LeblancR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0007/ability_0007_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 7000,
+                "champion_id": 7,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 3150
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 790
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 7019,
+                "champion_id": 7,
+                "name": "iG 乐芙兰",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_19.jpg",
+                "skin_video_url": "https://youtu.be/u5DiHPyNQwo",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-09-25T08:59:00+09:00"
+              },
+              {
+                "id": 7029,
+                "champion_id": 7,
+                "name": "冠军蔷薇 乐芙兰",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_29.jpg",
+                "skin_video_url": "https://youtu.be/RbBAKBOCr7I",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-09-25T08:59:00+09:00"
+              },
+              {
+                "id": 7003,
+                "champion_id": 7,
+                "name": "幸福女神 乐芙兰",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_3.jpg",
+                "skin_video_url": "https://youtu.be/vCTELfgLnyU",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 7035,
+                "champion_id": 7,
+                "name": "幻执事 乐芙兰",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_35.jpg",
+                "skin_video_url": "https://youtu.be/-_0qPqYiSLM",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-12-09T04:00:00+09:00"
+              },
+              {
+                "id": 7055,
+                "champion_id": 7,
+                "name": "殿堂传奇 乐芙兰",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_55.jpg",
+                "skin_video_url": null,
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 7005,
+                "champion_id": 7,
+                "name": "永恒之森 乐芙兰",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_5.jpg",
+                "skin_video_url": "https://youtu.be/_zktJHWXfC8",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2016-03-10T09:00:00+09:00"
+              },
+              {
+                "id": 7012,
+                "champion_id": 7,
+                "name": "源代码 乐芙兰",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_12.jpg",
+                "skin_video_url": "https://youtu.be/OegZlmbrJhk",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2018-11-15T09:00:00+09:00"
+              },
+              {
+                "id": 7001,
+                "champion_id": 7,
+                "name": "潮流女王 乐芙兰",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_1.jpg",
+                "skin_video_url": "https://youtu.be/0EXvoDw5AMk",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2010-11-01T20:00:00+09:00"
+              },
+              {
+                "id": 7002,
+                "champion_id": 7,
+                "name": "社会名流 乐芙兰",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_2.jpg",
+                "skin_video_url": "https://youtu.be/WvRpakOqwWo",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 520
+                  }
+                ],
+                "sales": null,
+                "release_date": "2010-11-01T20:00:00+09:00"
+              },
+              {
+                "id": 7033,
+                "champion_id": 7,
+                "name": "至臻 魔女 乐芙兰",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_33.jpg",
+                "skin_video_url": "https://youtu.be/X-SYbJgxfgs",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 7004,
+                "champion_id": 7,
+                "name": "邪鸦魅影 乐芙兰",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_4.jpg",
+                "skin_video_url": "https://youtu.be/3FBgPdH-QMs",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 7045,
+                "champion_id": 7,
+                "name": "魅惑女巫 乐芙兰",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_45.jpg",
+                "skin_video_url": "https://youtu.be/hilNzaspqGQ",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 7020,
+                "champion_id": 7,
+                "name": "魔女 乐芙兰",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_20.jpg",
+                "skin_video_url": "https://youtu.be/2TiXXMH8bwU",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-04-16T04:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 31.25
+        },
+        {
           "champion_id": 103,
-          "play": 57,
-          "win": 17,
+          "play": 65,
+          "win": 22,
           "meta": {
             "id": 103,
             "key": "Ahri",
@@ -741,348 +1078,11 @@
               }
             ]
           },
-          "win_rate": 29.82
-        },
-        {
-          "champion_id": 7,
-          "play": 30,
-          "win": 10,
-          "meta": {
-            "id": 7,
-            "key": "Leblanc",
-            "name": "诡术妖姬",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Leblanc.png",
-            "evolve": [],
-            "title": "乐芙兰",
-            "partype": "法力",
-            "passive": {
-              "name": "镜花水月",
-              "description": "当乐芙兰跌至40%最大生命值以下时，她会隐形1秒并创造一个幻像（不能造成伤害），幻像最多可持续8秒。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/LeBlancP.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0007/ability_0007_P1.webm"
-            },
-            "spells": [
-              {
-                "key": "Q",
-                "name": "恶意魔印",
-                "description": "乐芙兰朝目标投射一个魔印，造成魔法伤害并标记目标3.5秒。用一个技能对被标记的目标造成伤害时，会引爆魔印，造成附加伤害。如果这两部分伤害中有任一部分击杀了目标，那么乐芙兰就会返还此技能的法力消耗和此技能的一部分剩余冷却时间。",
-                "max_rank": 5,
-                "range_burn": [
-                  700
-                ],
-                "cooldown_burn": [
-                  6
-                ],
-                "cooldown_burn_float": [
-                  6
-                ],
-                "cost_burn": [
-                  50
-                ],
-                "tooltip": "乐芙兰对一个敌人投出一个魔印，造成<magicDamage>?魔法伤害</magicDamage>并将其标记?秒。<br /><br />用一个技能对被标记的目标造成伤害时，会引爆魔印，从而造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />如果这两部分伤害中有任一部分击杀了目标，那么乐芙兰就会返还此技能的?%法力消耗和此技能的?%剩余冷却时间。<br /><br /><rules>初始魔印对小兵造成额外的?伤害。</rules>?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/LeblancQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0007/ability_0007_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "魔影迷踪",
-                "description": "乐芙兰位移至目标位置，并对目标位置附近的敌人造成伤害。在接下来的4秒里，她可以激活此技能来回到她的初始位置。",
-                "max_rank": 5,
-                "range_burn": [
-                  600
-                ],
-                "cooldown_burn": [
-                  15,
-                  13,
-                  12,
-                  11,
-                  10
-                ],
-                "cooldown_burn_float": [
-                  15,
-                  13.75,
-                  12.5,
-                  11.25,
-                  10
-                ],
-                "cost_burn": [
-                  60,
-                  70,
-                  80,
-                  90,
-                  100
-                ],
-                "tooltip": "乐芙兰冲刺然后对附近的敌人们造成<magicDamage>?魔法伤害</magicDamage>。在冲刺后的4秒里，乐芙兰可以<recast>再次施放</recast>。<br /><br /><recast>再次施放：</recast>乐芙兰回到她的初始位置。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/LeblancW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0007/ability_0007_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "幻影锁链",
-                "description": "乐芙兰抛出一条锁链来束缚命中的第一个敌人。如果目标持续被束缚1.5秒，那么目标就会受到额外的魔法伤害并且被禁锢。",
-                "max_rank": 5,
-                "range_burn": [
-                  925
-                ],
-                "cooldown_burn": [
-                  14,
-                  13,
-                  12,
-                  11,
-                  11
-                ],
-                "cooldown_burn_float": [
-                  14,
-                  13.25,
-                  12.5,
-                  11.75,
-                  11
-                ],
-                "cost_burn": [
-                  50
-                ],
-                "tooltip": "乐芙兰抛出一个锁链来束缚命中的第一个敌人，造成<magicDamage>?魔法伤害</magicDamage>并提供目标的<keywordStealth>真实视野</keywordStealth>。<br /><br />如果目标持续被束缚1.5秒，则乐芙兰会将其<status>禁锢</status>1.5秒，并造成额外的<magicDamage>?魔法伤害</magicDamage>。 ?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/LeblancE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0007/ability_0007_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "故技重施",
-                "description": "乐芙兰可以施放她一个技能的故技重施版。",
-                "max_rank": 3,
-                "range_burn": [
-                  25000
-                ],
-                "cooldown_burn": [
-                  50,
-                  40,
-                  30
-                ],
-                "cooldown_burn_float": [
-                  50,
-                  40,
-                  30
-                ],
-                "cost_burn": [
-                  0
-                ],
-                "tooltip": "乐芙兰故技重施，将她放过的上一个技能再施放一次。故技重施版技能的伤害会获得提升。<br /><br /><spellName>故技重施版恶意魔印</spellName>在施加印记时造成<magicDamage>{{ rq1damage }}魔法伤害</magicDamage>，并在消耗印记时造成<magicDamage>{{ rq2damage }}魔法伤害</magicDamage> 。<br /><spellName>故技重施版魔影迷踪</spellName>造成<magicDamage>?魔法伤害</magicDamage>。<br /><spellName>故技重施版幻影锁链</spellName>在链到目标时造成<magicDamage>{{ re1damage }}魔法伤害</magicDamage>并在<status>禁锢</status>时造成<magicDamage>{{ re2damage }}魔法伤害</magicDamage>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/LeblancR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0007/ability_0007_R1.webm"
-              }
-            ],
-            "skins": [
-              {
-                "id": 7000,
-                "champion_id": 7,
-                "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_0.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "IP",
-                    "cost": 3150
-                  },
-                  {
-                    "currency": "RP",
-                    "cost": 790
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 7019,
-                "champion_id": 7,
-                "name": "iG 乐芙兰",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_19.jpg",
-                "skin_video_url": "https://youtu.be/u5DiHPyNQwo",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2024-09-25T08:59:00+09:00"
-              },
-              {
-                "id": 7029,
-                "champion_id": 7,
-                "name": "冠军蔷薇 乐芙兰",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_29.jpg",
-                "skin_video_url": "https://youtu.be/RbBAKBOCr7I",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2024-09-25T08:59:00+09:00"
-              },
-              {
-                "id": 7003,
-                "champion_id": 7,
-                "name": "幸福女神 乐芙兰",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_3.jpg",
-                "skin_video_url": "https://youtu.be/vCTELfgLnyU",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 7035,
-                "champion_id": 7,
-                "name": "幻执事 乐芙兰",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_35.jpg",
-                "skin_video_url": "https://youtu.be/-_0qPqYiSLM",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2021-12-09T04:00:00+09:00"
-              },
-              {
-                "id": 7055,
-                "champion_id": 7,
-                "name": "殿堂传奇 乐芙兰",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_55.jpg",
-                "skin_video_url": null,
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 7005,
-                "champion_id": 7,
-                "name": "永恒之森 乐芙兰",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_5.jpg",
-                "skin_video_url": "https://youtu.be/_zktJHWXfC8",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2016-03-10T09:00:00+09:00"
-              },
-              {
-                "id": 7012,
-                "champion_id": 7,
-                "name": "源代码 乐芙兰",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_12.jpg",
-                "skin_video_url": "https://youtu.be/OegZlmbrJhk",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2018-11-15T09:00:00+09:00"
-              },
-              {
-                "id": 7001,
-                "champion_id": 7,
-                "name": "潮流女王 乐芙兰",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_1.jpg",
-                "skin_video_url": "https://youtu.be/0EXvoDw5AMk",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 750
-                  }
-                ],
-                "sales": null,
-                "release_date": "2010-11-01T20:00:00+09:00"
-              },
-              {
-                "id": 7002,
-                "champion_id": 7,
-                "name": "社会名流 乐芙兰",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_2.jpg",
-                "skin_video_url": "https://youtu.be/WvRpakOqwWo",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 520
-                  }
-                ],
-                "sales": null,
-                "release_date": "2010-11-01T20:00:00+09:00"
-              },
-              {
-                "id": 7033,
-                "champion_id": 7,
-                "name": "至臻 魔女 乐芙兰",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_33.jpg",
-                "skin_video_url": "https://youtu.be/X-SYbJgxfgs",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 7004,
-                "champion_id": 7,
-                "name": "邪鸦魅影 乐芙兰",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_4.jpg",
-                "skin_video_url": "https://youtu.be/3FBgPdH-QMs",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 7045,
-                "champion_id": 7,
-                "name": "魅惑女巫 乐芙兰",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_45.jpg",
-                "skin_video_url": "https://youtu.be/hilNzaspqGQ",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 7020,
-                "champion_id": 7,
-                "name": "魔女 乐芙兰",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Leblanc_20.jpg",
-                "skin_video_url": "https://youtu.be/2TiXXMH8bwU",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2020-04-16T04:00:00+09:00"
-              }
-            ]
-          },
-          "win_rate": 33.33
+          "win_rate": 33.85
         },
         {
           "champion_id": 61,
-          "play": 51,
+          "play": 52,
           "win": 21,
           "meta": {
             "id": 61,
@@ -1401,11 +1401,11 @@
               }
             ]
           },
-          "win_rate": 41.18
+          "win_rate": 40.38
         },
         {
           "champion_id": 84,
-          "play": 40,
+          "play": 41,
           "win": 18,
           "meta": {
             "id": 84,
@@ -1828,11 +1828,11 @@
               }
             ]
           },
-          "win_rate": 45
+          "win_rate": 43.9
         },
         {
           "champion_id": 777,
-          "play": 79,
+          "play": 80,
           "win": 37,
           "meta": {
             "id": 777,
@@ -2093,7 +2093,7 @@
               }
             ]
           },
-          "win_rate": 46.84
+          "win_rate": 46.25
         }
       ],
       [
@@ -2525,8 +2525,8 @@
         },
         {
           "champion_id": 157,
-          "play": 43,
-          "win": 23,
+          "play": 44,
+          "win": 24,
           "meta": {
             "id": 157,
             "key": "Yasuo",
@@ -2909,12 +2909,12 @@
               }
             ]
           },
-          "win_rate": 53.49
+          "win_rate": 54.55
         },
         {
           "champion_id": 910,
-          "play": 54,
-          "win": 27,
+          "play": 55,
+          "win": 28,
           "meta": {
             "id": 910,
             "key": "Hwei",
@@ -3092,12 +3092,12 @@
               }
             ]
           },
-          "win_rate": 50
+          "win_rate": 50.91
         },
         {
           "champion_id": 238,
-          "play": 31,
-          "win": 15,
+          "play": 33,
+          "win": 16,
           "meta": {
             "id": 238,
             "key": "Zed",
@@ -3423,14 +3423,14 @@
               }
             ]
           },
-          "win_rate": 48.39
+          "win_rate": 48.48
         }
       ]
     ],
     "counters": [
       {
         "champion_id": 777,
-        "play": 79,
+        "play": 80,
         "win": 37,
         "meta": {
           "id": 777,
@@ -3948,8 +3948,8 @@
       },
       {
         "champion_id": 103,
-        "play": 57,
-        "win": 17,
+        "play": 65,
+        "win": 22,
         "meta": {
           "id": 103,
           "key": "Ahri",
@@ -4356,8 +4356,8 @@
       },
       {
         "champion_id": 910,
-        "play": 54,
-        "win": 27,
+        "play": 55,
+        "win": 28,
         "meta": {
           "id": 910,
           "key": "Hwei",
@@ -4538,7 +4538,7 @@
       },
       {
         "champion_id": 61,
-        "play": 51,
+        "play": 52,
         "win": 21,
         "meta": {
           "id": 61,
@@ -4860,8 +4860,8 @@
       },
       {
         "champion_id": 157,
-        "play": 43,
-        "win": 23,
+        "play": 44,
+        "win": 24,
         "meta": {
           "id": 157,
           "key": "Yasuo",
@@ -5247,7 +5247,7 @@
       },
       {
         "champion_id": 84,
-        "play": 40,
+        "play": 41,
         "win": 18,
         "meta": {
           "id": 84,
@@ -5673,8 +5673,8 @@
       },
       {
         "champion_id": 134,
-        "play": 38,
-        "win": 18,
+        "play": 40,
+        "win": 19,
         "meta": {
           "id": 134,
           "key": "Syndra",
@@ -5995,8 +5995,8 @@
       },
       {
         "champion_id": 238,
-        "play": 31,
-        "win": 15,
+        "play": 33,
+        "win": 16,
         "meta": {
           "id": 238,
           "key": "Zed",
@@ -6324,178 +6324,8 @@
         }
       },
       {
-        "champion_id": 901,
-        "play": 31,
-        "win": 17,
-        "meta": {
-          "id": 901,
-          "key": "Smolder",
-          "name": "炽炎雏龙",
-          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Smolder.png",
-          "evolve": [],
-          "title": "斯莫德",
-          "partype": "法力",
-          "passive": {
-            "name": "龙之研习",
-            "description": "用技能命中英雄和用超级灼热龙息 击杀敌人时会提供一层龙之研习。层数会提升斯莫德各基础技能的伤害。",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Icons_Smolder_Passive.png",
-            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_P1.webm"
-          },
-          "spells": [
-            {
-              "key": "Q",
-              "name": "超级灼热龙息",
-              "description": "斯莫德在一名敌人身上喷吐烈焰。随着他获得更多层数，这个技能会变得更加强力。",
-              "max_rank": 5,
-              "range_burn": [
-                550
-              ],
-              "cooldown_burn": [
-                5,
-                5,
-                4,
-                4,
-                3
-              ],
-              "cooldown_burn_float": [
-                5.5,
-                5,
-                4.5,
-                4,
-                3.5
-              ],
-              "cost_burn": [
-                25
-              ],
-              "tooltip": "斯莫德喷出烈焰，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。<br /><br />基于<spellName>龙之研习</spellName>的层数，这个技能会不断进化以获得以下效果：<li><keywordMajor>?层</keywordMajor>：伤害目标周围的所有敌人。</li><li><keywordMajor>?层</keywordMajor>：在目标后侧引发<spellName>{{ tier2_numberofblowback }}</spellName>次爆炸，造成{{ tier2_blowbackpercentagedamage }}%此技能伤害。</li><li><keywordMajor>?层</keywordMajor>：灼烧目标，在{{ tier3_dotlength }}秒里持续造成共<trueDamage>{{ tier3_burn }}最大生命值的真实伤害</trueDamage>。 敌方英雄如果在灼烧期间跌到<trueDamage>{{ tier3_executethreshold }}</trueDamage>总生命值以下，则会被立刻击杀。</li>?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderQ.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_Q1.webm"
-            },
-            {
-              "key": "W",
-              "name": "阿嚏！",
-              "description": "斯莫德发出一个萌萌的烈焰喷嚏，喷嚏会在命中敌人时爆炸。",
-              "max_rank": 5,
-              "range_burn": [
-                1500
-              ],
-              "cooldown_burn": [
-                14,
-                13,
-                12,
-                11,
-                10
-              ],
-              "cooldown_burn_float": [
-                14,
-                13,
-                12,
-                11,
-                10
-              ],
-              "cost_burn": [
-                60
-              ],
-              "tooltip": "斯莫德发出一个萌萌的烈焰喷嚏，造成<physicalDamage>?物理伤害</physicalDamage>和持续?秒的?%<status>减速</status>。<br /><br />命中英雄时会引发一次爆炸，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderW.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_W1.webm"
-            },
-            {
-              "key": "E",
-              "name": "扑棱，扑棱，扑棱！",
-              "description": "斯莫德展翅高飞，无视地形并轰击生命值最低的敌人。",
-              "max_rank": 5,
-              "range_burn": [
-                700
-              ],
-              "cooldown_burn": [
-                24,
-                22,
-                20,
-                18,
-                16
-              ],
-              "cooldown_burn_float": [
-                24,
-                22,
-                20,
-                18,
-                16
-              ],
-              "cost_burn": [
-                65
-              ],
-              "tooltip": "斯莫德展翅高飞，获得<speed>?%移动速度</speed>并无视地形，持续?秒。<br /><br />飞行时，斯莫德轰击生命值最低的敌方英雄<spellName>?</spellName>次(向下取整)，每次命中造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderE.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_E1.webm"
-            },
-            {
-              "key": "R",
-              "name": "妈----！",
-              "description": "斯莫德召唤他的妈妈从天空喷吐烈焰，对她的烈焰中心的敌人们造成额外伤害和减速。",
-              "max_rank": 3,
-              "range_burn": [
-                4200
-              ],
-              "cooldown_burn": [
-                140,
-                130,
-                120
-              ],
-              "cooldown_burn_float": [
-                140,
-                130,
-                120
-              ],
-              "cost_burn": [
-                100
-              ],
-              "tooltip": "斯莫德的妈妈从天空喷吐烈焰，造成<physicalDamage>?物理伤害</physicalDamage>。中心的敌人们会转而受到<physicalDamage>?</physicalDamage>伤害和持续?秒的?%<status>减速</status>。<br /><br />斯莫德的妈妈如果命中了她的儿子，则会为他治疗<healing>?生命值</healing>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderR.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_R1.webm"
-            }
-          ],
-          "skins": [
-            {
-              "id": 901000,
-              "champion_id": 901,
-              "name": "default",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Smolder_0.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "IP",
-                  "cost": 6300
-                },
-                {
-                  "currency": "RP",
-                  "cost": 975
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 901001,
-              "champion_id": 901,
-              "name": "天龙之子 斯莫德",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Smolder_1.jpg",
-              "skin_video_url": "https://youtu.be/XeJNB08BRYU",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2024-01-31T10:00:00+09:00"
-            }
-          ]
-        }
-      },
-      {
         "champion_id": 7,
-        "play": 30,
+        "play": 32,
         "win": 10,
         "meta": {
           "id": 7,
@@ -6828,6 +6658,176 @@
             }
           ]
         }
+      },
+      {
+        "champion_id": 901,
+        "play": 31,
+        "win": 17,
+        "meta": {
+          "id": 901,
+          "key": "Smolder",
+          "name": "炽炎雏龙",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Smolder.png",
+          "evolve": [],
+          "title": "斯莫德",
+          "partype": "法力",
+          "passive": {
+            "name": "龙之研习",
+            "description": "用技能命中英雄和用超级灼热龙息 击杀敌人时会提供一层龙之研习。层数会提升斯莫德各基础技能的伤害。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Icons_Smolder_Passive.png",
+            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_P1.webm"
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "超级灼热龙息",
+              "description": "斯莫德在一名敌人身上喷吐烈焰。随着他获得更多层数，这个技能会变得更加强力。",
+              "max_rank": 5,
+              "range_burn": [
+                550
+              ],
+              "cooldown_burn": [
+                5,
+                5,
+                4,
+                4,
+                3
+              ],
+              "cooldown_burn_float": [
+                5.5,
+                5,
+                4.5,
+                4,
+                3.5
+              ],
+              "cost_burn": [
+                25
+              ],
+              "tooltip": "斯莫德喷出烈焰，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。<br /><br />基于<spellName>龙之研习</spellName>的层数，这个技能会不断进化以获得以下效果：<li><keywordMajor>?层</keywordMajor>：伤害目标周围的所有敌人。</li><li><keywordMajor>?层</keywordMajor>：在目标后侧引发<spellName>{{ tier2_numberofblowback }}</spellName>次爆炸，造成{{ tier2_blowbackpercentagedamage }}%此技能伤害。</li><li><keywordMajor>?层</keywordMajor>：灼烧目标，在{{ tier3_dotlength }}秒里持续造成共<trueDamage>{{ tier3_burn }}最大生命值的真实伤害</trueDamage>。 敌方英雄如果在灼烧期间跌到<trueDamage>{{ tier3_executethreshold }}</trueDamage>总生命值以下，则会被立刻击杀。</li>?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderQ.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "阿嚏！",
+              "description": "斯莫德发出一个萌萌的烈焰喷嚏，喷嚏会在命中敌人时爆炸。",
+              "max_rank": 5,
+              "range_burn": [
+                1500
+              ],
+              "cooldown_burn": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "cooldown_burn_float": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "cost_burn": [
+                60
+              ],
+              "tooltip": "斯莫德发出一个萌萌的烈焰喷嚏，造成<physicalDamage>?物理伤害</physicalDamage>和持续?秒的?%<status>减速</status>。<br /><br />命中英雄时会引发一次爆炸，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderW.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "扑棱，扑棱，扑棱！",
+              "description": "斯莫德展翅高飞，无视地形并轰击生命值最低的敌人。",
+              "max_rank": 5,
+              "range_burn": [
+                700
+              ],
+              "cooldown_burn": [
+                24,
+                22,
+                20,
+                18,
+                16
+              ],
+              "cooldown_burn_float": [
+                24,
+                22,
+                20,
+                18,
+                16
+              ],
+              "cost_burn": [
+                65
+              ],
+              "tooltip": "斯莫德展翅高飞，获得<speed>?%移动速度</speed>并无视地形，持续?秒。<br /><br />飞行时，斯莫德轰击生命值最低的敌方英雄<spellName>?</spellName>次(向下取整)，每次命中造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderE.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "妈----！",
+              "description": "斯莫德召唤他的妈妈从天空喷吐烈焰，对她的烈焰中心的敌人们造成额外伤害和减速。",
+              "max_rank": 3,
+              "range_burn": [
+                4200
+              ],
+              "cooldown_burn": [
+                140,
+                130,
+                120
+              ],
+              "cooldown_burn_float": [
+                140,
+                130,
+                120
+              ],
+              "cost_burn": [
+                100
+              ],
+              "tooltip": "斯莫德的妈妈从天空喷吐烈焰，造成<physicalDamage>?物理伤害</physicalDamage>。中心的敌人们会转而受到<physicalDamage>?</physicalDamage>伤害和持续?秒的?%<status>减速</status>。<br /><br />斯莫德的妈妈如果命中了她的儿子，则会为他治疗<healing>?生命值</healing>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderR.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 901000,
+              "champion_id": 901,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Smolder_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 6300
+                },
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 901001,
+              "champion_id": 901,
+              "name": "天龙之子 斯莫德",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Smolder_1.jpg",
+              "skin_video_url": "https://youtu.be/XeJNB08BRYU",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2024-01-31T10:00:00+09:00"
+            }
+          ]
+        }
       }
     ]
   },
@@ -6837,9 +6837,9 @@
         4,
         12
       ],
-      "win": 530,
-      "play": 1157,
-      "pick_rate": 0.9772
+      "win": 555,
+      "play": 1205,
+      "pick_rate": 0.9741
     },
     {
       "ids": [
@@ -6847,8 +6847,8 @@
         14
       ],
       "win": 8,
-      "play": 15,
-      "pick_rate": 0.0127
+      "play": 16,
+      "pick_rate": 0.0129
     },
     {
       "ids": [
@@ -6856,8 +6856,8 @@
         21
       ],
       "win": 2,
-      "play": 6,
-      "pick_rate": 0.0051
+      "play": 7,
+      "pick_rate": 0.0057
     },
     {
       "ids": [
@@ -6866,7 +6866,7 @@
       ],
       "win": 3,
       "play": 3,
-      "pick_rate": 0.0025
+      "pick_rate": 0.0024
     },
     {
       "ids": [
@@ -6875,7 +6875,7 @@
       ],
       "win": 1,
       "play": 3,
-      "pick_rate": 0.0025
+      "pick_rate": 0.0024
     }
   ],
   "trends": {
@@ -6884,7 +6884,7 @@
     "win": [
       {
         "version": "14.20",
-        "rate": 0.4552,
+        "rate": 0.4569,
         "rank": 56,
         "created_at": "2024-10-09T22:35:24+09:00"
       },
@@ -6946,7 +6946,7 @@
     "pick": [
       {
         "version": "14.20",
-        "rate": 0.0144,
+        "rate": 0.0146,
         "rank": 37,
         "created_at": "2024-10-09T22:35:24+09:00"
       },
@@ -7071,33 +7071,33 @@
   "game_lengths": [
     {
       "game_length": 30,
-      "rate": 0.420195,
+      "rate": 0.419255,
       "average": 0.5,
-      "rank": 56
+      "rank": 57
     },
     {
       "game_length": 0,
-      "rate": 0.435484,
+      "rate": 0.438462,
       "average": 0.5,
-      "rank": 56
+      "rank": 55
     },
     {
       "game_length": 35,
-      "rate": 0.477477,
+      "rate": 0.474138,
       "average": 0.5,
-      "rank": 37
+      "rank": 40
     },
     {
       "game_length": 25,
-      "rate": 0.482587,
+      "rate": 0.484561,
       "average": 0.5,
-      "rank": 41
+      "rank": 40
     },
     {
       "game_length": 40,
-      "rate": 0.583333,
+      "rate": 0.6,
       "average": 0.5,
-      "rank": 9
+      "rank": 7
     }
   ],
   "skills": [
@@ -7119,9 +7119,9 @@
         "E",
         "E"
       ],
-      "play": 495,
-      "win": 263,
-      "pick_rate": 0.6051
+      "play": 516,
+      "win": 273,
+      "pick_rate": 0.6049
     },
     {
       "order": [
@@ -7141,9 +7141,9 @@
         "E",
         "E"
       ],
-      "play": 124,
-      "win": 66,
-      "pick_rate": 0.1516
+      "play": 133,
+      "win": 74,
+      "pick_rate": 0.1559
     },
     {
       "order": [
@@ -7163,9 +7163,9 @@
         "E",
         "E"
       ],
-      "play": 65,
-      "win": 27,
-      "pick_rate": 0.0795
+      "play": 67,
+      "win": 28,
+      "pick_rate": 0.0785
     },
     {
       "order": [
@@ -7187,7 +7187,7 @@
       ],
       "play": 26,
       "win": 18,
-      "pick_rate": 0.0318
+      "pick_rate": 0.0305
     },
     {
       "order": [
@@ -7209,7 +7209,7 @@
       ],
       "play": 13,
       "win": 7,
-      "pick_rate": 0.0159
+      "pick_rate": 0.0152
     }
   ],
   "skill_masteries": [
@@ -7219,9 +7219,9 @@
         "Q",
         "E"
       ],
-      "play": 793,
-      "win": 421,
-      "pick_rate": 0.9694,
+      "play": 828,
+      "win": 442,
+      "pick_rate": 0.9707,
       "builds": [
         {
           "order": [
@@ -7241,9 +7241,9 @@
             "E",
             "E"
           ],
-          "play": 495,
-          "win": 263,
-          "pick_rate": 0.6242
+          "play": 516,
+          "win": 273,
+          "pick_rate": 0.6232
         },
         {
           "order": [
@@ -7263,9 +7263,9 @@
             "E",
             "E"
           ],
-          "play": 124,
-          "win": 66,
-          "pick_rate": 0.1564
+          "play": 133,
+          "win": 74,
+          "pick_rate": 0.1606
         },
         {
           "order": [
@@ -7285,9 +7285,9 @@
             "E",
             "E"
           ],
-          "play": 65,
-          "win": 27,
-          "pick_rate": 0.082
+          "play": 67,
+          "win": 28,
+          "pick_rate": 0.0809
         },
         {
           "order": [
@@ -7309,7 +7309,7 @@
           ],
           "play": 26,
           "win": 18,
-          "pick_rate": 0.0328
+          "pick_rate": 0.0314
         },
         {
           "order": [
@@ -7331,7 +7331,7 @@
           ],
           "play": 8,
           "win": 3,
-          "pick_rate": 0.0101
+          "pick_rate": 0.0097
         }
       ]
     },
@@ -7343,7 +7343,7 @@
       ],
       "play": 20,
       "win": 11,
-      "pick_rate": 0.0244,
+      "pick_rate": 0.0234,
       "builds": [
         {
           "order": [
@@ -7465,7 +7465,7 @@
       ],
       "play": 3,
       "win": 2,
-      "pick_rate": 0.0037,
+      "pick_rate": 0.0035,
       "builds": [
         {
           "order": [
@@ -7543,7 +7543,7 @@
       ],
       "play": 2,
       "win": 1,
-      "pick_rate": 0.0024,
+      "pick_rate": 0.0023,
       "builds": [
         {
           "order": [
@@ -7591,9 +7591,9 @@
         5008,
         5001
       ],
-      "play": 148,
-      "win": 61,
-      "pick_rate": 0.1242
+      "play": 154,
+      "win": 65,
+      "pick_rate": 0.1237
     },
     {
       "id": 8437,
@@ -7614,9 +7614,9 @@
         5008,
         5001
       ],
-      "play": 117,
-      "win": 55,
-      "pick_rate": 0.0982
+      "play": 120,
+      "win": 57,
+      "pick_rate": 0.0964
     },
     {
       "id": 8005,
@@ -7637,9 +7637,9 @@
         5008,
         5011
       ],
-      "play": 89,
+      "play": 91,
       "win": 46,
-      "pick_rate": 0.0747
+      "pick_rate": 0.0731
     },
     {
       "id": 8021,
@@ -7660,9 +7660,9 @@
         5008,
         5001
       ],
-      "play": 53,
-      "win": 21,
-      "pick_rate": 0.0445
+      "play": 56,
+      "win": 23,
+      "pick_rate": 0.045
     },
     {
       "id": 8010,
@@ -7683,9 +7683,9 @@
         5008,
         5001
       ],
-      "play": 28,
-      "win": 14,
-      "pick_rate": 0.0235
+      "play": 29,
+      "win": 15,
+      "pick_rate": 0.0233
     }
   ],
   "rune_pages": [
@@ -7693,9 +7693,9 @@
       "id": 8008,
       "primary_page_id": 8000,
       "secondary_page_id": 8200,
-      "play": 277,
-      "win": 125,
-      "pick_rate": 0.2324,
+      "play": 291,
+      "win": 133,
+      "pick_rate": 0.2337,
       "builds": [
         {
           "id": 8008,
@@ -7716,9 +7716,9 @@
             5008,
             5001
           ],
-          "play": 148,
-          "win": 61,
-          "pick_rate": 0.5343
+          "play": 154,
+          "win": 65,
+          "pick_rate": 0.5292
         },
         {
           "id": 8008,
@@ -7741,7 +7741,30 @@
           ],
           "play": 12,
           "win": 4,
-          "pick_rate": 0.0433
+          "pick_rate": 0.0412
+        },
+        {
+          "id": 8008,
+          "primary_page_id": 8000,
+          "primary_rune_ids": [
+            8008,
+            8009,
+            9104,
+            8017
+          ],
+          "secondary_page_id": 8200,
+          "secondary_rune_ids": [
+            8210,
+            8226
+          ],
+          "stat_mod_ids": [
+            5005,
+            5008,
+            5001
+          ],
+          "play": 12,
+          "win": 7,
+          "pick_rate": 0.0412
         },
         {
           "id": 8008,
@@ -7764,7 +7787,7 @@
           ],
           "play": 11,
           "win": 6,
-          "pick_rate": 0.0397
+          "pick_rate": 0.0378
         },
         {
           "id": 8008,
@@ -7787,155 +7810,7 @@
           ],
           "play": 11,
           "win": 4,
-          "pick_rate": 0.0397
-        },
-        {
-          "id": 8008,
-          "primary_page_id": 8000,
-          "primary_rune_ids": [
-            8008,
-            8009,
-            9104,
-            8017
-          ],
-          "secondary_page_id": 8200,
-          "secondary_rune_ids": [
-            8210,
-            8226
-          ],
-          "stat_mod_ids": [
-            5005,
-            5008,
-            5001
-          ],
-          "play": 11,
-          "win": 7,
-          "pick_rate": 0.0397
-        }
-      ]
-    },
-    {
-      "id": 8005,
-      "primary_page_id": 8000,
-      "secondary_page_id": 8300,
-      "play": 170,
-      "win": 86,
-      "pick_rate": 0.1426,
-      "builds": [
-        {
-          "id": 8005,
-          "primary_page_id": 8000,
-          "primary_rune_ids": [
-            8005,
-            8009,
-            9104,
-            8017
-          ],
-          "secondary_page_id": 8300,
-          "secondary_rune_ids": [
-            8313,
-            8316
-          ],
-          "stat_mod_ids": [
-            5005,
-            5008,
-            5011
-          ],
-          "play": 89,
-          "win": 46,
-          "pick_rate": 0.5235
-        },
-        {
-          "id": 8005,
-          "primary_page_id": 8000,
-          "primary_rune_ids": [
-            8005,
-            8009,
-            9104,
-            8017
-          ],
-          "secondary_page_id": 8300,
-          "secondary_rune_ids": [
-            8316,
-            8345
-          ],
-          "stat_mod_ids": [
-            5005,
-            5008,
-            5011
-          ],
-          "play": 24,
-          "win": 12,
-          "pick_rate": 0.1412
-        },
-        {
-          "id": 8005,
-          "primary_page_id": 8000,
-          "primary_rune_ids": [
-            8005,
-            8009,
-            9104,
-            8017
-          ],
-          "secondary_page_id": 8300,
-          "secondary_rune_ids": [
-            8313,
-            8316
-          ],
-          "stat_mod_ids": [
-            5005,
-            5008,
-            5001
-          ],
-          "play": 24,
-          "win": 8,
-          "pick_rate": 0.1412
-        },
-        {
-          "id": 8005,
-          "primary_page_id": 8000,
-          "primary_rune_ids": [
-            8005,
-            8009,
-            9104,
-            8017
-          ],
-          "secondary_page_id": 8300,
-          "secondary_rune_ids": [
-            8304,
-            8316
-          ],
-          "stat_mod_ids": [
-            5005,
-            5008,
-            5001
-          ],
-          "play": 6,
-          "win": 4,
-          "pick_rate": 0.0353
-        },
-        {
-          "id": 8005,
-          "primary_page_id": 8000,
-          "primary_rune_ids": [
-            8005,
-            8009,
-            9104,
-            8017
-          ],
-          "secondary_page_id": 8300,
-          "secondary_rune_ids": [
-            8313,
-            8347
-          ],
-          "stat_mod_ids": [
-            5005,
-            5008,
-            5001
-          ],
-          "play": 5,
-          "win": 0,
-          "pick_rate": 0.0294
+          "pick_rate": 0.0378
         }
       ]
     },
@@ -7943,9 +7818,9 @@
       "id": 8005,
       "primary_page_id": 8000,
       "secondary_page_id": 8200,
-      "play": 168,
-      "win": 72,
-      "pick_rate": 0.1409,
+      "play": 177,
+      "win": 77,
+      "pick_rate": 0.1422,
       "builds": [
         {
           "id": 8005,
@@ -7966,9 +7841,32 @@
             5008,
             5011
           ],
-          "play": 25,
-          "win": 16,
-          "pick_rate": 0.1488
+          "play": 27,
+          "win": 17,
+          "pick_rate": 0.1525
+        },
+        {
+          "id": 8005,
+          "primary_page_id": 8000,
+          "primary_rune_ids": [
+            8005,
+            8009,
+            9104,
+            8017
+          ],
+          "secondary_page_id": 8200,
+          "secondary_rune_ids": [
+            8226,
+            8236
+          ],
+          "stat_mod_ids": [
+            5005,
+            5008,
+            5001
+          ],
+          "play": 20,
+          "win": 8,
+          "pick_rate": 0.113
         },
         {
           "id": 8005,
@@ -7991,30 +7889,7 @@
           ],
           "play": 20,
           "win": 10,
-          "pick_rate": 0.119
-        },
-        {
-          "id": 8005,
-          "primary_page_id": 8000,
-          "primary_rune_ids": [
-            8005,
-            8009,
-            9104,
-            8017
-          ],
-          "secondary_page_id": 8200,
-          "secondary_rune_ids": [
-            8226,
-            8236
-          ],
-          "stat_mod_ids": [
-            5005,
-            5008,
-            5001
-          ],
-          "play": 17,
-          "win": 6,
-          "pick_rate": 0.1012
+          "pick_rate": 0.113
         },
         {
           "id": 8005,
@@ -8037,7 +7912,7 @@
           ],
           "play": 16,
           "win": 9,
-          "pick_rate": 0.0952
+          "pick_rate": 0.0904
         },
         {
           "id": 8005,
@@ -8050,17 +7925,142 @@
           ],
           "secondary_page_id": 8200,
           "secondary_rune_ids": [
-            8233,
-            8237
+            8210,
+            8226
+          ],
+          "stat_mod_ids": [
+            5005,
+            5008,
+            5001
+          ],
+          "play": 15,
+          "win": 5,
+          "pick_rate": 0.0847
+        }
+      ]
+    },
+    {
+      "id": 8005,
+      "primary_page_id": 8000,
+      "secondary_page_id": 8300,
+      "play": 173,
+      "win": 86,
+      "pick_rate": 0.139,
+      "builds": [
+        {
+          "id": 8005,
+          "primary_page_id": 8000,
+          "primary_rune_ids": [
+            8005,
+            8009,
+            9104,
+            8017
+          ],
+          "secondary_page_id": 8300,
+          "secondary_rune_ids": [
+            8313,
+            8316
           ],
           "stat_mod_ids": [
             5005,
             5008,
             5011
           ],
-          "play": 14,
+          "play": 91,
+          "win": 46,
+          "pick_rate": 0.526
+        },
+        {
+          "id": 8005,
+          "primary_page_id": 8000,
+          "primary_rune_ids": [
+            8005,
+            8009,
+            9104,
+            8017
+          ],
+          "secondary_page_id": 8300,
+          "secondary_rune_ids": [
+            8316,
+            8345
+          ],
+          "stat_mod_ids": [
+            5005,
+            5008,
+            5011
+          ],
+          "play": 24,
+          "win": 12,
+          "pick_rate": 0.1387
+        },
+        {
+          "id": 8005,
+          "primary_page_id": 8000,
+          "primary_rune_ids": [
+            8005,
+            8009,
+            9104,
+            8017
+          ],
+          "secondary_page_id": 8300,
+          "secondary_rune_ids": [
+            8313,
+            8316
+          ],
+          "stat_mod_ids": [
+            5005,
+            5008,
+            5001
+          ],
+          "play": 24,
+          "win": 8,
+          "pick_rate": 0.1387
+        },
+        {
+          "id": 8005,
+          "primary_page_id": 8000,
+          "primary_rune_ids": [
+            8005,
+            8009,
+            9104,
+            8017
+          ],
+          "secondary_page_id": 8300,
+          "secondary_rune_ids": [
+            8304,
+            8316
+          ],
+          "stat_mod_ids": [
+            5005,
+            5008,
+            5001
+          ],
+          "play": 6,
           "win": 4,
-          "pick_rate": 0.0833
+          "pick_rate": 0.0347
+        },
+        {
+          "id": 8005,
+          "primary_page_id": 8000,
+          "primary_rune_ids": [
+            8005,
+            8009,
+            9104,
+            8017
+          ],
+          "secondary_page_id": 8300,
+          "secondary_rune_ids": [
+            8313,
+            8347
+          ],
+          "stat_mod_ids": [
+            5005,
+            5008,
+            5001
+          ],
+          "play": 5,
+          "win": 0,
+          "pick_rate": 0.0289
         }
       ]
     },
@@ -8068,9 +8068,9 @@
       "id": 8437,
       "primary_page_id": 8400,
       "secondary_page_id": 8000,
-      "play": 163,
-      "win": 81,
-      "pick_rate": 0.1367,
+      "play": 169,
+      "win": 83,
+      "pick_rate": 0.1357,
       "builds": [
         {
           "id": 8437,
@@ -8091,9 +8091,9 @@
             5008,
             5001
           ],
-          "play": 117,
-          "win": 55,
-          "pick_rate": 0.7178
+          "play": 120,
+          "win": 57,
+          "pick_rate": 0.7101
         },
         {
           "id": 8437,
@@ -8114,9 +8114,9 @@
             5008,
             5001
           ],
-          "play": 16,
+          "play": 17,
           "win": 10,
-          "pick_rate": 0.0982
+          "pick_rate": 0.1006
         },
         {
           "id": 8437,
@@ -8139,7 +8139,7 @@
           ],
           "play": 11,
           "win": 4,
-          "pick_rate": 0.0675
+          "pick_rate": 0.0651
         },
         {
           "id": 8437,
@@ -8160,9 +8160,9 @@
             5008,
             5001
           ],
-          "play": 5,
+          "play": 6,
           "win": 3,
-          "pick_rate": 0.0307
+          "pick_rate": 0.0355
         },
         {
           "id": 8437,
@@ -8185,7 +8185,7 @@
           ],
           "play": 4,
           "win": 3,
-          "pick_rate": 0.0245
+          "pick_rate": 0.0237
         }
       ]
     },
@@ -8193,9 +8193,9 @@
       "id": 8010,
       "primary_page_id": 8000,
       "secondary_page_id": 8200,
-      "play": 110,
-      "win": 53,
-      "pick_rate": 0.0923,
+      "play": 116,
+      "win": 58,
+      "pick_rate": 0.0932,
       "builds": [
         {
           "id": 8010,
@@ -8216,9 +8216,9 @@
             5008,
             5001
           ],
-          "play": 28,
-          "win": 14,
-          "pick_rate": 0.2545
+          "play": 29,
+          "win": 15,
+          "pick_rate": 0.25
         },
         {
           "id": 8010,
@@ -8239,9 +8239,9 @@
             5008,
             5001
           ],
-          "play": 17,
-          "win": 9,
-          "pick_rate": 0.1545
+          "play": 20,
+          "win": 11,
+          "pick_rate": 0.1724
         },
         {
           "id": 8010,
@@ -8262,9 +8262,9 @@
             5008,
             5001
           ],
-          "play": 11,
-          "win": 5,
-          "pick_rate": 0.1
+          "play": 12,
+          "win": 6,
+          "pick_rate": 0.1034
         },
         {
           "id": 8010,
@@ -8287,7 +8287,7 @@
           ],
           "play": 7,
           "win": 4,
-          "pick_rate": 0.0636
+          "pick_rate": 0.0603
         },
         {
           "id": 8010,
@@ -8310,7 +8310,7 @@
           ],
           "play": 7,
           "win": 4,
-          "pick_rate": 0.0636
+          "pick_rate": 0.0603
         }
       ]
     }
@@ -8322,9 +8322,9 @@
         6653,
         3157
       ],
-      "play": 78,
-      "win": 43,
-      "pick_rate": 0.1256
+      "play": 84,
+      "win": 46,
+      "pick_rate": 0.129
     },
     {
       "ids": [
@@ -8332,9 +8332,9 @@
         6653,
         3089
       ],
-      "play": 48,
-      "win": 22,
-      "pick_rate": 0.0773
+      "play": 50,
+      "win": 23,
+      "pick_rate": 0.0768
     },
     {
       "ids": [
@@ -8344,7 +8344,7 @@
       ],
       "play": 41,
       "win": 17,
-      "pick_rate": 0.066
+      "pick_rate": 0.063
     },
     {
       "ids": [
@@ -8352,9 +8352,9 @@
         4645,
         3089
       ],
-      "play": 35,
-      "win": 17,
-      "pick_rate": 0.0564
+      "play": 38,
+      "win": 20,
+      "pick_rate": 0.0584
     },
     {
       "ids": [
@@ -8362,9 +8362,9 @@
         6653,
         4645
       ],
-      "play": 29,
-      "win": 12,
-      "pick_rate": 0.0467
+      "play": 31,
+      "win": 13,
+      "pick_rate": 0.0476
     },
     {
       "ids": [
@@ -8372,19 +8372,9 @@
         6653,
         3135
       ],
-      "play": 25,
+      "play": 26,
       "win": 12,
-      "pick_rate": 0.0403
-    },
-    {
-      "ids": [
-        3115,
-        3157,
-        4645
-      ],
-      "play": 15,
-      "win": 7,
-      "pick_rate": 0.0242
+      "pick_rate": 0.0399
     },
     {
       "ids": [
@@ -8394,17 +8384,27 @@
       ],
       "play": 15,
       "win": 4,
-      "pick_rate": 0.0242
+      "pick_rate": 0.023
+    },
+    {
+      "ids": [
+        3115,
+        3157,
+        4645
+      ],
+      "play": 15,
+      "win": 7,
+      "pick_rate": 0.023
     },
     {
       "ids": [
         6653,
         3115,
-        3157
+        4645
       ],
-      "play": 12,
-      "win": 9,
-      "pick_rate": 0.0193
+      "play": 13,
+      "win": 8,
+      "pick_rate": 0.02
     },
     {
       "ids": [
@@ -8414,17 +8414,17 @@
       ],
       "play": 12,
       "win": 10,
-      "pick_rate": 0.0193
+      "pick_rate": 0.0184
     },
     {
       "ids": [
         6653,
         3115,
-        4645
+        3157
       ],
-      "play": 11,
-      "win": 7,
-      "pick_rate": 0.0177
+      "play": 12,
+      "win": 9,
+      "pick_rate": 0.0184
     },
     {
       "ids": [
@@ -8434,27 +8434,17 @@
       ],
       "play": 11,
       "win": 9,
-      "pick_rate": 0.0177
+      "pick_rate": 0.0169
     },
     {
       "ids": [
         3115,
         6653,
-        3102
+        3137
       ],
       "play": 9,
-      "win": 3,
-      "pick_rate": 0.0145
-    },
-    {
-      "ids": [
-        3100,
-        3115,
-        3157
-      ],
-      "play": 9,
-      "win": 2,
-      "pick_rate": 0.0145
+      "win": 5,
+      "pick_rate": 0.0138
     },
     {
       "ids": [
@@ -8464,7 +8454,17 @@
       ],
       "play": 9,
       "win": 5,
-      "pick_rate": 0.0145
+      "pick_rate": 0.0138
+    },
+    {
+      "ids": [
+        3100,
+        3115,
+        3157
+      ],
+      "play": 9,
+      "win": 2,
+      "pick_rate": 0.0138
     }
   ],
   "boots": [
@@ -8472,25 +8472,25 @@
       "ids": [
         3020
       ],
-      "play": 938,
-      "win": 441,
-      "pick_rate": 0.8142
+      "play": 974,
+      "win": 460,
+      "pick_rate": 0.8117
     },
     {
       "ids": [
         3111
       ],
-      "play": 140,
-      "win": 60,
-      "pick_rate": 0.1215
+      "play": 148,
+      "win": 65,
+      "pick_rate": 0.1233
     },
     {
       "ids": [
         3006
       ],
-      "play": 32,
-      "win": 12,
-      "pick_rate": 0.0278
+      "play": 35,
+      "win": 13,
+      "pick_rate": 0.0292
     },
     {
       "ids": [
@@ -8498,15 +8498,15 @@
       ],
       "play": 21,
       "win": 14,
-      "pick_rate": 0.0182
+      "pick_rate": 0.0175
     },
     {
       "ids": [
         3158
       ],
-      "play": 17,
-      "win": 7,
-      "pick_rate": 0.0148
+      "play": 18,
+      "win": 8,
+      "pick_rate": 0.015
     }
   ],
   "starter_items": [
@@ -8516,9 +8516,9 @@
         2003,
         2003
       ],
-      "play": 1198,
-      "win": 546,
-      "pick_rate": 0.9669
+      "play": 1250,
+      "win": 573,
+      "pick_rate": 0.9667
     },
     {
       "ids": [
@@ -8527,16 +8527,16 @@
       ],
       "play": 16,
       "win": 8,
-      "pick_rate": 0.0129
+      "pick_rate": 0.0124
     },
     {
       "ids": [
         1056,
         2003
       ],
-      "play": 4,
+      "play": 5,
       "win": 1,
-      "pick_rate": 0.0032
+      "pick_rate": 0.0039
     },
     {
       "ids": [
@@ -8547,7 +8547,7 @@
       ],
       "play": 3,
       "win": 1,
-      "pick_rate": 0.0024
+      "pick_rate": 0.0023
     },
     {
       "ids": [
@@ -8555,7 +8555,7 @@
       ],
       "play": 3,
       "win": 3,
-      "pick_rate": 0.0024
+      "pick_rate": 0.0023
     },
     {
       "ids": [
@@ -8564,7 +8564,18 @@
       ],
       "play": 2,
       "win": 1,
-      "pick_rate": 0.0016
+      "pick_rate": 0.0015
+    },
+    {
+      "ids": [
+        1042,
+        1056,
+        2003,
+        2003
+      ],
+      "play": 2,
+      "win": 0,
+      "pick_rate": 0.0015
     },
     {
       "ids": [
@@ -8573,7 +8584,7 @@
       ],
       "play": 2,
       "win": 0,
-      "pick_rate": 0.0016
+      "pick_rate": 0.0015
     },
     {
       "ids": [
@@ -8584,7 +8595,7 @@
       ],
       "play": 2,
       "win": 0,
-      "pick_rate": 0.0016
+      "pick_rate": 0.0015
     },
     {
       "ids": [
@@ -8646,17 +8657,6 @@
       "play": 1,
       "win": 0,
       "pick_rate": 0.0008
-    },
-    {
-      "ids": [
-        1056,
-        1082,
-        2003,
-        2003
-      ],
-      "play": 1,
-      "win": 1,
-      "pick_rate": 0.0008
     }
   ],
   "last_items": [
@@ -8664,137 +8664,145 @@
       "ids": [
         3115
       ],
-      "play": 1124,
-      "win": 519,
-      "pick_rate": 0.327
+      "play": 1172,
+      "win": 545,
+      "pick_rate": 0.3267
     },
     {
       "ids": [
         6653
       ],
-      "play": 576,
-      "win": 260,
-      "pick_rate": 0.1676
+      "play": 605,
+      "win": 274,
+      "pick_rate": 0.1687
     },
     {
       "ids": [
         3157
       ],
-      "play": 355,
-      "win": 185,
-      "pick_rate": 0.1033
+      "play": 367,
+      "win": 191,
+      "pick_rate": 0.1023
     },
     {
       "ids": [
         4645
       ],
-      "play": 317,
-      "win": 170,
-      "pick_rate": 0.0922
+      "play": 334,
+      "win": 182,
+      "pick_rate": 0.0931
     },
     {
       "ids": [
         3089
       ],
-      "play": 234,
-      "win": 137,
-      "pick_rate": 0.0681
+      "play": 245,
+      "win": 144,
+      "pick_rate": 0.0683
     },
     {
       "ids": [
         1082
       ],
-      "play": 125,
-      "win": 65,
-      "pick_rate": 0.0364
+      "play": 131,
+      "win": 68,
+      "pick_rate": 0.0365
     },
     {
       "ids": [
         3135
       ],
-      "play": 115,
-      "win": 57,
-      "pick_rate": 0.0335
+      "play": 122,
+      "win": 60,
+      "pick_rate": 0.034
     },
     {
       "ids": [
         3100
       ],
-      "play": 95,
+      "play": 97,
       "win": 46,
-      "pick_rate": 0.0276
+      "pick_rate": 0.027
     },
     {
       "ids": [
         3102
       ],
-      "play": 87,
-      "win": 48,
-      "pick_rate": 0.0253
+      "play": 89,
+      "win": 49,
+      "pick_rate": 0.0248
     },
     {
       "ids": [
         3916
       ],
-      "play": 84,
+      "play": 86,
       "win": 33,
-      "pick_rate": 0.0244
+      "pick_rate": 0.024
     },
     {
       "ids": [
         2420
       ],
-      "play": 73,
-      "win": 43,
-      "pick_rate": 0.0212
+      "play": 77,
+      "win": 45,
+      "pick_rate": 0.0215
     },
     {
       "ids": [
         3137
       ],
-      "play": 44,
-      "win": 21,
-      "pick_rate": 0.0128
+      "play": 45,
+      "win": 22,
+      "pick_rate": 0.0125
     },
     {
       "ids": [
         3116
       ],
-      "play": 25,
-      "win": 13,
-      "pick_rate": 0.0073
+      "play": 28,
+      "win": 15,
+      "pick_rate": 0.0078
     },
     {
       "ids": [
         8020
       ],
-      "play": 25,
+      "play": 26,
       "win": 12,
-      "pick_rate": 0.0073
+      "pick_rate": 0.0072
     },
     {
       "ids": [
         3165
       ],
-      "play": 25,
-      "win": 9,
-      "pick_rate": 0.0073
+      "play": 26,
+      "win": 10,
+      "pick_rate": 0.0072
     },
     {
       "ids": [
         6655
       ],
-      "play": 20,
+      "play": 21,
       "win": 12,
-      "pick_rate": 0.0058
+      "pick_rate": 0.0059
     },
     {
       "ids": [
         4633
       ],
-      "play": 19,
+      "play": 20,
       "win": 13,
-      "pick_rate": 0.0055
+      "pick_rate": 0.0056
+    },
+    {
+      "ids": [
+        2503
+      ],
+      "play": 16,
+      "win": 7,
+      "pick_rate": 0.0045
     },
     {
       "ids": [
@@ -8802,15 +8810,7 @@
       ],
       "play": 15,
       "win": 12,
-      "pick_rate": 0.0044
-    },
-    {
-      "ids": [
-        2503
-      ],
-      "play": 15,
-      "win": 6,
-      "pick_rate": 0.0044
+      "pick_rate": 0.0042
     },
     {
       "ids": [
@@ -8818,7 +8818,7 @@
       ],
       "play": 13,
       "win": 6,
-      "pick_rate": 0.0038
+      "pick_rate": 0.0036
     },
     {
       "ids": [
@@ -8826,15 +8826,15 @@
       ],
       "play": 13,
       "win": 8,
-      "pick_rate": 0.0038
+      "pick_rate": 0.0036
     },
     {
       "ids": [
         4646
       ],
-      "play": 12,
-      "win": 7,
-      "pick_rate": 0.0035
+      "play": 13,
+      "win": 8,
+      "pick_rate": 0.0036
     },
     {
       "ids": [
@@ -8842,7 +8842,7 @@
       ],
       "play": 4,
       "win": 1,
-      "pick_rate": 0.0012
+      "pick_rate": 0.0011
     },
     {
       "ids": [
@@ -8850,7 +8850,7 @@
       ],
       "play": 3,
       "win": 1,
-      "pick_rate": 0.0009
+      "pick_rate": 0.0008
     },
     {
       "ids": [
@@ -8858,7 +8858,7 @@
       ],
       "play": 3,
       "win": 1,
-      "pick_rate": 0.0009
+      "pick_rate": 0.0008
     },
     {
       "ids": [
@@ -8866,7 +8866,7 @@
       ],
       "play": 3,
       "win": 0,
-      "pick_rate": 0.0009
+      "pick_rate": 0.0008
     },
     {
       "ids": [
