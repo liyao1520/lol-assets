@@ -366,27 +366,27 @@
             {
               "name": "CONTROLLER",
               "stats": {
-                "win_rate": 0.514387,
-                "role_rate": 0.988882,
-                "play": 147111,
-                "win": 75672
+                "win_rate": 0.51431,
+                "role_rate": 0.988894,
+                "play": 147625,
+                "win": 75925
               }
             }
           ],
           "counters": [
             {
               "champion_id": 9,
-              "play": 447,
+              "play": 448,
               "win": 212
             },
             {
-              "champion_id": 44,
-              "play": 1172,
-              "win": 566
+              "champion_id": 154,
+              "play": 416,
+              "win": 200
             },
             {
               "champion_id": 3,
-              "play": 352,
+              "play": 353,
               "win": 170
             }
           ]
@@ -398,7 +398,7 @@
       [
         {
           "champion_id": 9,
-          "play": 447,
+          "play": 448,
           "win": 212,
           "meta": {
             "id": 9,
@@ -718,150 +718,158 @@
               }
             ]
           },
-          "win_rate": 47.43
+          "win_rate": 47.32
         },
         {
-          "champion_id": 44,
-          "play": 1172,
-          "win": 566,
+          "champion_id": 154,
+          "play": 416,
+          "win": 200,
           "meta": {
-            "id": 44,
-            "key": "Taric",
-            "name": "瓦洛兰之盾",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Taric.png",
+            "id": 154,
+            "key": "Zac",
+            "name": "生化魔人",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Zac.png",
             "evolve": [],
-            "title": "塔里克",
-            "partype": "法力",
+            "title": "扎克",
+            "partype": "无",
             "passive": {
-              "name": "正气凌人",
-              "description": "每次施放技能会强化塔里克的下2次普攻，以造成额外魔法伤害，使他的基础技能的冷却时间减少，并且可以快速地连续攻击。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Taric_Passive.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0044/ability_0044_P1.webm"
+              "name": "细胞分裂",
+              "description": "扎克每用技能命中一次敌人，自己的一小块粘液就会飞溅出去。扎克可以重新吸收这些粘液，来为自己回复生命值。在承受致命伤害时，扎克会分裂成四块细胞组织，并试图重新结合。如果在短时间后，仍然有细胞组织存活，那么他就会重生，重生时的生命值取决于存活的细胞组织数量。细胞组织会继承一部分扎克的最大生命值、护甲和魔法抗性。这个技能的冷却时间为5分钟。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/ZacPassive.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0154/ability_0154_P1.webm"
             },
             "spells": [
               {
                 "key": "Q",
-                "name": "星光之触",
-                "description": "基于已储存的充能来治疗附近的友方英雄。【正气凌人】的强化普攻会为这个技能提供一层充能。",
-                "max_rank": 5,
-                "range_burn": [
-                  325
-                ],
-                "cooldown_burn": [
-                  3
-                ],
-                "cooldown_burn_float": [
-                  3
-                ],
-                "cost_burn": [
-                  60
-                ],
-                "tooltip": "<spellPassive>被动：</spellPassive>每?秒和打出一次<spellName>正气凌人</spellName>攻击时获得一层效果(最多1/2/3/4/5层)。<br /><br /><spellActive>主动：</spellActive>消耗所有层数来为附近的友方英雄们回复<healing>?x层数的生命值</healing>(在1/2/3/4/5层时回复<healing>?生命值</healing>)。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TaricQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0044/ability_0044_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "坚毅壁垒",
-                "description": "被动提升塔里克和带有【坚毅壁垒】效果的友方英雄的护甲。<br><br>主动施放会为一名友方英雄提供护盾和【坚毅壁垒】效果，只要该英雄呆在塔里克身边，【坚毅壁垒】效果会一直持续。塔里克的技能也会从带有【坚毅壁垒】效果的友方英雄身上施放。",
+                "name": "延伸打击",
+                "description": "扎克延伸他的双臂，捕获一个敌人。攻击一个不同的敌人将使他把两个目标投向彼此。",
                 "max_rank": 5,
                 "range_burn": [
                   800
                 ],
                 "cooldown_burn": [
-                  15
+                  14,
+                  12,
+                  11,
+                  9,
+                  8
                 ],
                 "cooldown_burn_float": [
-                  15
+                  14,
+                  12.5,
+                  11,
+                  9.5,
+                  8
                 ],
                 "cost_burn": [
-                  60
+                  0
                 ],
-                "tooltip": "<spellPassive>被动：</spellPassive>塔里克获得<scaleArmor>?护甲</scaleArmor>并在他和被此技能绑定过的友方英雄之间形成一条灵链。只要他们在彼此附近，该友方英雄就会获得<scaleArmor>?护甲</scaleArmor>并且塔里克的各个技能也会从他自己和该友方英雄处施放。<br /><br /><spellPassive>主动：</spellPassive>塔里克与一名友方英雄进行绑定，提供持续2.5秒的<shield>7/8/9/10/11%最大生命值的护盾值</shield>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TaricW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0044/ability_0044_W1.webm"
+                "tooltip": "扎克伸展他的手臂，将其吸附到命中的第一个敌人身上以造成<magicDamage>?魔法伤害</magicDamage>并暂时将该敌人<status>减速</status>。扎克的下次攻击会提升距离并且造成相同的伤害和<status>减速</status>。<br /><br />如果扎克用这次攻击命中了一个<i>不同</i>的敌人，那么他会将这两个敌人朝着彼此<status>击飞</status>。如果这两个敌人产生碰撞，那么他们及他们附近的敌人都会受到<magicDamage>?魔法伤害</magicDamage>并被暂时<status>减速</status>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZacQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0154/ability_0154_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "不稳定物质",
+                "description": "扎克朝着附近的敌人进行喷溅，造成相当于目标一部分最大生命值的魔法伤害。",
+                "max_rank": 5,
+                "range_burn": [
+                  350
+                ],
+                "cooldown_burn": [
+                  5
+                ],
+                "cooldown_burn_float": [
+                  5
+                ],
+                "cost_burn": [
+                  0
+                ],
+                "tooltip": "扎克的躯体进行喷溅，对附近的敌人造成<magicDamage>?+?最大生命值的魔法伤害</magicDamage>。<br /><br />吸收<keywordMajor>粘液</keywordMajor>可使【不稳定物质】的冷却时间缩短1秒。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZacW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0154/ability_0154_W1.webm"
               },
               {
                 "key": "E",
-                "name": "炫光",
-                "description": "塔里克准备施放一束星光，在短暂的延迟后，会对敌人造成魔法伤害和晕眩效果。",
+                "name": "橡筋弹弓",
+                "description": "扎克将手臂附在地上然后收缩，并将自己射向前方。",
                 "max_rank": 5,
                 "range_burn": [
-                  610
+                  300
                 ],
                 "cooldown_burn": [
+                  22,
+                  19,
                   16,
-                  15,
-                  14,
                   13,
-                  12
+                  10
                 ],
                 "cooldown_burn_float": [
+                  22,
+                  19,
                   16,
-                  15,
-                  14,
                   13,
-                  12
+                  10
                 ],
                 "cost_burn": [
-                  40
+                  0
                 ],
-                "tooltip": "塔里克投射一束星光，在1秒后爆裂，以造成<magicDamage>?魔法伤害</magicDamage>并使敌人们<status>晕眩</status>1.5秒。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TaricE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0044/ability_0044_E1.webm"
+                "tooltip": "<charge>开始蓄力：</charge>扎克将自身绷紧，在0.9/1/1.1/1.2/1.3秒里积攒一次冲刺。<br /><br /><release>释放：</release>扎克将自身发射出去，并<status>击飞</status>着陆点位置的敌人们至多?秒(基于蓄力时间)并对他们造成<magicDamage>?魔法伤害</magicDamage>。扎克每命中一名敌方英雄就会生成一团额外的<keywordMajor>粘液</keywordMajor>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZacE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0154/ability_0154_E1.webm"
               },
               {
                 "key": "R",
-                "name": "宇宙之辉",
-                "description": "在短暂的延迟后，放射一道宇宙能量到附近的友方英雄身上，让他们免疫伤害一段时间。",
+                "name": "动感弹球",
+                "description": "扎克弹跳4次，对命中的敌人造成击飞和减速效果。",
                 "max_rank": 3,
                 "range_burn": [
-                  400
+                  300
                 ],
                 "cooldown_burn": [
-                  180,
-                  150,
-                  120
+                  120,
+                  105,
+                  90
                 ],
                 "cooldown_burn_float": [
-                  180,
-                  150,
-                  120
+                  120,
+                  105,
+                  90
                 ],
                 "cost_burn": [
-                  100
+                  0
                 ],
-                "tooltip": "塔里克召唤来自天堂的保护。在?秒后，附近的所有友方英雄都会免疫伤害?秒。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TaricR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0044/ability_0044_R1.webm"
+                "tooltip": "扎克弹跳?次。弹跳在首次命中敌人时会将其<status>击退</status>并造成<magicDamage>?魔法伤害</magicDamage>。后续弹跳会造成<magicDamage>?魔法伤害</magicDamage>和持续?秒的?%<status>减速</status>。<br /><br />扎克在此期间持续获得至多<speed>?%移动速度</speed>并且可以在弹跳时施放<spellName>不稳定物质</spellName>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZacR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0154/ability_0154_R1.webm"
               }
             ],
             "skins": [
               {
-                "id": 44000,
-                "champion_id": 44,
+                "id": 154000,
+                "champion_id": 154,
                 "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taric_0.jpg",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zac_0.jpg",
                 "skin_video_url": null,
                 "prices": [
                   {
                     "currency": "IP",
-                    "cost": 1350
+                    "cost": 4800
                   },
                   {
                     "currency": "RP",
-                    "cost": 585
+                    "cost": 880
                   }
                 ],
                 "sales": null,
                 "release_date": null
               },
               {
-                "id": 44009,
-                "champion_id": 44,
-                "name": "塔里克 · 辉盾",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taric_9.jpg",
-                "skin_video_url": "https://youtu.be/qrYS0mE3TUE",
+                "id": 154006,
+                "champion_id": 154,
+                "name": "SKT T1 扎克",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zac_6.jpg",
+                "skin_video_url": "https://youtu.be/NZCvCqX6xzk",
                 "prices": [
                   {
                     "currency": "RP",
@@ -869,14 +877,14 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2020-03-19T04:00:00+09:00"
+                "release_date": "2024-09-25T08:59:00+09:00"
               },
               {
-                "id": 44018,
-                "champion_id": 44,
-                "name": "太空律动 “爱乐之子” 塔里克",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taric_18.jpg",
-                "skin_video_url": "https://youtu.be/hffunV_pUIE",
+                "id": 154007,
+                "champion_id": 154,
+                "name": "战地机甲 扎克",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zac_7.jpg",
+                "skin_video_url": "https://youtu.be/rtLVEhe0BEA",
                 "prices": [
                   {
                     "currency": "RP",
@@ -884,14 +892,14 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2022-11-17T04:00:00+09:00"
+                "release_date": "2020-11-12T04:00:00+09:00"
               },
               {
-                "id": 44004,
-                "champion_id": 44,
-                "name": "泳池派对 塔里克",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taric_4.jpg",
-                "skin_video_url": "https://youtu.be/m2KJAWyfSyI",
+                "id": 154002,
+                "champion_id": 154,
+                "name": "泳池派对 扎克",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zac_2.jpg",
+                "skin_video_url": "https://youtu.be/E5JGDjCG-t0",
                 "prices": [
                   {
                     "currency": "RP",
@@ -899,39 +907,29 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2016-07-13T15:00:00+09:00"
+                "release_date": "2015-06-24T23:00:00+09:00"
               },
               {
-                "id": 44002,
-                "champion_id": 44,
-                "name": "紫水晶意志 塔里克",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taric_2.jpg",
-                "skin_video_url": "https://youtu.be/0MYsI0-HHPw",
+                "id": 154014,
+                "champion_id": 154,
+                "name": "至高天 扎克",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zac_14.jpg",
+                "skin_video_url": "https://youtu.be/S5maeb_C5u0",
                 "prices": [
                   {
                     "currency": "RP",
-                    "cost": 750
+                    "cost": 1350
                   }
                 ],
                 "sales": null,
-                "release_date": "2010-07-12T14:00:00+09:00"
+                "release_date": "2022-11-03T04:00:00+09:00"
               },
               {
-                "id": 44001,
-                "champion_id": 44,
-                "name": "绿水晶光辉 塔里克",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taric_1.jpg",
-                "skin_video_url": "https://youtu.be/9gjfcIk2oiM",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 44003,
-                "champion_id": 44,
-                "name": "血石诅咒 塔里克",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taric_3.jpg",
-                "skin_video_url": "https://youtu.be/_XT9Eu22vBk",
+                "id": 154001,
+                "champion_id": 154,
+                "name": "邪恶魔人 扎克",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zac_1.jpg",
+                "skin_video_url": "https://youtu.be/-NqGTy7zqjw",
                 "prices": [
                   {
                     "currency": "RP",
@@ -939,15 +937,30 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2011-08-09T07:00:00+09:00"
+                "release_date": "2013-04-01T07:00:00+09:00"
+              },
+              {
+                "id": 154024,
+                "champion_id": 154,
+                "name": "香浓芝士 扎克",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zac_24.jpg",
+                "skin_video_url": "https://youtu.be/SxDFmFdO9h0",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-04-03T09:00:00+09:00"
               }
             ]
           },
-          "win_rate": 48.29
+          "win_rate": 48.08
         },
         {
           "champion_id": 3,
-          "play": 352,
+          "play": 353,
           "win": 170,
           "meta": {
             "id": 3,
@@ -1235,158 +1248,150 @@
               }
             ]
           },
-          "win_rate": 48.3
+          "win_rate": 48.16
         },
         {
-          "champion_id": 154,
-          "play": 414,
-          "win": 200,
+          "champion_id": 44,
+          "play": 1174,
+          "win": 566,
           "meta": {
-            "id": 154,
-            "key": "Zac",
-            "name": "生化魔人",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Zac.png",
+            "id": 44,
+            "key": "Taric",
+            "name": "瓦洛兰之盾",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Taric.png",
             "evolve": [],
-            "title": "扎克",
-            "partype": "无",
+            "title": "塔里克",
+            "partype": "法力",
             "passive": {
-              "name": "细胞分裂",
-              "description": "扎克每用技能命中一次敌人，自己的一小块粘液就会飞溅出去。扎克可以重新吸收这些粘液，来为自己回复生命值。在承受致命伤害时，扎克会分裂成四块细胞组织，并试图重新结合。如果在短时间后，仍然有细胞组织存活，那么他就会重生，重生时的生命值取决于存活的细胞组织数量。细胞组织会继承一部分扎克的最大生命值、护甲和魔法抗性。这个技能的冷却时间为5分钟。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/ZacPassive.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0154/ability_0154_P1.webm"
+              "name": "正气凌人",
+              "description": "每次施放技能会强化塔里克的下2次普攻，以造成额外魔法伤害，使他的基础技能的冷却时间减少，并且可以快速地连续攻击。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Taric_Passive.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0044/ability_0044_P1.webm"
             },
             "spells": [
               {
                 "key": "Q",
-                "name": "延伸打击",
-                "description": "扎克延伸他的双臂，捕获一个敌人。攻击一个不同的敌人将使他把两个目标投向彼此。",
+                "name": "星光之触",
+                "description": "基于已储存的充能来治疗附近的友方英雄。【正气凌人】的强化普攻会为这个技能提供一层充能。",
+                "max_rank": 5,
+                "range_burn": [
+                  325
+                ],
+                "cooldown_burn": [
+                  3
+                ],
+                "cooldown_burn_float": [
+                  3
+                ],
+                "cost_burn": [
+                  60
+                ],
+                "tooltip": "<spellPassive>被动：</spellPassive>每?秒和打出一次<spellName>正气凌人</spellName>攻击时获得一层效果(最多1/2/3/4/5层)。<br /><br /><spellActive>主动：</spellActive>消耗所有层数来为附近的友方英雄们回复<healing>?x层数的生命值</healing>(在1/2/3/4/5层时回复<healing>?生命值</healing>)。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TaricQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0044/ability_0044_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "坚毅壁垒",
+                "description": "被动提升塔里克和带有【坚毅壁垒】效果的友方英雄的护甲。<br><br>主动施放会为一名友方英雄提供护盾和【坚毅壁垒】效果，只要该英雄呆在塔里克身边，【坚毅壁垒】效果会一直持续。塔里克的技能也会从带有【坚毅壁垒】效果的友方英雄身上施放。",
                 "max_rank": 5,
                 "range_burn": [
                   800
                 ],
                 "cooldown_burn": [
-                  14,
-                  12,
-                  11,
-                  9,
-                  8
+                  15
                 ],
                 "cooldown_burn_float": [
-                  14,
-                  12.5,
-                  11,
-                  9.5,
-                  8
+                  15
                 ],
                 "cost_burn": [
-                  0
+                  60
                 ],
-                "tooltip": "扎克伸展他的手臂，将其吸附到命中的第一个敌人身上以造成<magicDamage>?魔法伤害</magicDamage>并暂时将该敌人<status>减速</status>。扎克的下次攻击会提升距离并且造成相同的伤害和<status>减速</status>。<br /><br />如果扎克用这次攻击命中了一个<i>不同</i>的敌人，那么他会将这两个敌人朝着彼此<status>击飞</status>。如果这两个敌人产生碰撞，那么他们及他们附近的敌人都会受到<magicDamage>?魔法伤害</magicDamage>并被暂时<status>减速</status>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZacQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0154/ability_0154_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "不稳定物质",
-                "description": "扎克朝着附近的敌人进行喷溅，造成相当于目标一部分最大生命值的魔法伤害。",
-                "max_rank": 5,
-                "range_burn": [
-                  350
-                ],
-                "cooldown_burn": [
-                  5
-                ],
-                "cooldown_burn_float": [
-                  5
-                ],
-                "cost_burn": [
-                  0
-                ],
-                "tooltip": "扎克的躯体进行喷溅，对附近的敌人造成<magicDamage>?+?最大生命值的魔法伤害</magicDamage>。<br /><br />吸收<keywordMajor>粘液</keywordMajor>可使【不稳定物质】的冷却时间缩短1秒。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZacW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0154/ability_0154_W1.webm"
+                "tooltip": "<spellPassive>被动：</spellPassive>塔里克获得<scaleArmor>?护甲</scaleArmor>并在他和被此技能绑定过的友方英雄之间形成一条灵链。只要他们在彼此附近，该友方英雄就会获得<scaleArmor>?护甲</scaleArmor>并且塔里克的各个技能也会从他自己和该友方英雄处施放。<br /><br /><spellPassive>主动：</spellPassive>塔里克与一名友方英雄进行绑定，提供持续2.5秒的<shield>7/8/9/10/11%最大生命值的护盾值</shield>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TaricW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0044/ability_0044_W1.webm"
               },
               {
                 "key": "E",
-                "name": "橡筋弹弓",
-                "description": "扎克将手臂附在地上然后收缩，并将自己射向前方。",
+                "name": "炫光",
+                "description": "塔里克准备施放一束星光，在短暂的延迟后，会对敌人造成魔法伤害和晕眩效果。",
                 "max_rank": 5,
                 "range_burn": [
-                  300
+                  610
                 ],
                 "cooldown_burn": [
-                  22,
-                  19,
                   16,
+                  15,
+                  14,
                   13,
-                  10
+                  12
                 ],
                 "cooldown_burn_float": [
-                  22,
-                  19,
                   16,
+                  15,
+                  14,
                   13,
-                  10
+                  12
                 ],
                 "cost_burn": [
-                  0
+                  40
                 ],
-                "tooltip": "<charge>开始蓄力：</charge>扎克将自身绷紧，在0.9/1/1.1/1.2/1.3秒里积攒一次冲刺。<br /><br /><release>释放：</release>扎克将自身发射出去，并<status>击飞</status>着陆点位置的敌人们至多?秒(基于蓄力时间)并对他们造成<magicDamage>?魔法伤害</magicDamage>。扎克每命中一名敌方英雄就会生成一团额外的<keywordMajor>粘液</keywordMajor>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZacE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0154/ability_0154_E1.webm"
+                "tooltip": "塔里克投射一束星光，在1秒后爆裂，以造成<magicDamage>?魔法伤害</magicDamage>并使敌人们<status>晕眩</status>1.5秒。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TaricE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0044/ability_0044_E1.webm"
               },
               {
                 "key": "R",
-                "name": "动感弹球",
-                "description": "扎克弹跳4次，对命中的敌人造成击飞和减速效果。",
+                "name": "宇宙之辉",
+                "description": "在短暂的延迟后，放射一道宇宙能量到附近的友方英雄身上，让他们免疫伤害一段时间。",
                 "max_rank": 3,
                 "range_burn": [
-                  300
+                  400
                 ],
                 "cooldown_burn": [
-                  120,
-                  105,
-                  90
+                  180,
+                  150,
+                  120
                 ],
                 "cooldown_burn_float": [
-                  120,
-                  105,
-                  90
+                  180,
+                  150,
+                  120
                 ],
                 "cost_burn": [
-                  0
+                  100
                 ],
-                "tooltip": "扎克弹跳?次。弹跳在首次命中敌人时会将其<status>击退</status>并造成<magicDamage>?魔法伤害</magicDamage>。后续弹跳会造成<magicDamage>?魔法伤害</magicDamage>和持续?秒的?%<status>减速</status>。<br /><br />扎克在此期间持续获得至多<speed>?%移动速度</speed>并且可以在弹跳时施放<spellName>不稳定物质</spellName>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZacR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0154/ability_0154_R1.webm"
+                "tooltip": "塔里克召唤来自天堂的保护。在?秒后，附近的所有友方英雄都会免疫伤害?秒。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TaricR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0044/ability_0044_R1.webm"
               }
             ],
             "skins": [
               {
-                "id": 154000,
-                "champion_id": 154,
+                "id": 44000,
+                "champion_id": 44,
                 "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zac_0.jpg",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taric_0.jpg",
                 "skin_video_url": null,
                 "prices": [
                   {
                     "currency": "IP",
-                    "cost": 4800
+                    "cost": 1350
                   },
                   {
                     "currency": "RP",
-                    "cost": 880
+                    "cost": 585
                   }
                 ],
                 "sales": null,
                 "release_date": null
               },
               {
-                "id": 154006,
-                "champion_id": 154,
-                "name": "SKT T1 扎克",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zac_6.jpg",
-                "skin_video_url": "https://youtu.be/NZCvCqX6xzk",
+                "id": 44009,
+                "champion_id": 44,
+                "name": "塔里克 · 辉盾",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taric_9.jpg",
+                "skin_video_url": "https://youtu.be/qrYS0mE3TUE",
                 "prices": [
                   {
                     "currency": "RP",
@@ -1394,14 +1399,14 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2024-09-25T08:59:00+09:00"
+                "release_date": "2020-03-19T04:00:00+09:00"
               },
               {
-                "id": 154007,
-                "champion_id": 154,
-                "name": "战地机甲 扎克",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zac_7.jpg",
-                "skin_video_url": "https://youtu.be/rtLVEhe0BEA",
+                "id": 44018,
+                "champion_id": 44,
+                "name": "太空律动 “爱乐之子” 塔里克",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taric_18.jpg",
+                "skin_video_url": "https://youtu.be/hffunV_pUIE",
                 "prices": [
                   {
                     "currency": "RP",
@@ -1409,14 +1414,14 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2020-11-12T04:00:00+09:00"
+                "release_date": "2022-11-17T04:00:00+09:00"
               },
               {
-                "id": 154002,
-                "champion_id": 154,
-                "name": "泳池派对 扎克",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zac_2.jpg",
-                "skin_video_url": "https://youtu.be/E5JGDjCG-t0",
+                "id": 44004,
+                "champion_id": 44,
+                "name": "泳池派对 塔里克",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taric_4.jpg",
+                "skin_video_url": "https://youtu.be/m2KJAWyfSyI",
                 "prices": [
                   {
                     "currency": "RP",
@@ -1424,29 +1429,39 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2015-06-24T23:00:00+09:00"
+                "release_date": "2016-07-13T15:00:00+09:00"
               },
               {
-                "id": 154014,
-                "champion_id": 154,
-                "name": "至高天 扎克",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zac_14.jpg",
-                "skin_video_url": "https://youtu.be/S5maeb_C5u0",
+                "id": 44002,
+                "champion_id": 44,
+                "name": "紫水晶意志 塔里克",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taric_2.jpg",
+                "skin_video_url": "https://youtu.be/0MYsI0-HHPw",
                 "prices": [
                   {
                     "currency": "RP",
-                    "cost": 1350
+                    "cost": 750
                   }
                 ],
                 "sales": null,
-                "release_date": "2022-11-03T04:00:00+09:00"
+                "release_date": "2010-07-12T14:00:00+09:00"
               },
               {
-                "id": 154001,
-                "champion_id": 154,
-                "name": "邪恶魔人 扎克",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zac_1.jpg",
-                "skin_video_url": "https://youtu.be/-NqGTy7zqjw",
+                "id": 44001,
+                "champion_id": 44,
+                "name": "绿水晶光辉 塔里克",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taric_1.jpg",
+                "skin_video_url": "https://youtu.be/9gjfcIk2oiM",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 44003,
+                "champion_id": 44,
+                "name": "血石诅咒 塔里克",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taric_3.jpg",
+                "skin_video_url": "https://youtu.be/_XT9Eu22vBk",
                 "prices": [
                   {
                     "currency": "RP",
@@ -1454,30 +1469,15 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2013-04-01T07:00:00+09:00"
-              },
-              {
-                "id": 154024,
-                "champion_id": 154,
-                "name": "香浓芝士 扎克",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zac_24.jpg",
-                "skin_video_url": "https://youtu.be/SxDFmFdO9h0",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2024-04-03T09:00:00+09:00"
+                "release_date": "2011-08-09T07:00:00+09:00"
               }
             ]
           },
-          "win_rate": 48.31
+          "win_rate": 48.21
         },
         {
           "champion_id": 161,
-          "play": 1433,
+          "play": 1435,
           "win": 693,
           "meta": {
             "id": 161,
@@ -1715,7 +1715,7 @@
               }
             ]
           },
-          "win_rate": 48.36
+          "win_rate": 48.29
         }
       ],
       [
@@ -2062,8 +2062,8 @@
         },
         {
           "champion_id": 50,
-          "play": 811,
-          "win": 465,
+          "play": 814,
+          "win": 467,
           "meta": {
             "id": 50,
             "key": "Swain",
@@ -2318,12 +2318,12 @@
               }
             ]
           },
-          "win_rate": 57.34
+          "win_rate": 57.37
         },
         {
           "champion_id": 35,
-          "play": 910,
-          "win": 511,
+          "play": 912,
+          "win": 512,
           "meta": {
             "id": 35,
             "key": "Shaco",
@@ -2662,12 +2662,12 @@
               }
             ]
           },
-          "win_rate": 56.15
+          "win_rate": 56.14
         },
         {
           "champion_id": 350,
-          "play": 3849,
-          "win": 2089,
+          "play": 3864,
+          "win": 2094,
           "meta": {
             "id": 350,
             "key": "Yuumi",
@@ -2918,7 +2918,7 @@
               }
             ]
           },
-          "win_rate": 54.27
+          "win_rate": 54.19
         },
         {
           "champion_id": 7,
@@ -3262,8 +3262,8 @@
     "counters": [
       {
         "champion_id": 412,
-        "play": 8704,
-        "win": 4420,
+        "play": 8732,
+        "win": 4431,
         "meta": {
           "id": 412,
           "key": "Thresh",
@@ -3655,8 +3655,8 @@
       },
       {
         "champion_id": 267,
-        "play": 8051,
-        "win": 4017,
+        "play": 8075,
+        "win": 4029,
         "meta": {
           "id": 267,
           "key": "Nami",
@@ -3977,8 +3977,8 @@
       },
       {
         "champion_id": 235,
-        "play": 7051,
-        "win": 3420,
+        "play": 7075,
+        "win": 3433,
         "meta": {
           "id": 235,
           "key": "Senna",
@@ -4249,8 +4249,8 @@
       },
       {
         "champion_id": 526,
-        "play": 6769,
-        "win": 3320,
+        "play": 6798,
+        "win": 3332,
         "meta": {
           "id": 526,
           "key": "Rell",
@@ -4433,8 +4433,8 @@
       },
       {
         "champion_id": 111,
-        "play": 6263,
-        "win": 3241,
+        "play": 6285,
+        "win": 3251,
         "meta": {
           "id": 111,
           "key": "Nautilus",
@@ -4729,8 +4729,8 @@
       },
       {
         "champion_id": 43,
-        "play": 5916,
-        "win": 3039,
+        "play": 5943,
+        "win": 3055,
         "meta": {
           "id": 43,
           "key": "Karma",
@@ -5085,8 +5085,8 @@
       },
       {
         "champion_id": 902,
-        "play": 5145,
-        "win": 2621,
+        "play": 5160,
+        "win": 2628,
         "meta": {
           "id": 902,
           "key": "Milio",
@@ -5266,8 +5266,8 @@
       },
       {
         "champion_id": 89,
-        "play": 4565,
-        "win": 2287,
+        "play": 4578,
+        "win": 2294,
         "meta": {
           "id": 89,
           "key": "Leona",
@@ -5652,8 +5652,8 @@
       },
       {
         "champion_id": 555,
-        "play": 4100,
-        "win": 2087,
+        "play": 4108,
+        "win": 2094,
         "meta": {
           "id": 555,
           "key": "Pyke",
@@ -5951,8 +5951,8 @@
       },
       {
         "champion_id": 53,
-        "play": 4032,
-        "win": 2058,
+        "play": 4051,
+        "win": 2066,
         "meta": {
           "id": 53,
           "key": "Blitzcrank",
@@ -6303,8 +6303,8 @@
       },
       {
         "champion_id": 99,
-        "play": 3928,
-        "win": 2011,
+        "play": 3942,
+        "win": 2018,
         "meta": {
           "id": 99,
           "key": "Lux",
@@ -6746,8 +6746,8 @@
       },
       {
         "champion_id": 350,
-        "play": 3849,
-        "win": 2089,
+        "play": 3864,
+        "win": 2094,
         "meta": {
           "id": 350,
           "key": "Yuumi",
@@ -7001,8 +7001,8 @@
       },
       {
         "champion_id": 201,
-        "play": 3508,
-        "win": 1711,
+        "play": 3516,
+        "win": 1714,
         "meta": {
           "id": 201,
           "key": "Braum",
@@ -7269,8 +7269,8 @@
       },
       {
         "champion_id": 16,
-        "play": 3325,
-        "win": 1710,
+        "play": 3338,
+        "win": 1720,
         "meta": {
           "id": 16,
           "key": "Soraka",
@@ -7679,8 +7679,8 @@
       },
       {
         "champion_id": 40,
-        "play": 3309,
-        "win": 1678,
+        "play": 3319,
+        "win": 1681,
         "meta": {
           "id": 40,
           "key": "Janna",
@@ -8051,8 +8051,8 @@
       },
       {
         "champion_id": 497,
-        "play": 3236,
-        "win": 1731,
+        "play": 3252,
+        "win": 1741,
         "meta": {
           "id": 497,
           "key": "Rakan",
@@ -8370,8 +8370,8 @@
       },
       {
         "champion_id": 147,
-        "play": 2877,
-        "win": 1460,
+        "play": 2892,
+        "win": 1469,
         "meta": {
           "id": 147,
           "key": "Seraphine",
@@ -8645,8 +8645,8 @@
       },
       {
         "champion_id": 432,
-        "play": 2651,
-        "win": 1307,
+        "play": 2657,
+        "win": 1309,
         "meta": {
           "id": 432,
           "key": "Bard",
@@ -8897,8 +8897,8 @@
       },
       {
         "champion_id": 12,
-        "play": 2548,
-        "win": 1359,
+        "play": 2562,
+        "win": 1365,
         "meta": {
           "id": 12,
           "key": "Alistar",
@@ -9249,8 +9249,8 @@
       },
       {
         "champion_id": 37,
-        "play": 2497,
-        "win": 1271,
+        "play": 2503,
+        "win": 1275,
         "meta": {
           "id": 37,
           "key": "Sona",
@@ -9583,8 +9583,8 @@
       },
       {
         "champion_id": 101,
-        "play": 2388,
-        "win": 1265,
+        "play": 2393,
+        "win": 1267,
         "meta": {
           "id": 101,
           "key": "Xerath",
@@ -9865,8 +9865,8 @@
       },
       {
         "champion_id": 78,
-        "play": 2228,
-        "win": 1117,
+        "play": 2244,
+        "win": 1122,
         "meta": {
           "id": 78,
           "key": "Poppy",
@@ -10189,8 +10189,8 @@
       },
       {
         "champion_id": 518,
-        "play": 2057,
-        "win": 1061,
+        "play": 2067,
+        "win": 1065,
         "meta": {
           "id": 518,
           "key": "Neeko",
@@ -10462,8 +10462,8 @@
       },
       {
         "champion_id": 26,
-        "play": 1825,
-        "win": 901,
+        "play": 1828,
+        "win": 903,
         "meta": {
           "id": 26,
           "key": "Zilean",
@@ -10723,8 +10723,8 @@
       },
       {
         "champion_id": 143,
-        "play": 1769,
-        "win": 954,
+        "play": 1780,
+        "win": 959,
         "meta": {
           "id": 143,
           "key": "Zyra",
@@ -11026,8 +11026,8 @@
       },
       {
         "champion_id": 25,
-        "play": 1479,
-        "win": 777,
+        "play": 1482,
+        "win": 779,
         "meta": {
           "id": 25,
           "key": "Morgana",
@@ -11378,7 +11378,7 @@
       },
       {
         "champion_id": 161,
-        "play": 1433,
+        "play": 1435,
         "win": 693,
         "meta": {
           "id": 161,
@@ -11619,8 +11619,8 @@
       },
       {
         "champion_id": 63,
-        "play": 1389,
-        "win": 736,
+        "play": 1397,
+        "win": 737,
         "meta": {
           "id": 63,
           "key": "Brand",
@@ -11952,8 +11952,8 @@
       },
       {
         "champion_id": 888,
-        "play": 1280,
-        "win": 681,
+        "play": 1283,
+        "win": 682,
         "meta": {
           "id": 888,
           "key": "Renata",
@@ -12166,7 +12166,7 @@
       },
       {
         "champion_id": 44,
-        "play": 1172,
+        "play": 1174,
         "win": 566,
         "meta": {
           "id": 44,
@@ -12390,8 +12390,8 @@
       },
       {
         "champion_id": 223,
-        "play": 1083,
-        "win": 525,
+        "play": 1087,
+        "win": 527,
         "meta": {
           "id": 223,
           "key": "TahmKench",
@@ -12643,8 +12643,8 @@
       },
       {
         "champion_id": 80,
-        "play": 977,
-        "win": 514,
+        "play": 982,
+        "win": 516,
         "meta": {
           "id": 80,
           "key": "Pantheon",
@@ -12953,8 +12953,8 @@
       },
       {
         "champion_id": 35,
-        "play": 910,
-        "win": 511,
+        "play": 912,
+        "win": 512,
         "meta": {
           "id": 35,
           "key": "Shaco",
@@ -13296,8 +13296,8 @@
       },
       {
         "champion_id": 50,
-        "play": 811,
-        "win": 465,
+        "play": 814,
+        "win": 467,
         "meta": {
           "id": 50,
           "key": "Swain",
@@ -13555,8 +13555,8 @@
       },
       {
         "champion_id": 910,
-        "play": 801,
-        "win": 417,
+        "play": 804,
+        "win": 419,
         "meta": {
           "id": 910,
           "key": "Hwei",
@@ -13745,7 +13745,7 @@
       },
       {
         "champion_id": 57,
-        "play": 715,
+        "play": 716,
         "win": 385,
         "meta": {
           "id": 57,
@@ -14044,8 +14044,8 @@
       },
       {
         "champion_id": 164,
-        "play": 617,
-        "win": 323,
+        "play": 620,
+        "win": 325,
         "meta": {
           "id": 164,
           "key": "Camille",
@@ -14303,8 +14303,8 @@
       },
       {
         "champion_id": 142,
-        "play": 537,
-        "win": 274,
+        "play": 541,
+        "win": 277,
         "meta": {
           "id": 142,
           "key": "Zoe",
@@ -14558,7 +14558,7 @@
       },
       {
         "champion_id": 9,
-        "play": 447,
+        "play": 448,
         "win": 212,
         "meta": {
           "id": 9,
@@ -15217,7 +15217,7 @@
       },
       {
         "champion_id": 154,
-        "play": 414,
+        "play": 416,
         "win": 200,
         "meta": {
           "id": 154,
@@ -15454,7 +15454,7 @@
       },
       {
         "champion_id": 3,
-        "play": 352,
+        "play": 353,
         "win": 170,
         "meta": {
           "id": 3,
@@ -15745,8 +15745,8 @@
       },
       {
         "champion_id": 98,
-        "play": 334,
-        "win": 173,
+        "play": 335,
+        "win": 174,
         "meta": {
           "id": 98,
           "key": "Shen",
@@ -16062,7 +16062,7 @@
       },
       {
         "champion_id": 32,
-        "play": 321,
+        "play": 322,
         "win": 165,
         "meta": {
           "id": 32,
@@ -16733,17 +16733,17 @@
         4,
         7
       ],
-      "win": 54038,
-      "play": 104367,
-      "pick_rate": 0.7175
+      "win": 54209,
+      "play": 104716,
+      "pick_rate": 0.7174
     },
     {
       "ids": [
         3,
         4
       ],
-      "win": 11570,
-      "play": 23374,
+      "win": 11608,
+      "play": 23456,
       "pick_rate": 0.1607
     },
     {
@@ -16751,17 +16751,17 @@
         4,
         14
       ],
-      "win": 8931,
-      "play": 17482,
-      "pick_rate": 0.1202
+      "win": 8972,
+      "play": 17558,
+      "pick_rate": 0.1203
     },
     {
       "ids": [
         4,
         21
       ],
-      "win": 34,
-      "play": 67,
+      "win": 35,
+      "play": 68,
       "pick_rate": 0.0005
     },
     {
@@ -16770,7 +16770,7 @@
         7
       ],
       "win": 24,
-      "play": 52,
+      "play": 53,
       "pick_rate": 0.0004
     }
   ],
@@ -17015,9 +17015,9 @@
         "Q",
         "Q"
       ],
-      "play": 9193,
-      "win": 6137,
-      "pick_rate": 0.3836
+      "play": 9220,
+      "win": 6162,
+      "pick_rate": 0.3834
     },
     {
       "order": [
@@ -17037,9 +17037,9 @@
         "Q",
         "Q"
       ],
-      "play": 3422,
-      "win": 2306,
-      "pick_rate": 0.1428
+      "play": 3428,
+      "win": 2311,
+      "pick_rate": 0.1426
     },
     {
       "order": [
@@ -17059,9 +17059,9 @@
         "Q",
         "Q"
       ],
-      "play": 3221,
-      "win": 2168,
-      "pick_rate": 0.1344
+      "play": 3236,
+      "win": 2176,
+      "pick_rate": 0.1346
     },
     {
       "order": [
@@ -17081,8 +17081,8 @@
         "Q",
         "Q"
       ],
-      "play": 1100,
-      "win": 767,
+      "play": 1103,
+      "win": 769,
       "pick_rate": 0.0459
     },
     {
@@ -17103,8 +17103,8 @@
         "Q",
         "Q"
       ],
-      "play": 455,
-      "win": 310,
+      "play": 456,
+      "win": 311,
       "pick_rate": 0.019
     }
   ],
@@ -17115,9 +17115,9 @@
         "W",
         "Q"
       ],
-      "play": 19980,
-      "win": 13362,
-      "pick_rate": 0.8336,
+      "play": 20046,
+      "win": 13408,
+      "pick_rate": 0.8337,
       "builds": [
         {
           "order": [
@@ -17137,9 +17137,9 @@
             "Q",
             "Q"
           ],
-          "play": 9193,
-          "win": 6137,
-          "pick_rate": 0.4601
+          "play": 9220,
+          "win": 6162,
+          "pick_rate": 0.4599
         },
         {
           "order": [
@@ -17159,9 +17159,9 @@
             "Q",
             "Q"
           ],
-          "play": 3422,
-          "win": 2306,
-          "pick_rate": 0.1713
+          "play": 3428,
+          "win": 2311,
+          "pick_rate": 0.171
         },
         {
           "order": [
@@ -17181,9 +17181,9 @@
             "Q",
             "Q"
           ],
-          "play": 3221,
-          "win": 2168,
-          "pick_rate": 0.1612
+          "play": 3236,
+          "win": 2176,
+          "pick_rate": 0.1614
         },
         {
           "order": [
@@ -17203,9 +17203,9 @@
             "W",
             "Q"
           ],
-          "play": 230,
-          "win": 154,
-          "pick_rate": 0.0115
+          "play": 232,
+          "win": 155,
+          "pick_rate": 0.0116
         },
         {
           "order": [
@@ -17237,8 +17237,8 @@
         "E",
         "Q"
       ],
-      "play": 2727,
-      "win": 1908,
+      "play": 2737,
+      "win": 1916,
       "pick_rate": 0.1138,
       "builds": [
         {
@@ -17259,9 +17259,9 @@
             "Q",
             "Q"
           ],
-          "play": 1100,
-          "win": 767,
-          "pick_rate": 0.4034
+          "play": 1103,
+          "win": 769,
+          "pick_rate": 0.403
         },
         {
           "order": [
@@ -17281,9 +17281,9 @@
             "Q",
             "Q"
           ],
-          "play": 455,
-          "win": 310,
-          "pick_rate": 0.1669
+          "play": 456,
+          "win": 311,
+          "pick_rate": 0.1666
         },
         {
           "order": [
@@ -17305,7 +17305,7 @@
           ],
           "play": 105,
           "win": 77,
-          "pick_rate": 0.0385
+          "pick_rate": 0.0384
         },
         {
           "order": [
@@ -17327,7 +17327,7 @@
           ],
           "play": 74,
           "win": 54,
-          "pick_rate": 0.0271
+          "pick_rate": 0.027
         },
         {
           "order": [
@@ -17347,9 +17347,9 @@
             "Q",
             "Q"
           ],
-          "play": 69,
-          "win": 52,
-          "pick_rate": 0.0253
+          "play": 70,
+          "win": 53,
+          "pick_rate": 0.0256
         }
       ]
     },
@@ -17359,7 +17359,7 @@
         "Q",
         "W"
       ],
-      "play": 940,
+      "play": 942,
       "win": 615,
       "pick_rate": 0.0392,
       "builds": [
@@ -17381,9 +17381,9 @@
             "W",
             "W"
           ],
-          "play": 250,
+          "play": 251,
           "win": 159,
-          "pick_rate": 0.266
+          "pick_rate": 0.2665
         },
         {
           "order": [
@@ -17403,9 +17403,9 @@
             "W",
             "W"
           ],
-          "play": 74,
+          "play": 75,
           "win": 44,
-          "pick_rate": 0.0787
+          "pick_rate": 0.0796
         },
         {
           "order": [
@@ -17449,7 +17449,7 @@
           ],
           "play": 20,
           "win": 16,
-          "pick_rate": 0.0213
+          "pick_rate": 0.0212
         },
         {
           "order": [
@@ -17481,9 +17481,9 @@
         "E",
         "W"
       ],
-      "play": 248,
-      "win": 150,
-      "pick_rate": 0.0103,
+      "play": 249,
+      "win": 151,
+      "pick_rate": 0.0104,
       "builds": [
         {
           "order": [
@@ -17505,7 +17505,7 @@
           ],
           "play": 102,
           "win": 63,
-          "pick_rate": 0.4113
+          "pick_rate": 0.4096
         },
         {
           "order": [
@@ -17527,7 +17527,7 @@
           ],
           "play": 21,
           "win": 7,
-          "pick_rate": 0.0847
+          "pick_rate": 0.0843
         },
         {
           "order": [
@@ -17547,9 +17547,9 @@
             "W",
             "W"
           ],
-          "play": 16,
-          "win": 13,
-          "pick_rate": 0.0645
+          "play": 17,
+          "win": 14,
+          "pick_rate": 0.0683
         },
         {
           "order": [
@@ -17571,7 +17571,7 @@
           ],
           "play": 7,
           "win": 3,
-          "pick_rate": 0.0282
+          "pick_rate": 0.0281
         },
         {
           "order": [
@@ -17741,9 +17741,9 @@
         5008,
         5001
       ],
-      "play": 50333,
-      "win": 25876,
-      "pick_rate": 0.3425
+      "play": 50502,
+      "win": 25954,
+      "pick_rate": 0.3424
     },
     {
       "id": 8214,
@@ -17764,8 +17764,8 @@
         5008,
         5001
       ],
-      "play": 24537,
-      "win": 12373,
+      "play": 24628,
+      "win": 12421,
       "pick_rate": 0.167
     },
     {
@@ -17787,8 +17787,8 @@
         5008,
         5001
       ],
-      "play": 5805,
-      "win": 2835,
+      "play": 5826,
+      "win": 2843,
       "pick_rate": 0.0395
     },
     {
@@ -17810,9 +17810,9 @@
         5008,
         5011
       ],
-      "play": 5057,
-      "win": 2606,
-      "pick_rate": 0.0344
+      "play": 5066,
+      "win": 2610,
+      "pick_rate": 0.0343
     },
     {
       "id": 8214,
@@ -17833,9 +17833,9 @@
         5008,
         5001
       ],
-      "play": 3393,
-      "win": 1774,
-      "pick_rate": 0.0231
+      "play": 3399,
+      "win": 1778,
+      "pick_rate": 0.023
     }
   ],
   "rune_pages": [
@@ -17843,9 +17843,9 @@
       "id": 8214,
       "primary_page_id": 8200,
       "secondary_page_id": 8400,
-      "play": 82211,
-      "win": 42494,
-      "pick_rate": 0.5594,
+      "play": 82480,
+      "win": 42623,
+      "pick_rate": 0.5592,
       "builds": [
         {
           "id": 8214,
@@ -17866,9 +17866,9 @@
             5008,
             5001
           ],
-          "play": 50333,
-          "win": 25876,
-          "pick_rate": 0.6122
+          "play": 50502,
+          "win": 25954,
+          "pick_rate": 0.6123
         },
         {
           "id": 8214,
@@ -17889,9 +17889,9 @@
             5008,
             5011
           ],
-          "play": 5057,
-          "win": 2606,
-          "pick_rate": 0.0615
+          "play": 5066,
+          "win": 2610,
+          "pick_rate": 0.0614
         },
         {
           "id": 8214,
@@ -17912,9 +17912,9 @@
             5008,
             5001
           ],
-          "play": 3393,
-          "win": 1774,
-          "pick_rate": 0.0413
+          "play": 3399,
+          "win": 1778,
+          "pick_rate": 0.0412
         },
         {
           "id": 8214,
@@ -17935,8 +17935,8 @@
             5008,
             5011
           ],
-          "play": 1899,
-          "win": 960,
+          "play": 1908,
+          "win": 964,
           "pick_rate": 0.0231
         },
         {
@@ -17958,8 +17958,8 @@
             5008,
             5001
           ],
-          "play": 1415,
-          "win": 780,
+          "play": 1418,
+          "win": 781,
           "pick_rate": 0.0172
         }
       ]
@@ -17968,9 +17968,9 @@
       "id": 8214,
       "primary_page_id": 8200,
       "secondary_page_id": 8300,
-      "play": 39673,
-      "win": 20329,
-      "pick_rate": 0.2699,
+      "play": 39820,
+      "win": 20408,
+      "pick_rate": 0.27,
       "builds": [
         {
           "id": 8214,
@@ -17991,8 +17991,8 @@
             5008,
             5001
           ],
-          "play": 24537,
-          "win": 12373,
+          "play": 24628,
+          "win": 12421,
           "pick_rate": 0.6185
         },
         {
@@ -18014,8 +18014,8 @@
             5008,
             5011
           ],
-          "play": 1870,
-          "win": 1023,
+          "play": 1874,
+          "win": 1026,
           "pick_rate": 0.0471
         },
         {
@@ -18037,8 +18037,8 @@
             5008,
             5001
           ],
-          "play": 1011,
-          "win": 523,
+          "play": 1017,
+          "win": 525,
           "pick_rate": 0.0255
         },
         {
@@ -18060,8 +18060,8 @@
             5008,
             5011
           ],
-          "play": 963,
-          "win": 486,
+          "play": 967,
+          "win": 488,
           "pick_rate": 0.0243
         },
         {
@@ -18083,8 +18083,8 @@
             5008,
             5001
           ],
-          "play": 701,
-          "win": 370,
+          "play": 703,
+          "win": 372,
           "pick_rate": 0.0177
         }
       ]
@@ -18093,8 +18093,8 @@
       "id": 8214,
       "primary_page_id": 8200,
       "secondary_page_id": 8000,
-      "play": 11990,
-      "win": 6101,
+      "play": 12037,
+      "win": 6117,
       "pick_rate": 0.0816,
       "builds": [
         {
@@ -18116,9 +18116,9 @@
             5008,
             5011
           ],
-          "play": 1865,
-          "win": 903,
-          "pick_rate": 0.1555
+          "play": 1869,
+          "win": 906,
+          "pick_rate": 0.1553
         },
         {
           "id": 8214,
@@ -18139,9 +18139,9 @@
             5008,
             5011
           ],
-          "play": 1521,
-          "win": 844,
-          "pick_rate": 0.1269
+          "play": 1533,
+          "win": 847,
+          "pick_rate": 0.1274
         },
         {
           "id": 8214,
@@ -18162,9 +18162,9 @@
             5008,
             5001
           ],
-          "play": 728,
+          "play": 729,
           "win": 353,
-          "pick_rate": 0.0607
+          "pick_rate": 0.0606
         },
         {
           "id": 8214,
@@ -18185,9 +18185,9 @@
             5008,
             5011
           ],
-          "play": 437,
+          "play": 439,
           "win": 207,
-          "pick_rate": 0.0364
+          "pick_rate": 0.0365
         },
         {
           "id": 8214,
@@ -18210,7 +18210,7 @@
           ],
           "play": 415,
           "win": 209,
-          "pick_rate": 0.0346
+          "pick_rate": 0.0345
         }
       ]
     },
@@ -18218,8 +18218,8 @@
       "id": 8465,
       "primary_page_id": 8400,
       "secondary_page_id": 8300,
-      "play": 7740,
-      "win": 3799,
+      "play": 7771,
+      "win": 3812,
       "pick_rate": 0.0527,
       "builds": [
         {
@@ -18241,9 +18241,9 @@
             5008,
             5001
           ],
-          "play": 5805,
-          "win": 2835,
-          "pick_rate": 0.75
+          "play": 5826,
+          "win": 2843,
+          "pick_rate": 0.7497
         },
         {
           "id": 8465,
@@ -18264,9 +18264,9 @@
             5008,
             5001
           ],
-          "play": 257,
-          "win": 115,
-          "pick_rate": 0.0332
+          "play": 260,
+          "win": 117,
+          "pick_rate": 0.0335
         },
         {
           "id": 8465,
@@ -18287,9 +18287,9 @@
             5008,
             5011
           ],
-          "play": 128,
-          "win": 63,
-          "pick_rate": 0.0165
+          "play": 129,
+          "win": 64,
+          "pick_rate": 0.0166
         },
         {
           "id": 8465,
@@ -18335,7 +18335,7 @@
           ],
           "play": 91,
           "win": 48,
-          "pick_rate": 0.0118
+          "pick_rate": 0.0117
         }
       ]
     },
@@ -18343,8 +18343,8 @@
       "id": 8214,
       "primary_page_id": 8200,
       "secondary_page_id": 8100,
-      "play": 1763,
-      "win": 929,
+      "play": 1768,
+      "win": 932,
       "pick_rate": 0.012,
       "builds": [
         {
@@ -18368,7 +18368,7 @@
           ],
           "play": 58,
           "win": 26,
-          "pick_rate": 0.0329
+          "pick_rate": 0.0328
         },
         {
           "id": 8214,
@@ -18391,7 +18391,7 @@
           ],
           "play": 50,
           "win": 31,
-          "pick_rate": 0.0284
+          "pick_rate": 0.0283
         },
         {
           "id": 8214,
@@ -18414,7 +18414,7 @@
           ],
           "play": 44,
           "win": 30,
-          "pick_rate": 0.025
+          "pick_rate": 0.0249
         },
         {
           "id": 8214,
@@ -18437,7 +18437,7 @@
           ],
           "play": 41,
           "win": 20,
-          "pick_rate": 0.0233
+          "pick_rate": 0.0232
         },
         {
           "id": 8214,
@@ -18460,7 +18460,7 @@
           ],
           "play": 40,
           "win": 26,
-          "pick_rate": 0.0227
+          "pick_rate": 0.0226
         }
       ]
     }
@@ -18472,9 +18472,9 @@
         3504,
         6617
       ],
-      "play": 2499,
-      "win": 1581,
-      "pick_rate": 0.0675
+      "play": 2509,
+      "win": 1588,
+      "pick_rate": 0.0676
     },
     {
       "ids": [
@@ -18482,8 +18482,8 @@
         2065,
         6617
       ],
-      "play": 2098,
-      "win": 1364,
+      "play": 2103,
+      "win": 1367,
       "pick_rate": 0.0567
     },
     {
@@ -18492,8 +18492,8 @@
         6617,
         3107
       ],
-      "play": 1786,
-      "win": 1147,
+      "play": 1794,
+      "win": 1152,
       "pick_rate": 0.0483
     },
     {
@@ -18502,8 +18502,8 @@
         3504,
         3107
       ],
-      "play": 1611,
-      "win": 1053,
+      "play": 1615,
+      "win": 1055,
       "pick_rate": 0.0435
     },
     {
@@ -18512,9 +18512,9 @@
         2065,
         3107
       ],
-      "play": 1554,
-      "win": 972,
-      "pick_rate": 0.042
+      "play": 1562,
+      "win": 978,
+      "pick_rate": 0.0421
     },
     {
       "ids": [
@@ -18522,8 +18522,8 @@
         2065,
         3222
       ],
-      "play": 1460,
-      "win": 922,
+      "play": 1465,
+      "win": 926,
       "pick_rate": 0.0395
     },
     {
@@ -18532,8 +18532,8 @@
         3504,
         3222
       ],
-      "play": 1359,
-      "win": 864,
+      "play": 1364,
+      "win": 866,
       "pick_rate": 0.0367
     },
     {
@@ -18542,8 +18542,8 @@
         6617,
         2065
       ],
-      "play": 1094,
-      "win": 713,
+      "play": 1097,
+      "win": 715,
       "pick_rate": 0.0296
     },
     {
@@ -18552,8 +18552,8 @@
         6617,
         3222
       ],
-      "play": 1043,
-      "win": 660,
+      "play": 1047,
+      "win": 662,
       "pick_rate": 0.0282
     },
     {
@@ -18562,7 +18562,7 @@
         3222,
         3504
       ],
-      "play": 1011,
+      "play": 1012,
       "win": 630,
       "pick_rate": 0.0273
     },
@@ -18572,8 +18572,8 @@
         3222,
         6617
       ],
-      "play": 837,
-      "win": 552,
+      "play": 839,
+      "win": 554,
       "pick_rate": 0.0226
     },
     {
@@ -18582,9 +18582,9 @@
         3222,
         2065
       ],
-      "play": 805,
-      "win": 517,
-      "pick_rate": 0.0218
+      "play": 807,
+      "win": 518,
+      "pick_rate": 0.0217
     },
     {
       "ids": [
@@ -18592,8 +18592,8 @@
         6617,
         3107
       ],
-      "play": 657,
-      "win": 431,
+      "play": 659,
+      "win": 433,
       "pick_rate": 0.0178
     },
     {
@@ -18604,7 +18604,7 @@
       ],
       "play": 592,
       "win": 364,
-      "pick_rate": 0.016
+      "pick_rate": 0.0159
     },
     {
       "ids": [
@@ -18612,7 +18612,7 @@
         3504,
         3107
       ],
-      "play": 577,
+      "play": 578,
       "win": 380,
       "pick_rate": 0.0156
     }
@@ -18622,39 +18622,39 @@
       "ids": [
         3158
       ],
-      "play": 133020,
-      "win": 69123,
+      "play": 133476,
+      "win": 69342,
       "pick_rate": 0.9279
     },
     {
       "ids": [
         3009
       ],
-      "play": 5799,
-      "win": 3098,
+      "play": 5823,
+      "win": 3111,
       "pick_rate": 0.0405
     },
     {
       "ids": [
         3013
       ],
-      "play": 1776,
-      "win": 938,
+      "play": 1778,
+      "win": 939,
       "pick_rate": 0.0124
     },
     {
       "ids": [
         3111
       ],
-      "play": 1525,
-      "win": 747,
-      "pick_rate": 0.0106
+      "play": 1538,
+      "win": 756,
+      "pick_rate": 0.0107
     },
     {
       "ids": [
         3047
       ],
-      "play": 857,
+      "play": 859,
       "win": 392,
       "pick_rate": 0.006
     }
@@ -18666,8 +18666,8 @@
         2003,
         3865
       ],
-      "play": 146626,
-      "win": 75201,
+      "play": 147134,
+      "win": 75448,
       "pick_rate": 0.9856
     },
     {
@@ -18675,9 +18675,17 @@
         2003,
         3865
       ],
-      "play": 646,
-      "win": 350,
-      "pick_rate": 0.0043
+      "play": 650,
+      "win": 352,
+      "pick_rate": 0.0044
+    },
+    {
+      "ids": [
+        3865
+      ],
+      "play": 337,
+      "win": 158,
+      "pick_rate": 0.0023
     },
     {
       "ids": [
@@ -18688,14 +18696,6 @@
       ],
       "play": 331,
       "win": 179,
-      "pick_rate": 0.0022
-    },
-    {
-      "ids": [
-        3865
-      ],
-      "play": 334,
-      "win": 158,
       "pick_rate": 0.0022
     },
     {
@@ -18716,8 +18716,8 @@
         2003,
         3865
       ],
-      "play": 209,
-      "win": 128,
+      "play": 210,
+      "win": 129,
       "pick_rate": 0.0014
     },
     {
@@ -18807,8 +18807,8 @@
         2003,
         3865
       ],
-      "play": 15,
-      "win": 8,
+      "play": 16,
+      "win": 9,
       "pick_rate": 0.0001
     },
     {
@@ -18828,128 +18828,128 @@
       "ids": [
         3870
       ],
-      "play": 128170,
-      "win": 66630,
+      "play": 128589,
+      "win": 66840,
       "pick_rate": 0.2841
     },
     {
       "ids": [
         3504
       ],
-      "play": 85204,
-      "win": 46648,
-      "pick_rate": 0.1889
+      "play": 85473,
+      "win": 46786,
+      "pick_rate": 0.1888
     },
     {
       "ids": [
         2065
       ],
-      "play": 73878,
-      "win": 39859,
+      "play": 74142,
+      "win": 40004,
       "pick_rate": 0.1638
     },
     {
       "ids": [
         6617
       ],
-      "play": 48181,
-      "win": 26811,
+      "play": 48324,
+      "win": 26883,
       "pick_rate": 0.1068
     },
     {
       "ids": [
         3222
       ],
-      "play": 34358,
-      "win": 19268,
+      "play": 34476,
+      "win": 19332,
       "pick_rate": 0.0762
     },
     {
       "ids": [
         3107
       ],
-      "play": 25979,
-      "win": 15440,
+      "play": 26067,
+      "win": 15489,
       "pick_rate": 0.0576
     },
     {
       "ids": [
         3916
       ],
-      "play": 15351,
-      "win": 7401,
+      "play": 15405,
+      "win": 7427,
       "pick_rate": 0.034
     },
     {
       "ids": [
         3190
       ],
-      "play": 8330,
-      "win": 4785,
+      "play": 8354,
+      "win": 4798,
       "pick_rate": 0.0185
     },
     {
       "ids": [
         3869
       ],
-      "play": 7821,
-      "win": 3745,
-      "pick_rate": 0.0173
+      "play": 7860,
+      "win": 3761,
+      "pick_rate": 0.0174
     },
     {
       "ids": [
         3871
       ],
-      "play": 6883,
-      "win": 3415,
+      "play": 6911,
+      "win": 3428,
       "pick_rate": 0.0153
     },
     {
       "ids": [
         6616
       ],
-      "play": 3775,
-      "win": 2191,
+      "play": 3789,
+      "win": 2200,
       "pick_rate": 0.0084
     },
     {
       "ids": [
         6621
       ],
-      "play": 2272,
-      "win": 1416,
+      "play": 2278,
+      "win": 1419,
       "pick_rate": 0.005
     },
     {
       "ids": [
         3876
       ],
-      "play": 2140,
-      "win": 1113,
+      "play": 2149,
+      "win": 1117,
       "pick_rate": 0.0047
     },
     {
       "ids": [
         3165
       ],
-      "play": 1699,
-      "win": 981,
+      "play": 1706,
+      "win": 985,
       "pick_rate": 0.0038
     },
     {
       "ids": [
         4005
       ],
-      "play": 1427,
-      "win": 793,
+      "play": 1437,
+      "win": 799,
       "pick_rate": 0.0032
     },
     {
       "ids": [
         1082
       ],
-      "play": 1387,
-      "win": 835,
+      "play": 1394,
+      "win": 840,
       "pick_rate": 0.0031
     },
     {
@@ -18964,8 +18964,8 @@
       "ids": [
         3109
       ],
-      "play": 878,
-      "win": 536,
+      "play": 881,
+      "win": 537,
       "pick_rate": 0.0019
     },
     {
@@ -18994,14 +18994,6 @@
     },
     {
       "ids": [
-        3070
-      ],
-      "play": 158,
-      "win": 72,
-      "pick_rate": 0.0004
-    },
-    {
-      "ids": [
         3157
       ],
       "play": 154,
@@ -19012,8 +19004,16 @@
       "ids": [
         6655
       ],
-      "play": 127,
-      "win": 61,
+      "play": 128,
+      "win": 62,
+      "pick_rate": 0.0003
+    },
+    {
+      "ids": [
+        3070
+      ],
+      "play": 158,
+      "win": 72,
       "pick_rate": 0.0003
     },
     {
