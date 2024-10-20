@@ -337,28 +337,28 @@
             {
               "name": "TANK",
               "stats": {
-                "win_rate": 0.498503,
-                "role_rate": 0.817881,
-                "play": 28387,
-                "win": 14151
+                "win_rate": 0.498157,
+                "role_rate": 0.817934,
+                "play": 28487,
+                "win": 14191
               }
             },
             {
               "name": "FIGHTER",
               "stats": {
-                "win_rate": 0.519127,
-                "role_rate": 0.106949,
-                "play": 3712,
-                "win": 1927
+                "win_rate": 0.518658,
+                "role_rate": 0.106954,
+                "play": 3725,
+                "win": 1932
               }
             },
             {
               "name": "SLAYER",
               "stats": {
-                "win_rate": 0.456693,
-                "role_rate": 0.0622047,
-                "play": 2159,
-                "win": 986
+                "win_rate": 0.4561,
+                "role_rate": 0.0621339,
+                "play": 2164,
+                "win": 987
               }
             }
           ],
@@ -370,13 +370,13 @@
             },
             {
               "champion_id": 77,
-              "play": 287,
+              "play": 289,
               "win": 128
             },
             {
-              "champion_id": 114,
-              "play": 593,
-              "win": 265
+              "champion_id": 23,
+              "play": 287,
+              "win": 128
             }
           ]
         }
@@ -689,7 +689,7 @@
         },
         {
           "champion_id": 77,
-          "play": 287,
+          "play": 289,
           "win": 128,
           "meta": {
             "id": 77,
@@ -903,12 +903,317 @@
               }
             ]
           },
+          "win_rate": 44.29
+        },
+        {
+          "champion_id": 23,
+          "play": 287,
+          "win": 128,
+          "meta": {
+            "id": 23,
+            "key": "Tryndamere",
+            "name": "蛮族之王",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Tryndamere.png",
+            "evolve": [],
+            "title": "泰达米尔",
+            "partype": "怒气",
+            "passive": {
+              "name": "战斗狂怒",
+              "description": "泰达米尔每次攻击、暴击或击杀都能获得怒气。怒气被动地增加他的暴击几率，且可以通过释放嗜血杀戮来消耗。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Tryndamere_Passive.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0023/ability_0023_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "嗜血杀戮",
+                "description": "泰达米尔对战斗极度饥渴，他受伤程度越高，攻击力越强。他能通过释放【Q嗜血杀戮】消耗怒气并治疗自己。",
+                "max_rank": 5,
+                "range_burn": [
+                  400
+                ],
+                "cooldown_burn": [
+                  12
+                ],
+                "cooldown_burn_float": [
+                  12
+                ],
+                "cost_burn": [
+                  0
+                ],
+                "tooltip": "<spellPassive>被动：</spellPassive>泰达米尔嗜血成性，获得<scaleAD>?攻击力</scaleAD>，每1%已损失生命值额外提供<scaleAD>?攻击力</scaleAD>。<br /><br /><spellActive>主动：</spellActive>泰达米尔消耗他的<keywordMajor>怒气</keywordMajor>，回复<healing>?外加x?怒气的生命值</healing>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TryndamereQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0023/ability_0023_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "蔑视",
+                "description": "泰达米尔嘲笑敌人，减少身边敌方英雄的攻击力。背对泰达米尔的敌人还会被减速。",
+                "max_rank": 5,
+                "range_burn": [
+                  850
+                ],
+                "cooldown_burn": [
+                  14
+                ],
+                "cooldown_burn_float": [
+                  14
+                ],
+                "cost_burn": [
+                  0
+                ],
+                "tooltip": "泰达米尔抛出羞辱之语，使英雄们降低?攻击力，持续?秒。背对泰达米尔的敌方英雄还会被<status>减速</status>?%，持续相同时长。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TryndamereW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0023/ability_0023_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "旋风斩",
+                "description": "泰达米尔挥舞大剑冲向目标，对冲锋路线上所有敌人造成伤害。",
+                "max_rank": 5,
+                "range_burn": [
+                  650
+                ],
+                "cooldown_burn": [
+                  12,
+                  11,
+                  10,
+                  9,
+                  8
+                ],
+                "cooldown_burn_float": [
+                  12,
+                  11,
+                  10,
+                  9,
+                  8
+                ],
+                "cost_burn": [
+                  0
+                ],
+                "tooltip": "泰达米尔旋转并穿过他的敌人，造成<physicalDamage>?物理伤害</physicalDamage>并且每命中一个敌人就会生成<keywordMajor>?怒气</keywordMajor>，在命中敌方英雄时提升至<keywordMajor>?怒气</keywordMajor>。<br /><br />这个技能的冷却时间会在泰达米尔暴击时缩短?秒，并在对英雄暴击时缩短?秒。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TryndamereE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0023/ability_0023_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "无尽怒火",
+                "description": "泰达米尔是如此渴望战斗，以至于承受再多的伤害也不会死亡。",
+                "max_rank": 3,
+                "range_burn": [
+                  400
+                ],
+                "cooldown_burn": [
+                  120,
+                  100,
+                  80
+                ],
+                "cooldown_burn_float": [
+                  120,
+                  100,
+                  80
+                ],
+                "cost_burn": [
+                  0
+                ],
+                "tooltip": "泰达米尔变得对死亡完全免疫，持续5秒，拒绝将生命值降至30/50/70以下，并瞬间获得<keywordMajor>50/75/100怒气</keywordMajor>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/UndyingRage.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0023/ability_0023_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 23000,
+                "champion_id": 23,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 1350
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 585
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 23006,
+                "champion_id": 23,
+                "name": "关羽 云长",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_6.jpg",
+                "skin_video_url": "https://youtu.be/eZC72TYztdk",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 23001,
+                "champion_id": 23,
+                "name": "勇敢的心 泰达米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_1.jpg",
+                "skin_video_url": "https://youtu.be/PNXQvZ6ATf4",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 23002,
+                "champion_id": 23,
+                "name": "国王 泰达米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_2.jpg",
+                "skin_video_url": "https://youtu.be/j4wHcgs2Ypw",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 520
+                  }
+                ],
+                "sales": null,
+                "release_date": "2010-07-12T15:00:00+09:00"
+              },
+              {
+                "id": 23005,
+                "champion_id": 23,
+                "name": "奥斯曼大帝 泰达米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_5.jpg",
+                "skin_video_url": "https://youtu.be/Gi3HWS_HrLs",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2012-10-03T22:00:00+09:00"
+              },
+              {
+                "id": 23004,
+                "champion_id": 23,
+                "name": "恶魔之刃 泰达米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_4.jpg",
+                "skin_video_url": "https://youtu.be/kW03Ku7znvc",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1820
+                  }
+                ],
+                "sales": null,
+                "release_date": "2011-08-01T02:00:00+09:00"
+              },
+              {
+                "id": 23007,
+                "champion_id": 23,
+                "name": "梦魇 泰达米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_7.jpg",
+                "skin_video_url": "https://youtu.be/VwDaLlXD2zo",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2015-06-09T10:00:00+09:00"
+              },
+              {
+                "id": 23009,
+                "champion_id": 23,
+                "name": "生化领主 泰达米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_9.jpg",
+                "skin_video_url": "https://youtu.be/fQTR_K3q4Ks",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2017-06-06T10:00:00+09:00"
+              },
+              {
+                "id": 23027,
+                "champion_id": 23,
+                "name": "胜利之王 泰达米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_27.jpg",
+                "skin_video_url": null,
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 23010,
+                "champion_id": 23,
+                "name": "腥红之月 泰达米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_10.jpg",
+                "skin_video_url": "https://youtu.be/nDvD-fojaTw",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-02-20T04:00:00+09:00"
+              },
+              {
+                "id": 23003,
+                "champion_id": 23,
+                "name": "诸神的黄昏 泰达米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_3.jpg",
+                "skin_video_url": "https://youtu.be/OR0JA5ehXdo",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 23008,
+                "champion_id": 23,
+                "name": "野兽猎人 泰达米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_8.jpg",
+                "skin_video_url": "https://youtu.be/1nX3e7CoZa0",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2016-02-04T09:00:00+09:00"
+              },
+              {
+                "id": 23018,
+                "champion_id": 23,
+                "name": "黑夜使者 泰达米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_18.jpg",
+                "skin_video_url": "https://youtu.be/pcNc7J7LAmI",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-09-23T04:00:00+09:00"
+              }
+            ]
+          },
           "win_rate": 44.6
         },
         {
           "champion_id": 114,
-          "play": 593,
-          "win": 265,
+          "play": 595,
+          "win": 266,
           "meta": {
             "id": 114,
             "key": "Fiora",
@@ -1283,312 +1588,7 @@
               }
             ]
           },
-          "win_rate": 44.69
-        },
-        {
-          "champion_id": 23,
-          "play": 286,
-          "win": 128,
-          "meta": {
-            "id": 23,
-            "key": "Tryndamere",
-            "name": "蛮族之王",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Tryndamere.png",
-            "evolve": [],
-            "title": "泰达米尔",
-            "partype": "怒气",
-            "passive": {
-              "name": "战斗狂怒",
-              "description": "泰达米尔每次攻击、暴击或击杀都能获得怒气。怒气被动地增加他的暴击几率，且可以通过释放嗜血杀戮来消耗。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Tryndamere_Passive.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0023/ability_0023_P1.webm"
-            },
-            "spells": [
-              {
-                "key": "Q",
-                "name": "嗜血杀戮",
-                "description": "泰达米尔对战斗极度饥渴，他受伤程度越高，攻击力越强。他能通过释放【Q嗜血杀戮】消耗怒气并治疗自己。",
-                "max_rank": 5,
-                "range_burn": [
-                  400
-                ],
-                "cooldown_burn": [
-                  12
-                ],
-                "cooldown_burn_float": [
-                  12
-                ],
-                "cost_burn": [
-                  0
-                ],
-                "tooltip": "<spellPassive>被动：</spellPassive>泰达米尔嗜血成性，获得<scaleAD>?攻击力</scaleAD>，每1%已损失生命值额外提供<scaleAD>?攻击力</scaleAD>。<br /><br /><spellActive>主动：</spellActive>泰达米尔消耗他的<keywordMajor>怒气</keywordMajor>，回复<healing>?外加x?怒气的生命值</healing>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TryndamereQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0023/ability_0023_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "蔑视",
-                "description": "泰达米尔嘲笑敌人，减少身边敌方英雄的攻击力。背对泰达米尔的敌人还会被减速。",
-                "max_rank": 5,
-                "range_burn": [
-                  850
-                ],
-                "cooldown_burn": [
-                  14
-                ],
-                "cooldown_burn_float": [
-                  14
-                ],
-                "cost_burn": [
-                  0
-                ],
-                "tooltip": "泰达米尔抛出羞辱之语，使英雄们降低?攻击力，持续?秒。背对泰达米尔的敌方英雄还会被<status>减速</status>?%，持续相同时长。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TryndamereW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0023/ability_0023_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "旋风斩",
-                "description": "泰达米尔挥舞大剑冲向目标，对冲锋路线上所有敌人造成伤害。",
-                "max_rank": 5,
-                "range_burn": [
-                  650
-                ],
-                "cooldown_burn": [
-                  12,
-                  11,
-                  10,
-                  9,
-                  8
-                ],
-                "cooldown_burn_float": [
-                  12,
-                  11,
-                  10,
-                  9,
-                  8
-                ],
-                "cost_burn": [
-                  0
-                ],
-                "tooltip": "泰达米尔旋转并穿过他的敌人，造成<physicalDamage>?物理伤害</physicalDamage>并且每命中一个敌人就会生成<keywordMajor>?怒气</keywordMajor>，在命中敌方英雄时提升至<keywordMajor>?怒气</keywordMajor>。<br /><br />这个技能的冷却时间会在泰达米尔暴击时缩短?秒，并在对英雄暴击时缩短?秒。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TryndamereE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0023/ability_0023_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "无尽怒火",
-                "description": "泰达米尔是如此渴望战斗，以至于承受再多的伤害也不会死亡。",
-                "max_rank": 3,
-                "range_burn": [
-                  400
-                ],
-                "cooldown_burn": [
-                  120,
-                  100,
-                  80
-                ],
-                "cooldown_burn_float": [
-                  120,
-                  100,
-                  80
-                ],
-                "cost_burn": [
-                  0
-                ],
-                "tooltip": "泰达米尔变得对死亡完全免疫，持续5秒，拒绝将生命值降至30/50/70以下，并瞬间获得<keywordMajor>50/75/100怒气</keywordMajor>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/UndyingRage.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0023/ability_0023_R1.webm"
-              }
-            ],
-            "skins": [
-              {
-                "id": 23000,
-                "champion_id": 23,
-                "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_0.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "IP",
-                    "cost": 1350
-                  },
-                  {
-                    "currency": "RP",
-                    "cost": 585
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 23006,
-                "champion_id": 23,
-                "name": "关羽 云长",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_6.jpg",
-                "skin_video_url": "https://youtu.be/eZC72TYztdk",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 23001,
-                "champion_id": 23,
-                "name": "勇敢的心 泰达米尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_1.jpg",
-                "skin_video_url": "https://youtu.be/PNXQvZ6ATf4",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 23002,
-                "champion_id": 23,
-                "name": "国王 泰达米尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_2.jpg",
-                "skin_video_url": "https://youtu.be/j4wHcgs2Ypw",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 520
-                  }
-                ],
-                "sales": null,
-                "release_date": "2010-07-12T15:00:00+09:00"
-              },
-              {
-                "id": 23005,
-                "champion_id": 23,
-                "name": "奥斯曼大帝 泰达米尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_5.jpg",
-                "skin_video_url": "https://youtu.be/Gi3HWS_HrLs",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2012-10-03T22:00:00+09:00"
-              },
-              {
-                "id": 23004,
-                "champion_id": 23,
-                "name": "恶魔之刃 泰达米尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_4.jpg",
-                "skin_video_url": "https://youtu.be/kW03Ku7znvc",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1820
-                  }
-                ],
-                "sales": null,
-                "release_date": "2011-08-01T02:00:00+09:00"
-              },
-              {
-                "id": 23007,
-                "champion_id": 23,
-                "name": "梦魇 泰达米尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_7.jpg",
-                "skin_video_url": "https://youtu.be/VwDaLlXD2zo",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 750
-                  }
-                ],
-                "sales": null,
-                "release_date": "2015-06-09T10:00:00+09:00"
-              },
-              {
-                "id": 23009,
-                "champion_id": 23,
-                "name": "生化领主 泰达米尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_9.jpg",
-                "skin_video_url": "https://youtu.be/fQTR_K3q4Ks",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2017-06-06T10:00:00+09:00"
-              },
-              {
-                "id": 23027,
-                "champion_id": 23,
-                "name": "胜利之王 泰达米尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_27.jpg",
-                "skin_video_url": null,
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 23010,
-                "champion_id": 23,
-                "name": "腥红之月 泰达米尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_10.jpg",
-                "skin_video_url": "https://youtu.be/nDvD-fojaTw",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2020-02-20T04:00:00+09:00"
-              },
-              {
-                "id": 23003,
-                "champion_id": 23,
-                "name": "诸神的黄昏 泰达米尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_3.jpg",
-                "skin_video_url": "https://youtu.be/OR0JA5ehXdo",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 23008,
-                "champion_id": 23,
-                "name": "野兽猎人 泰达米尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_8.jpg",
-                "skin_video_url": "https://youtu.be/1nX3e7CoZa0",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 750
-                  }
-                ],
-                "sales": null,
-                "release_date": "2016-02-04T09:00:00+09:00"
-              },
-              {
-                "id": 23018,
-                "champion_id": 23,
-                "name": "黑夜使者 泰达米尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Tryndamere_18.jpg",
-                "skin_video_url": "https://youtu.be/pcNc7J7LAmI",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2021-09-23T04:00:00+09:00"
-              }
-            ]
-          },
-          "win_rate": 44.76
+          "win_rate": 44.71
         },
         {
           "champion_id": 517,
@@ -2145,8 +2145,8 @@
         },
         {
           "champion_id": 68,
-          "play": 193,
-          "win": 108,
+          "play": 196,
+          "win": 111,
           "meta": {
             "id": 68,
             "key": "Rumble",
@@ -2366,11 +2366,11 @@
               }
             ]
           },
-          "win_rate": 55.96
+          "win_rate": 56.63
         },
         {
           "champion_id": 133,
-          "play": 137,
+          "play": 138,
           "win": 76,
           "meta": {
             "id": 133,
@@ -2614,12 +2614,12 @@
               }
             ]
           },
-          "win_rate": 55.47
+          "win_rate": 55.07
         },
         {
           "champion_id": 17,
-          "play": 853,
-          "win": 469,
+          "play": 856,
+          "win": 471,
           "meta": {
             "id": 17,
             "key": "Teemo",
@@ -2955,12 +2955,12 @@
               }
             ]
           },
-          "win_rate": 54.98
+          "win_rate": 55.02
         },
         {
           "champion_id": 84,
-          "play": 230,
-          "win": 124,
+          "play": 232,
+          "win": 125,
           "meta": {
             "id": 84,
             "key": "Akali",
@@ -3382,15 +3382,15 @@
               }
             ]
           },
-          "win_rate": 53.91
+          "win_rate": 53.88
         }
       ]
     ],
     "counters": [
       {
         "champion_id": 266,
-        "play": 1395,
-        "win": 698,
+        "play": 1405,
+        "win": 704,
         "meta": {
           "id": 266,
           "key": "Aatrox",
@@ -3712,8 +3712,8 @@
       },
       {
         "champion_id": 897,
-        "play": 1140,
-        "win": 587,
+        "play": 1146,
+        "win": 588,
         "meta": {
           "id": 897,
           "key": "KSante",
@@ -3907,8 +3907,8 @@
       },
       {
         "champion_id": 777,
-        "play": 1120,
-        "win": 537,
+        "play": 1122,
+        "win": 538,
         "meta": {
           "id": 777,
           "key": "Yone",
@@ -4171,7 +4171,7 @@
       },
       {
         "champion_id": 887,
-        "play": 1085,
+        "play": 1087,
         "win": 491,
         "meta": {
           "id": 887,
@@ -4386,7 +4386,7 @@
       },
       {
         "champion_id": 164,
-        "play": 949,
+        "play": 950,
         "win": 464,
         "meta": {
           "id": 164,
@@ -4645,8 +4645,8 @@
       },
       {
         "champion_id": 24,
-        "play": 900,
-        "win": 442,
+        "play": 905,
+        "win": 445,
         "meta": {
           "id": 24,
           "key": "Jax",
@@ -5029,8 +5029,8 @@
       },
       {
         "champion_id": 17,
-        "play": 853,
-        "win": 469,
+        "play": 856,
+        "win": 471,
         "meta": {
           "id": 17,
           "key": "Teemo",
@@ -5369,8 +5369,8 @@
       },
       {
         "champion_id": 122,
-        "play": 822,
-        "win": 406,
+        "play": 825,
+        "win": 407,
         "meta": {
           "id": 122,
           "key": "Darius",
@@ -5719,7 +5719,7 @@
       },
       {
         "champion_id": 92,
-        "play": 788,
+        "play": 791,
         "win": 365,
         "meta": {
           "id": 92,
@@ -6110,7 +6110,7 @@
       },
       {
         "champion_id": 150,
-        "play": 765,
+        "play": 767,
         "win": 379,
         "meta": {
           "id": 150,
@@ -6392,8 +6392,8 @@
       },
       {
         "champion_id": 82,
-        "play": 735,
-        "win": 345,
+        "play": 736,
+        "win": 346,
         "meta": {
           "id": 82,
           "key": "Mordekaiser",
@@ -6702,7 +6702,7 @@
       },
       {
         "champion_id": 98,
-        "play": 733,
+        "play": 735,
         "win": 341,
         "meta": {
           "id": 98,
@@ -7019,7 +7019,7 @@
       },
       {
         "champion_id": 75,
-        "play": 718,
+        "play": 719,
         "win": 357,
         "meta": {
           "id": 75,
@@ -7345,7 +7345,7 @@
       },
       {
         "champion_id": 106,
-        "play": 681,
+        "play": 684,
         "win": 325,
         "meta": {
           "id": 106,
@@ -7613,8 +7613,8 @@
       },
       {
         "champion_id": 875,
-        "play": 674,
-        "win": 317,
+        "play": 676,
+        "win": 318,
         "meta": {
           "id": 875,
           "key": "Sett",
@@ -8220,8 +8220,8 @@
       },
       {
         "champion_id": 114,
-        "play": 593,
-        "win": 265,
+        "play": 595,
+        "win": 266,
         "meta": {
           "id": 114,
           "key": "Fiora",
@@ -8599,8 +8599,8 @@
       },
       {
         "champion_id": 36,
-        "play": 579,
-        "win": 282,
+        "play": 583,
+        "win": 284,
         "meta": {
           "id": 36,
           "key": "DrMundo",
@@ -8892,8 +8892,8 @@
       },
       {
         "champion_id": 86,
-        "play": 571,
-        "win": 296,
+        "play": 572,
+        "win": 297,
         "meta": {
           "id": 86,
           "key": "Garen",
@@ -9236,8 +9236,8 @@
       },
       {
         "champion_id": 79,
-        "play": 567,
-        "win": 286,
+        "play": 571,
+        "win": 287,
         "meta": {
           "id": 79,
           "key": "Gragas",
@@ -9578,8 +9578,8 @@
       },
       {
         "champion_id": 516,
-        "play": 553,
-        "win": 265,
+        "play": 555,
+        "win": 266,
         "meta": {
           "id": 516,
           "key": "Ornn",
@@ -9801,8 +9801,8 @@
       },
       {
         "champion_id": 126,
-        "play": 520,
-        "win": 265,
+        "play": 521,
+        "win": 266,
         "meta": {
           "id": 126,
           "key": "Jayce",
@@ -10415,8 +10415,8 @@
       },
       {
         "champion_id": 901,
-        "play": 466,
-        "win": 250,
+        "play": 468,
+        "win": 251,
         "meta": {
           "id": 901,
           "key": "Smolder",
@@ -10585,8 +10585,8 @@
       },
       {
         "champion_id": 420,
-        "play": 456,
-        "win": 228,
+        "play": 457,
+        "win": 229,
         "meta": {
           "id": 420,
           "key": "Illaoi",
@@ -10815,8 +10815,8 @@
       },
       {
         "champion_id": 83,
-        "play": 444,
-        "win": 221,
+        "play": 445,
+        "win": 222,
         "meta": {
           "id": 83,
           "key": "Yorick",
@@ -11079,8 +11079,8 @@
       },
       {
         "champion_id": 41,
-        "play": 423,
-        "win": 207,
+        "play": 424,
+        "win": 208,
         "meta": {
           "id": 41,
           "key": "Gangplank",
@@ -11401,8 +11401,8 @@
       },
       {
         "champion_id": 157,
-        "play": 389,
-        "win": 204,
+        "play": 392,
+        "win": 205,
         "meta": {
           "id": 157,
           "key": "Yasuo",
@@ -11788,8 +11788,8 @@
       },
       {
         "champion_id": 893,
-        "play": 381,
-        "win": 191,
+        "play": 382,
+        "win": 192,
         "meta": {
           "id": 893,
           "key": "Aurora",
@@ -11958,7 +11958,7 @@
       },
       {
         "champion_id": 31,
-        "play": 360,
+        "play": 362,
         "win": 169,
         "meta": {
           "id": 31,
@@ -12248,8 +12248,8 @@
       },
       {
         "champion_id": 8,
-        "play": 345,
-        "win": 185,
+        "play": 348,
+        "win": 187,
         "meta": {
           "id": 8,
           "key": "Vladimir",
@@ -12573,7 +12573,7 @@
       },
       {
         "champion_id": 48,
-        "play": 319,
+        "play": 320,
         "win": 150,
         "meta": {
           "id": 48,
@@ -13389,8 +13389,8 @@
       },
       {
         "champion_id": 80,
-        "play": 296,
-        "win": 153,
+        "play": 297,
+        "win": 154,
         "meta": {
           "id": 80,
           "key": "Pantheon",
@@ -13699,8 +13699,8 @@
       },
       {
         "champion_id": 39,
-        "play": 289,
-        "win": 137,
+        "play": 290,
+        "win": 138,
         "meta": {
           "id": 39,
           "key": "Irelia",
@@ -14053,7 +14053,7 @@
       },
       {
         "champion_id": 77,
-        "play": 287,
+        "play": 289,
         "win": 128,
         "meta": {
           "id": 77,
@@ -14270,7 +14270,7 @@
       },
       {
         "champion_id": 23,
-        "play": 286,
+        "play": 287,
         "win": 128,
         "meta": {
           "id": 23,
@@ -14574,7 +14574,7 @@
       },
       {
         "champion_id": 85,
-        "play": 277,
+        "play": 278,
         "win": 141,
         "meta": {
           "id": 85,
@@ -14873,7 +14873,7 @@
       },
       {
         "champion_id": 223,
-        "play": 277,
+        "play": 278,
         "win": 148,
         "meta": {
           "id": 223,
@@ -15126,8 +15126,8 @@
       },
       {
         "champion_id": 78,
-        "play": 256,
-        "win": 123,
+        "play": 258,
+        "win": 124,
         "meta": {
           "id": 78,
           "key": "Poppy",
@@ -15822,8 +15822,8 @@
       },
       {
         "champion_id": 84,
-        "play": 230,
-        "win": 124,
+        "play": 232,
+        "win": 125,
         "meta": {
           "id": 84,
           "key": "Akali",
@@ -16584,8 +16584,8 @@
       },
       {
         "champion_id": 154,
-        "play": 219,
-        "win": 103,
+        "play": 221,
+        "win": 104,
         "meta": {
           "id": 154,
           "key": "Zac",
@@ -16821,8 +16821,8 @@
       },
       {
         "champion_id": 68,
-        "play": 193,
-        "win": 108,
+        "play": 196,
+        "win": 111,
         "meta": {
           "id": 68,
           "key": "Rumble",
@@ -17351,8 +17351,8 @@
       },
       {
         "champion_id": 240,
-        "play": 187,
-        "win": 96,
+        "play": 188,
+        "win": 97,
         "meta": {
           "id": 240,
           "key": "Kled",
@@ -17829,255 +17829,8 @@
         }
       },
       {
-        "champion_id": 133,
-        "play": 137,
-        "win": 76,
-        "meta": {
-          "id": 133,
-          "key": "Quinn",
-          "name": "德玛西亚之翼",
-          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Quinn.png",
-          "evolve": [],
-          "title": "奎因",
-          "partype": "法力",
-          "passive": {
-            "name": "侵扰",
-            "description": "华洛，奎因的德玛西亚鹰，会周期性地将敌人标记为<font color='#FFF673'>易损</font>状态。奎因对<font color='#FFF673'>易损</font>目标的第一次普通攻击将造成额外物理伤害。",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Quinn_Passive.png",
-            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0133/ability_0133_P1.webm"
-          },
-          "spells": [
-            {
-              "key": "Q",
-              "name": "炫目攻势",
-              "description": "奎因唤出华洛，来标记一名敌人并遮蔽其视野，然后对目标附近区域内的所有敌人造成伤害。",
-              "max_rank": 5,
-              "range_burn": [
-                1025
-              ],
-              "cooldown_burn": [
-                11,
-                10,
-                10,
-                9,
-                9
-              ],
-              "cooldown_burn_float": [
-                11,
-                10.5,
-                10,
-                9.5,
-                9
-              ],
-              "cost_burn": [
-                50,
-                55,
-                60,
-                65,
-                70
-              ],
-              "tooltip": "奎因命令华洛进行俯冲，将命中的第一个敌人标记为<keywordMajor>易损</keywordMajor>、降低其视野半径1.75秒并对所有周围的敌人们造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br />如果命中的第一个敌人不是英雄，那么该敌人会还会被<status>缴械</status>1.75秒。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/QuinnQ.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0133/ability_0133_Q1.webm"
-            },
-            {
-              "key": "W",
-              "name": "敏锐感知",
-              "description": "在奎因攻击了一名<font color='#FFF673'>易损</font>目标后，被动地为奎因提供攻击速度和移动速度加成。主动激活可以让华洛驱散周围一大片区域的战争迷雾。",
-              "max_rank": 5,
-              "range_burn": [
-                2100
-              ],
-              "cooldown_burn": [
-                50,
-                45,
-                40,
-                35,
-                30
-              ],
-              "cooldown_burn_float": [
-                50,
-                45,
-                40,
-                35,
-                30
-              ],
-              "cost_burn": [
-                0
-              ],
-              "tooltip": "<spellPassive>被动：</spellPassive>攻击一名<keywordMajor>易损</keywordMajor>目标会为奎因提供<attackSpeed>?%攻击速度</attackSpeed>和<speed>20/25/30/35/40%移动速度</speed>，持续2秒。<br /><br /><spellActive>主动：</spellActive>华洛显形附近的一大片区域，持续2秒。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/QuinnW.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0133/ability_0133_W1.webm"
-            },
-            {
-              "key": "E",
-              "name": "旋翔掠杀",
-              "description": "奎因冲向一名敌人，造成物理伤害，并减少目标的移动速度。在接触到目标的同时，她会向后空翻，暂时打断目标的行动，并在接近她最大攻击距离的地方着陆。",
-              "max_rank": 5,
-              "range_burn": [
-                675
-              ],
-              "cooldown_burn": [
-                12,
-                11,
-                10,
-                9,
-                8
-              ],
-              "cooldown_burn_float": [
-                12,
-                11,
-                10,
-                9,
-                8
-              ],
-              "cost_burn": [
-                50
-              ],
-              "tooltip": "奎因冲刺向一名敌人，造成<physicalDamage>?物理伤害</physicalDamage>并将其标记为<keywordMajor>易损</keywordMajor>状态。奎因随后会从目标处向后跳开，将其<status>击退</status>并对其造成在1.5秒里持续衰减的50%<status>减速</status>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/QuinnE.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0133/ability_0133_E1.webm"
-            },
-            {
-              "key": "R",
-              "name": "深入敌后",
-              "description": "奎因和华洛联成一体并以极高的速度进行移动。在结束此技能时会施放【鹰翼天翔】，对附近的敌人造成伤害并对英雄施加易损效果。",
-              "max_rank": 3,
-              "range_burn": [
-                700
-              ],
-              "cooldown_burn": [
-                3
-              ],
-              "cooldown_burn_float": [
-                3
-              ],
-              "cost_burn": [
-                100,
-                50,
-                0
-              ],
-              "tooltip": "奎因召唤华洛，在引导2秒后进行合体，获得<speed>?%移动速度</speed>并允许她<recast>再次施放</recast>这个技能。攻击或使用<spellName>炫目攻势</spellName>或<spellName>旋翔掠杀</spellName>都会自动地<recast>再次施放</recast>这个技能。<br /><br /><recast>再次施放</recast>：奎因和华洛表演一次空中特技，造成<physicalDamage>?物理伤害</physicalDamage>、将英雄们标记为<keywordMajor>易损</keywordMajor>并结束这个技能。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/QuinnR.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0133/ability_0133_R1.webm"
-            }
-          ],
-          "skins": [
-            {
-              "id": 133000,
-              "champion_id": 133,
-              "name": "default",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Quinn_0.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "IP",
-                  "cost": 4800
-                },
-                {
-                  "currency": "RP",
-                  "cost": 880
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 133005,
-              "champion_id": 133,
-              "name": "光明骑士 奎因",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Quinn_5.jpg",
-              "skin_video_url": "https://youtu.be/0_Zs33OJlRs",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2021-01-07T04:00:00+09:00"
-            },
-            {
-              "id": 133002,
-              "champion_id": 133,
-              "name": "勇敢的心 奎因",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Quinn_2.jpg",
-              "skin_video_url": "https://youtu.be/tHjs7qW0Zcw",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 975
-                }
-              ],
-              "sales": null,
-              "release_date": "2014-06-03T07:00:00+09:00"
-            },
-            {
-              "id": 133014,
-              "champion_id": 133,
-              "name": "星之守护者 奎因",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Quinn_14.jpg",
-              "skin_video_url": "https://youtu.be/DmDaH2xnWA4",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2022-07-28T04:00:00+09:00"
-            },
-            {
-              "id": 133003,
-              "champion_id": 133,
-              "name": "死亡之鹰 奎因",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Quinn_3.jpg",
-              "skin_video_url": "https://youtu.be/ClgWxdnmkXI",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 750
-                }
-              ],
-              "sales": null,
-              "release_date": "2015-07-23T06:00:00+09:00"
-            },
-            {
-              "id": 133001,
-              "champion_id": 133,
-              "name": "血羽凤凰 奎因",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Quinn_1.jpg",
-              "skin_video_url": "https://youtu.be/AlMd_mv9Ec8",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 975
-                }
-              ],
-              "sales": null,
-              "release_date": "2013-03-04T08:00:00+09:00"
-            },
-            {
-              "id": 133004,
-              "champion_id": 133,
-              "name": "觅心之翼 奎因",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Quinn_4.jpg",
-              "skin_video_url": "https://youtu.be/xmVfgRgTJx8",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 975
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            }
-          ]
-        }
-      },
-      {
         "champion_id": 67,
-        "play": 136,
+        "play": 138,
         "win": 64,
         "meta": {
           "id": 67,
@@ -18463,9 +18216,256 @@
         }
       },
       {
+        "champion_id": 133,
+        "play": 138,
+        "win": 76,
+        "meta": {
+          "id": 133,
+          "key": "Quinn",
+          "name": "德玛西亚之翼",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Quinn.png",
+          "evolve": [],
+          "title": "奎因",
+          "partype": "法力",
+          "passive": {
+            "name": "侵扰",
+            "description": "华洛，奎因的德玛西亚鹰，会周期性地将敌人标记为<font color='#FFF673'>易损</font>状态。奎因对<font color='#FFF673'>易损</font>目标的第一次普通攻击将造成额外物理伤害。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Quinn_Passive.png",
+            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0133/ability_0133_P1.webm"
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "炫目攻势",
+              "description": "奎因唤出华洛，来标记一名敌人并遮蔽其视野，然后对目标附近区域内的所有敌人造成伤害。",
+              "max_rank": 5,
+              "range_burn": [
+                1025
+              ],
+              "cooldown_burn": [
+                11,
+                10,
+                10,
+                9,
+                9
+              ],
+              "cooldown_burn_float": [
+                11,
+                10.5,
+                10,
+                9.5,
+                9
+              ],
+              "cost_burn": [
+                50,
+                55,
+                60,
+                65,
+                70
+              ],
+              "tooltip": "奎因命令华洛进行俯冲，将命中的第一个敌人标记为<keywordMajor>易损</keywordMajor>、降低其视野半径1.75秒并对所有周围的敌人们造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br />如果命中的第一个敌人不是英雄，那么该敌人会还会被<status>缴械</status>1.75秒。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/QuinnQ.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0133/ability_0133_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "敏锐感知",
+              "description": "在奎因攻击了一名<font color='#FFF673'>易损</font>目标后，被动地为奎因提供攻击速度和移动速度加成。主动激活可以让华洛驱散周围一大片区域的战争迷雾。",
+              "max_rank": 5,
+              "range_burn": [
+                2100
+              ],
+              "cooldown_burn": [
+                50,
+                45,
+                40,
+                35,
+                30
+              ],
+              "cooldown_burn_float": [
+                50,
+                45,
+                40,
+                35,
+                30
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "<spellPassive>被动：</spellPassive>攻击一名<keywordMajor>易损</keywordMajor>目标会为奎因提供<attackSpeed>?%攻击速度</attackSpeed>和<speed>20/25/30/35/40%移动速度</speed>，持续2秒。<br /><br /><spellActive>主动：</spellActive>华洛显形附近的一大片区域，持续2秒。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/QuinnW.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0133/ability_0133_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "旋翔掠杀",
+              "description": "奎因冲向一名敌人，造成物理伤害，并减少目标的移动速度。在接触到目标的同时，她会向后空翻，暂时打断目标的行动，并在接近她最大攻击距离的地方着陆。",
+              "max_rank": 5,
+              "range_burn": [
+                675
+              ],
+              "cooldown_burn": [
+                12,
+                11,
+                10,
+                9,
+                8
+              ],
+              "cooldown_burn_float": [
+                12,
+                11,
+                10,
+                9,
+                8
+              ],
+              "cost_burn": [
+                50
+              ],
+              "tooltip": "奎因冲刺向一名敌人，造成<physicalDamage>?物理伤害</physicalDamage>并将其标记为<keywordMajor>易损</keywordMajor>状态。奎因随后会从目标处向后跳开，将其<status>击退</status>并对其造成在1.5秒里持续衰减的50%<status>减速</status>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/QuinnE.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0133/ability_0133_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "深入敌后",
+              "description": "奎因和华洛联成一体并以极高的速度进行移动。在结束此技能时会施放【鹰翼天翔】，对附近的敌人造成伤害并对英雄施加易损效果。",
+              "max_rank": 3,
+              "range_burn": [
+                700
+              ],
+              "cooldown_burn": [
+                3
+              ],
+              "cooldown_burn_float": [
+                3
+              ],
+              "cost_burn": [
+                100,
+                50,
+                0
+              ],
+              "tooltip": "奎因召唤华洛，在引导2秒后进行合体，获得<speed>?%移动速度</speed>并允许她<recast>再次施放</recast>这个技能。攻击或使用<spellName>炫目攻势</spellName>或<spellName>旋翔掠杀</spellName>都会自动地<recast>再次施放</recast>这个技能。<br /><br /><recast>再次施放</recast>：奎因和华洛表演一次空中特技，造成<physicalDamage>?物理伤害</physicalDamage>、将英雄们标记为<keywordMajor>易损</keywordMajor>并结束这个技能。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/QuinnR.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0133/ability_0133_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 133000,
+              "champion_id": 133,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Quinn_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 4800
+                },
+                {
+                  "currency": "RP",
+                  "cost": 880
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 133005,
+              "champion_id": 133,
+              "name": "光明骑士 奎因",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Quinn_5.jpg",
+              "skin_video_url": "https://youtu.be/0_Zs33OJlRs",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2021-01-07T04:00:00+09:00"
+            },
+            {
+              "id": 133002,
+              "champion_id": 133,
+              "name": "勇敢的心 奎因",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Quinn_2.jpg",
+              "skin_video_url": "https://youtu.be/tHjs7qW0Zcw",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": "2014-06-03T07:00:00+09:00"
+            },
+            {
+              "id": 133014,
+              "champion_id": 133,
+              "name": "星之守护者 奎因",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Quinn_14.jpg",
+              "skin_video_url": "https://youtu.be/DmDaH2xnWA4",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2022-07-28T04:00:00+09:00"
+            },
+            {
+              "id": 133003,
+              "champion_id": 133,
+              "name": "死亡之鹰 奎因",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Quinn_3.jpg",
+              "skin_video_url": "https://youtu.be/ClgWxdnmkXI",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 750
+                }
+              ],
+              "sales": null,
+              "release_date": "2015-07-23T06:00:00+09:00"
+            },
+            {
+              "id": 133001,
+              "champion_id": 133,
+              "name": "血羽凤凰 奎因",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Quinn_1.jpg",
+              "skin_video_url": "https://youtu.be/AlMd_mv9Ec8",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": "2013-03-04T08:00:00+09:00"
+            },
+            {
+              "id": 133004,
+              "champion_id": 133,
+              "name": "觅心之翼 奎因",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Quinn_4.jpg",
+              "skin_video_url": "https://youtu.be/xmVfgRgTJx8",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            }
+          ]
+        }
+      },
+      {
         "champion_id": 69,
-        "play": 134,
-        "win": 65,
+        "play": 135,
+        "win": 66,
         "meta": {
           "id": 69,
           "key": "Cassiopeia",
@@ -18731,7 +18731,7 @@
       },
       {
         "champion_id": 13,
-        "play": 125,
+        "play": 126,
         "win": 61,
         "meta": {
           "id": 13,
@@ -19616,26 +19616,26 @@
         4,
         12
       ],
-      "win": 12280,
-      "play": 24872,
-      "pick_rate": 0.7317
+      "win": 12312,
+      "play": 24961,
+      "pick_rate": 0.7318
     },
     {
       "ids": [
         6,
         12
       ],
-      "win": 3609,
-      "play": 7233,
-      "pick_rate": 0.2128
+      "win": 3617,
+      "play": 7254,
+      "pick_rate": 0.2127
     },
     {
       "ids": [
         12,
         14
       ],
-      "win": 871,
-      "play": 1573,
+      "win": 874,
+      "play": 1579,
       "pick_rate": 0.0463
     },
     {
@@ -19898,9 +19898,9 @@
         "E",
         "E"
       ],
-      "play": 11137,
-      "win": 6163,
-      "pick_rate": 0.472
+      "play": 11178,
+      "win": 6176,
+      "pick_rate": 0.4722
     },
     {
       "order": [
@@ -19920,8 +19920,8 @@
         "E",
         "E"
       ],
-      "play": 5478,
-      "win": 2987,
+      "play": 5497,
+      "win": 2994,
       "pick_rate": 0.2322
     },
     {
@@ -19942,8 +19942,8 @@
         "E",
         "E"
       ],
-      "play": 935,
-      "win": 524,
+      "play": 937,
+      "win": 526,
       "pick_rate": 0.0396
     },
     {
@@ -19966,7 +19966,7 @@
       ],
       "play": 712,
       "win": 380,
-      "pick_rate": 0.0302
+      "pick_rate": 0.0301
     },
     {
       "order": [
@@ -19986,9 +19986,9 @@
         "W",
         "W"
       ],
-      "play": 367,
+      "play": 368,
       "win": 190,
-      "pick_rate": 0.0156
+      "pick_rate": 0.0155
     }
   ],
   "skill_masteries": [
@@ -19998,9 +19998,9 @@
         "W",
         "E"
       ],
-      "play": 20967,
-      "win": 11524,
-      "pick_rate": 0.8886,
+      "play": 21038,
+      "win": 11554,
+      "pick_rate": 0.8887,
       "builds": [
         {
           "order": [
@@ -20020,9 +20020,9 @@
             "E",
             "E"
           ],
-          "play": 11137,
-          "win": 6163,
-          "pick_rate": 0.5312
+          "play": 11178,
+          "win": 6176,
+          "pick_rate": 0.5313
         },
         {
           "order": [
@@ -20042,8 +20042,8 @@
             "E",
             "E"
           ],
-          "play": 5478,
-          "win": 2987,
+          "play": 5497,
+          "win": 2994,
           "pick_rate": 0.2613
         },
         {
@@ -20064,9 +20064,9 @@
             "E",
             "E"
           ],
-          "play": 935,
-          "win": 524,
-          "pick_rate": 0.0446
+          "play": 937,
+          "win": 526,
+          "pick_rate": 0.0445
         },
         {
           "order": [
@@ -20086,8 +20086,8 @@
             "E",
             "E"
           ],
-          "play": 346,
-          "win": 198,
+          "play": 348,
+          "win": 199,
           "pick_rate": 0.0165
         },
         {
@@ -20108,9 +20108,9 @@
             "E",
             "E"
           ],
-          "play": 250,
-          "win": 140,
-          "pick_rate": 0.0119
+          "play": 252,
+          "win": 142,
+          "pick_rate": 0.012
         }
       ]
     },
@@ -20120,8 +20120,8 @@
         "E",
         "W"
       ],
-      "play": 1798,
-      "win": 955,
+      "play": 1804,
+      "win": 958,
       "pick_rate": 0.0762,
       "builds": [
         {
@@ -20144,7 +20144,7 @@
           ],
           "play": 712,
           "win": 380,
-          "pick_rate": 0.396
+          "pick_rate": 0.3947
         },
         {
           "order": [
@@ -20164,9 +20164,9 @@
             "W",
             "W"
           ],
-          "play": 367,
+          "play": 368,
           "win": 190,
-          "pick_rate": 0.2041
+          "pick_rate": 0.204
         },
         {
           "order": [
@@ -20186,9 +20186,9 @@
             "W",
             "W"
           ],
-          "play": 171,
-          "win": 86,
-          "pick_rate": 0.0951
+          "play": 173,
+          "win": 87,
+          "pick_rate": 0.0959
         },
         {
           "order": [
@@ -20210,7 +20210,7 @@
           ],
           "play": 55,
           "win": 25,
-          "pick_rate": 0.0306
+          "pick_rate": 0.0305
         },
         {
           "order": [
@@ -20232,7 +20232,7 @@
           ],
           "play": 35,
           "win": 18,
-          "pick_rate": 0.0195
+          "pick_rate": 0.0194
         }
       ]
     },
@@ -20244,7 +20244,7 @@
       ],
       "play": 693,
       "win": 398,
-      "pick_rate": 0.0294,
+      "pick_rate": 0.0293,
       "builds": [
         {
           "order": [
@@ -20486,7 +20486,7 @@
         "E",
         "Q"
       ],
-      "play": 40,
+      "play": 41,
       "win": 20,
       "pick_rate": 0.0017,
       "builds": [
@@ -20510,7 +20510,7 @@
           ],
           "play": 7,
           "win": 2,
-          "pick_rate": 0.175
+          "pick_rate": 0.1707
         },
         {
           "order": [
@@ -20532,7 +20532,7 @@
           ],
           "play": 3,
           "win": 1,
-          "pick_rate": 0.075
+          "pick_rate": 0.0732
         },
         {
           "order": [
@@ -20554,7 +20554,7 @@
           ],
           "play": 3,
           "win": 2,
-          "pick_rate": 0.075
+          "pick_rate": 0.0732
         },
         {
           "order": [
@@ -20576,29 +20576,29 @@
           ],
           "play": 2,
           "win": 2,
-          "pick_rate": 0.05
+          "pick_rate": 0.0488
         },
         {
           "order": [
             "W",
             "E",
             "Q",
-            "E",
-            "E",
-            "R",
-            "W",
-            "W",
             "W",
             "W",
             "R",
-            "E",
+            "W",
             "Q",
+            "W",
+            "E",
+            "R",
+            "E",
+            "E",
             "E",
             "Q"
           ],
-          "play": 1,
-          "win": 1,
-          "pick_rate": 0.025
+          "play": 2,
+          "win": 0,
+          "pick_rate": 0.0488
         }
       ]
     }
@@ -20624,9 +20624,9 @@
         5008,
         5001
       ],
-      "play": 9562,
-      "win": 4765,
-      "pick_rate": 0.2782
+      "play": 9588,
+      "win": 4778,
+      "pick_rate": 0.278
     },
     {
       "id": 8437,
@@ -20647,8 +20647,8 @@
         5008,
         5001
       ],
-      "play": 3311,
-      "win": 1564,
+      "play": 3321,
+      "win": 1568,
       "pick_rate": 0.0963
     },
     {
@@ -20670,8 +20670,8 @@
         5008,
         5001
       ],
-      "play": 1974,
-      "win": 880,
+      "play": 1980,
+      "win": 881,
       "pick_rate": 0.0574
     },
     {
@@ -20693,8 +20693,8 @@
         5008,
         5001
       ],
-      "play": 980,
-      "win": 494,
+      "play": 982,
+      "win": 495,
       "pick_rate": 0.0285
     },
     {
@@ -20716,7 +20716,7 @@
         5008,
         5001
       ],
-      "play": 602,
+      "play": 605,
       "win": 320,
       "pick_rate": 0.0175
     }
@@ -20726,9 +20726,9 @@
       "id": 8437,
       "primary_page_id": 8400,
       "secondary_page_id": 8300,
-      "play": 21134,
-      "win": 10732,
-      "pick_rate": 0.615,
+      "play": 21199,
+      "win": 10759,
+      "pick_rate": 0.6147,
       "builds": [
         {
           "id": 8437,
@@ -20749,9 +20749,9 @@
             5008,
             5001
           ],
-          "play": 9562,
-          "win": 4765,
-          "pick_rate": 0.4524
+          "play": 9588,
+          "win": 4778,
+          "pick_rate": 0.4523
         },
         {
           "id": 8437,
@@ -20772,9 +20772,9 @@
             5008,
             5001
           ],
-          "play": 980,
-          "win": 494,
-          "pick_rate": 0.0464
+          "play": 982,
+          "win": 495,
+          "pick_rate": 0.0463
         },
         {
           "id": 8437,
@@ -20795,7 +20795,7 @@
             5008,
             5001
           ],
-          "play": 602,
+          "play": 605,
           "win": 320,
           "pick_rate": 0.0285
         },
@@ -20818,8 +20818,8 @@
             5008,
             5001
           ],
-          "play": 403,
-          "win": 207,
+          "play": 404,
+          "win": 208,
           "pick_rate": 0.0191
         },
         {
@@ -20851,8 +20851,8 @@
       "id": 8437,
       "primary_page_id": 8400,
       "secondary_page_id": 8000,
-      "play": 6154,
-      "win": 2995,
+      "play": 6176,
+      "win": 3002,
       "pick_rate": 0.1791,
       "builds": [
         {
@@ -20874,9 +20874,9 @@
             5008,
             5001
           ],
-          "play": 3311,
-          "win": 1564,
-          "pick_rate": 0.538
+          "play": 3321,
+          "win": 1568,
+          "pick_rate": 0.5377
         },
         {
           "id": 8437,
@@ -20945,7 +20945,7 @@
           ],
           "play": 70,
           "win": 40,
-          "pick_rate": 0.0114
+          "pick_rate": 0.0113
         },
         {
           "id": 8437,
@@ -20976,9 +20976,9 @@
       "id": 8230,
       "primary_page_id": 8200,
       "secondary_page_id": 8400,
-      "play": 3413,
-      "win": 1545,
-      "pick_rate": 0.0993,
+      "play": 3430,
+      "win": 1551,
+      "pick_rate": 0.0995,
       "builds": [
         {
           "id": 8230,
@@ -20999,9 +20999,9 @@
             5008,
             5001
           ],
-          "play": 1974,
-          "win": 880,
-          "pick_rate": 0.5784
+          "play": 1980,
+          "win": 881,
+          "pick_rate": 0.5773
         },
         {
           "id": 8230,
@@ -21022,9 +21022,9 @@
             5008,
             5001
           ],
-          "play": 273,
+          "play": 275,
           "win": 122,
-          "pick_rate": 0.08
+          "pick_rate": 0.0802
         },
         {
           "id": 8230,
@@ -21045,9 +21045,9 @@
             5008,
             5001
           ],
-          "play": 101,
-          "win": 40,
-          "pick_rate": 0.0296
+          "play": 103,
+          "win": 41,
+          "pick_rate": 0.03
         },
         {
           "id": 8230,
@@ -21070,7 +21070,7 @@
           ],
           "play": 77,
           "win": 38,
-          "pick_rate": 0.0226
+          "pick_rate": 0.0224
         },
         {
           "id": 8230,
@@ -21093,7 +21093,7 @@
           ],
           "play": 43,
           "win": 20,
-          "pick_rate": 0.0126
+          "pick_rate": 0.0125
         }
       ]
     },
@@ -21101,8 +21101,8 @@
       "id": 8437,
       "primary_page_id": 8400,
       "secondary_page_id": 8200,
-      "play": 2102,
-      "win": 1066,
+      "play": 2112,
+      "win": 1071,
       "pick_rate": 0.0612,
       "builds": [
         {
@@ -21124,9 +21124,9 @@
             5008,
             5001
           ],
-          "play": 140,
+          "play": 141,
           "win": 76,
-          "pick_rate": 0.0666
+          "pick_rate": 0.0668
         },
         {
           "id": 8437,
@@ -21149,7 +21149,7 @@
           ],
           "play": 85,
           "win": 34,
-          "pick_rate": 0.0404
+          "pick_rate": 0.0402
         },
         {
           "id": 8437,
@@ -21172,7 +21172,7 @@
           ],
           "play": 71,
           "win": 36,
-          "pick_rate": 0.0338
+          "pick_rate": 0.0336
         },
         {
           "id": 8437,
@@ -21195,7 +21195,7 @@
           ],
           "play": 55,
           "win": 27,
-          "pick_rate": 0.0262
+          "pick_rate": 0.026
         },
         {
           "id": 8437,
@@ -21218,7 +21218,7 @@
           ],
           "play": 55,
           "win": 27,
-          "pick_rate": 0.0262
+          "pick_rate": 0.026
         }
       ]
     },
@@ -21226,8 +21226,8 @@
       "id": 8229,
       "primary_page_id": 8200,
       "secondary_page_id": 8400,
-      "play": 622,
-      "win": 309,
+      "play": 623,
+      "win": 310,
       "pick_rate": 0.0181,
       "builds": [
         {
@@ -21251,7 +21251,7 @@
           ],
           "play": 70,
           "win": 30,
-          "pick_rate": 0.1125
+          "pick_rate": 0.1124
         },
         {
           "id": 8229,
@@ -21274,7 +21274,7 @@
           ],
           "play": 40,
           "win": 22,
-          "pick_rate": 0.0643
+          "pick_rate": 0.0642
         },
         {
           "id": 8229,
@@ -21297,7 +21297,7 @@
           ],
           "play": 25,
           "win": 12,
-          "pick_rate": 0.0402
+          "pick_rate": 0.0401
         },
         {
           "id": 8229,
@@ -21320,7 +21320,7 @@
           ],
           "play": 21,
           "win": 9,
-          "pick_rate": 0.0338
+          "pick_rate": 0.0337
         },
         {
           "id": 8229,
@@ -21355,8 +21355,8 @@
         3068,
         3075
       ],
-      "play": 769,
-      "win": 396,
+      "play": 772,
+      "win": 397,
       "pick_rate": 0.0357
     },
     {
@@ -21365,8 +21365,8 @@
         6664,
         2502
       ],
-      "play": 452,
-      "win": 260,
+      "play": 454,
+      "win": 262,
       "pick_rate": 0.021
     },
     {
@@ -21377,7 +21377,7 @@
       ],
       "play": 439,
       "win": 230,
-      "pick_rate": 0.0204
+      "pick_rate": 0.0203
     },
     {
       "ids": [
@@ -21387,7 +21387,7 @@
       ],
       "play": 418,
       "win": 235,
-      "pick_rate": 0.0194
+      "pick_rate": 0.0193
     },
     {
       "ids": [
@@ -21395,8 +21395,8 @@
         3084,
         2502
       ],
-      "play": 412,
-      "win": 249,
+      "play": 414,
+      "win": 250,
       "pick_rate": 0.0191
     },
     {
@@ -21405,9 +21405,9 @@
         3068,
         2502
       ],
-      "play": 383,
+      "play": 384,
       "win": 217,
-      "pick_rate": 0.0178
+      "pick_rate": 0.0177
     },
     {
       "ids": [
@@ -21417,7 +21417,7 @@
       ],
       "play": 347,
       "win": 194,
-      "pick_rate": 0.0161
+      "pick_rate": 0.016
     },
     {
       "ids": [
@@ -21425,7 +21425,7 @@
         3075,
         2502
       ],
-      "play": 338,
+      "play": 339,
       "win": 194,
       "pick_rate": 0.0157
     },
@@ -21435,8 +21435,8 @@
         6664,
         3075
       ],
-      "play": 328,
-      "win": 156,
+      "play": 329,
+      "win": 157,
       "pick_rate": 0.0152
     },
     {
@@ -21445,9 +21445,9 @@
         3084,
         2502
       ],
-      "play": 319,
-      "win": 175,
-      "pick_rate": 0.0148
+      "play": 322,
+      "win": 177,
+      "pick_rate": 0.0149
     },
     {
       "ids": [
@@ -21477,7 +21477,7 @@
       ],
       "play": 273,
       "win": 135,
-      "pick_rate": 0.0127
+      "pick_rate": 0.0126
     },
     {
       "ids": [
@@ -21485,7 +21485,7 @@
         2502,
         6665
       ],
-      "play": 265,
+      "play": 266,
       "win": 140,
       "pick_rate": 0.0123
     },
@@ -21505,25 +21505,25 @@
       "ids": [
         3047
       ],
-      "play": 15234,
-      "win": 7488,
-      "pick_rate": 0.47
+      "play": 15280,
+      "win": 7504,
+      "pick_rate": 0.4699
     },
     {
       "ids": [
         3009
       ],
-      "play": 8659,
-      "win": 4539,
-      "pick_rate": 0.2672
+      "play": 8691,
+      "win": 4555,
+      "pick_rate": 0.2673
     },
     {
       "ids": [
         3111
       ],
-      "play": 7907,
-      "win": 4027,
-      "pick_rate": 0.244
+      "play": 7937,
+      "win": 4038,
+      "pick_rate": 0.2441
     },
     {
       "ids": [
@@ -21531,7 +21531,7 @@
       ],
       "play": 411,
       "win": 218,
-      "pick_rate": 0.0127
+      "pick_rate": 0.0126
     },
     {
       "ids": [
@@ -21548,17 +21548,17 @@
         1054,
         2003
       ],
-      "play": 26483,
-      "win": 13224,
-      "pick_rate": 0.763
+      "play": 26568,
+      "win": 13256,
+      "pick_rate": 0.7628
     },
     {
       "ids": [
         1083,
         2003
       ],
-      "play": 3353,
-      "win": 1639,
+      "play": 3363,
+      "win": 1642,
       "pick_rate": 0.0966
     },
     {
@@ -21566,15 +21566,15 @@
         1036,
         2031
       ],
-      "play": 1968,
-      "win": 909,
+      "play": 1974,
+      "win": 912,
       "pick_rate": 0.0567
     },
     {
       "ids": [
         1054
       ],
-      "play": 517,
+      "play": 520,
       "win": 273,
       "pick_rate": 0.0149
     },
@@ -21582,7 +21582,7 @@
       "ids": [
         1083
       ],
-      "play": 438,
+      "play": 439,
       "win": 225,
       "pick_rate": 0.0126
     },
@@ -21593,7 +21593,7 @@
       ],
       "play": 304,
       "win": 154,
-      "pick_rate": 0.0088
+      "pick_rate": 0.0087
     },
     {
       "ids": [
@@ -21601,9 +21601,9 @@
         2003,
         2003
       ],
-      "play": 191,
-      "win": 101,
-      "pick_rate": 0.0055
+      "play": 195,
+      "win": 104,
+      "pick_rate": 0.0056
     },
     {
       "ids": [
@@ -21611,8 +21611,8 @@
         1054,
         2003
       ],
-      "play": 143,
-      "win": 78,
+      "play": 144,
+      "win": 79,
       "pick_rate": 0.0041
     },
     {
@@ -21621,8 +21621,8 @@
         1054,
         2003
       ],
-      "play": 135,
-      "win": 62,
+      "play": 137,
+      "win": 64,
       "pick_rate": 0.0039
     },
     {
@@ -21631,9 +21631,9 @@
         2003,
         2003
       ],
-      "play": 123,
+      "play": 124,
       "win": 53,
-      "pick_rate": 0.0035
+      "pick_rate": 0.0036
     },
     {
       "ids": [
@@ -21641,8 +21641,8 @@
         2003,
         3070
       ],
-      "play": 111,
-      "win": 59,
+      "play": 113,
+      "win": 60,
       "pick_rate": 0.0032
     },
     {
@@ -21651,8 +21651,8 @@
         2003,
         2003
       ],
-      "play": 110,
-      "win": 65,
+      "play": 111,
+      "win": 66,
       "pick_rate": 0.0032
     },
     {
@@ -21689,111 +21689,111 @@
       "ids": [
         3084
       ],
-      "play": 14879,
-      "win": 7463,
-      "pick_rate": 0.1396
+      "play": 14940,
+      "win": 7489,
+      "pick_rate": 0.1397
     },
     {
       "ids": [
         3068
       ],
-      "play": 13819,
-      "win": 7059,
+      "play": 13866,
+      "win": 7080,
       "pick_rate": 0.1297
     },
     {
       "ids": [
         2502
       ],
-      "play": 11416,
-      "win": 6421,
+      "play": 11452,
+      "win": 6435,
       "pick_rate": 0.1071
     },
     {
       "ids": [
         3075
       ],
-      "play": 9998,
-      "win": 5212,
+      "play": 10028,
+      "win": 5226,
       "pick_rate": 0.0938
     },
     {
       "ids": [
         6664
       ],
-      "play": 8341,
-      "win": 4346,
+      "play": 8371,
+      "win": 4359,
       "pick_rate": 0.0783
     },
     {
       "ids": [
         3748
       ],
-      "play": 6987,
-      "win": 3741,
-      "pick_rate": 0.0656
+      "play": 7005,
+      "win": 3749,
+      "pick_rate": 0.0655
     },
     {
       "ids": [
         3076
       ],
-      "play": 4858,
-      "win": 2187,
+      "play": 4880,
+      "win": 2193,
       "pick_rate": 0.0456
     },
     {
       "ids": [
         2501
       ],
-      "play": 3858,
-      "win": 2167,
+      "play": 3872,
+      "win": 2173,
       "pick_rate": 0.0362
     },
     {
       "ids": [
         3181
       ],
-      "play": 3600,
-      "win": 1913,
+      "play": 3613,
+      "win": 1920,
       "pick_rate": 0.0338
     },
     {
       "ids": [
         6665
       ],
-      "play": 3498,
-      "win": 1872,
+      "play": 3507,
+      "win": 1876,
       "pick_rate": 0.0328
     },
     {
       "ids": [
         2504
       ],
-      "play": 3372,
-      "win": 1740,
+      "play": 3384,
+      "win": 1745,
       "pick_rate": 0.0316
     },
     {
       "ids": [
         3142
       ],
-      "play": 2558,
-      "win": 1173,
+      "play": 2567,
+      "win": 1174,
       "pick_rate": 0.024
     },
     {
       "ids": [
         3065
       ],
-      "play": 2096,
-      "win": 1178,
+      "play": 2105,
+      "win": 1181,
       "pick_rate": 0.0197
     },
     {
       "ids": [
         6696
       ],
-      "play": 1741,
+      "play": 1743,
       "win": 864,
       "pick_rate": 0.0163
     },
@@ -21801,63 +21801,63 @@
       "ids": [
         3110
       ],
-      "play": 1362,
-      "win": 733,
+      "play": 1365,
+      "win": 735,
       "pick_rate": 0.0128
     },
     {
       "ids": [
         3143
       ],
-      "play": 1352,
-      "win": 669,
+      "play": 1354,
+      "win": 670,
       "pick_rate": 0.0127
     },
     {
       "ids": [
         3077
       ],
-      "play": 1332,
-      "win": 661,
+      "play": 1334,
+      "win": 662,
       "pick_rate": 0.0125
     },
     {
       "ids": [
         6701
       ],
-      "play": 1269,
-      "win": 648,
+      "play": 1270,
+      "win": 649,
       "pick_rate": 0.0119
     },
     {
       "ids": [
         3053
       ],
-      "play": 840,
-      "win": 469,
+      "play": 846,
+      "win": 471,
       "pick_rate": 0.0079
     },
     {
       "ids": [
         4401
       ],
-      "play": 797,
-      "win": 406,
+      "play": 800,
+      "win": 407,
       "pick_rate": 0.0075
     },
     {
       "ids": [
         6676
       ],
-      "play": 743,
-      "win": 365,
+      "play": 746,
+      "win": 366,
       "pick_rate": 0.007
     },
     {
       "ids": [
         3134
       ],
-      "play": 631,
+      "play": 634,
       "win": 275,
       "pick_rate": 0.0059
     },
@@ -21865,7 +21865,7 @@
       "ids": [
         3036
       ],
-      "play": 584,
+      "play": 586,
       "win": 306,
       "pick_rate": 0.0055
     },
@@ -21873,7 +21873,7 @@
       "ids": [
         3083
       ],
-      "play": 550,
+      "play": 551,
       "win": 301,
       "pick_rate": 0.0052
     },
@@ -21881,7 +21881,7 @@
       "ids": [
         3123
       ],
-      "play": 528,
+      "play": 533,
       "win": 279,
       "pick_rate": 0.005
     },
@@ -21897,23 +21897,23 @@
       "ids": [
         8020
       ],
-      "play": 465,
-      "win": 249,
+      "play": 466,
+      "win": 250,
       "pick_rate": 0.0044
     },
     {
       "ids": [
         3121
       ],
-      "play": 465,
-      "win": 256,
+      "play": 469,
+      "win": 257,
       "pick_rate": 0.0044
     },
     {
       "ids": [
         6692
       ],
-      "play": 458,
+      "play": 460,
       "win": 227,
       "pick_rate": 0.0043
     },
@@ -21921,7 +21921,7 @@
       "ids": [
         3033
       ],
-      "play": 401,
+      "play": 402,
       "win": 203,
       "pick_rate": 0.0038
     }
