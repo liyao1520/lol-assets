@@ -310,7 +310,15 @@
               "cost": 1350
             }
           ],
-          "sales": null,
+          "sales": [
+            {
+              "currency": "RP",
+              "cost": 607,
+              "discount_rate": 0.55,
+              "started_at": "2024-10-28T08:00:00+09:00",
+              "ended_at": "2024-11-04T08:00:00+09:00"
+            }
+          ],
           "release_date": "2021-10-21T04:00:00+09:00"
         },
         {
@@ -350,11 +358,11 @@
       "is_rotation": false,
       "is_rip": false,
       "average_stats": {
-        "play": 156269,
-        "win_rate": 0.48597,
-        "pick_rate": 0.245502,
-        "ban_rate": 0.117416,
-        "kda": 2.504471,
+        "play": 157638,
+        "win_rate": 0.486101,
+        "pick_rate": 0.245189,
+        "ban_rate": 0.117202,
+        "kda": 2.504651,
         "tier": 2,
         "rank": 25,
         "tier_data": {
@@ -368,12 +376,12 @@
         {
           "name": "ADC",
           "stats": {
-            "play": 151264,
-            "win_rate": 0.487353,
-            "pick_rate": 0.234738,
-            "role_rate": 0.967972,
-            "ban_rate": 0.113656,
-            "kda": 2.522204,
+            "play": 152588,
+            "win_rate": 0.487509,
+            "pick_rate": 0.234439,
+            "role_rate": 0.967965,
+            "ban_rate": 0.113447,
+            "kda": 2.522404,
             "tier_data": {
               "tier": 2,
               "rank": 10,
@@ -385,37 +393,37 @@
             {
               "name": "MARKSMAN",
               "stats": {
-                "win_rate": 0.451067,
-                "role_rate": 0.656218,
-                "play": 99289,
-                "win": 44786
+                "win_rate": 0.450987,
+                "role_rate": 0.656126,
+                "play": 100136,
+                "win": 45160
               }
             },
             {
               "name": "MAGE",
               "stats": {
-                "win_rate": 0.561,
-                "role_rate": 0.337233,
-                "play": 51025,
-                "win": 28625
+                "win_rate": 0.561467,
+                "role_rate": 0.337335,
+                "play": 51483,
+                "win": 28906
               }
             }
           ],
           "counters": [
             {
               "champion_id": 96,
-              "play": 2612,
-              "win": 1176
+              "play": 2640,
+              "win": 1190
+            },
+            {
+              "champion_id": 45,
+              "play": 418,
+              "win": 191
             },
             {
               "champion_id": 21,
-              "play": 2765,
-              "win": 1272
-            },
-            {
-              "champion_id": 42,
-              "play": 6305,
-              "win": 2905
+              "play": 2787,
+              "win": 1288
             }
           ]
         }
@@ -426,8 +434,8 @@
       [
         {
           "champion_id": 96,
-          "play": 2612,
-          "win": 1176,
+          "play": 2640,
+          "win": 1190,
           "meta": {
             "id": 96,
             "key": "KogMaw",
@@ -765,12 +773,392 @@
               }
             ]
           },
-          "win_rate": 45.02
+          "win_rate": 45.08
+        },
+        {
+          "champion_id": 45,
+          "play": 418,
+          "win": 191,
+          "meta": {
+            "id": 45,
+            "key": "Veigar",
+            "name": "邪恶小法师",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Veigar.png",
+            "evolve": [],
+            "title": "维迦",
+            "partype": "法力",
+            "passive": {
+              "name": "超凡邪力",
+              "description": "维迦是最强大的恶魔，甚至能对符文之地之心发起攻击——并且他只会越来越强大！用技能攻击一名敌人、击杀单位或拆毁防御塔都会为维迦永久提升法术强度加成。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/VeigarEntropy.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0045/ability_0045_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "黑暗祭祀",
+                "description": "维迦释放一束黑暗能量，对最先被命中的两个敌人造成魔法伤害。被这个能量束所击杀的单位，会永久地为维迦提供一些法术强度。",
+                "max_rank": 5,
+                "range_burn": [
+                  1000
+                ],
+                "cooldown_burn": [
+                  6,
+                  5,
+                  5,
+                  4,
+                  4
+                ],
+                "cooldown_burn_float": [
+                  6,
+                  5.5,
+                  5,
+                  4.5,
+                  4
+                ],
+                "cost_burn": [
+                  30,
+                  35,
+                  40,
+                  45,
+                  50
+                ],
+                "tooltip": "维迦释放一束黑暗能量，对命中的头2个敌人造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />用此技能击杀一个单位，还会为维迦提供?层<keywordMajor>超凡邪恶</keywordMajor>效果。大型小兵和大型野怪会提供?层作为替代。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VeigarBalefulStrike.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0045/ability_0045_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "黑暗物质",
+                "description": "维迦召唤一大团黑暗物质轰击目标区域，落地造成魔法伤害。【超凡邪力】的层数会缩短这个技能的冷却时间。",
+                "max_rank": 5,
+                "range_burn": [
+                  950
+                ],
+                "cooldown_burn": [
+                  0
+                ],
+                "cooldown_burn_float": [
+                  0
+                ],
+                "cost_burn": [
+                  60,
+                  65,
+                  70,
+                  75,
+                  80
+                ],
+                "tooltip": "维迦召唤黑暗物质将从天而降，造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />每?层<keywordMajor>超凡邪力</keywordMajor>会使这个技能的冷却时间减少?%。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VeigarDarkMatter.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0045/ability_0045_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "扭曲空间",
+                "description": "维迦扭曲空间的边缘，创造一个牢笼来使途径的敌人晕眩。",
+                "max_rank": 5,
+                "range_burn": [
+                  725
+                ],
+                "cooldown_burn": [
+                  20,
+                  18,
+                  17,
+                  15,
+                  14
+                ],
+                "cooldown_burn_float": [
+                  20,
+                  18.5,
+                  17,
+                  15.5,
+                  14
+                ],
+                "cost_burn": [
+                  70,
+                  75,
+                  80,
+                  85,
+                  90
+                ],
+                "tooltip": "维迦扭曲空间的边缘，创造一个牢笼来使途径的敌人<status>晕眩</status>1.5/1.75/2/2.25/2.5秒。牢笼持续3秒。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VeigarEventHorizon.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0045/ability_0045_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "能量爆裂",
+                "description": "引爆目标敌方英雄，造成大量魔法伤害，并基于目标已损失生命值提升伤害。",
+                "max_rank": 3,
+                "range_burn": [
+                  650
+                ],
+                "cooldown_burn": [
+                  100,
+                  80,
+                  60
+                ],
+                "cooldown_burn_float": [
+                  100,
+                  80,
+                  60
+                ],
+                "cost_burn": [
+                  100
+                ],
+                "tooltip": "维迦用源力魔法引爆目标一名敌方英雄，造成<magicDamage>?到?魔法伤害</magicDamage>，伤害提升幅度基于目标的已损失生命值。目标生命值在33%以下即可造成最大伤害。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VeigarR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0045/ability_0045_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 45000,
+                "champion_id": 45,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 1350
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 585
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 45002,
+                "champion_id": 45,
+                "name": "冰壶选手 维迦",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_2.jpg",
+                "skin_video_url": "https://youtu.be/UMtvx9e3fgk",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 520
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 45032,
+                "champion_id": 45,
+                "name": "宇航员 维迦",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_32.jpg",
+                "skin_video_url": "https://youtu.be/i3bEiNVGzIk",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-07-01T04:00:00+09:00"
+              },
+              {
+                "id": 45041,
+                "champion_id": 45,
+                "name": "小怪兽训练师 维迦",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_41.jpg",
+                "skin_video_url": "https://youtu.be/Gzc59gi8jxc",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2022-08-11T04:00:00+09:00"
+              },
+              {
+                "id": 45023,
+                "champion_id": 45,
+                "name": "我，怒角 维迦",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_23.jpg",
+                "skin_video_url": "https://youtu.be/1VHQVQ2isfM",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-04-01T04:00:00+09:00"
+              },
+              {
+                "id": 45008,
+                "champion_id": 45,
+                "name": "最终BOSS 维迦",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_8.jpg",
+                "skin_video_url": "https://youtu.be/QyipOk68SqM",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1820
+                  }
+                ],
+                "sales": null,
+                "release_date": "2014-08-26T08:00:00+09:00"
+              },
+              {
+                "id": 45009,
+                "champion_id": 45,
+                "name": "欧米伽小队 天雷爆破手",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_9.jpg",
+                "skin_video_url": "https://youtu.be/ROZ6_UFFabQ",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2017-07-27T02:00:00+09:00"
+              },
+              {
+                "id": 45013,
+                "champion_id": 45,
+                "name": "永恒之森 维迦",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_13.jpg",
+                "skin_video_url": "https://youtu.be/jWKzGCGdVSs",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2019-08-29T02:00:00+09:00"
+              },
+              {
+                "id": 45003,
+                "champion_id": 45,
+                "name": "灰胡子魔法师 维迦",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_3.jpg",
+                "skin_video_url": "https://youtu.be/JK8v8u4Lh4Y",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2010-07-12T15:00:00+09:00"
+              },
+              {
+                "id": 45001,
+                "champion_id": 45,
+                "name": "白魔法师 维迦",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_1.jpg",
+                "skin_video_url": "https://youtu.be/aLXa0f2AbLk",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 390
+                  }
+                ],
+                "sales": null,
+                "release_date": "2010-07-12T15:00:00+09:00"
+              },
+              {
+                "id": 45006,
+                "champion_id": 45,
+                "name": "穿着正装的恶魔 维迦",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_6.jpg",
+                "skin_video_url": "https://youtu.be/Vzm6Htn8rdk",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2012-01-01T17:00:00+09:00"
+              },
+              {
+                "id": 45004,
+                "champion_id": 45,
+                "name": "绿野仙踪 维迦",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_4.jpg",
+                "skin_video_url": "https://youtu.be/qNOI2TpoMFs",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 520
+                  }
+                ],
+                "sales": null,
+                "release_date": "2011-03-14T20:00:00+09:00"
+              },
+              {
+                "id": 45051,
+                "champion_id": 45,
+                "name": "蜂大王 维迦",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_51.jpg",
+                "skin_video_url": "https://youtu.be/YiRarB9dIO8",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2023-11-21T12:00:00+09:00"
+              },
+              {
+                "id": 45007,
+                "champion_id": 45,
+                "name": "邪恶圣诞老人 维迦",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_7.jpg",
+                "skin_video_url": "https://youtu.be/m7-w-fI6Ng4",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 45060,
+                "champion_id": 45,
+                "name": "魔域梦魇 维迦",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_60.jpg",
+                "skin_video_url": "https://youtu.be/PogUDH8oyJM",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1820
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-09-25T09:00:00+09:00"
+              },
+              {
+                "id": 45005,
+                "champion_id": 45,
+                "name": "魔导绅士 维迦",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_5.jpg",
+                "skin_video_url": "https://youtu.be/zq6ZY5zaJIY",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              }
+            ]
+          },
+          "win_rate": 45.69
         },
         {
           "champion_id": 21,
-          "play": 2765,
-          "win": 1272,
+          "play": 2787,
+          "win": 1288,
           "meta": {
             "id": 21,
             "key": "MissFortune",
@@ -1221,12 +1609,12 @@
               }
             ]
           },
-          "win_rate": 46
+          "win_rate": 46.21
         },
         {
           "champion_id": 42,
-          "play": 6305,
-          "win": 2905,
+          "play": 6379,
+          "win": 2948,
           "meta": {
             "id": 42,
             "key": "Corki",
@@ -1512,392 +1900,12 @@
               }
             ]
           },
-          "win_rate": 46.07
-        },
-        {
-          "champion_id": 45,
-          "play": 411,
-          "win": 190,
-          "meta": {
-            "id": 45,
-            "key": "Veigar",
-            "name": "邪恶小法师",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Veigar.png",
-            "evolve": [],
-            "title": "维迦",
-            "partype": "法力",
-            "passive": {
-              "name": "超凡邪力",
-              "description": "维迦是最强大的恶魔，甚至能对符文之地之心发起攻击——并且他只会越来越强大！用技能攻击一名敌人、击杀单位或拆毁防御塔都会为维迦永久提升法术强度加成。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/VeigarEntropy.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0045/ability_0045_P1.webm"
-            },
-            "spells": [
-              {
-                "key": "Q",
-                "name": "黑暗祭祀",
-                "description": "维迦释放一束黑暗能量，对最先被命中的两个敌人造成魔法伤害。被这个能量束所击杀的单位，会永久地为维迦提供一些法术强度。",
-                "max_rank": 5,
-                "range_burn": [
-                  1000
-                ],
-                "cooldown_burn": [
-                  6,
-                  5,
-                  5,
-                  4,
-                  4
-                ],
-                "cooldown_burn_float": [
-                  6,
-                  5.5,
-                  5,
-                  4.5,
-                  4
-                ],
-                "cost_burn": [
-                  30,
-                  35,
-                  40,
-                  45,
-                  50
-                ],
-                "tooltip": "维迦释放一束黑暗能量，对命中的头2个敌人造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />用此技能击杀一个单位，还会为维迦提供?层<keywordMajor>超凡邪恶</keywordMajor>效果。大型小兵和大型野怪会提供?层作为替代。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VeigarBalefulStrike.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0045/ability_0045_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "黑暗物质",
-                "description": "维迦召唤一大团黑暗物质轰击目标区域，落地造成魔法伤害。【超凡邪力】的层数会缩短这个技能的冷却时间。",
-                "max_rank": 5,
-                "range_burn": [
-                  950
-                ],
-                "cooldown_burn": [
-                  0
-                ],
-                "cooldown_burn_float": [
-                  0
-                ],
-                "cost_burn": [
-                  60,
-                  65,
-                  70,
-                  75,
-                  80
-                ],
-                "tooltip": "维迦召唤黑暗物质将从天而降，造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />每?层<keywordMajor>超凡邪力</keywordMajor>会使这个技能的冷却时间减少?%。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VeigarDarkMatter.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0045/ability_0045_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "扭曲空间",
-                "description": "维迦扭曲空间的边缘，创造一个牢笼来使途径的敌人晕眩。",
-                "max_rank": 5,
-                "range_burn": [
-                  725
-                ],
-                "cooldown_burn": [
-                  20,
-                  18,
-                  17,
-                  15,
-                  14
-                ],
-                "cooldown_burn_float": [
-                  20,
-                  18.5,
-                  17,
-                  15.5,
-                  14
-                ],
-                "cost_burn": [
-                  70,
-                  75,
-                  80,
-                  85,
-                  90
-                ],
-                "tooltip": "维迦扭曲空间的边缘，创造一个牢笼来使途径的敌人<status>晕眩</status>1.5/1.75/2/2.25/2.5秒。牢笼持续3秒。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VeigarEventHorizon.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0045/ability_0045_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "能量爆裂",
-                "description": "引爆目标敌方英雄，造成大量魔法伤害，并基于目标已损失生命值提升伤害。",
-                "max_rank": 3,
-                "range_burn": [
-                  650
-                ],
-                "cooldown_burn": [
-                  100,
-                  80,
-                  60
-                ],
-                "cooldown_burn_float": [
-                  100,
-                  80,
-                  60
-                ],
-                "cost_burn": [
-                  100
-                ],
-                "tooltip": "维迦用源力魔法引爆目标一名敌方英雄，造成<magicDamage>?到?魔法伤害</magicDamage>，伤害提升幅度基于目标的已损失生命值。目标生命值在33%以下即可造成最大伤害。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VeigarR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0045/ability_0045_R1.webm"
-              }
-            ],
-            "skins": [
-              {
-                "id": 45000,
-                "champion_id": 45,
-                "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_0.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "IP",
-                    "cost": 1350
-                  },
-                  {
-                    "currency": "RP",
-                    "cost": 585
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 45002,
-                "champion_id": 45,
-                "name": "冰壶选手 维迦",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_2.jpg",
-                "skin_video_url": "https://youtu.be/UMtvx9e3fgk",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 520
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 45032,
-                "champion_id": 45,
-                "name": "宇航员 维迦",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_32.jpg",
-                "skin_video_url": "https://youtu.be/i3bEiNVGzIk",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2021-07-01T04:00:00+09:00"
-              },
-              {
-                "id": 45041,
-                "champion_id": 45,
-                "name": "小怪兽训练师 维迦",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_41.jpg",
-                "skin_video_url": "https://youtu.be/Gzc59gi8jxc",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2022-08-11T04:00:00+09:00"
-              },
-              {
-                "id": 45023,
-                "champion_id": 45,
-                "name": "我，怒角 维迦",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_23.jpg",
-                "skin_video_url": "https://youtu.be/1VHQVQ2isfM",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2020-04-01T04:00:00+09:00"
-              },
-              {
-                "id": 45008,
-                "champion_id": 45,
-                "name": "最终BOSS 维迦",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_8.jpg",
-                "skin_video_url": "https://youtu.be/QyipOk68SqM",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1820
-                  }
-                ],
-                "sales": null,
-                "release_date": "2014-08-26T08:00:00+09:00"
-              },
-              {
-                "id": 45009,
-                "champion_id": 45,
-                "name": "欧米伽小队 天雷爆破手",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_9.jpg",
-                "skin_video_url": "https://youtu.be/ROZ6_UFFabQ",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2017-07-27T02:00:00+09:00"
-              },
-              {
-                "id": 45013,
-                "champion_id": 45,
-                "name": "永恒之森 维迦",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_13.jpg",
-                "skin_video_url": "https://youtu.be/jWKzGCGdVSs",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2019-08-29T02:00:00+09:00"
-              },
-              {
-                "id": 45003,
-                "champion_id": 45,
-                "name": "灰胡子魔法师 维迦",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_3.jpg",
-                "skin_video_url": "https://youtu.be/JK8v8u4Lh4Y",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 750
-                  }
-                ],
-                "sales": null,
-                "release_date": "2010-07-12T15:00:00+09:00"
-              },
-              {
-                "id": 45001,
-                "champion_id": 45,
-                "name": "白魔法师 维迦",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_1.jpg",
-                "skin_video_url": "https://youtu.be/aLXa0f2AbLk",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 390
-                  }
-                ],
-                "sales": null,
-                "release_date": "2010-07-12T15:00:00+09:00"
-              },
-              {
-                "id": 45006,
-                "champion_id": 45,
-                "name": "穿着正装的恶魔 维迦",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_6.jpg",
-                "skin_video_url": "https://youtu.be/Vzm6Htn8rdk",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2012-01-01T17:00:00+09:00"
-              },
-              {
-                "id": 45004,
-                "champion_id": 45,
-                "name": "绿野仙踪 维迦",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_4.jpg",
-                "skin_video_url": "https://youtu.be/qNOI2TpoMFs",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 520
-                  }
-                ],
-                "sales": null,
-                "release_date": "2011-03-14T20:00:00+09:00"
-              },
-              {
-                "id": 45051,
-                "champion_id": 45,
-                "name": "蜂大王 维迦",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_51.jpg",
-                "skin_video_url": "https://youtu.be/YiRarB9dIO8",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2023-11-21T12:00:00+09:00"
-              },
-              {
-                "id": 45007,
-                "champion_id": 45,
-                "name": "邪恶圣诞老人 维迦",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_7.jpg",
-                "skin_video_url": "https://youtu.be/m7-w-fI6Ng4",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 45060,
-                "champion_id": 45,
-                "name": "魔域梦魇 维迦",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_60.jpg",
-                "skin_video_url": "https://youtu.be/PogUDH8oyJM",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1820
-                  }
-                ],
-                "sales": null,
-                "release_date": "2024-09-25T09:00:00+09:00"
-              },
-              {
-                "id": 45005,
-                "champion_id": 45,
-                "name": "魔导绅士 维迦",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Veigar_5.jpg",
-                "skin_video_url": "https://youtu.be/zq6ZY5zaJIY",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              }
-            ]
-          },
-          "win_rate": 46.23
+          "win_rate": 46.21
         },
         {
           "champion_id": 895,
-          "play": 1841,
-          "win": 852,
+          "play": 1851,
+          "win": 857,
           "meta": {
             "id": 895,
             "key": "Nilah",
@@ -2066,14 +2074,14 @@
               }
             ]
           },
-          "win_rate": 46.28
+          "win_rate": 46.3
         }
       ],
       [
         {
           "champion_id": 29,
-          "play": 1610,
-          "win": 842,
+          "play": 1624,
+          "win": 853,
           "meta": {
             "id": 29,
             "key": "Twitch",
@@ -2396,12 +2404,12 @@
               }
             ]
           },
-          "win_rate": 52.3
+          "win_rate": 52.52
         },
         {
           "champion_id": 81,
-          "play": 13962,
-          "win": 7164,
+          "play": 14099,
+          "win": 7235,
           "meta": {
             "id": 81,
             "key": "Ezreal",
@@ -2823,12 +2831,12 @@
               }
             ]
           },
-          "win_rate": 51.31
+          "win_rate": 51.32
         },
         {
           "champion_id": 901,
-          "play": 2541,
-          "win": 1302,
+          "play": 2560,
+          "win": 1308,
           "meta": {
             "id": 901,
             "key": "Smolder",
@@ -2989,228 +2997,25 @@
                     "cost": 1350
                   }
                 ],
-                "sales": null,
+                "sales": [
+                  {
+                    "currency": "RP",
+                    "cost": 877,
+                    "discount_rate": 0.35,
+                    "started_at": "2024-10-28T08:00:00+09:00",
+                    "ended_at": "2024-11-04T08:00:00+09:00"
+                  }
+                ],
                 "release_date": "2024-01-31T10:00:00+09:00"
               }
             ]
           },
-          "win_rate": 51.24
-        },
-        {
-          "champion_id": 429,
-          "play": 2381,
-          "win": 1214,
-          "meta": {
-            "id": 429,
-            "key": "Kalista",
-            "name": "复仇之矛",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Kalista.png",
-            "evolve": [],
-            "title": "卡莉丝塔",
-            "partype": "法力",
-            "passive": {
-              "name": "武术姿态",
-              "description": "如果卡莉丝塔在进行普攻或穿刺的同时被下达了移动指令，那么她会在发起进攻的同时朝着这个移动指令的方向位移小段距离。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Kalista_Passive.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0429/ability_0429_P1.webm"
-            },
-            "spells": [
-              {
-                "key": "Q",
-                "name": "穿刺",
-                "description": "扔出一个快速移动的长矛。长矛在击杀敌人后会继续飞行。",
-                "max_rank": 5,
-                "range_burn": [
-                  1150
-                ],
-                "cooldown_burn": [
-                  8
-                ],
-                "cooldown_burn_float": [
-                  8
-                ],
-                "cost_burn": [
-                  50,
-                  55,
-                  60,
-                  65,
-                  70
-                ],
-                "tooltip": "卡莉丝塔掷出一支长矛，对命中的第一个目标造成<physicalDamage>?物理伤害</physicalDamage>。如果这个技能击杀了目标，那么长矛会继续前行，将<spellName>撕裂</spellName>的层数带给命中的下一个目标。<br /><br />卡莉丝塔可以在使用这个技能后使用<spellName>武术姿态</spellName>的冲刺。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/KalistaMysticShot.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0429/ability_0429_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "哨兵",
-                "description": "在卡莉丝塔与誓约者一起攻击相同目标时提供额外伤害。<br><br>激活此技能可以派出一个灵魂来侦查道路，将它面前的区域显示在玩家的视野内。",
-                "max_rank": 5,
-                "range_burn": [
-                  5000
-                ],
-                "cooldown_burn": [
-                  30
-                ],
-                "cooldown_burn_float": [
-                  30
-                ],
-                "cost_burn": [
-                  0
-                ],
-                "tooltip": "<spellPassive>被动：</spellPassive>当卡莉丝塔和她的<keywordMajor>誓约者</keywordMajor>都攻击相同的目标时，她会造成<magicDamage>?%最大生命值的魔法伤害</magicDamage>。这个效果对每个目标有?秒冷却时间并且对非英雄单位有?的伤害上限。<br /><br /><spellPassive>主动：</spellPassive>卡莉丝塔派出一个幽灵去巡视一个地区，持续3个来回。被发现的敌方英雄会被显形4秒。这个技能有2层充能(?秒充能时间)。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/KalistaW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0429/ability_0429_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "撕裂",
-                "description": "攻击时用长矛来刺穿目标。主动激活可以将长矛扯出，造成减速和逐步上升的伤害。",
-                "max_rank": 5,
-                "range_burn": [
-                  1000
-                ],
-                "cooldown_burn": [
-                  0
-                ],
-                "cooldown_burn_float": [
-                  0
-                ],
-                "cost_burn": [
-                  30
-                ],
-                "tooltip": "<spellPassive>被动：</spellPassive>卡莉丝塔的长矛会在目标身上存留4秒，可叠加任意次数。<br /><br /><spellActive>主动：</spellActive>卡莉丝塔从附近的敌人们身上拔出长矛，造成<physicalDamage>?</physicalDamage>外加每根后续长矛<physicalDamage>?物理伤害</physicalDamage>。对命中的敌人们造成持续?秒的<attention>?</attention><status>减速</status>。<br /><br />如果这个技能击杀了至少一个目标，那么它的冷却时间会刷新并且它会返还<scaleMana>?法力值</scaleMana>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/KalistaExpungeWrapper.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0429/ability_0429_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "命运的召唤",
-                "description": "卡莉丝塔传送一位友军到自己身边。该友军随后可以冲向一个地点，并击退命中的敌人。",
-                "max_rank": 3,
-                "range_burn": [
-                  1000
-                ],
-                "cooldown_burn": [
-                  160,
-                  140,
-                  120
-                ],
-                "cooldown_burn_float": [
-                  160,
-                  140,
-                  120
-                ],
-                "cost_burn": [
-                  100
-                ],
-                "tooltip": "卡莉丝塔将她的<keywordMajor>誓约者</keywordMajor>置入凝滞状态并将其拖拽到她的身边，至多持续4秒。<keywordMajor>誓约者</keywordMajor>可以点击来将自己投放出去，在命中第一个英雄时停止并<status>击退</status>所有附近的敌人。如果<keywordMajor>誓约者</keywordMajor>命中了一名英雄，则会被放置在与目标相距其最大攻击距离的位置。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/KalistaRx.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0429/ability_0429_R1.webm"
-              }
-            ],
-            "skins": [
-              {
-                "id": 429000,
-                "champion_id": 429,
-                "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Kalista_0.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "IP",
-                    "cost": 4800
-                  },
-                  {
-                    "currency": "RP",
-                    "cost": 880
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 429003,
-                "champion_id": 429,
-                "name": "SKT T1 卡莉丝塔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Kalista_3.jpg",
-                "skin_video_url": "https://youtu.be/8_RScNxp960",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2024-09-25T08:59:00+09:00"
-              },
-              {
-                "id": 429002,
-                "champion_id": 429,
-                "name": "冠军之矛 卡莉丝塔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Kalista_2.jpg",
-                "skin_video_url": "https://youtu.be/1oaay0uM8qU",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2024-09-25T08:59:00+09:00"
-              },
-              {
-                "id": 429001,
-                "champion_id": 429,
-                "name": "腥红之月 卡莉丝塔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Kalista_1.jpg",
-                "skin_video_url": "https://youtu.be/A5YwPiQ0fLg",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2014-11-23T08:00:00+09:00"
-              },
-              {
-                "id": 429014,
-                "champion_id": 429,
-                "name": "花仙骑士 卡莉丝塔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Kalista_14.jpg",
-                "skin_video_url": "https://youtu.be/wc4TKnjtu-s",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2023-03-23T04:00:00+09:00"
-              },
-              {
-                "id": 429005,
-                "champion_id": 429,
-                "name": "黑暗骑士 卡莉丝塔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Kalista_5.jpg",
-                "skin_video_url": "https://youtu.be/KIuoyFb6-og",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2021-01-07T04:00:00+09:00"
-              }
-            ]
-          },
-          "win_rate": 50.99
+          "win_rate": 51.09
         },
         {
           "champion_id": 63,
-          "play": 411,
-          "win": 209,
+          "play": 415,
+          "win": 212,
           "meta": {
             "id": 63,
             "key": "Brand",
@@ -3539,15 +3344,226 @@
               }
             ]
           },
-          "win_rate": 50.85
+          "win_rate": 51.08
+        },
+        {
+          "champion_id": 429,
+          "play": 2409,
+          "win": 1224,
+          "meta": {
+            "id": 429,
+            "key": "Kalista",
+            "name": "复仇之矛",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Kalista.png",
+            "evolve": [],
+            "title": "卡莉丝塔",
+            "partype": "法力",
+            "passive": {
+              "name": "武术姿态",
+              "description": "如果卡莉丝塔在进行普攻或穿刺的同时被下达了移动指令，那么她会在发起进攻的同时朝着这个移动指令的方向位移小段距离。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Kalista_Passive.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0429/ability_0429_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "穿刺",
+                "description": "扔出一个快速移动的长矛。长矛在击杀敌人后会继续飞行。",
+                "max_rank": 5,
+                "range_burn": [
+                  1150
+                ],
+                "cooldown_burn": [
+                  8
+                ],
+                "cooldown_burn_float": [
+                  8
+                ],
+                "cost_burn": [
+                  50,
+                  55,
+                  60,
+                  65,
+                  70
+                ],
+                "tooltip": "卡莉丝塔掷出一支长矛，对命中的第一个目标造成<physicalDamage>?物理伤害</physicalDamage>。如果这个技能击杀了目标，那么长矛会继续前行，将<spellName>撕裂</spellName>的层数带给命中的下一个目标。<br /><br />卡莉丝塔可以在使用这个技能后使用<spellName>武术姿态</spellName>的冲刺。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/KalistaMysticShot.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0429/ability_0429_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "哨兵",
+                "description": "在卡莉丝塔与誓约者一起攻击相同目标时提供额外伤害。<br><br>激活此技能可以派出一个灵魂来侦查道路，将它面前的区域显示在玩家的视野内。",
+                "max_rank": 5,
+                "range_burn": [
+                  5000
+                ],
+                "cooldown_burn": [
+                  30
+                ],
+                "cooldown_burn_float": [
+                  30
+                ],
+                "cost_burn": [
+                  0
+                ],
+                "tooltip": "<spellPassive>被动：</spellPassive>当卡莉丝塔和她的<keywordMajor>誓约者</keywordMajor>都攻击相同的目标时，她会造成<magicDamage>?%最大生命值的魔法伤害</magicDamage>。这个效果对每个目标有?秒冷却时间并且对非英雄单位有?的伤害上限。<br /><br /><spellPassive>主动：</spellPassive>卡莉丝塔派出一个幽灵去巡视一个地区，持续3个来回。被发现的敌方英雄会被显形4秒。这个技能有2层充能(?秒充能时间)。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/KalistaW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0429/ability_0429_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "撕裂",
+                "description": "攻击时用长矛来刺穿目标。主动激活可以将长矛扯出，造成减速和逐步上升的伤害。",
+                "max_rank": 5,
+                "range_burn": [
+                  1000
+                ],
+                "cooldown_burn": [
+                  0
+                ],
+                "cooldown_burn_float": [
+                  0
+                ],
+                "cost_burn": [
+                  30
+                ],
+                "tooltip": "<spellPassive>被动：</spellPassive>卡莉丝塔的长矛会在目标身上存留4秒，可叠加任意次数。<br /><br /><spellActive>主动：</spellActive>卡莉丝塔从附近的敌人们身上拔出长矛，造成<physicalDamage>?</physicalDamage>外加每根后续长矛<physicalDamage>?物理伤害</physicalDamage>。对命中的敌人们造成持续?秒的<attention>?</attention><status>减速</status>。<br /><br />如果这个技能击杀了至少一个目标，那么它的冷却时间会刷新并且它会返还<scaleMana>?法力值</scaleMana>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/KalistaExpungeWrapper.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0429/ability_0429_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "命运的召唤",
+                "description": "卡莉丝塔传送一位友军到自己身边。该友军随后可以冲向一个地点，并击退命中的敌人。",
+                "max_rank": 3,
+                "range_burn": [
+                  1000
+                ],
+                "cooldown_burn": [
+                  160,
+                  140,
+                  120
+                ],
+                "cooldown_burn_float": [
+                  160,
+                  140,
+                  120
+                ],
+                "cost_burn": [
+                  100
+                ],
+                "tooltip": "卡莉丝塔将她的<keywordMajor>誓约者</keywordMajor>置入凝滞状态并将其拖拽到她的身边，至多持续4秒。<keywordMajor>誓约者</keywordMajor>可以点击来将自己投放出去，在命中第一个英雄时停止并<status>击退</status>所有附近的敌人。如果<keywordMajor>誓约者</keywordMajor>命中了一名英雄，则会被放置在与目标相距其最大攻击距离的位置。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/KalistaRx.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0429/ability_0429_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 429000,
+                "champion_id": 429,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Kalista_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 4800
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 880
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 429003,
+                "champion_id": 429,
+                "name": "SKT T1 卡莉丝塔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Kalista_3.jpg",
+                "skin_video_url": "https://youtu.be/8_RScNxp960",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-09-25T08:59:00+09:00"
+              },
+              {
+                "id": 429002,
+                "champion_id": 429,
+                "name": "冠军之矛 卡莉丝塔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Kalista_2.jpg",
+                "skin_video_url": "https://youtu.be/1oaay0uM8qU",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-09-25T08:59:00+09:00"
+              },
+              {
+                "id": 429001,
+                "champion_id": 429,
+                "name": "腥红之月 卡莉丝塔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Kalista_1.jpg",
+                "skin_video_url": "https://youtu.be/A5YwPiQ0fLg",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2014-11-23T08:00:00+09:00"
+              },
+              {
+                "id": 429014,
+                "champion_id": 429,
+                "name": "花仙骑士 卡莉丝塔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Kalista_14.jpg",
+                "skin_video_url": "https://youtu.be/wc4TKnjtu-s",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2023-03-23T04:00:00+09:00"
+              },
+              {
+                "id": 429005,
+                "champion_id": 429,
+                "name": "黑暗骑士 卡莉丝塔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Kalista_5.jpg",
+                "skin_video_url": "https://youtu.be/KIuoyFb6-og",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-01-07T04:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 50.81
         }
       ]
     ],
     "counters": [
       {
         "champion_id": 202,
-        "play": 15638,
-        "win": 7793,
+        "play": 15761,
+        "win": 7863,
         "meta": {
           "id": 202,
           "key": "Jhin",
@@ -3838,8 +3854,8 @@
       },
       {
         "champion_id": 81,
-        "play": 13962,
-        "win": 7164,
+        "play": 14099,
+        "win": 7235,
         "meta": {
           "id": 81,
           "key": "Ezreal",
@@ -4263,396 +4279,9 @@
         }
       },
       {
-        "champion_id": 51,
-        "play": 10169,
-        "win": 4888,
-        "meta": {
-          "id": 51,
-          "key": "Caitlyn",
-          "name": "皮城女警",
-          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Caitlyn.png",
-          "evolve": [],
-          "title": "凯特琳",
-          "partype": "法力",
-          "passive": {
-            "name": "爆头",
-            "description": "每进行几次基础攻击，对中了她的陷阱或绳网的单位进行攻击时，凯特琳就会造成一次【爆头】效果，造成随暴击几率增长的额外伤害。在对中了陷阱或绳网的目标进行攻击时，凯特琳的【爆头】攻击距离翻倍。",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Caitlyn_Headshot.png",
-            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0051/ability_0051_P1.webm"
-          },
-          "spells": [
-            {
-              "key": "Q",
-              "name": "和平使者",
-              "description": "凯特琳加速转动步枪，1秒后进行穿透射击，造成物理伤害（目标身后的单位受到较少伤害）。",
-              "max_rank": 5,
-              "range_burn": [
-                1250
-              ],
-              "cooldown_burn": [
-                10,
-                9,
-                8,
-                7,
-                6
-              ],
-              "cooldown_burn_float": [
-                10,
-                9,
-                8,
-                7,
-                6
-              ],
-              "cost_burn": [
-                55,
-                60,
-                65,
-                70,
-                75
-              ],
-              "tooltip": "凯特琳加速转动她的步枪来射出一颗穿刺弹，造成<physicalDamage>?物理伤害</physicalDamage>。在子弹命中第一个单位后，它会绽开为一个更宽的弹体，造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br />被<spellName>约德尔诱捕器</spellName>显形的敌人总会受到全额伤害。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/CaitlynQ.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0051/ability_0051_Q1.webm"
-            },
-            {
-              "key": "W",
-              "name": "约德尔诱捕器",
-              "description": "凯特琳设下一个陷阱，这个陷阱在被敌方英雄踩中时，会使该英雄显形并被束缚1.5秒，并为凯特琳提供一次强化版的爆头。",
-              "max_rank": 5,
-              "range_burn": [
-                800
-              ],
-              "cooldown_burn": [
-                0
-              ],
-              "cooldown_burn_float": [
-                0.5
-              ],
-              "cost_burn": [
-                20
-              ],
-              "tooltip": "凯特琳设置一个陷阱来<status>禁锢</status>踩中它的第一个英雄1.5秒并提供该英雄的<keywordStealth>真实视野</keywordStealth>，持续3秒。陷阱持续30/35/40/45/50秒，并且同一时间至多可存在3/3/4/4/5个已激活的陷阱。这个技能有3/3/4/4/5层充能(?秒充能时间)。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/CaitlynW.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0051/ability_0051_W1.webm"
-            },
-            {
-              "key": "E",
-              "name": "90口径绳网",
-              "description": "凯特琳朝目标放出一张网，对其减速，并对凯特琳造成一定的反冲效果。",
-              "max_rank": 5,
-              "range_burn": [
-                750
-              ],
-              "cooldown_burn": [
-                16,
-                14,
-                12,
-                10,
-                8
-              ],
-              "cooldown_burn_float": [
-                16,
-                14,
-                12,
-                10,
-                8
-              ],
-              "cost_burn": [
-                75
-              ],
-              "tooltip": "凯特琳发射一张绳网，并将她向后推送。绳网对命中的第一个目标造成持续1秒的50%<status>减速</status>和<magicDamage>?魔法伤害</magicDamage>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/CaitlynE.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0051/ability_0051_E1.webm"
-            },
-            {
-              "key": "R",
-              "name": "让子弹飞",
-              "description": "凯特琳精心准备完美一击，拥有超远射程并对单个目标造成巨大伤害。敌方英雄能为友军拦截子弹。",
-              "max_rank": 3,
-              "range_burn": [
-                3500
-              ],
-              "cooldown_burn": [
-                90
-              ],
-              "cooldown_burn_float": [
-                90
-              ],
-              "cost_burn": [
-                100
-              ],
-              "tooltip": "凯特琳花费一段时间来引导并精心准备完美一击，然后她会开火，造成<physicalDamage>?物理伤害</physicalDamage>，但其他敌方英雄能拦截子弹。这个技能在引导期间会提供目标的<keywordStealth>真实视野</keywordStealth>。<br /><br /><rules>基于凯特琳的暴击几率，至多造成?%的额外伤害。</rules>?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/CaitlynR.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0051/ability_0051_R1.webm"
-            }
-          ],
-          "skins": [
-            {
-              "id": 51000,
-              "champion_id": 51,
-              "name": "default",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_0.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "IP",
-                  "cost": 450
-                },
-                {
-                  "currency": "RP",
-                  "cost": 260
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 51048,
-              "champion_id": 51,
-              "name": "DRX 凯特琳",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_48.jpg",
-              "skin_video_url": "https://youtu.be/1uCrCs6Xf0k",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2024-09-25T08:59:00+09:00"
-            },
-            {
-              "id": 51004,
-              "champion_id": 51,
-              "name": "冰原狙击 凯特琳",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_4.jpg",
-              "skin_video_url": "https://youtu.be/h8cmgylGuQc",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 750
-                }
-              ],
-              "sales": null,
-              "release_date": "2011-12-29T10:00:00+09:00"
-            },
-            {
-              "id": 51030,
-              "champion_id": 51,
-              "name": "净雪之月 凯特琳",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_30.jpg",
-              "skin_video_url": "https://youtu.be/-qjyGemhD5Y",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2022-06-23T04:00:00+09:00"
-            },
-            {
-              "id": 51028,
-              "champion_id": 51,
-              "name": "双城之战 凯特琳",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_28.jpg",
-              "skin_video_url": "https://youtu.be/dg_Th0dSidM",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 975
-                }
-              ],
-              "sales": null,
-              "release_date": "2021-11-04T04:00:00+09:00"
-            },
-            {
-              "id": 51003,
-              "champion_id": 51,
-              "name": "古墓丽影 凯特琳",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_3.jpg",
-              "skin_video_url": "https://youtu.be/floHUTKLor4",
-              "prices": null,
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 51005,
-              "champion_id": 51,
-              "name": "女警狙击 凯特琳",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_5.jpg",
-              "skin_video_url": "https://youtu.be/rXUUvzp6pxA",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 975
-                }
-              ],
-              "sales": null,
-              "release_date": "2011-10-06T15:00:00+09:00"
-            },
-            {
-              "id": 51039,
-              "champion_id": 51,
-              "name": "怦然心动 凯特琳",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_39.jpg",
-              "skin_video_url": "https://youtu.be/dwJZOQcVYj4",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2023-02-10T04:00:00+09:00"
-            },
-            {
-              "id": 51022,
-              "champion_id": 51,
-              "name": "战斗学院 凯特琳",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_22.jpg",
-              "skin_video_url": "https://youtu.be/rgRbeet3qhU",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1820
-                }
-              ],
-              "sales": null,
-              "release_date": "2021-03-18T04:00:00+09:00"
-            },
-            {
-              "id": 51001,
-              "champion_id": 51,
-              "name": "抵抗军天使 凯特琳",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_1.jpg",
-              "skin_video_url": "https://youtu.be/VHToDF3BM0g",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 520
-                }
-              ],
-              "sales": null,
-              "release_date": "2011-01-04T12:00:00+09:00"
-            },
-            {
-              "id": 51011,
-              "champion_id": 51,
-              "name": "未来战士 凯特琳",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_11.jpg",
-              "skin_video_url": "https://youtu.be/67ESi5vIKGk",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1820
-                }
-              ],
-              "sales": null,
-              "release_date": "2017-05-25T10:00:00+09:00"
-            },
-            {
-              "id": 51013,
-              "champion_id": 51,
-              "name": "泳池派对 凯特琳",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_13.jpg",
-              "skin_video_url": "https://youtu.be/i48Db1Xk8ck",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2018-08-01T23:00:00+09:00"
-            },
-            {
-              "id": 51010,
-              "champion_id": 51,
-              "name": "玉净夜叉 凯特琳",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_10.jpg",
-              "skin_video_url": "https://youtu.be/8Sh-y9JGmcc",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 51019,
-              "champion_id": 51,
-              "name": "电玩女神 凯特琳",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_19.jpg",
-              "skin_video_url": "https://youtu.be/QZwdABkaWTM",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2019-06-28T04:00:00+09:00"
-            },
-            {
-              "id": 51020,
-              "champion_id": 51,
-              "name": "至臻 电玩女神 凯特琳",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_20.jpg",
-              "skin_video_url": "https://youtu.be/PhvlT7bKwdA",
-              "prices": null,
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 51029,
-              "champion_id": 51,
-              "name": "至臻 电玩女神 凯特琳 (2022)",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_29.jpg",
-              "skin_video_url": "https://youtu.be/cOJxg-L7dFQ",
-              "prices": null,
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 51002,
-              "champion_id": 51,
-              "name": "荒野治安官 凯特琳",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_2.jpg",
-              "skin_video_url": "https://youtu.be/yiLbyykX5xA",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 520
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 51006,
-              "champion_id": 51,
-              "name": "铁血狙击手 凯特琳",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_6.jpg",
-              "skin_video_url": "https://youtu.be/ijyxKVxq2e0",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 975
-                }
-              ],
-              "sales": null,
-              "release_date": "2014-09-04T08:00:00+09:00"
-            }
-          ]
-        }
-      },
-      {
         "champion_id": 22,
-        "play": 10159,
-        "win": 4891,
+        "play": 10275,
+        "win": 4942,
         "meta": {
           "id": 22,
           "key": "Ashe",
@@ -5048,9 +4677,396 @@
         }
       },
       {
+        "champion_id": 51,
+        "play": 10258,
+        "win": 4929,
+        "meta": {
+          "id": 51,
+          "key": "Caitlyn",
+          "name": "皮城女警",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Caitlyn.png",
+          "evolve": [],
+          "title": "凯特琳",
+          "partype": "法力",
+          "passive": {
+            "name": "爆头",
+            "description": "每进行几次基础攻击，对中了她的陷阱或绳网的单位进行攻击时，凯特琳就会造成一次【爆头】效果，造成随暴击几率增长的额外伤害。在对中了陷阱或绳网的目标进行攻击时，凯特琳的【爆头】攻击距离翻倍。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Caitlyn_Headshot.png",
+            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0051/ability_0051_P1.webm"
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "和平使者",
+              "description": "凯特琳加速转动步枪，1秒后进行穿透射击，造成物理伤害（目标身后的单位受到较少伤害）。",
+              "max_rank": 5,
+              "range_burn": [
+                1250
+              ],
+              "cooldown_burn": [
+                10,
+                9,
+                8,
+                7,
+                6
+              ],
+              "cooldown_burn_float": [
+                10,
+                9,
+                8,
+                7,
+                6
+              ],
+              "cost_burn": [
+                55,
+                60,
+                65,
+                70,
+                75
+              ],
+              "tooltip": "凯特琳加速转动她的步枪来射出一颗穿刺弹，造成<physicalDamage>?物理伤害</physicalDamage>。在子弹命中第一个单位后，它会绽开为一个更宽的弹体，造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br />被<spellName>约德尔诱捕器</spellName>显形的敌人总会受到全额伤害。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/CaitlynQ.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0051/ability_0051_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "约德尔诱捕器",
+              "description": "凯特琳设下一个陷阱，这个陷阱在被敌方英雄踩中时，会使该英雄显形并被束缚1.5秒，并为凯特琳提供一次强化版的爆头。",
+              "max_rank": 5,
+              "range_burn": [
+                800
+              ],
+              "cooldown_burn": [
+                0
+              ],
+              "cooldown_burn_float": [
+                0.5
+              ],
+              "cost_burn": [
+                20
+              ],
+              "tooltip": "凯特琳设置一个陷阱来<status>禁锢</status>踩中它的第一个英雄1.5秒并提供该英雄的<keywordStealth>真实视野</keywordStealth>，持续3秒。陷阱持续30/35/40/45/50秒，并且同一时间至多可存在3/3/4/4/5个已激活的陷阱。这个技能有3/3/4/4/5层充能(?秒充能时间)。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/CaitlynW.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0051/ability_0051_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "90口径绳网",
+              "description": "凯特琳朝目标放出一张网，对其减速，并对凯特琳造成一定的反冲效果。",
+              "max_rank": 5,
+              "range_burn": [
+                750
+              ],
+              "cooldown_burn": [
+                16,
+                14,
+                12,
+                10,
+                8
+              ],
+              "cooldown_burn_float": [
+                16,
+                14,
+                12,
+                10,
+                8
+              ],
+              "cost_burn": [
+                75
+              ],
+              "tooltip": "凯特琳发射一张绳网，并将她向后推送。绳网对命中的第一个目标造成持续1秒的50%<status>减速</status>和<magicDamage>?魔法伤害</magicDamage>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/CaitlynE.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0051/ability_0051_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "让子弹飞",
+              "description": "凯特琳精心准备完美一击，拥有超远射程并对单个目标造成巨大伤害。敌方英雄能为友军拦截子弹。",
+              "max_rank": 3,
+              "range_burn": [
+                3500
+              ],
+              "cooldown_burn": [
+                90
+              ],
+              "cooldown_burn_float": [
+                90
+              ],
+              "cost_burn": [
+                100
+              ],
+              "tooltip": "凯特琳花费一段时间来引导并精心准备完美一击，然后她会开火，造成<physicalDamage>?物理伤害</physicalDamage>，但其他敌方英雄能拦截子弹。这个技能在引导期间会提供目标的<keywordStealth>真实视野</keywordStealth>。<br /><br /><rules>基于凯特琳的暴击几率，至多造成?%的额外伤害。</rules>?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/CaitlynR.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0051/ability_0051_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 51000,
+              "champion_id": 51,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 450
+                },
+                {
+                  "currency": "RP",
+                  "cost": 260
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 51048,
+              "champion_id": 51,
+              "name": "DRX 凯特琳",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_48.jpg",
+              "skin_video_url": "https://youtu.be/1uCrCs6Xf0k",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2024-09-25T08:59:00+09:00"
+            },
+            {
+              "id": 51004,
+              "champion_id": 51,
+              "name": "冰原狙击 凯特琳",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_4.jpg",
+              "skin_video_url": "https://youtu.be/h8cmgylGuQc",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 750
+                }
+              ],
+              "sales": null,
+              "release_date": "2011-12-29T10:00:00+09:00"
+            },
+            {
+              "id": 51030,
+              "champion_id": 51,
+              "name": "净雪之月 凯特琳",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_30.jpg",
+              "skin_video_url": "https://youtu.be/-qjyGemhD5Y",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2022-06-23T04:00:00+09:00"
+            },
+            {
+              "id": 51028,
+              "champion_id": 51,
+              "name": "双城之战 凯特琳",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_28.jpg",
+              "skin_video_url": "https://youtu.be/dg_Th0dSidM",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": "2021-11-04T04:00:00+09:00"
+            },
+            {
+              "id": 51003,
+              "champion_id": 51,
+              "name": "古墓丽影 凯特琳",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_3.jpg",
+              "skin_video_url": "https://youtu.be/floHUTKLor4",
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 51005,
+              "champion_id": 51,
+              "name": "女警狙击 凯特琳",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_5.jpg",
+              "skin_video_url": "https://youtu.be/rXUUvzp6pxA",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": "2011-10-06T15:00:00+09:00"
+            },
+            {
+              "id": 51039,
+              "champion_id": 51,
+              "name": "怦然心动 凯特琳",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_39.jpg",
+              "skin_video_url": "https://youtu.be/dwJZOQcVYj4",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2023-02-10T04:00:00+09:00"
+            },
+            {
+              "id": 51022,
+              "champion_id": 51,
+              "name": "战斗学院 凯特琳",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_22.jpg",
+              "skin_video_url": "https://youtu.be/rgRbeet3qhU",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1820
+                }
+              ],
+              "sales": null,
+              "release_date": "2021-03-18T04:00:00+09:00"
+            },
+            {
+              "id": 51001,
+              "champion_id": 51,
+              "name": "抵抗军天使 凯特琳",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_1.jpg",
+              "skin_video_url": "https://youtu.be/VHToDF3BM0g",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 520
+                }
+              ],
+              "sales": null,
+              "release_date": "2011-01-04T12:00:00+09:00"
+            },
+            {
+              "id": 51011,
+              "champion_id": 51,
+              "name": "未来战士 凯特琳",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_11.jpg",
+              "skin_video_url": "https://youtu.be/67ESi5vIKGk",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1820
+                }
+              ],
+              "sales": null,
+              "release_date": "2017-05-25T10:00:00+09:00"
+            },
+            {
+              "id": 51013,
+              "champion_id": 51,
+              "name": "泳池派对 凯特琳",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_13.jpg",
+              "skin_video_url": "https://youtu.be/i48Db1Xk8ck",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2018-08-01T23:00:00+09:00"
+            },
+            {
+              "id": 51010,
+              "champion_id": 51,
+              "name": "玉净夜叉 凯特琳",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_10.jpg",
+              "skin_video_url": "https://youtu.be/8Sh-y9JGmcc",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 51019,
+              "champion_id": 51,
+              "name": "电玩女神 凯特琳",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_19.jpg",
+              "skin_video_url": "https://youtu.be/QZwdABkaWTM",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2019-06-28T04:00:00+09:00"
+            },
+            {
+              "id": 51020,
+              "champion_id": 51,
+              "name": "至臻 电玩女神 凯特琳",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_20.jpg",
+              "skin_video_url": "https://youtu.be/PhvlT7bKwdA",
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 51029,
+              "champion_id": 51,
+              "name": "至臻 电玩女神 凯特琳 (2022)",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_29.jpg",
+              "skin_video_url": "https://youtu.be/cOJxg-L7dFQ",
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 51002,
+              "champion_id": 51,
+              "name": "荒野治安官 凯特琳",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_2.jpg",
+              "skin_video_url": "https://youtu.be/yiLbyykX5xA",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 520
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 51006,
+              "champion_id": 51,
+              "name": "铁血狙击手 凯特琳",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Caitlyn_6.jpg",
+              "skin_video_url": "https://youtu.be/ijyxKVxq2e0",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": "2014-09-04T08:00:00+09:00"
+            }
+          ]
+        }
+      },
+      {
         "champion_id": 498,
-        "play": 9427,
-        "win": 4450,
+        "play": 9520,
+        "win": 4499,
         "meta": {
           "id": 498,
           "key": "Xayah",
@@ -5305,7 +5321,15 @@
                   "cost": 1350
                 }
               ],
-              "sales": null,
+              "sales": [
+                {
+                  "currency": "RP",
+                  "cost": 607,
+                  "discount_rate": 0.55,
+                  "started_at": "2024-10-28T08:00:00+09:00",
+                  "ended_at": "2024-11-04T08:00:00+09:00"
+                }
+              ],
               "release_date": "2020-12-10T04:00:00+09:00"
             },
             {
@@ -5354,15 +5378,7 @@
                   "cost": 1350
                 }
               ],
-              "sales": [
-                {
-                  "currency": "RP",
-                  "cost": 742,
-                  "discount_rate": 0.45,
-                  "started_at": "2024-10-21T08:00:00+09:00",
-                  "ended_at": "2024-10-28T08:00:00+09:00"
-                }
-              ],
+              "sales": null,
               "release_date": "2023-03-09T04:00:00+09:00"
             },
             {
@@ -5380,8 +5396,8 @@
       },
       {
         "champion_id": 222,
-        "play": 9306,
-        "win": 4421,
+        "play": 9380,
+        "win": 4450,
         "meta": {
           "id": 222,
           "key": "Jinx",
@@ -5721,8 +5737,8 @@
       },
       {
         "champion_id": 42,
-        "play": 6305,
-        "win": 2905,
+        "play": 6379,
+        "win": 2948,
         "meta": {
           "id": 42,
           "key": "Corki",
@@ -6011,8 +6027,8 @@
       },
       {
         "champion_id": 236,
-        "play": 5492,
-        "win": 2669,
+        "play": 5545,
+        "win": 2694,
         "meta": {
           "id": 236,
           "key": "Lucian",
@@ -6339,8 +6355,8 @@
       },
       {
         "champion_id": 15,
-        "play": 4038,
-        "win": 1985,
+        "play": 4061,
+        "win": 1994,
         "meta": {
           "id": 15,
           "key": "Sivir",
@@ -6725,8 +6741,8 @@
       },
       {
         "champion_id": 523,
-        "play": 3963,
-        "win": 1850,
+        "play": 3988,
+        "win": 1860,
         "meta": {
           "id": 523,
           "key": "Aphelios",
@@ -6931,8 +6947,8 @@
       },
       {
         "champion_id": 119,
-        "play": 3133,
-        "win": 1476,
+        "play": 3154,
+        "win": 1490,
         "meta": {
           "id": 119,
           "key": "Draven",
@@ -7262,8 +7278,8 @@
       },
       {
         "champion_id": 110,
-        "play": 2969,
-        "win": 1497,
+        "play": 3001,
+        "win": 1510,
         "meta": {
           "id": 110,
           "key": "Varus",
@@ -7540,15 +7556,7 @@
                   "cost": 1820
                 }
               ],
-              "sales": [
-                {
-                  "currency": "RP",
-                  "cost": 1350,
-                  "discount_rate": 0.25,
-                  "started_at": "2024-10-21T08:00:00+09:00",
-                  "ended_at": "2024-10-28T08:00:00+09:00"
-                }
-              ],
+              "sales": null,
               "release_date": "2024-05-01T09:00:00+09:00"
             },
             {
@@ -7616,8 +7624,8 @@
       },
       {
         "champion_id": 360,
-        "play": 2854,
-        "win": 1332,
+        "play": 2871,
+        "win": 1343,
         "meta": {
           "id": 360,
           "key": "Samira",
@@ -7827,8 +7835,8 @@
       },
       {
         "champion_id": 67,
-        "play": 2818,
-        "win": 1370,
+        "play": 2838,
+        "win": 1380,
         "meta": {
           "id": 67,
           "key": "Vayne",
@@ -8214,8 +8222,8 @@
       },
       {
         "champion_id": 21,
-        "play": 2765,
-        "win": 1272,
+        "play": 2787,
+        "win": 1288,
         "meta": {
           "id": 21,
           "key": "MissFortune",
@@ -8669,8 +8677,8 @@
       },
       {
         "champion_id": 221,
-        "play": 2678,
-        "win": 1343,
+        "play": 2709,
+        "win": 1365,
         "meta": {
           "id": 221,
           "key": "Zeri",
@@ -8816,15 +8824,7 @@
                   "cost": 880
                 }
               ],
-              "sales": [
-                {
-                  "currency": "RP",
-                  "cost": 440,
-                  "discount_rate": 0.5,
-                  "started_at": "2024-10-21T08:00:00+09:00",
-                  "ended_at": "2024-10-28T08:00:00+09:00"
-                }
-              ],
+              "sales": null,
               "release_date": null
             },
             {
@@ -8902,8 +8902,8 @@
       },
       {
         "champion_id": 96,
-        "play": 2612,
-        "win": 1176,
+        "play": 2640,
+        "win": 1190,
         "meta": {
           "id": 96,
           "key": "KogMaw",
@@ -9244,8 +9244,8 @@
       },
       {
         "champion_id": 901,
-        "play": 2541,
-        "win": 1302,
+        "play": 2560,
+        "win": 1308,
         "meta": {
           "id": 901,
           "key": "Smolder",
@@ -9406,7 +9406,15 @@
                   "cost": 1350
                 }
               ],
-              "sales": null,
+              "sales": [
+                {
+                  "currency": "RP",
+                  "cost": 877,
+                  "discount_rate": 0.35,
+                  "started_at": "2024-10-28T08:00:00+09:00",
+                  "ended_at": "2024-11-04T08:00:00+09:00"
+                }
+              ],
               "release_date": "2024-01-31T10:00:00+09:00"
             }
           ]
@@ -9414,8 +9422,8 @@
       },
       {
         "champion_id": 429,
-        "play": 2381,
-        "win": 1214,
+        "play": 2409,
+        "win": 1224,
         "meta": {
           "id": 429,
           "key": "Kalista",
@@ -9624,8 +9632,8 @@
       },
       {
         "champion_id": 18,
-        "play": 2063,
-        "win": 1024,
+        "play": 2090,
+        "win": 1034,
         "meta": {
           "id": 18,
           "key": "Tristana",
@@ -9992,8 +10000,8 @@
       },
       {
         "champion_id": 895,
-        "play": 1841,
-        "win": 852,
+        "play": 1851,
+        "win": 857,
         "meta": {
           "id": 895,
           "key": "Nilah",
@@ -10165,8 +10173,8 @@
       },
       {
         "champion_id": 29,
-        "play": 1610,
-        "win": 842,
+        "play": 1624,
+        "win": 853,
         "meta": {
           "id": 29,
           "key": "Twitch",
@@ -10492,8 +10500,8 @@
       },
       {
         "champion_id": 115,
-        "play": 1507,
-        "win": 725,
+        "play": 1524,
+        "win": 734,
         "meta": {
           "id": 115,
           "key": "Ziggs",
@@ -10797,8 +10805,8 @@
       },
       {
         "champion_id": 147,
-        "play": 1187,
-        "win": 569,
+        "play": 1193,
+        "win": 571,
         "meta": {
           "id": 147,
           "key": "Seraphine",
@@ -11009,15 +11017,7 @@
                   "cost": 1350
                 }
               ],
-              "sales": [
-                {
-                  "currency": "RP",
-                  "cost": 877,
-                  "discount_rate": 0.35,
-                  "started_at": "2024-10-21T08:00:00+09:00",
-                  "ended_at": "2024-10-28T08:00:00+09:00"
-                }
-              ],
+              "sales": null,
               "release_date": "2023-06-28T04:00:00+09:00"
             },
             {
@@ -11080,8 +11080,8 @@
       },
       {
         "champion_id": 50,
-        "play": 782,
-        "win": 393,
+        "play": 785,
+        "win": 395,
         "meta": {
           "id": 50,
           "key": "Swain",
@@ -11239,7 +11239,15 @@
                   "cost": 790
                 }
               ],
-              "sales": null,
+              "sales": [
+                {
+                  "currency": "RP",
+                  "cost": 395,
+                  "discount_rate": 0.5,
+                  "started_at": "2024-10-28T08:00:00+09:00",
+                  "ended_at": "2024-11-04T08:00:00+09:00"
+                }
+              ],
               "release_date": null
             },
             {
@@ -11347,8 +11355,8 @@
       },
       {
         "champion_id": 910,
-        "play": 627,
-        "win": 300,
+        "play": 633,
+        "win": 303,
         "meta": {
           "id": 910,
           "key": "Hwei",
@@ -11521,15 +11529,7 @@
                   "cost": 1350
                 }
               ],
-              "sales": [
-                {
-                  "currency": "RP",
-                  "cost": 877,
-                  "discount_rate": 0.35,
-                  "started_at": "2024-10-21T08:00:00+09:00",
-                  "ended_at": "2024-10-28T08:00:00+09:00"
-                }
-              ],
+              "sales": null,
               "release_date": "2023-12-06T10:00:00+09:00"
             }
           ]
@@ -11537,8 +11537,8 @@
       },
       {
         "champion_id": 157,
-        "play": 619,
-        "win": 301,
+        "play": 626,
+        "win": 306,
         "meta": {
           "id": 157,
           "key": "Yasuo",
@@ -11924,7 +11924,7 @@
       },
       {
         "champion_id": 99,
-        "play": 489,
+        "play": 490,
         "win": 232,
         "meta": {
           "id": 99,
@@ -12367,8 +12367,8 @@
       },
       {
         "champion_id": 45,
-        "play": 411,
-        "win": 190,
+        "play": 418,
+        "win": 191,
         "meta": {
           "id": 45,
           "key": "Veigar",
@@ -12746,8 +12746,8 @@
       },
       {
         "champion_id": 63,
-        "play": 411,
-        "win": 209,
+        "play": 415,
+        "win": 212,
         "meta": {
           "id": 63,
           "key": "Brand",
@@ -13085,26 +13085,26 @@
         4,
         21
       ],
-      "win": 60079,
-      "play": 122683,
-      "pick_rate": 0.8319
+      "win": 60612,
+      "play": 123717,
+      "pick_rate": 0.8316
     },
     {
       "ids": [
         1,
         4
       ],
-      "win": 9311,
-      "play": 19574,
-      "pick_rate": 0.1327
+      "win": 9403,
+      "play": 19778,
+      "pick_rate": 0.1329
     },
     {
       "ids": [
         3,
         4
       ],
-      "win": 1227,
-      "play": 2555,
+      "win": 1234,
+      "play": 2578,
       "pick_rate": 0.0173
     },
     {
@@ -13112,8 +13112,8 @@
         4,
         7
       ],
-      "win": 585,
-      "play": 1253,
+      "win": 591,
+      "play": 1263,
       "pick_rate": 0.0085
     },
     {
@@ -13121,8 +13121,8 @@
         4,
         6
       ],
-      "win": 356,
-      "play": 746,
+      "win": 359,
+      "play": 754,
       "pick_rate": 0.0051
     }
   ],
@@ -13132,7 +13132,7 @@
     "win": [
       {
         "version": "14.21",
-        "rate": 0.4874,
+        "rate": 0.4875,
         "rank": 26,
         "created_at": "2024-10-27T22:31:40+09:00"
       },
@@ -13194,7 +13194,7 @@
     "pick": [
       {
         "version": "14.21",
-        "rate": 0.2347,
+        "rate": 0.2344,
         "rank": 1,
         "created_at": "2024-10-27T22:31:40+09:00"
       },
@@ -13256,7 +13256,7 @@
     "ban": [
       {
         "version": "14.21",
-        "rate": 0.1137,
+        "rate": 0.1134,
         "rank": 4,
         "created_at": "2024-10-27T22:31:40+09:00"
       },
@@ -13319,31 +13319,31 @@
   "game_lengths": [
     {
       "game_length": 40,
-      "rate": 0.477744,
+      "rate": 0.477888,
       "average": 0.5,
       "rank": 21
     },
     {
       "game_length": 0,
-      "rate": 0.47987,
+      "rate": 0.479691,
       "average": 0.5,
       "rank": 24
     },
     {
       "game_length": 35,
-      "rate": 0.483474,
+      "rate": 0.483676,
       "average": 0.5,
       "rank": 27
     },
     {
       "game_length": 30,
-      "rate": 0.492816,
+      "rate": 0.492964,
       "average": 0.5,
       "rank": 23
     },
     {
       "game_length": 25,
-      "rate": 0.493003,
+      "rate": 0.493482,
       "average": 0.5,
       "rank": 23
     }
@@ -13367,9 +13367,9 @@
         "W",
         "W"
       ],
-      "play": 37892,
-      "win": 22707,
-      "pick_rate": 0.5481
+      "play": 38237,
+      "win": 22921,
+      "pick_rate": 0.5483
     },
     {
       "order": [
@@ -13389,9 +13389,9 @@
         "E",
         "E"
       ],
-      "play": 12885,
-      "win": 7765,
-      "pick_rate": 0.1864
+      "play": 12983,
+      "win": 7830,
+      "pick_rate": 0.1862
     },
     {
       "order": [
@@ -13411,8 +13411,8 @@
         "W",
         "W"
       ],
-      "play": 2445,
-      "win": 1410,
+      "play": 2470,
+      "win": 1421,
       "pick_rate": 0.0354
     },
     {
@@ -13433,8 +13433,8 @@
         "W",
         "W"
       ],
-      "play": 1173,
-      "win": 718,
+      "play": 1184,
+      "win": 726,
       "pick_rate": 0.017
     },
     {
@@ -13455,9 +13455,9 @@
         "W",
         "E"
       ],
-      "play": 1172,
-      "win": 727,
-      "pick_rate": 0.017
+      "play": 1181,
+      "win": 731,
+      "pick_rate": 0.0169
     }
   ],
   "skill_masteries": [
@@ -13467,9 +13467,9 @@
         "E",
         "W"
       ],
-      "play": 48497,
-      "win": 28905,
-      "pick_rate": 0.7016,
+      "play": 48940,
+      "win": 29172,
+      "pick_rate": 0.7018,
       "builds": [
         {
           "order": [
@@ -13489,8 +13489,8 @@
             "W",
             "W"
           ],
-          "play": 37892,
-          "win": 22707,
+          "play": 38237,
+          "win": 22921,
           "pick_rate": 0.7813
         },
         {
@@ -13511,9 +13511,9 @@
             "W",
             "W"
           ],
-          "play": 2445,
-          "win": 1410,
-          "pick_rate": 0.0504
+          "play": 2470,
+          "win": 1421,
+          "pick_rate": 0.0505
         },
         {
           "order": [
@@ -13533,9 +13533,9 @@
             "E",
             "W"
           ],
-          "play": 1060,
-          "win": 615,
-          "pick_rate": 0.0219
+          "play": 1068,
+          "win": 620,
+          "pick_rate": 0.0218
         },
         {
           "order": [
@@ -13555,9 +13555,9 @@
             "E",
             "W"
           ],
-          "play": 813,
-          "win": 476,
-          "pick_rate": 0.0168
+          "play": 818,
+          "win": 479,
+          "pick_rate": 0.0167
         },
         {
           "order": [
@@ -13577,8 +13577,8 @@
             "W",
             "W"
           ],
-          "play": 773,
-          "win": 444,
+          "play": 780,
+          "win": 451,
           "pick_rate": 0.0159
         }
       ]
@@ -13589,9 +13589,9 @@
         "W",
         "E"
       ],
-      "play": 20540,
-      "win": 12402,
-      "pick_rate": 0.2971,
+      "play": 20702,
+      "win": 12506,
+      "pick_rate": 0.2969,
       "builds": [
         {
           "order": [
@@ -13611,9 +13611,9 @@
             "E",
             "E"
           ],
-          "play": 12885,
-          "win": 7765,
-          "pick_rate": 0.6273
+          "play": 12983,
+          "win": 7830,
+          "pick_rate": 0.6271
         },
         {
           "order": [
@@ -13633,9 +13633,9 @@
             "W",
             "W"
           ],
-          "play": 1173,
-          "win": 718,
-          "pick_rate": 0.0571
+          "play": 1184,
+          "win": 726,
+          "pick_rate": 0.0572
         },
         {
           "order": [
@@ -13655,9 +13655,9 @@
             "W",
             "E"
           ],
-          "play": 1172,
-          "win": 727,
-          "pick_rate": 0.0571
+          "play": 1181,
+          "win": 731,
+          "pick_rate": 0.057
         },
         {
           "order": [
@@ -13677,9 +13677,9 @@
             "W",
             "E"
           ],
-          "play": 527,
-          "win": 318,
-          "pick_rate": 0.0257
+          "play": 535,
+          "win": 322,
+          "pick_rate": 0.0258
         },
         {
           "order": [
@@ -13699,9 +13699,9 @@
             "W",
             "E"
           ],
-          "play": 497,
-          "win": 296,
-          "pick_rate": 0.0242
+          "play": 503,
+          "win": 298,
+          "pick_rate": 0.0243
         }
       ]
     },
@@ -13713,7 +13713,7 @@
       ],
       "play": 73,
       "win": 42,
-      "pick_rate": 0.0011,
+      "pick_rate": 0.001,
       "builds": [
         {
           "order": [
@@ -14057,9 +14057,9 @@
         "E",
         "W"
       ],
-      "play": 119010,
-      "win": 60989,
-      "pick_rate": 0.7898
+      "play": 120073,
+      "win": 61551,
+      "pick_rate": 0.7899
     },
     {
       "ids": [
@@ -14067,9 +14067,9 @@
         "W",
         "E"
       ],
-      "play": 27985,
-      "win": 10677,
-      "pick_rate": 0.1857
+      "play": 28205,
+      "win": 10761,
+      "pick_rate": 0.1856
     },
     {
       "ids": [
@@ -14077,8 +14077,8 @@
         "Q",
         "W"
       ],
-      "play": 3031,
-      "win": 1465,
+      "play": 3055,
+      "win": 1478,
       "pick_rate": 0.0201
     },
     {
@@ -14087,8 +14087,8 @@
         "Q",
         "E"
       ],
-      "play": 380,
-      "win": 178,
+      "play": 382,
+      "win": 179,
       "pick_rate": 0.0025
     },
     {
@@ -14097,8 +14097,8 @@
         "W",
         "Q"
       ],
-      "play": 201,
-      "win": 93,
+      "play": 204,
+      "win": 94,
       "pick_rate": 0.0013
     }
   ],
@@ -14122,9 +14122,9 @@
         5008,
         5001
       ],
-      "play": 57981,
-      "win": 28253,
-      "pick_rate": 0.3893
+      "play": 58491,
+      "win": 28498,
+      "pick_rate": 0.3894
     },
     {
       "id": 8005,
@@ -14145,9 +14145,9 @@
         5008,
         5001
       ],
-      "play": 14486,
-      "win": 7137,
-      "pick_rate": 0.0973
+      "play": 14602,
+      "win": 7192,
+      "pick_rate": 0.0972
     },
     {
       "id": 8005,
@@ -14168,8 +14168,8 @@
         5008,
         5001
       ],
-      "play": 5581,
-      "win": 2528,
+      "play": 5640,
+      "win": 2555,
       "pick_rate": 0.0375
     },
     {
@@ -14191,8 +14191,8 @@
         5008,
         5011
       ],
-      "play": 4350,
-      "win": 2080,
+      "play": 4386,
+      "win": 2104,
       "pick_rate": 0.0292
     },
     {
@@ -14214,8 +14214,8 @@
         5008,
         5011
       ],
-      "play": 4011,
-      "win": 2003,
+      "play": 4042,
+      "win": 2022,
       "pick_rate": 0.0269
     }
   ],
@@ -14224,9 +14224,9 @@
       "id": 8008,
       "primary_page_id": 8000,
       "secondary_page_id": 8300,
-      "play": 100950,
-      "win": 49435,
-      "pick_rate": 0.6779,
+      "play": 101823,
+      "win": 49877,
+      "pick_rate": 0.6778,
       "builds": [
         {
           "id": 8008,
@@ -14247,8 +14247,8 @@
             5008,
             5001
           ],
-          "play": 57981,
-          "win": 28253,
+          "play": 58491,
+          "win": 28498,
           "pick_rate": 0.5744
         },
         {
@@ -14270,8 +14270,8 @@
             5008,
             5011
           ],
-          "play": 4350,
-          "win": 2080,
+          "play": 4386,
+          "win": 2104,
           "pick_rate": 0.0431
         },
         {
@@ -14293,8 +14293,8 @@
             5008,
             5011
           ],
-          "play": 4011,
-          "win": 2003,
+          "play": 4042,
+          "win": 2022,
           "pick_rate": 0.0397
         },
         {
@@ -14316,9 +14316,9 @@
             5008,
             5011
           ],
-          "play": 3540,
-          "win": 1716,
-          "pick_rate": 0.0351
+          "play": 3568,
+          "win": 1728,
+          "pick_rate": 0.035
         },
         {
           "id": 8008,
@@ -14339,8 +14339,8 @@
             5008,
             5011
           ],
-          "play": 3358,
-          "win": 1655,
+          "play": 3392,
+          "win": 1673,
           "pick_rate": 0.0333
         }
       ]
@@ -14349,8 +14349,8 @@
       "id": 8005,
       "primary_page_id": 8000,
       "secondary_page_id": 8300,
-      "play": 28940,
-      "win": 14356,
+      "play": 29182,
+      "win": 14484,
       "pick_rate": 0.1943,
       "builds": [
         {
@@ -14372,9 +14372,9 @@
             5008,
             5001
           ],
-          "play": 14486,
-          "win": 7137,
-          "pick_rate": 0.5006
+          "play": 14602,
+          "win": 7192,
+          "pick_rate": 0.5004
         },
         {
           "id": 8005,
@@ -14395,9 +14395,9 @@
             5008,
             5011
           ],
-          "play": 1329,
-          "win": 637,
-          "pick_rate": 0.0459
+          "play": 1341,
+          "win": 644,
+          "pick_rate": 0.046
         },
         {
           "id": 8005,
@@ -14418,9 +14418,9 @@
             5008,
             5011
           ],
-          "play": 1207,
-          "win": 581,
-          "pick_rate": 0.0417
+          "play": 1214,
+          "win": 585,
+          "pick_rate": 0.0416
         },
         {
           "id": 8005,
@@ -14441,8 +14441,8 @@
             5008,
             5011
           ],
-          "play": 1112,
-          "win": 575,
+          "play": 1121,
+          "win": 580,
           "pick_rate": 0.0384
         },
         {
@@ -14464,8 +14464,8 @@
             5008,
             5001
           ],
-          "play": 1056,
-          "win": 536,
+          "play": 1066,
+          "win": 543,
           "pick_rate": 0.0365
         }
       ]
@@ -14474,9 +14474,9 @@
       "id": 8005,
       "primary_page_id": 8000,
       "secondary_page_id": 8100,
-      "play": 7101,
-      "win": 3265,
-      "pick_rate": 0.0477,
+      "play": 7175,
+      "win": 3297,
+      "pick_rate": 0.0478,
       "builds": [
         {
           "id": 8005,
@@ -14497,9 +14497,9 @@
             5008,
             5001
           ],
-          "play": 5581,
-          "win": 2528,
-          "pick_rate": 0.7859
+          "play": 5640,
+          "win": 2555,
+          "pick_rate": 0.7861
         },
         {
           "id": 8005,
@@ -14522,7 +14522,7 @@
           ],
           "play": 106,
           "win": 49,
-          "pick_rate": 0.0149
+          "pick_rate": 0.0148
         },
         {
           "id": 8005,
@@ -14543,8 +14543,8 @@
             5008,
             5001
           ],
-          "play": 99,
-          "win": 44,
+          "play": 100,
+          "win": 45,
           "pick_rate": 0.0139
         },
         {
@@ -14566,9 +14566,9 @@
             5008,
             5011
           ],
-          "play": 82,
-          "win": 36,
-          "pick_rate": 0.0115
+          "play": 84,
+          "win": 37,
+          "pick_rate": 0.0117
         },
         {
           "id": 8005,
@@ -14589,9 +14589,9 @@
             5008,
             5001
           ],
-          "play": 78,
+          "play": 80,
           "win": 37,
-          "pick_rate": 0.011
+          "pick_rate": 0.0111
         }
       ]
     },
@@ -14599,8 +14599,8 @@
       "id": 8008,
       "primary_page_id": 8000,
       "secondary_page_id": 8100,
-      "play": 3548,
-      "win": 1671,
+      "play": 3575,
+      "win": 1681,
       "pick_rate": 0.0238,
       "builds": [
         {
@@ -14622,8 +14622,8 @@
             5008,
             5001
           ],
-          "play": 914,
-          "win": 438,
+          "play": 921,
+          "win": 440,
           "pick_rate": 0.2576
         },
         {
@@ -14647,7 +14647,7 @@
           ],
           "play": 175,
           "win": 66,
-          "pick_rate": 0.0493
+          "pick_rate": 0.049
         },
         {
           "id": 8008,
@@ -14670,7 +14670,7 @@
           ],
           "play": 94,
           "win": 49,
-          "pick_rate": 0.0265
+          "pick_rate": 0.0263
         },
         {
           "id": 8008,
@@ -14691,9 +14691,9 @@
             5008,
             5001
           ],
-          "play": 81,
+          "play": 82,
           "win": 38,
-          "pick_rate": 0.0228
+          "pick_rate": 0.0229
         },
         {
           "id": 8008,
@@ -14714,9 +14714,9 @@
             5008,
             5001
           ],
-          "play": 71,
+          "play": 72,
           "win": 28,
-          "pick_rate": 0.02
+          "pick_rate": 0.0201
         }
       ]
     },
@@ -14724,9 +14724,9 @@
       "id": 8008,
       "primary_page_id": 8000,
       "secondary_page_id": 8200,
-      "play": 1962,
-      "win": 888,
-      "pick_rate": 0.0132,
+      "play": 1970,
+      "win": 889,
+      "pick_rate": 0.0131,
       "builds": [
         {
           "id": 8008,
@@ -14747,7 +14747,7 @@
             5008,
             5001
           ],
-          "play": 233,
+          "play": 234,
           "win": 107,
           "pick_rate": 0.1188
         },
@@ -14772,7 +14772,7 @@
           ],
           "play": 134,
           "win": 51,
-          "pick_rate": 0.0683
+          "pick_rate": 0.068
         },
         {
           "id": 8008,
@@ -14793,9 +14793,9 @@
             5008,
             5011
           ],
-          "play": 73,
+          "play": 74,
           "win": 37,
-          "pick_rate": 0.0372
+          "pick_rate": 0.0376
         },
         {
           "id": 8008,
@@ -14818,7 +14818,7 @@
           ],
           "play": 68,
           "win": 31,
-          "pick_rate": 0.0347
+          "pick_rate": 0.0345
         },
         {
           "id": 8008,
@@ -14841,7 +14841,7 @@
           ],
           "play": 67,
           "win": 36,
-          "pick_rate": 0.0341
+          "pick_rate": 0.034
         }
       ]
     }
@@ -14853,8 +14853,8 @@
         3124,
         3115
       ],
-      "play": 70914,
-      "win": 39351,
+      "play": 71559,
+      "win": 39739,
       "pick_rate": 0.7048
     },
     {
@@ -14863,9 +14863,9 @@
         3124,
         3302
       ],
-      "play": 5591,
-      "win": 3135,
-      "pick_rate": 0.0556
+      "play": 5633,
+      "win": 3156,
+      "pick_rate": 0.0555
     },
     {
       "ids": [
@@ -14873,8 +14873,8 @@
         3124,
         3302
       ],
-      "play": 4271,
-      "win": 2293,
+      "play": 4307,
+      "win": 2310,
       "pick_rate": 0.0424
     },
     {
@@ -14883,9 +14883,9 @@
         3124,
         3157
       ],
-      "play": 3248,
-      "win": 1666,
-      "pick_rate": 0.0323
+      "play": 3286,
+      "win": 1686,
+      "pick_rate": 0.0324
     },
     {
       "ids": [
@@ -14893,9 +14893,9 @@
         3124,
         3115
       ],
-      "play": 3198,
-      "win": 1716,
-      "pick_rate": 0.0318
+      "play": 3238,
+      "win": 1739,
+      "pick_rate": 0.0319
     },
     {
       "ids": [
@@ -14903,7 +14903,7 @@
         6672,
         3124
       ],
-      "play": 778,
+      "play": 780,
       "win": 408,
       "pick_rate": 0.0077
     },
@@ -14913,8 +14913,8 @@
         3124,
         6672
       ],
-      "play": 544,
-      "win": 283,
+      "play": 547,
+      "win": 285,
       "pick_rate": 0.0054
     },
     {
@@ -14923,8 +14923,18 @@
         3124,
         3091
       ],
-      "play": 438,
-      "win": 233,
+      "play": 444,
+      "win": 235,
+      "pick_rate": 0.0044
+    },
+    {
+      "ids": [
+        6672,
+        3124,
+        6675
+      ],
+      "play": 442,
+      "win": 253,
       "pick_rate": 0.0044
     },
     {
@@ -14933,18 +14943,8 @@
         3124,
         3091
       ],
-      "play": 430,
-      "win": 207,
-      "pick_rate": 0.0043
-    },
-    {
-      "ids": [
-        6672,
-        3124,
-        6675
-      ],
-      "play": 434,
-      "win": 246,
+      "play": 436,
+      "win": 209,
       "pick_rate": 0.0043
     },
     {
@@ -14953,9 +14953,9 @@
         6675,
         3031
       ],
-      "play": 378,
-      "win": 193,
-      "pick_rate": 0.0038
+      "play": 380,
+      "win": 195,
+      "pick_rate": 0.0037
     },
     {
       "ids": [
@@ -14963,7 +14963,7 @@
         6672,
         3115
       ],
-      "play": 327,
+      "play": 328,
       "win": 188,
       "pick_rate": 0.0032
     },
@@ -14973,8 +14973,8 @@
         3124,
         3153
       ],
-      "play": 297,
-      "win": 159,
+      "play": 301,
+      "win": 162,
       "pick_rate": 0.003
     },
     {
@@ -14983,8 +14983,8 @@
         3124,
         3153
       ],
-      "play": 292,
-      "win": 137,
+      "play": 295,
+      "win": 138,
       "pick_rate": 0.0029
     },
     {
@@ -14993,8 +14993,8 @@
         6676,
         6675
       ],
-      "play": 286,
-      "win": 162,
+      "play": 289,
+      "win": 164,
       "pick_rate": 0.0028
     }
   ],
@@ -15003,31 +15003,31 @@
       "ids": [
         3006
       ],
-      "play": 135552,
-      "win": 67743,
-      "pick_rate": 0.9605
+      "play": 136736,
+      "win": 68356,
+      "pick_rate": 0.9604
     },
     {
       "ids": [
         3020
       ],
-      "play": 4388,
-      "win": 2214,
+      "play": 4433,
+      "win": 2235,
       "pick_rate": 0.0311
     },
     {
       "ids": [
         3111
       ],
-      "play": 491,
-      "win": 259,
+      "play": 495,
+      "win": 260,
       "pick_rate": 0.0035
     },
     {
       "ids": [
         3047
       ],
-      "play": 336,
+      "play": 337,
       "win": 160,
       "pick_rate": 0.0024
     },
@@ -15035,8 +15035,8 @@
       "ids": [
         3009
       ],
-      "play": 239,
-      "win": 121,
+      "play": 242,
+      "win": 123,
       "pick_rate": 0.0017
     }
   ],
@@ -15046,9 +15046,9 @@
         1055,
         2003
       ],
-      "play": 144896,
-      "win": 70340,
-      "pick_rate": 0.9575
+      "play": 146164,
+      "win": 70976,
+      "pick_rate": 0.9576
     },
     {
       "ids": [
@@ -15057,8 +15057,8 @@
         2003,
         2003
       ],
-      "play": 1669,
-      "win": 941,
+      "play": 1675,
+      "win": 945,
       "pick_rate": 0.011
     },
     {
@@ -15067,8 +15067,8 @@
         1055,
         2003
       ],
-      "play": 1357,
-      "win": 742,
+      "play": 1367,
+      "win": 747,
       "pick_rate": 0.009
     },
     {
@@ -15077,8 +15077,8 @@
         1055,
         2003
       ],
-      "play": 434,
-      "win": 215,
+      "play": 437,
+      "win": 216,
       "pick_rate": 0.0029
     },
     {
@@ -15096,8 +15096,8 @@
         1083,
         2003
       ],
-      "play": 366,
-      "win": 154,
+      "play": 370,
+      "win": 155,
       "pick_rate": 0.0024
     },
     {
@@ -15107,8 +15107,8 @@
         2003,
         2003
       ],
-      "play": 333,
-      "win": 171,
+      "play": 339,
+      "win": 177,
       "pick_rate": 0.0022
     },
     {
@@ -15127,8 +15127,8 @@
         1036,
         2031
       ],
-      "play": 190,
-      "win": 100,
+      "play": 194,
+      "win": 102,
       "pick_rate": 0.0013
     },
     {
@@ -15137,8 +15137,8 @@
         2003,
         3144
       ],
-      "play": 182,
-      "win": 114,
+      "play": 185,
+      "win": 116,
       "pick_rate": 0.0012
     },
     {
@@ -15146,8 +15146,8 @@
         1054,
         2003
       ],
-      "play": 169,
-      "win": 66,
+      "play": 170,
+      "win": 67,
       "pick_rate": 0.0011
     },
     {
@@ -15157,7 +15157,7 @@
         1055,
         2003
       ],
-      "play": 138,
+      "play": 139,
       "win": 84,
       "pick_rate": 0.0009
     },
@@ -15167,8 +15167,8 @@
         1083,
         2003
       ],
-      "play": 116,
-      "win": 74,
+      "play": 117,
+      "win": 75,
       "pick_rate": 0.0008
     },
     {
@@ -15188,8 +15188,8 @@
         2003,
         2003
       ],
-      "play": 52,
-      "win": 26,
+      "play": 53,
+      "win": 27,
       "pick_rate": 0.0003
     }
   ],
@@ -15198,241 +15198,241 @@
       "ids": [
         3124
       ],
-      "play": 125811,
-      "win": 64829,
+      "play": 126899,
+      "win": 65417,
       "pick_rate": 0.2725
     },
     {
       "ids": [
         3087
       ],
-      "play": 125096,
-      "win": 61529,
+      "play": 126179,
+      "win": 62081,
       "pick_rate": 0.271
     },
     {
       "ids": [
         3115
       ],
-      "play": 77480,
-      "win": 42800,
-      "pick_rate": 0.1678
+      "play": 78185,
+      "win": 43221,
+      "pick_rate": 0.1679
     },
     {
       "ids": [
         3157
       ],
-      "play": 30437,
-      "win": 17058,
-      "pick_rate": 0.0659
+      "play": 30711,
+      "win": 17216,
+      "pick_rate": 0.066
     },
     {
       "ids": [
         6672
       ],
-      "play": 24811,
-      "win": 11996,
+      "play": 25012,
+      "win": 12093,
       "pick_rate": 0.0537
     },
     {
       "ids": [
         3302
       ],
-      "play": 13734,
-      "win": 7455,
-      "pick_rate": 0.0298
+      "play": 13846,
+      "win": 7509,
+      "pick_rate": 0.0297
     },
     {
       "ids": [
         2420
       ],
-      "play": 7369,
-      "win": 4046,
+      "play": 7452,
+      "win": 4098,
       "pick_rate": 0.016
     },
     {
       "ids": [
         3089
       ],
-      "play": 6998,
-      "win": 4146,
+      "play": 7055,
+      "win": 4188,
       "pick_rate": 0.0152
     },
     {
       "ids": [
         4645
       ],
-      "play": 5429,
-      "win": 3117,
-      "pick_rate": 0.0118
+      "play": 5465,
+      "win": 3140,
+      "pick_rate": 0.0117
     },
     {
       "ids": [
         3135
       ],
-      "play": 3591,
-      "win": 1860,
+      "play": 3616,
+      "win": 1875,
       "pick_rate": 0.0078
     },
     {
       "ids": [
         3172
       ],
-      "play": 3613,
-      "win": 2054,
+      "play": 3637,
+      "win": 2072,
       "pick_rate": 0.0078
     },
     {
       "ids": [
         3153
       ],
-      "play": 3595,
-      "win": 1711,
+      "play": 3633,
+      "win": 1727,
       "pick_rate": 0.0078
     },
     {
       "ids": [
         6676
       ],
-      "play": 3465,
-      "win": 1756,
+      "play": 3489,
+      "win": 1766,
       "pick_rate": 0.0075
     },
     {
       "ids": [
         6675
       ],
-      "play": 3275,
-      "win": 1755,
+      "play": 3304,
+      "win": 1774,
       "pick_rate": 0.0071
     },
     {
       "ids": [
         3072
       ],
-      "play": 3119,
-      "win": 1848,
+      "play": 3147,
+      "win": 1864,
       "pick_rate": 0.0068
     },
     {
       "ids": [
         3091
       ],
-      "play": 2901,
-      "win": 1529,
+      "play": 2929,
+      "win": 1541,
       "pick_rate": 0.0063
     },
     {
       "ids": [
         1038
       ],
-      "play": 2606,
-      "win": 1480,
+      "play": 2626,
+      "win": 1490,
       "pick_rate": 0.0056
     },
     {
       "ids": [
         3031
       ],
-      "play": 2195,
-      "win": 1224,
-      "pick_rate": 0.0048
+      "play": 2204,
+      "win": 1229,
+      "pick_rate": 0.0047
     },
     {
       "ids": [
         3137
       ],
-      "play": 1885,
-      "win": 1029,
+      "play": 1904,
+      "win": 1039,
       "pick_rate": 0.0041
     },
     {
       "ids": [
         3102
       ],
-      "play": 1539,
-      "win": 896,
+      "play": 1546,
+      "win": 900,
       "pick_rate": 0.0033
     },
     {
       "ids": [
         3046
       ],
-      "play": 1164,
-      "win": 628,
+      "play": 1171,
+      "win": 631,
       "pick_rate": 0.0025
     },
     {
       "ids": [
         3033
       ],
-      "play": 1166,
-      "win": 534,
+      "play": 1180,
+      "win": 540,
       "pick_rate": 0.0025
     },
     {
       "ids": [
         3036
       ],
-      "play": 1150,
-      "win": 610,
+      "play": 1161,
+      "win": 615,
       "pick_rate": 0.0025
     },
     {
       "ids": [
         3123
       ],
-      "play": 1032,
-      "win": 344,
+      "play": 1038,
+      "win": 345,
       "pick_rate": 0.0022
     },
     {
       "ids": [
         6655
       ],
-      "play": 989,
-      "win": 442,
-      "pick_rate": 0.0021
+      "play": 1002,
+      "win": 448,
+      "pick_rate": 0.0022
     },
     {
       "ids": [
         3042
       ],
-      "play": 931,
-      "win": 409,
+      "play": 943,
+      "win": 414,
       "pick_rate": 0.002
     },
     {
       "ids": [
         3026
       ],
-      "play": 769,
-      "win": 475,
+      "play": 773,
+      "win": 476,
       "pick_rate": 0.0017
     },
     {
       "ids": [
         3085
       ],
-      "play": 776,
-      "win": 424,
+      "play": 779,
+      "win": 425,
       "pick_rate": 0.0017
     },
     {
       "ids": [
         3139
       ],
-      "play": 664,
-      "win": 392,
+      "play": 673,
+      "win": 395,
       "pick_rate": 0.0014
     },
     {
       "ids": [
-        3156
+        3916
       ],
-      "play": 374,
-      "win": 217,
-      "pick_rate": 0.0008
+      "play": 396,
+      "win": 149,
+      "pick_rate": 0.0009
     }
   ]
 }
