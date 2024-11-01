@@ -452,28 +452,28 @@
             {
               "name": "MAGE",
               "stats": {
-                "win_rate": 0.511066,
-                "role_rate": 0.996993,
-                "play": 131304,
-                "win": 67105
+                "win_rate": 0.51109,
+                "role_rate": 0.997005,
+                "play": 131828,
+                "win": 67376
               }
             }
           ],
           "counters": [
             {
               "champion_id": 86,
-              "play": 198,
-              "win": 90
+              "play": 200,
+              "win": 91
             },
             {
-              "champion_id": 126,
-              "play": 568,
-              "win": 270
+              "champion_id": 166,
+              "play": 1038,
+              "win": 493
             },
             {
               "champion_id": 517,
-              "play": 11687,
-              "win": 5556
+              "play": 11727,
+              "win": 5576
             }
           ]
         }
@@ -484,8 +484,8 @@
       [
         {
           "champion_id": 86,
-          "play": 198,
-          "win": 90,
+          "play": 200,
+          "win": 91,
           "meta": {
             "id": 86,
             "key": "Garen",
@@ -825,12 +825,486 @@
               }
             ]
           },
-          "win_rate": 45.45
+          "win_rate": 45.5
+        },
+        {
+          "champion_id": 166,
+          "play": 1038,
+          "win": 493,
+          "meta": {
+            "id": 166,
+            "key": "Akshan",
+            "name": "影哨",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Akshan.png",
+            "evolve": [],
+            "title": "阿克尚",
+            "partype": "法力",
+            "passive": {
+              "name": "无所不用",
+              "description": "来自阿克尚攻击或技能的每第三次命中会造成额外伤害，并且如果目标是英雄还会为他提供一层护盾。<br><br>在阿克尚攻击时，他会进行一次额外的射击，来造成较少伤害。如果他取消掉了这次额外射击，那么他会转而获得移动速度。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/akshan_p.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0166/ability_0166_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "去而复还",
+                "description": "阿克尚掷出一个回旋镖，在去程和返程时造成伤害，会在它每次命中一名敌人时延长它的距离。",
+                "max_rank": 5,
+                "range_burn": [
+                  850
+                ],
+                "cooldown_burn": [
+                  8,
+                  7,
+                  6,
+                  5,
+                  5
+                ],
+                "cooldown_burn_float": [
+                  8,
+                  7.25,
+                  6.5,
+                  5.75,
+                  5
+                ],
+                "cost_burn": [
+                  60,
+                  65,
+                  70,
+                  75,
+                  80
+                ],
+                "tooltip": "阿克尚掷出一个回旋镖，造成<physicalDamage>?物理伤害</physicalDamage>，每次命中一名敌人时会延长其距离。<br /><br />命中英雄时会为阿克尚提供在?秒里持续衰减的<speed>?移动速度</speed>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AkshanQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0166/ability_0166_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "赴险夺人",
+                "description": "被动效果：敌方英雄在击杀了阿克尚的友方英雄时，会被标记为恶人。如果阿克尚击杀了一名恶人，那么他会复活被该恶人击杀的友方英雄，获得额外金币，并清除所有恶人标记。<br><br>主动施放时，阿克尚会进入伪装状态并在朝着恶人移动时获得移动速度和法力回复。在离开草丛或墙体附近后，阿克尚会失去伪装状态。",
+                "max_rank": 5,
+                "range_burn": [
+                  5500
+                ],
+                "cooldown_burn": [
+                  18,
+                  14,
+                  10,
+                  6,
+                  2
+                ],
+                "cooldown_burn_float": [
+                  18,
+                  14,
+                  10,
+                  6,
+                  2
+                ],
+                "cost_burn": [
+                  40,
+                  30,
+                  20,
+                  10,
+                  0
+                ],
+                "tooltip": "{{ Spell_AkshanW_Tooltip_? }}?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AkshanW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0166/ability_0166_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "骄行荡寇",
+                "description": "阿克尚发射一个钩爪来吸附住地形，然后围绕它进行摆荡，在摆荡时快速朝相距最近的敌人开火。他可以提前从绳索上荡下来，或在与一名敌方英雄或地形产生碰撞时落下。",
+                "max_rank": 5,
+                "range_burn": [
+                  800
+                ],
+                "cooldown_burn": [
+                  18,
+                  16,
+                  15,
+                  13,
+                  12
+                ],
+                "cooldown_burn_float": [
+                  18,
+                  16.5,
+                  15,
+                  13.5,
+                  12
+                ],
+                "cost_burn": [
+                  70
+                ],
+                "tooltip": "<spellActive>第一段施放：</spellActive>阿克尚发射一个钩爪，吸附在命中的第一个地形上。<br /><br /><spellActive>第二段施放：</spellActive>阿克尚在地形附近摆荡，朝相距最近的敌人进行快速射击，每次射击造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br /><spellActive>第三段施放：</spellActive>阿克尚从绳索上荡下来，并进行一次终极射击。<br /><br />与一名敌方英雄或地形产生碰撞，会提前结束摆荡。<br /><br />参与击杀敌方英雄后会刷新这个技能的冷却时间。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AkshanE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0166/ability_0166_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "恩怨相抵",
+                "description": "阿克尚锁定一名敌方英雄并开始储存他的子弹。在释放时，他会发射所有已储存的子弹，对命中的第一个英雄、小兵或建筑物造成基于已损失生命值的伤害。",
+                "max_rank": 3,
+                "range_burn": [
+                  2500
+                ],
+                "cooldown_burn": [
+                  100,
+                  85,
+                  70
+                ],
+                "cooldown_burn_float": [
+                  100,
+                  85,
+                  70
+                ],
+                "cost_burn": [
+                  100
+                ],
+                "tooltip": "阿克尚锁定一名敌方英雄并开始过载充能他的枪械至多?秒，至多可储存?颗子弹。<br /><br /><recast>再次施放：</recast>阿克尚释放已储存的子弹，每颗子弹对命中的首个敌人或建筑物至少造成<physicalDamage>?物理伤害</physicalDamage>，基于已损失生命值至多提升至<physicalDamage>?物理伤害</physicalDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AkshanR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0166/ability_0166_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 166000,
+                "champion_id": 166,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Akshan_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 4800
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 880
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 166010,
+                "champion_id": 166,
+                "name": "水晶玫瑰 阿克尚",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Akshan_10.jpg",
+                "skin_video_url": "https://youtu.be/aR20_eMvl4c",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2022-02-10T04:00:00+09:00"
+              },
+              {
+                "id": 166020,
+                "champion_id": 166,
+                "name": "荣誉使者 阿克尚",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Akshan_20.jpg",
+                "skin_video_url": "https://youtu.be/IiZV4C9xuCI",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 166001,
+                "champion_id": 166,
+                "name": "赛博潮流 阿克尚",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Akshan_1.jpg",
+                "skin_video_url": "https://youtu.be/CNiq1LTvRZY",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-07-22T04:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 47.5
+        },
+        {
+          "champion_id": 517,
+          "play": 11727,
+          "win": 5576,
+          "meta": {
+            "id": 517,
+            "key": "Sylas",
+            "name": "解脱者",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Sylas.png",
+            "evolve": [],
+            "title": "塞拉斯",
+            "partype": "法力",
+            "passive": {
+              "name": "破敌禁法",
+              "description": "在施放一次技能后，塞拉斯会储存一层【破敌禁法】效果。塞拉斯的普攻将消耗一层效果并环绕自身挥舞他的盈能锁链来对命中的敌人造成额外魔法伤害。当塞拉斯拥有一层【破敌禁法】效果时，他会获得攻击速度。 ",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/SylasP.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0517/ability_0517_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "锁链鞭击",
+                "description": "塞拉斯甩出他的锁链，锁链会在目标区域交叉，并对敌人造成伤害和减速效果。<br><br>在一段延迟后，魔法能量将从交叉点迸发，造成伤害。",
+                "max_rank": 5,
+                "range_burn": [
+                  775
+                ],
+                "cooldown_burn": [
+                  10,
+                  9,
+                  8,
+                  7,
+                  6
+                ],
+                "cooldown_burn_float": [
+                  10,
+                  9,
+                  8,
+                  7,
+                  6
+                ],
+                "cost_burn": [
+                  55
+                ],
+                "tooltip": "塞拉斯甩出他的锁链，造成<magicDamage>?魔法伤害</magicDamage>和持续?秒的?<status>减速</status>。锁链交叉的位置会被引爆，进一步造成<magicDamage>?魔法伤害</magicDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SylasQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0517/ability_0517_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "弑君突刺",
+                "description": "塞拉斯带着魔法之力跃向一名敌人，造成伤害，并且在对抗敌方英雄时治疗自身。",
+                "max_rank": 5,
+                "range_burn": [
+                  400
+                ],
+                "cooldown_burn": [
+                  12,
+                  10,
+                  9,
+                  7,
+                  6
+                ],
+                "cooldown_burn_float": [
+                  12,
+                  10.5,
+                  9,
+                  7.5,
+                  6
+                ],
+                "cost_burn": [
+                  50,
+                  60,
+                  70,
+                  80,
+                  90
+                ],
+                "tooltip": "塞拉斯带着魔法之力跃向一名敌人，造成<magicDamage>?魔法伤害</magicDamage>。如果对敌方英雄造成伤害，那么会基于塞拉斯的已损失生命值来治疗塞拉斯<healing>?</healing>到<healing>?生命值</healing>(在?%生命值或以下时达到最大值)。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SylasW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0517/ability_0517_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "潜掠/强掳",
+                "description": "塞拉斯突进至一个位置。塞拉斯可以再次施放来将他的锁链向一个方向挥出，将他自身拉向命中的第一个敌人。",
+                "max_rank": 5,
+                "range_burn": [
+                  400
+                ],
+                "cooldown_burn": [
+                  13,
+                  12,
+                  11,
+                  10,
+                  9
+                ],
+                "cooldown_burn_float": [
+                  13,
+                  12,
+                  11,
+                  10,
+                  9
+                ],
+                "cost_burn": [
+                  65
+                ],
+                "tooltip": "塞拉斯快速突进至一个位置，并准备好一次<recast>再次施放</recast>，持续3.5秒。<br /><br /><recast>再次施放：</recast>塞拉斯挥出他的锁链，将他自身拉向命中的第一个敌人并造成<magicDamage>?魔法伤害</magicDamage>和?秒<status>击飞</status>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SylasE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0517/ability_0517_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "其人之道",
+                "description": "塞拉斯窃取一名敌人的终极技能，然后可以免费施放该技能。",
+                "max_rank": 3,
+                "range_burn": [
+                  950
+                ],
+                "cooldown_burn": [
+                  80,
+                  55,
+                  30
+                ],
+                "cooldown_burn_float": [
+                  80,
+                  55,
+                  30
+                ],
+                "cost_burn": [
+                  75
+                ],
+                "tooltip": "塞拉斯劫掠一位敌方英雄，以使他自身可以施放该敌人的终极技能，基于他自身的终极技能等级并使用他自身的属性。<br /><br />从一名敌人处劫掠技能后，会进入一段相当于?%目标终极技能冷却时间的、只针对该名敌人的冷却阶段(基于塞拉斯的技能急速)，最小值为?秒，期间无法再次劫掠该名敌人的终极技能。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SylasR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0517/ability_0517_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 517000,
+                "champion_id": 517,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sylas_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 3150
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 790
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 517036,
+                "champion_id": 517,
+                "name": "北极星发明家 塞拉斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sylas_36.jpg",
+                "skin_video_url": "https://youtu.be/cr5vEP38s9A",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2023-12-06T10:00:00+09:00"
+              },
+              {
+                "id": 517024,
+                "champion_id": 517,
+                "name": "幻灵战斗狼 塞拉斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sylas_24.jpg",
+                "skin_video_url": "https://youtu.be/WfnVnpl6TYE",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2022-03-31T04:00:00+09:00"
+              },
+              {
+                "id": 517008,
+                "champion_id": 517,
+                "name": "弗雷尔卓德 塞拉斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sylas_8.jpg",
+                "skin_video_url": "https://youtu.be/dHDagS9Lcdw",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-01-10T02:00:00+09:00"
+              },
+              {
+                "id": 517046,
+                "champion_id": 517,
+                "name": "暗星 塞拉斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sylas_46.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1820
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-10-23T09:00:00+09:00"
+              },
+              {
+                "id": 517013,
+                "champion_id": 517,
+                "name": "源计划：逆流 塞拉斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sylas_13.jpg",
+                "skin_video_url": "https://youtu.be/SXVU4k2WR54",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-05-27T04:00:00+09:00"
+              },
+              {
+                "id": 517034,
+                "champion_id": 517,
+                "name": "灰烬杀手 塞拉斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sylas_34.jpg",
+                "skin_video_url": "https://youtu.be/OW9tfL81Jy4",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 517001,
+                "champion_id": 517,
+                "name": "窃魂修罗 塞拉斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sylas_1.jpg",
+                "skin_video_url": "https://youtu.be/u2XqKQ05Oc4",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 517014,
+                "champion_id": 517,
+                "name": "至臻 源计划：逆流 塞拉斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sylas_14.jpg",
+                "skin_video_url": "https://youtu.be/uX9N3qww4-0",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              }
+            ]
+          },
+          "win_rate": 47.55
         },
         {
           "champion_id": 126,
-          "play": 568,
-          "win": 270,
+          "play": 569,
+          "win": 271,
           "meta": {
             "id": 126,
             "key": "Jayce",
@@ -1118,782 +1592,158 @@
               }
             ]
           },
-          "win_rate": 47.54
+          "win_rate": 47.63
         },
         {
-          "champion_id": 517,
-          "play": 11687,
-          "win": 5556,
+          "champion_id": 54,
+          "play": 310,
+          "win": 148,
           "meta": {
-            "id": 517,
-            "key": "Sylas",
-            "name": "解脱者",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Sylas.png",
+            "id": 54,
+            "key": "Malphite",
+            "name": "熔岩巨兽",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Malphite.png",
             "evolve": [],
-            "title": "塞拉斯",
+            "title": "墨菲特",
             "partype": "法力",
             "passive": {
-              "name": "破敌禁法",
-              "description": "在施放一次技能后，塞拉斯会储存一层【破敌禁法】效果。塞拉斯的普攻将消耗一层效果并环绕自身挥舞他的盈能锁链来对命中的敌人造成额外魔法伤害。当塞拉斯拥有一层【破敌禁法】效果时，他会获得攻击速度。 ",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/SylasP.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0517/ability_0517_P1.webm"
+              "name": "花岗岩护盾",
+              "description": "墨菲特被岩石护盾保护，最多吸收10%最大生命值的伤害，若数秒内墨菲特未受到攻击，护盾将重置。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Malphite_GraniteShield.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0054/ability_0054_P1.webm"
             },
             "spells": [
               {
                 "key": "Q",
-                "name": "锁链鞭击",
-                "description": "塞拉斯甩出他的锁链，锁链会在目标区域交叉，并对敌人造成伤害和减速效果。<br><br>在一段延迟后，魔法能量将从交叉点迸发，造成伤害。",
+                "name": "地震碎片",
+                "description": "墨菲特发出一块大地碎片穿过他敌人处的地面，在碰撞时造成伤害并且偷取移动速度3秒。",
                 "max_rank": 5,
                 "range_burn": [
-                  775
+                  625
                 ],
                 "cooldown_burn": [
-                  10,
-                  9,
-                  8,
-                  7,
-                  6
-                ],
-                "cooldown_burn_float": [
-                  10,
-                  9,
-                  8,
-                  7,
-                  6
-                ],
-                "cost_burn": [
-                  55
-                ],
-                "tooltip": "塞拉斯甩出他的锁链，造成<magicDamage>?魔法伤害</magicDamage>和持续?秒的?<status>减速</status>。锁链交叉的位置会被引爆，进一步造成<magicDamage>?魔法伤害</magicDamage>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SylasQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0517/ability_0517_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "弑君突刺",
-                "description": "塞拉斯带着魔法之力跃向一名敌人，造成伤害，并且在对抗敌方英雄时治疗自身。",
-                "max_rank": 5,
-                "range_burn": [
-                  400
-                ],
-                "cooldown_burn": [
-                  12,
-                  10,
-                  9,
-                  7,
-                  6
-                ],
-                "cooldown_burn_float": [
-                  12,
-                  10.5,
-                  9,
-                  7.5,
-                  6
-                ],
-                "cost_burn": [
-                  50,
-                  60,
-                  70,
-                  80,
-                  90
-                ],
-                "tooltip": "塞拉斯带着魔法之力跃向一名敌人，造成<magicDamage>?魔法伤害</magicDamage>。如果对敌方英雄造成伤害，那么会基于塞拉斯的已损失生命值来治疗塞拉斯<healing>?</healing>到<healing>?生命值</healing>(在?%生命值或以下时达到最大值)。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SylasW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0517/ability_0517_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "潜掠/强掳",
-                "description": "塞拉斯突进至一个位置。塞拉斯可以再次施放来将他的锁链向一个方向挥出，将他自身拉向命中的第一个敌人。",
-                "max_rank": 5,
-                "range_burn": [
-                  400
-                ],
-                "cooldown_burn": [
-                  13,
-                  12,
-                  11,
-                  10,
-                  9
-                ],
-                "cooldown_burn_float": [
-                  13,
-                  12,
-                  11,
-                  10,
-                  9
-                ],
-                "cost_burn": [
-                  65
-                ],
-                "tooltip": "塞拉斯快速突进至一个位置，并准备好一次<recast>再次施放</recast>，持续3.5秒。<br /><br /><recast>再次施放：</recast>塞拉斯挥出他的锁链，将他自身拉向命中的第一个敌人并造成<magicDamage>?魔法伤害</magicDamage>和?秒<status>击飞</status>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SylasE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0517/ability_0517_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "其人之道",
-                "description": "塞拉斯窃取一名敌人的终极技能，然后可以免费施放该技能。",
-                "max_rank": 3,
-                "range_burn": [
-                  950
-                ],
-                "cooldown_burn": [
-                  80,
-                  55,
-                  30
-                ],
-                "cooldown_burn_float": [
-                  80,
-                  55,
-                  30
-                ],
-                "cost_burn": [
-                  75
-                ],
-                "tooltip": "塞拉斯劫掠一位敌方英雄，以使他自身可以施放该敌人的终极技能，基于他自身的终极技能等级并使用他自身的属性。<br /><br />从一名敌人处劫掠技能后，会进入一段相当于?%目标终极技能冷却时间的、只针对该名敌人的冷却阶段(基于塞拉斯的技能急速)，最小值为?秒，期间无法再次劫掠该名敌人的终极技能。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SylasR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0517/ability_0517_R1.webm"
-              }
-            ],
-            "skins": [
-              {
-                "id": 517000,
-                "champion_id": 517,
-                "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sylas_0.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "IP",
-                    "cost": 3150
-                  },
-                  {
-                    "currency": "RP",
-                    "cost": 790
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 517036,
-                "champion_id": 517,
-                "name": "北极星发明家 塞拉斯",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sylas_36.jpg",
-                "skin_video_url": "https://youtu.be/cr5vEP38s9A",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2023-12-06T10:00:00+09:00"
-              },
-              {
-                "id": 517024,
-                "champion_id": 517,
-                "name": "幻灵战斗狼 塞拉斯",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sylas_24.jpg",
-                "skin_video_url": "https://youtu.be/WfnVnpl6TYE",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2022-03-31T04:00:00+09:00"
-              },
-              {
-                "id": 517008,
-                "champion_id": 517,
-                "name": "弗雷尔卓德 塞拉斯",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sylas_8.jpg",
-                "skin_video_url": "https://youtu.be/dHDagS9Lcdw",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2020-01-10T02:00:00+09:00"
-              },
-              {
-                "id": 517046,
-                "champion_id": 517,
-                "name": "暗星 塞拉斯",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sylas_46.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1820
-                  }
-                ],
-                "sales": null,
-                "release_date": "2024-10-23T09:00:00+09:00"
-              },
-              {
-                "id": 517013,
-                "champion_id": 517,
-                "name": "源计划：逆流 塞拉斯",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sylas_13.jpg",
-                "skin_video_url": "https://youtu.be/SXVU4k2WR54",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2021-05-27T04:00:00+09:00"
-              },
-              {
-                "id": 517034,
-                "champion_id": 517,
-                "name": "灰烬杀手 塞拉斯",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sylas_34.jpg",
-                "skin_video_url": "https://youtu.be/OW9tfL81Jy4",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 517001,
-                "champion_id": 517,
-                "name": "窃魂修罗 塞拉斯",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sylas_1.jpg",
-                "skin_video_url": "https://youtu.be/u2XqKQ05Oc4",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 517014,
-                "champion_id": 517,
-                "name": "至臻 源计划：逆流 塞拉斯",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sylas_14.jpg",
-                "skin_video_url": "https://youtu.be/uX9N3qww4-0",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              }
-            ]
-          },
-          "win_rate": 47.54
-        },
-        {
-          "champion_id": 58,
-          "play": 145,
-          "win": 69,
-          "meta": {
-            "id": 58,
-            "key": "Renekton",
-            "name": "荒漠屠夫",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Renekton.png",
-            "evolve": [],
-            "title": "雷克顿",
-            "partype": "怒气",
-            "passive": {
-              "name": "怒之领域",
-              "description": "雷克顿的攻击会产生【怒气】，在它的生命值较低时产生更多【怒气】。【怒气】可以强化他的基础技能，使它们具有额外效果。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Renekton_Passive.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0058/ability_0058_P1.webm"
-            },
-            "spells": [
-              {
-                "key": "Q",
-                "name": "巨鳄狂袭",
-                "description": "雷克顿挥动他的武器，对周围所有目标造成中等水平物理伤害，并根据造成的伤害来治疗自己。如果他有50点以上怒气，那么此技能的伤害和治疗效果会得到提升。",
-                "max_rank": 5,
-                "range_burn": [
-                  325
-                ],
-                "cooldown_burn": [
-                  7
-                ],
-                "cooldown_burn_float": [
-                  7
-                ],
-                "cost_burn": [
-                  0
-                ],
-                "tooltip": "雷克顿挥舞他的战刃，造成<physicalDamage>?物理伤害</physicalDamage>，此外，每命中一个非英雄单位就会回复<healing>?生命值</healing>，每命中一位英雄就会回复<healing>?</healing>(最多回复<healing>50/75/100/125/150生命值</healing>)。他每命中一个非英雄单位还会生成<keywordMajor>2.5怒气</keywordMajor>，且每命中一位英雄生成<keywordMajor>10怒气</keywordMajor>(最多生成<keywordMajor>30怒气</keywordMajor>)。<br /><br /><keywordMajor>怒气加成</keywordMajor>：伤害提升至<physicalDamage>?物理伤害</physicalDamage>并且对非英雄单位的治疗效果提升至<healing>?生命值</healing>，对英雄的治疗效果提升至<healing>?生命值</healing>(最多回复<healing>200/300/400/500/600生命值</healing>)。不会生成任何<keywordMajor>怒气</keywordMajor>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/RenektonCleave.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0058/ability_0058_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "冷酷捕猎",
-                "description": "雷克顿两次挥击目标，对其造成中等水平物理伤害并晕眩其0.75秒。如果雷克顿有50点以上怒气，他会三次挥击目标，摧毁目标身上的伤害护盾，对其造成高额物理伤害，并晕眩其1.5秒。",
-                "max_rank": 5,
-                "range_burn": [
-                  300
-                ],
-                "cooldown_burn": [
-                  16,
-                  14,
-                  12,
-                  10,
                   8
                 ],
                 "cooldown_burn_float": [
-                  16,
-                  14,
-                  12,
-                  10,
                   8
                 ],
                 "cost_burn": [
-                  0
-                ],
-                "tooltip": "雷克顿的下次攻击会进行两次打击，造成0.75秒<status>晕眩</status>和共计<physicalDamage>?物理伤害</physicalDamage>。命中一名英雄会生成额外的<keywordMajor>10怒气</keywordMajor>。<br /><br /><keywordMajor>怒气加成</keywordMajor>：雷克顿转而进行三次打击，摧毁<shield>护盾</shield>然后造成<physicalDamage>?物理伤害</physicalDamage>和1.5秒<status>晕眩</status>。不会生成任何<keywordMajor>怒气</keywordMajor>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/RenektonPreExecute.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0058/ability_0058_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "横冲直撞",
-                "description": "雷克顿冲向前方，对沿途的敌人造成伤害。如果雷克顿有50点以上怒气，就会造成额外伤害，并减少沿途敌人的护甲值。",
-                "max_rank": 5,
-                "range_burn": [
-                  450
-                ],
-                "cooldown_burn": [
-                  16,
-                  14,
-                  13,
-                  11,
-                  10
-                ],
-                "cooldown_burn_float": [
-                  16,
-                  14.5,
-                  13,
-                  11.5,
-                  10
-                ],
-                "cost_burn": [
-                  0
-                ],
-                "tooltip": "雷克顿进行冲刺，造成<physicalDamage>?物理伤害</physicalDamage>。他每命中一名非英雄单位就会生成<keywordMajor>2怒气</keywordMajor>，每命中一位英雄就会生成<keywordMajor>10怒气</keywordMajor>。如果至少命中一名敌人，那么雷克顿就能在4秒内<recast>再次施放</recast>这个技能一次。<br /><br /><keywordMajor>怒气加成</keywordMajor>：<recast>再次施放</recast>的冲刺造成<physicalDamage>?物理伤害</physicalDamage>作为替代并移除<scaleArmor>25/27.5/30/32.5/35%护甲</scaleArmor>，持续4秒。不会生成<keywordMajor>怒气</keywordMajor>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/RenektonSliceAndDice.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0058/ability_0058_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "终极统治",
-                "description": "雷克顿转换为暴君形态，获得额外生命值，并对周围敌人造成伤害。此形态的雷克顿定时获得怒气。",
-                "max_rank": 3,
-                "range_burn": [
-                  20
-                ],
-                "cooldown_burn": [
-                  120,
-                  100,
-                  80
-                ],
-                "cooldown_burn_float": [
-                  120,
-                  100,
-                  80
-                ],
-                "cost_burn": [
-                  0
-                ],
-                "tooltip": "雷克顿用黑暗能量笼罩自身，持续?秒，获得<healing>?最大生命值</healing>和<keywordMajor>?怒气</keywordMajor>。在激活时，他每秒造成<magicDamage>?魔法伤害</magicDamage>并获得<keywordMajor>?怒气</keywordMajor>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/RenektonReignOfTheTyrant.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0058/ability_0058_R1.webm"
-              }
-            ],
-            "skins": [
-              {
-                "id": 58042,
-                "champion_id": 58,
-                "name": "2023 全球总决赛 雷克顿",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Renekton_42.jpg",
-                "skin_video_url": "https://youtu.be/ON-X7s1bDsM",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2024-09-25T08:59:00+09:00"
-              },
-              {
-                "id": 58000,
-                "champion_id": 58,
-                "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Renekton_0.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "IP",
-                    "cost": 4800
-                  },
-                  {
-                    "currency": "RP",
-                    "cost": 880
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 58008,
-                "champion_id": 58,
-                "name": "SKT T1 雷克顿",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Renekton_8.jpg",
-                "skin_video_url": "https://youtu.be/Vy3b5VrFr_A",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2024-09-25T08:59:00+09:00"
-              },
-              {
-                "id": 58001,
-                "champion_id": 58,
-                "name": "星河战队 雷克顿",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Renekton_1.jpg",
-                "skin_video_url": "https://youtu.be/x3YqC0h4X6M",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 58005,
-                "champion_id": 58,
-                "name": "枯萎之壤 雷克顿",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Renekton_5.jpg",
-                "skin_video_url": "https://youtu.be/-97AqqPc_ys",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2014-02-12T04:00:00+09:00"
-              },
-              {
-                "id": 58006,
-                "champion_id": 58,
-                "name": "泳池派对 雷克顿",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Renekton_6.jpg",
-                "skin_video_url": "https://youtu.be/tgza7dox1oQ",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2013-09-10T14:00:00+09:00"
-              },
-              {
-                "id": 58017,
-                "champion_id": 58,
-                "name": "海克斯科技 雷克顿",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Renekton_17.jpg",
-                "skin_video_url": null,
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 58026,
-                "champion_id": 58,
-                "name": "源计划：泯灭 雷克顿",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Renekton_26.jpg",
-                "skin_video_url": "https://youtu.be/_1lX6g7KK_k",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1820
-                  }
-                ],
-                "sales": null,
-                "release_date": "2021-05-27T04:00:00+09:00"
-              },
-              {
-                "id": 58007,
-                "champion_id": 58,
-                "name": "猛龙 雷克顿",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Renekton_7.jpg",
-                "skin_video_url": "https://youtu.be/MQgTq9aengA",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 750
-                  }
-                ],
-                "sales": null,
-                "release_date": "2015-06-15T10:00:00+09:00"
-              },
-              {
-                "id": 58004,
-                "champion_id": 58,
-                "name": "符文战神 雷克顿",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Renekton_4.jpg",
-                "skin_video_url": "https://youtu.be/daXHKAimRBs",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 58002,
-                "champion_id": 58,
-                "name": "荒野之咬 雷克顿",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Renekton_2.jpg",
-                "skin_video_url": "https://youtu.be/zAuBkeAA2HQ",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 58003,
-                "champion_id": 58,
-                "name": "血石战神 雷克顿",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Renekton_3.jpg",
-                "skin_video_url": "https://youtu.be/89maQT0i_d4",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2011-07-25T20:00:00+09:00"
-              },
-              {
-                "id": 58009,
-                "champion_id": 58,
-                "name": "鳄霸 雷克顿",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Renekton_9.jpg",
-                "skin_video_url": "https://youtu.be/uy0BvdIdGbk",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 750
-                  }
-                ],
-                "sales": null,
-                "release_date": "2017-03-30T10:00:00+09:00"
-              },
-              {
-                "id": 58033,
-                "champion_id": 58,
-                "name": "黎明使者 雷克顿",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Renekton_33.jpg",
-                "skin_video_url": "https://youtu.be/GOAq_AvP7Mw",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2023-04-20T04:00:00+09:00"
-              },
-              {
-                "id": 58018,
-                "champion_id": 58,
-                "name": "黯晶巨鳄 雷克顿",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Renekton_18.jpg",
-                "skin_video_url": "https://youtu.be/Tw0_4-gvyf4",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2020-03-05T04:00:00+09:00"
-              }
-            ]
-          },
-          "win_rate": 47.59
-        },
-        {
-          "champion_id": 166,
-          "play": 1031,
-          "win": 492,
-          "meta": {
-            "id": 166,
-            "key": "Akshan",
-            "name": "影哨",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Akshan.png",
-            "evolve": [],
-            "title": "阿克尚",
-            "partype": "法力",
-            "passive": {
-              "name": "无所不用",
-              "description": "来自阿克尚攻击或技能的每第三次命中会造成额外伤害，并且如果目标是英雄还会为他提供一层护盾。<br><br>在阿克尚攻击时，他会进行一次额外的射击，来造成较少伤害。如果他取消掉了这次额外射击，那么他会转而获得移动速度。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/akshan_p.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0166/ability_0166_P1.webm"
-            },
-            "spells": [
-              {
-                "key": "Q",
-                "name": "去而复还",
-                "description": "阿克尚掷出一个回旋镖，在去程和返程时造成伤害，会在它每次命中一名敌人时延长它的距离。",
-                "max_rank": 5,
-                "range_burn": [
-                  850
-                ],
-                "cooldown_burn": [
-                  8,
-                  7,
-                  6,
-                  5,
-                  5
-                ],
-                "cooldown_burn_float": [
-                  8,
-                  7.25,
-                  6.5,
-                  5.75,
-                  5
-                ],
-                "cost_burn": [
-                  60,
-                  65,
                   70,
                   75,
-                  80
+                  80,
+                  85,
+                  90
                 ],
-                "tooltip": "阿克尚掷出一个回旋镖，造成<physicalDamage>?物理伤害</physicalDamage>，每次命中一名敌人时会延长其距离。<br /><br />命中英雄时会为阿克尚提供在?秒里持续衰减的<speed>?移动速度</speed>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AkshanQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0166/ability_0166_Q1.webm"
+                "tooltip": "墨菲特朝一名敌人发出一块大地碎片，造成<magicDamage>?魔法伤害</magicDamage>，并对目标造成持续?秒的20/25/30/35/40%<status>减速</status>。墨菲特还会窃取目标的这一部分速度，来获得持续?秒的与这个<status>减速</status>效果等额的<speed>移动速度</speed>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SeismicShard.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0054/ability_0054_Q1.webm"
               },
               {
                 "key": "W",
-                "name": "赴险夺人",
-                "description": "被动效果：敌方英雄在击杀了阿克尚的友方英雄时，会被标记为恶人。如果阿克尚击杀了一名恶人，那么他会复活被该恶人击杀的友方英雄，获得额外金币，并清除所有恶人标记。<br><br>主动施放时，阿克尚会进入伪装状态并在朝着恶人移动时获得移动速度和法力回复。在离开草丛或墙体附近后，阿克尚会失去伪装状态。",
+                "name": "雷霆拍击",
+                "description": "墨菲特的攻击蕴含着如此惊人的力道以至于它引发了一次音爆。在接下来的数秒里，他的攻击会在他面前引发余波。",
                 "max_rank": 5,
                 "range_burn": [
-                  5500
+                  400
                 ],
                 "cooldown_burn": [
-                  18,
-                  14,
                   10,
-                  6,
-                  2
+                  9,
+                  9,
+                  8,
+                  8
                 ],
                 "cooldown_burn_float": [
-                  18,
-                  14,
                   10,
-                  6,
-                  2
+                  9.5,
+                  9,
+                  8.5,
+                  8
                 ],
                 "cost_burn": [
-                  40,
                   30,
-                  20,
-                  10,
-                  0
+                  35,
+                  40,
+                  45,
+                  50
                 ],
-                "tooltip": "{{ Spell_AkshanW_Tooltip_? }}?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AkshanW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0166/ability_0166_W1.webm"
+                "tooltip": "<spellPassive>被动：</spellPassive>墨菲特获得<scaleArmor>?%护甲(%i:scaleArmor%?)</scaleArmor>。这个效果会在<spellName>花岗岩护盾</spellName>激活时提升至<scaleArmor>?%(%i:scaleArmor%?)</scaleArmor>。<br /><br /><spellPassive>主动：</spellPassive>墨菲特的下次攻击造成额外的<physicalDamage>?物理伤害</physicalDamage>，并会引发一阵余震，以在一个锥形范围内造成<physicalDamage>?物理伤害</physicalDamage>。在接下来的?秒内，他的攻击会继续引发余震。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/Obduracy.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0054/ability_0054_W1.webm"
               },
               {
                 "key": "E",
-                "name": "骄行荡寇",
-                "description": "阿克尚发射一个钩爪来吸附住地形，然后围绕它进行摆荡，在摆荡时快速朝相距最近的敌人开火。他可以提前从绳索上荡下来，或在与一名敌方英雄或地形产生碰撞时落下。",
+                "name": "大地震颤",
+                "description": "墨菲特锤击地面，放射出冲击波对目标造成基于他护甲值的魔法伤害，同时暂时降低目标攻击速度。",
                 "max_rank": 5,
                 "range_burn": [
-                  800
+                  400
                 ],
                 "cooldown_burn": [
-                  18,
-                  16,
-                  15,
-                  13,
-                  12
+                  7
                 ],
                 "cooldown_burn_float": [
-                  18,
-                  16.5,
-                  15,
-                  13.5,
-                  12
+                  7
                 ],
                 "cost_burn": [
-                  70
+                  50
                 ],
-                "tooltip": "<spellActive>第一段施放：</spellActive>阿克尚发射一个钩爪，吸附在命中的第一个地形上。<br /><br /><spellActive>第二段施放：</spellActive>阿克尚在地形附近摆荡，朝相距最近的敌人进行快速射击，每次射击造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br /><spellActive>第三段施放：</spellActive>阿克尚从绳索上荡下来，并进行一次终极射击。<br /><br />与一名敌方英雄或地形产生碰撞，会提前结束摆荡。<br /><br />参与击杀敌方英雄后会刷新这个技能的冷却时间。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AkshanE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0166/ability_0166_E1.webm"
+                "tooltip": "墨菲特锤击地面，对周围敌人造成<magicDamage>?魔法伤害</magicDamage>并减少他们?%<attackSpeed>攻击速度</attackSpeed>，持续?秒。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/Landslide.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0054/ability_0054_E1.webm"
               },
               {
                 "key": "R",
-                "name": "恩怨相抵",
-                "description": "阿克尚锁定一名敌方英雄并开始储存他的子弹。在释放时，他会发射所有已储存的子弹，对命中的第一个英雄、小兵或建筑物造成基于已损失生命值的伤害。",
+                "name": "势不可挡",
+                "description": "墨菲特自身高速冲向一个区域，对区域内的敌人们造成伤害和击飞效果。",
                 "max_rank": 3,
                 "range_burn": [
-                  2500
+                  1000
                 ],
                 "cooldown_burn": [
-                  100,
-                  85,
-                  70
+                  130,
+                  105,
+                  80
                 ],
                 "cooldown_burn_float": [
-                  100,
-                  85,
-                  70
+                  130,
+                  105,
+                  80
                 ],
                 "cost_burn": [
                   100
                 ],
-                "tooltip": "阿克尚锁定一名敌方英雄并开始过载充能他的枪械至多?秒，至多可储存?颗子弹。<br /><br /><recast>再次施放：</recast>阿克尚释放已储存的子弹，每颗子弹对命中的首个敌人或建筑物至少造成<physicalDamage>?物理伤害</physicalDamage>，基于已损失生命值至多提升至<physicalDamage>?物理伤害</physicalDamage>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AkshanR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0166/ability_0166_R1.webm"
+                "tooltip": "墨菲特携着山崩之力冲锋，进行不可阻挡的突进。在突进结束时，墨菲特会<status>击飞</status>?秒并造成<magicDamage>?魔法伤害</magicDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/UFSlash.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0054/ability_0054_R1.webm"
               }
             ],
             "skins": [
               {
-                "id": 166000,
-                "champion_id": 166,
+                "id": 54000,
+                "champion_id": 54,
                 "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Akshan_0.jpg",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Malphite_0.jpg",
                 "skin_video_url": null,
                 "prices": [
                   {
                     "currency": "IP",
-                    "cost": 4800
+                    "cost": 450
                   },
                   {
                     "currency": "RP",
-                    "cost": 880
+                    "cost": 260
                   }
                 ],
                 "sales": null,
                 "release_date": null
               },
               {
-                "id": 166010,
-                "champion_id": 166,
-                "name": "水晶玫瑰 阿克尚",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Akshan_10.jpg",
-                "skin_video_url": "https://youtu.be/aR20_eMvl4c",
+                "id": 54025,
+                "champion_id": 54,
+                "name": "FPX 墨菲特",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Malphite_25.jpg",
+                "skin_video_url": "https://youtu.be/gjj7VqYqhm4",
                 "prices": [
                   {
                     "currency": "RP",
@@ -1901,24 +1751,24 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2022-02-10T04:00:00+09:00"
+                "release_date": "2024-09-25T08:59:00+09:00"
               },
               {
-                "id": 166020,
-                "champion_id": 166,
-                "name": "荣誉使者 阿克尚",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Akshan_20.jpg",
-                "skin_video_url": "https://youtu.be/IiZV4C9xuCI",
+                "id": 54001,
+                "champion_id": 54,
+                "name": "三叶草 墨菲特",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Malphite_1.jpg",
+                "skin_video_url": null,
                 "prices": null,
                 "sales": null,
                 "release_date": null
               },
               {
-                "id": 166001,
-                "champion_id": 166,
-                "name": "赛博潮流 阿克尚",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Akshan_1.jpg",
-                "skin_video_url": "https://youtu.be/CNiq1LTvRZY",
+                "id": 54005,
+                "champion_id": 54,
+                "name": "冰川巨兽 墨菲特",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Malphite_5.jpg",
+                "skin_video_url": "https://youtu.be/sBV8lw1dKNs",
                 "prices": [
                   {
                     "currency": "RP",
@@ -1926,11 +1776,146 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2021-07-22T04:00:00+09:00"
+                "release_date": "2012-07-13T01:00:00+09:00"
+              },
+              {
+                "id": 54027,
+                "champion_id": 54,
+                "name": "古神 墨菲特",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Malphite_27.jpg",
+                "skin_video_url": "https://youtu.be/sJ7ibhTDihM",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-08-12T04:00:00+09:00"
+              },
+              {
+                "id": 54016,
+                "champion_id": 54,
+                "name": "奥德赛 墨菲特",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Malphite_16.jpg",
+                "skin_video_url": "https://youtu.be/CX-rAr3SBMQ",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2018-09-10T22:00:00+09:00"
+              },
+              {
+                "id": 54007,
+                "champion_id": 54,
+                "name": "无畏号 墨菲特",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Malphite_7.jpg",
+                "skin_video_url": "https://youtu.be/41b1G79OdyE",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2015-10-08T10:00:00+09:00"
+              },
+              {
+                "id": 54037,
+                "champion_id": 54,
+                "name": "春晖山神 墨菲特",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Malphite_37.jpg",
+                "skin_video_url": "https://youtu.be/jOBGGvu6JBI",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2023-01-26T04:00:00+09:00"
+              },
+              {
+                "id": 54023,
+                "champion_id": 54,
+                "name": "暗星 墨菲特",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Malphite_23.jpg",
+                "skin_video_url": "https://youtu.be/lqcDl6ynwPM",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-03-26T04:00:00+09:00"
+              },
+              {
+                "id": 54002,
+                "champion_id": 54,
+                "name": "珊瑚礁 墨菲特",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Malphite_2.jpg",
+                "skin_video_url": "https://youtu.be/1izediN8SRg",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 54003,
+                "champion_id": 54,
+                "name": "石破天惊 墨菲特",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Malphite_3.jpg",
+                "skin_video_url": "https://youtu.be/J0fkqTMhAhY",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 54024,
+                "champion_id": 54,
+                "name": "至臻 暗星 墨菲特",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Malphite_24.jpg",
+                "skin_video_url": "https://youtu.be/sUKuhQbOfoE",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 54006,
+                "champion_id": 54,
+                "name": "霸天巨兽 墨菲特",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Malphite_6.jpg",
+                "skin_video_url": "https://youtu.be/SrKCgAc7tyQ",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2014-07-24T07:00:00+09:00"
+              },
+              {
+                "id": 54004,
+                "champion_id": 54,
+                "name": "黑曜石守护者 墨菲特",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Malphite_4.jpg",
+                "skin_video_url": "https://youtu.be/BKJonB60U2w",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": null
               }
             ]
           },
-          "win_rate": 47.72
+          "win_rate": 47.74
         }
       ],
       [
@@ -2305,8 +2290,8 @@
         },
         {
           "champion_id": 901,
-          "play": 1975,
-          "win": 1098,
+          "play": 1979,
+          "win": 1102,
           "meta": {
             "id": 901,
             "key": "Smolder",
@@ -2480,12 +2465,12 @@
               }
             ]
           },
-          "win_rate": 55.59
+          "win_rate": 55.68
         },
         {
           "champion_id": 268,
-          "play": 1139,
-          "win": 626,
+          "play": 1143,
+          "win": 628,
           "meta": {
             "id": 268,
             "key": "Azir",
@@ -2741,12 +2726,12 @@
               }
             ]
           },
-          "win_rate": 54.96
+          "win_rate": 54.94
         },
         {
           "champion_id": 136,
-          "play": 1424,
-          "win": 776,
+          "play": 1432,
+          "win": 782,
           "meta": {
             "id": 136,
             "key": "AurelionSol",
@@ -2956,12 +2941,12 @@
               }
             ]
           },
-          "win_rate": 54.49
+          "win_rate": 54.61
         },
         {
           "champion_id": 115,
-          "play": 396,
-          "win": 213,
+          "play": 397,
+          "win": 214,
           "meta": {
             "id": 115,
             "key": "Ziggs",
@@ -3262,15 +3247,15 @@
               }
             ]
           },
-          "win_rate": 53.79
+          "win_rate": 53.9
         }
       ]
     ],
     "counters": [
       {
         "champion_id": 517,
-        "play": 11687,
-        "win": 5556,
+        "play": 11727,
+        "win": 5576,
         "meta": {
           "id": 517,
           "key": "Sylas",
@@ -3538,8 +3523,8 @@
       },
       {
         "champion_id": 134,
-        "play": 5529,
-        "win": 2824,
+        "play": 5544,
+        "win": 2829,
         "meta": {
           "id": 134,
           "key": "Syndra",
@@ -3860,8 +3845,8 @@
       },
       {
         "champion_id": 777,
-        "play": 5422,
-        "win": 2911,
+        "play": 5441,
+        "win": 2919,
         "meta": {
           "id": 777,
           "key": "Yone",
@@ -4124,8 +4109,8 @@
       },
       {
         "champion_id": 910,
-        "play": 4339,
-        "win": 2247,
+        "play": 4358,
+        "win": 2256,
         "meta": {
           "id": 910,
           "key": "Hwei",
@@ -4306,8 +4291,8 @@
       },
       {
         "champion_id": 157,
-        "play": 4239,
-        "win": 2147,
+        "play": 4253,
+        "win": 2157,
         "meta": {
           "id": 157,
           "key": "Yasuo",
@@ -4693,8 +4678,8 @@
       },
       {
         "champion_id": 61,
-        "play": 4172,
-        "win": 2181,
+        "play": 4184,
+        "win": 2184,
         "meta": {
           "id": 61,
           "key": "Orianna",
@@ -5015,8 +5000,8 @@
       },
       {
         "champion_id": 7,
-        "play": 4066,
-        "win": 2104,
+        "play": 4079,
+        "win": 2112,
         "meta": {
           "id": 7,
           "key": "Leblanc",
@@ -5359,8 +5344,8 @@
       },
       {
         "champion_id": 238,
-        "play": 3342,
-        "win": 1698,
+        "play": 3361,
+        "win": 1710,
         "meta": {
           "id": 238,
           "key": "Zed",
@@ -5689,8 +5674,8 @@
       },
       {
         "champion_id": 42,
-        "play": 3290,
-        "win": 1716,
+        "play": 3304,
+        "win": 1722,
         "meta": {
           "id": 42,
           "key": "Corki",
@@ -5979,8 +5964,8 @@
       },
       {
         "champion_id": 84,
-        "play": 3219,
-        "win": 1669,
+        "play": 3233,
+        "win": 1675,
         "meta": {
           "id": 84,
           "key": "Akali",
@@ -6405,8 +6390,8 @@
       },
       {
         "champion_id": 99,
-        "play": 2761,
-        "win": 1402,
+        "play": 2773,
+        "win": 1409,
         "meta": {
           "id": 99,
           "key": "Lux",
@@ -6848,8 +6833,8 @@
       },
       {
         "champion_id": 55,
-        "play": 2678,
-        "win": 1354,
+        "play": 2692,
+        "win": 1358,
         "meta": {
           "id": 55,
           "key": "Katarina",
@@ -7228,8 +7213,8 @@
       },
       {
         "champion_id": 3,
-        "play": 2656,
-        "win": 1425,
+        "play": 2667,
+        "win": 1433,
         "meta": {
           "id": 3,
           "key": "Galio",
@@ -7527,7 +7512,7 @@
       },
       {
         "champion_id": 893,
-        "play": 2161,
+        "play": 2166,
         "win": 1115,
         "meta": {
           "id": 893,
@@ -7697,8 +7682,8 @@
       },
       {
         "champion_id": 45,
-        "play": 2134,
-        "win": 1069,
+        "play": 2140,
+        "win": 1072,
         "meta": {
           "id": 45,
           "key": "Veigar",
@@ -8076,8 +8061,8 @@
       },
       {
         "champion_id": 127,
-        "play": 2092,
-        "win": 1088,
+        "play": 2101,
+        "win": 1096,
         "meta": {
           "id": 127,
           "key": "Lissandra",
@@ -8362,8 +8347,8 @@
       },
       {
         "champion_id": 711,
-        "play": 2049,
-        "win": 1032,
+        "play": 2058,
+        "win": 1036,
         "meta": {
           "id": 711,
           "key": "Vex",
@@ -8548,187 +8533,9 @@
         }
       },
       {
-        "champion_id": 901,
-        "play": 1975,
-        "win": 1098,
-        "meta": {
-          "id": 901,
-          "key": "Smolder",
-          "name": "炽炎雏龙",
-          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Smolder.png",
-          "evolve": [],
-          "title": "斯莫德",
-          "partype": "法力",
-          "passive": {
-            "name": "龙之研习",
-            "description": "用技能命中英雄和用超级灼热龙息 击杀敌人时会提供一层龙之研习。层数会提升斯莫德各基础技能的伤害。",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Icons_Smolder_Passive.png",
-            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_P1.webm"
-          },
-          "spells": [
-            {
-              "key": "Q",
-              "name": "超级灼热龙息",
-              "description": "斯莫德在一名敌人身上喷吐烈焰。随着他获得更多层数，这个技能会变得更加强力。",
-              "max_rank": 5,
-              "range_burn": [
-                550
-              ],
-              "cooldown_burn": [
-                5,
-                5,
-                4,
-                4,
-                3
-              ],
-              "cooldown_burn_float": [
-                5.5,
-                5,
-                4.5,
-                4,
-                3.5
-              ],
-              "cost_burn": [
-                25
-              ],
-              "tooltip": "斯莫德喷出烈焰，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。<br /><br />基于<spellName>龙之研习</spellName>的层数，这个技能会不断进化以获得以下效果：<li><keywordMajor>?层</keywordMajor>：伤害目标周围的所有敌人。</li><li><keywordMajor>?层</keywordMajor>：在目标后侧引发<spellName>{{ tier2_numberofblowback }}</spellName>次爆炸，造成{{ tier2_blowbackpercentagedamage }}%此技能伤害。</li><li><keywordMajor>?层</keywordMajor>：灼烧目标，在{{ tier3_dotlength }}秒里持续造成共<trueDamage>{{ tier3_burn }}最大生命值的真实伤害</trueDamage>。 敌方英雄如果在灼烧期间跌到<trueDamage>{{ tier3_executethreshold }}</trueDamage>总生命值以下，则会被立刻击杀。</li>?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderQ.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_Q1.webm"
-            },
-            {
-              "key": "W",
-              "name": "阿嚏！",
-              "description": "斯莫德发出一个萌萌的烈焰喷嚏，喷嚏会在命中敌人时爆炸。",
-              "max_rank": 5,
-              "range_burn": [
-                1500
-              ],
-              "cooldown_burn": [
-                14,
-                13,
-                12,
-                11,
-                10
-              ],
-              "cooldown_burn_float": [
-                14,
-                13,
-                12,
-                11,
-                10
-              ],
-              "cost_burn": [
-                60
-              ],
-              "tooltip": "斯莫德发出一个萌萌的烈焰喷嚏，造成<physicalDamage>?物理伤害</physicalDamage>和持续?秒的?%<status>减速</status>。<br /><br />命中英雄时会引发一次爆炸，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderW.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_W1.webm"
-            },
-            {
-              "key": "E",
-              "name": "扑棱，扑棱，扑棱！",
-              "description": "斯莫德展翅高飞，无视地形并轰击生命值最低的敌人。",
-              "max_rank": 5,
-              "range_burn": [
-                700
-              ],
-              "cooldown_burn": [
-                24,
-                22,
-                20,
-                18,
-                16
-              ],
-              "cooldown_burn_float": [
-                24,
-                22,
-                20,
-                18,
-                16
-              ],
-              "cost_burn": [
-                65
-              ],
-              "tooltip": "斯莫德展翅高飞，获得<speed>?%移动速度</speed>并无视地形，持续?秒。<br /><br />飞行时，斯莫德轰击生命值最低的敌方英雄<spellName>?</spellName>次(向下取整)，每次命中造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderE.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_E1.webm"
-            },
-            {
-              "key": "R",
-              "name": "妈----！",
-              "description": "斯莫德召唤他的妈妈从天空喷吐烈焰，对她的烈焰中心的敌人们造成额外伤害和减速。",
-              "max_rank": 3,
-              "range_burn": [
-                4200
-              ],
-              "cooldown_burn": [
-                140,
-                130,
-                120
-              ],
-              "cooldown_burn_float": [
-                140,
-                130,
-                120
-              ],
-              "cost_burn": [
-                100
-              ],
-              "tooltip": "斯莫德的妈妈从天空喷吐烈焰，造成<physicalDamage>?物理伤害</physicalDamage>。中心的敌人们会转而受到<physicalDamage>?</physicalDamage>伤害和持续?秒的?%<status>减速</status>。<br /><br />斯莫德的妈妈如果命中了她的儿子，则会为他治疗<healing>?生命值</healing>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderR.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_R1.webm"
-            }
-          ],
-          "skins": [
-            {
-              "id": 901000,
-              "champion_id": 901,
-              "name": "default",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Smolder_0.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "IP",
-                  "cost": 6300
-                },
-                {
-                  "currency": "RP",
-                  "cost": 975
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 901001,
-              "champion_id": 901,
-              "name": "天龙之子 斯莫德",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Smolder_1.jpg",
-              "skin_video_url": "https://youtu.be/XeJNB08BRYU",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": [
-                {
-                  "currency": "RP",
-                  "cost": 877,
-                  "discount_rate": 0.35,
-                  "started_at": "2024-10-28T08:00:00+09:00",
-                  "ended_at": "2024-11-04T08:00:00+09:00"
-                }
-              ],
-              "release_date": "2024-01-31T10:00:00+09:00"
-            }
-          ]
-        }
-      },
-      {
         "champion_id": 142,
-        "play": 1974,
-        "win": 983,
+        "play": 1980,
+        "win": 984,
         "meta": {
           "id": 142,
           "key": "Zoe",
@@ -8996,9 +8803,187 @@
         }
       },
       {
+        "champion_id": 901,
+        "play": 1979,
+        "win": 1102,
+        "meta": {
+          "id": 901,
+          "key": "Smolder",
+          "name": "炽炎雏龙",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Smolder.png",
+          "evolve": [],
+          "title": "斯莫德",
+          "partype": "法力",
+          "passive": {
+            "name": "龙之研习",
+            "description": "用技能命中英雄和用超级灼热龙息 击杀敌人时会提供一层龙之研习。层数会提升斯莫德各基础技能的伤害。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Icons_Smolder_Passive.png",
+            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_P1.webm"
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "超级灼热龙息",
+              "description": "斯莫德在一名敌人身上喷吐烈焰。随着他获得更多层数，这个技能会变得更加强力。",
+              "max_rank": 5,
+              "range_burn": [
+                550
+              ],
+              "cooldown_burn": [
+                5,
+                5,
+                4,
+                4,
+                3
+              ],
+              "cooldown_burn_float": [
+                5.5,
+                5,
+                4.5,
+                4,
+                3.5
+              ],
+              "cost_burn": [
+                25
+              ],
+              "tooltip": "斯莫德喷出烈焰，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。<br /><br />基于<spellName>龙之研习</spellName>的层数，这个技能会不断进化以获得以下效果：<li><keywordMajor>?层</keywordMajor>：伤害目标周围的所有敌人。</li><li><keywordMajor>?层</keywordMajor>：在目标后侧引发<spellName>{{ tier2_numberofblowback }}</spellName>次爆炸，造成{{ tier2_blowbackpercentagedamage }}%此技能伤害。</li><li><keywordMajor>?层</keywordMajor>：灼烧目标，在{{ tier3_dotlength }}秒里持续造成共<trueDamage>{{ tier3_burn }}最大生命值的真实伤害</trueDamage>。 敌方英雄如果在灼烧期间跌到<trueDamage>{{ tier3_executethreshold }}</trueDamage>总生命值以下，则会被立刻击杀。</li>?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderQ.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "阿嚏！",
+              "description": "斯莫德发出一个萌萌的烈焰喷嚏，喷嚏会在命中敌人时爆炸。",
+              "max_rank": 5,
+              "range_burn": [
+                1500
+              ],
+              "cooldown_burn": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "cooldown_burn_float": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "cost_burn": [
+                60
+              ],
+              "tooltip": "斯莫德发出一个萌萌的烈焰喷嚏，造成<physicalDamage>?物理伤害</physicalDamage>和持续?秒的?%<status>减速</status>。<br /><br />命中英雄时会引发一次爆炸，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderW.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "扑棱，扑棱，扑棱！",
+              "description": "斯莫德展翅高飞，无视地形并轰击生命值最低的敌人。",
+              "max_rank": 5,
+              "range_burn": [
+                700
+              ],
+              "cooldown_burn": [
+                24,
+                22,
+                20,
+                18,
+                16
+              ],
+              "cooldown_burn_float": [
+                24,
+                22,
+                20,
+                18,
+                16
+              ],
+              "cost_burn": [
+                65
+              ],
+              "tooltip": "斯莫德展翅高飞，获得<speed>?%移动速度</speed>并无视地形，持续?秒。<br /><br />飞行时，斯莫德轰击生命值最低的敌方英雄<spellName>?</spellName>次(向下取整)，每次命中造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderE.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "妈----！",
+              "description": "斯莫德召唤他的妈妈从天空喷吐烈焰，对她的烈焰中心的敌人们造成额外伤害和减速。",
+              "max_rank": 3,
+              "range_burn": [
+                4200
+              ],
+              "cooldown_burn": [
+                140,
+                130,
+                120
+              ],
+              "cooldown_burn_float": [
+                140,
+                130,
+                120
+              ],
+              "cost_burn": [
+                100
+              ],
+              "tooltip": "斯莫德的妈妈从天空喷吐烈焰，造成<physicalDamage>?物理伤害</physicalDamage>。中心的敌人们会转而受到<physicalDamage>?</physicalDamage>伤害和持续?秒的?%<status>减速</status>。<br /><br />斯莫德的妈妈如果命中了她的儿子，则会为他治疗<healing>?生命值</healing>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderR.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 901000,
+              "champion_id": 901,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Smolder_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 6300
+                },
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 901001,
+              "champion_id": 901,
+              "name": "天龙之子 斯莫德",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Smolder_1.jpg",
+              "skin_video_url": "https://youtu.be/XeJNB08BRYU",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": [
+                {
+                  "currency": "RP",
+                  "cost": 877,
+                  "discount_rate": 0.35,
+                  "started_at": "2024-10-28T08:00:00+09:00",
+                  "ended_at": "2024-11-04T08:00:00+09:00"
+                }
+              ],
+              "release_date": "2024-01-31T10:00:00+09:00"
+            }
+          ]
+        }
+      },
+      {
         "champion_id": 91,
-        "play": 1844,
-        "win": 910,
+        "play": 1857,
+        "win": 918,
         "meta": {
           "id": 91,
           "key": "Talon",
@@ -9308,8 +9293,8 @@
       },
       {
         "champion_id": 101,
-        "play": 1705,
-        "win": 882,
+        "play": 1710,
+        "win": 884,
         "meta": {
           "id": 101,
           "key": "Xerath",
@@ -9590,8 +9575,8 @@
       },
       {
         "champion_id": 90,
-        "play": 1652,
-        "win": 857,
+        "play": 1660,
+        "win": 861,
         "meta": {
           "id": 90,
           "key": "Malzahar",
@@ -9906,8 +9891,8 @@
       },
       {
         "champion_id": 34,
-        "play": 1640,
-        "win": 807,
+        "play": 1646,
+        "win": 811,
         "meta": {
           "id": 34,
           "key": "Anivia",
@@ -10213,257 +10198,9 @@
         }
       },
       {
-        "champion_id": 112,
-        "play": 1523,
-        "win": 797,
-        "meta": {
-          "id": 112,
-          "key": "Viktor",
-          "name": "机械先驱",
-          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Viktor.png",
-          "evolve": [],
-          "title": "维克托",
-          "partype": "法力",
-          "passive": {
-            "name": "光荣进化",
-            "description": "维克托在击杀敌人时能够强化他的基础技能。",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Viktor_Passive.png",
-            "video_url": null
-          },
-          "spells": [
-            {
-              "key": "Q",
-              "name": "虹吸能量",
-              "description": "维克托引爆一名敌方单位，造成魔法伤害，同时形成一个护盾，并强化他的下次普通攻击。<br><br>增强：虹吸能量的护盾提升60%并且维克托在施放后获得移动速度加成。",
-              "max_rank": 5,
-              "range_burn": [
-                600
-              ],
-              "cooldown_burn": [
-                9,
-                8,
-                7,
-                6,
-                5
-              ],
-              "cooldown_burn_float": [
-                9,
-                8,
-                7,
-                6,
-                5
-              ],
-              "cost_burn": [
-                45,
-                50,
-                55,
-                60,
-                65
-              ],
-              "tooltip": "维克托引爆一名敌方单位，造成<magicDamage>?魔法伤害</magicDamage>并为维克托提供持续?秒的<shield>?护盾值</shield>。<br /><br />维克托在3.5秒内的下一次攻击会造成<magicDamage>?魔法伤害</magicDamage>。<br /><br /><keywordMajor>升级版：</keywordMajor>提供<shield>?护盾值</shield>并且维克托还会获得持续?秒的<speed>?%移动速度</speed>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ViktorPowerTransfer.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0112/ability_0112_Q1.webm"
-            },
-            {
-              "key": "W",
-              "name": "重力场",
-              "description": "维克托放出一个重力限制设备，减缓其半径内所有敌人的移动速度。如果敌人在设备的半径内呆得过久，就会被晕眩。<br><br>增强：维克托的非周期性技能会给敌人施加减速。",
-              "max_rank": 5,
-              "range_burn": [
-                800
-              ],
-              "cooldown_burn": [
-                17,
-                16,
-                15,
-                14,
-                13
-              ],
-              "cooldown_burn_float": [
-                17,
-                16,
-                15,
-                14,
-                13
-              ],
-              "cost_burn": [
-                65
-              ],
-              "tooltip": "维克托部署一个持续?秒的重力限制设备，使其中的敌人<status>减速</status>?%。敌人在其中驻留1.5秒后，就会被<status>晕眩</status>?秒。<br /><br /><keywordMajor>升级版被动效果：</keywordMajor>维克托的非终极技能会造成持续1秒的?%<status>减速</status>。<br /><br />?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ViktorGravitonField.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0112/ability_0112_W1.webm"
-            },
-            {
-              "key": "E",
-              "name": "死亡射线",
-              "description": "维克托用他的机械臂发射一束混乱光线，笔直地切割战场，沿途对行进路上的敌人造成魔法伤害。<br><br>增强：射线照过的地方会产生爆炸，造成魔法伤害。",
-              "max_rank": 5,
-              "range_burn": [
-                525
-              ],
-              "cooldown_burn": [
-                12,
-                11,
-                10,
-                9,
-                8
-              ],
-              "cooldown_burn_float": [
-                12,
-                11,
-                10,
-                9,
-                8
-              ],
-              "cost_burn": [
-                70,
-                80,
-                90,
-                100,
-                110
-              ],
-              "tooltip": "维克托朝所选方向发射一道死亡射线，对命中的敌人们造成<magicDamage>?魔法伤害</magicDamage>。<br /><br /><keywordMajor>升级版：</keywordMajor>一道余波会跟随死亡射线，造成<magicDamage>?魔法伤害</magicDamage>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ViktorDeathRay.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0112/ability_0112_E1.webm"
-            },
-            {
-              "key": "R",
-              "name": "混乱风暴",
-              "description": "维克托朝目标区域发射一枚奇点，对敌人造成魔法伤害并打断敌人的引导技能。之后奇点会周期性地对所有附近的敌人造成魔法伤害。维克托可以重新定位这枚奇点。<br><br>增强：混乱风暴的移动加快25%。",
-              "max_rank": 3,
-              "range_burn": [
-                700
-              ],
-              "cooldown_burn": [
-                120,
-                100,
-                80
-              ],
-              "cooldown_burn_float": [
-                120,
-                100,
-                80
-              ],
-              "cost_burn": [
-                100
-              ],
-              "tooltip": "维克托在一个区域内召唤一道持续?秒的混乱风暴，对周围的敌人们立刻造成<magicDamage>?魔法伤害</magicDamage>随后每秒造成<magicDamage>?魔法伤害</magicDamage>。混乱风暴会自动跟随它近期造成过伤害的英雄。<br /><br /><recast>再次施放：</recast>维克托手动移动混乱风暴。<br /><br /><keywordMajor>升级版：</keywordMajor>混乱风暴的移动速度加快?%。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ViktorChaosStorm.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0112/ability_0112_R1.webm"
-            }
-          ],
-          "skins": [
-            {
-              "id": 112000,
-              "champion_id": 112,
-              "name": "default",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_0.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "IP",
-                  "cost": 4800
-                },
-                {
-                  "currency": "RP",
-                  "cost": 880
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 112001,
-              "champion_id": 112,
-              "name": "全金属狂潮 维克托",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_1.jpg",
-              "skin_video_url": "https://youtu.be/bSzjLJptAdI",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 975
-                }
-              ],
-              "sales": null,
-              "release_date": "2011-12-29T08:00:00+09:00"
-            },
-            {
-              "id": 112002,
-              "champion_id": 112,
-              "name": "初号机 维克托",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_2.jpg",
-              "skin_video_url": "https://youtu.be/i1dv9zQt804",
-              "prices": null,
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 112004,
-              "champion_id": 112,
-              "name": "死亡誓约 维克托",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_4.jpg",
-              "skin_video_url": "https://youtu.be/jWHUVsLnPgE",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2024-10-23T08:59:00+09:00"
-            },
-            {
-              "id": 112005,
-              "champion_id": 112,
-              "name": "灵能特工 维克托",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_5.jpg",
-              "skin_video_url": "https://youtu.be/H0S78zTZNPk",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2020-09-17T04:00:00+09:00"
-            },
-            {
-              "id": 112014,
-              "champion_id": 112,
-              "name": "西部魔影 天才机械师 维克托",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_14.jpg",
-              "skin_video_url": "https://youtu.be/hkJdgOwJUY8",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2022-05-26T04:00:00+09:00"
-            },
-            {
-              "id": 112003,
-              "champion_id": 112,
-              "name": "造物主 维克托",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_3.jpg",
-              "skin_video_url": "https://youtu.be/Apg957qheOs",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2013-10-14T07:00:00+09:00"
-            }
-          ]
-        }
-      },
-      {
         "champion_id": 8,
-        "play": 1517,
-        "win": 734,
+        "play": 1525,
+        "win": 738,
         "meta": {
           "id": 8,
           "key": "Vladimir",
@@ -10786,9 +10523,257 @@
         }
       },
       {
+        "champion_id": 112,
+        "play": 1525,
+        "win": 798,
+        "meta": {
+          "id": 112,
+          "key": "Viktor",
+          "name": "机械先驱",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Viktor.png",
+          "evolve": [],
+          "title": "维克托",
+          "partype": "法力",
+          "passive": {
+            "name": "光荣进化",
+            "description": "维克托在击杀敌人时能够强化他的基础技能。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Viktor_Passive.png",
+            "video_url": null
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "虹吸能量",
+              "description": "维克托引爆一名敌方单位，造成魔法伤害，同时形成一个护盾，并强化他的下次普通攻击。<br><br>增强：虹吸能量的护盾提升60%并且维克托在施放后获得移动速度加成。",
+              "max_rank": 5,
+              "range_burn": [
+                600
+              ],
+              "cooldown_burn": [
+                9,
+                8,
+                7,
+                6,
+                5
+              ],
+              "cooldown_burn_float": [
+                9,
+                8,
+                7,
+                6,
+                5
+              ],
+              "cost_burn": [
+                45,
+                50,
+                55,
+                60,
+                65
+              ],
+              "tooltip": "维克托引爆一名敌方单位，造成<magicDamage>?魔法伤害</magicDamage>并为维克托提供持续?秒的<shield>?护盾值</shield>。<br /><br />维克托在3.5秒内的下一次攻击会造成<magicDamage>?魔法伤害</magicDamage>。<br /><br /><keywordMajor>升级版：</keywordMajor>提供<shield>?护盾值</shield>并且维克托还会获得持续?秒的<speed>?%移动速度</speed>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ViktorPowerTransfer.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0112/ability_0112_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "重力场",
+              "description": "维克托放出一个重力限制设备，减缓其半径内所有敌人的移动速度。如果敌人在设备的半径内呆得过久，就会被晕眩。<br><br>增强：维克托的非周期性技能会给敌人施加减速。",
+              "max_rank": 5,
+              "range_burn": [
+                800
+              ],
+              "cooldown_burn": [
+                17,
+                16,
+                15,
+                14,
+                13
+              ],
+              "cooldown_burn_float": [
+                17,
+                16,
+                15,
+                14,
+                13
+              ],
+              "cost_burn": [
+                65
+              ],
+              "tooltip": "维克托部署一个持续?秒的重力限制设备，使其中的敌人<status>减速</status>?%。敌人在其中驻留1.5秒后，就会被<status>晕眩</status>?秒。<br /><br /><keywordMajor>升级版被动效果：</keywordMajor>维克托的非终极技能会造成持续1秒的?%<status>减速</status>。<br /><br />?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ViktorGravitonField.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0112/ability_0112_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "死亡射线",
+              "description": "维克托用他的机械臂发射一束混乱光线，笔直地切割战场，沿途对行进路上的敌人造成魔法伤害。<br><br>增强：射线照过的地方会产生爆炸，造成魔法伤害。",
+              "max_rank": 5,
+              "range_burn": [
+                525
+              ],
+              "cooldown_burn": [
+                12,
+                11,
+                10,
+                9,
+                8
+              ],
+              "cooldown_burn_float": [
+                12,
+                11,
+                10,
+                9,
+                8
+              ],
+              "cost_burn": [
+                70,
+                80,
+                90,
+                100,
+                110
+              ],
+              "tooltip": "维克托朝所选方向发射一道死亡射线，对命中的敌人们造成<magicDamage>?魔法伤害</magicDamage>。<br /><br /><keywordMajor>升级版：</keywordMajor>一道余波会跟随死亡射线，造成<magicDamage>?魔法伤害</magicDamage>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ViktorDeathRay.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0112/ability_0112_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "混乱风暴",
+              "description": "维克托朝目标区域发射一枚奇点，对敌人造成魔法伤害并打断敌人的引导技能。之后奇点会周期性地对所有附近的敌人造成魔法伤害。维克托可以重新定位这枚奇点。<br><br>增强：混乱风暴的移动加快25%。",
+              "max_rank": 3,
+              "range_burn": [
+                700
+              ],
+              "cooldown_burn": [
+                120,
+                100,
+                80
+              ],
+              "cooldown_burn_float": [
+                120,
+                100,
+                80
+              ],
+              "cost_burn": [
+                100
+              ],
+              "tooltip": "维克托在一个区域内召唤一道持续?秒的混乱风暴，对周围的敌人们立刻造成<magicDamage>?魔法伤害</magicDamage>随后每秒造成<magicDamage>?魔法伤害</magicDamage>。混乱风暴会自动跟随它近期造成过伤害的英雄。<br /><br /><recast>再次施放：</recast>维克托手动移动混乱风暴。<br /><br /><keywordMajor>升级版：</keywordMajor>混乱风暴的移动速度加快?%。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ViktorChaosStorm.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0112/ability_0112_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 112000,
+              "champion_id": 112,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 4800
+                },
+                {
+                  "currency": "RP",
+                  "cost": 880
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 112001,
+              "champion_id": 112,
+              "name": "全金属狂潮 维克托",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_1.jpg",
+              "skin_video_url": "https://youtu.be/bSzjLJptAdI",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": "2011-12-29T08:00:00+09:00"
+            },
+            {
+              "id": 112002,
+              "champion_id": 112,
+              "name": "初号机 维克托",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_2.jpg",
+              "skin_video_url": "https://youtu.be/i1dv9zQt804",
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 112004,
+              "champion_id": 112,
+              "name": "死亡誓约 维克托",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_4.jpg",
+              "skin_video_url": "https://youtu.be/jWHUVsLnPgE",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2024-10-23T08:59:00+09:00"
+            },
+            {
+              "id": 112005,
+              "champion_id": 112,
+              "name": "灵能特工 维克托",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_5.jpg",
+              "skin_video_url": "https://youtu.be/H0S78zTZNPk",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2020-09-17T04:00:00+09:00"
+            },
+            {
+              "id": 112014,
+              "champion_id": 112,
+              "name": "西部魔影 天才机械师 维克托",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_14.jpg",
+              "skin_video_url": "https://youtu.be/hkJdgOwJUY8",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2022-05-26T04:00:00+09:00"
+            },
+            {
+              "id": 112003,
+              "champion_id": 112,
+              "name": "造物主 维克托",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Viktor_3.jpg",
+              "skin_video_url": "https://youtu.be/Apg957qheOs",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2013-10-14T07:00:00+09:00"
+            }
+          ]
+        }
+      },
+      {
         "champion_id": 131,
-        "play": 1498,
-        "win": 758,
+        "play": 1508,
+        "win": 762,
         "meta": {
           "id": 131,
           "key": "Diana",
@@ -11150,8 +11135,8 @@
       },
       {
         "champion_id": 4,
-        "play": 1496,
-        "win": 769,
+        "play": 1502,
+        "win": 772,
         "meta": {
           "id": 4,
           "key": "TwistedFate",
@@ -11507,8 +11492,8 @@
       },
       {
         "champion_id": 38,
-        "play": 1455,
-        "win": 715,
+        "play": 1463,
+        "win": 721,
         "meta": {
           "id": 38,
           "key": "Kassadin",
@@ -11787,8 +11772,8 @@
       },
       {
         "champion_id": 13,
-        "play": 1437,
-        "win": 724,
+        "play": 1442,
+        "win": 727,
         "meta": {
           "id": 13,
           "key": "Ryze",
@@ -12129,8 +12114,8 @@
       },
       {
         "champion_id": 136,
-        "play": 1424,
-        "win": 776,
+        "play": 1432,
+        "win": 782,
         "meta": {
           "id": 136,
           "key": "AurelionSol",
@@ -12343,8 +12328,8 @@
       },
       {
         "champion_id": 246,
-        "play": 1346,
-        "win": 668,
+        "play": 1349,
+        "win": 670,
         "meta": {
           "id": 246,
           "key": "Qiyana",
@@ -12596,8 +12581,8 @@
       },
       {
         "champion_id": 39,
-        "play": 1232,
-        "win": 635,
+        "play": 1235,
+        "win": 636,
         "meta": {
           "id": 39,
           "key": "Irelia",
@@ -12950,8 +12935,8 @@
       },
       {
         "champion_id": 163,
-        "play": 1178,
-        "win": 576,
+        "play": 1183,
+        "win": 580,
         "meta": {
           "id": 163,
           "key": "Taliyah",
@@ -13181,8 +13166,8 @@
       },
       {
         "champion_id": 268,
-        "play": 1139,
-        "win": 626,
+        "play": 1143,
+        "win": 628,
         "meta": {
           "id": 268,
           "key": "Azir",
@@ -13441,8 +13426,8 @@
       },
       {
         "champion_id": 166,
-        "play": 1031,
-        "win": 492,
+        "play": 1038,
+        "win": 493,
         "meta": {
           "id": 166,
           "key": "Akshan",
@@ -13644,8 +13629,8 @@
       },
       {
         "champion_id": 105,
-        "play": 987,
-        "win": 503,
+        "play": 990,
+        "win": 505,
         "meta": {
           "id": 105,
           "key": "Fizz",
@@ -13992,8 +13977,8 @@
       },
       {
         "champion_id": 1,
-        "play": 907,
-        "win": 438,
+        "play": 911,
+        "win": 441,
         "meta": {
           "id": 1,
           "key": "Annie",
@@ -14368,8 +14353,8 @@
       },
       {
         "champion_id": 69,
-        "play": 894,
-        "win": 454,
+        "play": 901,
+        "win": 456,
         "meta": {
           "id": 69,
           "key": "Cassiopeia",
@@ -14635,8 +14620,8 @@
       },
       {
         "champion_id": 50,
-        "play": 836,
-        "win": 447,
+        "play": 839,
+        "win": 449,
         "meta": {
           "id": 50,
           "key": "Swain",
@@ -14910,8 +14895,8 @@
       },
       {
         "champion_id": 245,
-        "play": 761,
-        "win": 400,
+        "play": 767,
+        "win": 404,
         "meta": {
           "id": 245,
           "key": "Ekko",
@@ -15232,8 +15217,8 @@
       },
       {
         "champion_id": 161,
-        "play": 612,
-        "win": 296,
+        "play": 614,
+        "win": 297,
         "meta": {
           "id": 161,
           "key": "Velkoz",
@@ -15473,7 +15458,7 @@
       },
       {
         "champion_id": 518,
-        "play": 604,
+        "play": 605,
         "win": 301,
         "meta": {
           "id": 518,
@@ -15746,8 +15731,8 @@
       },
       {
         "champion_id": 126,
-        "play": 568,
-        "win": 270,
+        "play": 569,
+        "win": 271,
         "meta": {
           "id": 126,
           "key": "Jayce",
@@ -16038,7 +16023,7 @@
       },
       {
         "champion_id": 950,
-        "play": 492,
+        "play": 493,
         "win": 252,
         "meta": {
           "id": 950,
@@ -16231,7 +16216,7 @@
       },
       {
         "champion_id": 79,
-        "play": 436,
+        "play": 438,
         "win": 211,
         "meta": {
           "id": 79,
@@ -16941,8 +16926,8 @@
       },
       {
         "champion_id": 115,
-        "play": 396,
-        "win": 213,
+        "play": 397,
+        "win": 214,
         "meta": {
           "id": 115,
           "key": "Ziggs",
@@ -17246,8 +17231,8 @@
       },
       {
         "champion_id": 63,
-        "play": 335,
-        "win": 176,
+        "play": 337,
+        "win": 177,
         "meta": {
           "id": 63,
           "key": "Brand",
@@ -17579,8 +17564,8 @@
       },
       {
         "champion_id": 85,
-        "play": 323,
-        "win": 168,
+        "play": 325,
+        "win": 169,
         "meta": {
           "id": 85,
           "key": "Kennen",
@@ -18200,7 +18185,7 @@
       },
       {
         "champion_id": 31,
-        "play": 300,
+        "play": 302,
         "win": 146,
         "meta": {
           "id": 31,
@@ -18490,8 +18475,8 @@
       },
       {
         "champion_id": 80,
-        "play": 258,
-        "win": 129,
+        "play": 259,
+        "win": 130,
         "meta": {
           "id": 80,
           "key": "Pantheon",
@@ -18800,7 +18785,7 @@
       },
       {
         "champion_id": 75,
-        "play": 256,
+        "play": 257,
         "win": 134,
         "meta": {
           "id": 75,
@@ -19126,8 +19111,8 @@
       },
       {
         "champion_id": 86,
-        "play": 198,
-        "win": 90,
+        "play": 200,
+        "win": 91,
         "meta": {
           "id": 86,
           "key": "Garen",
@@ -19470,8 +19455,8 @@
       },
       {
         "champion_id": 58,
-        "play": 145,
-        "win": 69,
+        "play": 146,
+        "win": 70,
         "meta": {
           "id": 58,
           "key": "Renekton",
@@ -19813,17 +19798,17 @@
         4,
         12
       ],
-      "win": 60448,
-      "play": 118360,
-      "pick_rate": 0.9187
+      "win": 60687,
+      "play": 118830,
+      "pick_rate": 0.9186
     },
     {
       "ids": [
         4,
         14
       ],
-      "win": 5080,
-      "play": 9944,
+      "win": 5107,
+      "play": 9991,
       "pick_rate": 0.0772
     },
     {
@@ -19831,8 +19816,8 @@
         4,
         21
       ],
-      "win": 117,
-      "play": 223,
+      "win": 118,
+      "play": 224,
       "pick_rate": 0.0017
     },
     {
@@ -19849,8 +19834,8 @@
         1,
         4
       ],
-      "win": 47,
-      "play": 94,
+      "win": 48,
+      "play": 95,
       "pick_rate": 0.0007
     }
   ],
@@ -20095,9 +20080,9 @@
         "E",
         "E"
       ],
-      "play": 38275,
-      "win": 22446,
-      "pick_rate": 0.4668
+      "play": 38417,
+      "win": 22534,
+      "pick_rate": 0.4666
     },
     {
       "order": [
@@ -20117,9 +20102,9 @@
         "E",
         "E"
       ],
-      "play": 11231,
-      "win": 6652,
-      "pick_rate": 0.137
+      "play": 11290,
+      "win": 6685,
+      "pick_rate": 0.1371
     },
     {
       "order": [
@@ -20139,9 +20124,9 @@
         "E",
         "E"
       ],
-      "play": 3979,
-      "win": 2402,
-      "pick_rate": 0.0485
+      "play": 4000,
+      "win": 2414,
+      "pick_rate": 0.0486
     },
     {
       "order": [
@@ -20161,9 +20146,9 @@
         "W",
         "W"
       ],
-      "play": 3290,
-      "win": 1984,
-      "pick_rate": 0.0401
+      "play": 3297,
+      "win": 1988,
+      "pick_rate": 0.04
     },
     {
       "order": [
@@ -20183,8 +20168,8 @@
         "E",
         "E"
       ],
-      "play": 3066,
-      "win": 1828,
+      "play": 3080,
+      "win": 1837,
       "pick_rate": 0.0374
     }
   ],
@@ -20195,8 +20180,8 @@
         "W",
         "E"
       ],
-      "play": 70518,
-      "win": 41698,
+      "play": 70810,
+      "win": 41873,
       "pick_rate": 0.86,
       "builds": [
         {
@@ -20217,9 +20202,9 @@
             "E",
             "E"
           ],
-          "play": 38275,
-          "win": 22446,
-          "pick_rate": 0.5428
+          "play": 38417,
+          "win": 22534,
+          "pick_rate": 0.5425
         },
         {
           "order": [
@@ -20239,9 +20224,9 @@
             "E",
             "E"
           ],
-          "play": 11231,
-          "win": 6652,
-          "pick_rate": 0.1593
+          "play": 11290,
+          "win": 6685,
+          "pick_rate": 0.1594
         },
         {
           "order": [
@@ -20261,9 +20246,9 @@
             "E",
             "E"
           ],
-          "play": 3979,
-          "win": 2402,
-          "pick_rate": 0.0564
+          "play": 4000,
+          "win": 2414,
+          "pick_rate": 0.0565
         },
         {
           "order": [
@@ -20283,8 +20268,8 @@
             "E",
             "E"
           ],
-          "play": 3066,
-          "win": 1828,
+          "play": 3080,
+          "win": 1837,
           "pick_rate": 0.0435
         },
         {
@@ -20305,9 +20290,9 @@
             "E",
             "E"
           ],
-          "play": 2429,
-          "win": 1527,
-          "pick_rate": 0.0344
+          "play": 2442,
+          "win": 1537,
+          "pick_rate": 0.0345
         }
       ]
     },
@@ -20317,9 +20302,9 @@
         "E",
         "W"
       ],
-      "play": 10990,
-      "win": 6578,
-      "pick_rate": 0.134,
+      "play": 11026,
+      "win": 6602,
+      "pick_rate": 0.1339,
       "builds": [
         {
           "order": [
@@ -20339,9 +20324,9 @@
             "W",
             "W"
           ],
-          "play": 3290,
-          "win": 1984,
-          "pick_rate": 0.2994
+          "play": 3297,
+          "win": 1988,
+          "pick_rate": 0.299
         },
         {
           "order": [
@@ -20361,9 +20346,9 @@
             "W",
             "W"
           ],
-          "play": 1280,
-          "win": 788,
-          "pick_rate": 0.1165
+          "play": 1287,
+          "win": 792,
+          "pick_rate": 0.1167
         },
         {
           "order": [
@@ -20383,9 +20368,9 @@
             "W",
             "W"
           ],
-          "play": 793,
-          "win": 467,
-          "pick_rate": 0.0722
+          "play": 797,
+          "win": 470,
+          "pick_rate": 0.0723
         },
         {
           "order": [
@@ -20405,9 +20390,9 @@
             "W",
             "W"
           ],
-          "play": 601,
-          "win": 353,
-          "pick_rate": 0.0547
+          "play": 602,
+          "win": 354,
+          "pick_rate": 0.0546
         },
         {
           "order": [
@@ -20427,9 +20412,9 @@
             "W",
             "W"
           ],
-          "play": 424,
-          "win": 261,
-          "pick_rate": 0.0386
+          "play": 427,
+          "win": 263,
+          "pick_rate": 0.0387
         }
       ]
     },
@@ -20439,8 +20424,8 @@
         "Q",
         "E"
       ],
-      "play": 404,
-      "win": 243,
+      "play": 407,
+      "win": 245,
       "pick_rate": 0.0049,
       "builds": [
         {
@@ -20463,7 +20448,7 @@
           ],
           "play": 101,
           "win": 59,
-          "pick_rate": 0.25
+          "pick_rate": 0.2482
         },
         {
           "order": [
@@ -20483,9 +20468,9 @@
             "E",
             "E"
           ],
-          "play": 26,
-          "win": 15,
-          "pick_rate": 0.0644
+          "play": 27,
+          "win": 16,
+          "pick_rate": 0.0663
         },
         {
           "order": [
@@ -20507,7 +20492,7 @@
           ],
           "play": 15,
           "win": 11,
-          "pick_rate": 0.0371
+          "pick_rate": 0.0369
         },
         {
           "order": [
@@ -20529,7 +20514,7 @@
           ],
           "play": 13,
           "win": 7,
-          "pick_rate": 0.0322
+          "pick_rate": 0.0319
         },
         {
           "order": [
@@ -20551,7 +20536,7 @@
           ],
           "play": 12,
           "win": 7,
-          "pick_rate": 0.0297
+          "pick_rate": 0.0295
         }
       ]
     },
@@ -20821,9 +20806,9 @@
         5008,
         5001
       ],
-      "play": 67891,
-      "win": 34435,
-      "pick_rate": 0.5218
+      "play": 68180,
+      "win": 34588,
+      "pick_rate": 0.5219
     },
     {
       "id": 8112,
@@ -20844,8 +20829,8 @@
         5008,
         5001
       ],
-      "play": 8731,
-      "win": 4311,
+      "play": 8769,
+      "win": 4330,
       "pick_rate": 0.0671
     },
     {
@@ -20867,8 +20852,8 @@
         5008,
         5011
       ],
-      "play": 4592,
-      "win": 2379,
+      "play": 4606,
+      "win": 2386,
       "pick_rate": 0.0353
     },
     {
@@ -20890,8 +20875,8 @@
         5008,
         5001
       ],
-      "play": 3822,
-      "win": 1956,
+      "play": 3837,
+      "win": 1962,
       "pick_rate": 0.0294
     },
     {
@@ -20913,9 +20898,9 @@
         5008,
         5011
       ],
-      "play": 3510,
-      "win": 1799,
-      "pick_rate": 0.027
+      "play": 3515,
+      "win": 1802,
+      "pick_rate": 0.0269
     }
   ],
   "rune_pages": [
@@ -20923,9 +20908,9 @@
       "id": 8112,
       "primary_page_id": 8100,
       "secondary_page_id": 8200,
-      "play": 95848,
-      "win": 48881,
-      "pick_rate": 0.7366,
+      "play": 96234,
+      "win": 49086,
+      "pick_rate": 0.7367,
       "builds": [
         {
           "id": 8112,
@@ -20946,9 +20931,9 @@
             5008,
             5001
           ],
-          "play": 67891,
-          "win": 34435,
-          "pick_rate": 0.7083
+          "play": 68180,
+          "win": 34588,
+          "pick_rate": 0.7085
         },
         {
           "id": 8112,
@@ -20969,8 +20954,8 @@
             5008,
             5011
           ],
-          "play": 4592,
-          "win": 2379,
+          "play": 4606,
+          "win": 2386,
           "pick_rate": 0.0479
         },
         {
@@ -20992,9 +20977,9 @@
             5008,
             5011
           ],
-          "play": 3510,
-          "win": 1799,
-          "pick_rate": 0.0366
+          "play": 3515,
+          "win": 1802,
+          "pick_rate": 0.0365
         },
         {
           "id": 8112,
@@ -21015,9 +21000,9 @@
             5008,
             5001
           ],
-          "play": 3141,
-          "win": 1552,
-          "pick_rate": 0.0328
+          "play": 3151,
+          "win": 1558,
+          "pick_rate": 0.0327
         },
         {
           "id": 8112,
@@ -21038,9 +21023,9 @@
             5008,
             5011
           ],
-          "play": 1626,
-          "win": 838,
-          "pick_rate": 0.017
+          "play": 1630,
+          "win": 839,
+          "pick_rate": 0.0169
         }
       ]
     },
@@ -21048,8 +21033,8 @@
       "id": 8112,
       "primary_page_id": 8100,
       "secondary_page_id": 8300,
-      "play": 12143,
-      "win": 6140,
+      "play": 12186,
+      "win": 6161,
       "pick_rate": 0.0933,
       "builds": [
         {
@@ -21071,9 +21056,9 @@
             5008,
             5001
           ],
-          "play": 8731,
-          "win": 4311,
-          "pick_rate": 0.719
+          "play": 8769,
+          "win": 4330,
+          "pick_rate": 0.7196
         },
         {
           "id": 8112,
@@ -21094,7 +21079,7 @@
             5008,
             5011
           ],
-          "play": 451,
+          "play": 452,
           "win": 227,
           "pick_rate": 0.0371
         },
@@ -21117,7 +21102,7 @@
             5008,
             5001
           ],
-          "play": 367,
+          "play": 368,
           "win": 210,
           "pick_rate": 0.0302
         },
@@ -21142,7 +21127,7 @@
           ],
           "play": 205,
           "win": 121,
-          "pick_rate": 0.0169
+          "pick_rate": 0.0168
         },
         {
           "id": 8112,
@@ -21165,7 +21150,7 @@
           ],
           "play": 133,
           "win": 65,
-          "pick_rate": 0.011
+          "pick_rate": 0.0109
         }
       ]
     },
@@ -21173,8 +21158,8 @@
       "id": 8214,
       "primary_page_id": 8200,
       "secondary_page_id": 8300,
-      "play": 4904,
-      "win": 2546,
+      "play": 4921,
+      "win": 2553,
       "pick_rate": 0.0377,
       "builds": [
         {
@@ -21196,9 +21181,9 @@
             5008,
             5001
           ],
-          "play": 3822,
-          "win": 1956,
-          "pick_rate": 0.7794
+          "play": 3837,
+          "win": 1962,
+          "pick_rate": 0.7797
         },
         {
           "id": 8214,
@@ -21219,9 +21204,9 @@
             5008,
             5011
           ],
-          "play": 173,
+          "play": 174,
           "win": 84,
-          "pick_rate": 0.0353
+          "pick_rate": 0.0354
         },
         {
           "id": 8214,
@@ -21298,8 +21283,8 @@
       "id": 8437,
       "primary_page_id": 8400,
       "secondary_page_id": 8200,
-      "play": 4001,
-      "win": 2026,
+      "play": 4014,
+      "win": 2034,
       "pick_rate": 0.0307,
       "builds": [
         {
@@ -21321,9 +21306,9 @@
             5008,
             5011
           ],
-          "play": 968,
-          "win": 503,
-          "pick_rate": 0.2419
+          "play": 970,
+          "win": 505,
+          "pick_rate": 0.2417
         },
         {
           "id": 8437,
@@ -21344,8 +21329,8 @@
             5008,
             5001
           ],
-          "play": 867,
-          "win": 408,
+          "play": 870,
+          "win": 409,
           "pick_rate": 0.2167
         },
         {
@@ -21367,9 +21352,9 @@
             5008,
             5001
           ],
-          "play": 550,
+          "play": 551,
           "win": 277,
-          "pick_rate": 0.1375
+          "pick_rate": 0.1373
         },
         {
           "id": 8437,
@@ -21390,9 +21375,9 @@
             5008,
             5011
           ],
-          "play": 267,
-          "win": 145,
-          "pick_rate": 0.0667
+          "play": 268,
+          "win": 146,
+          "pick_rate": 0.0668
         },
         {
           "id": 8437,
@@ -21413,9 +21398,9 @@
             5008,
             5001
           ],
-          "play": 122,
-          "win": 54,
-          "pick_rate": 0.0305
+          "play": 123,
+          "win": 55,
+          "pick_rate": 0.0306
         }
       ]
     },
@@ -21423,9 +21408,9 @@
       "id": 8112,
       "primary_page_id": 8100,
       "secondary_page_id": 8400,
-      "play": 2665,
-      "win": 1366,
-      "pick_rate": 0.0205,
+      "play": 2669,
+      "win": 1368,
+      "pick_rate": 0.0204,
       "builds": [
         {
           "id": 8112,
@@ -21446,7 +21431,7 @@
             5008,
             5001
           ],
-          "play": 725,
+          "play": 726,
           "win": 383,
           "pick_rate": 0.272
         },
@@ -21471,7 +21456,7 @@
           ],
           "play": 406,
           "win": 211,
-          "pick_rate": 0.1523
+          "pick_rate": 0.1521
         },
         {
           "id": 8112,
@@ -21494,7 +21479,7 @@
           ],
           "play": 245,
           "win": 111,
-          "pick_rate": 0.0919
+          "pick_rate": 0.0918
         },
         {
           "id": 8112,
@@ -21517,7 +21502,7 @@
           ],
           "play": 122,
           "win": 63,
-          "pick_rate": 0.0458
+          "pick_rate": 0.0457
         },
         {
           "id": 8112,
@@ -21540,7 +21525,7 @@
           ],
           "play": 117,
           "win": 57,
-          "pick_rate": 0.0439
+          "pick_rate": 0.0438
         }
       ]
     }
@@ -21552,8 +21537,8 @@
         4628,
         3157
       ],
-      "play": 8435,
-      "win": 4697,
+      "play": 8472,
+      "win": 4716,
       "pick_rate": 0.1201
     },
     {
@@ -21562,9 +21547,9 @@
         4628,
         3089
       ],
-      "play": 5127,
-      "win": 3045,
-      "pick_rate": 0.073
+      "play": 5145,
+      "win": 3055,
+      "pick_rate": 0.0729
     },
     {
       "ids": [
@@ -21572,9 +21557,9 @@
         4646,
         4645
       ],
-      "play": 2674,
-      "win": 1470,
-      "pick_rate": 0.0381
+      "play": 2682,
+      "win": 1476,
+      "pick_rate": 0.038
     },
     {
       "ids": [
@@ -21582,8 +21567,8 @@
         4646,
         3157
       ],
-      "play": 2550,
-      "win": 1423,
+      "play": 2564,
+      "win": 1435,
       "pick_rate": 0.0363
     },
     {
@@ -21592,8 +21577,8 @@
         4628,
         4645
       ],
-      "play": 2539,
-      "win": 1422,
+      "play": 2546,
+      "win": 1427,
       "pick_rate": 0.0361
     },
     {
@@ -21602,8 +21587,8 @@
         6653,
         3157
       ],
-      "play": 2042,
-      "win": 1165,
+      "play": 2050,
+      "win": 1169,
       "pick_rate": 0.0291
     },
     {
@@ -21612,8 +21597,8 @@
         4646,
         3089
       ],
-      "play": 1911,
-      "win": 1201,
+      "play": 1918,
+      "win": 1207,
       "pick_rate": 0.0272
     },
     {
@@ -21622,8 +21607,8 @@
         4645,
         3157
       ],
-      "play": 1760,
-      "win": 1002,
+      "play": 1768,
+      "win": 1005,
       "pick_rate": 0.0251
     },
     {
@@ -21632,8 +21617,8 @@
         4645,
         3089
       ],
-      "play": 1645,
-      "win": 964,
+      "play": 1652,
+      "win": 968,
       "pick_rate": 0.0234
     },
     {
@@ -21642,8 +21627,8 @@
         6653,
         3089
       ],
-      "play": 1323,
-      "win": 765,
+      "play": 1328,
+      "win": 769,
       "pick_rate": 0.0188
     },
     {
@@ -21652,8 +21637,8 @@
         4628,
         3137
       ],
-      "play": 1255,
-      "win": 699,
+      "play": 1261,
+      "win": 701,
       "pick_rate": 0.0179
     },
     {
@@ -21662,8 +21647,8 @@
         3100,
         3089
       ],
-      "play": 1142,
-      "win": 725,
+      "play": 1151,
+      "win": 731,
       "pick_rate": 0.0163
     },
     {
@@ -21672,9 +21657,9 @@
         6653,
         3137
       ],
-      "play": 1136,
+      "play": 1138,
       "win": 648,
-      "pick_rate": 0.0162
+      "pick_rate": 0.0161
     },
     {
       "ids": [
@@ -21683,8 +21668,8 @@
         4628,
         3157
       ],
-      "play": 1086,
-      "win": 734,
+      "play": 1090,
+      "win": 736,
       "pick_rate": 0.0155
     },
     {
@@ -21694,8 +21679,8 @@
         4628,
         3089
       ],
-      "play": 957,
-      "win": 597,
+      "play": 961,
+      "win": 600,
       "pick_rate": 0.0136
     }
   ],
@@ -21704,40 +21689,40 @@
       "ids": [
         3020
       ],
-      "play": 89534,
-      "win": 46580,
-      "pick_rate": 0.7072
+      "play": 89906,
+      "win": 46777,
+      "pick_rate": 0.7073
     },
     {
       "ids": [
         3158
       ],
-      "play": 24550,
-      "win": 12687,
+      "play": 24644,
+      "win": 12735,
       "pick_rate": 0.1939
     },
     {
       "ids": [
         3111
       ],
-      "play": 11332,
-      "win": 5834,
-      "pick_rate": 0.0895
+      "play": 11366,
+      "win": 5854,
+      "pick_rate": 0.0894
     },
     {
       "ids": [
         3047
       ],
-      "play": 670,
-      "win": 342,
+      "play": 671,
+      "win": 343,
       "pick_rate": 0.0053
     },
     {
       "ids": [
         3009
       ],
-      "play": 275,
-      "win": 150,
+      "play": 277,
+      "win": 151,
       "pick_rate": 0.0022
     }
   ],
@@ -21748,8 +21733,8 @@
         2003,
         2003
       ],
-      "play": 128632,
-      "win": 65552,
+      "play": 129142,
+      "win": 65818,
       "pick_rate": 0.9764
     },
     {
@@ -21759,7 +21744,7 @@
         2003,
         2003
       ],
-      "play": 858,
+      "play": 859,
       "win": 521,
       "pick_rate": 0.0065
     },
@@ -21768,9 +21753,20 @@
         1056,
         2003
       ],
-      "play": 398,
+      "play": 399,
       "win": 202,
       "pick_rate": 0.003
+    },
+    {
+      "ids": [
+        1056,
+        1082,
+        2003,
+        2003
+      ],
+      "play": 272,
+      "win": 159,
+      "pick_rate": 0.0021
     },
     {
       "ids": [
@@ -21785,21 +21781,10 @@
     },
     {
       "ids": [
-        1056,
-        1082,
-        2003,
-        2003
-      ],
-      "play": 269,
-      "win": 157,
-      "pick_rate": 0.002
-    },
-    {
-      "ids": [
         1082,
         2031
       ],
-      "play": 164,
+      "play": 165,
       "win": 81,
       "pick_rate": 0.0012
     },
@@ -21820,7 +21805,7 @@
         2003,
         3070
       ],
-      "play": 143,
+      "play": 144,
       "win": 71,
       "pick_rate": 0.0011
     },
@@ -21829,8 +21814,8 @@
         1055,
         2003
       ],
-      "play": 130,
-      "win": 58,
+      "play": 132,
+      "win": 59,
       "pick_rate": 0.001
     },
     {
@@ -21841,8 +21826,8 @@
         2003,
         2003
       ],
-      "play": 134,
-      "win": 74,
+      "play": 136,
+      "win": 75,
       "pick_rate": 0.001
     },
     {
@@ -21868,15 +21853,6 @@
     },
     {
       "ids": [
-        1083,
-        2003
-      ],
-      "play": 33,
-      "win": 14,
-      "pick_rate": 0.0003
-    },
-    {
-      "ids": [
         1054,
         2003
       ],
@@ -21892,6 +21868,18 @@
       "play": 34,
       "win": 21,
       "pick_rate": 0.0003
+    },
+    {
+      "ids": [
+        1027,
+        1052,
+        1056,
+        2003,
+        2003
+      ],
+      "play": 26,
+      "win": 14,
+      "pick_rate": 0.0002
     }
   ],
   "last_items": [
@@ -21899,167 +21887,167 @@
       "ids": [
         3118
       ],
-      "play": 117009,
-      "win": 60399,
+      "play": 117470,
+      "win": 60631,
       "pick_rate": 0.3067
     },
     {
       "ids": [
         4628
       ],
-      "play": 43759,
-      "win": 23490,
+      "play": 43936,
+      "win": 23580,
       "pick_rate": 0.1147
     },
     {
       "ids": [
         3157
       ],
-      "play": 29522,
-      "win": 16996,
+      "play": 29647,
+      "win": 17065,
       "pick_rate": 0.0774
     },
     {
       "ids": [
         4645
       ],
-      "play": 27153,
-      "win": 14841,
+      "play": 27264,
+      "win": 14903,
       "pick_rate": 0.0712
     },
     {
       "ids": [
         1082
       ],
-      "play": 26046,
-      "win": 13556,
+      "play": 26154,
+      "win": 13613,
       "pick_rate": 0.0683
     },
     {
       "ids": [
         3089
       ],
-      "play": 24864,
-      "win": 15318,
+      "play": 24972,
+      "win": 15385,
       "pick_rate": 0.0652
     },
     {
       "ids": [
         4646
       ],
-      "play": 23754,
-      "win": 13012,
+      "play": 23847,
+      "win": 13075,
       "pick_rate": 0.0623
     },
     {
       "ids": [
         6653
       ],
-      "play": 20770,
-      "win": 11115,
+      "play": 20846,
+      "win": 11155,
       "pick_rate": 0.0544
     },
     {
       "ids": [
         6655
       ],
-      "play": 12985,
-      "win": 6457,
-      "pick_rate": 0.034
+      "play": 13046,
+      "win": 6496,
+      "pick_rate": 0.0341
     },
     {
       "ids": [
         3100
       ],
-      "play": 9314,
-      "win": 5568,
+      "play": 9359,
+      "win": 5591,
       "pick_rate": 0.0244
     },
     {
       "ids": [
         3137
       ],
-      "play": 9246,
-      "win": 5329,
+      "play": 9279,
+      "win": 5348,
       "pick_rate": 0.0242
     },
     {
       "ids": [
         3916
       ],
-      "play": 7080,
-      "win": 3020,
+      "play": 7113,
+      "win": 3039,
       "pick_rate": 0.0186
     },
     {
       "ids": [
         3041
       ],
-      "play": 6922,
-      "win": 5920,
-      "pick_rate": 0.0181
+      "play": 6953,
+      "win": 5944,
+      "pick_rate": 0.0182
     },
     {
       "ids": [
         2420
       ],
-      "play": 5669,
-      "win": 2969,
+      "play": 5689,
+      "win": 2977,
       "pick_rate": 0.0149
     },
     {
       "ids": [
         3135
       ],
-      "play": 5670,
-      "win": 3166,
+      "play": 5690,
+      "win": 3177,
       "pick_rate": 0.0149
     },
     {
       "ids": [
         3102
       ],
-      "play": 5413,
-      "win": 3112,
+      "play": 5433,
+      "win": 3122,
       "pick_rate": 0.0142
     },
     {
       "ids": [
         3165
       ],
-      "play": 2556,
-      "win": 1335,
+      "play": 2567,
+      "win": 1340,
       "pick_rate": 0.0067
     },
     {
       "ids": [
         2503
       ],
-      "play": 1033,
-      "win": 562,
+      "play": 1039,
+      "win": 564,
       "pick_rate": 0.0027
     },
     {
       "ids": [
         4629
       ],
-      "play": 817,
-      "win": 498,
+      "play": 820,
+      "win": 501,
       "pick_rate": 0.0021
     },
     {
       "ids": [
         3040
       ],
-      "play": 523,
-      "win": 271,
+      "play": 525,
+      "win": 272,
       "pick_rate": 0.0014
     },
     {
       "ids": [
         3116
       ],
-      "play": 432,
+      "play": 434,
       "win": 252,
       "pick_rate": 0.0011
     },
@@ -22067,7 +22055,7 @@
       "ids": [
         3070
       ],
-      "play": 232,
+      "play": 234,
       "win": 92,
       "pick_rate": 0.0006
     },
@@ -22075,8 +22063,8 @@
       "ids": [
         3152
       ],
-      "play": 148,
-      "win": 105,
+      "play": 149,
+      "win": 106,
       "pick_rate": 0.0004
     },
     {
