@@ -351,19 +351,19 @@
             {
               "name": "MAGE",
               "stats": {
-                "win_rate": 0.509355,
-                "role_rate": 0.970449,
-                "play": 10476,
-                "win": 5336
+                "win_rate": 0.509119,
+                "role_rate": 0.970412,
+                "play": 10528,
+                "win": 5360
               }
             },
             {
               "name": "FIGHTER",
               "stats": {
-                "win_rate": 0.439153,
-                "role_rate": 0.0175081,
-                "play": 189,
-                "win": 83
+                "win_rate": 0.442105,
+                "role_rate": 0.0175131,
+                "play": 190,
+                "win": 84
               }
             }
           ],
@@ -379,9 +379,9 @@
               "win": 27
             },
             {
-              "champion_id": 17,
-              "play": 150,
-              "win": 59
+              "champion_id": 2,
+              "play": 45,
+              "win": 18
             }
           ]
         }
@@ -947,9 +947,324 @@
           "win_rate": 39.13
         },
         {
+          "champion_id": 2,
+          "play": 45,
+          "win": 18,
+          "meta": {
+            "id": 2,
+            "key": "Olaf",
+            "name": "狂战士",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Olaf.png",
+            "evolve": [],
+            "title": "奥拉夫",
+            "partype": "法力",
+            "passive": {
+              "name": "狂战之怒",
+              "description": "奥拉夫基于已损失生命值获得攻击速度和生命偷取。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Olaf_Passive.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0002/ability_0002_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "逆流投掷",
+                "description": "奥拉夫将战斧投至目标区域，对所有被战斧穿过的敌人造成伤害并削减他们的护甲和移动速度。如果奥拉夫捡起斧头，那么该技能冷却时间就会重置。",
+                "max_rank": 5,
+                "range_burn": [
+                  1000
+                ],
+                "cooldown_burn": [
+                  9
+                ],
+                "cooldown_burn_float": [
+                  9
+                ],
+                "cost_burn": [
+                  50,
+                  55,
+                  60,
+                  65,
+                  70
+                ],
+                "tooltip": "奥拉夫扔出一把斧头，造成<physicalDamage>?物理伤害</physicalDamage>和至多持续2.5秒(基于斧头移动距离)的?%<status>减速</status>。被斧头命中的英雄还会损失<scaleArmor>?%护甲</scaleArmor>，持续?秒。<br /><br />如果奥拉夫拾起了斧头，那么这个技能的冷却时间会缩短至?秒，如果在斧头被扔出?秒后拾起斧头，则完全返还冷却时间。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/OlafAxeThrowCast.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0002/ability_0002_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "挺过去",
+                "description": "奥拉夫的攻击速度得到提升，并获得一层护盾。",
+                "max_rank": 5,
+                "range_burn": [
+                  700
+                ],
+                "cooldown_burn": [
+                  16,
+                  15,
+                  14,
+                  13,
+                  12
+                ],
+                "cooldown_burn_float": [
+                  16,
+                  15,
+                  14,
+                  13,
+                  12
+                ],
+                "cost_burn": [
+                  50
+                ],
+                "tooltip": "奥拉夫获得持续?秒的<attackSpeed>?%攻击速度</attackSpeed>，以及持续?秒的<shield>?外加?%已损失生命值的护盾值(最大值为?护盾值，在低于?%时提供)</shield>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/OlafFrenziedStrikes.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0002/ability_0002_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "鲁莽挥击",
+                "description": "奥拉夫以破釜沉舟之势发动进攻，对目标造成真实伤害（不受护甲与魔抗减免），同时，自身也会根据敌方所受的伤害而受到真实伤害的反噬。",
+                "max_rank": 5,
+                "range_burn": [
+                  325
+                ],
+                "cooldown_burn": [
+                  11,
+                  10,
+                  9,
+                  8,
+                  7
+                ],
+                "cooldown_burn_float": [
+                  11,
+                  10,
+                  9,
+                  8,
+                  7
+                ],
+                "cost_burn": [
+                  0
+                ],
+                "tooltip": "奥拉夫狂野地挥舞他的双斧，造成<trueDamage>?真实伤害</trueDamage>。如果该敌人阵亡，那么会返还此技能的消耗。<br /><br />攻击会使这个技能的冷却时间缩短1秒，在攻击野怪时，缩短值提升至2秒。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/OlafRecklessStrike.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0002/ability_0002_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "诸神黄昏",
+                "description": "奥拉夫被动获得护甲和魔法抗性提升。他可以激活这个技能来变得免疫控制效果，并且会在他保持攻击时一直持续。",
+                "max_rank": 3,
+                "range_burn": [
+                  400
+                ],
+                "cooldown_burn": [
+                  100,
+                  90,
+                  80
+                ],
+                "cooldown_burn_float": [
+                  100,
+                  90,
+                  80
+                ],
+                "cost_burn": [
+                  100
+                ],
+                "tooltip": "<spellPassive>被动：</spellPassive>奥拉夫获得<scaleArmor>?护甲</scaleArmor>和<scaleMR>?魔法抗性</scaleMR>。<br /><br /><spellActive>主动：</spellActive>奥拉夫净化掉他身上的所有<status>定身</status>和<status>限制</status>效果并且在接下来的?秒内免疫这些效果。在激活时，奥拉夫获得<scaleAD>?攻击力</scaleAD>。用一次攻击或<spellName>鲁莽挥击</spellName>命中一名英雄时，会使持续时间延长?秒。<br /><br />此外，奥拉夫会在朝着敌方英雄时获得<speed>?%移动速度</speed>，持续?秒。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/OlafRagnarok.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0002/ability_0002_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 2000,
+                "champion_id": 2,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Olaf_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 3150
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 790
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 2015,
+                "champion_id": 2,
+                "name": "SKT T1 奥拉夫",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Olaf_15.jpg",
+                "skin_video_url": "https://youtu.be/abypOQBDGfo",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-09-25T08:59:00+09:00"
+              },
+              {
+                "id": 2035,
+                "champion_id": 2,
+                "name": "五杀摇滚 III：遗失的章节 奥拉夫",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Olaf_35.jpg",
+                "skin_video_url": "https://youtu.be/R4mOgOj0Nf4",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-09-09T04:00:00+09:00"
+              },
+              {
+                "id": 2004,
+                "champion_id": 2,
+                "name": "五杀摇滚鼓手 奥拉夫",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Olaf_4.jpg",
+                "skin_video_url": "https://youtu.be/MfsYzweFp84",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2012-10-05T01:00:00+09:00"
+              },
+              {
+                "id": 2025,
+                "champion_id": 2,
+                "name": "光明哨兵 奥拉夫",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Olaf_25.jpg",
+                "skin_video_url": "https://youtu.be/d-6AqADVF1M",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-07-08T04:00:00+09:00"
+              },
+              {
+                "id": 2002,
+                "champion_id": 2,
+                "name": "冰河时代 奥拉夫",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Olaf_2.jpg",
+                "skin_video_url": "https://youtu.be/Cx1nbn64b4M",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 2044,
+                "champion_id": 2,
+                "name": "地狱火 奥拉夫",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Olaf_44.jpg",
+                "skin_video_url": "https://youtu.be/1fiMSQ4FLcA",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": [
+                  {
+                    "currency": "RP",
+                    "cost": 975,
+                    "discount_rate": 0.27,
+                    "started_at": "2024-11-11T08:00:00+09:00",
+                    "ended_at": "2024-11-18T08:00:00+09:00"
+                  }
+                ],
+                "release_date": "2024-05-30T09:00:00+09:00"
+              },
+              {
+                "id": 2016,
+                "champion_id": 2,
+                "name": "屠龙勇士 奥拉夫",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Olaf_16.jpg",
+                "skin_video_url": "https://youtu.be/CM8ddSNhwEI",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-01-30T04:00:00+09:00"
+              },
+              {
+                "id": 2001,
+                "champion_id": 2,
+                "name": "烈焰猛士 奥拉夫",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Olaf_1.jpg",
+                "skin_video_url": "https://youtu.be/vS7tCHmUclI",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 2006,
+                "champion_id": 2,
+                "name": "牛扒狂战 奥拉夫",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Olaf_6.jpg",
+                "skin_video_url": "https://youtu.be/1bJhVr9qFoI",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2016-09-07T02:00:00+09:00"
+              },
+              {
+                "id": 2003,
+                "champion_id": 2,
+                "name": "铁哥们儿 奥拉夫",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Olaf_3.jpg",
+                "skin_video_url": "https://youtu.be/8jO6eITTur4",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1820
+                  }
+                ],
+                "sales": null,
+                "release_date": "2010-11-30T12:00:00+09:00"
+              },
+              {
+                "id": 2005,
+                "champion_id": 2,
+                "name": "黑暗骑士 奥拉夫",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Olaf_5.jpg",
+                "skin_video_url": "https://youtu.be/ZjR7R-rYXRE",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2015-10-01T10:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 40
+        },
+        {
           "champion_id": 17,
-          "play": 150,
-          "win": 59,
+          "play": 154,
+          "win": 62,
           "meta": {
             "id": 17,
             "key": "Teemo",
@@ -1285,322 +1600,7 @@
               }
             ]
           },
-          "win_rate": 39.33
-        },
-        {
-          "champion_id": 2,
-          "play": 45,
-          "win": 18,
-          "meta": {
-            "id": 2,
-            "key": "Olaf",
-            "name": "狂战士",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Olaf.png",
-            "evolve": [],
-            "title": "奥拉夫",
-            "partype": "法力",
-            "passive": {
-              "name": "狂战之怒",
-              "description": "奥拉夫基于已损失生命值获得攻击速度和生命偷取。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Olaf_Passive.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0002/ability_0002_P1.webm"
-            },
-            "spells": [
-              {
-                "key": "Q",
-                "name": "逆流投掷",
-                "description": "奥拉夫将战斧投至目标区域，对所有被战斧穿过的敌人造成伤害并削减他们的护甲和移动速度。如果奥拉夫捡起斧头，那么该技能冷却时间就会重置。",
-                "max_rank": 5,
-                "range_burn": [
-                  1000
-                ],
-                "cooldown_burn": [
-                  9
-                ],
-                "cooldown_burn_float": [
-                  9
-                ],
-                "cost_burn": [
-                  50,
-                  55,
-                  60,
-                  65,
-                  70
-                ],
-                "tooltip": "奥拉夫扔出一把斧头，造成<physicalDamage>?物理伤害</physicalDamage>和至多持续2.5秒(基于斧头移动距离)的?%<status>减速</status>。被斧头命中的英雄还会损失<scaleArmor>?%护甲</scaleArmor>，持续?秒。<br /><br />如果奥拉夫拾起了斧头，那么这个技能的冷却时间会缩短至?秒，如果在斧头被扔出?秒后拾起斧头，则完全返还冷却时间。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/OlafAxeThrowCast.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0002/ability_0002_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "挺过去",
-                "description": "奥拉夫的攻击速度得到提升，并获得一层护盾。",
-                "max_rank": 5,
-                "range_burn": [
-                  700
-                ],
-                "cooldown_burn": [
-                  16,
-                  15,
-                  14,
-                  13,
-                  12
-                ],
-                "cooldown_burn_float": [
-                  16,
-                  15,
-                  14,
-                  13,
-                  12
-                ],
-                "cost_burn": [
-                  50
-                ],
-                "tooltip": "奥拉夫获得持续?秒的<attackSpeed>?%攻击速度</attackSpeed>，以及持续?秒的<shield>?外加?%已损失生命值的护盾值(最大值为?护盾值，在低于?%时提供)</shield>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/OlafFrenziedStrikes.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0002/ability_0002_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "鲁莽挥击",
-                "description": "奥拉夫以破釜沉舟之势发动进攻，对目标造成真实伤害（不受护甲与魔抗减免），同时，自身也会根据敌方所受的伤害而受到真实伤害的反噬。",
-                "max_rank": 5,
-                "range_burn": [
-                  325
-                ],
-                "cooldown_burn": [
-                  11,
-                  10,
-                  9,
-                  8,
-                  7
-                ],
-                "cooldown_burn_float": [
-                  11,
-                  10,
-                  9,
-                  8,
-                  7
-                ],
-                "cost_burn": [
-                  0
-                ],
-                "tooltip": "奥拉夫狂野地挥舞他的双斧，造成<trueDamage>?真实伤害</trueDamage>。如果该敌人阵亡，那么会返还此技能的消耗。<br /><br />攻击会使这个技能的冷却时间缩短1秒，在攻击野怪时，缩短值提升至2秒。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/OlafRecklessStrike.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0002/ability_0002_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "诸神黄昏",
-                "description": "奥拉夫被动获得护甲和魔法抗性提升。他可以激活这个技能来变得免疫控制效果，并且会在他保持攻击时一直持续。",
-                "max_rank": 3,
-                "range_burn": [
-                  400
-                ],
-                "cooldown_burn": [
-                  100,
-                  90,
-                  80
-                ],
-                "cooldown_burn_float": [
-                  100,
-                  90,
-                  80
-                ],
-                "cost_burn": [
-                  100
-                ],
-                "tooltip": "<spellPassive>被动：</spellPassive>奥拉夫获得<scaleArmor>?护甲</scaleArmor>和<scaleMR>?魔法抗性</scaleMR>。<br /><br /><spellActive>主动：</spellActive>奥拉夫净化掉他身上的所有<status>定身</status>和<status>限制</status>效果并且在接下来的?秒内免疫这些效果。在激活时，奥拉夫获得<scaleAD>?攻击力</scaleAD>。用一次攻击或<spellName>鲁莽挥击</spellName>命中一名英雄时，会使持续时间延长?秒。<br /><br />此外，奥拉夫会在朝着敌方英雄时获得<speed>?%移动速度</speed>，持续?秒。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/OlafRagnarok.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0002/ability_0002_R1.webm"
-              }
-            ],
-            "skins": [
-              {
-                "id": 2000,
-                "champion_id": 2,
-                "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Olaf_0.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "IP",
-                    "cost": 3150
-                  },
-                  {
-                    "currency": "RP",
-                    "cost": 790
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 2015,
-                "champion_id": 2,
-                "name": "SKT T1 奥拉夫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Olaf_15.jpg",
-                "skin_video_url": "https://youtu.be/abypOQBDGfo",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2024-09-25T08:59:00+09:00"
-              },
-              {
-                "id": 2035,
-                "champion_id": 2,
-                "name": "五杀摇滚 III：遗失的章节 奥拉夫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Olaf_35.jpg",
-                "skin_video_url": "https://youtu.be/R4mOgOj0Nf4",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2021-09-09T04:00:00+09:00"
-              },
-              {
-                "id": 2004,
-                "champion_id": 2,
-                "name": "五杀摇滚鼓手 奥拉夫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Olaf_4.jpg",
-                "skin_video_url": "https://youtu.be/MfsYzweFp84",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2012-10-05T01:00:00+09:00"
-              },
-              {
-                "id": 2025,
-                "champion_id": 2,
-                "name": "光明哨兵 奥拉夫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Olaf_25.jpg",
-                "skin_video_url": "https://youtu.be/d-6AqADVF1M",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2021-07-08T04:00:00+09:00"
-              },
-              {
-                "id": 2002,
-                "champion_id": 2,
-                "name": "冰河时代 奥拉夫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Olaf_2.jpg",
-                "skin_video_url": "https://youtu.be/Cx1nbn64b4M",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 2044,
-                "champion_id": 2,
-                "name": "地狱火 奥拉夫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Olaf_44.jpg",
-                "skin_video_url": "https://youtu.be/1fiMSQ4FLcA",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": [
-                  {
-                    "currency": "RP",
-                    "cost": 975,
-                    "discount_rate": 0.27,
-                    "started_at": "2024-11-11T08:00:00+09:00",
-                    "ended_at": "2024-11-18T08:00:00+09:00"
-                  }
-                ],
-                "release_date": "2024-05-30T09:00:00+09:00"
-              },
-              {
-                "id": 2016,
-                "champion_id": 2,
-                "name": "屠龙勇士 奥拉夫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Olaf_16.jpg",
-                "skin_video_url": "https://youtu.be/CM8ddSNhwEI",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2020-01-30T04:00:00+09:00"
-              },
-              {
-                "id": 2001,
-                "champion_id": 2,
-                "name": "烈焰猛士 奥拉夫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Olaf_1.jpg",
-                "skin_video_url": "https://youtu.be/vS7tCHmUclI",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 2006,
-                "champion_id": 2,
-                "name": "牛扒狂战 奥拉夫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Olaf_6.jpg",
-                "skin_video_url": "https://youtu.be/1bJhVr9qFoI",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 750
-                  }
-                ],
-                "sales": null,
-                "release_date": "2016-09-07T02:00:00+09:00"
-              },
-              {
-                "id": 2003,
-                "champion_id": 2,
-                "name": "铁哥们儿 奥拉夫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Olaf_3.jpg",
-                "skin_video_url": "https://youtu.be/8jO6eITTur4",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1820
-                  }
-                ],
-                "sales": null,
-                "release_date": "2010-11-30T12:00:00+09:00"
-              },
-              {
-                "id": 2005,
-                "champion_id": 2,
-                "name": "黑暗骑士 奥拉夫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Olaf_5.jpg",
-                "skin_video_url": "https://youtu.be/ZjR7R-rYXRE",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 750
-                  }
-                ],
-                "sales": null,
-                "release_date": "2015-10-01T10:00:00+09:00"
-              }
-            ]
-          },
-          "win_rate": 40
+          "win_rate": 40.26
         },
         {
           "champion_id": 69,
@@ -2099,6 +2099,237 @@
           "win_rate": 67.39
         },
         {
+          "champion_id": 420,
+          "play": 64,
+          "win": 40,
+          "meta": {
+            "id": 420,
+            "key": "Illaoi",
+            "name": "海兽祭司",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Illaoi.png",
+            "evolve": [],
+            "title": "俄洛伊",
+            "partype": "法力",
+            "passive": {
+              "name": "古神先知",
+              "description": "俄洛伊和她创造的<font color='#669900'>躯壳</font>会在附近的不可穿越的地形上生成触手。触手会挥向灵魂，<font color='#669900'>躯壳</font>，以及俄洛伊的【严酷训诫】的受害者们。触手会在命中敌人时造成物理伤害，如果命中目标是英雄还会治疗俄洛伊。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Illaoi_P.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0420/ability_0420_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "触手猛击",
+                "description": "提升触手造成的伤害。在激活时，俄洛伊会挥出一条触手来造成物理伤害。",
+                "max_rank": 5,
+                "range_burn": [
+                  850
+                ],
+                "cooldown_burn": [
+                  10,
+                  9,
+                  8,
+                  7,
+                  6
+                ],
+                "cooldown_burn_float": [
+                  10,
+                  9,
+                  8,
+                  7,
+                  6
+                ],
+                "cost_burn": [
+                  40,
+                  45,
+                  50,
+                  55,
+                  60
+                ],
+                "tooltip": "<passive>被动：</passive><keywordMajor>猛击</keywordMajor>伤害提升<physicalDamage>?%</physicalDamage>(当前<physicalDamage>?物理伤害</physicalDamage>)。<br /><br /><active>主动：</active>俄洛伊挥舞她的神像，使一条触手向前<keywordMajor>猛击</keywordMajor>。\t?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/IllaoiQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0420/ability_0420_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "严酷训诫",
+                "description": "俄洛伊跃向她的目标，造成物理伤害并使附近的触手也挥向目标。",
+                "max_rank": 5,
+                "range_burn": [
+                  400
+                ],
+                "cooldown_burn": [
+                  4
+                ],
+                "cooldown_burn_float": [
+                  4
+                ],
+                "cost_burn": [
+                  30
+                ],
+                "tooltip": "俄洛伊的下次攻击会使她跃向目标，造成额外的<physicalDamage>?最大生命值的物理伤害</physicalDamage>。当她进行打击时，附近的触手会对目标进行<keywordMajor>猛击</keywordMajor>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/IllaoiW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0420/ability_0420_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "灵魂试炼",
+                "description": "俄洛伊把灵魂从一名敌人的肉身中扯出，强迫它站在她面前。 灵魂会将其所受的一部分伤害传递到本体上。如果灵魂被击杀，或者本体离灵魂过远，那么本体就会成为一个<font color='#669900'>躯壳</font>并且开始生成触手。",
+                "max_rank": 5,
+                "range_burn": [
+                  900
+                ],
+                "cooldown_burn": [
+                  16,
+                  15,
+                  14,
+                  13,
+                  12
+                ],
+                "cooldown_burn_float": [
+                  16,
+                  15,
+                  14,
+                  13,
+                  12
+                ],
+                "cost_burn": [
+                  35,
+                  40,
+                  45,
+                  50,
+                  55
+                ],
+                "tooltip": "俄洛伊从一名敌方英雄身上扯出灵魂，持续?秒。灵魂能像英雄一样被攻击，并且所受的?伤害会传递给本体。<br /><br />如果灵魂死亡或者离本体过远，那么目标会被标记?秒，并被<status>减速</status>?%，持续?秒。被标记的敌人将每<scaleLevel>?</scaleLevel>秒生成一条触手。<br /><br />触手会每?秒自动<keywordMajor>猛击</keywordMajor>一次灵魂和被标记的敌人。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/IllaoiE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0420/ability_0420_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "过界信仰",
+                "description": "俄洛伊将她的神像砸在地上，对附近的敌人造成物理伤害。每命中一个敌人就会生成一条触手。",
+                "max_rank": 3,
+                "range_burn": [
+                  450
+                ],
+                "cooldown_burn": [
+                  120,
+                  95,
+                  70
+                ],
+                "cooldown_burn_float": [
+                  120,
+                  95,
+                  70
+                ],
+                "cost_burn": [
+                  100
+                ],
+                "tooltip": "俄洛伊将她的神像砸入地面，对附近的敌人造成<physicalDamage>?物理伤害</physicalDamage>并且每命中一个敌方英雄就会生成一条触手。<br /><br />在接下来的?秒里，触手无法被选取， <keywordMajor>猛击</keywordMajor>变快50%，并且【W严酷训诫】的基础冷却时间降至2秒。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/IllaoiR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0420/ability_0420_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 420000,
+                "champion_id": 420,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Illaoi_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 3150
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 790
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 420018,
+                "champion_id": 420,
+                "name": "净雪之月 俄洛伊",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Illaoi_18.jpg",
+                "skin_video_url": "https://youtu.be/qwuz_pQKOv4",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2022-06-23T04:00:00+09:00"
+              },
+              {
+                "id": 420027,
+                "champion_id": 420,
+                "name": "幻灵巨熊 俄洛伊",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Illaoi_27.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-07-31T09:00:00+09:00"
+              },
+              {
+                "id": 420002,
+                "champion_id": 420,
+                "name": "抵抗军炎魔 俄洛伊",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Illaoi_2.jpg",
+                "skin_video_url": "https://youtu.be/taA4ptgW-OY",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2018-03-14T15:00:00+09:00"
+              },
+              {
+                "id": 420010,
+                "champion_id": 420,
+                "name": "水瓶星神 俄洛伊",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Illaoi_10.jpg",
+                "skin_video_url": "https://youtu.be/dF-0j5wERCk",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-11-24T04:00:00+09:00"
+              },
+              {
+                "id": 420001,
+                "champion_id": 420,
+                "name": "虚空使者 俄洛伊",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Illaoi_1.jpg",
+                "skin_video_url": "https://youtu.be/TIh7DVQrj98",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2015-11-25T06:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 62.5
+        },
+        {
           "champion_id": 157,
           "play": 127,
           "win": 79,
@@ -2487,411 +2718,9 @@
           "win_rate": 62.2
         },
         {
-          "champion_id": 420,
-          "play": 63,
-          "win": 39,
-          "meta": {
-            "id": 420,
-            "key": "Illaoi",
-            "name": "海兽祭司",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Illaoi.png",
-            "evolve": [],
-            "title": "俄洛伊",
-            "partype": "法力",
-            "passive": {
-              "name": "古神先知",
-              "description": "俄洛伊和她创造的<font color='#669900'>躯壳</font>会在附近的不可穿越的地形上生成触手。触手会挥向灵魂，<font color='#669900'>躯壳</font>，以及俄洛伊的【严酷训诫】的受害者们。触手会在命中敌人时造成物理伤害，如果命中目标是英雄还会治疗俄洛伊。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Illaoi_P.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0420/ability_0420_P1.webm"
-            },
-            "spells": [
-              {
-                "key": "Q",
-                "name": "触手猛击",
-                "description": "提升触手造成的伤害。在激活时，俄洛伊会挥出一条触手来造成物理伤害。",
-                "max_rank": 5,
-                "range_burn": [
-                  850
-                ],
-                "cooldown_burn": [
-                  10,
-                  9,
-                  8,
-                  7,
-                  6
-                ],
-                "cooldown_burn_float": [
-                  10,
-                  9,
-                  8,
-                  7,
-                  6
-                ],
-                "cost_burn": [
-                  40,
-                  45,
-                  50,
-                  55,
-                  60
-                ],
-                "tooltip": "<passive>被动：</passive><keywordMajor>猛击</keywordMajor>伤害提升<physicalDamage>?%</physicalDamage>(当前<physicalDamage>?物理伤害</physicalDamage>)。<br /><br /><active>主动：</active>俄洛伊挥舞她的神像，使一条触手向前<keywordMajor>猛击</keywordMajor>。\t?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/IllaoiQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0420/ability_0420_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "严酷训诫",
-                "description": "俄洛伊跃向她的目标，造成物理伤害并使附近的触手也挥向目标。",
-                "max_rank": 5,
-                "range_burn": [
-                  400
-                ],
-                "cooldown_burn": [
-                  4
-                ],
-                "cooldown_burn_float": [
-                  4
-                ],
-                "cost_burn": [
-                  30
-                ],
-                "tooltip": "俄洛伊的下次攻击会使她跃向目标，造成额外的<physicalDamage>?最大生命值的物理伤害</physicalDamage>。当她进行打击时，附近的触手会对目标进行<keywordMajor>猛击</keywordMajor>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/IllaoiW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0420/ability_0420_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "灵魂试炼",
-                "description": "俄洛伊把灵魂从一名敌人的肉身中扯出，强迫它站在她面前。 灵魂会将其所受的一部分伤害传递到本体上。如果灵魂被击杀，或者本体离灵魂过远，那么本体就会成为一个<font color='#669900'>躯壳</font>并且开始生成触手。",
-                "max_rank": 5,
-                "range_burn": [
-                  900
-                ],
-                "cooldown_burn": [
-                  16,
-                  15,
-                  14,
-                  13,
-                  12
-                ],
-                "cooldown_burn_float": [
-                  16,
-                  15,
-                  14,
-                  13,
-                  12
-                ],
-                "cost_burn": [
-                  35,
-                  40,
-                  45,
-                  50,
-                  55
-                ],
-                "tooltip": "俄洛伊从一名敌方英雄身上扯出灵魂，持续?秒。灵魂能像英雄一样被攻击，并且所受的?伤害会传递给本体。<br /><br />如果灵魂死亡或者离本体过远，那么目标会被标记?秒，并被<status>减速</status>?%，持续?秒。被标记的敌人将每<scaleLevel>?</scaleLevel>秒生成一条触手。<br /><br />触手会每?秒自动<keywordMajor>猛击</keywordMajor>一次灵魂和被标记的敌人。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/IllaoiE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0420/ability_0420_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "过界信仰",
-                "description": "俄洛伊将她的神像砸在地上，对附近的敌人造成物理伤害。每命中一个敌人就会生成一条触手。",
-                "max_rank": 3,
-                "range_burn": [
-                  450
-                ],
-                "cooldown_burn": [
-                  120,
-                  95,
-                  70
-                ],
-                "cooldown_burn_float": [
-                  120,
-                  95,
-                  70
-                ],
-                "cost_burn": [
-                  100
-                ],
-                "tooltip": "俄洛伊将她的神像砸入地面，对附近的敌人造成<physicalDamage>?物理伤害</physicalDamage>并且每命中一个敌方英雄就会生成一条触手。<br /><br />在接下来的?秒里，触手无法被选取， <keywordMajor>猛击</keywordMajor>变快50%，并且【W严酷训诫】的基础冷却时间降至2秒。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/IllaoiR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0420/ability_0420_R1.webm"
-              }
-            ],
-            "skins": [
-              {
-                "id": 420000,
-                "champion_id": 420,
-                "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Illaoi_0.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "IP",
-                    "cost": 3150
-                  },
-                  {
-                    "currency": "RP",
-                    "cost": 790
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 420018,
-                "champion_id": 420,
-                "name": "净雪之月 俄洛伊",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Illaoi_18.jpg",
-                "skin_video_url": "https://youtu.be/qwuz_pQKOv4",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2022-06-23T04:00:00+09:00"
-              },
-              {
-                "id": 420027,
-                "champion_id": 420,
-                "name": "幻灵巨熊 俄洛伊",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Illaoi_27.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2024-07-31T09:00:00+09:00"
-              },
-              {
-                "id": 420002,
-                "champion_id": 420,
-                "name": "抵抗军炎魔 俄洛伊",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Illaoi_2.jpg",
-                "skin_video_url": "https://youtu.be/taA4ptgW-OY",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2018-03-14T15:00:00+09:00"
-              },
-              {
-                "id": 420010,
-                "champion_id": 420,
-                "name": "水瓶星神 俄洛伊",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Illaoi_10.jpg",
-                "skin_video_url": "https://youtu.be/dF-0j5wERCk",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2020-11-24T04:00:00+09:00"
-              },
-              {
-                "id": 420001,
-                "champion_id": 420,
-                "name": "虚空使者 俄洛伊",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Illaoi_1.jpg",
-                "skin_video_url": "https://youtu.be/TIh7DVQrj98",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2015-11-25T06:00:00+09:00"
-              }
-            ]
-          },
-          "win_rate": 61.9
-        },
-        {
-          "champion_id": 799,
-          "play": 431,
-          "win": 248,
-          "meta": {
-            "id": 799,
-            "key": "Ambessa",
-            "name": "铁血狼母",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Ambessa.png",
-            "evolve": [],
-            "title": "安蓓萨",
-            "partype": "能量",
-            "passive": {
-              "name": "龙犬诡步",
-              "description": "在施放技能的同时输入攻击或移动指令，会使安蓓萨在施放技能后冲刺一小段距离，为她的下一次攻击提供额外的攻击距离、伤害和攻击速度，并返还能量。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Icon_Ambessa_Passive.Domina.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0799/ability_0799_P1.webm"
-            },
-            "spells": [
-              {
-                "key": "Q",
-                "name": "暗袭 / 裂斩",
-                "description": "安蓓萨甩出链刃横扫她前方的半圆区域，对被链刃命中的敌人造成额外伤害。击中一个敌人后，该技能在短时间内的下一次施放会发生变化，使她向前方的一条直线猛砸链刃，对命中的首个敌人造成额外伤害。",
-                "max_rank": 5,
-                "range_burn": [
-                  650
-                ],
-                "cooldown_burn": [
-                  14,
-                  13,
-                  12,
-                  11,
-                  10
-                ],
-                "cooldown_burn_float": [
-                  14,
-                  13,
-                  12,
-                  11,
-                  10
-                ],
-                "cost_burn": [
-                  70
-                ],
-                "tooltip": "<spellActive>暗袭</spellActive>：安蓓萨向前甩出链刃，对打击范围边缘区域的敌人们造成<physicalDamage>?+?最大生命值的物理伤害</physicalDamage>。所有其他敌人受到?伤害。击中敌人会让<spellActive>裂斩</spellActive>就绪。<br /><br /><spellActive>裂斩</spellActive>：安蓓萨向下猛砸她的链刃，对首个命中的敌人造成<physicalDamage>?+?最大生命值的物理伤害</physicalDamage>。所有其他敌人受到?伤害。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AmbessaQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0799/ability_0799_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "铁令",
-                "description": "安蓓萨获得一道护盾，在短时间内摆出防守姿势，随后猛砸地面，对附近敌人造成伤害。如果她在防守姿势期间格挡了任何来自非小兵单位的伤害，该技能将造成额外伤害。",
-                "max_rank": 5,
-                "range_burn": [
-                  325
-                ],
-                "cooldown_burn": [
-                  18,
-                  17,
-                  16,
-                  15,
-                  14
-                ],
-                "cooldown_burn_float": [
-                  18,
-                  17,
-                  16,
-                  15,
-                  14
-                ],
-                "cost_burn": [
-                  70
-                ],
-                "tooltip": "安蓓萨获得持续?秒的<shield>?护盾值</shield>，并摆出防守姿势?秒。随后猛砸地面，对附近的敌人造成<physicalDamage>?物理伤害</physicalDamage>，如果她成功格挡了来自敌方英雄、大型野怪或建筑物的伤害，则造成的伤害值提升至<physicalDamage>?物理伤害</physicalDamage>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AmbessaW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0799/ability_0799_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "血戮",
-                "description": "安蓓萨环绕自身挥舞链刃，对附近的敌人们造成伤害和减速。若在施放该技能后使用【龙犬诡步】，则会在冲刺结束时进行第二次打击。",
-                "max_rank": 5,
-                "range_burn": [
-                  325
-                ],
-                "cooldown_burn": [
-                  13,
-                  12,
-                  11,
-                  10,
-                  9
-                ],
-                "cooldown_burn_float": [
-                  13,
-                  12,
-                  11,
-                  10,
-                  9
-                ],
-                "cost_burn": [
-                  70
-                ],
-                "tooltip": "安蓓萨环绕自身挥舞她的链刃，对敌人们造成<physicalDamage>?物理伤害</physicalDamage>和<status>?%</status><status>减速</status>，这个减速效果会在?秒内持续衰减。来自这个技能的第一段<spellName>龙犬诡步</spellName>会触发一次额外打击。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AmbessaE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0799/ability_0799_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "公开处刑",
-                "description": "安蓓萨选择一条直线，然后瞬移到直线上相距最远的那个敌方英雄身旁，并在到达后压制该英雄。随后将目标砸向地面，对其造成伤害和晕眩。",
-                "max_rank": 3,
-                "range_burn": [
-                  1250
-                ],
-                "cooldown_burn": [
-                  130,
-                  115,
-                  100
-                ],
-                "cooldown_burn_float": [
-                  130,
-                  115,
-                  100
-                ],
-                "cost_burn": [
-                  0
-                ],
-                "tooltip": "<spellPassive>被动：</spellPassive>安蓓萨获得<armorPen>?% %i:scaleAPen%护甲穿透</armorPen>，她的技能会为自身<healing>回复生命值，回复量相当于?的已造成伤害值</healing>。<br /><br /><spellActive>主动</spellActive>：安蓓萨进入<attention>不可阻挡</attention>状态，瞬移到一条直线上距离最远的敌方英雄身旁，<status>压制</status>目标?秒，然后将其砸向地面，对其造成<physicalDamage>?物理伤害</physicalDamage>和?秒<status>晕眩</status>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AmbessaR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0799/ability_0799_R1.webm"
-              }
-            ],
-            "skins": [
-              {
-                "id": 799000,
-                "champion_id": 799,
-                "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Ambessa_0.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "IP",
-                    "cost": 7800
-                  },
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 799001,
-                "champion_id": 799,
-                "name": "狼神英灵 安蓓萨",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Ambessa_1.jpg",
-                "skin_video_url": "https://youtu.be/x5V46J0ltH0",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1820
-                  }
-                ],
-                "sales": null,
-                "release_date": "2024-11-06T10:00:00+09:00"
-              }
-            ]
-          },
-          "win_rate": 57.54
-        },
-        {
           "champion_id": 74,
-          "play": 53,
-          "win": 30,
+          "play": 54,
+          "win": 31,
           "meta": {
             "id": 74,
             "key": "Heimerdinger",
@@ -3153,15 +2982,186 @@
               }
             ]
           },
-          "win_rate": 56.6
+          "win_rate": 57.41
+        },
+        {
+          "champion_id": 799,
+          "play": 433,
+          "win": 248,
+          "meta": {
+            "id": 799,
+            "key": "Ambessa",
+            "name": "铁血狼母",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Ambessa.png",
+            "evolve": [],
+            "title": "安蓓萨",
+            "partype": "能量",
+            "passive": {
+              "name": "龙犬诡步",
+              "description": "在施放技能的同时输入攻击或移动指令，会使安蓓萨在施放技能后冲刺一小段距离，为她的下一次攻击提供额外的攻击距离、伤害和攻击速度，并返还能量。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Icon_Ambessa_Passive.Domina.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0799/ability_0799_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "暗袭 / 裂斩",
+                "description": "安蓓萨甩出链刃横扫她前方的半圆区域，对被链刃命中的敌人造成额外伤害。击中一个敌人后，该技能在短时间内的下一次施放会发生变化，使她向前方的一条直线猛砸链刃，对命中的首个敌人造成额外伤害。",
+                "max_rank": 5,
+                "range_burn": [
+                  650
+                ],
+                "cooldown_burn": [
+                  14,
+                  13,
+                  12,
+                  11,
+                  10
+                ],
+                "cooldown_burn_float": [
+                  14,
+                  13,
+                  12,
+                  11,
+                  10
+                ],
+                "cost_burn": [
+                  70
+                ],
+                "tooltip": "<spellActive>暗袭</spellActive>：安蓓萨向前甩出链刃，对打击范围边缘区域的敌人们造成<physicalDamage>?+?最大生命值的物理伤害</physicalDamage>。所有其他敌人受到?伤害。击中敌人会让<spellActive>裂斩</spellActive>就绪。<br /><br /><spellActive>裂斩</spellActive>：安蓓萨向下猛砸她的链刃，对首个命中的敌人造成<physicalDamage>?+?最大生命值的物理伤害</physicalDamage>。所有其他敌人受到?伤害。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AmbessaQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0799/ability_0799_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "铁令",
+                "description": "安蓓萨获得一道护盾，在短时间内摆出防守姿势，随后猛砸地面，对附近敌人造成伤害。如果她在防守姿势期间格挡了任何来自非小兵单位的伤害，该技能将造成额外伤害。",
+                "max_rank": 5,
+                "range_burn": [
+                  325
+                ],
+                "cooldown_burn": [
+                  18,
+                  17,
+                  16,
+                  15,
+                  14
+                ],
+                "cooldown_burn_float": [
+                  18,
+                  17,
+                  16,
+                  15,
+                  14
+                ],
+                "cost_burn": [
+                  70
+                ],
+                "tooltip": "安蓓萨获得持续?秒的<shield>?护盾值</shield>，并摆出防守姿势?秒。随后猛砸地面，对附近的敌人造成<physicalDamage>?物理伤害</physicalDamage>，如果她成功格挡了来自敌方英雄、大型野怪或建筑物的伤害，则造成的伤害值提升至<physicalDamage>?物理伤害</physicalDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AmbessaW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0799/ability_0799_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "血戮",
+                "description": "安蓓萨环绕自身挥舞链刃，对附近的敌人们造成伤害和减速。若在施放该技能后使用【龙犬诡步】，则会在冲刺结束时进行第二次打击。",
+                "max_rank": 5,
+                "range_burn": [
+                  325
+                ],
+                "cooldown_burn": [
+                  13,
+                  12,
+                  11,
+                  10,
+                  9
+                ],
+                "cooldown_burn_float": [
+                  13,
+                  12,
+                  11,
+                  10,
+                  9
+                ],
+                "cost_burn": [
+                  70
+                ],
+                "tooltip": "安蓓萨环绕自身挥舞她的链刃，对敌人们造成<physicalDamage>?物理伤害</physicalDamage>和<status>?%</status><status>减速</status>，这个减速效果会在?秒内持续衰减。来自这个技能的第一段<spellName>龙犬诡步</spellName>会触发一次额外打击。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AmbessaE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0799/ability_0799_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "公开处刑",
+                "description": "安蓓萨选择一条直线，然后瞬移到直线上相距最远的那个敌方英雄身旁，并在到达后压制该英雄。随后将目标砸向地面，对其造成伤害和晕眩。",
+                "max_rank": 3,
+                "range_burn": [
+                  1250
+                ],
+                "cooldown_burn": [
+                  130,
+                  115,
+                  100
+                ],
+                "cooldown_burn_float": [
+                  130,
+                  115,
+                  100
+                ],
+                "cost_burn": [
+                  0
+                ],
+                "tooltip": "<spellPassive>被动：</spellPassive>安蓓萨获得<armorPen>?% %i:scaleAPen%护甲穿透</armorPen>，她的技能会为自身<healing>回复生命值，回复量相当于?的已造成伤害值</healing>。<br /><br /><spellActive>主动</spellActive>：安蓓萨进入<attention>不可阻挡</attention>状态，瞬移到一条直线上距离最远的敌方英雄身旁，<status>压制</status>目标?秒，然后将其砸向地面，对其造成<physicalDamage>?物理伤害</physicalDamage>和?秒<status>晕眩</status>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AmbessaR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0799/ability_0799_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 799000,
+                "champion_id": 799,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Ambessa_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 7800
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 799001,
+                "champion_id": 799,
+                "name": "狼神英灵 安蓓萨",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Ambessa_1.jpg",
+                "skin_video_url": "https://youtu.be/x5V46J0ltH0",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1820
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-11-06T10:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 57.27
         }
       ]
     ],
     "counters": [
       {
         "champion_id": 24,
-        "play": 474,
-        "win": 266,
+        "play": 476,
+        "win": 267,
         "meta": {
           "id": 24,
           "key": "Jax",
@@ -3568,8 +3568,8 @@
       },
       {
         "champion_id": 266,
-        "play": 437,
-        "win": 233,
+        "play": 438,
+        "win": 234,
         "meta": {
           "id": 266,
           "key": "Aatrox",
@@ -3883,7 +3883,7 @@
       },
       {
         "champion_id": 799,
-        "play": 431,
+        "play": 433,
         "win": 248,
         "meta": {
           "id": 799,
@@ -4053,8 +4053,8 @@
       },
       {
         "champion_id": 150,
-        "play": 369,
-        "win": 183,
+        "play": 372,
+        "win": 184,
         "meta": {
           "id": 150,
           "key": "Gnar",
@@ -4351,8 +4351,8 @@
       },
       {
         "champion_id": 122,
-        "play": 359,
-        "win": 187,
+        "play": 363,
+        "win": 190,
         "meta": {
           "id": 122,
           "key": "Darius",
@@ -4693,8 +4693,8 @@
       },
       {
         "champion_id": 897,
-        "play": 329,
-        "win": 173,
+        "play": 331,
+        "win": 174,
         "meta": {
           "id": 897,
           "key": "KSante",
@@ -4888,8 +4888,8 @@
       },
       {
         "champion_id": 79,
-        "play": 304,
-        "win": 148,
+        "play": 306,
+        "win": 149,
         "meta": {
           "id": 79,
           "key": "Gragas",
@@ -5246,7 +5246,7 @@
       },
       {
         "champion_id": 39,
-        "play": 287,
+        "play": 288,
         "win": 128,
         "meta": {
           "id": 39,
@@ -5608,8 +5608,8 @@
       },
       {
         "champion_id": 92,
-        "play": 279,
-        "win": 153,
+        "play": 281,
+        "win": 154,
         "meta": {
           "id": 92,
           "key": "Riven",
@@ -5999,8 +5999,8 @@
       },
       {
         "champion_id": 58,
-        "play": 250,
-        "win": 119,
+        "play": 252,
+        "win": 120,
         "meta": {
           "id": 58,
           "key": "Renekton",
@@ -6344,7 +6344,7 @@
       },
       {
         "champion_id": 36,
-        "play": 246,
+        "play": 247,
         "win": 101,
         "meta": {
           "id": 36,
@@ -6637,7 +6637,7 @@
       },
       {
         "champion_id": 54,
-        "play": 245,
+        "play": 246,
         "win": 127,
         "meta": {
           "id": 54,
@@ -7247,8 +7247,8 @@
       },
       {
         "champion_id": 126,
-        "play": 206,
-        "win": 113,
+        "play": 209,
+        "win": 115,
         "meta": {
           "id": 126,
           "key": "Jayce",
@@ -7948,8 +7948,8 @@
       },
       {
         "champion_id": 75,
-        "play": 163,
-        "win": 87,
+        "play": 165,
+        "win": 88,
         "meta": {
           "id": 75,
           "key": "Nasus",
@@ -8274,7 +8274,7 @@
       },
       {
         "champion_id": 106,
-        "play": 158,
+        "play": 159,
         "win": 82,
         "meta": {
           "id": 106,
@@ -8817,8 +8817,8 @@
       },
       {
         "champion_id": 17,
-        "play": 150,
-        "win": 59,
+        "play": 154,
+        "win": 62,
         "meta": {
           "id": 17,
           "key": "Teemo",
@@ -9157,8 +9157,8 @@
       },
       {
         "champion_id": 114,
-        "play": 149,
-        "win": 64,
+        "play": 150,
+        "win": 65,
         "meta": {
           "id": 114,
           "key": "Fiora",
@@ -9536,8 +9536,8 @@
       },
       {
         "champion_id": 86,
-        "play": 139,
-        "win": 66,
+        "play": 141,
+        "win": 67,
         "meta": {
           "id": 86,
           "key": "Garen",
@@ -10204,278 +10204,8 @@
         }
       },
       {
-        "champion_id": 875,
-        "play": 133,
-        "win": 72,
-        "meta": {
-          "id": 875,
-          "key": "Sett",
-          "name": "腕豪",
-          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Sett.png",
-          "evolve": [],
-          "title": "瑟提",
-          "partype": "豪意",
-          "passive": {
-            "name": "沙场豪情",
-            "description": "瑟提的普通攻击会交替使用左重拳和右重拳。右重拳稍微强一些和快一些。瑟提还很讨厌失败，因此会基于他的已损失生命值而获得额外的生命回复。",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Sett_P.png",
-            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0875/ability_0875_P1.webm"
-          },
-          "spells": [
-            {
-              "key": "Q",
-              "name": "屈人之威",
-              "description": "瑟提的下两次攻击将基于目标的最大生命值来造成额外伤害。瑟提也会在朝着敌方英雄移动时获得移动速度加成。",
-              "max_rank": 5,
-              "range_burn": [
-                0
-              ],
-              "cooldown_burn": [
-                9,
-                8,
-                7,
-                6,
-                5
-              ],
-              "cooldown_burn_float": [
-                9,
-                8,
-                7,
-                6,
-                5
-              ],
-              "cost_burn": [
-                0
-              ],
-              "tooltip": "瑟提手痒难耐，渴望打架，在朝着敌方英雄移动时获得<speed>?%移动速度</speed>，持续?秒。<br /><br />此外，瑟提的下两次攻击造成额外的<physicalDamage>?外加?最大生命值的物理伤害</physicalDamage>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SettQ.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0875/ability_0875_Q1.webm"
-            },
-            {
-              "key": "W",
-              "name": "蓄意轰拳",
-              "description": "瑟提会被动地将他受到的伤害储存为豪意。在施放时，瑟提会释放所有已储存的豪意来提供一层护盾并且重击一个区域，在区域中心造成真实伤害并在区域边缘造成物理伤害。",
-              "max_rank": 5,
-              "range_burn": [
-                25000
-              ],
-              "cooldown_burn": [
-                18,
-                16,
-                15,
-                13,
-                12
-              ],
-              "cooldown_burn_float": [
-                18,
-                16.5,
-                15,
-                13.5,
-                12
-              ],
-              "cost_burn": [
-                0
-              ],
-              "tooltip": "<spellPassive>被动：</spellPassive>瑟提将受到的?%伤害储存为<keywordMajor>豪意</keywordMajor>，储量上限为<keywordMajor>?</keywordMajor>。<keywordMajor>豪意</keywordMajor>在停止受到伤害的?秒后会快速衰减。<br /><br /><spellActive>主动：</spellActive>瑟提将所有<keywordMajor>豪意</keywordMajor>迸发出来，获得<shield>?%迸发豪意值的护盾值</shield>，护盾值会在?秒里持续衰减。瑟提随后会轰出一记重拳，对中央的所有敌人造成<trueDamage>?外加?迸发豪意值的真实伤害</trueDamage>(最大伤害为<trueDamage>?</trueDamage>)。不在中央的敌人会受到<physicalDamage>物理伤害</physicalDamage>作为替代。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SettW.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0875/ability_0875_W1.webm"
-            },
-            {
-              "key": "E",
-              "name": "强手裂颅",
-              "description": "瑟提将他两侧的所有敌人猛撞到一起，对他们造成伤害和晕眩效果。如果敌人仅位于他的一侧，那么他们只会被减速而不会被晕眩。",
-              "max_rank": 5,
-              "range_burn": [
-                490
-              ],
-              "cooldown_burn": [
-                16,
-                14,
-                13,
-                11,
-                10
-              ],
-              "cooldown_burn_float": [
-                16,
-                14.5,
-                13,
-                11.5,
-                10
-              ],
-              "cost_burn": [
-                0
-              ],
-              "tooltip": "瑟提将他两侧的敌人猛撞到一起，造成<physicalDamage>?物理伤害</physicalDamage>并使他们<status>减速</status>?%，持续?秒。如果瑟提在每侧都至少擒住了一名敌人，那么所有敌人还会被<status>晕眩</status>?秒。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SettE.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0875/ability_0875_E1.webm"
-            },
-            {
-              "key": "R",
-              "name": "叹为观止",
-              "description": "瑟提将一名敌方英雄带到空中，然后将其猛砸到地上，在该英雄着陆后对其附近的所有敌人造成伤害和减速效果。",
-              "max_rank": 3,
-              "range_burn": [
-                400
-              ],
-              "cooldown_burn": [
-                120,
-                100,
-                80
-              ],
-              "cooldown_burn_float": [
-                120,
-                100,
-                80
-              ],
-              "cost_burn": [
-                0
-              ],
-              "tooltip": "瑟提擒住一名敌方英雄，并在扛着该英雄前行时将其<status>压制</status>，然后将该英雄猛摔到地上，对着陆点附近的所有敌人造成<physicalDamage>?外加?%被擒英雄的额外生命值的物理伤害</physicalDamage>和持续?秒的?%<status>减速</status>。敌人离瑟提着陆的位置越远，受到的伤害越低。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SettR.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0875/ability_0875_R1.webm"
-            }
-          ],
-          "skins": [
-            {
-              "id": 875000,
-              "champion_id": 875,
-              "name": "default",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sett_0.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "IP",
-                  "cost": 1350
-                },
-                {
-                  "currency": "RP",
-                  "cost": 585
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 875056,
-              "champion_id": 875,
-              "name": "心之钢 瑟提",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sett_56.jpg",
-              "skin_video_url": "https://youtu.be/_Ixdsj84AQQ",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2023-11-08T12:00:00+09:00"
-            },
-            {
-              "id": 875045,
-              "champion_id": 875,
-              "name": "斗魂觉醒 瑟提",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sett_45.jpg",
-              "skin_video_url": "https://youtu.be/bu8WE4EyO8M",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2023-07-20T04:00:00+09:00"
-            },
-            {
-              "id": 875010,
-              "champion_id": 875,
-              "name": "泳池派对 瑟提",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sett_10.jpg",
-              "skin_video_url": "https://youtu.be/AqIQWB0poAs",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2021-06-09T04:00:00+09:00"
-            },
-            {
-              "id": 875038,
-              "champion_id": 875,
-              "name": "灵魂莲华 瑟提",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sett_38.jpg",
-              "skin_video_url": "https://youtu.be/5u6TySvidqk",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1820
-                }
-              ],
-              "sales": null,
-              "release_date": "2022-10-06T04:00:00+09:00"
-            },
-            {
-              "id": 875001,
-              "champion_id": 875,
-              "name": "王国机神苍狼 瑟提",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sett_1.jpg",
-              "skin_video_url": "https://youtu.be/eKdmKEDtyJI",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2020-01-14T02:00:00+09:00"
-            },
-            {
-              "id": 875008,
-              "champion_id": 875,
-              "name": "神龙尊者 炎龙瑟提",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sett_8.jpg",
-              "skin_video_url": "https://youtu.be/GeGmsmMcQ_A",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2020-10-01T04:00:00+09:00"
-            },
-            {
-              "id": 875009,
-              "champion_id": 875,
-              "name": "至臻 神龙尊者 炎龙瑟提",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sett_9.jpg",
-              "skin_video_url": null,
-              "prices": null,
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 875019,
-              "champion_id": 875,
-              "name": "龙腾虎跃 瑟提",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sett_19.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            }
-          ]
-        }
-      },
-      {
         "champion_id": 517,
-        "play": 132,
+        "play": 134,
         "win": 65,
         "meta": {
           "id": 517,
@@ -10752,6 +10482,276 @@
               "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sylas_14.jpg",
               "skin_video_url": "https://youtu.be/uX9N3qww4-0",
               "prices": null,
+              "sales": null,
+              "release_date": null
+            }
+          ]
+        }
+      },
+      {
+        "champion_id": 875,
+        "play": 133,
+        "win": 72,
+        "meta": {
+          "id": 875,
+          "key": "Sett",
+          "name": "腕豪",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Sett.png",
+          "evolve": [],
+          "title": "瑟提",
+          "partype": "豪意",
+          "passive": {
+            "name": "沙场豪情",
+            "description": "瑟提的普通攻击会交替使用左重拳和右重拳。右重拳稍微强一些和快一些。瑟提还很讨厌失败，因此会基于他的已损失生命值而获得额外的生命回复。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Sett_P.png",
+            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0875/ability_0875_P1.webm"
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "屈人之威",
+              "description": "瑟提的下两次攻击将基于目标的最大生命值来造成额外伤害。瑟提也会在朝着敌方英雄移动时获得移动速度加成。",
+              "max_rank": 5,
+              "range_burn": [
+                0
+              ],
+              "cooldown_burn": [
+                9,
+                8,
+                7,
+                6,
+                5
+              ],
+              "cooldown_burn_float": [
+                9,
+                8,
+                7,
+                6,
+                5
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "瑟提手痒难耐，渴望打架，在朝着敌方英雄移动时获得<speed>?%移动速度</speed>，持续?秒。<br /><br />此外，瑟提的下两次攻击造成额外的<physicalDamage>?外加?最大生命值的物理伤害</physicalDamage>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SettQ.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0875/ability_0875_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "蓄意轰拳",
+              "description": "瑟提会被动地将他受到的伤害储存为豪意。在施放时，瑟提会释放所有已储存的豪意来提供一层护盾并且重击一个区域，在区域中心造成真实伤害并在区域边缘造成物理伤害。",
+              "max_rank": 5,
+              "range_burn": [
+                25000
+              ],
+              "cooldown_burn": [
+                18,
+                16,
+                15,
+                13,
+                12
+              ],
+              "cooldown_burn_float": [
+                18,
+                16.5,
+                15,
+                13.5,
+                12
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "<spellPassive>被动：</spellPassive>瑟提将受到的?%伤害储存为<keywordMajor>豪意</keywordMajor>，储量上限为<keywordMajor>?</keywordMajor>。<keywordMajor>豪意</keywordMajor>在停止受到伤害的?秒后会快速衰减。<br /><br /><spellActive>主动：</spellActive>瑟提将所有<keywordMajor>豪意</keywordMajor>迸发出来，获得<shield>?%迸发豪意值的护盾值</shield>，护盾值会在?秒里持续衰减。瑟提随后会轰出一记重拳，对中央的所有敌人造成<trueDamage>?外加?迸发豪意值的真实伤害</trueDamage>(最大伤害为<trueDamage>?</trueDamage>)。不在中央的敌人会受到<physicalDamage>物理伤害</physicalDamage>作为替代。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SettW.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0875/ability_0875_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "强手裂颅",
+              "description": "瑟提将他两侧的所有敌人猛撞到一起，对他们造成伤害和晕眩效果。如果敌人仅位于他的一侧，那么他们只会被减速而不会被晕眩。",
+              "max_rank": 5,
+              "range_burn": [
+                490
+              ],
+              "cooldown_burn": [
+                16,
+                14,
+                13,
+                11,
+                10
+              ],
+              "cooldown_burn_float": [
+                16,
+                14.5,
+                13,
+                11.5,
+                10
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "瑟提将他两侧的敌人猛撞到一起，造成<physicalDamage>?物理伤害</physicalDamage>并使他们<status>减速</status>?%，持续?秒。如果瑟提在每侧都至少擒住了一名敌人，那么所有敌人还会被<status>晕眩</status>?秒。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SettE.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0875/ability_0875_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "叹为观止",
+              "description": "瑟提将一名敌方英雄带到空中，然后将其猛砸到地上，在该英雄着陆后对其附近的所有敌人造成伤害和减速效果。",
+              "max_rank": 3,
+              "range_burn": [
+                400
+              ],
+              "cooldown_burn": [
+                120,
+                100,
+                80
+              ],
+              "cooldown_burn_float": [
+                120,
+                100,
+                80
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "瑟提擒住一名敌方英雄，并在扛着该英雄前行时将其<status>压制</status>，然后将该英雄猛摔到地上，对着陆点附近的所有敌人造成<physicalDamage>?外加?%被擒英雄的额外生命值的物理伤害</physicalDamage>和持续?秒的?%<status>减速</status>。敌人离瑟提着陆的位置越远，受到的伤害越低。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SettR.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0875/ability_0875_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 875000,
+              "champion_id": 875,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sett_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 1350
+                },
+                {
+                  "currency": "RP",
+                  "cost": 585
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 875056,
+              "champion_id": 875,
+              "name": "心之钢 瑟提",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sett_56.jpg",
+              "skin_video_url": "https://youtu.be/_Ixdsj84AQQ",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2023-11-08T12:00:00+09:00"
+            },
+            {
+              "id": 875045,
+              "champion_id": 875,
+              "name": "斗魂觉醒 瑟提",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sett_45.jpg",
+              "skin_video_url": "https://youtu.be/bu8WE4EyO8M",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2023-07-20T04:00:00+09:00"
+            },
+            {
+              "id": 875010,
+              "champion_id": 875,
+              "name": "泳池派对 瑟提",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sett_10.jpg",
+              "skin_video_url": "https://youtu.be/AqIQWB0poAs",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2021-06-09T04:00:00+09:00"
+            },
+            {
+              "id": 875038,
+              "champion_id": 875,
+              "name": "灵魂莲华 瑟提",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sett_38.jpg",
+              "skin_video_url": "https://youtu.be/5u6TySvidqk",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1820
+                }
+              ],
+              "sales": null,
+              "release_date": "2022-10-06T04:00:00+09:00"
+            },
+            {
+              "id": 875001,
+              "champion_id": 875,
+              "name": "王国机神苍狼 瑟提",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sett_1.jpg",
+              "skin_video_url": "https://youtu.be/eKdmKEDtyJI",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2020-01-14T02:00:00+09:00"
+            },
+            {
+              "id": 875008,
+              "champion_id": 875,
+              "name": "神龙尊者 炎龙瑟提",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sett_8.jpg",
+              "skin_video_url": "https://youtu.be/GeGmsmMcQ_A",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2020-10-01T04:00:00+09:00"
+            },
+            {
+              "id": 875009,
+              "champion_id": 875,
+              "name": "至臻 神龙尊者 炎龙瑟提",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sett_9.jpg",
+              "skin_video_url": null,
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 875019,
+              "champion_id": 875,
+              "name": "龙腾虎跃 瑟提",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Sett_19.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
               "sales": null,
               "release_date": null
             }
@@ -11147,8 +11147,8 @@
       },
       {
         "champion_id": 223,
-        "play": 124,
-        "win": 62,
+        "play": 125,
+        "win": 63,
         "meta": {
           "id": 223,
           "key": "TahmKench",
@@ -11722,7 +11722,7 @@
       },
       {
         "champion_id": 98,
-        "play": 117,
+        "play": 118,
         "win": 52,
         "meta": {
           "id": 98,
@@ -12324,8 +12324,8 @@
       },
       {
         "champion_id": 901,
-        "play": 108,
-        "win": 60,
+        "play": 109,
+        "win": 61,
         "meta": {
           "id": 901,
           "key": "Smolder",
@@ -13057,8 +13057,8 @@
       },
       {
         "champion_id": 13,
-        "play": 100,
-        "win": 47,
+        "play": 101,
+        "win": 48,
         "meta": {
           "id": 13,
           "key": "Ryze",
@@ -14801,7 +14801,7 @@
       },
       {
         "champion_id": 83,
-        "play": 81,
+        "play": 82,
         "win": 37,
         "meta": {
           "id": 83,
@@ -16841,8 +16841,8 @@
       },
       {
         "champion_id": 420,
-        "play": 63,
-        "win": 39,
+        "play": 64,
+        "win": 40,
         "meta": {
           "id": 420,
           "key": "Illaoi",
@@ -17372,8 +17372,8 @@
       },
       {
         "champion_id": 240,
-        "play": 58,
-        "win": 25,
+        "play": 59,
+        "win": 26,
         "meta": {
           "id": 240,
           "key": "Kled",
@@ -17856,8 +17856,8 @@
       },
       {
         "champion_id": 74,
-        "play": 53,
-        "win": 30,
+        "play": 54,
+        "win": 31,
         "meta": {
           "id": 74,
           "key": "Heimerdinger",
@@ -18993,8 +18993,8 @@
       },
       {
         "champion_id": 62,
-        "play": 46,
-        "win": 21,
+        "play": 47,
+        "win": 22,
         "meta": {
           "id": 62,
           "key": "MonkeyKing",
@@ -19834,6 +19834,298 @@
         }
       },
       {
+        "champion_id": 50,
+        "play": 43,
+        "win": 22,
+        "meta": {
+          "id": 50,
+          "key": "Swain",
+          "name": "诺克萨斯统领",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Swain.png",
+          "evolve": [],
+          "title": "斯维因",
+          "partype": "法力",
+          "passive": {
+            "name": "狂食鸦群",
+            "description": "斯维因的鸦群会收集<i>魂屑</i>来治疗斯维因并永久提升他的最大生命值。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Swain_P.png",
+            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0050/ability_0050_P1.webm"
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "解脱之触",
+              "description": "斯维因释放多道恶魔之力，这种力量可以穿透命中的目标。被一道以上的恶魔之力所命中的敌人，会受到基于恶魔之力数量的更多伤害。",
+              "max_rank": 5,
+              "range_burn": [
+                750
+              ],
+              "cooldown_burn": [
+                7,
+                6,
+                5,
+                4,
+                3
+              ],
+              "cooldown_burn_float": [
+                7,
+                6,
+                5,
+                4,
+                3
+              ],
+              "cost_burn": [
+                40,
+                45,
+                50,
+                55,
+                60
+              ],
+              "tooltip": "斯维因释放5道恶魔之力，造成<magicDamage>?魔法伤害</magicDamage>，第一道之后的每道恶魔之力造成<magicDamage>?魔法伤害</magicDamage>(最大伤害为<magicDamage>?魔法伤害</magicDamage>)。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SwainQ.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0050/ability_0050_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "帝国视界",
+              "description": "斯维因睁开恶魔之眼来对敌人造成伤害和减速效果。在命中敌方英雄时会使该英雄显形，并为斯维因提供一片魂屑。",
+              "max_rank": 5,
+              "range_burn": [
+                5500,
+                6000,
+                6500,
+                7000,
+                7500
+              ],
+              "cooldown_burn": [
+                22,
+                21,
+                20,
+                19,
+                18
+              ],
+              "cooldown_burn_float": [
+                22,
+                21,
+                20,
+                19,
+                18
+              ],
+              "cost_burn": [
+                60,
+                65,
+                70,
+                75,
+                80
+              ],
+              "tooltip": "斯维因睁开一只恶魔之眼，来使一个位置显形1.5秒，然后造成<magicDamage>?魔法伤害</magicDamage>和持续?秒的?%<status>减速</status>。<br /><br />被命中的英雄会为斯维因提供一片<span class=\"size18 colorFF3F3F\">魂屑</span>并显形?秒。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SwainW.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0050/ability_0050_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "永不复行",
+              "description": "斯维因释放一道恶魔之手向前击出。手臂随后会返回至斯维因处，并禁锢它命中的敌人。斯维因之后可以选择将所有被禁锢的英雄们拉拽得更靠近他。这个技能在【恶魔升华】期间会有一个更短的冷却时间。",
+              "max_rank": 5,
+              "range_burn": [
+                850
+              ],
+              "cooldown_burn": [
+                12,
+                11,
+                11,
+                10,
+                10
+              ],
+              "cooldown_burn_float": [
+                12,
+                11.5,
+                11,
+                10.5,
+                10
+              ],
+              "cost_burn": [
+                60,
+                65,
+                70,
+                75,
+                80
+              ],
+              "tooltip": "斯维因发射一道会折返的恶魔能量波，在命中的第一个敌人身上引爆，对一个区域内的敌人造成<magicDamage>?魔法伤害</magicDamage>和?秒<status>禁锢</status>。<br /><br />用这个技能<status>禁锢</status>一名英雄后，可使斯维因再次施放这个技能来拉拽所有被<spellName>永不复行</spellName><status>禁锢</status>的英雄们，并且每个被他拉拽的英雄将为他提供一个<span class=\"size18 colorFF3F3F\">魂屑</span>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SwainE.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0050/ability_0050_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "恶魔升华",
+              "description": "斯维因变身为恶魔并从附近的敌方英雄、小兵和中立野怪身上汲取生命值。斯维因能施放【恶魔耀光】来用一道魂焰新星残害并减速附近的敌人们。这个形态可以在斯维因汲取敌方英雄时无限持续。",
+              "max_rank": 3,
+              "range_burn": [
+                650
+              ],
+              "cooldown_burn": [
+                120
+              ],
+              "cooldown_burn_float": [
+                120
+              ],
+              "cost_burn": [
+                100
+              ],
+              "tooltip": "斯维因使体内的恶魔解脱，每秒造成<magicDamage>?魔法伤害</magicDamage>并从附近的敌人们身上汲取<healing>?生命值</healing>。他的恶魔能量会持续消耗，但可通过汲取敌方英雄来无限期地充能并且会在参与击杀英雄后完全回复。<br /><br />在?秒后以及之后的每?秒，斯维因能够在变身状态下施放<spellName>恶魔耀光</spellName>来对敌人们造成<magicDamage>?魔法伤害</magicDamage>和在?秒里持续衰减的?%<status>减速</status>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SwainR.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0050/ability_0050_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 50000,
+              "champion_id": 50,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 3150
+                },
+                {
+                  "currency": "RP",
+                  "cost": 790
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 50021,
+              "champion_id": 50,
+              "name": "北极星猎人 斯维因",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_21.jpg",
+              "skin_video_url": "https://youtu.be/0FQTWh_tXmE",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2022-12-08T04:00:00+09:00"
+            },
+            {
+              "id": 50001,
+              "champion_id": 50,
+              "name": "北领前线 斯维因",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_1.jpg",
+              "skin_video_url": "https://youtu.be/VVkhj_yFohA",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 750
+                }
+              ],
+              "sales": null,
+              "release_date": "2010-10-04T15:00:00+09:00"
+            },
+            {
+              "id": 50012,
+              "champion_id": 50,
+              "name": "水晶玫瑰 斯维因",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_12.jpg",
+              "skin_video_url": "https://youtu.be/Ee8sb6kHU-U",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2021-02-11T04:00:00+09:00"
+            },
+            {
+              "id": 50011,
+              "champion_id": 50,
+              "name": "海克斯科技 斯维因",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_11.jpg",
+              "skin_video_url": "https://youtu.be/zXsQbHMY4tg",
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 50002,
+              "champion_id": 50,
+              "name": "海贼参谋 斯维因",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_2.jpg",
+              "skin_video_url": "https://youtu.be/GZb6zOr5PdI",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 520
+                }
+              ],
+              "sales": null,
+              "release_date": "2010-10-04T15:00:00+09:00"
+            },
+            {
+              "id": 50032,
+              "champion_id": 50,
+              "name": "狼神英灵 斯维因",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_32.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2024-11-06T10:00:00+09:00"
+            },
+            {
+              "id": 50003,
+              "champion_id": 50,
+              "name": "绝代智将 斯维因",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_3.jpg",
+              "skin_video_url": "https://youtu.be/p3K4chD-QAI",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2012-05-24T23:00:00+09:00"
+            },
+            {
+              "id": 50033,
+              "champion_id": 50,
+              "name": "至臻 狼神英灵 斯维因",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_33.jpg",
+              "skin_video_url": null,
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 50004,
+              "champion_id": 50,
+              "name": "驯龙大师 斯维因",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_4.jpg",
+              "skin_video_url": "https://youtu.be/0r97R6SmFJw",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2018-02-21T20:00:00+09:00"
+            }
+          ]
+        }
+      },
+      {
         "champion_id": 57,
         "play": 43,
         "win": 24,
@@ -20144,298 +20436,6 @@
                 }
               ],
               "release_date": "2024-10-23T08:59:00+09:00"
-            }
-          ]
-        }
-      },
-      {
-        "champion_id": 50,
-        "play": 42,
-        "win": 22,
-        "meta": {
-          "id": 50,
-          "key": "Swain",
-          "name": "诺克萨斯统领",
-          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Swain.png",
-          "evolve": [],
-          "title": "斯维因",
-          "partype": "法力",
-          "passive": {
-            "name": "狂食鸦群",
-            "description": "斯维因的鸦群会收集<i>魂屑</i>来治疗斯维因并永久提升他的最大生命值。",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Swain_P.png",
-            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0050/ability_0050_P1.webm"
-          },
-          "spells": [
-            {
-              "key": "Q",
-              "name": "解脱之触",
-              "description": "斯维因释放多道恶魔之力，这种力量可以穿透命中的目标。被一道以上的恶魔之力所命中的敌人，会受到基于恶魔之力数量的更多伤害。",
-              "max_rank": 5,
-              "range_burn": [
-                750
-              ],
-              "cooldown_burn": [
-                7,
-                6,
-                5,
-                4,
-                3
-              ],
-              "cooldown_burn_float": [
-                7,
-                6,
-                5,
-                4,
-                3
-              ],
-              "cost_burn": [
-                40,
-                45,
-                50,
-                55,
-                60
-              ],
-              "tooltip": "斯维因释放5道恶魔之力，造成<magicDamage>?魔法伤害</magicDamage>，第一道之后的每道恶魔之力造成<magicDamage>?魔法伤害</magicDamage>(最大伤害为<magicDamage>?魔法伤害</magicDamage>)。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SwainQ.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0050/ability_0050_Q1.webm"
-            },
-            {
-              "key": "W",
-              "name": "帝国视界",
-              "description": "斯维因睁开恶魔之眼来对敌人造成伤害和减速效果。在命中敌方英雄时会使该英雄显形，并为斯维因提供一片魂屑。",
-              "max_rank": 5,
-              "range_burn": [
-                5500,
-                6000,
-                6500,
-                7000,
-                7500
-              ],
-              "cooldown_burn": [
-                22,
-                21,
-                20,
-                19,
-                18
-              ],
-              "cooldown_burn_float": [
-                22,
-                21,
-                20,
-                19,
-                18
-              ],
-              "cost_burn": [
-                60,
-                65,
-                70,
-                75,
-                80
-              ],
-              "tooltip": "斯维因睁开一只恶魔之眼，来使一个位置显形1.5秒，然后造成<magicDamage>?魔法伤害</magicDamage>和持续?秒的?%<status>减速</status>。<br /><br />被命中的英雄会为斯维因提供一片<span class=\"size18 colorFF3F3F\">魂屑</span>并显形?秒。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SwainW.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0050/ability_0050_W1.webm"
-            },
-            {
-              "key": "E",
-              "name": "永不复行",
-              "description": "斯维因释放一道恶魔之手向前击出。手臂随后会返回至斯维因处，并禁锢它命中的敌人。斯维因之后可以选择将所有被禁锢的英雄们拉拽得更靠近他。这个技能在【恶魔升华】期间会有一个更短的冷却时间。",
-              "max_rank": 5,
-              "range_burn": [
-                850
-              ],
-              "cooldown_burn": [
-                12,
-                11,
-                11,
-                10,
-                10
-              ],
-              "cooldown_burn_float": [
-                12,
-                11.5,
-                11,
-                10.5,
-                10
-              ],
-              "cost_burn": [
-                60,
-                65,
-                70,
-                75,
-                80
-              ],
-              "tooltip": "斯维因发射一道会折返的恶魔能量波，在命中的第一个敌人身上引爆，对一个区域内的敌人造成<magicDamage>?魔法伤害</magicDamage>和?秒<status>禁锢</status>。<br /><br />用这个技能<status>禁锢</status>一名英雄后，可使斯维因再次施放这个技能来拉拽所有被<spellName>永不复行</spellName><status>禁锢</status>的英雄们，并且每个被他拉拽的英雄将为他提供一个<span class=\"size18 colorFF3F3F\">魂屑</span>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SwainE.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0050/ability_0050_E1.webm"
-            },
-            {
-              "key": "R",
-              "name": "恶魔升华",
-              "description": "斯维因变身为恶魔并从附近的敌方英雄、小兵和中立野怪身上汲取生命值。斯维因能施放【恶魔耀光】来用一道魂焰新星残害并减速附近的敌人们。这个形态可以在斯维因汲取敌方英雄时无限持续。",
-              "max_rank": 3,
-              "range_burn": [
-                650
-              ],
-              "cooldown_burn": [
-                120
-              ],
-              "cooldown_burn_float": [
-                120
-              ],
-              "cost_burn": [
-                100
-              ],
-              "tooltip": "斯维因使体内的恶魔解脱，每秒造成<magicDamage>?魔法伤害</magicDamage>并从附近的敌人们身上汲取<healing>?生命值</healing>。他的恶魔能量会持续消耗，但可通过汲取敌方英雄来无限期地充能并且会在参与击杀英雄后完全回复。<br /><br />在?秒后以及之后的每?秒，斯维因能够在变身状态下施放<spellName>恶魔耀光</spellName>来对敌人们造成<magicDamage>?魔法伤害</magicDamage>和在?秒里持续衰减的?%<status>减速</status>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SwainR.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0050/ability_0050_R1.webm"
-            }
-          ],
-          "skins": [
-            {
-              "id": 50000,
-              "champion_id": 50,
-              "name": "default",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_0.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "IP",
-                  "cost": 3150
-                },
-                {
-                  "currency": "RP",
-                  "cost": 790
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 50021,
-              "champion_id": 50,
-              "name": "北极星猎人 斯维因",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_21.jpg",
-              "skin_video_url": "https://youtu.be/0FQTWh_tXmE",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2022-12-08T04:00:00+09:00"
-            },
-            {
-              "id": 50001,
-              "champion_id": 50,
-              "name": "北领前线 斯维因",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_1.jpg",
-              "skin_video_url": "https://youtu.be/VVkhj_yFohA",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 750
-                }
-              ],
-              "sales": null,
-              "release_date": "2010-10-04T15:00:00+09:00"
-            },
-            {
-              "id": 50012,
-              "champion_id": 50,
-              "name": "水晶玫瑰 斯维因",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_12.jpg",
-              "skin_video_url": "https://youtu.be/Ee8sb6kHU-U",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2021-02-11T04:00:00+09:00"
-            },
-            {
-              "id": 50011,
-              "champion_id": 50,
-              "name": "海克斯科技 斯维因",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_11.jpg",
-              "skin_video_url": "https://youtu.be/zXsQbHMY4tg",
-              "prices": null,
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 50002,
-              "champion_id": 50,
-              "name": "海贼参谋 斯维因",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_2.jpg",
-              "skin_video_url": "https://youtu.be/GZb6zOr5PdI",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 520
-                }
-              ],
-              "sales": null,
-              "release_date": "2010-10-04T15:00:00+09:00"
-            },
-            {
-              "id": 50032,
-              "champion_id": 50,
-              "name": "狼神英灵 斯维因",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_32.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2024-11-06T10:00:00+09:00"
-            },
-            {
-              "id": 50003,
-              "champion_id": 50,
-              "name": "绝代智将 斯维因",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_3.jpg",
-              "skin_video_url": "https://youtu.be/p3K4chD-QAI",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2012-05-24T23:00:00+09:00"
-            },
-            {
-              "id": 50033,
-              "champion_id": 50,
-              "name": "至臻 狼神英灵 斯维因",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_33.jpg",
-              "skin_video_url": null,
-              "prices": null,
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 50004,
-              "champion_id": 50,
-              "name": "驯龙大师 斯维因",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Swain_4.jpg",
-              "skin_video_url": "https://youtu.be/0r97R6SmFJw",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2018-02-21T20:00:00+09:00"
             }
           ]
         }
@@ -21080,9 +21080,9 @@
         4,
         12
       ],
-      "win": 5119,
-      "play": 10105,
-      "pick_rate": 0.9596
+      "win": 5145,
+      "play": 10160,
+      "pick_rate": 0.9598
     },
     {
       "ids": [
@@ -21091,7 +21091,7 @@
       ],
       "win": 199,
       "play": 368,
-      "pick_rate": 0.0349
+      "pick_rate": 0.0348
     },
     {
       "ids": [
@@ -21362,9 +21362,9 @@
         "E",
         "E"
       ],
-      "play": 2520,
-      "win": 1427,
-      "pick_rate": 0.3598
+      "play": 2532,
+      "win": 1435,
+      "pick_rate": 0.3597
     },
     {
       "order": [
@@ -21384,9 +21384,9 @@
         "E",
         "E"
       ],
-      "play": 1077,
-      "win": 633,
-      "pick_rate": 0.1538
+      "play": 1086,
+      "win": 637,
+      "pick_rate": 0.1543
     },
     {
       "order": [
@@ -21406,9 +21406,9 @@
         "E",
         "E"
       ],
-      "play": 589,
-      "win": 362,
-      "pick_rate": 0.0841
+      "play": 594,
+      "win": 365,
+      "pick_rate": 0.0844
     },
     {
       "order": [
@@ -21430,7 +21430,7 @@
       ],
       "play": 363,
       "win": 224,
-      "pick_rate": 0.0518
+      "pick_rate": 0.0516
     },
     {
       "order": [
@@ -21452,7 +21452,7 @@
       ],
       "play": 181,
       "win": 116,
-      "pick_rate": 0.0258
+      "pick_rate": 0.0257
     }
   ],
   "skill_masteries": [
@@ -21462,9 +21462,9 @@
         "W",
         "E"
       ],
-      "play": 6064,
-      "win": 3546,
-      "pick_rate": 0.8658,
+      "play": 6097,
+      "win": 3564,
+      "pick_rate": 0.8661,
       "builds": [
         {
           "order": [
@@ -21484,9 +21484,9 @@
             "E",
             "E"
           ],
-          "play": 2520,
-          "win": 1427,
-          "pick_rate": 0.4156
+          "play": 2532,
+          "win": 1435,
+          "pick_rate": 0.4153
         },
         {
           "order": [
@@ -21506,9 +21506,9 @@
             "E",
             "E"
           ],
-          "play": 1077,
-          "win": 633,
-          "pick_rate": 0.1776
+          "play": 1086,
+          "win": 637,
+          "pick_rate": 0.1781
         },
         {
           "order": [
@@ -21528,9 +21528,9 @@
             "E",
             "E"
           ],
-          "play": 589,
-          "win": 362,
-          "pick_rate": 0.0971
+          "play": 594,
+          "win": 365,
+          "pick_rate": 0.0974
         },
         {
           "order": [
@@ -21552,7 +21552,7 @@
           ],
           "play": 363,
           "win": 224,
-          "pick_rate": 0.0599
+          "pick_rate": 0.0595
         },
         {
           "order": [
@@ -21574,7 +21574,7 @@
           ],
           "play": 181,
           "win": 116,
-          "pick_rate": 0.0298
+          "pick_rate": 0.0297
         }
       ]
     },
@@ -21584,9 +21584,9 @@
         "Q",
         "E"
       ],
-      "play": 424,
+      "play": 425,
       "win": 265,
-      "pick_rate": 0.0605,
+      "pick_rate": 0.0604,
       "builds": [
         {
           "order": [
@@ -21608,7 +21608,7 @@
           ],
           "play": 86,
           "win": 59,
-          "pick_rate": 0.2028
+          "pick_rate": 0.2024
         },
         {
           "order": [
@@ -21630,7 +21630,7 @@
           ],
           "play": 63,
           "win": 37,
-          "pick_rate": 0.1486
+          "pick_rate": 0.1482
         },
         {
           "order": [
@@ -21652,7 +21652,7 @@
           ],
           "play": 28,
           "win": 18,
-          "pick_rate": 0.066
+          "pick_rate": 0.0659
         },
         {
           "order": [
@@ -21674,7 +21674,7 @@
           ],
           "play": 25,
           "win": 14,
-          "pick_rate": 0.059
+          "pick_rate": 0.0588
         },
         {
           "order": [
@@ -21696,7 +21696,7 @@
           ],
           "play": 15,
           "win": 13,
-          "pick_rate": 0.0354
+          "pick_rate": 0.0353
         }
       ]
     },
@@ -21706,9 +21706,9 @@
         "E",
         "W"
       ],
-      "play": 257,
-      "win": 143,
-      "pick_rate": 0.0367,
+      "play": 259,
+      "win": 144,
+      "pick_rate": 0.0368,
       "builds": [
         {
           "order": [
@@ -21730,7 +21730,7 @@
           ],
           "play": 65,
           "win": 44,
-          "pick_rate": 0.2529
+          "pick_rate": 0.251
         },
         {
           "order": [
@@ -21752,7 +21752,7 @@
           ],
           "play": 53,
           "win": 32,
-          "pick_rate": 0.2062
+          "pick_rate": 0.2046
         },
         {
           "order": [
@@ -21774,7 +21774,7 @@
           ],
           "play": 15,
           "win": 9,
-          "pick_rate": 0.0584
+          "pick_rate": 0.0579
         },
         {
           "order": [
@@ -21796,7 +21796,7 @@
           ],
           "play": 11,
           "win": 8,
-          "pick_rate": 0.0428
+          "pick_rate": 0.0425
         },
         {
           "order": [
@@ -21818,7 +21818,7 @@
           ],
           "play": 7,
           "win": 2,
-          "pick_rate": 0.0272
+          "pick_rate": 0.027
         }
       ]
     },
@@ -21830,7 +21830,7 @@
       ],
       "play": 217,
       "win": 114,
-      "pick_rate": 0.031,
+      "pick_rate": 0.0308,
       "builds": [
         {
           "order": [
@@ -22088,9 +22088,9 @@
         5008,
         5001
       ],
-      "play": 3122,
-      "win": 1527,
-      "pick_rate": 0.2936
+      "play": 3132,
+      "win": 1532,
+      "pick_rate": 0.293
     },
     {
       "id": 8112,
@@ -22111,9 +22111,9 @@
         5008,
         5001
       ],
-      "play": 1603,
-      "win": 748,
-      "pick_rate": 0.1508
+      "play": 1614,
+      "win": 752,
+      "pick_rate": 0.151
     },
     {
       "id": 8369,
@@ -22134,8 +22134,8 @@
         5008,
         5001
       ],
-      "play": 649,
-      "win": 337,
+      "play": 652,
+      "win": 340,
       "pick_rate": 0.061
     },
     {
@@ -22159,7 +22159,7 @@
       ],
       "play": 277,
       "win": 146,
-      "pick_rate": 0.0261
+      "pick_rate": 0.0259
     },
     {
       "id": 8369,
@@ -22180,8 +22180,8 @@
         5008,
         5001
       ],
-      "play": 148,
-      "win": 81,
+      "play": 149,
+      "win": 82,
       "pick_rate": 0.0139
     }
   ],
@@ -22190,9 +22190,9 @@
       "id": 8214,
       "primary_page_id": 8200,
       "secondary_page_id": 8100,
-      "play": 4037,
-      "win": 2011,
-      "pick_rate": 0.3797,
+      "play": 4052,
+      "win": 2018,
+      "pick_rate": 0.379,
       "builds": [
         {
           "id": 8214,
@@ -22213,9 +22213,9 @@
             5008,
             5001
           ],
-          "play": 3122,
-          "win": 1527,
-          "pick_rate": 0.7733
+          "play": 3132,
+          "win": 1532,
+          "pick_rate": 0.773
         },
         {
           "id": 8214,
@@ -22238,7 +22238,7 @@
           ],
           "play": 277,
           "win": 146,
-          "pick_rate": 0.0686
+          "pick_rate": 0.0684
         },
         {
           "id": 8214,
@@ -22261,7 +22261,7 @@
           ],
           "play": 79,
           "win": 37,
-          "pick_rate": 0.0196
+          "pick_rate": 0.0195
         },
         {
           "id": 8214,
@@ -22284,7 +22284,7 @@
           ],
           "play": 67,
           "win": 34,
-          "pick_rate": 0.0166
+          "pick_rate": 0.0165
         },
         {
           "id": 8214,
@@ -22307,7 +22307,7 @@
           ],
           "play": 63,
           "win": 33,
-          "pick_rate": 0.0156
+          "pick_rate": 0.0155
         }
       ]
     },
@@ -22315,9 +22315,9 @@
       "id": 8112,
       "primary_page_id": 8100,
       "secondary_page_id": 8200,
-      "play": 2679,
-      "win": 1332,
-      "pick_rate": 0.252,
+      "play": 2701,
+      "win": 1340,
+      "pick_rate": 0.2527,
       "builds": [
         {
           "id": 8112,
@@ -22338,9 +22338,9 @@
             5008,
             5001
           ],
-          "play": 1603,
-          "win": 748,
-          "pick_rate": 0.5984
+          "play": 1614,
+          "win": 752,
+          "pick_rate": 0.5976
         },
         {
           "id": 8112,
@@ -22361,9 +22361,9 @@
             5008,
             5001
           ],
-          "play": 90,
+          "play": 91,
           "win": 52,
-          "pick_rate": 0.0336
+          "pick_rate": 0.0337
         },
         {
           "id": 8112,
@@ -22384,9 +22384,9 @@
             5008,
             5001
           ],
-          "play": 80,
-          "win": 39,
-          "pick_rate": 0.0299
+          "play": 82,
+          "win": 40,
+          "pick_rate": 0.0304
         },
         {
           "id": 8112,
@@ -22407,9 +22407,9 @@
             5008,
             5011
           ],
-          "play": 65,
+          "play": 66,
           "win": 33,
-          "pick_rate": 0.0243
+          "pick_rate": 0.0244
         },
         {
           "id": 8112,
@@ -22430,9 +22430,9 @@
             5008,
             5011
           ],
-          "play": 61,
+          "play": 62,
           "win": 37,
-          "pick_rate": 0.0228
+          "pick_rate": 0.023
         }
       ]
     },
@@ -22440,9 +22440,9 @@
       "id": 8369,
       "primary_page_id": 8300,
       "secondary_page_id": 8100,
-      "play": 1132,
-      "win": 603,
-      "pick_rate": 0.1065,
+      "play": 1136,
+      "win": 607,
+      "pick_rate": 0.1063,
       "builds": [
         {
           "id": 8369,
@@ -22463,9 +22463,9 @@
             5008,
             5001
           ],
-          "play": 649,
-          "win": 337,
-          "pick_rate": 0.5733
+          "play": 652,
+          "win": 340,
+          "pick_rate": 0.5739
         },
         {
           "id": 8369,
@@ -22486,9 +22486,9 @@
             5008,
             5001
           ],
-          "play": 148,
-          "win": 81,
-          "pick_rate": 0.1307
+          "play": 149,
+          "win": 82,
+          "pick_rate": 0.1312
         },
         {
           "id": 8369,
@@ -22511,7 +22511,7 @@
           ],
           "play": 73,
           "win": 40,
-          "pick_rate": 0.0645
+          "pick_rate": 0.0643
         },
         {
           "id": 8369,
@@ -22534,7 +22534,7 @@
           ],
           "play": 63,
           "win": 32,
-          "pick_rate": 0.0557
+          "pick_rate": 0.0555
         },
         {
           "id": 8369,
@@ -22557,7 +22557,7 @@
           ],
           "play": 34,
           "win": 25,
-          "pick_rate": 0.03
+          "pick_rate": 0.0299
         }
       ]
     },
@@ -22567,7 +22567,7 @@
       "secondary_page_id": 8400,
       "play": 303,
       "win": 163,
-      "pick_rate": 0.0285,
+      "pick_rate": 0.0283,
       "builds": [
         {
           "id": 8214,
@@ -22692,7 +22692,7 @@
       "secondary_page_id": 8400,
       "play": 297,
       "win": 157,
-      "pick_rate": 0.0279,
+      "pick_rate": 0.0278,
       "builds": [
         {
           "id": 8112,
@@ -22819,9 +22819,9 @@
         4645,
         3157
       ],
-      "play": 849,
-      "win": 504,
-      "pick_rate": 0.1587
+      "play": 853,
+      "win": 506,
+      "pick_rate": 0.1586
     },
     {
       "ids": [
@@ -22831,7 +22831,7 @@
       ],
       "play": 379,
       "win": 241,
-      "pick_rate": 0.0708
+      "pick_rate": 0.0705
     },
     {
       "ids": [
@@ -22841,7 +22841,7 @@
       ],
       "play": 219,
       "win": 137,
-      "pick_rate": 0.0409
+      "pick_rate": 0.0407
     },
     {
       "ids": [
@@ -22849,8 +22849,8 @@
         3152,
         3157
       ],
-      "play": 201,
-      "win": 117,
+      "play": 202,
+      "win": 118,
       "pick_rate": 0.0376
     },
     {
@@ -22859,9 +22859,9 @@
         4646,
         3157
       ],
-      "play": 172,
+      "play": 173,
       "win": 95,
-      "pick_rate": 0.0321
+      "pick_rate": 0.0322
     },
     {
       "ids": [
@@ -22869,9 +22869,9 @@
         4645,
         3157
       ],
-      "play": 163,
-      "win": 104,
-      "pick_rate": 0.0305
+      "play": 165,
+      "win": 106,
+      "pick_rate": 0.0307
     },
     {
       "ids": [
@@ -22879,7 +22879,7 @@
         4645,
         4646
       ],
-      "play": 161,
+      "play": 162,
       "win": 92,
       "pick_rate": 0.0301
     },
@@ -22889,9 +22889,9 @@
         4646,
         4645
       ],
-      "play": 150,
+      "play": 151,
       "win": 82,
-      "pick_rate": 0.028
+      "pick_rate": 0.0281
     },
     {
       "ids": [
@@ -22901,7 +22901,7 @@
       ],
       "play": 144,
       "win": 80,
-      "pick_rate": 0.0269
+      "pick_rate": 0.0268
     },
     {
       "ids": [
@@ -22909,9 +22909,9 @@
         4645,
         3135
       ],
-      "play": 136,
-      "win": 60,
-      "pick_rate": 0.0254
+      "play": 137,
+      "win": 61,
+      "pick_rate": 0.0255
     },
     {
       "ids": [
@@ -22921,7 +22921,7 @@
       ],
       "play": 124,
       "win": 67,
-      "pick_rate": 0.0232
+      "pick_rate": 0.0231
     },
     {
       "ids": [
@@ -22929,9 +22929,9 @@
         4645,
         3089
       ],
-      "play": 107,
-      "win": 68,
-      "pick_rate": 0.02
+      "play": 108,
+      "win": 69,
+      "pick_rate": 0.0201
     },
     {
       "ids": [
@@ -22939,9 +22939,9 @@
         3157,
         3089
       ],
-      "play": 83,
+      "play": 84,
       "win": 51,
-      "pick_rate": 0.0155
+      "pick_rate": 0.0156
     },
     {
       "ids": [
@@ -22949,9 +22949,9 @@
         4645,
         3089
       ],
-      "play": 79,
+      "play": 80,
       "win": 47,
-      "pick_rate": 0.0148
+      "pick_rate": 0.0149
     },
     {
       "ids": [
@@ -22959,9 +22959,9 @@
         3157,
         4646
       ],
-      "play": 72,
-      "win": 34,
-      "pick_rate": 0.0135
+      "play": 74,
+      "win": 35,
+      "pick_rate": 0.0138
     }
   ],
   "boots": [
@@ -22969,9 +22969,9 @@
       "ids": [
         3020
       ],
-      "play": 9374,
-      "win": 4832,
-      "pick_rate": 0.8989
+      "play": 9424,
+      "win": 4856,
+      "pick_rate": 0.899
     },
     {
       "ids": [
@@ -22979,21 +22979,21 @@
       ],
       "play": 460,
       "win": 224,
-      "pick_rate": 0.0441
+      "pick_rate": 0.0439
     },
     {
       "ids": [
         3006
       ],
-      "play": 193,
-      "win": 91,
+      "play": 194,
+      "win": 92,
       "pick_rate": 0.0185
     },
     {
       "ids": [
         3111
       ],
-      "play": 146,
+      "play": 147,
       "win": 76,
       "pick_rate": 0.014
     },
@@ -23001,9 +23001,9 @@
       "ids": [
         3009
       ],
-      "play": 141,
+      "play": 143,
       "win": 67,
-      "pick_rate": 0.0135
+      "pick_rate": 0.0136
     }
   ],
   "starter_items": [
@@ -23012,9 +23012,9 @@
         1055,
         2003
       ],
-      "play": 7326,
-      "win": 3693,
-      "pick_rate": 0.6785
+      "play": 7368,
+      "win": 3715,
+      "pick_rate": 0.6789
     },
     {
       "ids": [
@@ -23022,8 +23022,8 @@
         2003,
         2003
       ],
-      "play": 2094,
-      "win": 1069,
+      "play": 2104,
+      "win": 1072,
       "pick_rate": 0.1939
     },
     {
@@ -23031,9 +23031,9 @@
         1083,
         2003
       ],
-      "play": 1003,
-      "win": 509,
-      "pick_rate": 0.0929
+      "play": 1005,
+      "win": 510,
+      "pick_rate": 0.0926
     },
     {
       "ids": [
@@ -23042,7 +23042,7 @@
       ],
       "play": 110,
       "win": 58,
-      "pick_rate": 0.0102
+      "pick_rate": 0.0101
     },
     {
       "ids": [
@@ -23115,6 +23115,14 @@
     },
     {
       "ids": [
+        1083
+      ],
+      "play": 8,
+      "win": 3,
+      "pick_rate": 0.0007
+    },
+    {
+      "ids": [
         1055,
         1082,
         2003
@@ -23143,14 +23151,6 @@
       "play": 8,
       "win": 5,
       "pick_rate": 0.0007
-    },
-    {
-      "ids": [
-        1083
-      ],
-      "play": 7,
-      "win": 3,
-      "pick_rate": 0.0006
     }
   ],
   "last_items": [
@@ -23158,79 +23158,79 @@
       "ids": [
         3152
       ],
-      "play": 7473,
-      "win": 3828,
-      "pick_rate": 0.2502
+      "play": 7515,
+      "win": 3848,
+      "pick_rate": 0.2504
     },
     {
       "ids": [
         4645
       ],
-      "play": 5489,
-      "win": 2951,
-      "pick_rate": 0.1838
+      "play": 5512,
+      "win": 2963,
+      "pick_rate": 0.1837
     },
     {
       "ids": [
         3157
       ],
-      "play": 3605,
-      "win": 2038,
+      "play": 3621,
+      "win": 2047,
       "pick_rate": 0.1207
     },
     {
       "ids": [
         6653
       ],
-      "play": 3462,
-      "win": 1808,
-      "pick_rate": 0.1159
+      "play": 3473,
+      "win": 1815,
+      "pick_rate": 0.1157
     },
     {
       "ids": [
         4646
       ],
-      "play": 2060,
-      "win": 1118,
-      "pick_rate": 0.069
+      "play": 2074,
+      "win": 1122,
+      "pick_rate": 0.0691
     },
     {
       "ids": [
         3089
       ],
-      "play": 1834,
-      "win": 1151,
-      "pick_rate": 0.0614
+      "play": 1844,
+      "win": 1158,
+      "pick_rate": 0.0615
     },
     {
       "ids": [
         3135
       ],
-      "play": 1321,
-      "win": 737,
-      "pick_rate": 0.0442
+      "play": 1329,
+      "win": 741,
+      "pick_rate": 0.0443
     },
     {
       "ids": [
         3916
       ],
-      "play": 1156,
-      "win": 532,
-      "pick_rate": 0.0387
+      "play": 1159,
+      "win": 534,
+      "pick_rate": 0.0386
     },
     {
       "ids": [
         1082
       ],
-      "play": 834,
-      "win": 464,
+      "play": 838,
+      "win": 466,
       "pick_rate": 0.0279
     },
     {
       "ids": [
         2420
       ],
-      "play": 544,
+      "play": 546,
       "win": 287,
       "pick_rate": 0.0182
     },
@@ -23238,40 +23238,40 @@
       "ids": [
         3165
       ],
-      "play": 357,
+      "play": 358,
       "win": 198,
-      "pick_rate": 0.012
+      "pick_rate": 0.0119
     },
     {
       "ids": [
         3137
       ],
-      "play": 352,
-      "win": 207,
+      "play": 354,
+      "win": 208,
       "pick_rate": 0.0118
     },
     {
       "ids": [
         3102
       ],
-      "play": 307,
-      "win": 195,
+      "play": 309,
+      "win": 196,
       "pick_rate": 0.0103
     },
     {
       "ids": [
         3153
       ],
-      "play": 226,
-      "win": 102,
+      "play": 227,
+      "win": 103,
       "pick_rate": 0.0076
     },
     {
       "ids": [
         3124
       ],
-      "play": 108,
-      "win": 46,
+      "play": 109,
+      "win": 47,
       "pick_rate": 0.0036
     },
     {
@@ -23310,9 +23310,9 @@
       "ids": [
         4633
       ],
-      "play": 55,
+      "play": 56,
       "win": 34,
-      "pick_rate": 0.0018
+      "pick_rate": 0.0019
     },
     {
       "ids": [
@@ -23326,7 +23326,7 @@
       "ids": [
         3116
       ],
-      "play": 35,
+      "play": 36,
       "win": 21,
       "pick_rate": 0.0012
     },
