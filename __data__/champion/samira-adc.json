@@ -220,17 +220,17 @@
       "is_rotation": false,
       "is_rip": false,
       "average_stats": {
-        "play": 39840,
-        "win_rate": 0.501004,
-        "pick_rate": 0.0377428,
-        "ban_rate": 0.0569916,
-        "kda": 2.212769,
-        "tier": 4,
+        "play": 40081,
+        "win_rate": 0.500836,
+        "pick_rate": 0.0377799,
+        "ban_rate": 0.0570743,
+        "kda": 2.212745,
+        "tier": 3,
         "rank": 123,
         "tier_data": {
-          "tier": 4,
+          "tier": 3,
           "rank": 123,
-          "rank_prev": 124,
+          "rank_prev": 123,
           "rank_prev_patch": 129
         }
       },
@@ -238,12 +238,12 @@
         {
           "name": "ADC",
           "stats": {
-            "play": 39002,
-            "win_rate": 0.503051,
-            "pick_rate": 0.0365218,
-            "role_rate": 0.978966,
-            "ban_rate": 0.0557929,
-            "kda": 2.225686,
+            "play": 39239,
+            "win_rate": 0.502918,
+            "pick_rate": 0.0365582,
+            "role_rate": 0.978993,
+            "ban_rate": 0.0558753,
+            "kda": 2.22568,
             "tier_data": {
               "tier": 3,
               "rank": 19,
@@ -255,28 +255,28 @@
             {
               "name": "MARKSMAN",
               "stats": {
-                "win_rate": 0.504245,
-                "role_rate": 0.993782,
-                "play": 38517,
-                "win": 19422
+                "win_rate": 0.503975,
+                "role_rate": 0.993807,
+                "play": 38994,
+                "win": 19652
               }
             }
           ],
           "counters": [
-            {
-              "champion_id": 157,
-              "play": 130,
-              "win": 51
-            },
             {
               "champion_id": 63,
               "play": 103,
               "win": 41
             },
             {
+              "champion_id": 157,
+              "play": 133,
+              "win": 53
+            },
+            {
               "champion_id": 895,
-              "play": 495,
-              "win": 205
+              "play": 499,
+              "win": 206
             }
           ]
         }
@@ -286,9 +286,343 @@
     "opponents": [
       [
         {
+          "champion_id": 63,
+          "play": 103,
+          "win": 41,
+          "meta": {
+            "id": 63,
+            "key": "Brand",
+            "name": "复仇焰魂",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Brand.png",
+            "evolve": [],
+            "title": "布兰德",
+            "partype": "法力",
+            "passive": {
+              "name": "炽热之焰",
+              "description": "布兰德的技能会对他的目标施加【烈焰焚身】效果，在4秒里持续造成伤害，最多可叠加3次。如果布兰德击杀了身上带有【烈焰焚身】的敌人，那么他会回复法力值。当【炽热之焰】在一名英雄或大型野怪身上叠至满层时，它会变得不稳定。它会在2秒内爆炸，在目标附近的区域施加法术特效并造成大量伤害。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/BrandP.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0063/ability_0063_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "火焰烙印",
+                "description": "布兰德向前方放出一团可造成魔法伤害的火球。如果目标带有【烈焰焚身】效果，那么【Q火焰烙印】将使目标晕眩1.5秒。",
+                "max_rank": 5,
+                "range_burn": [
+                  1050
+                ],
+                "cooldown_burn": [
+                  8,
+                  7,
+                  7,
+                  6,
+                  6
+                ],
+                "cooldown_burn_float": [
+                  8,
+                  7.5,
+                  7,
+                  6.5,
+                  6
+                ],
+                "cost_burn": [
+                  70
+                ],
+                "tooltip": "布兰德放出一团火球，对命中的第一个敌人造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />如果目标被<keywordMajor>烈焰焚身</keywordMajor>，那么还会被<status>晕眩</status>1.5秒。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BrandQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0063/ability_0063_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "烈焰之柱",
+                "description": "在短暂的延迟后，布兰德会在目标区域创造一根烈焰之柱，来对范围内的敌方单位造成魔法伤害。带有【烈焰焚身】效果的单位会额外受到25%伤害。",
+                "max_rank": 5,
+                "range_burn": [
+                  900
+                ],
+                "cooldown_burn": [
+                  10,
+                  9,
+                  9,
+                  8,
+                  8
+                ],
+                "cooldown_burn_float": [
+                  10,
+                  9.5,
+                  9,
+                  8.5,
+                  8
+                ],
+                "cost_burn": [
+                  60,
+                  70,
+                  80,
+                  90,
+                  100
+                ],
+                "tooltip": "布兰德生成一团纯火之柱，造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />被<keywordMajor>烈焰焚身</keywordMajor>的单位们会转而受到<magicDamage>?伤害</magicDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BrandW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0063/ability_0063_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "烈火燃烧",
+                "description": "布兰德在目标身上引发一阵强力的爆裂至附近的敌人处，造成魔法伤害。如果目标带有【烈焰焚身】效果，那么【E烈火燃烧】的扩散距离翻倍。",
+                "max_rank": 5,
+                "range_burn": [
+                  625
+                ],
+                "cooldown_burn": [
+                  13,
+                  12,
+                  11,
+                  10,
+                  9
+                ],
+                "cooldown_burn_float": [
+                  13,
+                  12,
+                  11,
+                  10,
+                  9
+                ],
+                "cost_burn": [
+                  70,
+                  75,
+                  80,
+                  85,
+                  90
+                ],
+                "tooltip": "布兰德在目标身上引发一阵强力的爆裂，对附近的单位们造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />如果目标带有<keywordMajor>烈焰焚身</keywordMajor>，那么扩散距离翻倍。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BrandE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0063/ability_0063_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "烈焰风暴",
+                "description": "布兰德释放一颗破坏力极强的火焰之种，火焰之种会在布兰德和附近敌人之间弹跳至多5次，每次弹跳时对敌人造成魔法伤害。弹跳会优先以带有即将满层的【炽热之焰】效果的英雄为目标。如果目标带有【烈焰焚身】效果，那么【R烈焰风暴】将使目标短暂减速。",
+                "max_rank": 3,
+                "range_burn": [
+                  750
+                ],
+                "cooldown_burn": [
+                  110,
+                  100,
+                  90
+                ],
+                "cooldown_burn_float": [
+                  110,
+                  100,
+                  90
+                ],
+                "cost_burn": [
+                  100
+                ],
+                "tooltip": "布兰德释放一颗破坏力极强的火焰之种，火焰之种会在布兰德或另一名敌人之间弹跳至多5次，每次弹跳时对敌人造成<magicDamage>?魔法伤害</magicDamage>。弹跳会优先以带有即将满层的<keywordMajor>炽热之焰</keywordMajor>效果的英雄为目标。<br /><br />如果目标带有<keywordMajor>烈焰焚身</keywordMajor>，则会被暂时<status>减速</status>?%。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BrandR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0063/ability_0063_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 63000,
+                "champion_id": 63,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 450
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 260
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 63002,
+                "champion_id": 63,
+                "name": "V字仇杀者 布兰德",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_2.jpg",
+                "skin_video_url": "https://youtu.be/OzkdqYUasgQ",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 63004,
+                "champion_id": 63,
+                "name": "丧尸 布兰德",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_4.jpg",
+                "skin_video_url": "https://youtu.be/64_FgTale3k",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1820
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 63003,
+                "champion_id": 63,
+                "name": "冰晶之核 布兰德",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_3.jpg",
+                "skin_video_url": "https://youtu.be/N5gQuGIPS74",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2011-10-06T13:00:00+09:00"
+              },
+              {
+                "id": 63033,
+                "champion_id": 63,
+                "name": "妖怪艺术家 布兰德",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_33.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2023-09-13T11:00:00+09:00"
+              },
+              {
+                "id": 63006,
+                "champion_id": 63,
+                "name": "战场BOSS 布兰德",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_6.jpg",
+                "skin_video_url": "https://youtu.be/6LfQNrxkZj0",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2017-08-09T11:30:00+09:00"
+              },
+              {
+                "id": 63001,
+                "champion_id": 63,
+                "name": "末日余生 布兰德",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_1.jpg",
+                "skin_video_url": "https://youtu.be/ADl_HD24ZOY",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": "2011-04-13T13:00:00+09:00"
+              },
+              {
+                "id": 63005,
+                "champion_id": 63,
+                "name": "灵魂烈焰 布兰德",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_5.jpg",
+                "skin_video_url": "https://youtu.be/7nmbWKII6Bg",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2015-10-22T10:00:00+09:00"
+              },
+              {
+                "id": 63021,
+                "champion_id": 63,
+                "name": "焰执事 布兰德",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_21.jpg",
+                "skin_video_url": "https://youtu.be/bwdWcpn0jRM",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-12-09T04:00:00+09:00"
+              },
+              {
+                "id": 63008,
+                "champion_id": 63,
+                "name": "神龙尊者 魔龙布兰德",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_8.jpg",
+                "skin_video_url": "https://youtu.be/VFMTy-k2XdE",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-10-01T04:00:00+09:00"
+              },
+              {
+                "id": 63022,
+                "champion_id": 63,
+                "name": "至臻 焰执事 布兰德",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_22.jpg",
+                "skin_video_url": "https://youtu.be/4imdw-skDC4",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 63042,
+                "champion_id": 63,
+                "name": "至高天 布兰德",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_42.jpg",
+                "skin_video_url": "https://youtu.be/wsoZ2nKc5sU",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-05-01T09:00:00+09:00"
+              },
+              {
+                "id": 63007,
+                "champion_id": 63,
+                "name": "苍穹之光 布兰德",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_7.jpg",
+                "skin_video_url": "https://youtu.be/UjKGisgfKVk",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2019-03-07T01:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 39.81
+        },
+        {
           "champion_id": 157,
-          "play": 130,
-          "win": 51,
+          "play": 133,
+          "win": 53,
           "meta": {
             "id": 157,
             "key": "Yasuo",
@@ -671,346 +1005,12 @@
               }
             ]
           },
-          "win_rate": 39.23
-        },
-        {
-          "champion_id": 63,
-          "play": 103,
-          "win": 41,
-          "meta": {
-            "id": 63,
-            "key": "Brand",
-            "name": "复仇焰魂",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Brand.png",
-            "evolve": [],
-            "title": "布兰德",
-            "partype": "法力",
-            "passive": {
-              "name": "炽热之焰",
-              "description": "布兰德的技能会对他的目标施加【烈焰焚身】效果，在4秒里持续造成伤害，最多可叠加3次。如果布兰德击杀了身上带有【烈焰焚身】的敌人，那么他会回复法力值。当【炽热之焰】在一名英雄或大型野怪身上叠至满层时，它会变得不稳定。它会在2秒内爆炸，在目标附近的区域施加法术特效并造成大量伤害。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/BrandP.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0063/ability_0063_P1.webm"
-            },
-            "spells": [
-              {
-                "key": "Q",
-                "name": "火焰烙印",
-                "description": "布兰德向前方放出一团可造成魔法伤害的火球。如果目标带有【烈焰焚身】效果，那么【Q火焰烙印】将使目标晕眩1.5秒。",
-                "max_rank": 5,
-                "range_burn": [
-                  1050
-                ],
-                "cooldown_burn": [
-                  8,
-                  7,
-                  7,
-                  6,
-                  6
-                ],
-                "cooldown_burn_float": [
-                  8,
-                  7.5,
-                  7,
-                  6.5,
-                  6
-                ],
-                "cost_burn": [
-                  70
-                ],
-                "tooltip": "布兰德放出一团火球，对命中的第一个敌人造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />如果目标被<keywordMajor>烈焰焚身</keywordMajor>，那么还会被<status>晕眩</status>1.5秒。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BrandQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0063/ability_0063_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "烈焰之柱",
-                "description": "在短暂的延迟后，布兰德会在目标区域创造一根烈焰之柱，来对范围内的敌方单位造成魔法伤害。带有【烈焰焚身】效果的单位会额外受到25%伤害。",
-                "max_rank": 5,
-                "range_burn": [
-                  900
-                ],
-                "cooldown_burn": [
-                  10,
-                  9,
-                  9,
-                  8,
-                  8
-                ],
-                "cooldown_burn_float": [
-                  10,
-                  9.5,
-                  9,
-                  8.5,
-                  8
-                ],
-                "cost_burn": [
-                  60,
-                  70,
-                  80,
-                  90,
-                  100
-                ],
-                "tooltip": "布兰德生成一团纯火之柱，造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />被<keywordMajor>烈焰焚身</keywordMajor>的单位们会转而受到<magicDamage>?伤害</magicDamage>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BrandW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0063/ability_0063_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "烈火燃烧",
-                "description": "布兰德在目标身上引发一阵强力的爆裂至附近的敌人处，造成魔法伤害。如果目标带有【烈焰焚身】效果，那么【E烈火燃烧】的扩散距离翻倍。",
-                "max_rank": 5,
-                "range_burn": [
-                  625
-                ],
-                "cooldown_burn": [
-                  13,
-                  12,
-                  11,
-                  10,
-                  9
-                ],
-                "cooldown_burn_float": [
-                  13,
-                  12,
-                  11,
-                  10,
-                  9
-                ],
-                "cost_burn": [
-                  70,
-                  75,
-                  80,
-                  85,
-                  90
-                ],
-                "tooltip": "布兰德在目标身上引发一阵强力的爆裂，对附近的单位们造成<magicDamage>?魔法伤害</magicDamage>。<br /><br />如果目标带有<keywordMajor>烈焰焚身</keywordMajor>，那么扩散距离翻倍。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BrandE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0063/ability_0063_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "烈焰风暴",
-                "description": "布兰德释放一颗破坏力极强的火焰之种，火焰之种会在布兰德和附近敌人之间弹跳至多5次，每次弹跳时对敌人造成魔法伤害。弹跳会优先以带有即将满层的【炽热之焰】效果的英雄为目标。如果目标带有【烈焰焚身】效果，那么【R烈焰风暴】将使目标短暂减速。",
-                "max_rank": 3,
-                "range_burn": [
-                  750
-                ],
-                "cooldown_burn": [
-                  110,
-                  100,
-                  90
-                ],
-                "cooldown_burn_float": [
-                  110,
-                  100,
-                  90
-                ],
-                "cost_burn": [
-                  100
-                ],
-                "tooltip": "布兰德释放一颗破坏力极强的火焰之种，火焰之种会在布兰德或另一名敌人之间弹跳至多5次，每次弹跳时对敌人造成<magicDamage>?魔法伤害</magicDamage>。弹跳会优先以带有即将满层的<keywordMajor>炽热之焰</keywordMajor>效果的英雄为目标。<br /><br />如果目标带有<keywordMajor>烈焰焚身</keywordMajor>，则会被暂时<status>减速</status>?%。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BrandR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0063/ability_0063_R1.webm"
-              }
-            ],
-            "skins": [
-              {
-                "id": 63000,
-                "champion_id": 63,
-                "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_0.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "IP",
-                    "cost": 450
-                  },
-                  {
-                    "currency": "RP",
-                    "cost": 260
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 63002,
-                "champion_id": 63,
-                "name": "V字仇杀者 布兰德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_2.jpg",
-                "skin_video_url": "https://youtu.be/OzkdqYUasgQ",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 63004,
-                "champion_id": 63,
-                "name": "丧尸 布兰德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_4.jpg",
-                "skin_video_url": "https://youtu.be/64_FgTale3k",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1820
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 63003,
-                "champion_id": 63,
-                "name": "冰晶之核 布兰德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_3.jpg",
-                "skin_video_url": "https://youtu.be/N5gQuGIPS74",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2011-10-06T13:00:00+09:00"
-              },
-              {
-                "id": 63033,
-                "champion_id": 63,
-                "name": "妖怪艺术家 布兰德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_33.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2023-09-13T11:00:00+09:00"
-              },
-              {
-                "id": 63006,
-                "champion_id": 63,
-                "name": "战场BOSS 布兰德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_6.jpg",
-                "skin_video_url": "https://youtu.be/6LfQNrxkZj0",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2017-08-09T11:30:00+09:00"
-              },
-              {
-                "id": 63001,
-                "champion_id": 63,
-                "name": "末日余生 布兰德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_1.jpg",
-                "skin_video_url": "https://youtu.be/ADl_HD24ZOY",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 750
-                  }
-                ],
-                "sales": null,
-                "release_date": "2011-04-13T13:00:00+09:00"
-              },
-              {
-                "id": 63005,
-                "champion_id": 63,
-                "name": "灵魂烈焰 布兰德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_5.jpg",
-                "skin_video_url": "https://youtu.be/7nmbWKII6Bg",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2015-10-22T10:00:00+09:00"
-              },
-              {
-                "id": 63021,
-                "champion_id": 63,
-                "name": "焰执事 布兰德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_21.jpg",
-                "skin_video_url": "https://youtu.be/bwdWcpn0jRM",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2021-12-09T04:00:00+09:00"
-              },
-              {
-                "id": 63008,
-                "champion_id": 63,
-                "name": "神龙尊者 魔龙布兰德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_8.jpg",
-                "skin_video_url": "https://youtu.be/VFMTy-k2XdE",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2020-10-01T04:00:00+09:00"
-              },
-              {
-                "id": 63022,
-                "champion_id": 63,
-                "name": "至臻 焰执事 布兰德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_22.jpg",
-                "skin_video_url": "https://youtu.be/4imdw-skDC4",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 63042,
-                "champion_id": 63,
-                "name": "至高天 布兰德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_42.jpg",
-                "skin_video_url": "https://youtu.be/wsoZ2nKc5sU",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2024-05-01T09:00:00+09:00"
-              },
-              {
-                "id": 63007,
-                "champion_id": 63,
-                "name": "苍穹之光 布兰德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Brand_7.jpg",
-                "skin_video_url": "https://youtu.be/UjKGisgfKVk",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2019-03-07T01:00:00+09:00"
-              }
-            ]
-          },
-          "win_rate": 39.81
+          "win_rate": 39.85
         },
         {
           "champion_id": 895,
-          "play": 495,
-          "win": 205,
+          "play": 499,
+          "win": 206,
           "meta": {
             "id": 895,
             "key": "Nilah",
@@ -1179,11 +1179,11 @@
               }
             ]
           },
-          "win_rate": 41.41
+          "win_rate": 41.28
         },
         {
           "champion_id": 45,
-          "play": 76,
+          "play": 77,
           "win": 33,
           "meta": {
             "id": 45,
@@ -1559,12 +1559,12 @@
               }
             ]
           },
-          "win_rate": 43.42
+          "win_rate": 42.86
         },
         {
           "champion_id": 42,
-          "play": 1699,
-          "win": 761,
+          "play": 1708,
+          "win": 763,
           "meta": {
             "id": 42,
             "key": "Corki",
@@ -1858,221 +1858,14 @@
               }
             ]
           },
-          "win_rate": 44.79
+          "win_rate": 44.67
         }
       ],
       [
         {
-          "champion_id": 523,
-          "play": 853,
-          "win": 462,
-          "meta": {
-            "id": 523,
-            "key": "Aphelios",
-            "name": "残月之肃",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Aphelios.png",
-            "evolve": [],
-            "title": "厄斐琉斯",
-            "partype": "法力",
-            "passive": {
-              "name": "传知者与真知者",
-              "description": "厄斐琉斯拥有5件由他妹妹拉露恩所制的皎月武器。他同一时间可以使用2件：1件主手武器和1件副手武器。每件武器都有1种独特的普攻方式和1个独特的技能。攻击和技能都会消耗该武器的弹药。在弹药耗尽后，厄斐琉斯会弃掉该武器，并且拉露恩会召唤下一件武器给厄斐琉斯。 ",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/ApheliosP.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0523/ability_0523_P1.webm"
-            },
-            "spells": [
-              {
-                "key": "Q",
-                "name": "武器技能",
-                "description": "厄斐琉斯拥有5个不同的主动技能，基于他的主手武器：<br><br>通碧(步枪)：长距离射击，能够标记目标来跟进一次长距离攻击。<br>断魄(短镰枪)：在快速奔跑的同时用两把武器攻击附近的敌人。<br>坠明(加农炮)：禁锢被这把武器减速的所有敌人。<br>荧焰(喷火器)：引爆锥形范围内的敌人并用你的副手武器攻击他们。<br>折镜(飞轮刃)：部署一个装备着你副手武器的驻灵。<br>",
-                "max_rank": 6,
-                "range_burn": [
-                  1450
-                ],
-                "cooldown_burn": [
-                  9
-                ],
-                "cooldown_burn_float": [
-                  9
-                ],
-                "cost_burn": [
-                  60
-                ],
-                "tooltip": "?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ApheliosQ_ClientTooltipWrapper.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0523/ability_0523_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "月相轮转",
-                "description": "厄斐琉斯将主手武器和副手武器互换，同时替换他的普攻方式和主动技能。",
-                "max_rank": 6,
-                "range_burn": [
-                  250
-                ],
-                "cooldown_burn": [
-                  0
-                ],
-                "cooldown_burn_float": [
-                  0.8
-                ],
-                "cost_burn": [
-                  0
-                ],
-                "tooltip": "切换主手武器与副手武器，装备<b><i><span class=\"colora64dff\">坠明</span></i></b>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ApheliosW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0523/ability_0523_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "武器队列系统",
-                "description": "厄斐琉斯没有E技能。这个技能栏位会显示拉露恩将为他提供的下一件武器。武器序列在开始时是固定的，但可以随着游戏时间来变更——在一件武器弹药耗尽后，就会进入序列的末端。",
-                "max_rank": 6,
-                "range_burn": [
-                  1000
-                ],
-                "cooldown_burn": [
-                  0
-                ],
-                "cooldown_burn_float": [
-                  0
-                ],
-                "cost_burn": [
-                  0
-                ],
-                "tooltip": "?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ApheliosE_ClientTooltipWrapper.png",
-                "video_url": null
-              },
-              {
-                "key": "R",
-                "name": "清辉夜凝",
-                "description": "发射一道凝结的月光来引爆敌方英雄。还会施加厄斐琉斯主手武器的独特效果。",
-                "max_rank": 3,
-                "range_burn": [
-                  1300
-                ],
-                "cooldown_burn": [
-                  120,
-                  110,
-                  100
-                ],
-                "cooldown_burn_float": [
-                  120,
-                  110,
-                  100
-                ],
-                "cost_burn": [
-                  100
-                ],
-                "tooltip": "厄斐琉斯发射一道浓缩爆裂的月光，在命中一位敌方英雄时爆炸，以对周围的敌人们造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br />随后，厄斐琉斯会用他的主手武器攻击所有英雄。{{ Spell_ApheliosR_WeaponMod_? }}?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ApheliosR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0523/ability_0523_R1.webm"
-              }
-            ],
-            "skins": [
-              {
-                "id": 523000,
-                "champion_id": 523,
-                "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Aphelios_0.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "IP",
-                    "cost": 4800
-                  },
-                  {
-                    "currency": "RP",
-                    "cost": 880
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 523018,
-                "champion_id": 523,
-                "name": "EDG 厄斐琉斯",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Aphelios_18.jpg",
-                "skin_video_url": "https://youtu.be/dB1T-enIyU0",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 523030,
-                "champion_id": 523,
-                "name": "心之钢 厄斐琉斯",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Aphelios_30.jpg",
-                "skin_video_url": "https://youtu.be/i7vvU-y3HEE",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2023-11-08T12:00:00+09:00"
-              },
-              {
-                "id": 523020,
-                "champion_id": 523,
-                "name": "灵魂莲华 厄斐琉斯",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Aphelios_20.jpg",
-                "skin_video_url": "https://youtu.be/_2LAgh1SBSU",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2022-10-06T04:00:00+09:00"
-              },
-              {
-                "id": 523009,
-                "champion_id": 523,
-                "name": "福牛守护者 厄斐琉斯",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Aphelios_9.jpg",
-                "skin_video_url": "https://youtu.be/ZBBYoJrH6L4",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 523001,
-                "champion_id": 523,
-                "name": "黑夜使者 厄斐琉斯",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Aphelios_1.jpg",
-                "skin_video_url": "https://youtu.be/YxZjNJwvp6U",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2019-12-11T01:00:00+09:00"
-              }
-            ]
-          },
-          "win_rate": 54.16
-        },
-        {
           "champion_id": 18,
-          "play": 519,
-          "win": 281,
+          "play": 523,
+          "win": 283,
           "meta": {
             "id": 18,
             "key": "Tristana",
@@ -2436,11 +2229,218 @@
               }
             ]
           },
-          "win_rate": 54.14
+          "win_rate": 54.11
+        },
+        {
+          "champion_id": 523,
+          "play": 864,
+          "win": 465,
+          "meta": {
+            "id": 523,
+            "key": "Aphelios",
+            "name": "残月之肃",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Aphelios.png",
+            "evolve": [],
+            "title": "厄斐琉斯",
+            "partype": "法力",
+            "passive": {
+              "name": "传知者与真知者",
+              "description": "厄斐琉斯拥有5件由他妹妹拉露恩所制的皎月武器。他同一时间可以使用2件：1件主手武器和1件副手武器。每件武器都有1种独特的普攻方式和1个独特的技能。攻击和技能都会消耗该武器的弹药。在弹药耗尽后，厄斐琉斯会弃掉该武器，并且拉露恩会召唤下一件武器给厄斐琉斯。 ",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/ApheliosP.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0523/ability_0523_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "武器技能",
+                "description": "厄斐琉斯拥有5个不同的主动技能，基于他的主手武器：<br><br>通碧(步枪)：长距离射击，能够标记目标来跟进一次长距离攻击。<br>断魄(短镰枪)：在快速奔跑的同时用两把武器攻击附近的敌人。<br>坠明(加农炮)：禁锢被这把武器减速的所有敌人。<br>荧焰(喷火器)：引爆锥形范围内的敌人并用你的副手武器攻击他们。<br>折镜(飞轮刃)：部署一个装备着你副手武器的驻灵。<br>",
+                "max_rank": 6,
+                "range_burn": [
+                  1450
+                ],
+                "cooldown_burn": [
+                  9
+                ],
+                "cooldown_burn_float": [
+                  9
+                ],
+                "cost_burn": [
+                  60
+                ],
+                "tooltip": "?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ApheliosQ_ClientTooltipWrapper.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0523/ability_0523_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "月相轮转",
+                "description": "厄斐琉斯将主手武器和副手武器互换，同时替换他的普攻方式和主动技能。",
+                "max_rank": 6,
+                "range_burn": [
+                  250
+                ],
+                "cooldown_burn": [
+                  0
+                ],
+                "cooldown_burn_float": [
+                  0.8
+                ],
+                "cost_burn": [
+                  0
+                ],
+                "tooltip": "切换主手武器与副手武器，装备<b><i><span class=\"colora64dff\">坠明</span></i></b>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ApheliosW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0523/ability_0523_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "武器队列系统",
+                "description": "厄斐琉斯没有E技能。这个技能栏位会显示拉露恩将为他提供的下一件武器。武器序列在开始时是固定的，但可以随着游戏时间来变更——在一件武器弹药耗尽后，就会进入序列的末端。",
+                "max_rank": 6,
+                "range_burn": [
+                  1000
+                ],
+                "cooldown_burn": [
+                  0
+                ],
+                "cooldown_burn_float": [
+                  0
+                ],
+                "cost_burn": [
+                  0
+                ],
+                "tooltip": "?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ApheliosE_ClientTooltipWrapper.png",
+                "video_url": null
+              },
+              {
+                "key": "R",
+                "name": "清辉夜凝",
+                "description": "发射一道凝结的月光来引爆敌方英雄。还会施加厄斐琉斯主手武器的独特效果。",
+                "max_rank": 3,
+                "range_burn": [
+                  1300
+                ],
+                "cooldown_burn": [
+                  120,
+                  110,
+                  100
+                ],
+                "cooldown_burn_float": [
+                  120,
+                  110,
+                  100
+                ],
+                "cost_burn": [
+                  100
+                ],
+                "tooltip": "厄斐琉斯发射一道浓缩爆裂的月光，在命中一位敌方英雄时爆炸，以对周围的敌人们造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br />随后，厄斐琉斯会用他的主手武器攻击所有英雄。{{ Spell_ApheliosR_WeaponMod_? }}?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ApheliosR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0523/ability_0523_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 523000,
+                "champion_id": 523,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Aphelios_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 4800
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 880
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 523018,
+                "champion_id": 523,
+                "name": "EDG 厄斐琉斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Aphelios_18.jpg",
+                "skin_video_url": "https://youtu.be/dB1T-enIyU0",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 523030,
+                "champion_id": 523,
+                "name": "心之钢 厄斐琉斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Aphelios_30.jpg",
+                "skin_video_url": "https://youtu.be/i7vvU-y3HEE",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2023-11-08T12:00:00+09:00"
+              },
+              {
+                "id": 523020,
+                "champion_id": 523,
+                "name": "灵魂莲华 厄斐琉斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Aphelios_20.jpg",
+                "skin_video_url": "https://youtu.be/_2LAgh1SBSU",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2022-10-06T04:00:00+09:00"
+              },
+              {
+                "id": 523009,
+                "champion_id": 523,
+                "name": "福牛守护者 厄斐琉斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Aphelios_9.jpg",
+                "skin_video_url": "https://youtu.be/ZBBYoJrH6L4",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 523001,
+                "champion_id": 523,
+                "name": "黑夜使者 厄斐琉斯",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Aphelios_1.jpg",
+                "skin_video_url": "https://youtu.be/YxZjNJwvp6U",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2019-12-11T01:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 53.82
         },
         {
           "champion_id": 221,
-          "play": 594,
+          "play": 597,
           "win": 318,
           "meta": {
             "id": 221,
@@ -2662,12 +2662,12 @@
               }
             ]
           },
-          "win_rate": 53.54
+          "win_rate": 53.27
         },
         {
           "champion_id": 67,
-          "play": 1038,
-          "win": 549,
+          "play": 1047,
+          "win": 555,
           "meta": {
             "id": 67,
             "key": "Vayne",
@@ -3050,12 +3050,12 @@
               }
             ]
           },
-          "win_rate": 52.89
+          "win_rate": 53.01
         },
         {
           "champion_id": 429,
-          "play": 445,
-          "win": 235,
+          "play": 449,
+          "win": 238,
           "meta": {
             "id": 429,
             "key": "Kalista",
@@ -3277,15 +3277,15 @@
               }
             ]
           },
-          "win_rate": 52.81
+          "win_rate": 53.01
         }
       ]
     ],
     "counters": [
       {
         "champion_id": 51,
-        "play": 3576,
-        "win": 1744,
+        "play": 3598,
+        "win": 1754,
         "meta": {
           "id": 51,
           "key": "Caitlyn",
@@ -3687,8 +3687,8 @@
       },
       {
         "champion_id": 22,
-        "play": 3021,
-        "win": 1506,
+        "play": 3033,
+        "win": 1514,
         "meta": {
           "id": 22,
           "key": "Ashe",
@@ -4109,8 +4109,8 @@
       },
       {
         "champion_id": 145,
-        "play": 2937,
-        "win": 1540,
+        "play": 2953,
+        "win": 1549,
         "meta": {
           "id": 145,
           "key": "Kaisa",
@@ -4450,8 +4450,8 @@
       },
       {
         "champion_id": 202,
-        "play": 2865,
-        "win": 1455,
+        "play": 2884,
+        "win": 1468,
         "meta": {
           "id": 202,
           "key": "Jhin",
@@ -4750,8 +4750,8 @@
       },
       {
         "champion_id": 222,
-        "play": 2317,
-        "win": 1120,
+        "play": 2332,
+        "win": 1129,
         "meta": {
           "id": 222,
           "key": "Jinx",
@@ -5091,8 +5091,8 @@
       },
       {
         "champion_id": 81,
-        "play": 2210,
-        "win": 1144,
+        "play": 2219,
+        "win": 1149,
         "meta": {
           "id": 81,
           "key": "Ezreal",
@@ -5517,8 +5517,8 @@
       },
       {
         "champion_id": 42,
-        "play": 1699,
-        "win": 761,
+        "play": 1708,
+        "win": 763,
         "meta": {
           "id": 42,
           "key": "Corki",
@@ -5815,8 +5815,8 @@
       },
       {
         "champion_id": 498,
-        "play": 1325,
-        "win": 637,
+        "play": 1336,
+        "win": 643,
         "meta": {
           "id": 498,
           "key": "Xayah",
@@ -6154,8 +6154,8 @@
       },
       {
         "champion_id": 96,
-        "play": 1286,
-        "win": 583,
+        "play": 1295,
+        "win": 587,
         "meta": {
           "id": 96,
           "key": "KogMaw",
@@ -6496,8 +6496,8 @@
       },
       {
         "champion_id": 236,
-        "play": 1097,
-        "win": 554,
+        "play": 1106,
+        "win": 559,
         "meta": {
           "id": 236,
           "key": "Lucian",
@@ -6824,8 +6824,8 @@
       },
       {
         "champion_id": 67,
-        "play": 1038,
-        "win": 549,
+        "play": 1047,
+        "win": 555,
         "meta": {
           "id": 67,
           "key": "Vayne",
@@ -7211,8 +7211,8 @@
       },
       {
         "champion_id": 119,
-        "play": 1022,
-        "win": 532,
+        "play": 1026,
+        "win": 535,
         "meta": {
           "id": 119,
           "key": "Draven",
@@ -7558,8 +7558,8 @@
       },
       {
         "champion_id": 523,
-        "play": 853,
-        "win": 462,
+        "play": 864,
+        "win": 465,
         "meta": {
           "id": 523,
           "key": "Aphelios",
@@ -7764,8 +7764,8 @@
       },
       {
         "champion_id": 110,
-        "play": 836,
-        "win": 427,
+        "play": 841,
+        "win": 428,
         "meta": {
           "id": 110,
           "key": "Varus",
@@ -8126,8 +8126,8 @@
       },
       {
         "champion_id": 15,
-        "play": 651,
-        "win": 335,
+        "play": 657,
+        "win": 339,
         "meta": {
           "id": 15,
           "key": "Sivir",
@@ -8512,7 +8512,7 @@
       },
       {
         "champion_id": 221,
-        "play": 594,
+        "play": 597,
         "win": 318,
         "meta": {
           "id": 221,
@@ -8737,8 +8737,8 @@
       },
       {
         "champion_id": 901,
-        "play": 594,
-        "win": 299,
+        "play": 595,
+        "win": 300,
         "meta": {
           "id": 901,
           "key": "Smolder",
@@ -8907,8 +8907,8 @@
       },
       {
         "champion_id": 18,
-        "play": 519,
-        "win": 281,
+        "play": 523,
+        "win": 283,
         "meta": {
           "id": 18,
           "key": "Tristana",
@@ -9275,8 +9275,8 @@
       },
       {
         "champion_id": 895,
-        "play": 495,
-        "win": 205,
+        "play": 499,
+        "win": 206,
         "meta": {
           "id": 895,
           "key": "Nilah",
@@ -9448,7 +9448,7 @@
       },
       {
         "champion_id": 21,
-        "play": 489,
+        "play": 490,
         "win": 242,
         "meta": {
           "id": 21,
@@ -9903,8 +9903,8 @@
       },
       {
         "champion_id": 429,
-        "play": 445,
-        "win": 235,
+        "play": 449,
+        "win": 238,
         "meta": {
           "id": 429,
           "key": "Kalista",
@@ -10129,8 +10129,8 @@
       },
       {
         "champion_id": 50,
-        "play": 405,
-        "win": 184,
+        "play": 407,
+        "win": 185,
         "meta": {
           "id": 50,
           "key": "Swain",
@@ -10421,8 +10421,8 @@
       },
       {
         "champion_id": 29,
-        "play": 376,
-        "win": 195,
+        "play": 380,
+        "win": 197,
         "meta": {
           "id": 29,
           "key": "Twitch",
@@ -10748,7 +10748,7 @@
       },
       {
         "champion_id": 115,
-        "play": 354,
+        "play": 355,
         "win": 176,
         "meta": {
           "id": 115,
@@ -11328,8 +11328,8 @@
       },
       {
         "champion_id": 157,
-        "play": 130,
-        "win": 51,
+        "play": 133,
+        "win": 53,
         "meta": {
           "id": 157,
           "key": "Yasuo",
@@ -11715,8 +11715,8 @@
       },
       {
         "champion_id": 910,
-        "play": 130,
-        "win": 66,
+        "play": 132,
+        "win": 67,
         "meta": {
           "id": 910,
           "key": "Hwei",
@@ -12230,7 +12230,7 @@
       },
       {
         "champion_id": 45,
-        "play": 76,
+        "play": 77,
         "win": 33,
         "meta": {
           "id": 45,
@@ -12615,27 +12615,27 @@
         4,
         21
       ],
-      "win": 13907,
-      "play": 27570,
-      "pick_rate": 0.7271
+      "win": 13995,
+      "play": 27754,
+      "pick_rate": 0.7273
     },
     {
       "ids": [
         1,
         4
       ],
-      "win": 3319,
-      "play": 6629,
-      "pick_rate": 0.1748
+      "win": 3339,
+      "play": 6663,
+      "pick_rate": 0.1746
     },
     {
       "ids": [
         3,
         4
       ],
-      "win": 1396,
-      "play": 2788,
-      "pick_rate": 0.0735
+      "win": 1407,
+      "play": 2807,
+      "pick_rate": 0.0736
     },
     {
       "ids": [
@@ -12643,8 +12643,8 @@
         7
       ],
       "win": 299,
-      "play": 598,
-      "pick_rate": 0.0158
+      "play": 600,
+      "pick_rate": 0.0157
     },
     {
       "ids": [
@@ -12652,7 +12652,7 @@
         14
       ],
       "win": 79,
-      "play": 166,
+      "play": 168,
       "pick_rate": 0.0044
     }
   ],
@@ -12662,9 +12662,9 @@
     "win": [
       {
         "version": "14.22",
-        "rate": 0.5031,
+        "rate": 0.5029,
         "rank": 20,
-        "created_at": "2024-11-13T22:34:51+09:00"
+        "created_at": "2024-11-14T22:31:47+09:00"
       },
       {
         "version": "14.21",
@@ -12724,9 +12724,9 @@
     "pick": [
       {
         "version": "14.22",
-        "rate": 0.0365,
+        "rate": 0.0366,
         "rank": 17,
-        "created_at": "2024-11-13T22:34:51+09:00"
+        "created_at": "2024-11-14T22:31:47+09:00"
       },
       {
         "version": "14.21",
@@ -12786,9 +12786,9 @@
     "ban": [
       {
         "version": "14.22",
-        "rate": 0.0558,
+        "rate": 0.0559,
         "rank": 6,
-        "created_at": "2024-11-13T22:34:51+09:00"
+        "created_at": "2024-11-14T22:31:47+09:00"
       },
       {
         "version": "14.21",
@@ -12849,31 +12849,31 @@
   "game_lengths": [
     {
       "game_length": 0,
-      "rate": 0.481175,
+      "rate": 0.481677,
       "average": 0.5,
       "rank": 24
     },
     {
       "game_length": 25,
-      "rate": 0.497266,
+      "rate": 0.496923,
       "average": 0.5,
-      "rank": 18
+      "rank": 20
     },
     {
       "game_length": 40,
-      "rate": 0.516,
+      "rate": 0.515464,
       "average": 0.5,
-      "rank": 12
+      "rank": 13
     },
     {
       "game_length": 30,
-      "rate": 0.525852,
+      "rate": 0.525583,
       "average": 0.5,
       "rank": 5
     },
     {
       "game_length": 35,
-      "rate": 0.535092,
+      "rate": 0.533963,
       "average": 0.5,
       "rank": 5
     }
@@ -12897,9 +12897,9 @@
         "W",
         "W"
       ],
-      "play": 12865,
-      "win": 8379,
-      "pick_rate": 0.8242
+      "play": 12948,
+      "win": 8432,
+      "pick_rate": 0.824
     },
     {
       "order": [
@@ -12919,9 +12919,9 @@
         "W",
         "W"
       ],
-      "play": 1198,
-      "win": 827,
-      "pick_rate": 0.0768
+      "play": 1208,
+      "win": 834,
+      "pick_rate": 0.0769
     },
     {
       "order": [
@@ -12941,7 +12941,7 @@
         "W",
         "W"
       ],
-      "play": 406,
+      "play": 409,
       "win": 255,
       "pick_rate": 0.026
     },
@@ -12963,9 +12963,9 @@
         "W",
         "W"
       ],
-      "play": 110,
+      "play": 111,
       "win": 67,
-      "pick_rate": 0.007
+      "pick_rate": 0.0071
     },
     {
       "order": [
@@ -12997,9 +12997,9 @@
         "E",
         "W"
       ],
-      "play": 15405,
-      "win": 10055,
-      "pick_rate": 0.9869,
+      "play": 15508,
+      "win": 10120,
+      "pick_rate": 0.987,
       "builds": [
         {
           "order": [
@@ -13019,9 +13019,9 @@
             "W",
             "W"
           ],
-          "play": 12865,
-          "win": 8379,
-          "pick_rate": 0.8351
+          "play": 12948,
+          "win": 8432,
+          "pick_rate": 0.8349
         },
         {
           "order": [
@@ -13041,9 +13041,9 @@
             "W",
             "W"
           ],
-          "play": 1198,
-          "win": 827,
-          "pick_rate": 0.0778
+          "play": 1208,
+          "win": 834,
+          "pick_rate": 0.0779
         },
         {
           "order": [
@@ -13063,7 +13063,7 @@
             "W",
             "W"
           ],
-          "play": 406,
+          "play": 409,
           "win": 255,
           "pick_rate": 0.0264
         },
@@ -13085,9 +13085,9 @@
             "W",
             "W"
           ],
-          "play": 110,
+          "play": 111,
           "win": 67,
-          "pick_rate": 0.0071
+          "pick_rate": 0.0072
         },
         {
           "order": [
@@ -13107,9 +13107,9 @@
             "W",
             "W"
           ],
-          "play": 79,
-          "win": 51,
-          "pick_rate": 0.0051
+          "play": 80,
+          "win": 52,
+          "pick_rate": 0.0052
         }
       ]
     },
@@ -13119,7 +13119,7 @@
         "W",
         "E"
       ],
-      "play": 198,
+      "play": 199,
       "win": 119,
       "pick_rate": 0.0127,
       "builds": [
@@ -13143,7 +13143,7 @@
           ],
           "play": 103,
           "win": 59,
-          "pick_rate": 0.5202
+          "pick_rate": 0.5176
         },
         {
           "order": [
@@ -13163,9 +13163,9 @@
             "E",
             "E"
           ],
-          "play": 22,
+          "play": 23,
           "win": 13,
-          "pick_rate": 0.1111
+          "pick_rate": 0.1156
         },
         {
           "order": [
@@ -13187,7 +13187,7 @@
           ],
           "play": 7,
           "win": 4,
-          "pick_rate": 0.0354
+          "pick_rate": 0.0352
         },
         {
           "order": [
@@ -13209,7 +13209,7 @@
           ],
           "play": 5,
           "win": 2,
-          "pick_rate": 0.0253
+          "pick_rate": 0.0251
         },
         {
           "order": [
@@ -13231,7 +13231,7 @@
           ],
           "play": 5,
           "win": 4,
-          "pick_rate": 0.0253
+          "pick_rate": 0.0251
         }
       ]
     },
@@ -13391,9 +13391,9 @@
         5008,
         5001
       ],
-      "play": 16194,
-      "win": 8087,
-      "pick_rate": 0.4233
+      "play": 16285,
+      "win": 8131,
+      "pick_rate": 0.423
     },
     {
       "id": 8010,
@@ -13414,9 +13414,9 @@
         5008,
         5001
       ],
-      "play": 4722,
-      "win": 2251,
-      "pick_rate": 0.1234
+      "play": 4758,
+      "win": 2265,
+      "pick_rate": 0.1236
     },
     {
       "id": 8010,
@@ -13437,9 +13437,9 @@
         5008,
         5011
       ],
-      "play": 2685,
-      "win": 1444,
-      "pick_rate": 0.0702
+      "play": 2699,
+      "win": 1448,
+      "pick_rate": 0.0701
     },
     {
       "id": 8010,
@@ -13460,9 +13460,9 @@
         5008,
         5001
       ],
-      "play": 1919,
-      "win": 985,
-      "pick_rate": 0.0502
+      "play": 1930,
+      "win": 993,
+      "pick_rate": 0.0501
     },
     {
       "id": 8010,
@@ -13483,9 +13483,9 @@
         5008,
         5011
       ],
-      "play": 1158,
-      "win": 569,
-      "pick_rate": 0.0303
+      "play": 1169,
+      "win": 575,
+      "pick_rate": 0.0304
     }
   ],
   "rune_pages": [
@@ -13493,9 +13493,9 @@
       "id": 8010,
       "primary_page_id": 8000,
       "secondary_page_id": 8100,
-      "play": 29975,
-      "win": 15303,
-      "pick_rate": 0.7836,
+      "play": 30156,
+      "win": 15396,
+      "pick_rate": 0.7833,
       "builds": [
         {
           "id": 8010,
@@ -13516,9 +13516,9 @@
             5008,
             5001
           ],
-          "play": 16194,
-          "win": 8087,
-          "pick_rate": 0.5403
+          "play": 16285,
+          "win": 8131,
+          "pick_rate": 0.54
         },
         {
           "id": 8010,
@@ -13539,9 +13539,9 @@
             5008,
             5011
           ],
-          "play": 2685,
-          "win": 1444,
-          "pick_rate": 0.0896
+          "play": 2699,
+          "win": 1448,
+          "pick_rate": 0.0895
         },
         {
           "id": 8010,
@@ -13562,8 +13562,8 @@
             5008,
             5001
           ],
-          "play": 1919,
-          "win": 985,
+          "play": 1930,
+          "win": 993,
           "pick_rate": 0.064
         },
         {
@@ -13585,9 +13585,9 @@
             5008,
             5011
           ],
-          "play": 1158,
-          "win": 569,
-          "pick_rate": 0.0386
+          "play": 1169,
+          "win": 575,
+          "pick_rate": 0.0388
         },
         {
           "id": 8010,
@@ -13608,9 +13608,9 @@
             5008,
             5011
           ],
-          "play": 1044,
-          "win": 558,
-          "pick_rate": 0.0348
+          "play": 1054,
+          "win": 564,
+          "pick_rate": 0.035
         }
       ]
     },
@@ -13618,9 +13618,9 @@
       "id": 8010,
       "primary_page_id": 8000,
       "secondary_page_id": 8400,
-      "play": 6007,
-      "win": 2836,
-      "pick_rate": 0.157,
+      "play": 6052,
+      "win": 2853,
+      "pick_rate": 0.1572,
       "builds": [
         {
           "id": 8010,
@@ -13641,9 +13641,9 @@
             5008,
             5001
           ],
-          "play": 4722,
-          "win": 2251,
-          "pick_rate": 0.7861
+          "play": 4758,
+          "win": 2265,
+          "pick_rate": 0.7862
         },
         {
           "id": 8010,
@@ -13664,7 +13664,7 @@
             5008,
             5011
           ],
-          "play": 135,
+          "play": 136,
           "win": 52,
           "pick_rate": 0.0225
         },
@@ -13689,7 +13689,7 @@
           ],
           "play": 128,
           "win": 62,
-          "pick_rate": 0.0213
+          "pick_rate": 0.0212
         },
         {
           "id": 8010,
@@ -13712,7 +13712,7 @@
           ],
           "play": 81,
           "win": 41,
-          "pick_rate": 0.0135
+          "pick_rate": 0.0134
         },
         {
           "id": 8010,
@@ -13735,7 +13735,7 @@
           ],
           "play": 75,
           "win": 31,
-          "pick_rate": 0.0125
+          "pick_rate": 0.0124
         }
       ]
     },
@@ -13743,9 +13743,9 @@
       "id": 8010,
       "primary_page_id": 8000,
       "secondary_page_id": 8200,
-      "play": 1015,
-      "win": 510,
-      "pick_rate": 0.0265,
+      "play": 1023,
+      "win": 515,
+      "pick_rate": 0.0266,
       "builds": [
         {
           "id": 8010,
@@ -13766,9 +13766,9 @@
             5008,
             5001
           ],
-          "play": 421,
-          "win": 222,
-          "pick_rate": 0.4148
+          "play": 423,
+          "win": 224,
+          "pick_rate": 0.4135
         },
         {
           "id": 8010,
@@ -13789,9 +13789,9 @@
             5008,
             5011
           ],
-          "play": 282,
-          "win": 140,
-          "pick_rate": 0.2778
+          "play": 286,
+          "win": 143,
+          "pick_rate": 0.2796
         },
         {
           "id": 8010,
@@ -13814,7 +13814,7 @@
           ],
           "play": 47,
           "win": 20,
-          "pick_rate": 0.0463
+          "pick_rate": 0.0459
         },
         {
           "id": 8010,
@@ -13837,7 +13837,7 @@
           ],
           "play": 43,
           "win": 25,
-          "pick_rate": 0.0424
+          "pick_rate": 0.042
         },
         {
           "id": 8010,
@@ -13860,7 +13860,7 @@
           ],
           "play": 29,
           "win": 13,
-          "pick_rate": 0.0286
+          "pick_rate": 0.0283
         }
       ]
     },
@@ -13868,9 +13868,9 @@
       "id": 8010,
       "primary_page_id": 8000,
       "secondary_page_id": 8300,
-      "play": 803,
-      "win": 406,
-      "pick_rate": 0.021,
+      "play": 812,
+      "win": 410,
+      "pick_rate": 0.0211,
       "builds": [
         {
           "id": 8010,
@@ -13891,9 +13891,9 @@
             5008,
             5011
           ],
-          "play": 97,
-          "win": 47,
-          "pick_rate": 0.1208
+          "play": 99,
+          "win": 49,
+          "pick_rate": 0.1219
         },
         {
           "id": 8010,
@@ -13914,9 +13914,9 @@
             5008,
             5001
           ],
-          "play": 92,
-          "win": 47,
-          "pick_rate": 0.1146
+          "play": 97,
+          "win": 49,
+          "pick_rate": 0.1195
         },
         {
           "id": 8010,
@@ -13939,7 +13939,7 @@
           ],
           "play": 78,
           "win": 45,
-          "pick_rate": 0.0971
+          "pick_rate": 0.0961
         },
         {
           "id": 8010,
@@ -13962,7 +13962,7 @@
           ],
           "play": 46,
           "win": 23,
-          "pick_rate": 0.0573
+          "pick_rate": 0.0567
         },
         {
           "id": 8010,
@@ -13983,9 +13983,9 @@
             5008,
             5011
           ],
-          "play": 34,
+          "play": 35,
           "win": 16,
-          "pick_rate": 0.0423
+          "pick_rate": 0.0431
         }
       ]
     },
@@ -14122,8 +14122,8 @@
         3031,
         3036
       ],
-      "play": 9137,
-      "win": 5544,
+      "play": 9195,
+      "win": 5582,
       "pick_rate": 0.3863
     },
     {
@@ -14132,9 +14132,9 @@
         3031,
         6673
       ],
-      "play": 4263,
-      "win": 2705,
-      "pick_rate": 0.1802
+      "play": 4282,
+      "win": 2719,
+      "pick_rate": 0.1799
     },
     {
       "ids": [
@@ -14142,9 +14142,9 @@
         3031,
         3033
       ],
-      "play": 2651,
-      "win": 1467,
-      "pick_rate": 0.1121
+      "play": 2673,
+      "win": 1481,
+      "pick_rate": 0.1123
     },
     {
       "ids": [
@@ -14152,9 +14152,9 @@
         3031,
         3072
       ],
-      "play": 2527,
-      "win": 1639,
-      "pick_rate": 0.1068
+      "play": 2546,
+      "win": 1648,
+      "pick_rate": 0.107
     },
     {
       "ids": [
@@ -14162,9 +14162,9 @@
         6673,
         3031
       ],
-      "play": 878,
-      "win": 542,
-      "pick_rate": 0.0371
+      "play": 886,
+      "win": 547,
+      "pick_rate": 0.0372
     },
     {
       "ids": [
@@ -14172,8 +14172,8 @@
         3036,
         3031
       ],
-      "play": 585,
-      "win": 331,
+      "play": 588,
+      "win": 332,
       "pick_rate": 0.0247
     },
     {
@@ -14184,7 +14184,7 @@
       ],
       "play": 384,
       "win": 210,
-      "pick_rate": 0.0162
+      "pick_rate": 0.0161
     },
     {
       "ids": [
@@ -14192,8 +14192,8 @@
         3031,
         3156
       ],
-      "play": 323,
-      "win": 187,
+      "play": 325,
+      "win": 188,
       "pick_rate": 0.0137
     },
     {
@@ -14202,8 +14202,8 @@
         3072,
         3031
       ],
-      "play": 247,
-      "win": 137,
+      "play": 248,
+      "win": 138,
       "pick_rate": 0.0104
     },
     {
@@ -14212,18 +14212,8 @@
         6676,
         3031
       ],
-      "play": 158,
-      "win": 99,
-      "pick_rate": 0.0067
-    },
-    {
-      "ids": [
-        6676,
-        3036,
-        6673
-      ],
-      "play": 158,
-      "win": 75,
+      "play": 159,
+      "win": 100,
       "pick_rate": 0.0067
     },
     {
@@ -14232,9 +14222,19 @@
         3033,
         3031
       ],
-      "play": 156,
+      "play": 159,
       "win": 90,
-      "pick_rate": 0.0066
+      "pick_rate": 0.0067
+    },
+    {
+      "ids": [
+        6676,
+        3036,
+        6673
+      ],
+      "play": 160,
+      "win": 75,
+      "pick_rate": 0.0067
     },
     {
       "ids": [
@@ -14252,7 +14252,7 @@
         6673,
         3033
       ],
-      "play": 132,
+      "play": 133,
       "win": 53,
       "pick_rate": 0.0056
     },
@@ -14262,8 +14262,8 @@
         3036,
         3072
       ],
-      "play": 112,
-      "win": 63,
+      "play": 113,
+      "win": 64,
       "pick_rate": 0.0047
     }
   ],
@@ -14272,41 +14272,41 @@
       "ids": [
         3047
       ],
-      "play": 19845,
-      "win": 10381,
-      "pick_rate": 0.6141
+      "play": 19964,
+      "win": 10445,
+      "pick_rate": 0.614
     },
     {
       "ids": [
         3111
       ],
-      "play": 10274,
-      "win": 5393,
-      "pick_rate": 0.3179
+      "play": 10346,
+      "win": 5429,
+      "pick_rate": 0.3182
     },
     {
       "ids": [
         3009
       ],
-      "play": 1457,
-      "win": 880,
+      "play": 1465,
+      "win": 886,
       "pick_rate": 0.0451
     },
     {
       "ids": [
         3006
       ],
-      "play": 617,
-      "win": 326,
-      "pick_rate": 0.0191
+      "play": 618,
+      "win": 327,
+      "pick_rate": 0.019
     },
     {
       "ids": [
         3158
       ],
-      "play": 92,
+      "play": 93,
       "win": 50,
-      "pick_rate": 0.0028
+      "pick_rate": 0.0029
     }
   ],
   "starter_items": [
@@ -14315,8 +14315,8 @@
         1055,
         2003
       ],
-      "play": 36745,
-      "win": 18304,
+      "play": 36979,
+      "win": 18415,
       "pick_rate": 0.9481
     },
     {
@@ -14325,9 +14325,9 @@
         1055,
         2003
       ],
-      "play": 578,
-      "win": 373,
-      "pick_rate": 0.0149
+      "play": 584,
+      "win": 376,
+      "pick_rate": 0.015
     },
     {
       "ids": [
@@ -14336,8 +14336,8 @@
         2003,
         2003
       ],
-      "play": 255,
-      "win": 148,
+      "play": 256,
+      "win": 149,
       "pick_rate": 0.0066
     },
     {
@@ -14355,8 +14355,8 @@
         1036,
         2031
       ],
-      "play": 163,
-      "win": 91,
+      "play": 165,
+      "win": 93,
       "pick_rate": 0.0042
     },
     {
@@ -14366,8 +14366,8 @@
         2003,
         2003
       ],
-      "play": 136,
-      "win": 69,
+      "play": 137,
+      "win": 70,
       "pick_rate": 0.0035
     },
     {
@@ -14377,7 +14377,7 @@
       ],
       "play": 103,
       "win": 39,
-      "pick_rate": 0.0027
+      "pick_rate": 0.0026
     },
     {
       "ids": [
@@ -14396,8 +14396,8 @@
         1055,
         2003
       ],
-      "play": 58,
-      "win": 46,
+      "play": 59,
+      "win": 47,
       "pick_rate": 0.0015
     },
     {
@@ -14418,8 +14418,8 @@
         2003,
         2003
       ],
-      "play": 53,
-      "win": 28,
+      "play": 54,
+      "win": 29,
       "pick_rate": 0.0014
     },
     {
@@ -14470,103 +14470,103 @@
       "ids": [
         6676
       ],
-      "play": 37745,
-      "win": 19128,
+      "play": 37974,
+      "win": 19242,
       "pick_rate": 0.3176
     },
     {
       "ids": [
         3031
       ],
-      "play": 30447,
-      "win": 16854,
+      "play": 30630,
+      "win": 16958,
       "pick_rate": 0.2562
     },
     {
       "ids": [
         3036
       ],
-      "play": 13510,
-      "win": 8120,
+      "play": 13591,
+      "win": 8174,
       "pick_rate": 0.1137
     },
     {
       "ids": [
         6673
       ],
-      "play": 10798,
-      "win": 6601,
+      "play": 10862,
+      "win": 6644,
       "pick_rate": 0.0908
     },
     {
       "ids": [
         3072
       ],
-      "play": 8129,
-      "win": 5148,
+      "play": 8174,
+      "win": 5177,
       "pick_rate": 0.0684
     },
     {
       "ids": [
         1038
       ],
-      "play": 6264,
-      "win": 3263,
-      "pick_rate": 0.0527
+      "play": 6290,
+      "win": 3276,
+      "pick_rate": 0.0526
     },
     {
       "ids": [
         3033
       ],
-      "play": 4383,
-      "win": 2468,
+      "play": 4417,
+      "win": 2487,
       "pick_rate": 0.0369
     },
     {
       "ids": [
         3026
       ],
-      "play": 1528,
-      "win": 1026,
+      "play": 1541,
+      "win": 1035,
       "pick_rate": 0.0129
     },
     {
       "ids": [
         3123
       ],
-      "play": 1263,
-      "win": 449,
+      "play": 1269,
+      "win": 451,
       "pick_rate": 0.0106
     },
     {
       "ids": [
         3156
       ],
-      "play": 1086,
-      "win": 623,
+      "play": 1093,
+      "win": 625,
       "pick_rate": 0.0091
     },
     {
       "ids": [
         3139
       ],
-      "play": 760,
-      "win": 481,
+      "play": 768,
+      "win": 486,
       "pick_rate": 0.0064
     },
     {
       "ids": [
         6697
       ],
-      "play": 642,
-      "win": 380,
+      "play": 644,
+      "win": 382,
       "pick_rate": 0.0054
     },
     {
       "ids": [
         3134
       ],
-      "play": 451,
+      "play": 454,
       "win": 158,
       "pick_rate": 0.0038
     },
@@ -14574,23 +14574,23 @@
       "ids": [
         6695
       ],
-      "play": 245,
-      "win": 128,
+      "play": 247,
+      "win": 130,
       "pick_rate": 0.0021
     },
     {
       "ids": [
         3142
       ],
-      "play": 192,
-      "win": 116,
+      "play": 195,
+      "win": 117,
       "pick_rate": 0.0016
     },
     {
       "ids": [
         3032
       ],
-      "play": 188,
+      "play": 190,
       "win": 94,
       "pick_rate": 0.0016
     },
@@ -14606,8 +14606,8 @@
       "ids": [
         6333
       ],
-      "play": 167,
-      "win": 100,
+      "play": 168,
+      "win": 101,
       "pick_rate": 0.0014
     },
     {
@@ -14622,7 +14622,7 @@
       "ids": [
         3143
       ],
-      "play": 102,
+      "play": 103,
       "win": 56,
       "pick_rate": 0.0009
     },
