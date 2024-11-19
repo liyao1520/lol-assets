@@ -404,11 +404,11 @@
       "is_rotation": false,
       "is_rip": false,
       "average_stats": {
-        "play": 189828,
-        "win_rate": 0.491924,
-        "pick_rate": 0.11296,
-        "ban_rate": 0.192684,
-        "kda": 1.670334,
+        "play": 190425,
+        "win_rate": 0.491884,
+        "pick_rate": 0.11297,
+        "ban_rate": 0.192713,
+        "kda": 1.670305,
         "tier": 3,
         "rank": 67,
         "tier_data": {
@@ -422,12 +422,12 @@
         {
           "name": "MID",
           "stats": {
-            "play": 131509,
-            "win_rate": 0.493175,
-            "pick_rate": 0.0779998,
-            "role_rate": 0.69278,
-            "ban_rate": 0.133487,
-            "kda": 1.70651,
+            "play": 131901,
+            "win_rate": 0.493097,
+            "pick_rate": 0.0779931,
+            "role_rate": 0.692666,
+            "ban_rate": 0.133486,
+            "kda": 1.706297,
             "tier_data": {
               "tier": 2,
               "rank": 13,
@@ -476,12 +476,12 @@
         {
           "name": "TOP",
           "stats": {
-            "play": 41948,
-            "win_rate": 0.484886,
-            "pick_rate": 0.0250709,
-            "role_rate": 0.220979,
-            "ban_rate": 0.042579,
-            "kda": 1.446273,
+            "play": 42094,
+            "win_rate": 0.484843,
+            "pick_rate": 0.0250816,
+            "role_rate": 0.221053,
+            "ban_rate": 0.0425997,
+            "kda": 1.446496,
             "tier_data": {
               "tier": 4,
               "rank": 51,
@@ -539,12 +539,12 @@
         {
           "name": "ADC",
           "stats": {
-            "play": 15127,
-            "win_rate": 0.514577,
-            "pick_rate": 0.00889754,
-            "role_rate": 0.0796879,
-            "ban_rate": 0.0153546,
-            "kda": 1.980954,
+            "play": 15183,
+            "win_rate": 0.514852,
+            "pick_rate": 0.00890339,
+            "role_rate": 0.0797322,
+            "ban_rate": 0.0153654,
+            "kda": 1.981969,
             "tier_data": {
               "tier": 4,
               "rank": 23,
@@ -1372,7 +1372,7 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2024-10-23T08:59:00+09:00"
+                "release_date": null
               },
               {
                 "id": 240001,
@@ -1898,7 +1898,7 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2024-10-23T08:59:00+09:00"
+                "release_date": null
               },
               {
                 "id": 80005,
@@ -2095,7 +2095,7 @@
                 "cost_burn": [
                   25
                 ],
-                "tooltip": "斯莫德喷出烈焰，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。<br /><br />基于<spellName>龙之研习</spellName>的层数，这个技能会不断进化以获得以下效果：<li><keywordMajor>?层</keywordMajor>：伤害目标周围的所有敌人。</li><li><keywordMajor>?层</keywordMajor>：在目标后侧引发<spellName>{{ tier2_numberofblowback }}</spellName>次爆炸，造成{{ tier2_blowbackpercentagedamage }}%此技能伤害。</li><li><keywordMajor>?层</keywordMajor>：灼烧目标，在{{ tier3_dotlength }}秒里持续造成共<trueDamage>{{ tier3_burn }}最大生命值的真实伤害</trueDamage>。 敌方英雄如果在灼烧期间跌到<trueDamage>{{ tier3_executethreshold }}</trueDamage>总生命值以下，则会被立刻击杀。</li>?",
+                "tooltip": "斯莫德喷出烈焰，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。如果目标阵亡，斯莫德会返还?法力值，这个效果在每次施放仅触发一次。<br /><br />基于<spellName>龙之研习</spellName>的层数，这个技能会不断进化，获得以下效果：<li><keywordMajor>?层</keywordMajor>：对目标周围的所有敌人造成伤害。<li><keywordMajor>?层</keywordMajor>：在目标后侧引发<spellName>{{ tier2_numberofblowback }}</spellName>次爆炸，造成此技能{{ tier2_blowbackpercentagedamage }}%的伤害。<li><keywordMajor>?层</keywordMajor>：灼烧目标，{{ tier3_dotlength }}秒内持续造成共<trueDamage>{{ tier3_burn }}最大生命值的真实伤害</trueDamage>。 敌方英雄如果在灼烧期间总生命值降至<trueDamage>{{ tier3_executethreshold }}</trueDamage>以下，则会被立刻击杀。?",
                 "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderQ.png",
                 "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_Q1.webm"
               },
@@ -2122,9 +2122,13 @@
                   10
                 ],
                 "cost_burn": [
-                  60
+                  50,
+                  55,
+                  60,
+                  65,
+                  70
                 ],
-                "tooltip": "斯莫德发出一个萌萌的烈焰喷嚏，造成<physicalDamage>?物理伤害</physicalDamage>和持续?秒的?%<status>减速</status>。<br /><br />命中英雄时会引发一次爆炸，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
+                "tooltip": "斯莫德发出一个萌萌的烈焰喷嚏，造成<physicalDamage>?物理伤害</physicalDamage>和持续?秒的?%<status>减速</status>。<br /><br />命中英雄时会引发一次爆炸，造成<physicalDamage>?物理</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
                 "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderW.png",
                 "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_W1.webm"
               },
@@ -2166,19 +2170,15 @@
                   4200
                 ],
                 "cooldown_burn": [
-                  140,
-                  130,
                   120
                 ],
                 "cooldown_burn_float": [
-                  140,
-                  130,
                   120
                 ],
                 "cost_burn": [
                   100
                 ],
-                "tooltip": "斯莫德的妈妈从天空喷吐烈焰，造成<physicalDamage>?物理伤害</physicalDamage>。中心的敌人们会转而受到<physicalDamage>?</physicalDamage>伤害和持续?秒的?%<status>减速</status>。<br /><br />斯莫德的妈妈如果命中了她的儿子，则会为他治疗<healing>?生命值</healing>。?",
+                "tooltip": "斯莫德的妈妈从天空喷吐烈焰，造成<physicalDamage>?物理伤害</physicalDamage>。中心的敌人们会转而受到<physicalDamage>?</physicalDamage>物理伤害和持续?秒的?%<status>减速</status>。<br /><br />斯莫德的妈妈如果命中了她的儿子，则会为他治疗<healing>?生命值</healing>。?",
                 "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderR.png",
                 "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_R1.webm"
               }
@@ -2517,26 +2517,26 @@
                 "description": "阿萝拉放出一道飞弹，诅咒所有命中的敌人。阿萝拉可以再次施放该技能，来将所有激活的诅咒抽回自己身上。诅咒在返回途中会对命中的敌人造成伤害。",
                 "max_rank": 5,
                 "range_burn": [
-                  850
+                  900
                 ],
                 "cooldown_burn": [
+                  9,
+                  8,
                   8,
                   7,
-                  7,
-                  6,
-                  6
+                  7
                 ],
                 "cooldown_burn_float": [
+                  9,
+                  8.5,
                   8,
                   7.5,
-                  7,
-                  6.5,
-                  6
+                  7
                 ],
                 "cost_burn": [
                   60
                 ],
-                "tooltip": "朝一个方向发射诅咒能量，对沿途所有敌人造成<magicDamage>?魔法伤害</magicDamage>和持续?秒的诅咒印记。<br /><br /><recast>再次施放：</recast>终止诅咒，将该敌人的一部分灵魂抽回到自己身上，对途经的敌人造成至多<magicDamage>{{ q2damagemax }}魔法伤害</magicDamage>(基于其已损失生命值)。第一次命中后的伤害降低至20%。?",
+                "tooltip": "发射诅咒能量至一个方向，对敌人们造成<magicDamage>?魔法伤害</magicDamage>和持续?秒的诅咒。<br /><br /><recast>再次施放：</recast>终止诅咒，将该敌人的一部分灵物抽回到自己身上，对途经的敌人造成至多<magicDamage>{{ q2damagemax }}魔法伤害</magicDamage>(基于其已损失生命值)。第一次命中后的伤害被降低至20%。<br /><br />如果持续时间耗尽，那么阿萝拉将会自动再次施放这个技能。?",
                 "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AuroraQ.png",
                 "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0893/ability_0893_Q1.webm"
               },
@@ -2575,7 +2575,7 @@
                 "description": "阿萝拉打开界域之窗，施放出一道灵魂魔法洪流，让双界汇聚，放出一道灵物魔法震波，对敌人造成伤害和减速，然后阿萝拉也会向后跳到安全处。",
                 "max_rank": 5,
                 "range_burn": [
-                  850
+                  825
                 ],
                 "cooldown_burn": [
                   15,
@@ -2619,7 +2619,7 @@
                 "cost_burn": [
                   100
                 ],
-                "tooltip": "跳向一个方向。落地时，阿萝拉将双界合二为一，发出一道灵魂能量激波，对命中的敌人们造成<magicDamage>?魔法伤害</magicDamage>和持续2秒的?%<status>减速</status>。<br /><br />交界领域会持续存在?秒，强化阿萝拉的<keywordMajor>双界行者</keywordMajor>效果，并让她能够从区域边缘传送至另一侧边缘。<br /><br />任何尝试进入或离开该区域的敌人都会被推向中心，同时获得持续?秒的?%<status>减速</status>。<br /><br />阿萝拉可以<recast>再次施放</recast>这个技能来提前结束区域效果。?",
+                "tooltip": "跳向一个方向。落地时，阿萝拉将双界合二为一，发出一道灵魂能量激波，对命中的敌人们造成<magicDamage>?魔法伤害</magicDamage>和持续2秒的?%<status>减速</status>。<br /><br />交界领域会持续存在?秒，为阿萝拉提供<keywordMajor>双界行者</keywordMajor>效果，并让她能够从区域边缘传送至另一侧边缘。<br /><br />任何尝试进入或离开该区域的敌人都会被施加持续?秒的?%<status>减速</status>。<br /><br />阿萝拉可以<recast>再次施放</recast>这个技能来提前结束区域效果。?",
                 "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AuroraR.png",
                 "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0893/ability_0893_R1.webm"
               }
@@ -7290,6 +7290,16 @@
               "release_date": "2021-11-04T04:00:00+09:00"
             },
             {
+              "id": 126035,
+              "champion_id": 126,
+              "name": "双城之战2 幸存者 杰斯",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Jayce_35.jpg",
+              "skin_video_url": null,
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
               "id": 126003,
               "champion_id": 126,
               "name": "天启骑士 杰斯",
@@ -7417,26 +7427,26 @@
               "description": "阿萝拉放出一道飞弹，诅咒所有命中的敌人。阿萝拉可以再次施放该技能，来将所有激活的诅咒抽回自己身上。诅咒在返回途中会对命中的敌人造成伤害。",
               "max_rank": 5,
               "range_burn": [
-                850
+                900
               ],
               "cooldown_burn": [
+                9,
+                8,
                 8,
                 7,
-                7,
-                6,
-                6
+                7
               ],
               "cooldown_burn_float": [
+                9,
+                8.5,
                 8,
                 7.5,
-                7,
-                6.5,
-                6
+                7
               ],
               "cost_burn": [
                 60
               ],
-              "tooltip": "朝一个方向发射诅咒能量，对沿途所有敌人造成<magicDamage>?魔法伤害</magicDamage>和持续?秒的诅咒印记。<br /><br /><recast>再次施放：</recast>终止诅咒，将该敌人的一部分灵魂抽回到自己身上，对途经的敌人造成至多<magicDamage>{{ q2damagemax }}魔法伤害</magicDamage>(基于其已损失生命值)。第一次命中后的伤害降低至20%。?",
+              "tooltip": "发射诅咒能量至一个方向，对敌人们造成<magicDamage>?魔法伤害</magicDamage>和持续?秒的诅咒。<br /><br /><recast>再次施放：</recast>终止诅咒，将该敌人的一部分灵物抽回到自己身上，对途经的敌人造成至多<magicDamage>{{ q2damagemax }}魔法伤害</magicDamage>(基于其已损失生命值)。第一次命中后的伤害被降低至20%。<br /><br />如果持续时间耗尽，那么阿萝拉将会自动再次施放这个技能。?",
               "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AuroraQ.png",
               "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0893/ability_0893_Q1.webm"
             },
@@ -7475,7 +7485,7 @@
               "description": "阿萝拉打开界域之窗，施放出一道灵魂魔法洪流，让双界汇聚，放出一道灵物魔法震波，对敌人造成伤害和减速，然后阿萝拉也会向后跳到安全处。",
               "max_rank": 5,
               "range_burn": [
-                850
+                825
               ],
               "cooldown_burn": [
                 15,
@@ -7519,7 +7529,7 @@
               "cost_burn": [
                 100
               ],
-              "tooltip": "跳向一个方向。落地时，阿萝拉将双界合二为一，发出一道灵魂能量激波，对命中的敌人们造成<magicDamage>?魔法伤害</magicDamage>和持续2秒的?%<status>减速</status>。<br /><br />交界领域会持续存在?秒，强化阿萝拉的<keywordMajor>双界行者</keywordMajor>效果，并让她能够从区域边缘传送至另一侧边缘。<br /><br />任何尝试进入或离开该区域的敌人都会被推向中心，同时获得持续?秒的?%<status>减速</status>。<br /><br />阿萝拉可以<recast>再次施放</recast>这个技能来提前结束区域效果。?",
+              "tooltip": "跳向一个方向。落地时，阿萝拉将双界合二为一，发出一道灵魂能量激波，对命中的敌人们造成<magicDamage>?魔法伤害</magicDamage>和持续2秒的?%<status>减速</status>。<br /><br />交界领域会持续存在?秒，为阿萝拉提供<keywordMajor>双界行者</keywordMajor>效果，并让她能够从区域边缘传送至另一侧边缘。<br /><br />任何尝试进入或离开该区域的敌人都会被施加持续?秒的?%<status>减速</status>。<br /><br />阿萝拉可以<recast>再次施放</recast>这个技能来提前结束区域效果。?",
               "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AuroraR.png",
               "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0893/ability_0893_R1.webm"
             }
@@ -8209,7 +8219,7 @@
               "cost_burn": [
                 25
               ],
-              "tooltip": "斯莫德喷出烈焰，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。<br /><br />基于<spellName>龙之研习</spellName>的层数，这个技能会不断进化以获得以下效果：<li><keywordMajor>?层</keywordMajor>：伤害目标周围的所有敌人。</li><li><keywordMajor>?层</keywordMajor>：在目标后侧引发<spellName>{{ tier2_numberofblowback }}</spellName>次爆炸，造成{{ tier2_blowbackpercentagedamage }}%此技能伤害。</li><li><keywordMajor>?层</keywordMajor>：灼烧目标，在{{ tier3_dotlength }}秒里持续造成共<trueDamage>{{ tier3_burn }}最大生命值的真实伤害</trueDamage>。 敌方英雄如果在灼烧期间跌到<trueDamage>{{ tier3_executethreshold }}</trueDamage>总生命值以下，则会被立刻击杀。</li>?",
+              "tooltip": "斯莫德喷出烈焰，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。如果目标阵亡，斯莫德会返还?法力值，这个效果在每次施放仅触发一次。<br /><br />基于<spellName>龙之研习</spellName>的层数，这个技能会不断进化，获得以下效果：<li><keywordMajor>?层</keywordMajor>：对目标周围的所有敌人造成伤害。<li><keywordMajor>?层</keywordMajor>：在目标后侧引发<spellName>{{ tier2_numberofblowback }}</spellName>次爆炸，造成此技能{{ tier2_blowbackpercentagedamage }}%的伤害。<li><keywordMajor>?层</keywordMajor>：灼烧目标，{{ tier3_dotlength }}秒内持续造成共<trueDamage>{{ tier3_burn }}最大生命值的真实伤害</trueDamage>。 敌方英雄如果在灼烧期间总生命值降至<trueDamage>{{ tier3_executethreshold }}</trueDamage>以下，则会被立刻击杀。?",
               "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderQ.png",
               "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_Q1.webm"
             },
@@ -8236,9 +8246,13 @@
                 10
               ],
               "cost_burn": [
-                60
+                50,
+                55,
+                60,
+                65,
+                70
               ],
-              "tooltip": "斯莫德发出一个萌萌的烈焰喷嚏，造成<physicalDamage>?物理伤害</physicalDamage>和持续?秒的?%<status>减速</status>。<br /><br />命中英雄时会引发一次爆炸，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
+              "tooltip": "斯莫德发出一个萌萌的烈焰喷嚏，造成<physicalDamage>?物理伤害</physicalDamage>和持续?秒的?%<status>减速</status>。<br /><br />命中英雄时会引发一次爆炸，造成<physicalDamage>?物理</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
               "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderW.png",
               "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_W1.webm"
             },
@@ -8280,19 +8294,15 @@
                 4200
               ],
               "cooldown_burn": [
-                140,
-                130,
                 120
               ],
               "cooldown_burn_float": [
-                140,
-                130,
                 120
               ],
               "cost_burn": [
                 100
               ],
-              "tooltip": "斯莫德的妈妈从天空喷吐烈焰，造成<physicalDamage>?物理伤害</physicalDamage>。中心的敌人们会转而受到<physicalDamage>?</physicalDamage>伤害和持续?秒的?%<status>减速</status>。<br /><br />斯莫德的妈妈如果命中了她的儿子，则会为他治疗<healing>?生命值</healing>。?",
+              "tooltip": "斯莫德的妈妈从天空喷吐烈焰，造成<physicalDamage>?物理伤害</physicalDamage>。中心的敌人们会转而受到<physicalDamage>?</physicalDamage>物理伤害和持续?秒的?%<status>减速</status>。<br /><br />斯莫德的妈妈如果命中了她的儿子，则会为他治疗<healing>?生命值</healing>。?",
               "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderR.png",
               "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_R1.webm"
             }
@@ -9648,7 +9658,7 @@
                 }
               ],
               "sales": null,
-              "release_date": "2024-10-23T08:59:00+09:00"
+              "release_date": null
             },
             {
               "id": 17047,
@@ -10290,7 +10300,7 @@
                 }
               ],
               "sales": null,
-              "release_date": "2024-10-23T08:59:00+09:00"
+              "release_date": null
             },
             {
               "id": 114041,
@@ -10450,7 +10460,7 @@
                 }
               ],
               "sales": null,
-              "release_date": "2024-10-23T08:59:00+09:00"
+              "release_date": null
             }
           ]
         }
@@ -10743,7 +10753,7 @@
                 }
               ],
               "sales": null,
-              "release_date": "2024-10-23T08:59:00+09:00"
+              "release_date": null
             }
           ]
         }
@@ -11932,7 +11942,7 @@
                 }
               ],
               "sales": null,
-              "release_date": "2024-10-23T08:59:00+09:00"
+              "release_date": null
             },
             {
               "id": 8004,
@@ -14108,7 +14118,7 @@
                 }
               ],
               "sales": null,
-              "release_date": "2024-10-23T08:59:00+09:00"
+              "release_date": null
             },
             {
               "id": 80005,
@@ -14902,7 +14912,7 @@
                 }
               ],
               "sales": null,
-              "release_date": "2024-10-23T08:59:00+09:00"
+              "release_date": null
             },
             {
               "id": 6009,
@@ -16325,7 +16335,7 @@
                 }
               ],
               "sales": null,
-              "release_date": "2024-10-23T08:59:00+09:00"
+              "release_date": null
             },
             {
               "id": 78015,
@@ -16375,7 +16385,7 @@
                 }
               ],
               "sales": null,
-              "release_date": "2024-10-23T08:59:00+09:00"
+              "release_date": null
             }
           ]
         }
@@ -16644,7 +16654,7 @@
                 }
               ],
               "sales": null,
-              "release_date": "2024-10-23T08:59:00+09:00"
+              "release_date": null
             },
             {
               "id": 13009,
@@ -16689,7 +16699,7 @@
                 }
               ],
               "sales": null,
-              "release_date": "2024-10-23T08:59:00+09:00"
+              "release_date": null
             },
             {
               "id": 13002,
@@ -17158,6 +17168,16 @@
               ],
               "sales": null,
               "release_date": "2010-12-06T02:00:00+09:00"
+            },
+            {
+              "id": 27028,
+              "champion_id": 27,
+              "name": "双城之战2 微光实验室 辛吉德",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Singed_28.jpg",
+              "skin_video_url": null,
+              "prices": null,
+              "sales": null,
+              "release_date": null
             },
             {
               "id": 27019,
@@ -17702,7 +17722,7 @@
                 }
               ],
               "sales": null,
-              "release_date": "2024-10-23T08:59:00+09:00"
+              "release_date": null
             },
             {
               "id": 62003,
@@ -18570,7 +18590,7 @@
                 }
               ],
               "sales": null,
-              "release_date": "2024-10-23T08:59:00+09:00"
+              "release_date": null
             },
             {
               "id": 240001,
@@ -19168,7 +19188,7 @@
                 }
               ],
               "sales": null,
-              "release_date": "2024-10-23T08:59:00+09:00"
+              "release_date": null
             },
             {
               "id": 67011,
@@ -19607,7 +19627,7 @@
                 }
               ],
               "sales": null,
-              "release_date": "2024-10-23T08:59:00+09:00"
+              "release_date": null
             }
           ]
         }
@@ -20205,7 +20225,7 @@
                 }
               ],
               "sales": null,
-              "release_date": "2024-10-23T08:59:00+09:00"
+              "release_date": null
             },
             {
               "id": 69018,
@@ -20860,7 +20880,7 @@
                 }
               ],
               "sales": null,
-              "release_date": "2024-11-04T17:00:00+09:00"
+              "release_date": null
             },
             {
               "id": 3004,
@@ -21034,8 +21054,14 @@
     "total_position_rank": 61,
     "win": [
       {
+        "version": "14.23",
+        "rate": 0,
+        "rank": 11,
+        "created_at": "2024-11-19T22:35:43+09:00"
+      },
+      {
         "version": "14.22",
-        "rate": 0.4849,
+        "rate": 0.4848,
         "rank": 53,
         "created_at": "2024-11-18T22:31:32+09:00"
       },
@@ -21086,15 +21112,15 @@
         "rate": 0.4865,
         "rank": 55,
         "created_at": "2024-07-29T23:15:12+09:00"
-      },
-      {
-        "version": "14.13",
-        "rate": 0.4897,
-        "rank": 54,
-        "created_at": "2024-07-15T23:14:12+09:00"
       }
     ],
     "pick": [
+      {
+        "version": "14.23",
+        "rate": 0.1176,
+        "rank": 11,
+        "created_at": "2024-11-19T22:35:43+09:00"
+      },
       {
         "version": "14.22",
         "rate": 0.0251,
@@ -21148,15 +21174,15 @@
         "rate": 0.0163,
         "rank": 47,
         "created_at": "2024-07-29T23:15:12+09:00"
-      },
-      {
-        "version": "14.13",
-        "rate": 0.0154,
-        "rank": 46,
-        "created_at": "2024-07-15T23:14:12+09:00"
       }
     ],
     "ban": [
+      {
+        "version": "14.23",
+        "rate": 0.2273,
+        "rank": 5,
+        "created_at": "2024-11-19T22:35:43+09:00"
+      },
       {
         "version": "14.22",
         "rate": 0.0426,
@@ -21210,43 +21236,37 @@
         "rate": 0.0256,
         "rank": 23,
         "created_at": "2024-07-29T23:15:12+09:00"
-      },
-      {
-        "version": "14.13",
-        "rate": 0.0269,
-        "rank": 23,
-        "created_at": "2024-07-15T23:14:12+09:00"
       }
     ]
   },
   "game_lengths": [
     {
       "game_length": 30,
-      "rate": 0.474617,
+      "rate": 0.474827,
       "average": 0.5,
       "rank": 57
     },
     {
-      "game_length": 40,
-      "rate": 0.484058,
+      "game_length": 35,
+      "rate": 0.484076,
       "average": 0.5,
       "rank": 49
     },
     {
-      "game_length": 35,
-      "rate": 0.484267,
+      "game_length": 40,
+      "rate": 0.484827,
       "average": 0.5,
       "rank": 49
     },
     {
       "game_length": 0,
-      "rate": 0.487311,
+      "rate": 0.486926,
       "average": 0.5,
       "rank": 47
     },
     {
       "game_length": 25,
-      "rate": 0.489898,
+      "rate": 0.490103,
       "average": 0.5,
       "rank": 51
     }
