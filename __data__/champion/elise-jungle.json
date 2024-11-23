@@ -267,11 +267,11 @@
       "is_rotation": false,
       "is_rip": false,
       "average_stats": {
-        "play": 19143,
-        "win_rate": 0.516116,
-        "pick_rate": 0.0579386,
-        "ban_rate": 0.077825,
-        "kda": 2.706793,
+        "play": 18894,
+        "win_rate": 0.515878,
+        "pick_rate": 0.0579269,
+        "ban_rate": 0.0777889,
+        "kda": 2.705819,
         "tier": 1,
         "rank": 22,
         "tier_data": {
@@ -285,16 +285,16 @@
         {
           "name": "JUNGLE",
           "stats": {
-            "play": 18064,
-            "win_rate": 0.514006,
-            "pick_rate": 0.0547367,
-            "role_rate": 0.943635,
-            "ban_rate": 0.0734384,
-            "kda": 2.743382,
+            "play": 17829,
+            "win_rate": 0.51377,
+            "pick_rate": 0.054725,
+            "role_rate": 0.943633,
+            "ban_rate": 0.0734042,
+            "kda": 2.742613,
             "tier_data": {
               "tier": 1,
-              "rank": 5,
-              "rank_prev": 6,
+              "rank": 6,
+              "rank_prev": 5,
               "rank_prev_patch": 10
             }
           },
@@ -302,28 +302,28 @@
             {
               "name": "MAGE",
               "stats": {
-                "win_rate": 0.515567,
-                "role_rate": 0.992976,
-                "play": 17955,
-                "win": 9257
+                "win_rate": 0.515328,
+                "role_rate": 0.992881,
+                "play": 17713,
+                "win": 9128
               }
             }
           ],
           "counters": [
             {
-              "champion_id": 56,
-              "play": 540,
-              "win": 238
+              "champion_id": 36,
+              "play": 49,
+              "win": 21
             },
             {
               "champion_id": 233,
-              "play": 163,
-              "win": 72
+              "play": 161,
+              "win": 71
             },
             {
-              "champion_id": 887,
-              "play": 92,
-              "win": 41
+              "champion_id": 56,
+              "play": 535,
+              "win": 237
             }
           ]
         }
@@ -333,9 +333,481 @@
     "opponents": [
       [
         {
+          "champion_id": 36,
+          "play": 49,
+          "win": 21,
+          "meta": {
+            "id": 36,
+            "key": "DrMundo",
+            "name": "祖安狂人",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/DrMundo.png",
+            "evolve": [],
+            "title": "蒙多医生",
+            "partype": "无",
+            "passive": {
+              "name": "想去哪就去哪",
+              "description": "蒙多医生抵抗他受到的第一个定身效果，但会失去生命值并在附近掉落一罐化学药剂。蒙多医生可移动到化学药剂上来拾取它，从而回复生命值并缩短这个技能的冷却时间。<br><br>蒙多医生也会显著提升生命回复。<br>",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/DrMundo_P.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0036/ability_0036_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "病毒屠刀",
+                "description": "蒙多医生掷出一把沾染病菌的骨锯，对命中的第一个敌人造成基于其当前生命值的魔法伤害和减速效果。",
+                "max_rank": 5,
+                "range_burn": [
+                  975
+                ],
+                "cooldown_burn": [
+                  4
+                ],
+                "cooldown_burn_float": [
+                  4
+                ],
+                "cost_burn": [
+                  0
+                ],
+                "tooltip": "蒙多医生掷出一把沾染病菌的骨锯，对命中的第一个敌人造成<magicDamage>?%当前生命值的魔法伤害</magicDamage>，并对其造成持续?秒的?%<status>减速</status>。<br /><br />如果骨锯命中了一名英雄或野怪，蒙多医生会回复<healing>?生命值</healing>。如果骨锯命中了一个非英雄非野怪的单位，蒙多医生则会回复<healing>?生命值</healing>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/DrMundoQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0036/ability_0036_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "电击疗法",
+                "description": "蒙多医生电击他自己，对附近的敌人们造成持续伤害并储存他受到的一部分伤害。在持续时间结束时或再次施放时，蒙多医生会对附近的敌人们造成一次爆发伤害。如果这个效果命中了一名敌人，那么蒙多医生会回复一部分已储存的伤害值。",
+                "max_rank": 5,
+                "range_burn": [
+                  325
+                ],
+                "cooldown_burn": [
+                  17,
+                  16,
+                  16,
+                  15,
+                  15
+                ],
+                "cooldown_burn_float": [
+                  17,
+                  16.5,
+                  16,
+                  15.5,
+                  15
+                ],
+                "cost_burn": [
+                  0
+                ],
+                "tooltip": "蒙多医生为一台除颤器充电，每秒对附近的敌人们造成<magicDamage>?魔法伤害</magicDamage>，至多持续?秒。此外，他会将在最初?秒里受到的?伤害值和在剩余时长里受到的?%伤害值储存为灰色生命值，并能<recast>再次施放</recast>这个技能。<br /><br /><recast>再次施放：</recast>引爆除颤器，对附近的敌人们造成<magicDamage>?魔法伤害</magicDamage>。如果这个效果命中了至少一名敌方英雄，那么蒙多医生会回复<healing>?%的灰色生命值</healing>，否则蒙多医生会转而回复<healing>?%的灰色生命值</healing>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/DrMundoW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0036/ability_0036_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "大力行医",
+                "description": "被动 - 蒙多医生获得额外攻击力，数额会基于他的最大生命值而提升。<br><br>主动 - 蒙多医生用他的“医用”手提包猛砸一个敌人，造成基于他已损失生命值的额外伤害。如果这个敌人被击杀，那么还会被拍飞，对途经的所有敌人造成伤害。",
+                "max_rank": 5,
+                "range_burn": [
+                  0
+                ],
+                "cooldown_burn": [
+                  9,
+                  8,
+                  7,
+                  6,
+                  6
+                ],
+                "cooldown_burn_float": [
+                  9,
+                  8.25,
+                  7.5,
+                  6.75,
+                  6
+                ],
+                "cost_burn": [
+                  0
+                ],
+                "tooltip": "<spellPassive>被动：</spellPassive>蒙多医生获得<physicalDamage>?攻击力</physicalDamage>。<br /><br /><spellActive>主动：</spellActive>蒙多医生粗暴地挥舞他的“医用”手提包，使他的下次攻击造成额外的<physicalDamage>?物理伤害</physicalDamage>，基于他的已损失生命值至多提升至?。如果击杀了目标敌人，蒙多还会将其拍飞，对其途经的所有敌人造成<physicalDamage>?物理伤害</physicalDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/DrMundoE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0036/ability_0036_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "极限剂量",
+                "description": "蒙多医生给自己注入化学药剂，立刻治疗他的一部分已损失生命值。随后他会获得移动速度并在一段长周期内持续回复自身一部分最大生命值。",
+                "max_rank": 3,
+                "range_burn": [
+                  20
+                ],
+                "cooldown_burn": [
+                  120
+                ],
+                "cooldown_burn_float": [
+                  120
+                ],
+                "cost_burn": [
+                  0
+                ],
+                "tooltip": "蒙多将化学药剂注入体内，获得<healing>相当于他?%已损失生命值的最大生命值</healing>、<speed>?%移动速度</speed>、并在?秒里持续回复共<healing>?%最大生命值</healing>。<br /><br />在3级时，附近的每个敌方英雄都会使这两种治疗效果提升额外的?%。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/DrMundoR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0036/ability_0036_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 36000,
+                "champion_id": 36,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/DrMundo_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 450
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 260
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 36002,
+                "champion_id": 36,
+                "name": "健美教练 蒙多",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/DrMundo_2.jpg",
+                "skin_video_url": "https://youtu.be/X_kzOq7xVNo",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 36010,
+                "champion_id": 36,
+                "name": "冰封王子 蒙多",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/DrMundo_10.jpg",
+                "skin_video_url": "https://youtu.be/-CXC2q9RYL0",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 36005,
+                "champion_id": 36,
+                "name": "嗜血行刑 蒙多",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/DrMundo_5.jpg",
+                "skin_video_url": "https://youtu.be/MRByX_ZvDco",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 36021,
+                "champion_id": 36,
+                "name": "妖怪艺术家 蒙多医生",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/DrMundo_21.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2023-09-13T11:00:00+09:00"
+              },
+              {
+                "id": 36003,
+                "champion_id": 36,
+                "name": "律政大亨 蒙多",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/DrMundo_3.jpg",
+                "skin_video_url": "https://youtu.be/d2UZaolKxNw",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1820
+                  }
+                ],
+                "sales": null,
+                "release_date": "2010-07-12T08:00:00+09:00"
+              },
+              {
+                "id": 36006,
+                "champion_id": 36,
+                "name": "战争血统 蒙多",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/DrMundo_6.jpg",
+                "skin_video_url": "https://youtu.be/kK1w60sSwlo",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2012-07-29T06:00:00+09:00"
+              },
+              {
+                "id": 36001,
+                "champion_id": 36,
+                "name": "战栗之毒 蒙多",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/DrMundo_1.jpg",
+                "skin_video_url": "https://youtu.be/ZOjAIgnq0IE",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 36007,
+                "champion_id": 36,
+                "name": "暗杀星 蒙多",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/DrMundo_7.jpg",
+                "skin_video_url": "https://youtu.be/qBEP-JxqCws",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 750
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 36008,
+                "champion_id": 36,
+                "name": "泳池派对 蒙多",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/DrMundo_8.jpg",
+                "skin_video_url": "https://youtu.be/KHZ0mIHs0O4",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2015-06-24T23:00:00+09:00"
+              },
+              {
+                "id": 36009,
+                "champion_id": 36,
+                "name": "硬汉 蒙多",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/DrMundo_9.jpg",
+                "skin_video_url": "https://youtu.be/_2knbqYQiP0",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2016-06-02T13:00:00+09:00"
+              },
+              {
+                "id": 36004,
+                "champion_id": 36,
+                "name": "蒙多蒙多",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/DrMundo_4.jpg",
+                "skin_video_url": "https://youtu.be/4hz_8_jlKvg",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-10-23T08:59:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 42.86
+        },
+        {
+          "champion_id": 233,
+          "play": 161,
+          "win": 71,
+          "meta": {
+            "id": 233,
+            "key": "Briar",
+            "name": "狂厄蔷薇",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Briar.png",
+            "evolve": [],
+            "title": "贝蕾亚",
+            "partype": "怒气",
+            "passive": {
+              "name": "猩红诅咒",
+              "description": "贝蕾亚的攻击与技能会造成可叠加的流血效果，同时基于这个效果的伤害治疗自身。她永远处于饥饿状态，会根据自己的已损失生命值获得更高的治疗，但缺乏自带的生命回复。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/BriarP.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "冲头",
+                "description": "贝蕾亚跃向一个单位并用她的（痛苦之）脚镣命中敌人们，将他们晕眩并削减他们的护甲。",
+                "max_rank": 5,
+                "range_burn": [
+                  475
+                ],
+                "cooldown_burn": [
+                  13,
+                  12,
+                  11,
+                  10,
+                  9
+                ],
+                "cooldown_burn_float": [
+                  13,
+                  12,
+                  11,
+                  10,
+                  9
+                ],
+                "cost_burn": [
+                  0
+                ],
+                "tooltip": "贝蕾亚跃向一个单位，将其<status>晕眩</status>?秒，造成<magicDamage>?魔法伤害</magicDamage>和持续?秒的?%<scaleArmor>护甲削减</scaleArmor>与<scaleMR>魔抗削减</scaleMR>。<br /><br /><rules>如果贝蕾亚在<keywordMajor>血莽</keywordMajor>期间对一个小兵或野怪施放这个技能，那么她会停止将英雄作为优先目标。</rules>?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BriarQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "血莽 / 噬击",
+                "description": "贝蕾亚向前跳跃并击碎她的囚枷，进入一种【血莽】状态来使她无休止地追击相距最近的那个敌人（优先以英雄为目标）。在【血莽】状态下，她的攻击速度和移动速度获得提升，并且她的攻击会在她目标四周的一个区域内造成伤害。<br><br>贝蕾亚可以在【血莽】状态下再次激活这个技能，来让她的下一次攻击噬咬她的目标，造成基于目标已损失生命值的额外伤害，并且基于她造成的伤害来为她提供治疗效果。",
+                "max_rank": 5,
+                "range_burn": [
+                  350
+                ],
+                "cooldown_burn": [
+                  14,
+                  13,
+                  12,
+                  11,
+                  10
+                ],
+                "cooldown_burn_float": [
+                  14,
+                  13,
+                  12,
+                  11,
+                  10
+                ],
+                "cost_burn": [
+                  0
+                ],
+                "tooltip": "贝蕾亚跳跃并进入一种<keywordMajor>血莽</keywordMajor>状态，自我嘲讽至相距最近的那个敌人，持续?秒，优先以英雄为目标。在<keywordMajor>血莽</keywordMajor>状态下，她获得<attackSpeed>?%攻击速度</attackSpeed>和<speed>?%移动速度</speed>，并且她的攻击会对目标四周的敌人们造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br />贝蕾亚可以<recast>再次施放</recast>这个技能来强化她的下一次攻击。这次攻击造成<physicalDamage>? + ?%已损失生命值的物理伤害</physicalDamage>并<healing>为贝蕾亚提供?+?%已造成伤害值的治疗效果</healing>。<br />?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BriarW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "惊吼",
+                "description": "贝蕾亚重新集中她的意志，移除【血莽】并将能量引导为一次强力吼叫，对敌人造成伤害和减速。在蓄力时，她获得伤害减免并回复一部分最大生命值。一次完全蓄力的吼叫会将敌人们击退，对那些与墙体碰撞的敌人造成额外伤害和晕眩。",
+                "max_rank": 5,
+                "range_burn": [
+                  400
+                ],
+                "cooldown_burn": [
+                  16
+                ],
+                "cooldown_burn_float": [
+                  16
+                ],
+                "cost_burn": [
+                  0
+                ],
+                "tooltip": "<charge>开始蓄力</charge>：贝蕾亚移除<keywordMajor>血莽</keywordMajor>并聚集能量，获得?%伤害减免并在1秒里持续获得共<healing>?治疗效果</healing>。<br /><br /><release>释放：</release>贝蕾亚释放一次吼叫，基于蓄力时间造成至多<magicDamage>?魔法伤害</magicDamage>，以及持续?秒的?%<status>减速</status>。在完全蓄力后，吼叫会<status>击退</status>敌人们，对那些与墙体碰撞的敌人造成<magicDamage>?魔法伤害</magicDamage>和?秒<status>晕眩</status>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BriarE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "毙除",
+                "description": "贝蕾亚踢出她的囚枷中的血石，让被它命中的第一个英雄成为她的猎物。她随后会径直走向该目标，在抵达目标处时恐惧周围的其它敌人们，并进入一个彻底血狂的状态。她将追击她的猎物直至阵亡才罢休，获得【血莽】的助益以及额外的护甲、魔抗、生命偷取和移动速度。",
+                "max_rank": 3,
+                "range_burn": [
+                  10000
+                ],
+                "cooldown_burn": [
+                  120,
+                  100,
+                  80
+                ],
+                "cooldown_burn_float": [
+                  120,
+                  100,
+                  80
+                ],
+                "cost_burn": [
+                  0
+                ],
+                "tooltip": "贝蕾亚踢出她的囚枷中的血石并飞到被它命中的第一个英雄的位置，将这个英雄标记为她的猎物。在着陆时，她对附近的一切造成<magicDamage>?魔法伤害</magicDamage>并使那些并非她猎物的敌人们<status>逃跑</status>?秒。她随后会进入一个强化版<keywordMajor>血莽</keywordMajor>状态并将追击她的猎物直至阵亡才罢休。在此期间，她获得?<scaleArmor>护甲</scaleArmor> 和<scaleMR>魔法抗性</scaleMR>、?%生命偷取和额外的<speed>?%移动速度</speed>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BriarR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 233000,
+                "champion_id": 233,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Briar_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 6300
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 233001,
+                "champion_id": 233,
+                "name": "妖怪艺术家 贝蕾亚",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Briar_1.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2023-09-13T11:00:00+09:00"
+              },
+              {
+                "id": 233010,
+                "champion_id": 233,
+                "name": "幻灵海魔人 贝蕾亚",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Briar_10.jpg",
+                "skin_video_url": "https://youtu.be/NsrwgvipeHA",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-07-31T09:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 44.1
+        },
+        {
           "champion_id": 56,
-          "play": 540,
-          "win": 238,
+          "play": 535,
+          "win": 237,
           "meta": {
             "id": 56,
             "key": "Nocturne",
@@ -632,185 +1104,7 @@
               }
             ]
           },
-          "win_rate": 44.07
-        },
-        {
-          "champion_id": 233,
-          "play": 163,
-          "win": 72,
-          "meta": {
-            "id": 233,
-            "key": "Briar",
-            "name": "狂厄蔷薇",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Briar.png",
-            "evolve": [],
-            "title": "贝蕾亚",
-            "partype": "怒气",
-            "passive": {
-              "name": "猩红诅咒",
-              "description": "贝蕾亚的攻击与技能会造成可叠加的流血效果，同时基于这个效果的伤害治疗自身。她永远处于饥饿状态，会根据自己的已损失生命值获得更高的治疗，但缺乏自带的生命回复。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/BriarP.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_P1.webm"
-            },
-            "spells": [
-              {
-                "key": "Q",
-                "name": "冲头",
-                "description": "贝蕾亚跃向一个单位并用她的（痛苦之）脚镣命中敌人们，将他们晕眩并削减他们的护甲。",
-                "max_rank": 5,
-                "range_burn": [
-                  475
-                ],
-                "cooldown_burn": [
-                  13,
-                  12,
-                  11,
-                  10,
-                  9
-                ],
-                "cooldown_burn_float": [
-                  13,
-                  12,
-                  11,
-                  10,
-                  9
-                ],
-                "cost_burn": [
-                  0
-                ],
-                "tooltip": "贝蕾亚跃向一个单位，将其<status>晕眩</status>?秒，造成<magicDamage>?魔法伤害</magicDamage>和持续?秒的?%<scaleArmor>护甲削减</scaleArmor>与<scaleMR>魔抗削减</scaleMR>。<br /><br /><rules>如果贝蕾亚在<keywordMajor>血莽</keywordMajor>期间对一个小兵或野怪施放这个技能，那么她会停止将英雄作为优先目标。</rules>?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BriarQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "血莽 / 噬击",
-                "description": "贝蕾亚向前跳跃并击碎她的囚枷，进入一种【血莽】状态来使她无休止地追击相距最近的那个敌人（优先以英雄为目标）。在【血莽】状态下，她的攻击速度和移动速度获得提升，并且她的攻击会在她目标四周的一个区域内造成伤害。<br><br>贝蕾亚可以在【血莽】状态下再次激活这个技能，来让她的下一次攻击噬咬她的目标，造成基于目标已损失生命值的额外伤害，并且基于她造成的伤害来为她提供治疗效果。",
-                "max_rank": 5,
-                "range_burn": [
-                  350
-                ],
-                "cooldown_burn": [
-                  14,
-                  13,
-                  12,
-                  11,
-                  10
-                ],
-                "cooldown_burn_float": [
-                  14,
-                  13,
-                  12,
-                  11,
-                  10
-                ],
-                "cost_burn": [
-                  0
-                ],
-                "tooltip": "贝蕾亚跳跃并进入一种<keywordMajor>血莽</keywordMajor>状态，自我嘲讽至相距最近的那个敌人，持续?秒，优先以英雄为目标。在<keywordMajor>血莽</keywordMajor>状态下，她获得<attackSpeed>?%攻击速度</attackSpeed>和<speed>?%移动速度</speed>，并且她的攻击会对目标四周的敌人们造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br />贝蕾亚可以<recast>再次施放</recast>这个技能来强化她的下一次攻击。这次攻击造成<physicalDamage>? + ?%已损失生命值的物理伤害</physicalDamage>并<healing>为贝蕾亚提供?+?%已造成伤害值的治疗效果</healing>。<br />?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BriarW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "惊吼",
-                "description": "贝蕾亚重新集中她的意志，移除【血莽】并将能量引导为一次强力吼叫，对敌人造成伤害和减速。在蓄力时，她获得伤害减免并回复一部分最大生命值。一次完全蓄力的吼叫会将敌人们击退，对那些与墙体碰撞的敌人造成额外伤害和晕眩。",
-                "max_rank": 5,
-                "range_burn": [
-                  400
-                ],
-                "cooldown_burn": [
-                  16
-                ],
-                "cooldown_burn_float": [
-                  16
-                ],
-                "cost_burn": [
-                  0
-                ],
-                "tooltip": "<charge>开始蓄力</charge>：贝蕾亚移除<keywordMajor>血莽</keywordMajor>并聚集能量，获得?%伤害减免并在1秒里持续获得共<healing>?治疗效果</healing>。<br /><br /><release>释放：</release>贝蕾亚释放一次吼叫，基于蓄力时间造成至多<magicDamage>?魔法伤害</magicDamage>，以及持续?秒的?%<status>减速</status>。在完全蓄力后，吼叫会<status>击退</status>敌人们，对那些与墙体碰撞的敌人造成<magicDamage>?魔法伤害</magicDamage>和?秒<status>晕眩</status>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BriarE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "毙除",
-                "description": "贝蕾亚踢出她的囚枷中的血石，让被它命中的第一个英雄成为她的猎物。她随后会径直走向该目标，在抵达目标处时恐惧周围的其它敌人们，并进入一个彻底血狂的状态。她将追击她的猎物直至阵亡才罢休，获得【血莽】的助益以及额外的护甲、魔抗、生命偷取和移动速度。",
-                "max_rank": 3,
-                "range_burn": [
-                  10000
-                ],
-                "cooldown_burn": [
-                  120,
-                  100,
-                  80
-                ],
-                "cooldown_burn_float": [
-                  120,
-                  100,
-                  80
-                ],
-                "cost_burn": [
-                  0
-                ],
-                "tooltip": "贝蕾亚踢出她的囚枷中的血石并飞到被它命中的第一个英雄的位置，将这个英雄标记为她的猎物。在着陆时，她对附近的一切造成<magicDamage>?魔法伤害</magicDamage>并使那些并非她猎物的敌人们<status>逃跑</status>?秒。她随后会进入一个强化版<keywordMajor>血莽</keywordMajor>状态并将追击她的猎物直至阵亡才罢休。在此期间，她获得?<scaleArmor>护甲</scaleArmor> 和<scaleMR>魔法抗性</scaleMR>、?%生命偷取和额外的<speed>?%移动速度</speed>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BriarR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_R1.webm"
-              }
-            ],
-            "skins": [
-              {
-                "id": 233000,
-                "champion_id": 233,
-                "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Briar_0.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "IP",
-                    "cost": 6300
-                  },
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 233001,
-                "champion_id": 233,
-                "name": "妖怪艺术家 贝蕾亚",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Briar_1.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2023-09-13T11:00:00+09:00"
-              },
-              {
-                "id": 233010,
-                "champion_id": 233,
-                "name": "幻灵海魔人 贝蕾亚",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Briar_10.jpg",
-                "skin_video_url": "https://youtu.be/NsrwgvipeHA",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2024-07-31T09:00:00+09:00"
-              }
-            ]
-          },
-          "win_rate": 44.17
+          "win_rate": 44.3
         },
         {
           "champion_id": 887,
@@ -1242,300 +1536,6 @@
             ]
           },
           "win_rate": 44.94
-        },
-        {
-          "champion_id": 36,
-          "play": 51,
-          "win": 23,
-          "meta": {
-            "id": 36,
-            "key": "DrMundo",
-            "name": "祖安狂人",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/DrMundo.png",
-            "evolve": [],
-            "title": "蒙多医生",
-            "partype": "无",
-            "passive": {
-              "name": "想去哪就去哪",
-              "description": "蒙多医生抵抗他受到的第一个定身效果，但会失去生命值并在附近掉落一罐化学药剂。蒙多医生可移动到化学药剂上来拾取它，从而回复生命值并缩短这个技能的冷却时间。<br><br>蒙多医生也会显著提升生命回复。<br>",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/DrMundo_P.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0036/ability_0036_P1.webm"
-            },
-            "spells": [
-              {
-                "key": "Q",
-                "name": "病毒屠刀",
-                "description": "蒙多医生掷出一把沾染病菌的骨锯，对命中的第一个敌人造成基于其当前生命值的魔法伤害和减速效果。",
-                "max_rank": 5,
-                "range_burn": [
-                  975
-                ],
-                "cooldown_burn": [
-                  4
-                ],
-                "cooldown_burn_float": [
-                  4
-                ],
-                "cost_burn": [
-                  0
-                ],
-                "tooltip": "蒙多医生掷出一把沾染病菌的骨锯，对命中的第一个敌人造成<magicDamage>?%当前生命值的魔法伤害</magicDamage>，并对其造成持续?秒的?%<status>减速</status>。<br /><br />如果骨锯命中了一名英雄或野怪，蒙多医生会回复<healing>?生命值</healing>。如果骨锯命中了一个非英雄非野怪的单位，蒙多医生则会回复<healing>?生命值</healing>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/DrMundoQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0036/ability_0036_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "电击疗法",
-                "description": "蒙多医生电击他自己，对附近的敌人们造成持续伤害并储存他受到的一部分伤害。在持续时间结束时或再次施放时，蒙多医生会对附近的敌人们造成一次爆发伤害。如果这个效果命中了一名敌人，那么蒙多医生会回复一部分已储存的伤害值。",
-                "max_rank": 5,
-                "range_burn": [
-                  325
-                ],
-                "cooldown_burn": [
-                  17,
-                  16,
-                  16,
-                  15,
-                  15
-                ],
-                "cooldown_burn_float": [
-                  17,
-                  16.5,
-                  16,
-                  15.5,
-                  15
-                ],
-                "cost_burn": [
-                  0
-                ],
-                "tooltip": "蒙多医生为一台除颤器充电，每秒对附近的敌人们造成<magicDamage>?魔法伤害</magicDamage>，至多持续?秒。此外，他会将在最初?秒里受到的?伤害值和在剩余时长里受到的?%伤害值储存为灰色生命值，并能<recast>再次施放</recast>这个技能。<br /><br /><recast>再次施放：</recast>引爆除颤器，对附近的敌人们造成<magicDamage>?魔法伤害</magicDamage>。如果这个效果命中了至少一名敌方英雄，那么蒙多医生会回复<healing>?%的灰色生命值</healing>，否则蒙多医生会转而回复<healing>?%的灰色生命值</healing>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/DrMundoW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0036/ability_0036_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "大力行医",
-                "description": "被动 - 蒙多医生获得额外攻击力，数额会基于他的最大生命值而提升。<br><br>主动 - 蒙多医生用他的“医用”手提包猛砸一个敌人，造成基于他已损失生命值的额外伤害。如果这个敌人被击杀，那么还会被拍飞，对途经的所有敌人造成伤害。",
-                "max_rank": 5,
-                "range_burn": [
-                  0
-                ],
-                "cooldown_burn": [
-                  9,
-                  8,
-                  7,
-                  6,
-                  6
-                ],
-                "cooldown_burn_float": [
-                  9,
-                  8.25,
-                  7.5,
-                  6.75,
-                  6
-                ],
-                "cost_burn": [
-                  0
-                ],
-                "tooltip": "<spellPassive>被动：</spellPassive>蒙多医生获得<physicalDamage>?攻击力</physicalDamage>。<br /><br /><spellActive>主动：</spellActive>蒙多医生粗暴地挥舞他的“医用”手提包，使他的下次攻击造成额外的<physicalDamage>?物理伤害</physicalDamage>，基于他的已损失生命值至多提升至?。如果击杀了目标敌人，蒙多还会将其拍飞，对其途经的所有敌人造成<physicalDamage>?物理伤害</physicalDamage>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/DrMundoE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0036/ability_0036_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "极限剂量",
-                "description": "蒙多医生给自己注入化学药剂，立刻治疗他的一部分已损失生命值。随后他会获得移动速度并在一段长周期内持续回复自身一部分最大生命值。",
-                "max_rank": 3,
-                "range_burn": [
-                  20
-                ],
-                "cooldown_burn": [
-                  120
-                ],
-                "cooldown_burn_float": [
-                  120
-                ],
-                "cost_burn": [
-                  0
-                ],
-                "tooltip": "蒙多将化学药剂注入体内，获得<healing>相当于他?%已损失生命值的最大生命值</healing>、<speed>?%移动速度</speed>、并在?秒里持续回复共<healing>?%最大生命值</healing>。<br /><br />在3级时，附近的每个敌方英雄都会使这两种治疗效果提升额外的?%。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/DrMundoR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0036/ability_0036_R1.webm"
-              }
-            ],
-            "skins": [
-              {
-                "id": 36000,
-                "champion_id": 36,
-                "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/DrMundo_0.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "IP",
-                    "cost": 450
-                  },
-                  {
-                    "currency": "RP",
-                    "cost": 260
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 36002,
-                "champion_id": 36,
-                "name": "健美教练 蒙多",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/DrMundo_2.jpg",
-                "skin_video_url": "https://youtu.be/X_kzOq7xVNo",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 36010,
-                "champion_id": 36,
-                "name": "冰封王子 蒙多",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/DrMundo_10.jpg",
-                "skin_video_url": "https://youtu.be/-CXC2q9RYL0",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 36005,
-                "champion_id": 36,
-                "name": "嗜血行刑 蒙多",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/DrMundo_5.jpg",
-                "skin_video_url": "https://youtu.be/MRByX_ZvDco",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 36021,
-                "champion_id": 36,
-                "name": "妖怪艺术家 蒙多医生",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/DrMundo_21.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2023-09-13T11:00:00+09:00"
-              },
-              {
-                "id": 36003,
-                "champion_id": 36,
-                "name": "律政大亨 蒙多",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/DrMundo_3.jpg",
-                "skin_video_url": "https://youtu.be/d2UZaolKxNw",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1820
-                  }
-                ],
-                "sales": null,
-                "release_date": "2010-07-12T08:00:00+09:00"
-              },
-              {
-                "id": 36006,
-                "champion_id": 36,
-                "name": "战争血统 蒙多",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/DrMundo_6.jpg",
-                "skin_video_url": "https://youtu.be/kK1w60sSwlo",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2012-07-29T06:00:00+09:00"
-              },
-              {
-                "id": 36001,
-                "champion_id": 36,
-                "name": "战栗之毒 蒙多",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/DrMundo_1.jpg",
-                "skin_video_url": "https://youtu.be/ZOjAIgnq0IE",
-                "prices": null,
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 36007,
-                "champion_id": 36,
-                "name": "暗杀星 蒙多",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/DrMundo_7.jpg",
-                "skin_video_url": "https://youtu.be/qBEP-JxqCws",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 750
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 36008,
-                "champion_id": 36,
-                "name": "泳池派对 蒙多",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/DrMundo_8.jpg",
-                "skin_video_url": "https://youtu.be/KHZ0mIHs0O4",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2015-06-24T23:00:00+09:00"
-              },
-              {
-                "id": 36009,
-                "champion_id": 36,
-                "name": "硬汉 蒙多",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/DrMundo_9.jpg",
-                "skin_video_url": "https://youtu.be/_2knbqYQiP0",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2016-06-02T13:00:00+09:00"
-              },
-              {
-                "id": 36004,
-                "champion_id": 36,
-                "name": "蒙多蒙多",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/DrMundo_4.jpg",
-                "skin_video_url": "https://youtu.be/4hz_8_jlKvg",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2024-10-23T08:59:00+09:00"
-              }
-            ]
-          },
-          "win_rate": 45.1
         }
       ],
       [
@@ -1805,8 +1805,8 @@
         },
         {
           "champion_id": 799,
-          "play": 142,
-          "win": 82,
+          "play": 139,
+          "win": 80,
           "meta": {
             "id": 799,
             "key": "Ambessa",
@@ -1972,7 +1972,7 @@
               }
             ]
           },
-          "win_rate": 57.75
+          "win_rate": 57.55
         },
         {
           "champion_id": 77,
@@ -2194,8 +2194,8 @@
         },
         {
           "champion_id": 76,
-          "play": 421,
-          "win": 239,
+          "play": 418,
+          "win": 237,
           "meta": {
             "id": 76,
             "key": "Nidalee",
@@ -2558,12 +2558,12 @@
               }
             ]
           },
-          "win_rate": 56.77
+          "win_rate": 56.7
         },
         {
           "champion_id": 30,
-          "play": 265,
-          "win": 146,
+          "play": 260,
+          "win": 145,
           "meta": {
             "id": 30,
             "key": "Karthus",
@@ -2828,15 +2828,15 @@
               }
             ]
           },
-          "win_rate": 55.09
+          "win_rate": 55.77
         }
       ]
     ],
     "counters": [
       {
         "champion_id": 104,
-        "play": 1534,
-        "win": 758,
+        "play": 1513,
+        "win": 746,
         "meta": {
           "id": 104,
           "key": "Graves",
@@ -3174,8 +3174,8 @@
       },
       {
         "champion_id": 64,
-        "play": 1412,
-        "win": 773,
+        "play": 1385,
+        "win": 755,
         "meta": {
           "id": 64,
           "key": "LeeSin",
@@ -3568,8 +3568,8 @@
       },
       {
         "champion_id": 234,
-        "play": 1324,
-        "win": 706,
+        "play": 1315,
+        "win": 702,
         "meta": {
           "id": 234,
           "key": "Viego",
@@ -3805,8 +3805,8 @@
       },
       {
         "champion_id": 121,
-        "play": 624,
-        "win": 340,
+        "play": 620,
+        "win": 338,
         "meta": {
           "id": 121,
           "key": "Khazix",
@@ -4063,8 +4063,8 @@
       },
       {
         "champion_id": 56,
-        "play": 540,
-        "win": 238,
+        "play": 535,
+        "win": 237,
         "meta": {
           "id": 56,
           "key": "Nocturne",
@@ -4364,8 +4364,8 @@
       },
       {
         "champion_id": 254,
-        "play": 534,
-        "win": 275,
+        "play": 529,
+        "win": 272,
         "meta": {
           "id": 254,
           "key": "Vi",
@@ -4693,8 +4693,8 @@
       },
       {
         "champion_id": 59,
-        "play": 508,
-        "win": 247,
+        "play": 495,
+        "win": 241,
         "meta": {
           "id": 59,
           "key": "JarvanIV",
@@ -5029,8 +5029,8 @@
       },
       {
         "champion_id": 62,
-        "play": 449,
-        "win": 222,
+        "play": 444,
+        "win": 219,
         "meta": {
           "id": 62,
           "key": "MonkeyKing",
@@ -5316,8 +5316,8 @@
       },
       {
         "champion_id": 76,
-        "play": 421,
-        "win": 239,
+        "play": 418,
+        "win": 237,
         "meta": {
           "id": 76,
           "key": "Nidalee",
@@ -5683,8 +5683,8 @@
       },
       {
         "champion_id": 141,
-        "play": 421,
-        "win": 203,
+        "play": 413,
+        "win": 200,
         "meta": {
           "id": 141,
           "key": "Kayn",
@@ -5938,8 +5938,8 @@
       },
       {
         "champion_id": 131,
-        "play": 397,
-        "win": 194,
+        "play": 392,
+        "win": 193,
         "meta": {
           "id": 131,
           "key": "Diana",
@@ -6309,8 +6309,8 @@
       },
       {
         "champion_id": 245,
-        "play": 349,
-        "win": 168,
+        "play": 343,
+        "win": 166,
         "meta": {
           "id": 245,
           "key": "Ekko",
@@ -6631,8 +6631,8 @@
       },
       {
         "champion_id": 72,
-        "play": 330,
-        "win": 167,
+        "play": 326,
+        "win": 164,
         "meta": {
           "id": 72,
           "key": "Skarner",
@@ -6877,8 +6877,8 @@
       },
       {
         "champion_id": 107,
-        "play": 323,
-        "win": 174,
+        "play": 320,
+        "win": 172,
         "meta": {
           "id": 107,
           "key": "Rengar",
@@ -7130,8 +7130,8 @@
       },
       {
         "champion_id": 203,
-        "play": 321,
-        "win": 170,
+        "play": 316,
+        "win": 168,
         "meta": {
           "id": 203,
           "key": "Kindred",
@@ -7392,8 +7392,8 @@
       },
       {
         "champion_id": 120,
-        "play": 313,
-        "win": 159,
+        "play": 311,
+        "win": 158,
         "meta": {
           "id": 120,
           "key": "Hecarim",
@@ -7694,8 +7694,8 @@
       },
       {
         "champion_id": 5,
-        "play": 307,
-        "win": 160,
+        "play": 302,
+        "win": 156,
         "meta": {
           "id": 5,
           "key": "XinZhao",
@@ -7979,352 +7979,9 @@
         }
       },
       {
-        "champion_id": 35,
-        "play": 303,
-        "win": 154,
-        "meta": {
-          "id": 35,
-          "key": "Shaco",
-          "name": "恶魔小丑",
-          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Shaco.png",
-          "evolve": [],
-          "title": "萨科",
-          "partype": "法力",
-          "passive": {
-            "name": "背刺",
-            "description": "在目标的背后时，萨科的普攻和【E双面毒刃】会造成额外伤害。",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Jester_CarefulStrikes.png",
-            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0035/ability_0035_P1.webm"
-          },
-          "spells": [
-            {
-              "key": "Q",
-              "name": "欺诈魔术",
-              "description": "萨科进入隐形状态并传送到目标位置。<br><br>他在隐形状态下的第一次普攻将获得增强，造成额外伤害并在目标背后攻击时必定会暴击。",
-              "max_rank": 5,
-              "range_burn": [
-                400
-              ],
-              "cooldown_burn": [
-                12,
-                11,
-                11,
-                10,
-                10
-              ],
-              "cooldown_burn_float": [
-                12,
-                11.5,
-                11,
-                10.5,
-                10
-              ],
-              "cost_burn": [
-                40
-              ],
-              "tooltip": "萨科传送并变为<keywordStealth>隐形</keywordStealth>，持续?秒。使用<spellName>惊吓魔盒</spellName>或<spellName>幻像</spellName>不会打破<keywordStealth>隐形</keywordStealth>。<br /><br />萨科在<keywordStealth>隐形</keywordStealth>时的下次攻击造成额外的<physicalDamage>?物理伤害</physicalDamage>。如果从背后进行打击，那么这个攻击会暴击，造成?伤害。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/Deceive.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0035/ability_0035_Q1.webm"
-            },
-            {
-              "key": "W",
-              "name": "惊吓魔盒",
-              "description": "萨科丢出一个隐形且会动的惊吓魔盒。在触发时，盒子会恐惧附近的敌人，然后对其进行攻击。",
-              "max_rank": 5,
-              "range_burn": [
-                500
-              ],
-              "cooldown_burn": [
-                15
-              ],
-              "cooldown_burn_float": [
-                15
-              ],
-              "cost_burn": [
-                70,
-                65,
-                60,
-                55,
-                50
-              ],
-              "tooltip": "萨科生成一个会在2秒后潜行的陷阱，持续?秒。它会在有敌人靠近或显形时触发，<status>恐惧</status>附近的敌方英雄们?秒，或小兵和野怪?秒。<br /><br />一旦激活，陷阱就会在5秒里持续攻击所有附近的敌人们，造成<magicDamage>?魔法伤害</magicDamage>，如果只攻击一个敌人则为<magicDamage>?伤害</magicDamage>。<br /><br />惊吓魔盒的攻击对野怪造成额外的<magicDamage>?</magicDamage>伤害。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/JackInTheBox.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0035/ability_0035_W1.webm"
-            },
-            {
-              "key": "E",
-              "name": "双面毒刃",
-              "description": "萨科的毒刃在命中时会被动地使目标中毒，减少目标的移动速度。他可以将毒刃扔向目标，造成伤害和中毒效果。扔出的毒刃会对生命值低于30%的目标造成额外伤害。",
-              "max_rank": 5,
-              "range_burn": [
-                625
-              ],
-              "cooldown_burn": [
-                8
-              ],
-              "cooldown_burn_float": [
-                8
-              ],
-              "cost_burn": [
-                75
-              ],
-              "tooltip": "<spellPassive>被动：</spellPassive>当这个技能未进入冷却阶段时，萨科的攻击会对目标造成持续?秒的?%<status>减速</status>。<br /><br /><spellActive>主动：</spellActive>萨科扔出一把毒刃，造成<magicDamage>?魔法伤害</magicDamage>和持续?秒的?%<status>减速</status>。如果目标低于?%生命值，毒刃会转而造成<magicDamage>?伤害</magicDamage>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TwoShivPoison.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0035/ability_0035_E1.webm"
-            },
-            {
-              "key": "R",
-              "name": "幻像",
-              "description": "萨科在身边制造一个自己的幻像，幻像能够攻击周围的敌人（对防御塔造成较少伤害）。在死亡时爆炸，它会爆炸，生成三个小型惊吓魔盒并对附近的敌人造成伤害。",
-              "max_rank": 3,
-              "range_burn": [
-                200
-              ],
-              "cooldown_burn": [
-                100,
-                90,
-                80
-              ],
-              "cooldown_burn_float": [
-                100,
-                90,
-                80
-              ],
-              "cost_burn": [
-                100
-              ],
-              "tooltip": "萨科暂时消失，然后重新出现并制造一个持续?秒的幻像，幻像会在死亡时爆炸，对附近的敌人造成<magicDamage>?魔法伤害</magicDamage>并生成三个立即触发的小型<spellName>惊吓魔盒</spellName>。幻像造成萨科?%的伤害并承受?%额外伤害。<br /><br />小型<spellName>惊吓魔盒</spellName>造成<magicDamage>?魔法伤害</magicDamage>，如果只攻击一个敌人则为<magicDamage>?魔法伤害</magicDamage>，并让敌人<status>恐惧</status>?秒。<br />?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/HallucinateFull.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0035/ability_0035_R1.webm"
-            }
-          ],
-          "skins": [
-            {
-              "id": 35000,
-              "champion_id": 35,
-              "name": "default",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_0.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "IP",
-                  "cost": 3150
-                },
-                {
-                  "currency": "RP",
-                  "cost": 790
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 35007,
-              "champion_id": 35,
-              "name": "万能小丑 萨科",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_7.jpg",
-              "skin_video_url": "https://youtu.be/mV2Wn7UZpz4",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 750
-                }
-              ],
-              "sales": null,
-              "release_date": "2015-05-25T10:00:00+09:00"
-            },
-            {
-              "id": 35033,
-              "champion_id": 35,
-              "name": "北极星使者 萨科",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_33.jpg",
-              "skin_video_url": "https://youtu.be/CNoh1TezZ2k",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2022-12-08T04:00:00+09:00"
-            },
-            {
-              "id": 35023,
-              "champion_id": 35,
-              "name": "地下都市 梦魇 萨科",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_23.jpg",
-              "skin_video_url": "https://youtu.be/Qa9SEgMN5BM",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2021-08-26T04:00:00+09:00"
-            },
-            {
-              "id": 35015,
-              "champion_id": 35,
-              "name": "奥术师 萨科",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_15.jpg",
-              "skin_video_url": "https://youtu.be/ESJpd7SZR9U",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2020-07-09T04:00:00+09:00"
-            },
-            {
-              "id": 35004,
-              "champion_id": 35,
-              "name": "小丑工作坊 萨科",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_4.jpg",
-              "skin_video_url": null,
-              "prices": null,
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 35001,
-              "champion_id": 35,
-              "name": "恐怖之源 萨科",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_1.jpg",
-              "skin_video_url": "https://youtu.be/pyIDQqpsIck",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 520
-                }
-              ],
-              "sales": null,
-              "release_date": "2010-07-12T14:00:00+09:00"
-            },
-            {
-              "id": 35043,
-              "champion_id": 35,
-              "name": "斗魂觉醒 萨科",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_43.jpg",
-              "skin_video_url": "https://youtu.be/e4Occe-GdtA",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2023-08-03T11:00:00+09:00"
-            },
-            {
-              "id": 35008,
-              "champion_id": 35,
-              "name": "暗星 萨科",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_8.jpg",
-              "skin_video_url": "https://youtu.be/srxyqJG2ywg",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2019-06-13T01:00:00+09:00"
-            },
-            {
-              "id": 35006,
-              "champion_id": 35,
-              "name": "武动巅峰 萨科",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_6.jpg",
-              "skin_video_url": "https://youtu.be/K_IO79g9c9U",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 975
-                }
-              ],
-              "sales": null,
-              "release_date": "2012-12-16T15:00:00+09:00"
-            },
-            {
-              "id": 35003,
-              "champion_id": 35,
-              "name": "胡桃夹子 萨科",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_3.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 975
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 35044,
-              "champion_id": 35,
-              "name": "至臻 斗魂觉醒 萨科",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_44.jpg",
-              "skin_video_url": "https://youtu.be/e4Occe-GdtA",
-              "prices": null,
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 35002,
-              "champion_id": 35,
-              "name": "贵族血统 萨科",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_2.jpg",
-              "skin_video_url": "https://youtu.be/BoqRE4AX6_w",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 520
-                }
-              ],
-              "sales": null,
-              "release_date": "2010-07-12T15:00:00+09:00"
-            },
-            {
-              "id": 35005,
-              "champion_id": 35,
-              "name": "飞越疯人院 萨科",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_5.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 975
-                }
-              ],
-              "sales": null,
-              "release_date": "2011-10-28T15:00:00+09:00"
-            },
-            {
-              "id": 35054,
-              "champion_id": 35,
-              "name": "魔域梦魇 萨科",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_54.jpg",
-              "skin_video_url": "https://youtu.be/hgA2X-92bLk",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2024-09-25T09:00:00+09:00"
-            }
-          ]
-        }
-      },
-      {
         "champion_id": 11,
-        "play": 301,
-        "win": 149,
+        "play": 296,
+        "win": 147,
         "meta": {
           "id": 11,
           "key": "MasterYi",
@@ -8696,9 +8353,352 @@
         }
       },
       {
-        "champion_id": 19,
+        "champion_id": 35,
         "play": 294,
-        "win": 147,
+        "win": 150,
+        "meta": {
+          "id": 35,
+          "key": "Shaco",
+          "name": "恶魔小丑",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Shaco.png",
+          "evolve": [],
+          "title": "萨科",
+          "partype": "法力",
+          "passive": {
+            "name": "背刺",
+            "description": "在目标的背后时，萨科的普攻和【E双面毒刃】会造成额外伤害。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Jester_CarefulStrikes.png",
+            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0035/ability_0035_P1.webm"
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "欺诈魔术",
+              "description": "萨科进入隐形状态并传送到目标位置。<br><br>他在隐形状态下的第一次普攻将获得增强，造成额外伤害并在目标背后攻击时必定会暴击。",
+              "max_rank": 5,
+              "range_burn": [
+                400
+              ],
+              "cooldown_burn": [
+                12,
+                11,
+                11,
+                10,
+                10
+              ],
+              "cooldown_burn_float": [
+                12,
+                11.5,
+                11,
+                10.5,
+                10
+              ],
+              "cost_burn": [
+                40
+              ],
+              "tooltip": "萨科传送并变为<keywordStealth>隐形</keywordStealth>，持续?秒。使用<spellName>惊吓魔盒</spellName>或<spellName>幻像</spellName>不会打破<keywordStealth>隐形</keywordStealth>。<br /><br />萨科在<keywordStealth>隐形</keywordStealth>时的下次攻击造成额外的<physicalDamage>?物理伤害</physicalDamage>。如果从背后进行打击，那么这个攻击会暴击，造成?伤害。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/Deceive.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0035/ability_0035_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "惊吓魔盒",
+              "description": "萨科丢出一个隐形且会动的惊吓魔盒。在触发时，盒子会恐惧附近的敌人，然后对其进行攻击。",
+              "max_rank": 5,
+              "range_burn": [
+                500
+              ],
+              "cooldown_burn": [
+                15
+              ],
+              "cooldown_burn_float": [
+                15
+              ],
+              "cost_burn": [
+                70,
+                65,
+                60,
+                55,
+                50
+              ],
+              "tooltip": "萨科生成一个会在2秒后潜行的陷阱，持续?秒。它会在有敌人靠近或显形时触发，<status>恐惧</status>附近的敌方英雄们?秒，或小兵和野怪?秒。<br /><br />一旦激活，陷阱就会在5秒里持续攻击所有附近的敌人们，造成<magicDamage>?魔法伤害</magicDamage>，如果只攻击一个敌人则为<magicDamage>?伤害</magicDamage>。<br /><br />惊吓魔盒的攻击对野怪造成额外的<magicDamage>?</magicDamage>伤害。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/JackInTheBox.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0035/ability_0035_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "双面毒刃",
+              "description": "萨科的毒刃在命中时会被动地使目标中毒，减少目标的移动速度。他可以将毒刃扔向目标，造成伤害和中毒效果。扔出的毒刃会对生命值低于30%的目标造成额外伤害。",
+              "max_rank": 5,
+              "range_burn": [
+                625
+              ],
+              "cooldown_burn": [
+                8
+              ],
+              "cooldown_burn_float": [
+                8
+              ],
+              "cost_burn": [
+                75
+              ],
+              "tooltip": "<spellPassive>被动：</spellPassive>当这个技能未进入冷却阶段时，萨科的攻击会对目标造成持续?秒的?%<status>减速</status>。<br /><br /><spellActive>主动：</spellActive>萨科扔出一把毒刃，造成<magicDamage>?魔法伤害</magicDamage>和持续?秒的?%<status>减速</status>。如果目标低于?%生命值，毒刃会转而造成<magicDamage>?伤害</magicDamage>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TwoShivPoison.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0035/ability_0035_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "幻像",
+              "description": "萨科在身边制造一个自己的幻像，幻像能够攻击周围的敌人（对防御塔造成较少伤害）。在死亡时爆炸，它会爆炸，生成三个小型惊吓魔盒并对附近的敌人造成伤害。",
+              "max_rank": 3,
+              "range_burn": [
+                200
+              ],
+              "cooldown_burn": [
+                100,
+                90,
+                80
+              ],
+              "cooldown_burn_float": [
+                100,
+                90,
+                80
+              ],
+              "cost_burn": [
+                100
+              ],
+              "tooltip": "萨科暂时消失，然后重新出现并制造一个持续?秒的幻像，幻像会在死亡时爆炸，对附近的敌人造成<magicDamage>?魔法伤害</magicDamage>并生成三个立即触发的小型<spellName>惊吓魔盒</spellName>。幻像造成萨科?%的伤害并承受?%额外伤害。<br /><br />小型<spellName>惊吓魔盒</spellName>造成<magicDamage>?魔法伤害</magicDamage>，如果只攻击一个敌人则为<magicDamage>?魔法伤害</magicDamage>，并让敌人<status>恐惧</status>?秒。<br />?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/HallucinateFull.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0035/ability_0035_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 35000,
+              "champion_id": 35,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 3150
+                },
+                {
+                  "currency": "RP",
+                  "cost": 790
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 35007,
+              "champion_id": 35,
+              "name": "万能小丑 萨科",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_7.jpg",
+              "skin_video_url": "https://youtu.be/mV2Wn7UZpz4",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 750
+                }
+              ],
+              "sales": null,
+              "release_date": "2015-05-25T10:00:00+09:00"
+            },
+            {
+              "id": 35033,
+              "champion_id": 35,
+              "name": "北极星使者 萨科",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_33.jpg",
+              "skin_video_url": "https://youtu.be/CNoh1TezZ2k",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2022-12-08T04:00:00+09:00"
+            },
+            {
+              "id": 35023,
+              "champion_id": 35,
+              "name": "地下都市 梦魇 萨科",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_23.jpg",
+              "skin_video_url": "https://youtu.be/Qa9SEgMN5BM",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2021-08-26T04:00:00+09:00"
+            },
+            {
+              "id": 35015,
+              "champion_id": 35,
+              "name": "奥术师 萨科",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_15.jpg",
+              "skin_video_url": "https://youtu.be/ESJpd7SZR9U",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2020-07-09T04:00:00+09:00"
+            },
+            {
+              "id": 35004,
+              "champion_id": 35,
+              "name": "小丑工作坊 萨科",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_4.jpg",
+              "skin_video_url": null,
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 35001,
+              "champion_id": 35,
+              "name": "恐怖之源 萨科",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_1.jpg",
+              "skin_video_url": "https://youtu.be/pyIDQqpsIck",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 520
+                }
+              ],
+              "sales": null,
+              "release_date": "2010-07-12T14:00:00+09:00"
+            },
+            {
+              "id": 35043,
+              "champion_id": 35,
+              "name": "斗魂觉醒 萨科",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_43.jpg",
+              "skin_video_url": "https://youtu.be/e4Occe-GdtA",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2023-08-03T11:00:00+09:00"
+            },
+            {
+              "id": 35008,
+              "champion_id": 35,
+              "name": "暗星 萨科",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_8.jpg",
+              "skin_video_url": "https://youtu.be/srxyqJG2ywg",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2019-06-13T01:00:00+09:00"
+            },
+            {
+              "id": 35006,
+              "champion_id": 35,
+              "name": "武动巅峰 萨科",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_6.jpg",
+              "skin_video_url": "https://youtu.be/K_IO79g9c9U",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": "2012-12-16T15:00:00+09:00"
+            },
+            {
+              "id": 35003,
+              "champion_id": 35,
+              "name": "胡桃夹子 萨科",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_3.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 35044,
+              "champion_id": 35,
+              "name": "至臻 斗魂觉醒 萨科",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_44.jpg",
+              "skin_video_url": "https://youtu.be/e4Occe-GdtA",
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 35002,
+              "champion_id": 35,
+              "name": "贵族血统 萨科",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_2.jpg",
+              "skin_video_url": "https://youtu.be/BoqRE4AX6_w",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 520
+                }
+              ],
+              "sales": null,
+              "release_date": "2010-07-12T15:00:00+09:00"
+            },
+            {
+              "id": 35005,
+              "champion_id": 35,
+              "name": "飞越疯人院 萨科",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_5.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": "2011-10-28T15:00:00+09:00"
+            },
+            {
+              "id": 35054,
+              "champion_id": 35,
+              "name": "魔域梦魇 萨科",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shaco_54.jpg",
+              "skin_video_url": "https://youtu.be/hgA2X-92bLk",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2024-09-25T09:00:00+09:00"
+            }
+          ]
+        }
+      },
+      {
+        "champion_id": 19,
+        "play": 291,
+        "win": 145,
         "meta": {
           "id": 19,
           "key": "Warwick",
@@ -9041,8 +9041,8 @@
       },
       {
         "champion_id": 154,
-        "play": 284,
-        "win": 155,
+        "play": 282,
+        "win": 153,
         "meta": {
           "id": 154,
           "key": "Zac",
@@ -9278,8 +9278,8 @@
       },
       {
         "champion_id": 30,
-        "play": 265,
-        "win": 146,
+        "play": 260,
+        "win": 145,
         "meta": {
           "id": 30,
           "key": "Karthus",
@@ -9547,8 +9547,8 @@
       },
       {
         "champion_id": 20,
-        "play": 248,
-        "win": 127,
+        "play": 244,
+        "win": 126,
         "meta": {
           "id": 20,
           "key": "Nunu",
@@ -9877,8 +9877,8 @@
       },
       {
         "champion_id": 91,
-        "play": 216,
-        "win": 107,
+        "play": 215,
+        "win": 106,
         "meta": {
           "id": 91,
           "key": "Talon",
@@ -10187,9 +10187,240 @@
         }
       },
       {
-        "champion_id": 79,
-        "play": 195,
+        "champion_id": 163,
+        "play": 192,
         "win": 93,
+        "meta": {
+          "id": 163,
+          "key": "Taliyah",
+          "name": "岩雀",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Taliyah.png",
+          "evolve": [],
+          "title": "塔莉垭",
+          "partype": "法力",
+          "passive": {
+            "name": "浮石冲",
+            "description": "塔莉垭在墙体附近时会获得移动速度。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Taliyah_Passive.png",
+            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0163/ability_0163_P1.webm"
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "石穿",
+              "description": "塔莉垭朝目标方向扔出一串岩石，同时自身可自由移动。这个技能会在她脚下生成【掘石场】。如果塔莉垭在【掘石场】上使用【Q石穿】，她将消耗掉【掘石场】来投掷一颗更强大的岩石来减速敌人。",
+              "max_rank": 5,
+              "range_burn": [
+                1000
+              ],
+              "cooldown_burn": [
+                7,
+                6,
+                5,
+                4,
+                3
+              ],
+              "cooldown_burn_float": [
+                7,
+                6,
+                5,
+                4,
+                3
+              ],
+              "cost_burn": [
+                65,
+                70,
+                75,
+                80,
+                85
+              ],
+              "tooltip": "塔莉垭挥出5块石头，每块会在命中的第一个敌人的附近区域内造成<magicDamage>?魔法伤害</magicDamage>并在该区域生成【掘石场】。对相同敌人的后续命中造成的伤害降低?%。<br /><br />在掘石场上施放时会消耗20法力并且冷却时间缩短?%，消耗掉【掘石场】，并挥出一块巨石来对命中的敌人们造成持续?秒的?%<status>减速</status>，对首要目标造成<magicDamage>?魔法伤害</magicDamage>。被巨石命中的野怪会被<status>晕眩</status>?秒。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TaliyahQ.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0163/ability_0163_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "岩突",
+              "description": "塔莉垭在目标区域引发岩突，并将区域内的敌人们扔向她所选的方向。",
+              "max_rank": 5,
+              "range_burn": [
+                900
+              ],
+              "cooldown_burn": [
+                14,
+                12,
+                11,
+                9,
+                8
+              ],
+              "cooldown_burn_float": [
+                14,
+                12.5,
+                11,
+                9.5,
+                8
+              ],
+              "cost_burn": [
+                40,
+                30,
+                20,
+                10,
+                0
+              ],
+              "tooltip": "塔莉垭动摇大地，将一个区域内的敌人们<status>强制位移</status>至一个所选方向。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TaliyahWVC.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0163/ability_0163_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "撒石阵",
+              "description": "塔莉垭创造一个可减速的雷区。如果敌人在使用冲刺技能途径雷区或是被强制位移效果途经雷区，石雷就会爆炸并晕眩该敌人。",
+              "max_rank": 5,
+              "range_burn": [
+                950
+              ],
+              "cooldown_burn": [
+                14
+              ],
+              "cooldown_burn_float": [
+                14
+              ],
+              "cost_burn": [
+                90,
+                95,
+                100,
+                105,
+                110
+              ],
+              "tooltip": "塔莉垭在一个区域内布下碎石阵，对命中的敌人造成<magicDamage>?魔法伤害</magicDamage>和?%<status>减速</status>。碎石会在敌人冲刺或被<status>强制位移</status>途经它们时爆炸，造成剩余位移时长+?秒<status>晕眩</status>和<magicDamage>?魔法伤害</magicDamage>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TaliyahE.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0163/ability_0163_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "墙幔",
+              "description": "塔莉垭创造出一个非常长的石墙，然后在石墙上冲浪。",
+              "max_rank": 3,
+              "range_burn": [
+                2500,
+                4500,
+                6500
+              ],
+              "cooldown_burn": [
+                180,
+                150,
+                120
+              ],
+              "cooldown_burn_float": [
+                180,
+                150,
+                120
+              ],
+              "cost_burn": [
+                100
+              ],
+              "tooltip": "塔莉垭生成一道巨型土墙，持续4秒。如果她立刻<recast>再次施放</recast>，那么她将踏上土墙随其一路骑行。移动或受到定身都将结束这段骑行。<br /><br />如果塔莉垭在?秒内曾受到过来自英雄或建筑物的伤害，那么她将不能施放这个技能。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TaliyahR.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0163/ability_0163_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 163000,
+              "champion_id": 163,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taliyah_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 4800
+                },
+                {
+                  "currency": "RP",
+                  "cost": 880
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 163002,
+              "champion_id": 163,
+              "name": "SSG 塔莉垭",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taliyah_2.jpg",
+              "skin_video_url": "https://youtu.be/hymvG7UPkRU",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 163001,
+              "champion_id": 163,
+              "name": "弗雷尔卓德 塔莉垭",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taliyah_1.jpg",
+              "skin_video_url": "https://youtu.be/XbujC7cWlok",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2016-05-18T10:00:00+09:00"
+            },
+            {
+              "id": 163011,
+              "champion_id": 163,
+              "name": "星之守护者 塔莉垭",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taliyah_11.jpg",
+              "skin_video_url": "https://youtu.be/4FZzoFICJ0g",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2022-07-28T04:00:00+09:00"
+            },
+            {
+              "id": 163021,
+              "champion_id": 163,
+              "name": "水晶圣骑 塔莉垭",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taliyah_21.jpg",
+              "skin_video_url": null,
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 163003,
+              "champion_id": 163,
+              "name": "泳池派对 塔莉垭",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taliyah_3.jpg",
+              "skin_video_url": "https://youtu.be/lzfLmiq-OUA",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2020-07-02T04:00:00+09:00"
+            }
+          ]
+        }
+      },
+      {
+        "champion_id": 79,
+        "play": 191,
+        "win": 91,
         "meta": {
           "id": 79,
           "key": "Gragas",
@@ -10529,240 +10760,9 @@
         }
       },
       {
-        "champion_id": 163,
-        "play": 192,
-        "win": 93,
-        "meta": {
-          "id": 163,
-          "key": "Taliyah",
-          "name": "岩雀",
-          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Taliyah.png",
-          "evolve": [],
-          "title": "塔莉垭",
-          "partype": "法力",
-          "passive": {
-            "name": "浮石冲",
-            "description": "塔莉垭在墙体附近时会获得移动速度。",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Taliyah_Passive.png",
-            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0163/ability_0163_P1.webm"
-          },
-          "spells": [
-            {
-              "key": "Q",
-              "name": "石穿",
-              "description": "塔莉垭朝目标方向扔出一串岩石，同时自身可自由移动。这个技能会在她脚下生成【掘石场】。如果塔莉垭在【掘石场】上使用【Q石穿】，她将消耗掉【掘石场】来投掷一颗更强大的岩石来减速敌人。",
-              "max_rank": 5,
-              "range_burn": [
-                1000
-              ],
-              "cooldown_burn": [
-                7,
-                6,
-                5,
-                4,
-                3
-              ],
-              "cooldown_burn_float": [
-                7,
-                6,
-                5,
-                4,
-                3
-              ],
-              "cost_burn": [
-                65,
-                70,
-                75,
-                80,
-                85
-              ],
-              "tooltip": "塔莉垭挥出5块石头，每块会在命中的第一个敌人的附近区域内造成<magicDamage>?魔法伤害</magicDamage>并在该区域生成【掘石场】。对相同敌人的后续命中造成的伤害降低?%。<br /><br />在掘石场上施放时会消耗20法力并且冷却时间缩短?%，消耗掉【掘石场】，并挥出一块巨石来对命中的敌人们造成持续?秒的?%<status>减速</status>，对首要目标造成<magicDamage>?魔法伤害</magicDamage>。被巨石命中的野怪会被<status>晕眩</status>?秒。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TaliyahQ.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0163/ability_0163_Q1.webm"
-            },
-            {
-              "key": "W",
-              "name": "岩突",
-              "description": "塔莉垭在目标区域引发岩突，并将区域内的敌人们扔向她所选的方向。",
-              "max_rank": 5,
-              "range_burn": [
-                900
-              ],
-              "cooldown_burn": [
-                14,
-                12,
-                11,
-                9,
-                8
-              ],
-              "cooldown_burn_float": [
-                14,
-                12.5,
-                11,
-                9.5,
-                8
-              ],
-              "cost_burn": [
-                40,
-                30,
-                20,
-                10,
-                0
-              ],
-              "tooltip": "塔莉垭动摇大地，将一个区域内的敌人们<status>强制位移</status>至一个所选方向。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TaliyahWVC.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0163/ability_0163_W1.webm"
-            },
-            {
-              "key": "E",
-              "name": "撒石阵",
-              "description": "塔莉垭创造一个可减速的雷区。如果敌人在使用冲刺技能途径雷区或是被强制位移效果途经雷区，石雷就会爆炸并晕眩该敌人。",
-              "max_rank": 5,
-              "range_burn": [
-                950
-              ],
-              "cooldown_burn": [
-                14
-              ],
-              "cooldown_burn_float": [
-                14
-              ],
-              "cost_burn": [
-                90,
-                95,
-                100,
-                105,
-                110
-              ],
-              "tooltip": "塔莉垭在一个区域内布下碎石阵，对命中的敌人造成<magicDamage>?魔法伤害</magicDamage>和?%<status>减速</status>。碎石会在敌人冲刺或被<status>强制位移</status>途经它们时爆炸，造成剩余位移时长+?秒<status>晕眩</status>和<magicDamage>?魔法伤害</magicDamage>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TaliyahE.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0163/ability_0163_E1.webm"
-            },
-            {
-              "key": "R",
-              "name": "墙幔",
-              "description": "塔莉垭创造出一个非常长的石墙，然后在石墙上冲浪。",
-              "max_rank": 3,
-              "range_burn": [
-                2500,
-                4500,
-                6500
-              ],
-              "cooldown_burn": [
-                180,
-                150,
-                120
-              ],
-              "cooldown_burn_float": [
-                180,
-                150,
-                120
-              ],
-              "cost_burn": [
-                100
-              ],
-              "tooltip": "塔莉垭生成一道巨型土墙，持续4秒。如果她立刻<recast>再次施放</recast>，那么她将踏上土墙随其一路骑行。移动或受到定身都将结束这段骑行。<br /><br />如果塔莉垭在?秒内曾受到过来自英雄或建筑物的伤害，那么她将不能施放这个技能。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/TaliyahR.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0163/ability_0163_R1.webm"
-            }
-          ],
-          "skins": [
-            {
-              "id": 163000,
-              "champion_id": 163,
-              "name": "default",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taliyah_0.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "IP",
-                  "cost": 4800
-                },
-                {
-                  "currency": "RP",
-                  "cost": 880
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 163002,
-              "champion_id": 163,
-              "name": "SSG 塔莉垭",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taliyah_2.jpg",
-              "skin_video_url": "https://youtu.be/hymvG7UPkRU",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 163001,
-              "champion_id": 163,
-              "name": "弗雷尔卓德 塔莉垭",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taliyah_1.jpg",
-              "skin_video_url": "https://youtu.be/XbujC7cWlok",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2016-05-18T10:00:00+09:00"
-            },
-            {
-              "id": 163011,
-              "champion_id": 163,
-              "name": "星之守护者 塔莉垭",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taliyah_11.jpg",
-              "skin_video_url": "https://youtu.be/4FZzoFICJ0g",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2022-07-28T04:00:00+09:00"
-            },
-            {
-              "id": 163021,
-              "champion_id": 163,
-              "name": "水晶圣骑 塔莉垭",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taliyah_21.jpg",
-              "skin_video_url": null,
-              "prices": null,
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 163003,
-              "champion_id": 163,
-              "name": "泳池派对 塔莉垭",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Taliyah_3.jpg",
-              "skin_video_url": "https://youtu.be/lzfLmiq-OUA",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2020-07-02T04:00:00+09:00"
-            }
-          ]
-        }
-      },
-      {
         "champion_id": 9,
-        "play": 191,
-        "win": 97,
+        "play": 188,
+        "win": 95,
         "meta": {
           "id": 9,
           "key": "Fiddlesticks",
@@ -11604,8 +11604,8 @@
       },
       {
         "champion_id": 200,
-        "play": 177,
-        "win": 97,
+        "play": 172,
+        "win": 94,
         "meta": {
           "id": 200,
           "key": "Belveth",
@@ -11792,8 +11792,8 @@
       },
       {
         "champion_id": 876,
-        "play": 175,
-        "win": 88,
+        "play": 170,
+        "win": 85,
         "meta": {
           "id": 876,
           "key": "Lillia",
@@ -12006,9 +12006,186 @@
         }
       },
       {
+        "champion_id": 233,
+        "play": 161,
+        "win": 71,
+        "meta": {
+          "id": 233,
+          "key": "Briar",
+          "name": "狂厄蔷薇",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Briar.png",
+          "evolve": [],
+          "title": "贝蕾亚",
+          "partype": "怒气",
+          "passive": {
+            "name": "猩红诅咒",
+            "description": "贝蕾亚的攻击与技能会造成可叠加的流血效果，同时基于这个效果的伤害治疗自身。她永远处于饥饿状态，会根据自己的已损失生命值获得更高的治疗，但缺乏自带的生命回复。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/BriarP.png",
+            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_P1.webm"
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "冲头",
+              "description": "贝蕾亚跃向一个单位并用她的（痛苦之）脚镣命中敌人们，将他们晕眩并削减他们的护甲。",
+              "max_rank": 5,
+              "range_burn": [
+                475
+              ],
+              "cooldown_burn": [
+                13,
+                12,
+                11,
+                10,
+                9
+              ],
+              "cooldown_burn_float": [
+                13,
+                12,
+                11,
+                10,
+                9
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "贝蕾亚跃向一个单位，将其<status>晕眩</status>?秒，造成<magicDamage>?魔法伤害</magicDamage>和持续?秒的?%<scaleArmor>护甲削减</scaleArmor>与<scaleMR>魔抗削减</scaleMR>。<br /><br /><rules>如果贝蕾亚在<keywordMajor>血莽</keywordMajor>期间对一个小兵或野怪施放这个技能，那么她会停止将英雄作为优先目标。</rules>?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BriarQ.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "血莽 / 噬击",
+              "description": "贝蕾亚向前跳跃并击碎她的囚枷，进入一种【血莽】状态来使她无休止地追击相距最近的那个敌人（优先以英雄为目标）。在【血莽】状态下，她的攻击速度和移动速度获得提升，并且她的攻击会在她目标四周的一个区域内造成伤害。<br><br>贝蕾亚可以在【血莽】状态下再次激活这个技能，来让她的下一次攻击噬咬她的目标，造成基于目标已损失生命值的额外伤害，并且基于她造成的伤害来为她提供治疗效果。",
+              "max_rank": 5,
+              "range_burn": [
+                350
+              ],
+              "cooldown_burn": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "cooldown_burn_float": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "贝蕾亚跳跃并进入一种<keywordMajor>血莽</keywordMajor>状态，自我嘲讽至相距最近的那个敌人，持续?秒，优先以英雄为目标。在<keywordMajor>血莽</keywordMajor>状态下，她获得<attackSpeed>?%攻击速度</attackSpeed>和<speed>?%移动速度</speed>，并且她的攻击会对目标四周的敌人们造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br />贝蕾亚可以<recast>再次施放</recast>这个技能来强化她的下一次攻击。这次攻击造成<physicalDamage>? + ?%已损失生命值的物理伤害</physicalDamage>并<healing>为贝蕾亚提供?+?%已造成伤害值的治疗效果</healing>。<br />?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BriarW.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "惊吼",
+              "description": "贝蕾亚重新集中她的意志，移除【血莽】并将能量引导为一次强力吼叫，对敌人造成伤害和减速。在蓄力时，她获得伤害减免并回复一部分最大生命值。一次完全蓄力的吼叫会将敌人们击退，对那些与墙体碰撞的敌人造成额外伤害和晕眩。",
+              "max_rank": 5,
+              "range_burn": [
+                400
+              ],
+              "cooldown_burn": [
+                16
+              ],
+              "cooldown_burn_float": [
+                16
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "<charge>开始蓄力</charge>：贝蕾亚移除<keywordMajor>血莽</keywordMajor>并聚集能量，获得?%伤害减免并在1秒里持续获得共<healing>?治疗效果</healing>。<br /><br /><release>释放：</release>贝蕾亚释放一次吼叫，基于蓄力时间造成至多<magicDamage>?魔法伤害</magicDamage>，以及持续?秒的?%<status>减速</status>。在完全蓄力后，吼叫会<status>击退</status>敌人们，对那些与墙体碰撞的敌人造成<magicDamage>?魔法伤害</magicDamage>和?秒<status>晕眩</status>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BriarE.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "毙除",
+              "description": "贝蕾亚踢出她的囚枷中的血石，让被它命中的第一个英雄成为她的猎物。她随后会径直走向该目标，在抵达目标处时恐惧周围的其它敌人们，并进入一个彻底血狂的状态。她将追击她的猎物直至阵亡才罢休，获得【血莽】的助益以及额外的护甲、魔抗、生命偷取和移动速度。",
+              "max_rank": 3,
+              "range_burn": [
+                10000
+              ],
+              "cooldown_burn": [
+                120,
+                100,
+                80
+              ],
+              "cooldown_burn_float": [
+                120,
+                100,
+                80
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "贝蕾亚踢出她的囚枷中的血石并飞到被它命中的第一个英雄的位置，将这个英雄标记为她的猎物。在着陆时，她对附近的一切造成<magicDamage>?魔法伤害</magicDamage>并使那些并非她猎物的敌人们<status>逃跑</status>?秒。她随后会进入一个强化版<keywordMajor>血莽</keywordMajor>状态并将追击她的猎物直至阵亡才罢休。在此期间，她获得?<scaleArmor>护甲</scaleArmor> 和<scaleMR>魔法抗性</scaleMR>、?%生命偷取和额外的<speed>?%移动速度</speed>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BriarR.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 233000,
+              "champion_id": 233,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Briar_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 6300
+                },
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 233001,
+              "champion_id": 233,
+              "name": "妖怪艺术家 贝蕾亚",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Briar_1.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2023-09-13T11:00:00+09:00"
+            },
+            {
+              "id": 233010,
+              "champion_id": 233,
+              "name": "幻灵海魔人 贝蕾亚",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Briar_10.jpg",
+              "skin_video_url": "https://youtu.be/NsrwgvipeHA",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2024-07-31T09:00:00+09:00"
+            }
+          ]
+        }
+      },
+      {
         "champion_id": 28,
-        "play": 163,
-        "win": 83,
+        "play": 160,
+        "win": 81,
         "meta": {
           "id": 28,
           "key": "Evelynn",
@@ -12366,154 +12543,191 @@
         }
       },
       {
-        "champion_id": 233,
-        "play": 163,
-        "win": 72,
+        "champion_id": 421,
+        "play": 158,
+        "win": 71,
         "meta": {
-          "id": 233,
-          "key": "Briar",
-          "name": "狂厄蔷薇",
-          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Briar.png",
+          "id": 421,
+          "key": "RekSai",
+          "name": "虚空遁地兽",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/RekSai.png",
           "evolve": [],
-          "title": "贝蕾亚",
+          "title": "雷克塞",
           "partype": "怒气",
           "passive": {
-            "name": "猩红诅咒",
-            "description": "贝蕾亚的攻击与技能会造成可叠加的流血效果，同时基于这个效果的伤害治疗自身。她永远处于饥饿状态，会根据自己的已损失生命值获得更高的治疗，但缺乏自带的生命回复。",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/BriarP.png",
-            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_P1.webm"
+            "name": "艾克塞之怒",
+            "description": "雷克塞可通过攻击和命中基础技能来生成怒气。她在位于地下时可消耗怒气来回复生命值。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/RekSai_Passive.png",
+            "video_url": null
           },
           "spells": [
             {
               "key": "Q",
-              "name": "冲头",
-              "description": "贝蕾亚跃向一个单位并用她的（痛苦之）脚镣命中敌人们，将他们晕眩并削减他们的护甲。",
+              "name": "女王之怒 / 猎物搜寻",
+              "description": "雷克塞的下3次普攻会对身边的敌人造成额外物理伤害。<br><br>在地底时，雷克塞发射一道充满虚空能量的冲击波，对命中的敌人造成伤害并使其显形。",
               "max_rank": 5,
               "range_burn": [
-                475
+                325
               ],
               "cooldown_burn": [
-                13,
-                12,
-                11,
-                10,
-                9
+                4,
+                3,
+                3,
+                2,
+                2
               ],
               "cooldown_burn_float": [
-                13,
-                12,
-                11,
-                10,
-                9
+                4,
+                3.5,
+                3,
+                2.5,
+                2
               ],
               "cost_burn": [
                 0
               ],
-              "tooltip": "贝蕾亚跃向一个单位，将其<status>晕眩</status>?秒，造成<magicDamage>?魔法伤害</magicDamage>和持续?秒的?%<scaleArmor>护甲削减</scaleArmor>与<scaleMR>魔抗削减</scaleMR>。<br /><br /><rules>如果贝蕾亚在<keywordMajor>血莽</keywordMajor>期间对一个小兵或野怪施放这个技能，那么她会停止将英雄作为优先目标。</rules>?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BriarQ.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_Q1.webm"
+              "tooltip": "<keywordMajor>位于地表：</keywordMajor>雷克塞在?秒内的下3次普攻会获得<attackSpeed>?%攻击速度</attackSpeed>并对附近的敌人造成额外的<physicalDamage>?物理伤害</physicalDamage>。攻击会刷新这个技能的持续时长。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/RekSaiQ.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0421/ability_0421_Q1.webm"
             },
             {
               "key": "W",
-              "name": "血莽 / 噬击",
-              "description": "贝蕾亚向前跳跃并击碎她的囚枷，进入一种【血莽】状态来使她无休止地追击相距最近的那个敌人（优先以英雄为目标）。在【血莽】状态下，她的攻击速度和移动速度获得提升，并且她的攻击会在她目标四周的一个区域内造成伤害。<br><br>贝蕾亚可以在【血莽】状态下再次激活这个技能，来让她的下一次攻击噬咬她的目标，造成基于目标已损失生命值的额外伤害，并且基于她造成的伤害来为她提供治疗效果。",
+              "name": "遁地 / 破土而出",
+              "description": "雷克塞遁入地下，提供新的技能并提升移动速度。她的视野距离会被降低并且无法进行普攻。<br><br>在地底时，雷克塞可以施放破土而出，击飞并伤害身边的敌人。",
               "max_rank": 5,
               "range_burn": [
-                350
+                1650
               ],
               "cooldown_burn": [
-                14,
-                13,
-                12,
-                11,
-                10
+                4
               ],
               "cooldown_burn_float": [
-                14,
-                13,
-                12,
-                11,
-                10
+                4
               ],
               "cost_burn": [
                 0
               ],
-              "tooltip": "贝蕾亚跳跃并进入一种<keywordMajor>血莽</keywordMajor>状态，自我嘲讽至相距最近的那个敌人，持续?秒，优先以英雄为目标。在<keywordMajor>血莽</keywordMajor>状态下，她获得<attackSpeed>?%攻击速度</attackSpeed>和<speed>?%移动速度</speed>，并且她的攻击会对目标四周的敌人们造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br />贝蕾亚可以<recast>再次施放</recast>这个技能来强化她的下一次攻击。这次攻击造成<physicalDamage>? + ?%已损失生命值的物理伤害</physicalDamage>并<healing>为贝蕾亚提供?+?%已造成伤害值的治疗效果</healing>。<br />?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BriarW.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_W1.webm"
+              "tooltip": "<keywordMajor>位于地表：</keywordMajor>雷克塞遁入地下，获得全新的一套技能但不能攻击。她获得<speed>?移动速度</speed>，视野距离被降低?%，并且附近不可见的敌人在移动时会将其位置显形给雷克塞和她的友军。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/RekSaiW.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0421/ability_0421_W1.webm"
             },
             {
               "key": "E",
-              "name": "惊吼",
-              "description": "贝蕾亚重新集中她的意志，移除【血莽】并将能量引导为一次强力吼叫，对敌人造成伤害和减速。在蓄力时，她获得伤害减免并回复一部分最大生命值。一次完全蓄力的吼叫会将敌人们击退，对那些与墙体碰撞的敌人造成额外伤害和晕眩。",
+              "name": "狂野之噬 / 挖掘隧道",
+              "description": "雷克塞噬咬她的目标，可在满怒时造成额外伤害。<br><br>在地底时，雷克塞挖掘出一个可重复使用、长期存在的隧道。敌人可以通过踩在任一入口上来摧毁整条隧道。",
               "max_rank": 5,
               "range_burn": [
-                400
+                250
               ],
               "cooldown_burn": [
-                16
+                10
               ],
               "cooldown_burn_float": [
-                16
+                10
               ],
               "cost_burn": [
                 0
               ],
-              "tooltip": "<charge>开始蓄力</charge>：贝蕾亚移除<keywordMajor>血莽</keywordMajor>并聚集能量，获得?%伤害减免并在1秒里持续获得共<healing>?治疗效果</healing>。<br /><br /><release>释放：</release>贝蕾亚释放一次吼叫，基于蓄力时间造成至多<magicDamage>?魔法伤害</magicDamage>，以及持续?秒的?%<status>减速</status>。在完全蓄力后，吼叫会<status>击退</status>敌人们，对那些与墙体碰撞的敌人造成<magicDamage>?魔法伤害</magicDamage>和?秒<status>晕眩</status>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BriarE.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_E1.webm"
+              "tooltip": "<scaleAD>位于地表：</scaleAD>雷克塞撕咬一个目标，造成<physicalDamage>?物理伤害</physicalDamage>。在满额<keywordMajor>怒气</keywordMajor>时，这次撕咬会造成额外的<physicalDamage>?%最大生命值物理伤害</physicalDamage>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/RekSaiE.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0421/ability_0421_E1.webm"
             },
             {
               "key": "R",
-              "name": "毙除",
-              "description": "贝蕾亚踢出她的囚枷中的血石，让被它命中的第一个英雄成为她的猎物。她随后会径直走向该目标，在抵达目标处时恐惧周围的其它敌人们，并进入一个彻底血狂的状态。她将追击她的猎物直至阵亡才罢休，获得【血莽】的助益以及额外的护甲、魔抗、生命偷取和移动速度。",
+              "name": "虚空猛冲",
+              "description": "雷克塞可通过伤害目标来将其标记。她可以激活这个技能，暂时变成不可被选取状态，并扑向一个被标记的目标，并基于其已损失生命值造成重度伤害。",
               "max_rank": 3,
               "range_burn": [
-                10000
+                1500
               ],
               "cooldown_burn": [
-                120,
                 100,
+                90,
                 80
               ],
               "cooldown_burn_float": [
-                120,
                 100,
+                90,
                 80
               ],
               "cost_burn": [
                 0
               ],
-              "tooltip": "贝蕾亚踢出她的囚枷中的血石并飞到被它命中的第一个英雄的位置，将这个英雄标记为她的猎物。在着陆时，她对附近的一切造成<magicDamage>?魔法伤害</magicDamage>并使那些并非她猎物的敌人们<status>逃跑</status>?秒。她随后会进入一个强化版<keywordMajor>血莽</keywordMajor>状态并将追击她的猎物直至阵亡才罢休。在此期间，她获得?<scaleArmor>护甲</scaleArmor> 和<scaleMR>魔法抗性</scaleMR>、?%生命偷取和额外的<speed>?%移动速度</speed>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/BriarR.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0233/ability_0233_R1.webm"
+              "tooltip": "雷克塞将一个在之前的?秒内被她造成过伤害的敌人选为目标，随后会遁入地下，变得无法被选取。片刻之后，她会不可阻挡地跃向目标，造成<physicalDamage>?加上?%已损失生命值的物理伤害</physicalDamage>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/RekSaiR.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0421/ability_0421_R1.webm"
             }
           ],
           "skins": [
             {
-              "id": 233000,
-              "champion_id": 233,
+              "id": 421000,
+              "champion_id": 421,
               "name": "default",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Briar_0.jpg",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/RekSai_0.jpg",
               "skin_video_url": null,
               "prices": [
                 {
                   "currency": "IP",
-                  "cost": 6300
+                  "cost": 4800
                 },
                 {
                   "currency": "RP",
-                  "cost": 975
+                  "cost": 880
                 }
               ],
               "sales": null,
               "release_date": null
             },
             {
-              "id": 233001,
-              "champion_id": 233,
-              "name": "妖怪艺术家 贝蕾亚",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Briar_1.jpg",
+              "id": 421001,
+              "champion_id": 421,
+              "name": "上古战魂 雷克塞",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/RekSai_1.jpg",
+              "skin_video_url": "https://youtu.be/AHCuRYjlvRg",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2014-12-11T08:00:00+09:00"
+            },
+            {
+              "id": 421017,
+              "champion_id": 421,
+              "name": "永恒之森 雷克塞",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/RekSai_17.jpg",
+              "skin_video_url": "https://youtu.be/2yWlwP8OHsM",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2022-01-06T04:00:00+09:00"
+            },
+            {
+              "id": 421002,
+              "champion_id": 421,
+              "name": "泳池派对 雷克塞",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/RekSai_2.jpg",
+              "skin_video_url": "https://youtu.be/GGOrtjbpFO0",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2015-06-24T23:00:00+09:00"
+            },
+            {
+              "id": 421026,
+              "champion_id": 421,
+              "name": "海魔兽 雷克塞",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/RekSai_26.jpg",
               "skin_video_url": null,
               "prices": [
                 {
@@ -12522,14 +12736,14 @@
                 }
               ],
               "sales": null,
-              "release_date": "2023-09-13T11:00:00+09:00"
+              "release_date": "2024-07-17T09:00:00+09:00"
             },
             {
-              "id": 233010,
-              "champion_id": 233,
-              "name": "幻灵海魔人 贝蕾亚",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Briar_10.jpg",
-              "skin_video_url": "https://youtu.be/NsrwgvipeHA",
+              "id": 421009,
+              "champion_id": 421,
+              "name": "黯晶巨兽 雷克塞",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/RekSai_9.jpg",
+              "skin_video_url": "https://youtu.be/ufvOjGjowy8",
               "prices": [
                 {
                   "currency": "RP",
@@ -12537,15 +12751,15 @@
                 }
               ],
               "sales": null,
-              "release_date": "2024-07-31T09:00:00+09:00"
+              "release_date": "2020-03-05T04:00:00+09:00"
             }
           ]
         }
       },
       {
         "champion_id": 17,
-        "play": 159,
-        "win": 76,
+        "play": 156,
+        "win": 74,
         "meta": {
           "id": 17,
           "key": "Teemo",
@@ -12883,223 +13097,9 @@
         }
       },
       {
-        "champion_id": 421,
-        "play": 158,
-        "win": 71,
-        "meta": {
-          "id": 421,
-          "key": "RekSai",
-          "name": "虚空遁地兽",
-          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/RekSai.png",
-          "evolve": [],
-          "title": "雷克塞",
-          "partype": "怒气",
-          "passive": {
-            "name": "艾克塞之怒",
-            "description": "雷克塞可通过攻击和命中基础技能来生成怒气。她在位于地下时可消耗怒气来回复生命值。",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/RekSai_Passive.png",
-            "video_url": null
-          },
-          "spells": [
-            {
-              "key": "Q",
-              "name": "女王之怒 / 猎物搜寻",
-              "description": "雷克塞的下3次普攻会对身边的敌人造成额外物理伤害。<br><br>在地底时，雷克塞发射一道充满虚空能量的冲击波，对命中的敌人造成伤害并使其显形。",
-              "max_rank": 5,
-              "range_burn": [
-                325
-              ],
-              "cooldown_burn": [
-                4,
-                3,
-                3,
-                2,
-                2
-              ],
-              "cooldown_burn_float": [
-                4,
-                3.5,
-                3,
-                2.5,
-                2
-              ],
-              "cost_burn": [
-                0
-              ],
-              "tooltip": "<keywordMajor>位于地表：</keywordMajor>雷克塞在?秒内的下3次普攻会获得<attackSpeed>?%攻击速度</attackSpeed>并对附近的敌人造成额外的<physicalDamage>?物理伤害</physicalDamage>。攻击会刷新这个技能的持续时长。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/RekSaiQ.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0421/ability_0421_Q1.webm"
-            },
-            {
-              "key": "W",
-              "name": "遁地 / 破土而出",
-              "description": "雷克塞遁入地下，提供新的技能并提升移动速度。她的视野距离会被降低并且无法进行普攻。<br><br>在地底时，雷克塞可以施放破土而出，击飞并伤害身边的敌人。",
-              "max_rank": 5,
-              "range_burn": [
-                1650
-              ],
-              "cooldown_burn": [
-                4
-              ],
-              "cooldown_burn_float": [
-                4
-              ],
-              "cost_burn": [
-                0
-              ],
-              "tooltip": "<keywordMajor>位于地表：</keywordMajor>雷克塞遁入地下，获得全新的一套技能但不能攻击。她获得<speed>?移动速度</speed>，视野距离被降低?%，并且附近不可见的敌人在移动时会将其位置显形给雷克塞和她的友军。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/RekSaiW.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0421/ability_0421_W1.webm"
-            },
-            {
-              "key": "E",
-              "name": "狂野之噬 / 挖掘隧道",
-              "description": "雷克塞噬咬她的目标，可在满怒时造成额外伤害。<br><br>在地底时，雷克塞挖掘出一个可重复使用、长期存在的隧道。敌人可以通过踩在任一入口上来摧毁整条隧道。",
-              "max_rank": 5,
-              "range_burn": [
-                250
-              ],
-              "cooldown_burn": [
-                10
-              ],
-              "cooldown_burn_float": [
-                10
-              ],
-              "cost_burn": [
-                0
-              ],
-              "tooltip": "<scaleAD>位于地表：</scaleAD>雷克塞撕咬一个目标，造成<physicalDamage>?物理伤害</physicalDamage>。在满额<keywordMajor>怒气</keywordMajor>时，这次撕咬会造成额外的<physicalDamage>?%最大生命值物理伤害</physicalDamage>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/RekSaiE.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0421/ability_0421_E1.webm"
-            },
-            {
-              "key": "R",
-              "name": "虚空猛冲",
-              "description": "雷克塞可通过伤害目标来将其标记。她可以激活这个技能，暂时变成不可被选取状态，并扑向一个被标记的目标，并基于其已损失生命值造成重度伤害。",
-              "max_rank": 3,
-              "range_burn": [
-                1500
-              ],
-              "cooldown_burn": [
-                100,
-                90,
-                80
-              ],
-              "cooldown_burn_float": [
-                100,
-                90,
-                80
-              ],
-              "cost_burn": [
-                0
-              ],
-              "tooltip": "雷克塞将一个在之前的?秒内被她造成过伤害的敌人选为目标，随后会遁入地下，变得无法被选取。片刻之后，她会不可阻挡地跃向目标，造成<physicalDamage>?加上?%已损失生命值的物理伤害</physicalDamage>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/RekSaiR.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0421/ability_0421_R1.webm"
-            }
-          ],
-          "skins": [
-            {
-              "id": 421000,
-              "champion_id": 421,
-              "name": "default",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/RekSai_0.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "IP",
-                  "cost": 4800
-                },
-                {
-                  "currency": "RP",
-                  "cost": 880
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 421001,
-              "champion_id": 421,
-              "name": "上古战魂 雷克塞",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/RekSai_1.jpg",
-              "skin_video_url": "https://youtu.be/AHCuRYjlvRg",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2014-12-11T08:00:00+09:00"
-            },
-            {
-              "id": 421017,
-              "champion_id": 421,
-              "name": "永恒之森 雷克塞",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/RekSai_17.jpg",
-              "skin_video_url": "https://youtu.be/2yWlwP8OHsM",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2022-01-06T04:00:00+09:00"
-            },
-            {
-              "id": 421002,
-              "champion_id": 421,
-              "name": "泳池派对 雷克塞",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/RekSai_2.jpg",
-              "skin_video_url": "https://youtu.be/GGOrtjbpFO0",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2015-06-24T23:00:00+09:00"
-            },
-            {
-              "id": 421026,
-              "champion_id": 421,
-              "name": "海魔兽 雷克塞",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/RekSai_26.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2024-07-17T09:00:00+09:00"
-            },
-            {
-              "id": 421009,
-              "champion_id": 421,
-              "name": "黯晶巨兽 雷克塞",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/RekSai_9.jpg",
-              "skin_video_url": "https://youtu.be/ufvOjGjowy8",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2020-03-05T04:00:00+09:00"
-            }
-          ]
-        }
-      },
-      {
         "champion_id": 113,
-        "play": 157,
-        "win": 79,
+        "play": 150,
+        "win": 75,
         "meta": {
           "id": 113,
           "key": "Sejuani",
@@ -13676,179 +13676,9 @@
         }
       },
       {
-        "champion_id": 799,
-        "play": 142,
-        "win": 82,
-        "meta": {
-          "id": 799,
-          "key": "Ambessa",
-          "name": "铁血狼母",
-          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Ambessa.png",
-          "evolve": [],
-          "title": "安蓓萨",
-          "partype": "能量",
-          "passive": {
-            "name": "龙犬诡步",
-            "description": "在施放技能的同时输入攻击或移动指令，会使安蓓萨在施放技能后冲刺一小段距离，为她的下一次攻击提供额外的攻击距离、伤害和攻击速度，并返还能量。",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Icon_Ambessa_Passive.Domina.png",
-            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0799/ability_0799_P1.webm"
-          },
-          "spells": [
-            {
-              "key": "Q",
-              "name": "暗袭 / 裂斩",
-              "description": "安蓓萨甩出链刃横扫她前方的半圆区域，对被链刃命中的敌人造成额外伤害。击中一个敌人后，该技能在短时间内的下一次施放会发生变化，使她向前方的一条直线猛砸链刃，对命中的首个敌人造成额外伤害。",
-              "max_rank": 5,
-              "range_burn": [
-                650
-              ],
-              "cooldown_burn": [
-                14,
-                13,
-                12,
-                11,
-                10
-              ],
-              "cooldown_burn_float": [
-                14,
-                13,
-                12,
-                11,
-                10
-              ],
-              "cost_burn": [
-                70
-              ],
-              "tooltip": "<spellActive>暗袭</spellActive>：安蓓萨向前甩出链刃，对打击范围边缘区域的敌人们造成<physicalDamage>?+?最大生命值的物理伤害</physicalDamage>。所有其他敌人受到?伤害。击中敌人会让<spellActive>裂斩</spellActive>就绪。<br /><br /><spellActive>裂斩</spellActive>：安蓓萨向下猛砸她的链刃，对首个命中的敌人造成<physicalDamage>?+?最大生命值的物理伤害</physicalDamage>。所有其他敌人受到?伤害。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AmbessaQ.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0799/ability_0799_Q1.webm"
-            },
-            {
-              "key": "W",
-              "name": "铁令",
-              "description": "安蓓萨获得一道护盾，在短时间内摆出防守姿势，随后猛砸地面，对附近敌人造成伤害。如果她在防守姿势期间格挡了任何来自非小兵单位的伤害，该技能将造成额外伤害。",
-              "max_rank": 5,
-              "range_burn": [
-                325
-              ],
-              "cooldown_burn": [
-                18,
-                17,
-                16,
-                15,
-                14
-              ],
-              "cooldown_burn_float": [
-                18,
-                17,
-                16,
-                15,
-                14
-              ],
-              "cost_burn": [
-                70
-              ],
-              "tooltip": "安蓓萨获得持续?秒的<shield>?护盾值</shield>，并摆出防守姿势?秒。随后猛砸地面，对附近的敌人造成<physicalDamage>?物理伤害</physicalDamage>，如果她成功格挡了来自敌方英雄、大型野怪或建筑物的伤害，则造成的伤害值提升至<physicalDamage>?物理伤害</physicalDamage>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AmbessaW.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0799/ability_0799_W1.webm"
-            },
-            {
-              "key": "E",
-              "name": "血戮",
-              "description": "安蓓萨环绕自身挥舞链刃，对附近的敌人们造成伤害和减速。若在施放该技能后使用【龙犬诡步】，则会在冲刺结束时进行第二次打击。",
-              "max_rank": 5,
-              "range_burn": [
-                325
-              ],
-              "cooldown_burn": [
-                13,
-                12,
-                11,
-                10,
-                9
-              ],
-              "cooldown_burn_float": [
-                13,
-                12,
-                11,
-                10,
-                9
-              ],
-              "cost_burn": [
-                70
-              ],
-              "tooltip": "安蓓萨环绕自身挥舞她的链刃，对敌人们造成<physicalDamage>?物理伤害</physicalDamage>和<status>?%</status><status>减速</status>，这个减速效果会在?秒内持续衰减。来自这个技能的第一段<spellName>龙犬诡步</spellName>会触发一次额外打击。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AmbessaE.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0799/ability_0799_E1.webm"
-            },
-            {
-              "key": "R",
-              "name": "公开处刑",
-              "description": "安蓓萨选择一条直线，然后瞬移到直线上相距最远的那个敌方英雄身旁，并在到达后压制该英雄。随后将目标砸向地面，对其造成伤害和晕眩。",
-              "max_rank": 3,
-              "range_burn": [
-                1250
-              ],
-              "cooldown_burn": [
-                130,
-                115,
-                100
-              ],
-              "cooldown_burn_float": [
-                130,
-                115,
-                100
-              ],
-              "cost_burn": [
-                0
-              ],
-              "tooltip": "<spellPassive>被动：</spellPassive>安蓓萨获得<armorPen>?% %i:scaleAPen%护甲穿透</armorPen>，她的技能会为自身<healing>回复生命值，回复量相当于?的已造成伤害值</healing>。<br /><br /><spellActive>主动</spellActive>：安蓓萨进入<attention>不可阻挡</attention>状态，瞬移到一条直线上距离最远的敌方英雄身旁，<status>压制</status>目标?秒，然后将其砸向地面，对其造成<physicalDamage>?物理伤害</physicalDamage>和?秒<status>晕眩</status>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AmbessaR.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0799/ability_0799_R1.webm"
-            }
-          ],
-          "skins": [
-            {
-              "id": 799000,
-              "champion_id": 799,
-              "name": "default",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Ambessa_0.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "IP",
-                  "cost": 6300
-                },
-                {
-                  "currency": "RP",
-                  "cost": 975
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 799001,
-              "champion_id": 799,
-              "name": "狼神英灵 安蓓萨",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Ambessa_1.jpg",
-              "skin_video_url": "https://youtu.be/x5V46J0ltH0",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1820
-                }
-              ],
-              "sales": null,
-              "release_date": "2024-11-06T10:00:00+09:00"
-            }
-          ]
-        }
-      },
-      {
         "champion_id": 32,
-        "play": 141,
-        "win": 71,
+        "play": 139,
+        "win": 70,
         "meta": {
           "id": 32,
           "key": "Amumu",
@@ -14171,9 +14001,179 @@
         }
       },
       {
+        "champion_id": 799,
+        "play": 139,
+        "win": 80,
+        "meta": {
+          "id": 799,
+          "key": "Ambessa",
+          "name": "铁血狼母",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Ambessa.png",
+          "evolve": [],
+          "title": "安蓓萨",
+          "partype": "能量",
+          "passive": {
+            "name": "龙犬诡步",
+            "description": "在施放技能的同时输入攻击或移动指令，会使安蓓萨在施放技能后冲刺一小段距离，为她的下一次攻击提供额外的攻击距离、伤害和攻击速度，并返还能量。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Icon_Ambessa_Passive.Domina.png",
+            "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0799/ability_0799_P1.webm"
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "暗袭 / 裂斩",
+              "description": "安蓓萨甩出链刃横扫她前方的半圆区域，对被链刃命中的敌人造成额外伤害。击中一个敌人后，该技能在短时间内的下一次施放会发生变化，使她向前方的一条直线猛砸链刃，对命中的首个敌人造成额外伤害。",
+              "max_rank": 5,
+              "range_burn": [
+                650
+              ],
+              "cooldown_burn": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "cooldown_burn_float": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "cost_burn": [
+                70
+              ],
+              "tooltip": "<spellActive>暗袭</spellActive>：安蓓萨向前甩出链刃，对打击范围边缘区域的敌人们造成<physicalDamage>?+?最大生命值的物理伤害</physicalDamage>。所有其他敌人受到?伤害。击中敌人会让<spellActive>裂斩</spellActive>就绪。<br /><br /><spellActive>裂斩</spellActive>：安蓓萨向下猛砸她的链刃，对首个命中的敌人造成<physicalDamage>?+?最大生命值的物理伤害</physicalDamage>。所有其他敌人受到?伤害。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AmbessaQ.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0799/ability_0799_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "铁令",
+              "description": "安蓓萨获得一道护盾，在短时间内摆出防守姿势，随后猛砸地面，对附近敌人造成伤害。如果她在防守姿势期间格挡了任何来自非小兵单位的伤害，该技能将造成额外伤害。",
+              "max_rank": 5,
+              "range_burn": [
+                325
+              ],
+              "cooldown_burn": [
+                18,
+                17,
+                16,
+                15,
+                14
+              ],
+              "cooldown_burn_float": [
+                18,
+                17,
+                16,
+                15,
+                14
+              ],
+              "cost_burn": [
+                70
+              ],
+              "tooltip": "安蓓萨获得持续?秒的<shield>?护盾值</shield>，并摆出防守姿势?秒。随后猛砸地面，对附近的敌人造成<physicalDamage>?物理伤害</physicalDamage>，如果她成功格挡了来自敌方英雄、大型野怪或建筑物的伤害，则造成的伤害值提升至<physicalDamage>?物理伤害</physicalDamage>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AmbessaW.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0799/ability_0799_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "血戮",
+              "description": "安蓓萨环绕自身挥舞链刃，对附近的敌人们造成伤害和减速。若在施放该技能后使用【龙犬诡步】，则会在冲刺结束时进行第二次打击。",
+              "max_rank": 5,
+              "range_burn": [
+                325
+              ],
+              "cooldown_burn": [
+                13,
+                12,
+                11,
+                10,
+                9
+              ],
+              "cooldown_burn_float": [
+                13,
+                12,
+                11,
+                10,
+                9
+              ],
+              "cost_burn": [
+                70
+              ],
+              "tooltip": "安蓓萨环绕自身挥舞她的链刃，对敌人们造成<physicalDamage>?物理伤害</physicalDamage>和<status>?%</status><status>减速</status>，这个减速效果会在?秒内持续衰减。来自这个技能的第一段<spellName>龙犬诡步</spellName>会触发一次额外打击。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AmbessaE.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0799/ability_0799_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "公开处刑",
+              "description": "安蓓萨选择一条直线，然后瞬移到直线上相距最远的那个敌方英雄身旁，并在到达后压制该英雄。随后将目标砸向地面，对其造成伤害和晕眩。",
+              "max_rank": 3,
+              "range_burn": [
+                1250
+              ],
+              "cooldown_burn": [
+                130,
+                115,
+                100
+              ],
+              "cooldown_burn_float": [
+                130,
+                115,
+                100
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "<spellPassive>被动：</spellPassive>安蓓萨获得<armorPen>?% %i:scaleAPen%护甲穿透</armorPen>，她的技能会为自身<healing>回复生命值，回复量相当于?的已造成伤害值</healing>。<br /><br /><spellActive>主动</spellActive>：安蓓萨进入<attention>不可阻挡</attention>状态，瞬移到一条直线上距离最远的敌方英雄身旁，<status>压制</status>目标?秒，然后将其砸向地面，对其造成<physicalDamage>?物理伤害</physicalDamage>和?秒<status>晕眩</status>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/AmbessaR.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0799/ability_0799_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 799000,
+              "champion_id": 799,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Ambessa_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 6300
+                },
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 799001,
+              "champion_id": 799,
+              "name": "狼神英灵 安蓓萨",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Ambessa_1.jpg",
+              "skin_video_url": "https://youtu.be/x5V46J0ltH0",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1820
+                }
+              ],
+              "sales": null,
+              "release_date": "2024-11-06T10:00:00+09:00"
+            }
+          ]
+        }
+      },
+      {
         "champion_id": 33,
-        "play": 124,
-        "win": 61,
+        "play": 122,
+        "win": 59,
         "meta": {
           "id": 33,
           "key": "Rammus",
@@ -14873,9 +14873,272 @@
         }
       },
       {
+        "champion_id": 102,
+        "play": 83,
+        "win": 48,
+        "meta": {
+          "id": 102,
+          "key": "Shyvana",
+          "name": "龙血武姬",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Shyvana.png",
+          "evolve": [],
+          "title": "希瓦娜",
+          "partype": "怒气",
+          "passive": {
+            "name": "龙族之怒",
+            "description": "希瓦娜对巨龙们造成额外伤害并获得护甲加成和魔法抗性加成。被希瓦娜或她的友军击败的元素亚龙们会为她提供额外的护甲和魔法抗性加成。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/ShyvanaReinforcedScales.png",
+            "video_url": null
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "龙牙突刺",
+              "description": "希瓦娜的下次攻击将进行两次打击并为她接下来的若干次攻击提供攻击速度。每次普通攻击会减少【龙牙突刺】0.5 秒冷却时间。<br><br><font color='#FF3300'>魔龙形态：</font>【龙牙突刺】会顺劈希瓦娜面前的所有单位。",
+              "max_rank": 5,
+              "range_burn": [
+                650
+              ],
+              "cooldown_burn": [
+                8,
+                7,
+                7,
+                6,
+                6
+              ],
+              "cooldown_burn_float": [
+                8,
+                7.5,
+                7,
+                6.5,
+                6
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "希瓦娜的下次攻击会进行两次打击，造成<physicalDamage>?</physicalDamage>接<physicalDamage>?物理伤害</physicalDamage>。她的下2次攻击获得<speed> ?%攻击速度</speed>。<br /><br />攻击会使这个技能的冷却时间缩短?秒。<br /><br /><keywordMajor>魔龙形态：</keywordMajor>这些强化攻击会命中希瓦娜前方的所有单位。<br /><br /><rules>这个技能会在造成伤害时触发技能特效。</rules>?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ShyvanaDoubleAttack.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0102/ability_0102_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "烈火燎原",
+              "description": "希瓦娜将自己围在火焰之中，每秒对周围的敌人造成伤害，并能移动得更快，持续3秒。在这个技能开启时，希瓦娜的普攻会对敌人造成基于此技能伤害的额外伤害。移动速度加成会随着技能的持续时间而减少。普通攻击会延长烈火燎原的持续时间。<br><br><font color='#FF3300'>魔龙形态：</font>烈火燎原会随体积增长。",
+              "max_rank": 5,
+              "range_burn": [
+                325
+              ],
+              "cooldown_burn": [
+                12
+              ],
+              "cooldown_burn_float": [
+                12
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "希瓦娜召唤一道烈焰风暴环绕于她，获得<speed>?不断衰减的移动速度</speed>并且每秒造成<magicDamage>?魔法伤害</magicDamage>，持续?秒。 <br /><br />烈焰风暴还会使希瓦娜的攻击对周围的敌人们造成额外的<magicDamage>?魔法伤害</magicDamage>并使这个技能的持续时间延长?秒。<br /><br /><keywordMajor>魔龙形态：</keywordMajor>烈焰风暴的半径得到提升。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ShyvanaImmolationAura.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0102/ability_0102_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "烈焰吐息",
+              "description": "希瓦娜放出一枚火球，对沿途的所有目标造成魔法伤害，并在目标身上留下熔化护甲的燃渣，持续5秒。希瓦娜对被标记目标进行的普通攻击，会造成基于目标最大生命值的额外伤害。<br><br><font color='#FF3300'>魔龙形态：</font>烈焰吐息会在碰撞或在抵达目标位置后爆炸，造成额外伤害并灼烧大地一小段时间。",
+              "max_rank": 5,
+              "range_burn": [
+                925
+              ],
+              "cooldown_burn": [
+                12,
+                11,
+                10,
+                9,
+                8
+              ],
+              "cooldown_burn_float": [
+                12,
+                11,
+                10,
+                9,
+                8
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "希瓦娜释放一团火球来造成<magicDamage>?魔法伤害</magicDamage>并标记?秒。火球会在命中第一个英雄时停下。<br /><br />希瓦娜对被标记目标的攻击会造成额外的<magicDamage>?%最大生命值的魔法伤害</magicDamage>。<br /><br /><keywordMajor>魔龙形态：</keywordMajor>火球一旦命中或到达终点就会爆炸，造成额外的<magicDamage>?魔法伤害</magicDamage>并灼烧大地，在4秒里持续造成共<magicDamage>?魔法伤害</magicDamage>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ShyvanaFireball.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0102/ability_0102_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "魔龙降世",
+              "description": "希瓦娜变成一条巨龙，并且飞向目标区域。沿途的敌人会受到魔法伤害，并被震向她的目标区域。<br><br>希瓦娜每秒都会被动获取怒气，并且她的每次普通攻击会提供2点怒气。",
+              "max_rank": 3,
+              "range_burn": [
+                850
+              ],
+              "cooldown_burn": [
+                0
+              ],
+              "cooldown_burn_float": [
+                0
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "<spellPassive>被动： </spellPassive>希瓦娜每秒生成<keywordMajor>?怒气</keywordMajor>，并且攻击生成额外的<keywordMajor>?怒气</keywordMajor>。<br /><br /><spellActive>主动： </spellActive>希瓦娜变形为<keywordMajor>魔龙形态</keywordMajor>，获得<healing>?最大生命值</healing>并向前飞行，造成<magicDamage>?魔法伤害</magicDamage>并将敌人们<status>击退</status>向她的目标位置。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ShyvanaTransformCast.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0102/ability_0102_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 102000,
+              "champion_id": 102,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shyvana_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 3150
+                },
+                {
+                  "currency": "RP",
+                  "cost": 790
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 102005,
+              "champion_id": 102,
+              "name": "冠军之血 希瓦娜",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shyvana_5.jpg",
+              "skin_video_url": "https://youtu.be/0-Ym0GPaSC0",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 102004,
+              "champion_id": 102,
+              "name": "冰霜亚龙 希瓦娜",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shyvana_4.jpg",
+              "skin_video_url": "https://youtu.be/vKyAuvP13jg",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": "2013-04-30T07:00:00+09:00"
+            },
+            {
+              "id": 102017,
+              "champion_id": 102,
+              "name": "玉剑传说 舞龙卫",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shyvana_17.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2023-08-16T11:00:00+09:00"
+            },
+            {
+              "id": 102008,
+              "champion_id": 102,
+              "name": "破败军团 希瓦娜",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shyvana_8.jpg",
+              "skin_video_url": "https://youtu.be/FkGEn4sF4s0",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2021-01-21T04:00:00+09:00"
+            },
+            {
+              "id": 102001,
+              "champion_id": 102,
+              "name": "钢之逆鳞 希瓦娜",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shyvana_1.jpg",
+              "skin_video_url": "https://youtu.be/r2vmAJoN_gM",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 750
+                }
+              ],
+              "sales": null,
+              "release_date": "2011-10-28T14:00:00+09:00"
+            },
+            {
+              "id": 102006,
+              "champion_id": 102,
+              "name": "银河魔装机神 希瓦娜",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shyvana_6.jpg",
+              "skin_video_url": "https://youtu.be/ATyfRG49zlI",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2016-05-26T10:00:00+09:00"
+            },
+            {
+              "id": 102002,
+              "champion_id": 102,
+              "name": "骸骨之爪 希瓦娜",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shyvana_2.jpg",
+              "skin_video_url": "https://youtu.be/IZNgLn8Vjek",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 520
+                }
+              ],
+              "sales": null,
+              "release_date": "2011-10-28T15:00:00+09:00"
+            },
+            {
+              "id": 102003,
+              "champion_id": 102,
+              "name": "黯黑魔龙 希瓦娜",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shyvana_3.jpg",
+              "skin_video_url": "https://youtu.be/jKZBiKnaoJI",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": "2012-06-08T01:00:00+09:00"
+            }
+          ]
+        }
+      },
+      {
         "champion_id": 238,
-        "play": 84,
-        "win": 43,
+        "play": 83,
+        "win": 42,
         "meta": {
           "id": 238,
           "key": "Zed",
@@ -15203,272 +15466,9 @@
         }
       },
       {
-        "champion_id": 102,
-        "play": 83,
-        "win": 48,
-        "meta": {
-          "id": 102,
-          "key": "Shyvana",
-          "name": "龙血武姬",
-          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Shyvana.png",
-          "evolve": [],
-          "title": "希瓦娜",
-          "partype": "怒气",
-          "passive": {
-            "name": "龙族之怒",
-            "description": "希瓦娜对巨龙们造成额外伤害并获得护甲加成和魔法抗性加成。被希瓦娜或她的友军击败的元素亚龙们会为她提供额外的护甲和魔法抗性加成。",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/ShyvanaReinforcedScales.png",
-            "video_url": null
-          },
-          "spells": [
-            {
-              "key": "Q",
-              "name": "龙牙突刺",
-              "description": "希瓦娜的下次攻击将进行两次打击并为她接下来的若干次攻击提供攻击速度。每次普通攻击会减少【龙牙突刺】0.5 秒冷却时间。<br><br><font color='#FF3300'>魔龙形态：</font>【龙牙突刺】会顺劈希瓦娜面前的所有单位。",
-              "max_rank": 5,
-              "range_burn": [
-                650
-              ],
-              "cooldown_burn": [
-                8,
-                7,
-                7,
-                6,
-                6
-              ],
-              "cooldown_burn_float": [
-                8,
-                7.5,
-                7,
-                6.5,
-                6
-              ],
-              "cost_burn": [
-                0
-              ],
-              "tooltip": "希瓦娜的下次攻击会进行两次打击，造成<physicalDamage>?</physicalDamage>接<physicalDamage>?物理伤害</physicalDamage>。她的下2次攻击获得<speed> ?%攻击速度</speed>。<br /><br />攻击会使这个技能的冷却时间缩短?秒。<br /><br /><keywordMajor>魔龙形态：</keywordMajor>这些强化攻击会命中希瓦娜前方的所有单位。<br /><br /><rules>这个技能会在造成伤害时触发技能特效。</rules>?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ShyvanaDoubleAttack.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0102/ability_0102_Q1.webm"
-            },
-            {
-              "key": "W",
-              "name": "烈火燎原",
-              "description": "希瓦娜将自己围在火焰之中，每秒对周围的敌人造成伤害，并能移动得更快，持续3秒。在这个技能开启时，希瓦娜的普攻会对敌人造成基于此技能伤害的额外伤害。移动速度加成会随着技能的持续时间而减少。普通攻击会延长烈火燎原的持续时间。<br><br><font color='#FF3300'>魔龙形态：</font>烈火燎原会随体积增长。",
-              "max_rank": 5,
-              "range_burn": [
-                325
-              ],
-              "cooldown_burn": [
-                12
-              ],
-              "cooldown_burn_float": [
-                12
-              ],
-              "cost_burn": [
-                0
-              ],
-              "tooltip": "希瓦娜召唤一道烈焰风暴环绕于她，获得<speed>?不断衰减的移动速度</speed>并且每秒造成<magicDamage>?魔法伤害</magicDamage>，持续?秒。 <br /><br />烈焰风暴还会使希瓦娜的攻击对周围的敌人们造成额外的<magicDamage>?魔法伤害</magicDamage>并使这个技能的持续时间延长?秒。<br /><br /><keywordMajor>魔龙形态：</keywordMajor>烈焰风暴的半径得到提升。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ShyvanaImmolationAura.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0102/ability_0102_W1.webm"
-            },
-            {
-              "key": "E",
-              "name": "烈焰吐息",
-              "description": "希瓦娜放出一枚火球，对沿途的所有目标造成魔法伤害，并在目标身上留下熔化护甲的燃渣，持续5秒。希瓦娜对被标记目标进行的普通攻击，会造成基于目标最大生命值的额外伤害。<br><br><font color='#FF3300'>魔龙形态：</font>烈焰吐息会在碰撞或在抵达目标位置后爆炸，造成额外伤害并灼烧大地一小段时间。",
-              "max_rank": 5,
-              "range_burn": [
-                925
-              ],
-              "cooldown_burn": [
-                12,
-                11,
-                10,
-                9,
-                8
-              ],
-              "cooldown_burn_float": [
-                12,
-                11,
-                10,
-                9,
-                8
-              ],
-              "cost_burn": [
-                0
-              ],
-              "tooltip": "希瓦娜释放一团火球来造成<magicDamage>?魔法伤害</magicDamage>并标记?秒。火球会在命中第一个英雄时停下。<br /><br />希瓦娜对被标记目标的攻击会造成额外的<magicDamage>?%最大生命值的魔法伤害</magicDamage>。<br /><br /><keywordMajor>魔龙形态：</keywordMajor>火球一旦命中或到达终点就会爆炸，造成额外的<magicDamage>?魔法伤害</magicDamage>并灼烧大地，在4秒里持续造成共<magicDamage>?魔法伤害</magicDamage>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ShyvanaFireball.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0102/ability_0102_E1.webm"
-            },
-            {
-              "key": "R",
-              "name": "魔龙降世",
-              "description": "希瓦娜变成一条巨龙，并且飞向目标区域。沿途的敌人会受到魔法伤害，并被震向她的目标区域。<br><br>希瓦娜每秒都会被动获取怒气，并且她的每次普通攻击会提供2点怒气。",
-              "max_rank": 3,
-              "range_burn": [
-                850
-              ],
-              "cooldown_burn": [
-                0
-              ],
-              "cooldown_burn_float": [
-                0
-              ],
-              "cost_burn": [
-                0
-              ],
-              "tooltip": "<spellPassive>被动： </spellPassive>希瓦娜每秒生成<keywordMajor>?怒气</keywordMajor>，并且攻击生成额外的<keywordMajor>?怒气</keywordMajor>。<br /><br /><spellActive>主动： </spellActive>希瓦娜变形为<keywordMajor>魔龙形态</keywordMajor>，获得<healing>?最大生命值</healing>并向前飞行，造成<magicDamage>?魔法伤害</magicDamage>并将敌人们<status>击退</status>向她的目标位置。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ShyvanaTransformCast.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0102/ability_0102_R1.webm"
-            }
-          ],
-          "skins": [
-            {
-              "id": 102000,
-              "champion_id": 102,
-              "name": "default",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shyvana_0.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "IP",
-                  "cost": 3150
-                },
-                {
-                  "currency": "RP",
-                  "cost": 790
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 102005,
-              "champion_id": 102,
-              "name": "冠军之血 希瓦娜",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shyvana_5.jpg",
-              "skin_video_url": "https://youtu.be/0-Ym0GPaSC0",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 975
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 102004,
-              "champion_id": 102,
-              "name": "冰霜亚龙 希瓦娜",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shyvana_4.jpg",
-              "skin_video_url": "https://youtu.be/vKyAuvP13jg",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 975
-                }
-              ],
-              "sales": null,
-              "release_date": "2013-04-30T07:00:00+09:00"
-            },
-            {
-              "id": 102017,
-              "champion_id": 102,
-              "name": "玉剑传说 舞龙卫",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shyvana_17.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2023-08-16T11:00:00+09:00"
-            },
-            {
-              "id": 102008,
-              "champion_id": 102,
-              "name": "破败军团 希瓦娜",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shyvana_8.jpg",
-              "skin_video_url": "https://youtu.be/FkGEn4sF4s0",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2021-01-21T04:00:00+09:00"
-            },
-            {
-              "id": 102001,
-              "champion_id": 102,
-              "name": "钢之逆鳞 希瓦娜",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shyvana_1.jpg",
-              "skin_video_url": "https://youtu.be/r2vmAJoN_gM",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 750
-                }
-              ],
-              "sales": null,
-              "release_date": "2011-10-28T14:00:00+09:00"
-            },
-            {
-              "id": 102006,
-              "champion_id": 102,
-              "name": "银河魔装机神 希瓦娜",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shyvana_6.jpg",
-              "skin_video_url": "https://youtu.be/ATyfRG49zlI",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2016-05-26T10:00:00+09:00"
-            },
-            {
-              "id": 102002,
-              "champion_id": 102,
-              "name": "骸骨之爪 希瓦娜",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shyvana_2.jpg",
-              "skin_video_url": "https://youtu.be/IZNgLn8Vjek",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 520
-                }
-              ],
-              "sales": null,
-              "release_date": "2011-10-28T15:00:00+09:00"
-            },
-            {
-              "id": 102003,
-              "champion_id": 102,
-              "name": "黯黑魔龙 希瓦娜",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Shyvana_3.jpg",
-              "skin_video_url": "https://youtu.be/jKZBiKnaoJI",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 975
-                }
-              ],
-              "sales": null,
-              "release_date": "2012-06-08T01:00:00+09:00"
-            }
-          ]
-        }
-      },
-      {
         "champion_id": 78,
-        "play": 68,
-        "win": 36,
+        "play": 67,
+        "win": 35,
         "meta": {
           "id": 78,
           "key": "Poppy",
@@ -15791,8 +15791,8 @@
       },
       {
         "champion_id": 36,
-        "play": 51,
-        "win": 23,
+        "play": 49,
+        "win": 21,
         "meta": {
           "id": 36,
           "key": "DrMundo",
@@ -16084,8 +16084,8 @@
       },
       {
         "champion_id": 80,
-        "play": 44,
-        "win": 21,
+        "play": 43,
+        "win": 20,
         "meta": {
           "id": 80,
           "key": "Pantheon",
@@ -16409,8 +16409,8 @@
       },
       {
         "champion_id": 246,
-        "play": 39,
-        "win": 19,
+        "play": 38,
+        "win": 18,
         "meta": {
           "id": 246,
           "key": "Qiyana",
@@ -16668,8 +16668,8 @@
         4,
         11
       ],
-      "win": 9014,
-      "play": 17498,
+      "win": 8887,
+      "play": 17259,
       "pick_rate": 0.9986
     },
     {
@@ -16715,8 +16715,8 @@
     "win": [
       {
         "version": "14.23",
-        "rate": 0.514,
-        "rank": 7,
+        "rate": 0.5138,
+        "rank": 6,
         "created_at": "2024-11-22T22:31:04+09:00"
       },
       {
@@ -16902,33 +16902,33 @@
   "game_lengths": [
     {
       "game_length": 35,
-      "rate": 0.497579,
+      "rate": 0.496996,
       "average": 0.5,
-      "rank": 24
+      "rank": 25
     },
     {
       "game_length": 25,
-      "rate": 0.506768,
+      "rate": 0.506198,
       "average": 0.5,
       "rank": 20
     },
     {
       "game_length": 40,
-      "rate": 0.506944,
+      "rate": 0.507042,
       "average": 0.5,
-      "rank": 24
+      "rank": 22
     },
     {
       "game_length": 30,
-      "rate": 0.515547,
+      "rate": 0.515261,
       "average": 0.5,
       "rank": 7
     },
     {
       "game_length": 0,
-      "rate": 0.5256,
+      "rate": 0.525763,
       "average": 0.5,
-      "rank": 7
+      "rank": 6
     }
   ],
   "skills": [
@@ -16950,9 +16950,9 @@
         "E",
         "E"
       ],
-      "play": 5838,
-      "win": 3814,
-      "pick_rate": 0.715
+      "play": 5767,
+      "win": 3767,
+      "pick_rate": 0.7153
     },
     {
       "order": [
@@ -16972,9 +16972,9 @@
         "E",
         "E"
       ],
-      "play": 856,
-      "win": 579,
-      "pick_rate": 0.1048
+      "play": 848,
+      "win": 571,
+      "pick_rate": 0.1052
     },
     {
       "order": [
@@ -16994,9 +16994,9 @@
         "E",
         "E"
       ],
-      "play": 496,
-      "win": 315,
-      "pick_rate": 0.0607
+      "play": 487,
+      "win": 309,
+      "pick_rate": 0.0604
     },
     {
       "order": [
@@ -17016,9 +17016,9 @@
         "E",
         "E"
       ],
-      "play": 125,
-      "win": 79,
-      "pick_rate": 0.0153
+      "play": 124,
+      "win": 78,
+      "pick_rate": 0.0154
     },
     {
       "order": [
@@ -17040,7 +17040,7 @@
       ],
       "play": 84,
       "win": 55,
-      "pick_rate": 0.0103
+      "pick_rate": 0.0104
     }
   ],
   "skill_masteries": [
@@ -17050,9 +17050,9 @@
         "W",
         "E"
       ],
-      "play": 8023,
-      "win": 5240,
-      "pick_rate": 0.9826,
+      "play": 7923,
+      "win": 5173,
+      "pick_rate": 0.9828,
       "builds": [
         {
           "order": [
@@ -17072,9 +17072,9 @@
             "E",
             "E"
           ],
-          "play": 5838,
-          "win": 3814,
-          "pick_rate": 0.7277
+          "play": 5767,
+          "win": 3767,
+          "pick_rate": 0.7279
         },
         {
           "order": [
@@ -17094,9 +17094,9 @@
             "E",
             "E"
           ],
-          "play": 856,
-          "win": 579,
-          "pick_rate": 0.1067
+          "play": 848,
+          "win": 571,
+          "pick_rate": 0.107
         },
         {
           "order": [
@@ -17116,9 +17116,9 @@
             "E",
             "E"
           ],
-          "play": 496,
-          "win": 315,
-          "pick_rate": 0.0618
+          "play": 487,
+          "win": 309,
+          "pick_rate": 0.0615
         },
         {
           "order": [
@@ -17138,9 +17138,9 @@
             "E",
             "E"
           ],
-          "play": 125,
-          "win": 79,
-          "pick_rate": 0.0156
+          "play": 124,
+          "win": 78,
+          "pick_rate": 0.0157
         },
         {
           "order": [
@@ -17162,7 +17162,7 @@
           ],
           "play": 84,
           "win": 55,
-          "pick_rate": 0.0105
+          "pick_rate": 0.0106
         }
       ]
     },
@@ -17172,9 +17172,9 @@
         "Q",
         "E"
       ],
-      "play": 75,
+      "play": 73,
       "win": 41,
-      "pick_rate": 0.0092,
+      "pick_rate": 0.0091,
       "builds": [
         {
           "order": [
@@ -17194,9 +17194,9 @@
             "E",
             "E"
           ],
-          "play": 35,
+          "play": 34,
           "win": 22,
-          "pick_rate": 0.4667
+          "pick_rate": 0.4658
         },
         {
           "order": [
@@ -17218,7 +17218,7 @@
           ],
           "play": 6,
           "win": 4,
-          "pick_rate": 0.08
+          "pick_rate": 0.0822
         },
         {
           "order": [
@@ -17240,7 +17240,7 @@
           ],
           "play": 5,
           "win": 3,
-          "pick_rate": 0.0667
+          "pick_rate": 0.0685
         },
         {
           "order": [
@@ -17262,7 +17262,7 @@
           ],
           "play": 4,
           "win": 1,
-          "pick_rate": 0.0533
+          "pick_rate": 0.0548
         },
         {
           "order": [
@@ -17284,7 +17284,7 @@
           ],
           "play": 4,
           "win": 1,
-          "pick_rate": 0.0533
+          "pick_rate": 0.0548
         }
       ]
     },
@@ -17294,7 +17294,7 @@
         "E",
         "W"
       ],
-      "play": 62,
+      "play": 61,
       "win": 34,
       "pick_rate": 0.0076,
       "builds": [
@@ -17318,7 +17318,7 @@
           ],
           "play": 18,
           "win": 9,
-          "pick_rate": 0.2903
+          "pick_rate": 0.2951
         },
         {
           "order": [
@@ -17340,29 +17340,7 @@
           ],
           "play": 7,
           "win": 3,
-          "pick_rate": 0.1129
-        },
-        {
-          "order": [
-            "Q",
-            "W",
-            "E",
-            "Q",
-            "Q",
-            "R",
-            "Q",
-            "E",
-            "Q",
-            "E",
-            "R",
-            "E",
-            "E",
-            "W",
-            "W"
-          ],
-          "play": 4,
-          "win": 2,
-          "pick_rate": 0.0645
+          "pick_rate": 0.1148
         },
         {
           "order": [
@@ -17384,7 +17362,29 @@
           ],
           "play": 3,
           "win": 2,
-          "pick_rate": 0.0484
+          "pick_rate": 0.0492
+        },
+        {
+          "order": [
+            "Q",
+            "W",
+            "E",
+            "Q",
+            "Q",
+            "R",
+            "Q",
+            "E",
+            "Q",
+            "E",
+            "R",
+            "E",
+            "E",
+            "W",
+            "W"
+          ],
+          "play": 3,
+          "win": 2,
+          "pick_rate": 0.0492
         },
         {
           "order": [
@@ -17406,7 +17406,7 @@
           ],
           "play": 2,
           "win": 2,
-          "pick_rate": 0.0323
+          "pick_rate": 0.0328
         }
       ]
     },
@@ -17532,9 +17532,9 @@
         5008,
         5001
       ],
-      "play": 5446,
-      "win": 2795,
-      "pick_rate": 0.3073
+      "play": 5352,
+      "win": 2738,
+      "pick_rate": 0.3062
     },
     {
       "id": 8128,
@@ -17555,9 +17555,9 @@
         5008,
         5001
       ],
-      "play": 1881,
-      "win": 908,
-      "pick_rate": 0.1061
+      "play": 1843,
+      "win": 889,
+      "pick_rate": 0.1054
     },
     {
       "id": 8112,
@@ -17578,9 +17578,9 @@
         5008,
         5001
       ],
-      "play": 1132,
-      "win": 556,
-      "pick_rate": 0.0639
+      "play": 1115,
+      "win": 544,
+      "pick_rate": 0.0638
     },
     {
       "id": 8128,
@@ -17601,9 +17601,9 @@
         5008,
         5011
       ],
-      "play": 561,
-      "win": 304,
-      "pick_rate": 0.0317
+      "play": 553,
+      "win": 302,
+      "pick_rate": 0.0316
     },
     {
       "id": 8128,
@@ -17624,8 +17624,8 @@
         5008,
         5001
       ],
-      "play": 411,
-      "win": 219,
+      "play": 405,
+      "win": 215,
       "pick_rate": 0.0232
     }
   ],
@@ -17634,9 +17634,9 @@
       "id": 8128,
       "primary_page_id": 8100,
       "secondary_page_id": 8000,
-      "play": 11317,
-      "win": 5888,
-      "pick_rate": 0.6385,
+      "play": 11170,
+      "win": 5808,
+      "pick_rate": 0.639,
       "builds": [
         {
           "id": 8128,
@@ -17657,9 +17657,9 @@
             5008,
             5001
           ],
-          "play": 5446,
-          "win": 2795,
-          "pick_rate": 0.4812
+          "play": 5352,
+          "win": 2738,
+          "pick_rate": 0.4791
         },
         {
           "id": 8128,
@@ -17680,9 +17680,9 @@
             5008,
             5011
           ],
-          "play": 561,
-          "win": 304,
-          "pick_rate": 0.0496
+          "play": 553,
+          "win": 302,
+          "pick_rate": 0.0495
         },
         {
           "id": 8128,
@@ -17703,8 +17703,8 @@
             5008,
             5001
           ],
-          "play": 411,
-          "win": 219,
+          "play": 405,
+          "win": 215,
           "pick_rate": 0.0363
         },
         {
@@ -17726,9 +17726,9 @@
             5008,
             5001
           ],
-          "play": 394,
-          "win": 217,
-          "pick_rate": 0.0348
+          "play": 390,
+          "win": 215,
+          "pick_rate": 0.0349
         },
         {
           "id": 8128,
@@ -17749,9 +17749,9 @@
             5008,
             5001
           ],
-          "play": 384,
-          "win": 203,
-          "pick_rate": 0.0339
+          "play": 378,
+          "win": 199,
+          "pick_rate": 0.0338
         }
       ]
     },
@@ -17759,9 +17759,9 @@
       "id": 8128,
       "primary_page_id": 8100,
       "secondary_page_id": 8200,
-      "play": 2820,
-      "win": 1401,
-      "pick_rate": 0.1591,
+      "play": 2776,
+      "win": 1379,
+      "pick_rate": 0.1588,
       "builds": [
         {
           "id": 8128,
@@ -17782,9 +17782,9 @@
             5008,
             5001
           ],
-          "play": 1881,
-          "win": 908,
-          "pick_rate": 0.667
+          "play": 1843,
+          "win": 889,
+          "pick_rate": 0.6639
         },
         {
           "id": 8128,
@@ -17807,7 +17807,7 @@
           ],
           "play": 62,
           "win": 36,
-          "pick_rate": 0.022
+          "pick_rate": 0.0223
         },
         {
           "id": 8128,
@@ -17828,7 +17828,7 @@
             5008,
             5001
           ],
-          "play": 59,
+          "play": 58,
           "win": 31,
           "pick_rate": 0.0209
         },
@@ -17853,7 +17853,7 @@
           ],
           "play": 55,
           "win": 31,
-          "pick_rate": 0.0195
+          "pick_rate": 0.0198
         },
         {
           "id": 8128,
@@ -17874,8 +17874,8 @@
             5008,
             5011
           ],
-          "play": 52,
-          "win": 30,
+          "play": 51,
+          "win": 29,
           "pick_rate": 0.0184
         }
       ]
@@ -17884,9 +17884,9 @@
       "id": 8112,
       "primary_page_id": 8100,
       "secondary_page_id": 8200,
-      "play": 1567,
-      "win": 768,
-      "pick_rate": 0.0884,
+      "play": 1544,
+      "win": 755,
+      "pick_rate": 0.0883,
       "builds": [
         {
           "id": 8112,
@@ -17907,9 +17907,9 @@
             5008,
             5001
           ],
-          "play": 1132,
-          "win": 556,
-          "pick_rate": 0.7224
+          "play": 1115,
+          "win": 544,
+          "pick_rate": 0.7222
         },
         {
           "id": 8112,
@@ -17932,7 +17932,7 @@
           ],
           "play": 45,
           "win": 26,
-          "pick_rate": 0.0287
+          "pick_rate": 0.0291
         },
         {
           "id": 8112,
@@ -17953,9 +17953,9 @@
             5008,
             5001
           ],
-          "play": 33,
+          "play": 32,
           "win": 20,
-          "pick_rate": 0.0211
+          "pick_rate": 0.0207
         },
         {
           "id": 8112,
@@ -17978,7 +17978,7 @@
           ],
           "play": 26,
           "win": 9,
-          "pick_rate": 0.0166
+          "pick_rate": 0.0168
         },
         {
           "id": 8112,
@@ -18001,7 +18001,7 @@
           ],
           "play": 18,
           "win": 8,
-          "pick_rate": 0.0115
+          "pick_rate": 0.0117
         }
       ]
     },
@@ -18009,9 +18009,9 @@
       "id": 8112,
       "primary_page_id": 8100,
       "secondary_page_id": 8000,
-      "play": 832,
-      "win": 439,
-      "pick_rate": 0.0469,
+      "play": 818,
+      "win": 431,
+      "pick_rate": 0.0468,
       "builds": [
         {
           "id": 8112,
@@ -18032,9 +18032,9 @@
             5008,
             5001
           ],
-          "play": 117,
-          "win": 58,
-          "pick_rate": 0.1406
+          "play": 116,
+          "win": 57,
+          "pick_rate": 0.1418
         },
         {
           "id": 8112,
@@ -18057,7 +18057,7 @@
           ],
           "play": 49,
           "win": 29,
-          "pick_rate": 0.0589
+          "pick_rate": 0.0599
         },
         {
           "id": 8112,
@@ -18080,30 +18080,7 @@
           ],
           "play": 42,
           "win": 20,
-          "pick_rate": 0.0505
-        },
-        {
-          "id": 8112,
-          "primary_page_id": 8100,
-          "primary_rune_ids": [
-            8112,
-            8126,
-            8138,
-            8135
-          ],
-          "secondary_page_id": 8000,
-          "secondary_rune_ids": [
-            8014,
-            9111
-          ],
-          "stat_mod_ids": [
-            5005,
-            5008,
-            5001
-          ],
-          "play": 37,
-          "win": 25,
-          "pick_rate": 0.0445
+          "pick_rate": 0.0513
         },
         {
           "id": 8112,
@@ -18126,7 +18103,30 @@
           ],
           "play": 36,
           "win": 15,
-          "pick_rate": 0.0433
+          "pick_rate": 0.044
+        },
+        {
+          "id": 8112,
+          "primary_page_id": 8100,
+          "primary_rune_ids": [
+            8112,
+            8126,
+            8138,
+            8135
+          ],
+          "secondary_page_id": 8000,
+          "secondary_rune_ids": [
+            8014,
+            9111
+          ],
+          "stat_mod_ids": [
+            5005,
+            5008,
+            5001
+          ],
+          "play": 36,
+          "win": 24,
+          "pick_rate": 0.044
         }
       ]
     },
@@ -18134,8 +18134,8 @@
       "id": 8005,
       "primary_page_id": 8000,
       "secondary_page_id": 8100,
-      "play": 734,
-      "win": 388,
+      "play": 724,
+      "win": 383,
       "pick_rate": 0.0414,
       "builds": [
         {
@@ -18157,9 +18157,9 @@
             5008,
             5011
           ],
-          "play": 139,
-          "win": 76,
-          "pick_rate": 0.1894
+          "play": 135,
+          "win": 74,
+          "pick_rate": 0.1865
         },
         {
           "id": 8005,
@@ -18180,9 +18180,9 @@
             5008,
             5001
           ],
-          "play": 68,
-          "win": 37,
-          "pick_rate": 0.0926
+          "play": 67,
+          "win": 36,
+          "pick_rate": 0.0925
         },
         {
           "id": 8005,
@@ -18203,9 +18203,9 @@
             5008,
             5001
           ],
-          "play": 62,
-          "win": 34,
-          "pick_rate": 0.0845
+          "play": 61,
+          "win": 33,
+          "pick_rate": 0.0843
         },
         {
           "id": 8005,
@@ -18226,9 +18226,9 @@
             5008,
             5001
           ],
-          "play": 61,
-          "win": 35,
-          "pick_rate": 0.0831
+          "play": 60,
+          "win": 34,
+          "pick_rate": 0.0829
         },
         {
           "id": 8005,
@@ -18251,7 +18251,7 @@
           ],
           "play": 48,
           "win": 22,
-          "pick_rate": 0.0654
+          "pick_rate": 0.0663
         }
       ]
     }
@@ -18263,9 +18263,9 @@
         4645,
         3157
       ],
-      "play": 1731,
-      "win": 937,
-      "pick_rate": 0.2079
+      "play": 1714,
+      "win": 928,
+      "pick_rate": 0.2084
     },
     {
       "ids": [
@@ -18274,9 +18274,9 @@
         4645,
         3157
       ],
-      "play": 527,
-      "win": 333,
-      "pick_rate": 0.0633
+      "play": 519,
+      "win": 329,
+      "pick_rate": 0.0631
     },
     {
       "ids": [
@@ -18284,9 +18284,9 @@
         4645,
         3089
       ],
-      "play": 473,
+      "play": 471,
       "win": 277,
-      "pick_rate": 0.0568
+      "pick_rate": 0.0573
     },
     {
       "ids": [
@@ -18294,9 +18294,9 @@
         4645,
         3135
       ],
-      "play": 464,
-      "win": 256,
-      "pick_rate": 0.0557
+      "play": 460,
+      "win": 255,
+      "pick_rate": 0.0559
     },
     {
       "ids": [
@@ -18305,9 +18305,9 @@
         4645,
         3135
       ],
-      "play": 257,
+      "play": 255,
       "win": 163,
-      "pick_rate": 0.0309
+      "pick_rate": 0.031
     },
     {
       "ids": [
@@ -18315,8 +18315,8 @@
         4645,
         3157
       ],
-      "play": 217,
-      "win": 113,
+      "play": 215,
+      "win": 112,
       "pick_rate": 0.0261
     },
     {
@@ -18326,9 +18326,9 @@
         4645,
         3041
       ],
-      "play": 203,
-      "win": 179,
-      "pick_rate": 0.0244
+      "play": 197,
+      "win": 173,
+      "pick_rate": 0.024
     },
     {
       "ids": [
@@ -18337,9 +18337,9 @@
         4645,
         3089
       ],
-      "play": 199,
-      "win": 150,
-      "pick_rate": 0.0239
+      "play": 197,
+      "win": 148,
+      "pick_rate": 0.024
     },
     {
       "ids": [
@@ -18348,9 +18348,9 @@
         3041,
         4645
       ],
-      "play": 187,
-      "win": 160,
-      "pick_rate": 0.0225
+      "play": 186,
+      "win": 159,
+      "pick_rate": 0.0226
     },
     {
       "ids": [
@@ -18358,9 +18358,9 @@
         3157,
         4645
       ],
-      "play": 159,
-      "win": 92,
-      "pick_rate": 0.0191
+      "play": 155,
+      "win": 90,
+      "pick_rate": 0.0188
     },
     {
       "ids": [
@@ -18368,8 +18368,8 @@
         3100,
         3157
       ],
-      "play": 141,
-      "win": 80,
+      "play": 139,
+      "win": 78,
       "pick_rate": 0.0169
     },
     {
@@ -18380,7 +18380,7 @@
       ],
       "play": 138,
       "win": 86,
-      "pick_rate": 0.0166
+      "pick_rate": 0.0168
     },
     {
       "ids": [
@@ -18390,17 +18390,7 @@
       ],
       "play": 125,
       "win": 69,
-      "pick_rate": 0.015
-    },
-    {
-      "ids": [
-        4646,
-        3100,
-        4645
-      ],
-      "play": 122,
-      "win": 68,
-      "pick_rate": 0.0147
+      "pick_rate": 0.0152
     },
     {
       "ids": [
@@ -18408,9 +18398,19 @@
         4645,
         3102
       ],
-      "play": 120,
+      "play": 118,
       "win": 59,
-      "pick_rate": 0.0144
+      "pick_rate": 0.0143
+    },
+    {
+      "ids": [
+        4646,
+        3100,
+        4645
+      ],
+      "play": 116,
+      "win": 65,
+      "pick_rate": 0.0141
     }
   ],
   "boots": [
@@ -18418,9 +18418,9 @@
       "ids": [
         3020
       ],
-      "play": 17196,
-      "win": 8902,
-      "pick_rate": 0.9857
+      "play": 16970,
+      "win": 8782,
+      "pick_rate": 0.9858
     },
     {
       "ids": [
@@ -18434,8 +18434,8 @@
       "ids": [
         3111
       ],
-      "play": 65,
-      "win": 35,
+      "play": 63,
+      "win": 34,
       "pick_rate": 0.0037
     },
     {
@@ -18444,14 +18444,14 @@
       ],
       "play": 44,
       "win": 18,
-      "pick_rate": 0.0025
+      "pick_rate": 0.0026
     },
     {
       "ids": [
         3013
       ],
-      "play": 32,
-      "win": 17,
+      "play": 31,
+      "win": 16,
       "pick_rate": 0.0018
     }
   ],
@@ -18461,34 +18461,34 @@
         1101,
         2003
       ],
-      "play": 8650,
-      "win": 4419,
-      "pick_rate": 0.4781
+      "play": 8498,
+      "win": 4337,
+      "pick_rate": 0.4762
     },
     {
       "ids": [
         1102,
         2003
       ],
-      "play": 3854,
-      "win": 1945,
-      "pick_rate": 0.213
+      "play": 3804,
+      "win": 1919,
+      "pick_rate": 0.2132
     },
     {
       "ids": [
         1101
       ],
-      "play": 3107,
-      "win": 1645,
-      "pick_rate": 0.1717
+      "play": 3077,
+      "win": 1631,
+      "pick_rate": 0.1724
     },
     {
       "ids": [
         1102
       ],
-      "play": 2114,
-      "win": 1087,
-      "pick_rate": 0.1168
+      "play": 2101,
+      "win": 1077,
+      "pick_rate": 0.1177
     },
     {
       "ids": [
@@ -18497,7 +18497,7 @@
       ],
       "play": 66,
       "win": 32,
-      "pick_rate": 0.0036
+      "pick_rate": 0.0037
     },
     {
       "ids": [
@@ -18534,7 +18534,7 @@
       ],
       "play": 28,
       "win": 16,
-      "pick_rate": 0.0015
+      "pick_rate": 0.0016
     },
     {
       "ids": [
@@ -18548,23 +18548,23 @@
     },
     {
       "ids": [
-        1052,
-        1102,
-        2003
-      ],
-      "play": 12,
-      "win": 8,
-      "pick_rate": 0.0007
-    },
-    {
-      "ids": [
         1001,
         1101,
         2003
       ],
-      "play": 13,
-      "win": 6,
+      "play": 12,
+      "win": 5,
       "pick_rate": 0.0007
+    },
+    {
+      "ids": [
+        1052,
+        1102,
+        2003
+      ],
+      "play": 11,
+      "win": 8,
+      "pick_rate": 0.0006
     },
     {
       "ids": [
