@@ -176,7 +176,7 @@
             }
           ],
           "sales": null,
-          "release_date": "2024-12-11T10:00:00+09:00"
+          "release_date": null
         },
         {
           "id": 90009,
@@ -333,17 +333,17 @@
       "is_rotation": false,
       "is_rip": false,
       "average_stats": {
-        "play": 2413,
-        "win_rate": 0.505595,
-        "pick_rate": 0.0308523,
-        "ban_rate": 0.0317703,
-        "kda": 2.196671,
-        "tier": 4,
-        "rank": 100,
+        "play": 2547,
+        "win_rate": 0.504515,
+        "pick_rate": 0.031196,
+        "ban_rate": 0.0323204,
+        "kda": 2.184017,
+        "tier": 3,
+        "rank": 101,
         "tier_data": {
-          "tier": 4,
-          "rank": 100,
-          "rank_prev": 92,
+          "tier": 3,
+          "rank": 101,
+          "rank_prev": 100,
           "rank_prev_patch": 79
         }
       },
@@ -351,16 +351,16 @@
         {
           "name": "MID",
           "stats": {
-            "play": 2110,
-            "win_rate": 0.511374,
-            "pick_rate": 0.0268156,
-            "role_rate": 0.87443,
-            "ban_rate": 0.0277809,
-            "kda": 2.24888,
+            "play": 2224,
+            "win_rate": 0.510342,
+            "pick_rate": 0.02708,
+            "role_rate": 0.873184,
+            "ban_rate": 0.0282216,
+            "kda": 2.238266,
             "tier_data": {
-              "tier": 3,
-              "rank": 16,
-              "rank_prev": 13,
+              "tier": 2,
+              "rank": 14,
+              "rank_prev": 16,
               "rank_prev_patch": 18
             }
           },
@@ -368,28 +368,28 @@
             {
               "name": "MAGE",
               "stats": {
-                "win_rate": 0.510608,
-                "role_rate": 0.997648,
-                "play": 2121,
-                "win": 1083
+                "win_rate": 0.510772,
+                "role_rate": 0.997314,
+                "play": 2228,
+                "win": 1138
               }
             }
           ],
           "counters": [
             {
               "champion_id": 61,
-              "play": 37,
+              "play": 39,
               "win": 13
             },
             {
-              "champion_id": 3,
-              "play": 52,
-              "win": 21
+              "champion_id": 901,
+              "play": 35,
+              "win": 14
             },
             {
-              "champion_id": 901,
-              "play": 34,
-              "win": 14
+              "champion_id": 3,
+              "play": 56,
+              "win": 24
             }
           ]
         }
@@ -400,7 +400,7 @@
       [
         {
           "champion_id": 61,
-          "play": 37,
+          "play": 39,
           "win": 13,
           "meta": {
             "id": 61,
@@ -570,7 +570,7 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2024-12-11T10:00:00+09:00"
+                "release_date": null
               },
               {
                 "id": 61001,
@@ -719,12 +719,183 @@
               }
             ]
           },
-          "win_rate": 35.14
+          "win_rate": 33.33
+        },
+        {
+          "champion_id": 901,
+          "play": 35,
+          "win": 14,
+          "meta": {
+            "id": 901,
+            "key": "Smolder",
+            "name": "炽炎雏龙",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Smolder.png",
+            "evolve": [],
+            "title": "斯莫德",
+            "partype": "法力",
+            "passive": {
+              "name": "龙之研习",
+              "description": "用技能命中英雄和用超级灼热龙息 击杀敌人时会提供一层龙之研习。层数会提升斯莫德各基础技能的伤害。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Icons_Smolder_Passive.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_P1.webm"
+            },
+            "spells": [
+              {
+                "key": "Q",
+                "name": "超级灼热龙息",
+                "description": "斯莫德在一名敌人身上喷吐烈焰。随着他获得更多层数，这个技能会变得更加强力。",
+                "max_rank": 5,
+                "range_burn": [
+                  550
+                ],
+                "cooldown_burn": [
+                  5,
+                  5,
+                  4,
+                  4,
+                  3
+                ],
+                "cooldown_burn_float": [
+                  5.5,
+                  5,
+                  4.5,
+                  4,
+                  3.5
+                ],
+                "cost_burn": [
+                  25
+                ],
+                "tooltip": "斯莫德喷出烈焰，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。如果目标阵亡，斯莫德会返还<scaleMana>?法力值</scaleMana>，这个效果在每次施放仅触发一次。<br /><br />基于<spellName>龙之研习</spellName>的层数，这个技能会不断进化，获得以下效果：<li><keywordMajor>?层</keywordMajor>：对目标周围的所有敌人造成伤害。<li><keywordMajor>?层</keywordMajor>：在目标后侧引发<spellName>{{ tier2_numberofblowback }}</spellName>次爆炸，造成此技能{{ tier2_blowbackpercentagedamage }}%的伤害。<li><keywordMajor>?层</keywordMajor>：灼烧目标，{{ tier3_dotlength }}秒内持续造成共<trueDamage>{{ tier3_burn }}最大生命值的真实伤害</trueDamage>。 敌方英雄如果在灼烧期间总生命值降至<trueDamage>{{ tier3_executethreshold }}</trueDamage>以下，则会被立刻击杀。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_Q1.webm"
+              },
+              {
+                "key": "W",
+                "name": "阿嚏！",
+                "description": "斯莫德发出一个萌萌的烈焰喷嚏，喷嚏会在命中敌人时爆炸。",
+                "max_rank": 5,
+                "range_burn": [
+                  1500
+                ],
+                "cooldown_burn": [
+                  14,
+                  13,
+                  12,
+                  11,
+                  10
+                ],
+                "cooldown_burn_float": [
+                  14,
+                  13,
+                  12,
+                  11,
+                  10
+                ],
+                "cost_burn": [
+                  50,
+                  55,
+                  60,
+                  65,
+                  70
+                ],
+                "tooltip": "斯莫德发出一个萌萌的烈焰喷嚏，造成<physicalDamage>?物理伤害</physicalDamage>和持续?秒的?%<status>减速</status>。<br /><br />命中英雄时会引发一次爆炸，造成<physicalDamage>?物理</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_W1.webm"
+              },
+              {
+                "key": "E",
+                "name": "扑棱，扑棱，扑棱！",
+                "description": "斯莫德展翅高飞，无视地形并轰击生命值最低的敌人。",
+                "max_rank": 5,
+                "range_burn": [
+                  700
+                ],
+                "cooldown_burn": [
+                  24,
+                  22,
+                  20,
+                  18,
+                  16
+                ],
+                "cooldown_burn_float": [
+                  24,
+                  22,
+                  20,
+                  18,
+                  16
+                ],
+                "cost_burn": [
+                  65
+                ],
+                "tooltip": "斯莫德展翅高飞，获得<speed>?%移动速度</speed>并无视地形，持续?秒。<br /><br />飞行时，斯莫德轰击生命值最低的敌方英雄<spellName>?</spellName>次(向下取整)，每次命中造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_E1.webm"
+              },
+              {
+                "key": "R",
+                "name": "妈----！",
+                "description": "斯莫德召唤他的妈妈从天空喷吐烈焰，对她的烈焰中心的敌人们造成额外伤害和减速。",
+                "max_rank": 3,
+                "range_burn": [
+                  4200
+                ],
+                "cooldown_burn": [
+                  120
+                ],
+                "cooldown_burn_float": [
+                  120
+                ],
+                "cost_burn": [
+                  100
+                ],
+                "tooltip": "斯莫德的妈妈从天空喷吐烈焰，造成<physicalDamage>?物理伤害</physicalDamage>。中心的敌人们会转而受到<physicalDamage>?</physicalDamage>物理伤害和持续?秒的?%<status>减速</status>。<br /><br />斯莫德的妈妈如果命中了她的儿子，则会为他治疗<healing>?生命值</healing>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_R1.webm"
+              }
+            ],
+            "skins": [
+              {
+                "id": 901000,
+                "champion_id": 901,
+                "name": "default",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Smolder_0.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "IP",
+                    "cost": 6300
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 901001,
+                "champion_id": 901,
+                "name": "天龙之子 斯莫德",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Smolder_1.jpg",
+                "skin_video_url": "https://youtu.be/XeJNB08BRYU",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-01-31T10:00:00+09:00"
+              }
+            ]
+          },
+          "win_rate": 40
         },
         {
           "champion_id": 3,
-          "play": 52,
-          "win": 21,
+          "play": 56,
+          "win": 24,
           "meta": {
             "id": 3,
             "key": "Galio",
@@ -1011,183 +1182,12 @@
               }
             ]
           },
-          "win_rate": 40.38
-        },
-        {
-          "champion_id": 901,
-          "play": 34,
-          "win": 14,
-          "meta": {
-            "id": 901,
-            "key": "Smolder",
-            "name": "炽炎雏龙",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Smolder.png",
-            "evolve": [],
-            "title": "斯莫德",
-            "partype": "法力",
-            "passive": {
-              "name": "龙之研习",
-              "description": "用技能命中英雄和用超级灼热龙息 击杀敌人时会提供一层龙之研习。层数会提升斯莫德各基础技能的伤害。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/Icons_Smolder_Passive.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_P1.webm"
-            },
-            "spells": [
-              {
-                "key": "Q",
-                "name": "超级灼热龙息",
-                "description": "斯莫德在一名敌人身上喷吐烈焰。随着他获得更多层数，这个技能会变得更加强力。",
-                "max_rank": 5,
-                "range_burn": [
-                  550
-                ],
-                "cooldown_burn": [
-                  5,
-                  5,
-                  4,
-                  4,
-                  3
-                ],
-                "cooldown_burn_float": [
-                  5.5,
-                  5,
-                  4.5,
-                  4,
-                  3.5
-                ],
-                "cost_burn": [
-                  25
-                ],
-                "tooltip": "斯莫德喷出烈焰，造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。如果目标阵亡，斯莫德会返还<scaleMana>?法力值</scaleMana>，这个效果在每次施放仅触发一次。<br /><br />基于<spellName>龙之研习</spellName>的层数，这个技能会不断进化，获得以下效果：<li><keywordMajor>?层</keywordMajor>：对目标周围的所有敌人造成伤害。<li><keywordMajor>?层</keywordMajor>：在目标后侧引发<spellName>{{ tier2_numberofblowback }}</spellName>次爆炸，造成此技能{{ tier2_blowbackpercentagedamage }}%的伤害。<li><keywordMajor>?层</keywordMajor>：灼烧目标，{{ tier3_dotlength }}秒内持续造成共<trueDamage>{{ tier3_burn }}最大生命值的真实伤害</trueDamage>。 敌方英雄如果在灼烧期间总生命值降至<trueDamage>{{ tier3_executethreshold }}</trueDamage>以下，则会被立刻击杀。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_Q1.webm"
-              },
-              {
-                "key": "W",
-                "name": "阿嚏！",
-                "description": "斯莫德发出一个萌萌的烈焰喷嚏，喷嚏会在命中敌人时爆炸。",
-                "max_rank": 5,
-                "range_burn": [
-                  1500
-                ],
-                "cooldown_burn": [
-                  14,
-                  13,
-                  12,
-                  11,
-                  10
-                ],
-                "cooldown_burn_float": [
-                  14,
-                  13,
-                  12,
-                  11,
-                  10
-                ],
-                "cost_burn": [
-                  50,
-                  55,
-                  60,
-                  65,
-                  70
-                ],
-                "tooltip": "斯莫德发出一个萌萌的烈焰喷嚏，造成<physicalDamage>?物理伤害</physicalDamage>和持续?秒的?%<status>减速</status>。<br /><br />命中英雄时会引发一次爆炸，造成<physicalDamage>?物理</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_W1.webm"
-              },
-              {
-                "key": "E",
-                "name": "扑棱，扑棱，扑棱！",
-                "description": "斯莫德展翅高飞，无视地形并轰击生命值最低的敌人。",
-                "max_rank": 5,
-                "range_burn": [
-                  700
-                ],
-                "cooldown_burn": [
-                  24,
-                  22,
-                  20,
-                  18,
-                  16
-                ],
-                "cooldown_burn_float": [
-                  24,
-                  22,
-                  20,
-                  18,
-                  16
-                ],
-                "cost_burn": [
-                  65
-                ],
-                "tooltip": "斯莫德展翅高飞，获得<speed>?%移动速度</speed>并无视地形，持续?秒。<br /><br />飞行时，斯莫德轰击生命值最低的敌方英雄<spellName>?</spellName>次(向下取整)，每次命中造成<physicalDamage>?物理伤害</physicalDamage> + <magicDamage>?魔法伤害</magicDamage>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_E1.webm"
-              },
-              {
-                "key": "R",
-                "name": "妈----！",
-                "description": "斯莫德召唤他的妈妈从天空喷吐烈焰，对她的烈焰中心的敌人们造成额外伤害和减速。",
-                "max_rank": 3,
-                "range_burn": [
-                  4200
-                ],
-                "cooldown_burn": [
-                  120
-                ],
-                "cooldown_burn_float": [
-                  120
-                ],
-                "cost_burn": [
-                  100
-                ],
-                "tooltip": "斯莫德的妈妈从天空喷吐烈焰，造成<physicalDamage>?物理伤害</physicalDamage>。中心的敌人们会转而受到<physicalDamage>?</physicalDamage>物理伤害和持续?秒的?%<status>减速</status>。<br /><br />斯莫德的妈妈如果命中了她的儿子，则会为他治疗<healing>?生命值</healing>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/SmolderR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0901/ability_0901_R1.webm"
-              }
-            ],
-            "skins": [
-              {
-                "id": 901000,
-                "champion_id": 901,
-                "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Smolder_0.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "IP",
-                    "cost": 6300
-                  },
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 901001,
-                "champion_id": 901,
-                "name": "天龙之子 斯莫德",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Smolder_1.jpg",
-                "skin_video_url": "https://youtu.be/XeJNB08BRYU",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2024-01-31T10:00:00+09:00"
-              }
-            ]
-          },
-          "win_rate": 41.18
+          "win_rate": 42.86
         },
         {
           "champion_id": 910,
-          "play": 57,
-          "win": 26,
+          "play": 60,
+          "win": 27,
           "meta": {
             "id": 910,
             "key": "Hwei",
@@ -1365,12 +1365,12 @@
               }
             ]
           },
-          "win_rate": 45.61
+          "win_rate": 45
         },
         {
           "champion_id": 893,
-          "play": 41,
-          "win": 19,
+          "play": 42,
+          "win": 20,
           "meta": {
             "id": 893,
             "key": "Aurora",
@@ -1544,14 +1544,14 @@
               }
             ]
           },
-          "win_rate": 46.34
+          "win_rate": 47.62
         }
       ],
       [
         {
           "champion_id": 7,
-          "play": 57,
-          "win": 35,
+          "play": 61,
+          "win": 39,
           "meta": {
             "id": 7,
             "key": "Leblanc",
@@ -1739,7 +1739,7 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2024-12-11T10:00:00+09:00"
+                "release_date": null
               },
               {
                 "id": 7035,
@@ -1883,12 +1883,12 @@
               }
             ]
           },
-          "win_rate": 61.4
+          "win_rate": 63.93
         },
         {
           "champion_id": 517,
-          "play": 87,
-          "win": 51,
+          "play": 95,
+          "win": 57,
           "meta": {
             "id": 517,
             "key": "Sylas",
@@ -2153,177 +2153,166 @@
               }
             ]
           },
-          "win_rate": 58.62
+          "win_rate": 60
         },
         {
-          "champion_id": 8,
-          "play": 48,
-          "win": 28,
+          "champion_id": 238,
+          "play": 51,
+          "win": 29,
           "meta": {
-            "id": 8,
-            "key": "Vladimir",
-            "name": "猩红收割者",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Vladimir.png",
+            "id": 238,
+            "key": "Zed",
+            "name": "影流之主",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Zed.png",
             "evolve": [],
-            "title": "弗拉基米尔",
-            "partype": "猩红冲刺",
+            "title": "劫",
+            "partype": "能量",
             "passive": {
-              "name": "血色契约",
-              "description": "每30生命值加成给予弗拉基米尔1法术强度，每1法术强度给予弗拉基米尔1.6生命值（不会自我循环叠加）。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/VladimirP.png",
-              "video_url": null
+              "name": "影忍法！灭魂劫",
+              "description": "劫的普通攻击会对低生命值的目标造成额外魔法伤害。这个特效在数秒内只能对相同的敌方英雄生效一次。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/ZedP.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0238/ability_0238_P1.webm"
             },
             "spells": [
               {
                 "key": "Q",
-                "name": "鲜血转换",
-                "description": "弗拉基米尔从目标敌人身上偷取生命值。当弗拉基米尔的资源槽攒满后，鲜血转换将暂时获得增益，提升伤害和治疗效果。",
+                "name": "影奥义！诸刃",
+                "description": "劫和他的影分身一起将他们的手里剑向前方掷出。<br><br>每支手里剑都会对命中的每个敌人造成伤害。",
                 "max_rank": 5,
                 "range_burn": [
-                  600
+                  900
                 ],
                 "cooldown_burn": [
-                  9,
-                  7,
-                  6,
-                  5,
-                  4
+                  6
                 ],
                 "cooldown_burn_float": [
-                  9,
-                  7.9,
-                  6.8,
-                  5.7,
-                  4.6
+                  6
                 ],
                 "cost_burn": [
-                  0
+                  75,
+                  70,
+                  65,
+                  60,
+                  55
                 ],
-                "tooltip": "弗拉基米尔汲取目标的生命力，造成<magicDamage>?魔法伤害</magicDamage>并回复<healing>?生命值</healing>。在使用2次这个技能后，弗拉基米尔会获得<speed>?%移动速度</speed>，持续0.5秒，并强化这个技能的下一次使用，持续2.5秒。<br /><br />这个技能的强化版会造成<magicDamage>?魔法伤害</magicDamage>并回复额外的<healing>?加上?已损失生命值</healing>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VladimirQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0008/ability_0008_Q1.webm"
+                "tooltip": "劫和他的<keywordMajor>影分身</keywordMajor>一起将他们的手里剑向前方掷出，每一枚手里剑都会对命中的第一个敌人造成<physicalDamage>?物理伤害</physicalDamage>，并对之后的每个敌人造成<physicalDamage>?物理伤害</physicalDamage>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZedQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0238/ability_0238_Q1.webm"
               },
               {
                 "key": "W",
-                "name": "血红之池",
-                "description": "弗拉基米尔潜入血泊之中，变得不可被选取，持续2秒。血泊上的敌人被减速，同时弗拉基米尔会从他们身上吸取生命。",
+                "name": "影奥义！分身",
+                "description": "<font color='#FF9900'>被动：</font>当劫和他的影分身用相同技能击中一名敌方英雄时，劫会回复能量。每次施放技能只会回复一次能量。<br><br><font color='#FF9900'>主动：</font>劫的影分身向前突进，并在一个地方维持若干秒。再次激活此技能会让劫与这个影分身互换位置。",
                 "max_rank": 5,
                 "range_burn": [
-                  350
+                  650
                 ],
                 "cooldown_burn": [
-                  28,
-                  25,
-                  22,
+                  20,
                   19,
+                  18,
+                  17,
                   16
                 ],
                 "cooldown_burn_float": [
-                  28,
-                  25,
-                  22,
+                  20,
                   19,
+                  18,
+                  17,
                   16
                 ],
                 "cost_burn": [
-                  0
+                  40,
+                  35,
+                  30,
+                  25,
+                  20
                 ],
-                "tooltip": "弗拉基米尔化成一滩持续2秒的血池，获得<speed>?%持续衰减的移动速度</speed>，持续?秒，并进入<keyword>无法被选取</keyword>和<keyword>幽灵</keyword>状态，同时使血池中的敌人<status>减速</status>?%。<br /><br />弗拉基米尔在期间会持续造成<magicDamage>?魔法伤害</magicDamage>，并且每命中一个敌人就会为弗拉基米尔回复<healing>?生命值</healing>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VladimirSanguinePool.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0008/ability_0008_W1.webm"
+                "tooltip": "<spellPassive>被动：</spellPassive>当劫和他的<keywordMajor>影分身</keywordMajor>用相同技能击中一名敌方英雄时，劫会回复<keywordMajor>30/35/40/45/50能量</keywordMajor>。<br /><br /><spellActive>主动：</spellActive>劫的<keywordMajor>影分身</keywordMajor>向前突进，并在一个地方维持5秒。<recast>再次施放</recast>这个技能会让劫与这个<keywordMajor>影分身</keywordMajor>互换位置。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZedW.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0238/ability_0238_W1.webm"
               },
               {
                 "key": "E",
-                "name": "血之潮汐",
-                "description": "弗拉基米尔消耗他的生命值来持续灌注一个蓄血库，蓄血库在释放时会对他身边的敌人造成伤害，但会被敌方单位所阻挡。",
+                "name": "影奥义！鬼斩",
+                "description": "劫和他的影分身进行斩击，对附近的敌人造成伤害。被一个影分身的斩击命中的敌人们会被减速。",
                 "max_rank": 5,
                 "range_burn": [
-                  600
+                  290
                 ],
                 "cooldown_burn": [
-                  13,
-                  11,
-                  9,
-                  7,
-                  5
+                  5,
+                  4,
+                  4,
+                  3,
+                  3
                 ],
                 "cooldown_burn_float": [
-                  13,
-                  11,
-                  9,
-                  7,
-                  5
+                  5,
+                  4.5,
+                  4,
+                  3.5,
+                  3
                 ],
                 "cost_burn": [
-                  0
+                  40
                 ],
-                "tooltip": "<charge>开始蓄力：</charge>弗拉基米尔积攒一个蓄血库，至多消耗<span class=\"colorCC3300\">?生命值</span>。在攒满后，弗拉基米尔会被<status>减速</status>20%。<br /><br /><release>释放：</release>弗拉基米尔对附近的敌人释放一股血弹激流，基于蓄力时间造成<magicDamage>?</magicDamage>至<magicDamage>?魔法伤害</magicDamage>。如果这个技能蓄力了至少1秒，那么它还会使目标<status>减速</status>40/45/50/55/60%，持续0.5秒。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VladimirE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0008/ability_0008_E1.webm"
+                "tooltip": "劫和他的<keywordMajor>影分身</keywordMajor>进行斩击，对附近的敌人造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br />每个被劫的斩击所命中的敌方英雄都会使<spellName>影奥义！分身</spellName>的冷却时间减少?秒。<br /><br />被<keywordMajor>影分身</keywordMajor>的斩击所击中的敌人，将会被<status>减速</status>?%，持续?秒。被多个斩击同时击中的敌人，将会被<status>减速</status>?%，但不会受到额外伤害。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZedE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0238/ability_0238_E1.webm"
               },
               {
                 "key": "R",
-                "name": "血之瘟疫",
-                "description": "弗拉基米尔令一片区域感染上剧毒瘟疫，增加受感染敌人所受的伤害。在几秒后，血之瘟疫会对被感染的敌人造成魔法伤害，并根据命中的敌方英雄数来治疗弗拉基米尔。",
+                "name": "禁奥义！瞬狱影杀阵",
+                "description": "劫变为不可被选取状态并突进至一名敌方英雄，同时为目标施加死亡印记。在3秒后，印记将会爆炸，同时造成额外伤害，劫在印记激活期间造成的伤害越多，则此额外伤害越高。如果该英雄死于此技能期间，那么劫可以获得该英雄的一部分攻击力。",
                 "max_rank": 3,
                 "range_burn": [
                   625
                 ],
                 "cooldown_burn": [
-                  120
+                  120,
+                  110,
+                  100
                 ],
                 "cooldown_burn_float": [
-                  120
+                  120,
+                  110,
+                  100
                 ],
                 "cost_burn": [
                   0
                 ],
-                "tooltip": "弗拉基米尔生成一个剧毒瘟疫，使他的目标们所受伤害(所有来源)提高10%，持续4秒。在它消散后，弗拉基米尔对所有被感染的目标造成<magicDamage>?魔法伤害</magicDamage>。如果弗拉基米尔命中了一名敌方英雄，那么就会治疗自身<healing>?生命值</healing>，此后每命中一名敌方英雄会治疗自身额外的<healing>?生命值</healing>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VladimirHemoplague.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0008/ability_0008_R1.webm"
+                "tooltip": "劫变得不可被选取，突进向一位敌方英雄，并将其标记。?秒后，标记会触发，对目标造成<physicalDamage>?物理伤害</physicalDamage>，加上印记激活期间劫所造成的伤害总和的?%。<br /><br />突进会留下一个<keywordMajor>影分身</keywordMajor>在身后，持续?秒。<recast>再次施放</recast>此技能会使劫与这个<keywordMajor>影分身</keywordMajor>互换位置。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZedR.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0238/ability_0238_R1.webm"
               }
             ],
             "skins": [
               {
-                "id": 8000,
-                "champion_id": 8,
+                "id": 238000,
+                "champion_id": 238,
                 "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_0.jpg",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_0.jpg",
                 "skin_video_url": null,
                 "prices": [
                   {
                     "currency": "IP",
-                    "cost": 3150
+                    "cost": 1350
                   },
                   {
                     "currency": "RP",
-                    "cost": 790
+                    "cost": 585
                   }
                 ],
                 "sales": null,
                 "release_date": null
               },
               {
-                "id": 8030,
-                "champion_id": 8,
-                "name": "咖啡甜心 弗拉基米尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_30.jpg",
-                "skin_video_url": "https://youtu.be/VYM6kSA1Ryw",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2021-12-02T04:00:00+09:00"
-              },
-              {
-                "id": 8007,
-                "champion_id": 8,
-                "name": "学生会长 弗拉基米尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_7.jpg",
-                "skin_video_url": "https://youtu.be/50QjcmBq_W8",
+                "id": 238002,
+                "champion_id": 238,
+                "name": "SKT T1 劫",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_2.jpg",
+                "skin_video_url": "https://youtu.be/klb4g8B1E4s",
                 "prices": [
                   {
                     "currency": "RP",
@@ -2331,103 +2320,14 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2015-08-27T10:00:00+09:00"
-              },
-              {
-                "id": 8001,
-                "champion_id": 8,
-                "name": "弗拉基米尔伯爵",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_1.jpg",
-                "skin_video_url": "https://youtu.be/ZMYrSMSm6_k",
-                "prices": null,
-                "sales": null,
                 "release_date": null
               },
               {
-                "id": 8002,
-                "champion_id": 8,
-                "name": "弗拉基米尔侯爵",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_2.jpg",
-                "skin_video_url": "https://youtu.be/i3lIFX74VTc",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 520
-                  }
-                ],
-                "sales": null,
-                "release_date": "2010-07-12T15:00:00+09:00"
-              },
-              {
-                "id": 8006,
-                "champion_id": 8,
-                "name": "摄魂男爵 弗拉基米尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_6.jpg",
-                "skin_video_url": "https://youtu.be/tHCzYwVNJ4U",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2014-07-08T06:00:00+09:00"
-              },
-              {
-                "id": 8021,
-                "champion_id": 8,
-                "name": "波江星神 弗拉基米尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_21.jpg",
-                "skin_video_url": "https://youtu.be/iWBT0p1hCME",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2020-11-24T04:00:00+09:00"
-              },
-              {
-                "id": 8039,
-                "champion_id": 8,
-                "name": "绝息圣堂 弗拉基米尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_39.jpg",
-                "skin_video_url": "https://youtu.be/QLo9reFoI7o",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  },
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2023-03-09T04:00:00+09:00"
-              },
-              {
-                "id": 8005,
-                "champion_id": 8,
-                "name": "血石领主 弗拉基米尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_5.jpg",
-                "skin_video_url": "https://youtu.be/SRMzt9tZxoY",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1820
-                  }
-                ],
-                "sales": null,
-                "release_date": "2011-11-20T23:00:00+09:00"
-              },
-              {
-                "id": 8003,
-                "champion_id": 8,
-                "name": "诺斯费拉图  弗拉基米尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_3.jpg",
-                "skin_video_url": "https://youtu.be/vMPdDxeUmMg",
+                "id": 238010,
+                "champion_id": 238,
+                "name": "冠军之隐 劫",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_10.jpg",
+                "skin_video_url": "https://youtu.be/8Z_cBJX1lLc",
                 "prices": [
                   {
                     "currency": "RP",
@@ -2438,21 +2338,141 @@
                 "release_date": null
               },
               {
-                "id": 8004,
-                "champion_id": 8,
-                "name": "霹雳游侠 弗拉基米尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_4.jpg",
-                "skin_video_url": "https://youtu.be/Ih4gSWsVedo",
+                "id": 238001,
+                "champion_id": 238,
+                "name": "冲击之刃 劫",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_1.jpg",
+                "skin_video_url": "https://youtu.be/LO46s9da4G4",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": "2012-11-12T15:00:00+09:00"
+              },
+              {
+                "id": 238013,
+                "champion_id": 238,
+                "name": "天煞 劫",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_13.jpg",
+                "skin_video_url": "https://youtu.be/FBlbeAYlusE",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1820
+                  }
+                ],
+                "sales": null,
+                "release_date": "2019-04-18T01:00:00+09:00"
+              },
+              {
+                "id": 238031,
+                "champion_id": 238,
+                "name": "影执事 劫",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_31.jpg",
+                "skin_video_url": "https://youtu.be/TJCBaeT7fCQ",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1820
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-12-09T04:00:00+09:00"
+              },
+              {
+                "id": 238011,
+                "champion_id": 238,
+                "name": "死亡誓约 劫",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_11.jpg",
+                "skin_video_url": "https://youtu.be/wNxEGJNkLqw",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 238003,
+                "champion_id": 238,
+                "name": "源计划：阴 劫",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_3.jpg",
+                "skin_video_url": "https://youtu.be/qelV_Fvz-4o",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2015-09-16T15:00:00+09:00"
+              },
+              {
+                "id": 238015,
+                "champion_id": 238,
+                "name": "灵能特工 劫",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_15.jpg",
+                "skin_video_url": "https://youtu.be/d9H-VTYaExg",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-09-17T04:00:00+09:00"
+              },
+              {
+                "id": 238049,
+                "champion_id": 238,
+                "name": "玉剑传说 无劫",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_49.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2023-08-16T11:00:00+09:00"
+              },
+              {
+                "id": 238058,
+                "champion_id": 238,
+                "name": "腥红之月 劫",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_58.jpg",
+                "skin_video_url": null,
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2024-04-17T09:00:00+09:00"
+              },
+              {
+                "id": 238030,
+                "champion_id": 238,
+                "name": "至臻 源计划：阴 劫",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_30.jpg",
+                "skin_video_url": "https://youtu.be/qqsPJMZbbbk",
                 "prices": null,
                 "sales": null,
                 "release_date": null
               },
               {
-                "id": 8014,
-                "champion_id": 8,
-                "name": "黑夜使者 弗拉基米尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_14.jpg",
-                "skin_video_url": "https://youtu.be/WIebREN28qM",
+                "id": 238038,
+                "champion_id": 238,
+                "name": "至高天 劫",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_38.jpg",
+                "skin_video_url": "https://youtu.be/wPwmcLuf-MI",
                 "prices": [
                   {
                     "currency": "RP",
@@ -2460,31 +2480,16 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2019-12-12T04:00:00+09:00"
-              },
-              {
-                "id": 8008,
-                "champion_id": 8,
-                "name": "黑潮 弗拉基米尔",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_8.jpg",
-                "skin_video_url": "https://youtu.be/rjaPBYVxaPE",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2018-05-30T23:00:00+09:00"
+                "release_date": "2022-11-03T04:00:00+09:00"
               }
             ]
           },
-          "win_rate": 58.33
+          "win_rate": 56.86
         },
         {
           "champion_id": 103,
-          "play": 84,
-          "win": 47,
+          "play": 90,
+          "win": 51,
           "meta": {
             "id": 103,
             "key": "Ahri",
@@ -2888,166 +2893,177 @@
               }
             ]
           },
-          "win_rate": 55.95
+          "win_rate": 56.67
         },
         {
-          "champion_id": 238,
-          "play": 49,
-          "win": 27,
+          "champion_id": 8,
+          "play": 52,
+          "win": 29,
           "meta": {
-            "id": 238,
-            "key": "Zed",
-            "name": "影流之主",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Zed.png",
+            "id": 8,
+            "key": "Vladimir",
+            "name": "猩红收割者",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Vladimir.png",
             "evolve": [],
-            "title": "劫",
-            "partype": "能量",
+            "title": "弗拉基米尔",
+            "partype": "猩红冲刺",
             "passive": {
-              "name": "影忍法！灭魂劫",
-              "description": "劫的普通攻击会对低生命值的目标造成额外魔法伤害。这个特效在数秒内只能对相同的敌方英雄生效一次。",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/ZedP.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0238/ability_0238_P1.webm"
+              "name": "血色契约",
+              "description": "每30生命值加成给予弗拉基米尔1法术强度，每1法术强度给予弗拉基米尔1.6生命值（不会自我循环叠加）。",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/VladimirP.png",
+              "video_url": null
             },
             "spells": [
               {
                 "key": "Q",
-                "name": "影奥义！诸刃",
-                "description": "劫和他的影分身一起将他们的手里剑向前方掷出。<br><br>每支手里剑都会对命中的每个敌人造成伤害。",
+                "name": "鲜血转换",
+                "description": "弗拉基米尔从目标敌人身上偷取生命值。当弗拉基米尔的资源槽攒满后，鲜血转换将暂时获得增益，提升伤害和治疗效果。",
                 "max_rank": 5,
                 "range_burn": [
-                  900
+                  600
                 ],
                 "cooldown_burn": [
-                  6
+                  9,
+                  7,
+                  6,
+                  5,
+                  4
                 ],
                 "cooldown_burn_float": [
-                  6
+                  9,
+                  7.9,
+                  6.8,
+                  5.7,
+                  4.6
                 ],
                 "cost_burn": [
-                  75,
-                  70,
-                  65,
-                  60,
-                  55
+                  0
                 ],
-                "tooltip": "劫和他的<keywordMajor>影分身</keywordMajor>一起将他们的手里剑向前方掷出，每一枚手里剑都会对命中的第一个敌人造成<physicalDamage>?物理伤害</physicalDamage>，并对之后的每个敌人造成<physicalDamage>?物理伤害</physicalDamage>。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZedQ.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0238/ability_0238_Q1.webm"
+                "tooltip": "弗拉基米尔汲取目标的生命力，造成<magicDamage>?魔法伤害</magicDamage>并回复<healing>?生命值</healing>。在使用2次这个技能后，弗拉基米尔会获得<speed>?%移动速度</speed>，持续0.5秒，并强化这个技能的下一次使用，持续2.5秒。<br /><br />这个技能的强化版会造成<magicDamage>?魔法伤害</magicDamage>并回复额外的<healing>?加上?已损失生命值</healing>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VladimirQ.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0008/ability_0008_Q1.webm"
               },
               {
                 "key": "W",
-                "name": "影奥义！分身",
-                "description": "<font color='#FF9900'>被动：</font>当劫和他的影分身用相同技能击中一名敌方英雄时，劫会回复能量。每次施放技能只会回复一次能量。<br><br><font color='#FF9900'>主动：</font>劫的影分身向前突进，并在一个地方维持若干秒。再次激活此技能会让劫与这个影分身互换位置。",
+                "name": "血红之池",
+                "description": "弗拉基米尔潜入血泊之中，变得不可被选取，持续2秒。血泊上的敌人被减速，同时弗拉基米尔会从他们身上吸取生命。",
                 "max_rank": 5,
                 "range_burn": [
-                  650
+                  350
                 ],
                 "cooldown_burn": [
-                  20,
+                  28,
+                  25,
+                  22,
                   19,
-                  18,
-                  17,
                   16
                 ],
                 "cooldown_burn_float": [
-                  20,
+                  28,
+                  25,
+                  22,
                   19,
-                  18,
-                  17,
                   16
                 ],
                 "cost_burn": [
-                  40,
-                  35,
-                  30,
-                  25,
-                  20
+                  0
                 ],
-                "tooltip": "<spellPassive>被动：</spellPassive>当劫和他的<keywordMajor>影分身</keywordMajor>用相同技能击中一名敌方英雄时，劫会回复<keywordMajor>30/35/40/45/50能量</keywordMajor>。<br /><br /><spellActive>主动：</spellActive>劫的<keywordMajor>影分身</keywordMajor>向前突进，并在一个地方维持5秒。<recast>再次施放</recast>这个技能会让劫与这个<keywordMajor>影分身</keywordMajor>互换位置。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZedW.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0238/ability_0238_W1.webm"
+                "tooltip": "弗拉基米尔化成一滩持续2秒的血池，获得<speed>?%持续衰减的移动速度</speed>，持续?秒，并进入<keyword>无法被选取</keyword>和<keyword>幽灵</keyword>状态，同时使血池中的敌人<status>减速</status>?%。<br /><br />弗拉基米尔在期间会持续造成<magicDamage>?魔法伤害</magicDamage>，并且每命中一个敌人就会为弗拉基米尔回复<healing>?生命值</healing>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VladimirSanguinePool.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0008/ability_0008_W1.webm"
               },
               {
                 "key": "E",
-                "name": "影奥义！鬼斩",
-                "description": "劫和他的影分身进行斩击，对附近的敌人造成伤害。被一个影分身的斩击命中的敌人们会被减速。",
+                "name": "血之潮汐",
+                "description": "弗拉基米尔消耗他的生命值来持续灌注一个蓄血库，蓄血库在释放时会对他身边的敌人造成伤害，但会被敌方单位所阻挡。",
                 "max_rank": 5,
                 "range_burn": [
-                  290
+                  600
                 ],
                 "cooldown_burn": [
-                  5,
-                  4,
-                  4,
-                  3,
-                  3
+                  13,
+                  11,
+                  9,
+                  7,
+                  5
                 ],
                 "cooldown_burn_float": [
-                  5,
-                  4.5,
-                  4,
-                  3.5,
-                  3
+                  13,
+                  11,
+                  9,
+                  7,
+                  5
                 ],
                 "cost_burn": [
-                  40
+                  0
                 ],
-                "tooltip": "劫和他的<keywordMajor>影分身</keywordMajor>进行斩击，对附近的敌人造成<physicalDamage>?物理伤害</physicalDamage>。<br /><br />每个被劫的斩击所命中的敌方英雄都会使<spellName>影奥义！分身</spellName>的冷却时间减少?秒。<br /><br />被<keywordMajor>影分身</keywordMajor>的斩击所击中的敌人，将会被<status>减速</status>?%，持续?秒。被多个斩击同时击中的敌人，将会被<status>减速</status>?%，但不会受到额外伤害。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZedE.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0238/ability_0238_E1.webm"
+                "tooltip": "<charge>开始蓄力：</charge>弗拉基米尔积攒一个蓄血库，至多消耗<span class=\"colorCC3300\">?生命值</span>。在攒满后，弗拉基米尔会被<status>减速</status>20%。<br /><br /><release>释放：</release>弗拉基米尔对附近的敌人释放一股血弹激流，基于蓄力时间造成<magicDamage>?</magicDamage>至<magicDamage>?魔法伤害</magicDamage>。如果这个技能蓄力了至少1秒，那么它还会使目标<status>减速</status>40/45/50/55/60%，持续0.5秒。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VladimirE.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0008/ability_0008_E1.webm"
               },
               {
                 "key": "R",
-                "name": "禁奥义！瞬狱影杀阵",
-                "description": "劫变为不可被选取状态并突进至一名敌方英雄，同时为目标施加死亡印记。在3秒后，印记将会爆炸，同时造成额外伤害，劫在印记激活期间造成的伤害越多，则此额外伤害越高。如果该英雄死于此技能期间，那么劫可以获得该英雄的一部分攻击力。",
+                "name": "血之瘟疫",
+                "description": "弗拉基米尔令一片区域感染上剧毒瘟疫，增加受感染敌人所受的伤害。在几秒后，血之瘟疫会对被感染的敌人造成魔法伤害，并根据命中的敌方英雄数来治疗弗拉基米尔。",
                 "max_rank": 3,
                 "range_burn": [
                   625
                 ],
                 "cooldown_burn": [
-                  120,
-                  110,
-                  100
+                  120
                 ],
                 "cooldown_burn_float": [
-                  120,
-                  110,
-                  100
+                  120
                 ],
                 "cost_burn": [
                   0
                 ],
-                "tooltip": "劫变得不可被选取，突进向一位敌方英雄，并将其标记。?秒后，标记会触发，对目标造成<physicalDamage>?物理伤害</physicalDamage>，加上印记激活期间劫所造成的伤害总和的?%。<br /><br />突进会留下一个<keywordMajor>影分身</keywordMajor>在身后，持续?秒。<recast>再次施放</recast>此技能会使劫与这个<keywordMajor>影分身</keywordMajor>互换位置。?",
-                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/ZedR.png",
-                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0238/ability_0238_R1.webm"
+                "tooltip": "弗拉基米尔生成一个剧毒瘟疫，使他的目标们所受伤害(所有来源)提高10%，持续4秒。在它消散后，弗拉基米尔对所有被感染的目标造成<magicDamage>?魔法伤害</magicDamage>。如果弗拉基米尔命中了一名敌方英雄，那么就会治疗自身<healing>?生命值</healing>，此后每命中一名敌方英雄会治疗自身额外的<healing>?生命值</healing>。?",
+                "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VladimirHemoplague.png",
+                "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0008/ability_0008_R1.webm"
               }
             ],
             "skins": [
               {
-                "id": 238000,
-                "champion_id": 238,
+                "id": 8000,
+                "champion_id": 8,
                 "name": "default",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_0.jpg",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_0.jpg",
                 "skin_video_url": null,
                 "prices": [
                   {
                     "currency": "IP",
-                    "cost": 1350
+                    "cost": 3150
                   },
                   {
                     "currency": "RP",
-                    "cost": 585
+                    "cost": 790
                   }
                 ],
                 "sales": null,
                 "release_date": null
               },
               {
-                "id": 238002,
-                "champion_id": 238,
-                "name": "SKT T1 劫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_2.jpg",
-                "skin_video_url": "https://youtu.be/klb4g8B1E4s",
+                "id": 8030,
+                "champion_id": 8,
+                "name": "咖啡甜心 弗拉基米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_30.jpg",
+                "skin_video_url": "https://youtu.be/VYM6kSA1Ryw",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2021-12-02T04:00:00+09:00"
+              },
+              {
+                "id": 8007,
+                "champion_id": 8,
+                "name": "学生会长 弗拉基米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_7.jpg",
+                "skin_video_url": "https://youtu.be/50QjcmBq_W8",
                 "prices": [
                   {
                     "currency": "RP",
@@ -3055,159 +3071,39 @@
                   }
                 ],
                 "sales": null,
-                "release_date": null
+                "release_date": "2015-08-27T10:00:00+09:00"
               },
               {
-                "id": 238010,
-                "champion_id": 238,
-                "name": "冠军之隐 劫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_10.jpg",
-                "skin_video_url": "https://youtu.be/8Z_cBJX1lLc",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 238001,
-                "champion_id": 238,
-                "name": "冲击之刃 劫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_1.jpg",
-                "skin_video_url": "https://youtu.be/LO46s9da4G4",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 975
-                  }
-                ],
-                "sales": null,
-                "release_date": "2012-11-12T15:00:00+09:00"
-              },
-              {
-                "id": 238013,
-                "champion_id": 238,
-                "name": "天煞 劫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_13.jpg",
-                "skin_video_url": "https://youtu.be/FBlbeAYlusE",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1820
-                  }
-                ],
-                "sales": null,
-                "release_date": "2019-04-18T01:00:00+09:00"
-              },
-              {
-                "id": 238031,
-                "champion_id": 238,
-                "name": "影执事 劫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_31.jpg",
-                "skin_video_url": "https://youtu.be/TJCBaeT7fCQ",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1820
-                  }
-                ],
-                "sales": null,
-                "release_date": "2021-12-09T04:00:00+09:00"
-              },
-              {
-                "id": 238011,
-                "champion_id": 238,
-                "name": "死亡誓约 劫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_11.jpg",
-                "skin_video_url": "https://youtu.be/wNxEGJNkLqw",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": null
-              },
-              {
-                "id": 238003,
-                "champion_id": 238,
-                "name": "源计划：阴 劫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_3.jpg",
-                "skin_video_url": "https://youtu.be/qelV_Fvz-4o",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2015-09-16T15:00:00+09:00"
-              },
-              {
-                "id": 238015,
-                "champion_id": 238,
-                "name": "灵能特工 劫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_15.jpg",
-                "skin_video_url": "https://youtu.be/d9H-VTYaExg",
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2020-09-17T04:00:00+09:00"
-              },
-              {
-                "id": 238049,
-                "champion_id": 238,
-                "name": "玉剑传说 无劫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_49.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2023-08-16T11:00:00+09:00"
-              },
-              {
-                "id": 238058,
-                "champion_id": 238,
-                "name": "腥红之月 劫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_58.jpg",
-                "skin_video_url": null,
-                "prices": [
-                  {
-                    "currency": "RP",
-                    "cost": 1350
-                  }
-                ],
-                "sales": null,
-                "release_date": "2024-04-17T09:00:00+09:00"
-              },
-              {
-                "id": 238030,
-                "champion_id": 238,
-                "name": "至臻 源计划：阴 劫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_30.jpg",
-                "skin_video_url": "https://youtu.be/qqsPJMZbbbk",
+                "id": 8001,
+                "champion_id": 8,
+                "name": "弗拉基米尔伯爵",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_1.jpg",
+                "skin_video_url": "https://youtu.be/ZMYrSMSm6_k",
                 "prices": null,
                 "sales": null,
                 "release_date": null
               },
               {
-                "id": 238038,
-                "champion_id": 238,
-                "name": "至高天 劫",
-                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Zed_38.jpg",
-                "skin_video_url": "https://youtu.be/wPwmcLuf-MI",
+                "id": 8002,
+                "champion_id": 8,
+                "name": "弗拉基米尔侯爵",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_2.jpg",
+                "skin_video_url": "https://youtu.be/i3lIFX74VTc",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 520
+                  }
+                ],
+                "sales": null,
+                "release_date": "2010-07-12T15:00:00+09:00"
+              },
+              {
+                "id": 8006,
+                "champion_id": 8,
+                "name": "摄魂男爵 弗拉基米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_6.jpg",
+                "skin_video_url": "https://youtu.be/tHCzYwVNJ4U",
                 "prices": [
                   {
                     "currency": "RP",
@@ -3215,19 +3111,123 @@
                   }
                 ],
                 "sales": null,
-                "release_date": "2022-11-03T04:00:00+09:00"
+                "release_date": "2014-07-08T06:00:00+09:00"
+              },
+              {
+                "id": 8021,
+                "champion_id": 8,
+                "name": "波江星神 弗拉基米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_21.jpg",
+                "skin_video_url": "https://youtu.be/iWBT0p1hCME",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2020-11-24T04:00:00+09:00"
+              },
+              {
+                "id": 8039,
+                "champion_id": 8,
+                "name": "绝息圣堂 弗拉基米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_39.jpg",
+                "skin_video_url": "https://youtu.be/QLo9reFoI7o",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  },
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2023-03-09T04:00:00+09:00"
+              },
+              {
+                "id": 8005,
+                "champion_id": 8,
+                "name": "血石领主 弗拉基米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_5.jpg",
+                "skin_video_url": "https://youtu.be/SRMzt9tZxoY",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1820
+                  }
+                ],
+                "sales": null,
+                "release_date": "2011-11-20T23:00:00+09:00"
+              },
+              {
+                "id": 8003,
+                "champion_id": 8,
+                "name": "诺斯费拉图  弗拉基米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_3.jpg",
+                "skin_video_url": "https://youtu.be/vMPdDxeUmMg",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 975
+                  }
+                ],
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 8004,
+                "champion_id": 8,
+                "name": "霹雳游侠 弗拉基米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_4.jpg",
+                "skin_video_url": "https://youtu.be/Ih4gSWsVedo",
+                "prices": null,
+                "sales": null,
+                "release_date": null
+              },
+              {
+                "id": 8014,
+                "champion_id": 8,
+                "name": "黑夜使者 弗拉基米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_14.jpg",
+                "skin_video_url": "https://youtu.be/WIebREN28qM",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2019-12-12T04:00:00+09:00"
+              },
+              {
+                "id": 8008,
+                "champion_id": 8,
+                "name": "黑潮 弗拉基米尔",
+                "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_8.jpg",
+                "skin_video_url": "https://youtu.be/rjaPBYVxaPE",
+                "prices": [
+                  {
+                    "currency": "RP",
+                    "cost": 1350
+                  }
+                ],
+                "sales": null,
+                "release_date": "2018-05-30T23:00:00+09:00"
               }
             ]
           },
-          "win_rate": 55.1
+          "win_rate": 55.77
         }
       ]
     ],
     "counters": [
       {
         "champion_id": 112,
-        "play": 258,
-        "win": 141,
+        "play": 273,
+        "win": 148,
         "meta": {
           "id": 112,
           "key": "Viktor",
@@ -3412,7 +3412,7 @@
                 }
               ],
               "sales": null,
-              "release_date": "2024-12-11T10:00:00+09:00"
+              "release_date": null
             },
             {
               "id": 112024,
@@ -3442,7 +3442,7 @@
                 }
               ],
               "sales": null,
-              "release_date": "2024-12-11T10:00:00+09:00"
+              "release_date": null
             },
             {
               "id": 112005,
@@ -3494,8 +3494,8 @@
       },
       {
         "champion_id": 517,
-        "play": 87,
-        "win": 51,
+        "play": 95,
+        "win": 57,
         "meta": {
           "id": 517,
           "key": "Sylas",
@@ -3763,8 +3763,8 @@
       },
       {
         "champion_id": 103,
-        "play": 84,
-        "win": 47,
+        "play": 90,
+        "win": 51,
         "meta": {
           "id": 103,
           "key": "Ahri",
@@ -4171,8 +4171,8 @@
       },
       {
         "champion_id": 84,
-        "play": 72,
-        "win": 39,
+        "play": 73,
+        "win": 40,
         "meta": {
           "id": 84,
           "key": "Akali",
@@ -4597,8 +4597,8 @@
       },
       {
         "champion_id": 7,
-        "play": 57,
-        "win": 35,
+        "play": 61,
+        "win": 39,
         "meta": {
           "id": 7,
           "key": "Leblanc",
@@ -4786,7 +4786,7 @@
                 }
               ],
               "sales": null,
-              "release_date": "2024-12-11T10:00:00+09:00"
+              "release_date": null
             },
             {
               "id": 7035,
@@ -4933,8 +4933,8 @@
       },
       {
         "champion_id": 157,
-        "play": 57,
-        "win": 28,
+        "play": 60,
+        "win": 29,
         "meta": {
           "id": 157,
           "key": "Yasuo",
@@ -5320,8 +5320,8 @@
       },
       {
         "champion_id": 777,
-        "play": 57,
-        "win": 29,
+        "play": 60,
+        "win": 30,
         "meta": {
           "id": 777,
           "key": "Yone",
@@ -5584,8 +5584,8 @@
       },
       {
         "champion_id": 910,
-        "play": 57,
-        "win": 26,
+        "play": 60,
+        "win": 27,
         "meta": {
           "id": 910,
           "key": "Hwei",
@@ -5766,8 +5766,8 @@
       },
       {
         "champion_id": 3,
-        "play": 52,
-        "win": 21,
+        "play": 56,
+        "win": 24,
         "meta": {
           "id": 3,
           "key": "Galio",
@@ -6056,9 +6056,334 @@
         }
       },
       {
+        "champion_id": 8,
+        "play": 52,
+        "win": 29,
+        "meta": {
+          "id": 8,
+          "key": "Vladimir",
+          "name": "猩红收割者",
+          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Vladimir.png",
+          "evolve": [],
+          "title": "弗拉基米尔",
+          "partype": "猩红冲刺",
+          "passive": {
+            "name": "血色契约",
+            "description": "每30生命值加成给予弗拉基米尔1法术强度，每1法术强度给予弗拉基米尔1.6生命值（不会自我循环叠加）。",
+            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/VladimirP.png",
+            "video_url": null
+          },
+          "spells": [
+            {
+              "key": "Q",
+              "name": "鲜血转换",
+              "description": "弗拉基米尔从目标敌人身上偷取生命值。当弗拉基米尔的资源槽攒满后，鲜血转换将暂时获得增益，提升伤害和治疗效果。",
+              "max_rank": 5,
+              "range_burn": [
+                600
+              ],
+              "cooldown_burn": [
+                9,
+                7,
+                6,
+                5,
+                4
+              ],
+              "cooldown_burn_float": [
+                9,
+                7.9,
+                6.8,
+                5.7,
+                4.6
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "弗拉基米尔汲取目标的生命力，造成<magicDamage>?魔法伤害</magicDamage>并回复<healing>?生命值</healing>。在使用2次这个技能后，弗拉基米尔会获得<speed>?%移动速度</speed>，持续0.5秒，并强化这个技能的下一次使用，持续2.5秒。<br /><br />这个技能的强化版会造成<magicDamage>?魔法伤害</magicDamage>并回复额外的<healing>?加上?已损失生命值</healing>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VladimirQ.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0008/ability_0008_Q1.webm"
+            },
+            {
+              "key": "W",
+              "name": "血红之池",
+              "description": "弗拉基米尔潜入血泊之中，变得不可被选取，持续2秒。血泊上的敌人被减速，同时弗拉基米尔会从他们身上吸取生命。",
+              "max_rank": 5,
+              "range_burn": [
+                350
+              ],
+              "cooldown_burn": [
+                28,
+                25,
+                22,
+                19,
+                16
+              ],
+              "cooldown_burn_float": [
+                28,
+                25,
+                22,
+                19,
+                16
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "弗拉基米尔化成一滩持续2秒的血池，获得<speed>?%持续衰减的移动速度</speed>，持续?秒，并进入<keyword>无法被选取</keyword>和<keyword>幽灵</keyword>状态，同时使血池中的敌人<status>减速</status>?%。<br /><br />弗拉基米尔在期间会持续造成<magicDamage>?魔法伤害</magicDamage>，并且每命中一个敌人就会为弗拉基米尔回复<healing>?生命值</healing>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VladimirSanguinePool.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0008/ability_0008_W1.webm"
+            },
+            {
+              "key": "E",
+              "name": "血之潮汐",
+              "description": "弗拉基米尔消耗他的生命值来持续灌注一个蓄血库，蓄血库在释放时会对他身边的敌人造成伤害，但会被敌方单位所阻挡。",
+              "max_rank": 5,
+              "range_burn": [
+                600
+              ],
+              "cooldown_burn": [
+                13,
+                11,
+                9,
+                7,
+                5
+              ],
+              "cooldown_burn_float": [
+                13,
+                11,
+                9,
+                7,
+                5
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "<charge>开始蓄力：</charge>弗拉基米尔积攒一个蓄血库，至多消耗<span class=\"colorCC3300\">?生命值</span>。在攒满后，弗拉基米尔会被<status>减速</status>20%。<br /><br /><release>释放：</release>弗拉基米尔对附近的敌人释放一股血弹激流，基于蓄力时间造成<magicDamage>?</magicDamage>至<magicDamage>?魔法伤害</magicDamage>。如果这个技能蓄力了至少1秒，那么它还会使目标<status>减速</status>40/45/50/55/60%，持续0.5秒。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VladimirE.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0008/ability_0008_E1.webm"
+            },
+            {
+              "key": "R",
+              "name": "血之瘟疫",
+              "description": "弗拉基米尔令一片区域感染上剧毒瘟疫，增加受感染敌人所受的伤害。在几秒后，血之瘟疫会对被感染的敌人造成魔法伤害，并根据命中的敌方英雄数来治疗弗拉基米尔。",
+              "max_rank": 3,
+              "range_burn": [
+                625
+              ],
+              "cooldown_burn": [
+                120
+              ],
+              "cooldown_burn_float": [
+                120
+              ],
+              "cost_burn": [
+                0
+              ],
+              "tooltip": "弗拉基米尔生成一个剧毒瘟疫，使他的目标们所受伤害(所有来源)提高10%，持续4秒。在它消散后，弗拉基米尔对所有被感染的目标造成<magicDamage>?魔法伤害</magicDamage>。如果弗拉基米尔命中了一名敌方英雄，那么就会治疗自身<healing>?生命值</healing>，此后每命中一名敌方英雄会治疗自身额外的<healing>?生命值</healing>。?",
+              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VladimirHemoplague.png",
+              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0008/ability_0008_R1.webm"
+            }
+          ],
+          "skins": [
+            {
+              "id": 8000,
+              "champion_id": 8,
+              "name": "default",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_0.jpg",
+              "skin_video_url": null,
+              "prices": [
+                {
+                  "currency": "IP",
+                  "cost": 3150
+                },
+                {
+                  "currency": "RP",
+                  "cost": 790
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 8030,
+              "champion_id": 8,
+              "name": "咖啡甜心 弗拉基米尔",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_30.jpg",
+              "skin_video_url": "https://youtu.be/VYM6kSA1Ryw",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2021-12-02T04:00:00+09:00"
+            },
+            {
+              "id": 8007,
+              "champion_id": 8,
+              "name": "学生会长 弗拉基米尔",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_7.jpg",
+              "skin_video_url": "https://youtu.be/50QjcmBq_W8",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 750
+                }
+              ],
+              "sales": null,
+              "release_date": "2015-08-27T10:00:00+09:00"
+            },
+            {
+              "id": 8001,
+              "champion_id": 8,
+              "name": "弗拉基米尔伯爵",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_1.jpg",
+              "skin_video_url": "https://youtu.be/ZMYrSMSm6_k",
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 8002,
+              "champion_id": 8,
+              "name": "弗拉基米尔侯爵",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_2.jpg",
+              "skin_video_url": "https://youtu.be/i3lIFX74VTc",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 520
+                }
+              ],
+              "sales": null,
+              "release_date": "2010-07-12T15:00:00+09:00"
+            },
+            {
+              "id": 8006,
+              "champion_id": 8,
+              "name": "摄魂男爵 弗拉基米尔",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_6.jpg",
+              "skin_video_url": "https://youtu.be/tHCzYwVNJ4U",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2014-07-08T06:00:00+09:00"
+            },
+            {
+              "id": 8021,
+              "champion_id": 8,
+              "name": "波江星神 弗拉基米尔",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_21.jpg",
+              "skin_video_url": "https://youtu.be/iWBT0p1hCME",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2020-11-24T04:00:00+09:00"
+            },
+            {
+              "id": 8039,
+              "champion_id": 8,
+              "name": "绝息圣堂 弗拉基米尔",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_39.jpg",
+              "skin_video_url": "https://youtu.be/QLo9reFoI7o",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                },
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2023-03-09T04:00:00+09:00"
+            },
+            {
+              "id": 8005,
+              "champion_id": 8,
+              "name": "血石领主 弗拉基米尔",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_5.jpg",
+              "skin_video_url": "https://youtu.be/SRMzt9tZxoY",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1820
+                }
+              ],
+              "sales": null,
+              "release_date": "2011-11-20T23:00:00+09:00"
+            },
+            {
+              "id": 8003,
+              "champion_id": 8,
+              "name": "诺斯费拉图  弗拉基米尔",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_3.jpg",
+              "skin_video_url": "https://youtu.be/vMPdDxeUmMg",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 975
+                }
+              ],
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 8004,
+              "champion_id": 8,
+              "name": "霹雳游侠 弗拉基米尔",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_4.jpg",
+              "skin_video_url": "https://youtu.be/Ih4gSWsVedo",
+              "prices": null,
+              "sales": null,
+              "release_date": null
+            },
+            {
+              "id": 8014,
+              "champion_id": 8,
+              "name": "黑夜使者 弗拉基米尔",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_14.jpg",
+              "skin_video_url": "https://youtu.be/WIebREN28qM",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2019-12-12T04:00:00+09:00"
+            },
+            {
+              "id": 8008,
+              "champion_id": 8,
+              "name": "黑潮 弗拉基米尔",
+              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_8.jpg",
+              "skin_video_url": "https://youtu.be/rjaPBYVxaPE",
+              "prices": [
+                {
+                  "currency": "RP",
+                  "cost": 1350
+                }
+              ],
+              "sales": null,
+              "release_date": "2018-05-30T23:00:00+09:00"
+            }
+          ]
+        }
+      },
+      {
         "champion_id": 238,
-        "play": 49,
-        "win": 27,
+        "play": 51,
+        "win": 29,
         "meta": {
           "id": 238,
           "key": "Zed",
@@ -6386,333 +6711,8 @@
         }
       },
       {
-        "champion_id": 8,
-        "play": 48,
-        "win": 28,
-        "meta": {
-          "id": 8,
-          "key": "Vladimir",
-          "name": "猩红收割者",
-          "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/Vladimir.png",
-          "evolve": [],
-          "title": "弗拉基米尔",
-          "partype": "猩红冲刺",
-          "passive": {
-            "name": "血色契约",
-            "description": "每30生命值加成给予弗拉基米尔1法术强度，每1法术强度给予弗拉基米尔1.6生命值（不会自我循环叠加）。",
-            "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/passive/VladimirP.png",
-            "video_url": null
-          },
-          "spells": [
-            {
-              "key": "Q",
-              "name": "鲜血转换",
-              "description": "弗拉基米尔从目标敌人身上偷取生命值。当弗拉基米尔的资源槽攒满后，鲜血转换将暂时获得增益，提升伤害和治疗效果。",
-              "max_rank": 5,
-              "range_burn": [
-                600
-              ],
-              "cooldown_burn": [
-                9,
-                7,
-                6,
-                5,
-                4
-              ],
-              "cooldown_burn_float": [
-                9,
-                7.9,
-                6.8,
-                5.7,
-                4.6
-              ],
-              "cost_burn": [
-                0
-              ],
-              "tooltip": "弗拉基米尔汲取目标的生命力，造成<magicDamage>?魔法伤害</magicDamage>并回复<healing>?生命值</healing>。在使用2次这个技能后，弗拉基米尔会获得<speed>?%移动速度</speed>，持续0.5秒，并强化这个技能的下一次使用，持续2.5秒。<br /><br />这个技能的强化版会造成<magicDamage>?魔法伤害</magicDamage>并回复额外的<healing>?加上?已损失生命值</healing>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VladimirQ.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0008/ability_0008_Q1.webm"
-            },
-            {
-              "key": "W",
-              "name": "血红之池",
-              "description": "弗拉基米尔潜入血泊之中，变得不可被选取，持续2秒。血泊上的敌人被减速，同时弗拉基米尔会从他们身上吸取生命。",
-              "max_rank": 5,
-              "range_burn": [
-                350
-              ],
-              "cooldown_burn": [
-                28,
-                25,
-                22,
-                19,
-                16
-              ],
-              "cooldown_burn_float": [
-                28,
-                25,
-                22,
-                19,
-                16
-              ],
-              "cost_burn": [
-                0
-              ],
-              "tooltip": "弗拉基米尔化成一滩持续2秒的血池，获得<speed>?%持续衰减的移动速度</speed>，持续?秒，并进入<keyword>无法被选取</keyword>和<keyword>幽灵</keyword>状态，同时使血池中的敌人<status>减速</status>?%。<br /><br />弗拉基米尔在期间会持续造成<magicDamage>?魔法伤害</magicDamage>，并且每命中一个敌人就会为弗拉基米尔回复<healing>?生命值</healing>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VladimirSanguinePool.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0008/ability_0008_W1.webm"
-            },
-            {
-              "key": "E",
-              "name": "血之潮汐",
-              "description": "弗拉基米尔消耗他的生命值来持续灌注一个蓄血库，蓄血库在释放时会对他身边的敌人造成伤害，但会被敌方单位所阻挡。",
-              "max_rank": 5,
-              "range_burn": [
-                600
-              ],
-              "cooldown_burn": [
-                13,
-                11,
-                9,
-                7,
-                5
-              ],
-              "cooldown_burn_float": [
-                13,
-                11,
-                9,
-                7,
-                5
-              ],
-              "cost_burn": [
-                0
-              ],
-              "tooltip": "<charge>开始蓄力：</charge>弗拉基米尔积攒一个蓄血库，至多消耗<span class=\"colorCC3300\">?生命值</span>。在攒满后，弗拉基米尔会被<status>减速</status>20%。<br /><br /><release>释放：</release>弗拉基米尔对附近的敌人释放一股血弹激流，基于蓄力时间造成<magicDamage>?</magicDamage>至<magicDamage>?魔法伤害</magicDamage>。如果这个技能蓄力了至少1秒，那么它还会使目标<status>减速</status>40/45/50/55/60%，持续0.5秒。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VladimirE.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0008/ability_0008_E1.webm"
-            },
-            {
-              "key": "R",
-              "name": "血之瘟疫",
-              "description": "弗拉基米尔令一片区域感染上剧毒瘟疫，增加受感染敌人所受的伤害。在几秒后，血之瘟疫会对被感染的敌人造成魔法伤害，并根据命中的敌方英雄数来治疗弗拉基米尔。",
-              "max_rank": 3,
-              "range_burn": [
-                625
-              ],
-              "cooldown_burn": [
-                120
-              ],
-              "cooldown_burn_float": [
-                120
-              ],
-              "cost_burn": [
-                0
-              ],
-              "tooltip": "弗拉基米尔生成一个剧毒瘟疫，使他的目标们所受伤害(所有来源)提高10%，持续4秒。在它消散后，弗拉基米尔对所有被感染的目标造成<magicDamage>?魔法伤害</magicDamage>。如果弗拉基米尔命中了一名敌方英雄，那么就会治疗自身<healing>?生命值</healing>，此后每命中一名敌方英雄会治疗自身额外的<healing>?生命值</healing>。?",
-              "image_url": "https://opgg-static.akamaized.net/meta/images/lol/latest/spell/VladimirHemoplague.png",
-              "video_url": "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0008/ability_0008_R1.webm"
-            }
-          ],
-          "skins": [
-            {
-              "id": 8000,
-              "champion_id": 8,
-              "name": "default",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_0.jpg",
-              "skin_video_url": null,
-              "prices": [
-                {
-                  "currency": "IP",
-                  "cost": 3150
-                },
-                {
-                  "currency": "RP",
-                  "cost": 790
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 8030,
-              "champion_id": 8,
-              "name": "咖啡甜心 弗拉基米尔",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_30.jpg",
-              "skin_video_url": "https://youtu.be/VYM6kSA1Ryw",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2021-12-02T04:00:00+09:00"
-            },
-            {
-              "id": 8007,
-              "champion_id": 8,
-              "name": "学生会长 弗拉基米尔",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_7.jpg",
-              "skin_video_url": "https://youtu.be/50QjcmBq_W8",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 750
-                }
-              ],
-              "sales": null,
-              "release_date": "2015-08-27T10:00:00+09:00"
-            },
-            {
-              "id": 8001,
-              "champion_id": 8,
-              "name": "弗拉基米尔伯爵",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_1.jpg",
-              "skin_video_url": "https://youtu.be/ZMYrSMSm6_k",
-              "prices": null,
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 8002,
-              "champion_id": 8,
-              "name": "弗拉基米尔侯爵",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_2.jpg",
-              "skin_video_url": "https://youtu.be/i3lIFX74VTc",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 520
-                }
-              ],
-              "sales": null,
-              "release_date": "2010-07-12T15:00:00+09:00"
-            },
-            {
-              "id": 8006,
-              "champion_id": 8,
-              "name": "摄魂男爵 弗拉基米尔",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_6.jpg",
-              "skin_video_url": "https://youtu.be/tHCzYwVNJ4U",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2014-07-08T06:00:00+09:00"
-            },
-            {
-              "id": 8021,
-              "champion_id": 8,
-              "name": "波江星神 弗拉基米尔",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_21.jpg",
-              "skin_video_url": "https://youtu.be/iWBT0p1hCME",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2020-11-24T04:00:00+09:00"
-            },
-            {
-              "id": 8039,
-              "champion_id": 8,
-              "name": "绝息圣堂 弗拉基米尔",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_39.jpg",
-              "skin_video_url": "https://youtu.be/QLo9reFoI7o",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                },
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2023-03-09T04:00:00+09:00"
-            },
-            {
-              "id": 8005,
-              "champion_id": 8,
-              "name": "血石领主 弗拉基米尔",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_5.jpg",
-              "skin_video_url": "https://youtu.be/SRMzt9tZxoY",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1820
-                }
-              ],
-              "sales": null,
-              "release_date": "2011-11-20T23:00:00+09:00"
-            },
-            {
-              "id": 8003,
-              "champion_id": 8,
-              "name": "诺斯费拉图  弗拉基米尔",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_3.jpg",
-              "skin_video_url": "https://youtu.be/vMPdDxeUmMg",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 975
-                }
-              ],
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 8004,
-              "champion_id": 8,
-              "name": "霹雳游侠 弗拉基米尔",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_4.jpg",
-              "skin_video_url": "https://youtu.be/Ih4gSWsVedo",
-              "prices": null,
-              "sales": null,
-              "release_date": null
-            },
-            {
-              "id": 8014,
-              "champion_id": 8,
-              "name": "黑夜使者 弗拉基米尔",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_14.jpg",
-              "skin_video_url": "https://youtu.be/WIebREN28qM",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2019-12-12T04:00:00+09:00"
-            },
-            {
-              "id": 8008,
-              "champion_id": 8,
-              "name": "黑潮 弗拉基米尔",
-              "centered_image": "https://opgg-static.akamaized.net/meta/images/lol/latest/champion/centered/Vladimir_8.jpg",
-              "skin_video_url": "https://youtu.be/rjaPBYVxaPE",
-              "prices": [
-                {
-                  "currency": "RP",
-                  "cost": 1350
-                }
-              ],
-              "sales": null,
-              "release_date": "2018-05-30T23:00:00+09:00"
-            }
-          ]
-        }
-      },
-      {
         "champion_id": 55,
-        "play": 44,
+        "play": 46,
         "win": 22,
         "meta": {
           "id": 55,
@@ -6890,7 +6890,7 @@
                 }
               ],
               "sales": null,
-              "release_date": "2024-12-11T10:00:00+09:00"
+              "release_date": null
             },
             {
               "id": 55029,
@@ -7107,8 +7107,8 @@
       },
       {
         "champion_id": 893,
-        "play": 41,
-        "win": 19,
+        "play": 42,
+        "win": 20,
         "meta": {
           "id": 893,
           "key": "Aurora",
@@ -7285,7 +7285,7 @@
       },
       {
         "champion_id": 61,
-        "play": 37,
+        "play": 39,
         "win": 13,
         "meta": {
           "id": 61,
@@ -7455,7 +7455,7 @@
                 }
               ],
               "sales": null,
-              "release_date": "2024-12-11T10:00:00+09:00"
+              "release_date": null
             },
             {
               "id": 61001,
@@ -7807,7 +7807,7 @@
                 }
               ],
               "sales": null,
-              "release_date": "2024-12-11T10:00:00+09:00"
+              "release_date": null
             },
             {
               "id": 134016,
@@ -7929,7 +7929,7 @@
       },
       {
         "champion_id": 901,
-        "play": 34,
+        "play": 35,
         "win": 14,
         "meta": {
           "id": 901,
@@ -8105,18 +8105,18 @@
         4,
         12
       ],
-      "win": 992,
-      "play": 1942,
-      "pick_rate": 0.9413
+      "win": 1045,
+      "play": 2043,
+      "pick_rate": 0.9423
     },
     {
       "ids": [
         4,
         14
       ],
-      "win": 36,
-      "play": 71,
-      "pick_rate": 0.0344
+      "win": 37,
+      "play": 73,
+      "pick_rate": 0.0337
     },
     {
       "ids": [
@@ -8124,8 +8124,8 @@
         6
       ],
       "win": 13,
-      "play": 27,
-      "pick_rate": 0.0131
+      "play": 29,
+      "pick_rate": 0.0134
     },
     {
       "ids": [
@@ -8134,7 +8134,7 @@
       ],
       "win": 5,
       "play": 10,
-      "pick_rate": 0.0048
+      "pick_rate": 0.0046
     },
     {
       "ids": [
@@ -8143,7 +8143,7 @@
       ],
       "win": 3,
       "play": 5,
-      "pick_rate": 0.0024
+      "pick_rate": 0.0023
     }
   ],
   "trends": {
@@ -8152,8 +8152,8 @@
     "win": [
       {
         "version": "14.24",
-        "rate": 0.5114,
-        "rank": 14,
+        "rate": 0.5103,
+        "rank": 16,
         "created_at": "2024-12-11T22:30:57+09:00"
       },
       {
@@ -8214,7 +8214,7 @@
     "pick": [
       {
         "version": "14.24",
-        "rate": 0.0268,
+        "rate": 0.0271,
         "rank": 24,
         "created_at": "2024-12-11T22:30:57+09:00"
       },
@@ -8276,7 +8276,7 @@
     "ban": [
       {
         "version": "14.24",
-        "rate": 0.0278,
+        "rate": 0.0282,
         "rank": 19,
         "created_at": "2024-12-11T22:30:57+09:00"
       },
@@ -8339,31 +8339,31 @@
   "game_lengths": [
     {
       "game_length": 40,
-      "rate": 0.45977,
+      "rate": 0.455556,
       "average": 0.5,
-      "rank": 42
+      "rank": 41
     },
     {
       "game_length": 30,
-      "rate": 0.482759,
+      "rate": 0.488246,
       "average": 0.5,
-      "rank": 40
+      "rank": 38
     },
     {
       "game_length": 0,
-      "rate": 0.509666,
+      "rate": 0.507563,
       "average": 0.5,
-      "rank": 21
+      "rank": 20
     },
     {
       "game_length": 25,
-      "rate": 0.525473,
+      "rate": 0.521918,
       "average": 0.5,
       "rank": 8
     },
     {
       "game_length": 35,
-      "rate": 0.555102,
+      "rate": 0.550781,
       "average": 0.5,
       "rank": 7
     }
@@ -8387,9 +8387,9 @@
         "W",
         "W"
       ],
-      "play": 663,
-      "win": 388,
-      "pick_rate": 0.5457
+      "play": 696,
+      "win": 408,
+      "pick_rate": 0.5459
     },
     {
       "order": [
@@ -8409,9 +8409,9 @@
         "W",
         "W"
       ],
-      "play": 156,
-      "win": 86,
-      "pick_rate": 0.1284
+      "play": 164,
+      "win": 91,
+      "pick_rate": 0.1286
     },
     {
       "order": [
@@ -8431,9 +8431,9 @@
         "W",
         "W"
       ],
-      "play": 72,
-      "win": 47,
-      "pick_rate": 0.0593
+      "play": 75,
+      "win": 49,
+      "pick_rate": 0.0588
     },
     {
       "order": [
@@ -8453,9 +8453,9 @@
         "Q",
         "Q"
       ],
-      "play": 32,
-      "win": 17,
-      "pick_rate": 0.0263
+      "play": 36,
+      "win": 18,
+      "pick_rate": 0.0282
     },
     {
       "order": [
@@ -8475,9 +8475,9 @@
         "W",
         "W"
       ],
-      "play": 30,
+      "play": 32,
       "win": 21,
-      "pick_rate": 0.0247
+      "pick_rate": 0.0251
     }
   ],
   "skill_masteries": [
@@ -8487,9 +8487,9 @@
         "Q",
         "W"
       ],
-      "play": 1100,
-      "win": 631,
-      "pick_rate": 0.9053,
+      "play": 1155,
+      "win": 665,
+      "pick_rate": 0.9059,
       "builds": [
         {
           "order": [
@@ -8509,9 +8509,9 @@
             "W",
             "W"
           ],
-          "play": 663,
-          "win": 388,
-          "pick_rate": 0.6027
+          "play": 696,
+          "win": 408,
+          "pick_rate": 0.6026
         },
         {
           "order": [
@@ -8531,9 +8531,9 @@
             "W",
             "W"
           ],
-          "play": 156,
-          "win": 86,
-          "pick_rate": 0.1418
+          "play": 164,
+          "win": 91,
+          "pick_rate": 0.142
         },
         {
           "order": [
@@ -8553,9 +8553,9 @@
             "W",
             "W"
           ],
-          "play": 72,
-          "win": 47,
-          "pick_rate": 0.0655
+          "play": 75,
+          "win": 49,
+          "pick_rate": 0.0649
         },
         {
           "order": [
@@ -8575,9 +8575,9 @@
             "W",
             "W"
           ],
-          "play": 30,
+          "play": 32,
           "win": 21,
-          "pick_rate": 0.0273
+          "pick_rate": 0.0277
         },
         {
           "order": [
@@ -8599,7 +8599,7 @@
           ],
           "play": 22,
           "win": 11,
-          "pick_rate": 0.02
+          "pick_rate": 0.019
         }
       ]
     },
@@ -8609,9 +8609,9 @@
         "W",
         "Q"
       ],
-      "play": 89,
-      "win": 53,
-      "pick_rate": 0.0733,
+      "play": 94,
+      "win": 55,
+      "pick_rate": 0.0737,
       "builds": [
         {
           "order": [
@@ -8631,9 +8631,9 @@
             "Q",
             "Q"
           ],
-          "play": 32,
-          "win": 17,
-          "pick_rate": 0.3596
+          "play": 36,
+          "win": 18,
+          "pick_rate": 0.383
         },
         {
           "order": [
@@ -8655,7 +8655,7 @@
           ],
           "play": 5,
           "win": 2,
-          "pick_rate": 0.0562
+          "pick_rate": 0.0532
         },
         {
           "order": [
@@ -8677,7 +8677,7 @@
           ],
           "play": 5,
           "win": 4,
-          "pick_rate": 0.0562
+          "pick_rate": 0.0532
         },
         {
           "order": [
@@ -8699,7 +8699,7 @@
           ],
           "play": 4,
           "win": 3,
-          "pick_rate": 0.0449
+          "pick_rate": 0.0426
         },
         {
           "order": [
@@ -8721,7 +8721,7 @@
           ],
           "play": 4,
           "win": 4,
-          "pick_rate": 0.0449
+          "pick_rate": 0.0426
         }
       ]
     },
@@ -8733,7 +8733,7 @@
       ],
       "play": 21,
       "win": 9,
-      "pick_rate": 0.0173,
+      "pick_rate": 0.0165,
       "builds": [
         {
           "order": [
@@ -8855,7 +8855,7 @@
       ],
       "play": 3,
       "win": 2,
-      "pick_rate": 0.0025,
+      "pick_rate": 0.0024,
       "builds": [
         {
           "order": [
@@ -9734,9 +9734,9 @@
         6653,
         3116
       ],
-      "play": 519,
-      "win": 274,
-      "pick_rate": 0.3665
+      "play": 542,
+      "win": 290,
+      "pick_rate": 0.364
     },
     {
       "ids": [
@@ -9744,9 +9744,9 @@
         3116,
         6653
       ],
-      "play": 165,
-      "win": 100,
-      "pick_rate": 0.1165
+      "play": 172,
+      "win": 102,
+      "pick_rate": 0.1155
     },
     {
       "ids": [
@@ -9754,9 +9754,9 @@
         6653,
         3116
       ],
-      "play": 121,
-      "win": 67,
-      "pick_rate": 0.0855
+      "play": 131,
+      "win": 73,
+      "pick_rate": 0.088
     },
     {
       "ids": [
@@ -9764,9 +9764,9 @@
         3116,
         6653
       ],
-      "play": 35,
+      "play": 36,
       "win": 19,
-      "pick_rate": 0.0247
+      "pick_rate": 0.0242
     },
     {
       "ids": [
@@ -9776,7 +9776,7 @@
       ],
       "play": 24,
       "win": 14,
-      "pick_rate": 0.0169
+      "pick_rate": 0.0161
     },
     {
       "ids": [
@@ -9784,9 +9784,9 @@
         3116,
         3157
       ],
-      "play": 22,
-      "win": 12,
-      "pick_rate": 0.0155
+      "play": 23,
+      "win": 13,
+      "pick_rate": 0.0154
     },
     {
       "ids": [
@@ -9794,8 +9794,8 @@
         6653,
         3089
       ],
-      "play": 20,
-      "win": 14,
+      "play": 21,
+      "win": 15,
       "pick_rate": 0.0141
     },
     {
@@ -9804,7 +9804,7 @@
         6653,
         4645
       ],
-      "play": 19,
+      "play": 20,
       "win": 9,
       "pick_rate": 0.0134
     },
@@ -9816,7 +9816,7 @@
       ],
       "play": 18,
       "win": 9,
-      "pick_rate": 0.0127
+      "pick_rate": 0.0121
     },
     {
       "ids": [
@@ -9824,30 +9824,9 @@
         6653,
         3116
       ],
-      "play": 17,
-      "win": 5,
-      "pick_rate": 0.012
-    },
-    {
-      "ids": [
-        1082,
-        2503,
-        6653,
-        3116
-      ],
-      "play": 16,
-      "win": 11,
-      "pick_rate": 0.0113
-    },
-    {
-      "ids": [
-        2503,
-        6653,
-        3135
-      ],
-      "play": 16,
-      "win": 7,
-      "pick_rate": 0.0113
+      "play": 18,
+      "win": 6,
+      "pick_rate": 0.0121
     },
     {
       "ids": [
@@ -9856,19 +9835,30 @@
         3040,
         6653
       ],
-      "play": 15,
-      "win": 6,
-      "pick_rate": 0.0106
+      "play": 17,
+      "win": 8,
+      "pick_rate": 0.0114
     },
     {
       "ids": [
         2503,
-        3116,
-        3165
+        6653,
+        3135
       ],
-      "play": 14,
-      "win": 5,
-      "pick_rate": 0.0099
+      "play": 17,
+      "win": 8,
+      "pick_rate": 0.0114
+    },
+    {
+      "ids": [
+        1082,
+        2503,
+        6653,
+        3116
+      ],
+      "play": 17,
+      "win": 11,
+      "pick_rate": 0.0114
     },
     {
       "ids": [
@@ -9876,9 +9866,19 @@
         6653,
         3157
       ],
-      "play": 14,
-      "win": 9,
-      "pick_rate": 0.0099
+      "play": 16,
+      "win": 10,
+      "pick_rate": 0.0107
+    },
+    {
+      "ids": [
+        2503,
+        3116,
+        3165
+      ],
+      "play": 15,
+      "win": 5,
+      "pick_rate": 0.0101
     }
   ],
   "boots": [
@@ -9886,25 +9886,25 @@
       "ids": [
         3020
       ],
-      "play": 1601,
-      "win": 848,
-      "pick_rate": 0.8021
+      "play": 1694,
+      "win": 896,
+      "pick_rate": 0.8074
     },
     {
       "ids": [
         3158
       ],
-      "play": 324,
-      "win": 159,
-      "pick_rate": 0.1623
+      "play": 330,
+      "win": 162,
+      "pick_rate": 0.1573
     },
     {
       "ids": [
         3009
       ],
-      "play": 31,
-      "win": 13,
-      "pick_rate": 0.0155
+      "play": 34,
+      "win": 15,
+      "pick_rate": 0.0162
     },
     {
       "ids": [
@@ -9912,7 +9912,7 @@
       ],
       "play": 31,
       "win": 16,
-      "pick_rate": 0.0155
+      "pick_rate": 0.0148
     },
     {
       "ids": [
@@ -9920,7 +9920,7 @@
       ],
       "play": 8,
       "win": 4,
-      "pick_rate": 0.004
+      "pick_rate": 0.0038
     }
   ],
   "starter_items": [
@@ -9930,18 +9930,18 @@
         2003,
         2003
       ],
-      "play": 1774,
-      "win": 889,
-      "pick_rate": 0.8352
+      "play": 1858,
+      "win": 932,
+      "pick_rate": 0.8328
     },
     {
       "ids": [
         1027,
         2031
       ],
-      "play": 174,
-      "win": 100,
-      "pick_rate": 0.0819
+      "play": 183,
+      "win": 105,
+      "pick_rate": 0.082
     },
     {
       "ids": [
@@ -9949,9 +9949,9 @@
         2003,
         3070
       ],
-      "play": 123,
-      "win": 70,
-      "pick_rate": 0.0579
+      "play": 135,
+      "win": 76,
+      "pick_rate": 0.0605
     },
     {
       "ids": [
@@ -9960,15 +9960,26 @@
       ],
       "play": 9,
       "win": 7,
-      "pick_rate": 0.0042
+      "pick_rate": 0.004
     },
     {
       "ids": [
         1056
       ],
-      "play": 7,
+      "play": 8,
       "win": 2,
-      "pick_rate": 0.0033
+      "pick_rate": 0.0036
+    },
+    {
+      "ids": [
+        1052,
+        1056,
+        2003,
+        2003
+      ],
+      "play": 6,
+      "win": 4,
+      "pick_rate": 0.0027
     },
     {
       "ids": [
@@ -9980,18 +9991,7 @@
       ],
       "play": 5,
       "win": 2,
-      "pick_rate": 0.0024
-    },
-    {
-      "ids": [
-        1052,
-        1056,
-        2003,
-        2003
-      ],
-      "play": 5,
-      "win": 3,
-      "pick_rate": 0.0024
+      "pick_rate": 0.0022
     },
     {
       "ids": [
@@ -9999,7 +9999,7 @@
       ],
       "play": 4,
       "win": 1,
-      "pick_rate": 0.0019
+      "pick_rate": 0.0018
     },
     {
       "ids": [
@@ -10009,7 +10009,7 @@
       ],
       "play": 4,
       "win": 2,
-      "pick_rate": 0.0019
+      "pick_rate": 0.0018
     },
     {
       "ids": [
@@ -10018,7 +10018,7 @@
       ],
       "play": 3,
       "win": 2,
-      "pick_rate": 0.0014
+      "pick_rate": 0.0013
     },
     {
       "ids": [
@@ -10029,7 +10029,7 @@
       ],
       "play": 3,
       "win": 2,
-      "pick_rate": 0.0014
+      "pick_rate": 0.0013
     },
     {
       "ids": [
@@ -10038,7 +10038,7 @@
       ],
       "play": 1,
       "win": 1,
-      "pick_rate": 0.0005
+      "pick_rate": 0.0004
     },
     {
       "ids": [
@@ -10049,7 +10049,7 @@
       ],
       "play": 1,
       "win": 0,
-      "pick_rate": 0.0005
+      "pick_rate": 0.0004
     },
     {
       "ids": [
@@ -10061,7 +10061,7 @@
       ],
       "play": 1,
       "win": 1,
-      "pick_rate": 0.0005
+      "pick_rate": 0.0004
     },
     {
       "ids": [
@@ -10072,7 +10072,7 @@
       ],
       "play": 1,
       "win": 1,
-      "pick_rate": 0.0005
+      "pick_rate": 0.0004
     }
   ],
   "last_items": [
@@ -10080,129 +10080,137 @@
       "ids": [
         6653
       ],
-      "play": 1590,
-      "win": 870,
-      "pick_rate": 0.7546
+      "play": 1674,
+      "win": 917,
+      "pick_rate": 0.7561
     },
     {
       "ids": [
         2503
       ],
-      "play": 1512,
-      "win": 773,
-      "pick_rate": 0.7176
+      "play": 1589,
+      "win": 812,
+      "pick_rate": 0.7177
     },
     {
       "ids": [
         3116
       ],
-      "play": 1296,
-      "win": 697,
-      "pick_rate": 0.6151
+      "play": 1359,
+      "win": 730,
+      "pick_rate": 0.6138
     },
     {
       "ids": [
         3118
       ],
-      "play": 553,
-      "win": 292,
-      "pick_rate": 0.2625
+      "play": 584,
+      "win": 309,
+      "pick_rate": 0.2638
     },
     {
       "ids": [
         3916
       ],
-      "play": 322,
-      "win": 149,
-      "pick_rate": 0.1528
+      "play": 334,
+      "win": 153,
+      "pick_rate": 0.1509
     },
     {
       "ids": [
         3157
       ],
-      "play": 254,
-      "win": 146,
-      "pick_rate": 0.1206
+      "play": 265,
+      "win": 154,
+      "pick_rate": 0.1197
     },
     {
       "ids": [
         3040
       ],
-      "play": 218,
-      "win": 121,
-      "pick_rate": 0.1035
+      "play": 233,
+      "win": 130,
+      "pick_rate": 0.1052
     },
     {
       "ids": [
         3089
       ],
-      "play": 207,
-      "win": 123,
-      "pick_rate": 0.0982
+      "play": 218,
+      "win": 131,
+      "pick_rate": 0.0985
     },
     {
       "ids": [
         3135
       ],
-      "play": 161,
-      "win": 75,
-      "pick_rate": 0.0764
+      "play": 166,
+      "win": 79,
+      "pick_rate": 0.075
     },
     {
       "ids": [
         3165
       ],
-      "play": 145,
-      "win": 89,
-      "pick_rate": 0.0688
+      "play": 152,
+      "win": 92,
+      "pick_rate": 0.0687
     },
     {
       "ids": [
         4645
       ],
-      "play": 136,
-      "win": 74,
-      "pick_rate": 0.0645
+      "play": 142,
+      "win": 75,
+      "pick_rate": 0.0641
     },
     {
       "ids": [
         3070
       ],
-      "play": 115,
-      "win": 51,
-      "pick_rate": 0.0546
+      "play": 125,
+      "win": 55,
+      "pick_rate": 0.0565
     },
     {
       "ids": [
         1082
       ],
-      "play": 101,
-      "win": 52,
-      "pick_rate": 0.0479
+      "play": 104,
+      "win": 53,
+      "pick_rate": 0.047
     },
     {
       "ids": [
         2420
       ],
-      "play": 72,
+      "play": 73,
       "win": 41,
-      "pick_rate": 0.0342
+      "pick_rate": 0.033
     },
     {
       "ids": [
         3137
       ],
-      "play": 47,
+      "play": 49,
       "win": 26,
-      "pick_rate": 0.0223
+      "pick_rate": 0.0221
     },
     {
       "ids": [
         3041
       ],
-      "play": 25,
-      "win": 23,
-      "pick_rate": 0.0119
+      "play": 26,
+      "win": 24,
+      "pick_rate": 0.0117
+    },
+    {
+      "ids": [
+        6655
+      ],
+      "play": 15,
+      "win": 8,
+      "pick_rate": 0.0068
     },
     {
       "ids": [
@@ -10210,15 +10218,7 @@
       ],
       "play": 15,
       "win": 9,
-      "pick_rate": 0.0071
-    },
-    {
-      "ids": [
-        6655
-      ],
-      "play": 14,
-      "win": 7,
-      "pick_rate": 0.0066
+      "pick_rate": 0.0068
     },
     {
       "ids": [
@@ -10226,7 +10226,7 @@
       ],
       "play": 13,
       "win": 8,
-      "pick_rate": 0.0062
+      "pick_rate": 0.0059
     },
     {
       "ids": [
@@ -10234,7 +10234,7 @@
       ],
       "play": 12,
       "win": 9,
-      "pick_rate": 0.0057
+      "pick_rate": 0.0054
     },
     {
       "ids": [
@@ -10242,7 +10242,7 @@
       ],
       "play": 4,
       "win": 3,
-      "pick_rate": 0.0019
+      "pick_rate": 0.0018
     },
     {
       "ids": [
@@ -10256,9 +10256,9 @@
       "ids": [
         8020
       ],
-      "play": 2,
+      "play": 3,
       "win": 1,
-      "pick_rate": 0.0009
+      "pick_rate": 0.0014
     },
     {
       "ids": [
